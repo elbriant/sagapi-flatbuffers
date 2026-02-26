@@ -13,6 +13,6 @@ This branch contains the generated FlatBuffers schemas for Arknights data decodi
 ## Supported Servers
 * `global` (com.YoStarJP.Arknights)
 * ~~`cn` (com.hypergryph.arknights)~~ not yet implemented
-* ~~`tw` (tw.txwy.and.arknights)~~ not yet implemented
+* `tw` (tw.txwy.and.arknights)
 
 To update these files, trigger the `Update FlatBuffers` workflow in the Actions tab of the `main` branch.
