@@ -1,0 +1,61 @@
+name: Update FlatBuffers
+
+on:
+  workflow_dispatch:
+    inputs:
+      server:
+        description: 'Target server to update'
+        required: true
+        default: 'global'
+        type: choice
+        options:
+          - all
+          - global
+          - cn
+          - tw
+
+jobs:
+  generate_fbs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main code
+        uses: actions/checkout@v4
+        with:
+          path: main_repo
+
+      - name: Checkout private dumps repository
+        uses: actions/checkout@v4
+        with:
+          repository: elbriant/sagapi-dumps
+          token: ${{ secrets.DUMPS_PAT }}
+
+      - name: Checkout fbs branch
+        uses: actions/checkout@v4
+        with:
+          ref: fbs
+          path: fbs_branch
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+
+      - name: Fetch Dependencies
+        run: dart pub get
+        working-directory: main_repo
+
+      - name: Execute Generation Pipeline
+        run: dart run bin/sagapi_flatbuffers.dart --server ${{ github.event.inputs.server }} --dumps-path ../dumps_repo/DummyDlls --out-path ../fbs_branch
+        working-directory: main_repo
+
+      - name: Commit and Push to fbs branch
+        working-directory: fbs_branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Auto-update FBS schemas for server: ${{ github.event.inputs.server }}"
+          git push origin fbs
