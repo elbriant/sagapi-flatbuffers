@@ -28,6 +28,7 @@ jobs:
         with:
           repository: elbriant/sagapi-dumps
           token: ${{ secrets.DUMPS_PAT }}
+          path: dumps_repo
 
       - name: Checkout fbs branch
         uses: actions/checkout@v4
