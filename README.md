@@ -24,3 +24,9 @@ You can run the orchestrator from the command line using Dart.
 ```bash
 dart run bin/sagapi_flatbuffers.dart --server <target_server> --dumps-path <path_to_DummyDlls> --out-path <output_directory>
 ```
+
+**Arguments:**
+
+* `--server`: The target server to process. Options: `global`, `cn`, `tw`, or `all`. (Default: `global`)
+* `--dumps-path`: The root directory containing the extracted server packages (e.g., `./sagapi-dumper/DummyDlls`).
+* `--out-path`: The destination folder where the generated schemas will be saved.
