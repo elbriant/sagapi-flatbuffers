@@ -1,0 +1,13 @@
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_SandboxV2MapConfig {
+	isRift:bool;
+	isGuide:bool;
+	cameraBoundMin:UnityEngine_Vector2;
+	cameraBoundMax:UnityEngine_Vector2;
+	cameraMaxNormalizedZoom:float;
+	backgroundId:string;
+}
+
+
+root_type Torappu_SandboxV2MapConfig;

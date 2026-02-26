@@ -1,0 +1,14 @@
+include "dict__System_String_System_String.fbs";
+
+table Torappu_Act29SideData_Act29SideFormData {
+	formId:string;
+	fragIdList:[string];
+	formDesc:string;
+	productIdDict:[dict__System_String_System_String];
+	withoutOrcheProductId:string;
+	groupId:string;
+	formSortId:int32;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideFormData;

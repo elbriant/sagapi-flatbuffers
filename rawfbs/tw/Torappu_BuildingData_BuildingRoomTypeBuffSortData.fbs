@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo.fbs";
+
+table Torappu_BuildingData_BuildingRoomTypeBuffSortData {
+	hasEfficiencySort:bool;
+	defaultGroupSortId:int32;
+	efficiencyTargetDict:[dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo];
+}
+
+
+root_type Torappu_BuildingData_BuildingRoomTypeBuffSortData;

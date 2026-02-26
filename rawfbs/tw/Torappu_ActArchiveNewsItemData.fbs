@@ -1,0 +1,8 @@
+
+table Torappu_ActArchiveNewsItemData {
+	newsId:string;
+	newsSortId:int32;
+}
+
+
+root_type Torappu_ActArchiveNewsItemData;

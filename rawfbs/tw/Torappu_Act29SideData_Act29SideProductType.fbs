@@ -1,0 +1,9 @@
+
+enum Torappu_Act29SideData_Act29SideProductType : int32 {
+	PRODUCT_TYPE_1 = 0,
+	PRODUCT_TYPE_2 = 1,
+	PRODUCT_TYPE_3 = 2,
+	PRODUCT_TYPE_4 = 3,
+	PRODUCT_TYPE_5 = 4,
+	ENUM = 5
+}

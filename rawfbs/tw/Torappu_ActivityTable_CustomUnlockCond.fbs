@@ -1,0 +1,8 @@
+
+table Torappu_ActivityTable_CustomUnlockCond {
+	actId:string;
+	stageId:string;
+}
+
+
+root_type Torappu_ActivityTable_CustomUnlockCond;

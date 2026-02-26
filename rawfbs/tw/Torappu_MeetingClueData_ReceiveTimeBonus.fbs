@@ -1,0 +1,8 @@
+
+table Torappu_MeetingClueData_ReceiveTimeBonus {
+	receiveTimes:int32;
+	receiveBonus:int32;
+}
+
+
+root_type Torappu_MeetingClueData_ReceiveTimeBonus;

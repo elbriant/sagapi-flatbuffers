@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_Act36SideData_Act36SideZoneAdditionData.fbs";
+include "dict__System_String_Torappu_Act36SideData_Act36SideEnemyHandbookData.fbs";
+include "dict__System_String_Torappu_Act36SideData_Act36SideTokenHandbookData.fbs";
+include "Torappu_Act36SideData_Act36SideConstData.fbs";
+
+table Torappu_Act36SideData {
+	zoneAdditionData:[dict__System_String_Torappu_Act36SideData_Act36SideZoneAdditionData];
+	enemyHandbookData:[dict__System_String_Torappu_Act36SideData_Act36SideEnemyHandbookData];
+	tokenHandbookData:[dict__System_String_Torappu_Act36SideData_Act36SideTokenHandbookData];
+	constData:Torappu_Act36SideData_Act36SideConstData;
+}
+
+
+root_type Torappu_Act36SideData;

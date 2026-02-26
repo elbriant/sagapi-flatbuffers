@@ -1,0 +1,10 @@
+
+table Torappu_ActArchiveChatItemData {
+	floor:int32;
+	chatZoneId:string;
+	chatDesc:string;
+	chatStoryId:string;
+}
+
+
+root_type Torappu_ActArchiveChatItemData;

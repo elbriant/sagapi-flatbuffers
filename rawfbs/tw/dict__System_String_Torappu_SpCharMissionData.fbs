@@ -1,0 +1,9 @@
+include "Torappu_SpCharMissionData.fbs";
+
+table dict__System_String_Torappu_SpCharMissionData {
+	dict_key:string;
+	dict_value:Torappu_SpCharMissionData;
+}
+
+
+root_type dict__System_String_Torappu_SpCharMissionData;

@@ -1,0 +1,10 @@
+include "Torappu_PlayerAvatarGroupType.fbs";
+include "Torappu_PlayerAvatarGroupData.fbs";
+
+table dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData {
+	dict_key:Torappu_PlayerAvatarGroupType;
+	dict_value:Torappu_PlayerAvatarGroupData;
+}
+
+
+root_type dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData;

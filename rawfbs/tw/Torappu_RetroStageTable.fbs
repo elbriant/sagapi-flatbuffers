@@ -1,0 +1,29 @@
+include "list_dict___2_System_String_System_String_.fbs";
+include "dict__System_String_Torappu_StageValidInfo.fbs";
+include "dict__System_String_Torappu_RetroStageOverrideInfo.fbs";
+include "dict__System_String_Torappu_RetroActData.fbs";
+include "dict__System_String_Torappu_RetroTrailData.fbs";
+include "dict__System_String_Torappu_StageData.fbs";
+include "Torappu_RetroTrailRuleData.fbs";
+include "Torappu_ActivityCustomData.fbs";
+include "dict__System_Int32_System_Int32.fbs";
+
+table Torappu_RetroStageTable {
+	zoneToRetro:[list_dict___2_System_String_System_String_];
+	stageValidInfo:[dict__System_String_Torappu_StageValidInfo];
+	stages:[dict__System_String_Torappu_RetroStageOverrideInfo];
+	retroActList:[dict__System_String_Torappu_RetroActData];
+	retroTrailList:[dict__System_String_Torappu_RetroTrailData];
+	stageList:[dict__System_String_Torappu_StageData];
+	ruleData:Torappu_RetroTrailRuleData;
+	customData:Torappu_ActivityCustomData;
+	initRetroCoin:int32;
+	retroCoinPerWeek:int32;
+	retroCoinMaxOfLevels:[dict__System_Int32_System_Int32];
+	retroUnlockCost:int32;
+	retroDetail:string;
+	retroPreShowTime:int64;
+}
+
+
+root_type Torappu_RetroStageTable;

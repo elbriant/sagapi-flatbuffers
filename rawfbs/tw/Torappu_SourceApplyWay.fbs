@@ -1,0 +1,7 @@
+
+enum Torappu_SourceApplyWay : int32 {
+	NONE = 0,
+	MELEE = 1,
+	RANGED = 2,
+	ALL = 3
+}

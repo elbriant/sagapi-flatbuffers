@@ -1,0 +1,8 @@
+
+table list_dict___2_System_String_System_Int64_ {
+	dict_key:string;
+	dict_value:int64;
+}
+
+
+root_type list_dict___2_System_String_System_Int64_;

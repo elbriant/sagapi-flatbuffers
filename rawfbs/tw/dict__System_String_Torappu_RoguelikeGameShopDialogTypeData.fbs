@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameShopDialogTypeData.fbs";
+
+table dict__System_String_Torappu_RoguelikeGameShopDialogTypeData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameShopDialogTypeData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeGameShopDialogTypeData;

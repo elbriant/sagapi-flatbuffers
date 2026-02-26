@@ -1,0 +1,14 @@
+
+table Torappu_SandboxV2RiftTeamBuffData {
+	teamId:string;
+	teamName:string;
+	buffLevel:int32;
+	buffDesc:string;
+	teamSmallIconId:string;
+	teamBigIconId:string;
+	teamDesc:string;
+	teamBgId:string;
+}
+
+
+root_type Torappu_SandboxV2RiftTeamBuffData;

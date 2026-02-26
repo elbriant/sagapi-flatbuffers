@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeEventType.fbs";
+include "Torappu_RoguelikeTotemBlurNodeType.fbs";
+
+table Torappu_RoguelikeTotemLinkedNodeTypeData {
+	effectiveNodeTypes:[Torappu_RoguelikeEventType];
+	blurNodeTypes:[Torappu_RoguelikeTotemBlurNodeType];
+}
+
+
+root_type Torappu_RoguelikeTotemLinkedNodeTypeData;

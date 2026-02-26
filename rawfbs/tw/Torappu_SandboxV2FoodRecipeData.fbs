@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2FoodRecipeData {
+	foodId:string;
+	mats:[string];
+}
+
+
+root_type Torappu_SandboxV2FoodRecipeData;

@@ -1,0 +1,8 @@
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData {
+	modeId:string;
+	hp:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData;

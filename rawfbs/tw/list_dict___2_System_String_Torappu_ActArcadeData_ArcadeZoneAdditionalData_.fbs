@@ -1,0 +1,9 @@
+include "Torappu_ActArcadeData_ArcadeZoneAdditionalData.fbs";
+
+table list_dict___2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArcadeData_ArcadeZoneAdditionalData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_;

@@ -1,0 +1,11 @@
+include "Torappu_EnemyDatabase_EnemyData.fbs";
+
+table Torappu_LevelData_EnemyDataDbReference {
+	useDb:bool;
+	id:string;
+	level:int32;
+	overwrittenData:Torappu_EnemyDatabase_EnemyData;
+}
+
+
+root_type Torappu_LevelData_EnemyDataDbReference;

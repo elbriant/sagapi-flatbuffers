@@ -1,0 +1,6 @@
+
+enum Torappu_CharWordVoiceType : int32 {
+	ONLY_TEXT = 0,
+	HAVE_CV = 1,
+	ENUM = 2
+}

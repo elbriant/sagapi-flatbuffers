@@ -1,0 +1,6 @@
+
+enum Torappu_MainlineZoneData_ZoneReplayBtnType : int32 {
+	NONE = 0,
+	RECAP = 1,
+	REPLAY = 2
+}

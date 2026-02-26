@@ -1,0 +1,9 @@
+include "Torappu_Audio_Middleware_Data_Bank.fbs";
+
+table Torappu_Audio_Middleware_AudioAtom {
+	bank:Torappu_Audio_Middleware_Data_Bank;
+	name:string;
+}
+
+
+root_type Torappu_Audio_Middleware_AudioAtom;

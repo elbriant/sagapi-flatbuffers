@@ -1,0 +1,7 @@
+
+table System_Int32A_ {
+	arr_values:[int32];
+}
+
+
+root_type System_Int32A_;

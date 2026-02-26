@@ -1,0 +1,10 @@
+include "Torappu_VersusCheckInData_TasteType.fbs";
+include "Torappu_VersusCheckInData_TasteRewardData.fbs";
+
+table dict__Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData {
+	dict_key:Torappu_VersusCheckInData_TasteType;
+	dict_value:Torappu_VersusCheckInData_TasteRewardData;
+}
+
+
+root_type dict__Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData;

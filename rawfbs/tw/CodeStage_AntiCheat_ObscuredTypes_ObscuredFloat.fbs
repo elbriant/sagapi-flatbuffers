@@ -1,0 +1,13 @@
+include "CodeStage_AntiCheat_Common_ACTkByte4.fbs";
+
+table CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat {
+	currentCryptoKey:int32;
+	hiddenValue:int32;
+	hiddenValueOldByte4:CodeStage_AntiCheat_Common_ACTkByte4;
+	inited:bool;
+	fakeValue:float;
+	fakeValueActive:bool;
+}
+
+
+root_type CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;

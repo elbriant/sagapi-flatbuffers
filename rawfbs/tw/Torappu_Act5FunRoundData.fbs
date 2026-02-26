@@ -1,0 +1,20 @@
+
+table Torappu_Act5FunRoundData {
+	roundId:string;
+	stageId:string;
+	enemyPredefined:bool;
+	round:int32;
+	enemyPoint:float;
+	enemyScoreRandom:float;
+	minType:int32;
+	maxType:int32;
+	choiceCount:int32;
+	choiceId1:string;
+	choiceId2:string;
+	choiceId3:string;
+	choiceId4:string;
+	enableSideTarget:bool;
+}
+
+
+root_type Torappu_Act5FunRoundData;

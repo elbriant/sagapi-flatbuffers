@@ -1,0 +1,9 @@
+include "Torappu_ReturnDailyTaskData.fbs";
+
+table dict__System_String_list___1_Torappu_ReturnDailyTaskData {
+	dict_key:string;
+	dict_value:[Torappu_ReturnDailyTaskData];
+}
+
+
+root_type dict__System_String_list___1_Torappu_ReturnDailyTaskData;

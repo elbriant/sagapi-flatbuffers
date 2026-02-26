@@ -1,0 +1,34 @@
+include "CodeStage_AntiCheat_ObscuredTypes_ObscuredInt.fbs";
+include "CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat.fbs";
+
+table Torappu_AttributesData {
+	maxHp:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	atk:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	def:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	magicResistance:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	cost:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	blockCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	moveSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	attackSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	baseAttackTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	respawnTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	hpRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	spRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	maxDeployCount:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	maxDeckStackCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	tauntLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	massLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	baseForceLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	stunImmune:bool;
+	silenceImmune:bool;
+	sleepImmune:bool;
+	frozenImmune:bool;
+	levitateImmune:bool;
+	disarmedCombatImmune:bool;
+	fearedImmune:bool;
+	palsyImmune:bool;
+	attractImmune:bool;
+}
+
+
+root_type Torappu_AttributesData;

@@ -1,0 +1,16 @@
+include "Torappu_SandboxV2BaseUnlockFuncType.fbs";
+include "Torappu_SandboxV2BaseUnlockFuncDisplayType.fbs";
+
+table Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData {
+	funcId:string;
+	unlockType:Torappu_SandboxV2BaseUnlockFuncType;
+	typeTitle:string;
+	desc:string;
+	icon:string;
+	darkMode:bool;
+	sortId:int32;
+	displayType:Torappu_SandboxV2BaseUnlockFuncDisplayType;
+}
+
+
+root_type Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData;

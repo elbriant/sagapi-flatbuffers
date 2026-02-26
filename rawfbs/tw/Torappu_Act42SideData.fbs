@@ -1,0 +1,20 @@
+include "list_dict___2_System_String_Torappu_Act42SideData_Act42SideTrustorData_.fbs";
+include "dict__System_String_Torappu_Act42SideData_Act42SideTaskData.fbs";
+include "dict__System_String_Torappu_Act42SideData_Act42SideGunData.fbs";
+include "list_dict___2_System_String_Torappu_Act42SideData_Act42SideFileData_.fbs";
+include "Torappu_Act42SideData_Act42SideDailyRewardData.fbs";
+include "Torappu_Act42SideData_Act42SideConstData.fbs";
+include "dict__System_String_Torappu_Act42SideData_Act42SideZoneAdditionData.fbs";
+
+table Torappu_Act42SideData {
+	trustorData:[list_dict___2_System_String_Torappu_Act42SideData_Act42SideTrustorData_];
+	taskData:[dict__System_String_Torappu_Act42SideData_Act42SideTaskData];
+	gunData:[dict__System_String_Torappu_Act42SideData_Act42SideGunData];
+	fileData:[list_dict___2_System_String_Torappu_Act42SideData_Act42SideFileData_];
+	dailyRewardList:[Torappu_Act42SideData_Act42SideDailyRewardData];
+	constData:Torappu_Act42SideData_Act42SideConstData;
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act42SideData_Act42SideZoneAdditionData];
+}
+
+
+root_type Torappu_Act42SideData;

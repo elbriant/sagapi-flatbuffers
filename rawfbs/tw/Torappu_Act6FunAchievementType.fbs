@@ -1,0 +1,5 @@
+
+enum Torappu_Act6FunAchievementType : int32 {
+	NORMAL = 0,
+	EX = 1
+}

@@ -1,0 +1,11 @@
+include "Torappu_ActArchiveTotemType.fbs";
+
+table Torappu_ActArchiveTotemItemData {
+	id:string;
+	type:Torappu_ActArchiveTotemType;
+	enrollConditionId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ActArchiveTotemItemData;

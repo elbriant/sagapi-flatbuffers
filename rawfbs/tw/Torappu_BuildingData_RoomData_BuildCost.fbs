@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_BuildingData_RoomData_BuildCost {
+	items:[Torappu_ItemBundle];
+	time:int64;
+	labor:int32;
+}
+
+
+root_type Torappu_BuildingData_RoomData_BuildCost;

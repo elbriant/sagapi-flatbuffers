@@ -1,0 +1,18 @@
+include "Torappu_MailArchiveItemType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_MailArchiveItemData {
+	id:string;
+	type:Torappu_MailArchiveItemType;
+	sortId:int32;
+	displayReceiveTs:int64;
+	year:int32;
+	dateDelta:int32;
+	senderId:string;
+	title:string;
+	content:string;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_MailArchiveItemData;

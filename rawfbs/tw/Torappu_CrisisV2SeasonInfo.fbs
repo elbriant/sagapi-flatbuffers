@@ -1,0 +1,18 @@
+
+table Torappu_CrisisV2SeasonInfo {
+	seasonId:string;
+	name:string;
+	startTs:int64;
+	endTs:int64;
+	medalGroupId:string;
+	medalId:string;
+	themeColor1:string;
+	themeColor2:string;
+	themeColor3:string;
+	seasonBgm:string;
+	seasonBgmChallenge:string;
+	crisisV2SeasonCode:string;
+}
+
+
+root_type Torappu_CrisisV2SeasonInfo;

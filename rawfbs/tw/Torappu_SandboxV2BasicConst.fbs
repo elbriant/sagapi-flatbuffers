@@ -1,0 +1,65 @@
+include "Torappu_ItemBundle.fbs";
+include "dict__System_String_System_String.fbs";
+include "Torappu_SandboxV2DiffModeData.fbs";
+
+table Torappu_SandboxV2BasicConst {
+	staminaItemId:string;
+	goldItemId:string;
+	dimensioncoinItemId:string;
+	alwaysShowItemIdsConstruct:[string];
+	alwaysShowItemIds:[string];
+	bagBottomBarResType:[string];
+	failedCookFood:string;
+	maxFoodDuration:int32;
+	drinkCostOnce:int32;
+	drinkMakeLimit:int32;
+	specialMatWater:string;
+	workbenchMakeLimit:int32;
+	logisticsPosLimit:int32;
+	logisticsUnlockLevel:int32;
+	logisticsDrinkCost:int32;
+	logisticsEvacuateTips:string;
+	logisticsEvacuateWarning:string;
+	baseRepairCost:int32;
+	portRepairCost:int32;
+	unitFenceLimit:int32;
+	unitRareFenceLimit:int32;
+	cageId:string;
+	fenceId:string;
+	rareFenceId:string;
+	monthlyRushEntryText1:string;
+	monthlyEntryUnlockText:string;
+	monthlyEntryRiftText:string;
+	monthlyRushIntro:string;
+	monthlyCoin:Torappu_ItemBundle;
+	charRarityColorList:[string];
+	squadCharCapacity:int32;
+	totalSquadCnt:int32;
+	toolboxCapacity:int32;
+	toolCntLimitInSquad:int32;
+	miniSquadCharCapacity:int32;
+	miniSquadDrinkCost:int32;
+	normalSquadDrinkCost:int32;
+	emptySquadDrinkCost:int32;
+	achieveTypeAll:string;
+	constructModeBgmHome:string;
+	battleBgmCollect:string;
+	battleBgmHunt:string;
+	battleBgmEnemyRush:string;
+	battleBgmBossRush:string;
+	imgLoadingNormalName:string;
+	imgLoadingBaseName:string;
+	imgUnloadingBaseName:string;
+	isChallengeOpen:bool;
+	isRacingOpen:bool;
+	hasExploreMode:bool;
+	exploreModeBuffDescs:[string];
+	modeSelectTips:string;
+	stringRes:[dict__System_String_System_String];
+	diffList:[Torappu_SandboxV2DiffModeData];
+	battlePreloadEnemies:[string];
+	battleExcludedTrapsInRush:[string];
+}
+
+
+root_type Torappu_SandboxV2BasicConst;

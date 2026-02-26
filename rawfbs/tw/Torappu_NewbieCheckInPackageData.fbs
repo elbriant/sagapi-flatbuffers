@@ -1,0 +1,15 @@
+include "dict__System_Int32_list___1_Torappu_NewbieCheckInPackageRewardData.fbs";
+
+table Torappu_NewbieCheckInPackageData {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	bindGPGoodId:string;
+	checkInDuration:int32;
+	totalCheckInDay:int32;
+	iconId:string;
+	checkInRewardDict:[dict__System_Int32_list___1_Torappu_NewbieCheckInPackageRewardData];
+}
+
+
+root_type Torappu_NewbieCheckInPackageData;

@@ -1,0 +1,9 @@
+include "Torappu_Act5D1Data.fbs";
+
+table dict__System_String_Torappu_Act5D1Data {
+	dict_key:string;
+	dict_value:Torappu_Act5D1Data;
+}
+
+
+root_type dict__System_String_Torappu_Act5D1Data;

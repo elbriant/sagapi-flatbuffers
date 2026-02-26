@@ -1,0 +1,8 @@
+
+table Torappu_SpecialOperatorLineRelationData {
+	startPointList:[string];
+	endPointList:[string];
+}
+
+
+root_type Torappu_SpecialOperatorLineRelationData;

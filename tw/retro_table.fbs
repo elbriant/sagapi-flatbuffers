@@ -1,0 +1,1134 @@
+
+table list_dict___2_System_String_System_String_ {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_StageValidInfo {
+	startTs:int64;
+	endTs:int64;
+}
+
+
+
+table dict__System_String_Torappu_StageValidInfo {
+	dict_key:string;
+	dict_value:Torappu_StageValidInfo;
+}
+
+
+
+enum Torappu_ItemType : int32 {
+	NONE = 0,
+	CHAR = 1,
+	CARD_EXP = 2,
+	MATERIAL = 3,
+	GOLD = 4,
+	EXP_PLAYER = 5,
+	TKT_TRY = 6,
+	TKT_RECRUIT = 7,
+	TKT_INST_FIN = 8,
+	TKT_GACHA = 9,
+	ACTIVITY_COIN = 10,
+	DIAMOND = 11,
+	DIAMOND_SHD = 12,
+	HGG_SHD = 13,
+	LGG_SHD = 14,
+	FURN = 15,
+	AP_GAMEPLAY = 16,
+	AP_BASE = 17,
+	SOCIAL_PT = 18,
+	CHAR_SKIN = 19,
+	TKT_GACHA_10 = 20,
+	TKT_GACHA_PRSV = 21,
+	AP_ITEM = 22,
+	AP_SUPPLY = 23,
+	RENAMING_CARD = 24,
+	RENAMING_CARD_2 = 25,
+	ET_STAGE = 26,
+	ACTIVITY_ITEM = 27,
+	VOUCHER_PICK = 28,
+	VOUCHER_CGACHA = 29,
+	VOUCHER_MGACHA = 30,
+	CRS_SHOP_COIN = 31,
+	CRS_RUNE_COIN = 32,
+	LMTGS_COIN = 33,
+	EPGS_COIN = 34,
+	LIMITED_TKT_GACHA_10 = 35,
+	LIMITED_FREE_GACHA = 36,
+	REP_COIN = 37,
+	ROGUELIKE = 38,
+	LINKAGE_TKT_GACHA_10 = 39,
+	VOUCHER_ELITE_II_4 = 40,
+	VOUCHER_ELITE_II_5 = 41,
+	VOUCHER_ELITE_II_6 = 42,
+	VOUCHER_SKIN = 43,
+	RETRO_COIN = 44,
+	PLAYER_AVATAR = 45,
+	UNI_COLLECTION = 46,
+	VOUCHER_FULL_POTENTIAL = 47,
+	RL_COIN = 48,
+	RETURN_CREDIT = 49,
+	MEDAL = 50,
+	CHARM = 51,
+	HOME_BACKGROUND = 52,
+	EXTERMINATION_AGENT = 53,
+	OPTIONAL_VOUCHER_PICK = 54,
+	ACT_CART_COMPONENT = 55,
+	VOUCHER_LEVELMAX_6 = 56,
+	VOUCHER_LEVELMAX_5 = 57,
+	VOUCHER_LEVELMAX_4 = 58,
+	VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+	VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+	VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+	ACTIVITY_POTENTIAL = 62,
+	ITEM_PACK = 63,
+	SANDBOX = 64,
+	FAVOR_ADD_ITEM = 65,
+	CLASSIC_SHD = 66,
+	CLASSIC_TKT_GACHA = 67,
+	CLASSIC_TKT_GACHA_10 = 68,
+	LIMITED_BUFF = 69,
+	CLASSIC_FES_PICK_TIER_5 = 70,
+	CLASSIC_FES_PICK_TIER_6 = 71,
+	RETURN_PROGRESS = 72,
+	NEW_PROGRESS = 73,
+	MCARD_VOUCHER = 74,
+	MATERIAL_ISSUE_VOUCHER = 75,
+	CRS_SHOP_COIN_V2 = 76,
+	HOME_THEME = 77,
+	SANDBOX_PERM = 78,
+	SANDBOX_TOKEN = 79,
+	TEMPLATE_TRAP = 80,
+	NAME_CARD_SKIN = 81,
+	EMOTICON_SET = 82,
+	EXCLUSIVE_TKT_GACHA = 83,
+	EXCLUSIVE_TKT_GACHA_10 = 84,
+	SO_CHAR_EXP = 85,
+	GIFTPACKAGE_TKT = 86
+}
+
+table Torappu_ItemBundle {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+}
+
+
+
+enum Torappu_StageDropType : int32 {
+	NONE = 0,
+	ONCE = 1,
+	NORMAL = 2,
+	SPECIAL = 3,
+	ADDITIONAL = 4,
+	APRETURN = 5,
+	DIAMOND_MATERIAL = 6,
+	FUNITURE_DROP = 7,
+	COMPLETE = 8,
+	CHARM_DROP = 9,
+	OVERRIDE_DROP = 10,
+	ITEM_RETURN = 11
+}
+
+table Torappu_WeightItemBundle {
+	id:string;
+	type:Torappu_ItemType;
+	dropType:Torappu_StageDropType;
+	count:int32;
+	weight:int32;
+}
+
+
+
+table Torappu_WeightItemBundleA_ {
+	arr_values:[Torappu_WeightItemBundle];
+}
+
+
+
+table Torappu_StageData_DisplayRewards {
+	type:Torappu_ItemType;
+	id:string;
+	dropType:Torappu_StageDropType;
+}
+
+
+
+enum Torappu_OccPer : int32 {
+	ALWAYS = 0,
+	ALMOST = 1,
+	USUAL = 2,
+	OFTEN = 3,
+	SOMETIMES = 4,
+	NEVER = 5,
+	DEFINITELY_BUFF = 6
+}
+
+table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
+}
+
+
+
+table Torappu_StageData_StageDropInfo {
+	firstPassRewards:[Torappu_ItemBundle];
+	firstCompleteRewards:[Torappu_ItemBundle];
+	passRewards:[Torappu_WeightItemBundleA_];
+	completeRewards:[Torappu_WeightItemBundleA_];
+	displayRewards:[Torappu_StageData_DisplayRewards];
+	displayDetailRewards:[Torappu_StageData_DisplayDetailRewards];
+}
+
+
+
+table Torappu_RetroStageOverrideInfo {
+	dropInfo:Torappu_StageData_StageDropInfo;
+	zoneId:string;
+	apCost:int32;
+	apFailReturn:int32;
+	expGain:int32;
+	goldGain:int32;
+	passFavor:int32;
+	completeFavor:int32;
+	canMultipleBattle:bool;
+}
+
+
+
+table dict__System_String_Torappu_RetroStageOverrideInfo {
+	dict_key:string;
+	dict_value:Torappu_RetroStageOverrideInfo;
+}
+
+
+
+enum Torappu_RetroType : int32 {
+	SIDESTORY = 0,
+	BRANCHLINE = 1
+}
+
+enum Torappu_ActivityType : int32 {
+	DEFAULT = 0,
+	MISSION_ONLY = 1,
+	CHECKIN_ONLY = 2,
+	CHECKIN_ALL_PLAYER = 3,
+	TYPE_ACT3D0 = 4,
+	TYPE_ACT4D0 = 5,
+	TYPE_ACT5D0 = 6,
+	TYPE_ACT5D1 = 7,
+	COLLECTION = 8,
+	AVG_ONLY = 9,
+	TYPE_ACT9D0 = 10,
+	TYPE_ACT12SIDE = 11,
+	TYPE_ACT13SIDE = 12,
+	TYPE_ACT17SIDE = 13,
+	LOGIN_ONLY = 14,
+	MINISTORY = 15,
+	ROGUELIKE = 16,
+	PRAY_ONLY = 17,
+	MULTIPLAY = 18,
+	MULTIPLAY_VERIFY2 = 19,
+	TYPE_ACT17D7 = 20,
+	GRID_GACHA = 21,
+	GRID_GACHA_V2 = 22,
+	INTERLOCK = 23,
+	APRIL_FOOL = 24,
+	BOSS_RUSH = 25,
+	TYPE_ACT20SIDE = 26,
+	FLOAT_PARADE = 27,
+	TYPE_ACT21SIDE = 28,
+	MAIN_BUFF = 29,
+	TYPE_ACT24SIDE = 30,
+	FLIP_ONLY = 31,
+	TYPE_ACT25SIDE = 32,
+	CHECKIN_VS = 33,
+	SWITCH_ONLY = 34,
+	TYPE_ACT27SIDE = 35,
+	UNIQUE_ONLY = 36,
+	MAINLINE_BP = 37,
+	TYPE_ACT42D0 = 38,
+	TYPE_ACT29SIDE = 39,
+	BLESS_ONLY = 40,
+	CHECKIN_ACCESS = 41,
+	YEAR_5_GENERAL = 42,
+	TYPE_ACT35SIDE = 43,
+	VEC_BREAK = 44,
+	TYPE_ACT36SIDE = 45,
+	TYPE_ACT38SIDE = 46,
+	AUTOCHESS_VERIFY1 = 47,
+	CHECKIN_VIDEO = 48,
+	ARCADE = 49,
+	MULTIPLAY_V3 = 50,
+	TYPE_MAINSS = 51,
+	ENEMY_DUEL = 52,
+	VEC_BREAK_V2 = 53,
+	TYPE_ACT42SIDE = 54,
+	TYPE_ACT44SIDE = 55,
+	ENUM = 56
+}
+
+table Torappu_RetroActData {
+	retroId:string;
+	type:Torappu_RetroType;
+	linkedActId:[string];
+	startTime:int64;
+	trailStartTime:int64;
+	index:int32;
+	name:string;
+	haveTrail:bool;
+	customActId:string;
+	customActType:Torappu_ActivityType;
+}
+
+
+
+table dict__System_String_Torappu_RetroActData {
+	dict_key:string;
+	dict_value:Torappu_RetroActData;
+}
+
+
+
+table Torappu_RetroTrailRewardItem {
+	trailRewardId:string;
+	starCount:int32;
+	rewardItem:Torappu_ItemBundle;
+}
+
+
+
+table Torappu_RetroTrailData {
+	retroId:string;
+	trailStartTime:int64;
+	trailRewardList:[Torappu_RetroTrailRewardItem];
+	stageList:[string];
+	relatedChar:string;
+	relatedFullPotentialItemId:string;
+	themeColor:string;
+	fullPotentialItemId:string;
+}
+
+
+
+table dict__System_String_Torappu_RetroTrailData {
+	dict_key:string;
+	dict_value:Torappu_RetroTrailData;
+}
+
+
+
+enum Torappu_StageType : int32 {
+	MAIN = 0,
+	DAILY = 1,
+	TRAINING = 2,
+	ACTIVITY = 3,
+	GUIDE = 4,
+	SUB = 5,
+	CAMPAIGN = 6,
+	SPECIAL_STORY = 7,
+	HANDBOOK_BATTLE = 8,
+	CLIMB_TOWER = 9,
+	ENUM = 10
+}
+
+enum Torappu_LevelData_Difficulty : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	FOUR_STAR = 2,
+	EASY = 4,
+	SIX_STAR = 8,
+	ALL = 15
+}
+
+enum Torappu_StageData_PerformanceStageFlag : int32 {
+	NORMAL_STAGE = 0,
+	PERFORMANCE_STAGE = 1
+}
+
+enum Torappu_StageDiffGroup : int32 {
+	NONE = 0,
+	EASY = 1,
+	NORMAL = 2,
+	TOUGH = 4,
+	ALL = 7
+}
+
+enum Torappu_PlayerBattleRank : int32 {
+	FAIL = 1,
+	PASS = 2,
+	COMPLETE = 3,
+	ENUM_DEFAULT_VALUE = 0
+}
+
+table Torappu_StageData_ConditionDesc {
+	stageId:string;
+	completeState:Torappu_PlayerBattleRank;
+}
+
+
+
+enum Torappu_AppearanceStyle : int32 {
+	MAIN_NORMAL = 0,
+	MAIN_PREDEFINED = 1,
+	SUB = 2,
+	TRAINING = 3,
+	HIGH_DIFFICULTY = 4,
+	MIST_OPS = 5,
+	SPECIAL_STORY = 6
+}
+
+table Torappu_StageData_ExtraConditionDesc {
+	index:int32;
+	template:string;
+	unlockParam:[string];
+}
+
+
+
+enum Torappu_StageData_SpecialStageUnlockProgressType : int32 {
+	ONCE = 0,
+	PROGRESS = 1
+}
+
+table dict__System_Int32_System_String {
+	dict_key:int32;
+	dict_value:string;
+}
+
+
+
+table Torappu_StageData_SpecialProgressInfo {
+	progressType:Torappu_StageData_SpecialStageUnlockProgressType;
+	descList:[dict__System_Int32_System_String];
+}
+
+
+
+table Torappu_StageData_SpecialStoryInfo {
+	stageId:string;
+	rewards:[Torappu_ItemBundle];
+	progressInfo:Torappu_StageData_SpecialProgressInfo;
+	imageId:string;
+}
+
+
+
+table Torappu_StageData {
+	stageType:Torappu_StageType;
+	difficulty:Torappu_LevelData_Difficulty;
+	performanceStageFlag:Torappu_StageData_PerformanceStageFlag;
+	diffGroup:Torappu_StageDiffGroup;
+	unlockCondition:[Torappu_StageData_ConditionDesc];
+	stageId:string;
+	levelId:string;
+	zoneId:string;
+	code:string;
+	name:string;
+	description:string;
+	hardStagedId:string;
+	sixStarStageId:string;
+	dangerLevel:string;
+	dangerPoint:float;
+	loadingPicId:string;
+	canPractice:bool;
+	canBattleReplay:bool;
+	apCost:int32;
+	apFailReturn:int32;
+	maxSlot:int32;
+	etItemId:string;
+	etCost:int32;
+	etFailReturn:int32;
+	etButtonStyle:string;
+	apProtectTimes:int32;
+	diamondOnceDrop:int32;
+	practiceTicketCost:int32;
+	dailyStageDifficulty:int32;
+	expGain:int32;
+	goldGain:int32;
+	loseExpGain:int32;
+	loseGoldGain:int32;
+	passFavor:int32;
+	completeFavor:int32;
+	slProgress:int32;
+	displayMainItem:string;
+	hilightMark:bool;
+	bossMark:bool;
+	isPredefined:bool;
+	isHardPredefined:bool;
+	isSkillSelectablePredefined:bool;
+	isStoryOnly:bool;
+	appearanceStyle:Torappu_AppearanceStyle;
+	stageDropInfo:Torappu_StageData_StageDropInfo;
+	canUseCharm:bool;
+	canUseTech:bool;
+	canUseTrapTool:bool;
+	canUseBattlePerformance:bool;
+	canUseFirework:bool;
+	canMultipleBattle:bool;
+	startButtonOverrideId:string;
+	isStagePatch:bool;
+	mainStageId:string;
+	S_extraCondition:[Torappu_StageData_ExtraConditionDesc];
+	S_extraInfo:[Torappu_StageData_SpecialStoryInfo];
+	sixStarBaseDesc:string;
+	sixStarDisplayRewardList:[Torappu_ItemBundle];
+	advancedRuneIdList1:[string];
+	advancedRuneIdList2:[string];
+}
+
+
+
+table dict__System_String_Torappu_StageData {
+	dict_key:string;
+	dict_value:Torappu_StageData;
+}
+
+
+
+table Torappu_RetroTrailRuleData {
+	title:[string];
+	desc:[string];
+}
+
+
+
+table Torappu_Act17sideData_PlaceData {
+	placeId:string;
+	placeDesc:string;
+	lockEventId:string;
+	zoneId:string;
+	visibleCondType:string;
+	visibleParams:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_PlaceData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_PlaceData;
+}
+
+
+
+enum Torappu_Act17sideData_NodeType : int32 {
+	LANDMARK = 0,
+	STORY = 1,
+	BATTLE = 2,
+	ENDING = 3,
+	TREASURE = 4,
+	EVENT = 5,
+	TECH = 6,
+	CHOICE = 7
+}
+
+enum Torappu_Act17sideData_TrackPointType : int32 {
+	NONE = 0,
+	MAIN = 1,
+	SUB = 2
+}
+
+table Torappu_Act17sideData_NodeInfoData {
+	nodeId:string;
+	nodeType:Torappu_Act17sideData_NodeType;
+	sortId:int32;
+	placeId:string;
+	isPointPlace:bool;
+	chapterId:string;
+	trackPointType:Torappu_Act17sideData_TrackPointType;
+	unlockCondType:string;
+	unlockParams:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_NodeInfoData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_NodeInfoData;
+}
+
+
+
+table Torappu_Act17sideData_LandmarkNodeData {
+	nodeId:string;
+	landmarkId:string;
+	landmarkName:string;
+	landmarkPic:string;
+	landmarkSpecialPic:string;
+	landmarkDesList:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_LandmarkNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_LandmarkNodeData;
+}
+
+
+
+table Torappu_Act17sideData_StoryNodeData {
+	nodeId:string;
+	storyId:string;
+	storyKey:string;
+	storyName:string;
+	storyPic:string;
+	confirmDes:string;
+	storyDesList:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_StoryNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_StoryNodeData;
+}
+
+
+
+table Torappu_Act17sideData_BattleNodeData {
+	nodeId:string;
+	stageId:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_BattleNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_BattleNodeData;
+}
+
+
+
+enum Torappu_Act17sideData_TreasureType : int32 {
+	SMALL = 0,
+	SPECIAL = 1
+}
+
+table Torappu_Act17sideData_TreasureNodeData {
+	nodeId:string;
+	treasureId:string;
+	treasureName:string;
+	treasurePic:string;
+	treasureSpecialPic:string;
+	endEventId:string;
+	confirmDes:string;
+	treasureDesList:[string];
+	missionIdList:[string];
+	rewardList:[Torappu_ItemBundle];
+	treasureType:Torappu_Act17sideData_TreasureType;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_TreasureNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_TreasureNodeData;
+}
+
+
+
+table Torappu_Act17sideData_EventNodeData {
+	nodeId:string;
+	eventId:string;
+	endEventId:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_EventNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_EventNodeData;
+}
+
+
+
+table Torappu_Act17sideData_TechNodeData {
+	nodeId:string;
+	techTreeId:string;
+	techTreeName:string;
+	techPic:string;
+	techSpecialPic:string;
+	endEventId:string;
+	confirmDes:string;
+	techDesList:[string];
+	missionIdList:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_TechNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_TechNodeData;
+}
+
+
+
+table Torappu_Act17sideData_ChoiceNodeOptionData {
+	canRepeat:bool;
+	eventId:string;
+	des:string;
+	unlockDes:string;
+	unlockCondType:string;
+	unlockParams:[string];
+}
+
+
+
+table Torappu_Act17sideData_ChoiceNodeData {
+	nodeId:string;
+	choicePic:string;
+	isDisposable:bool;
+	choiceSpecialPic:string;
+	choiceName:string;
+	choiceDesList:[string];
+	cancelDes:string;
+	choiceNum:int32;
+	optionList:[Torappu_Act17sideData_ChoiceNodeOptionData];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_ChoiceNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_ChoiceNodeData;
+}
+
+
+
+table Torappu_Act17sideData_EventData {
+	eventId:string;
+	eventPic:string;
+	eventSpecialPic:string;
+	eventTitle:string;
+	eventDesList:[string];
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_EventData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_EventData;
+}
+
+
+
+enum Torappu_ActArchiveType : int32 {
+	NONE = 0,
+	TIMELINE = 1,
+	MUSIC = 2,
+	PIC = 3,
+	AVG = 4,
+	STORY = 5,
+	NEWS = 6,
+	BUFF = 7,
+	RELIC = 8,
+	CAPSULE = 9,
+	TRAP = 10,
+	CHAT = 11,
+	LANDMARK = 12,
+	LOG = 13,
+	ACTIVITY_ENTRY = 14,
+	DYNAMIC_MUSIC = 15,
+	DYNAMIC_PIC = 16,
+	ENDBOOK = 17,
+	DYNAMIC_STORY = 18,
+	TOTEM = 19,
+	CHAOS = 20,
+	CHALLENGE_BOOK = 21,
+	ACHIEVEMENT = 22,
+	QUEST = 23,
+	FRAGMENT = 24,
+	DISASTER = 25,
+	COPPER = 26,
+	WRATH = 27
+}
+
+enum Torappu_Act17sideData_ArchiveItemUnlockCondition : int32 {
+	NONE = 0,
+	STAGE = 1,
+	NODE = 2
+}
+
+enum Torappu_Act17sideData_ArchiveItemStageUnlockParam : int32 {
+	NONE = 0,
+	PLAYED = 1,
+	PASS = 2,
+	COMPLETE = 3
+}
+
+table Torappu_Act17sideData_ArchiveItemUnlockData {
+	itemId:string;
+	itemType:Torappu_ActArchiveType;
+	unlockCondition:Torappu_Act17sideData_ArchiveItemUnlockCondition;
+	nodeId:string;
+	stageParam:Torappu_Act17sideData_ArchiveItemStageUnlockParam;
+	chapterId:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_ArchiveItemUnlockData;
+}
+
+
+
+table Torappu_Act17sideData_TechTreeData {
+	techTreeId:string;
+	sortId:int32;
+	techTreeName:string;
+	defaultBranchId:string;
+	lockDes:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_TechTreeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_TechTreeData;
+}
+
+
+
+enum Torappu_ProfessionCategory : int32 {
+	NONE = 0,
+	WARRIOR = 1,
+	SNIPER = 2,
+	TANK = 4,
+	MEDIC = 8,
+	SUPPORT = 16,
+	CASTER = 32,
+	SPECIAL = 64,
+	TOKEN = 128,
+	TRAP = 256,
+	PIONEER = 512
+}
+
+enum Torappu_BuildableType : int32 {
+	NONE = 0,
+	MELEE = 1,
+	RANGED = 2,
+	ALL = 3
+}
+
+enum Torappu_PlayerSideMask : uint8 {
+	ALL = 0,
+	SIDE_A = 2,
+	SIDE_B = 4,
+	NONE = 255
+}
+
+enum Torappu_Battle_SideType : int32 {
+	NONE = 0,
+	ALLY = 1,
+	ENEMY = 2,
+	BOTH_ALLY_AND_ENEMY = 3,
+	NEUTRAL = 4,
+	ALL = 7
+}
+
+enum Torappu_TileData_HeightTypeMask : int32 {
+	NONE = 0,
+	LOWLAND = 1,
+	HIGHLAND = 2,
+	ALL = 3
+}
+
+table Torappu_RuneData_Selector {
+	professionMask:Torappu_ProfessionCategory;
+	buildableMask:Torappu_BuildableType;
+	playerSideMask:Torappu_PlayerSideMask;
+	sideType:Torappu_Battle_SideType;
+	charIdFilter:[string];
+	enemyIdFilter:[string];
+	enemyIdExcludeFilter:[string];
+	enemyLevelTypeFilter:[string];
+	enemyActionHiddenGroupFilter:[string];
+	skillIdFilter:[string];
+	tileKeyFilter:[string];
+	groupTagFilter:[string];
+	filterTagFilter:[string];
+	filterTagExcludeFilter:[string];
+	subProfessionExcludeFilter:[string];
+	mapTagFilter:[string];
+	heightTypeMask:Torappu_TileData_HeightTypeMask;
+}
+
+
+
+table Torappu_Blackboard {
+}
+
+
+
+table Torappu_RuneData {
+	key:string;
+	selector:Torappu_RuneData_Selector;
+	blackboard:Torappu_Blackboard;
+}
+
+
+
+table Torappu_RuneTable_PackedRuneData {
+	id:string;
+	points:float;
+	mutexGroupKey:string;
+	description:string;
+	runes:[Torappu_RuneData];
+}
+
+
+
+table Torappu_Act17sideData_TechTreeBranchData {
+	techTreeBranchId:string;
+	techTreeId:string;
+	techTreeBranchName:string;
+	techTreeBranchIcon:string;
+	techTreeBranchDesc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_TechTreeBranchData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_TechTreeBranchData;
+}
+
+
+
+enum Torappu_Act17sideData_ChapterIconType : int32 {
+	NORMAL = 0,
+	EX = 1,
+	HARD = 2
+}
+
+table Torappu_Act17sideData_MainlineChapterData {
+	chapterId:string;
+	chapterDes:string;
+	chapterIcon:Torappu_Act17sideData_ChapterIconType;
+	unlockDes:string;
+	id:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_MainlineChapterData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_MainlineChapterData;
+}
+
+
+
+table Torappu_Act17sideData_MainlineData {
+	mainlineId:string;
+	nodeId:string;
+	sortId:int32;
+	missionSort:string;
+	zoneId:string;
+	mainlineDes:string;
+	focusNodeId:string;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData_MainlineData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_MainlineData;
+}
+
+
+
+table Torappu_Act17sideData_ZoneData {
+	zoneId:string;
+	unlockPlaceId:string;
+	unlockText:string;
+}
+
+
+
+table Torappu_Act17sideData_ConstData {
+	techTreeUnlockEventId:string;
+}
+
+
+
+table Torappu_Act17sideData {
+	placeDataMap:[dict__System_String_Torappu_Act17sideData_PlaceData];
+	nodeInfoDataMap:[dict__System_String_Torappu_Act17sideData_NodeInfoData];
+	landmarkNodeDataMap:[dict__System_String_Torappu_Act17sideData_LandmarkNodeData];
+	storyNodeDataMap:[dict__System_String_Torappu_Act17sideData_StoryNodeData];
+	battleNodeDataMap:[dict__System_String_Torappu_Act17sideData_BattleNodeData];
+	treasureNodeDataMap:[dict__System_String_Torappu_Act17sideData_TreasureNodeData];
+	eventNodeDataMap:[dict__System_String_Torappu_Act17sideData_EventNodeData];
+	techNodeDataMap:[dict__System_String_Torappu_Act17sideData_TechNodeData];
+	choiceNodeDataMap:[dict__System_String_Torappu_Act17sideData_ChoiceNodeData];
+	eventDataMap:[dict__System_String_Torappu_Act17sideData_EventData];
+	archiveItemUnlockDataMap:[dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData];
+	techTreeDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeData];
+	techTreeBranchDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeBranchData];
+	mainlineChapterDataMap:[dict__System_String_Torappu_Act17sideData_MainlineChapterData];
+	mainlineDataMap:[dict__System_String_Torappu_Act17sideData_MainlineData];
+	zoneDataList:[Torappu_Act17sideData_ZoneData];
+	constData:Torappu_Act17sideData_ConstData;
+}
+
+
+
+table dict__System_String_Torappu_Act17sideData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData;
+}
+
+
+
+enum Torappu_Act25SideData_Act25sideTechType : int32 {
+	TECH_1 = 0,
+	TECH_2 = 1,
+	TECH_3 = 2,
+	TECH_4 = 3,
+	TECH_NUM = 4
+}
+
+table Torappu_Act25SideData_BattlePerformanceData {
+	itemId:string;
+	sortId:int32;
+	itemName:string;
+	itemIcon:string;
+	itemDesc:string;
+	itemTechType:Torappu_Act25SideData_Act25sideTechType;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table dict__System_String_Torappu_Act25SideData_BattlePerformanceData {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_BattlePerformanceData;
+}
+
+
+
+table Torappu_ActivityCustomData_Act25sideCustomData {
+	battlePerformanceData:[dict__System_String_Torappu_Act25SideData_BattlePerformanceData];
+}
+
+
+
+table dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData {
+	dict_key:string;
+	dict_value:Torappu_ActivityCustomData_Act25sideCustomData;
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_Act20SideData_ResidentCartData {
+	residentPic:string;
+}
+
+
+
+table dict__System_String_Torappu_Act20SideData_ResidentCartData {
+	dict_key:string;
+	dict_value:Torappu_Act20SideData_ResidentCartData;
+}
+
+
+
+table Torappu_Act20SideData {
+	zoneAdditionDataMap:[dict__System_String_System_String];
+	residentCartDatas:[dict__System_String_Torappu_Act20SideData_ResidentCartData];
+}
+
+
+
+table dict__System_String_Torappu_Act20SideData {
+	dict_key:string;
+	dict_value:Torappu_Act20SideData;
+}
+
+
+
+table Torappu_Act21SideData_ZoneAddtionData {
+	zoneId:string;
+	unlockText:string;
+	stageUnlockText:string;
+	entryId:string;
+}
+
+
+
+table dict__System_String_Torappu_Act21SideData_ZoneAddtionData {
+	dict_key:string;
+	dict_value:Torappu_Act21SideData_ZoneAddtionData;
+}
+
+
+
+table Torappu_Act21SideData_ConstData {
+	lineConnectZone:string;
+}
+
+
+
+table Torappu_Act21SideData {
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act21SideData_ZoneAddtionData];
+	constData:Torappu_Act21SideData_ConstData;
+}
+
+
+
+table dict__System_String_Torappu_Act21SideData {
+	dict_key:string;
+	dict_value:Torappu_Act21SideData;
+}
+
+
+
+table Torappu_ActivityCustomData {
+	typeAct17sideData:[dict__System_String_Torappu_Act17sideData];
+	typeAct25sideData:[dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData];
+	typeAct20sideData:[dict__System_String_Torappu_Act20SideData];
+	typeAct21sideData:[dict__System_String_Torappu_Act21SideData];
+}
+
+
+
+table dict__System_Int32_System_Int32 {
+	dict_key:int32;
+	dict_value:int32;
+}
+
+
+
+table Torappu_RetroStageTable {
+	zoneToRetro:[list_dict___2_System_String_System_String_];
+	stageValidInfo:[dict__System_String_Torappu_StageValidInfo];
+	stages:[dict__System_String_Torappu_RetroStageOverrideInfo];
+	retroActList:[dict__System_String_Torappu_RetroActData];
+	retroTrailList:[dict__System_String_Torappu_RetroTrailData];
+	stageList:[dict__System_String_Torappu_StageData];
+	ruleData:Torappu_RetroTrailRuleData;
+	customData:Torappu_ActivityCustomData;
+	initRetroCoin:int32;
+	retroCoinPerWeek:int32;
+	retroCoinMaxOfLevels:[dict__System_Int32_System_Int32];
+	retroUnlockCost:int32;
+	retroDetail:string;
+	retroPreShowTime:int64;
+}
+
+
+
+root_type Torappu_RetroStageTable;

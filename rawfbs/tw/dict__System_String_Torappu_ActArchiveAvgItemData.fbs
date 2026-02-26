@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveAvgItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveAvgItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveAvgItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveAvgItemData;

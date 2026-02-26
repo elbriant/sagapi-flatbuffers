@@ -1,0 +1,5 @@
+
+enum Torappu_Act17sideData_TreasureType : int32 {
+	SMALL = 0,
+	SPECIAL = 1
+}

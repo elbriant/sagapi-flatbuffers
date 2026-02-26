@@ -1,0 +1,11 @@
+
+table Torappu_Act42D0Data_Act42D0RatingInfoData {
+	ratingLevel:int32;
+	costUpLimit:int32;
+	achivement:string;
+	icon:string;
+	milestoneCount:int32;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0RatingInfoData;

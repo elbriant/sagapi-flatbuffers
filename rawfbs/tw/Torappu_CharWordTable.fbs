@@ -1,0 +1,34 @@
+include "dict__System_String_Torappu_CharWordData.fbs";
+include "dict__System_String_Torappu_CharExtraWordData.fbs";
+include "dict__System_String_Torappu_VoiceLangData.fbs";
+include "Torappu_VoiceLangType.fbs";
+include "dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData.fbs";
+include "dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData.fbs";
+include "dict__System_String_Torappu_VoiceLangType.fbs";
+include "dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData.fbs";
+include "Torappu_VoiceLangGroupType.fbs";
+include "Torappu_CharWordShowType.fbs";
+include "dict__System_String_Torappu_FestivalVoiceData.fbs";
+include "dict__System_String_Torappu_FestivalVoiceWeightData.fbs";
+include "dict__System_String_Torappu_ExtraVoiceConfigData.fbs";
+
+table Torappu_CharWordTable {
+	charWords:[dict__System_String_Torappu_CharWordData];
+	charExtraWords:[dict__System_String_Torappu_CharExtraWordData];
+	voiceLangDict:[dict__System_String_Torappu_VoiceLangData];
+	defaultLangType:Torappu_VoiceLangType;
+	newTagList:[string];
+	voiceLangTypeDict:[dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData];
+	voiceLangGroupTypeDict:[dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData];
+	charDefaultTypeDict:[dict__System_String_Torappu_VoiceLangType];
+	startTimeWithTypeDict:[dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData];
+	displayGroupTypeList:[Torappu_VoiceLangGroupType];
+	displayTypeList:[Torappu_VoiceLangType];
+	playVoiceRange:Torappu_CharWordShowType;
+	fesVoiceData:[dict__System_String_Torappu_FestivalVoiceData];
+	fesVoiceWeight:[dict__System_String_Torappu_FestivalVoiceWeightData];
+	extraVoiceConfigData:[dict__System_String_Torappu_ExtraVoiceConfigData];
+}
+
+
+root_type Torappu_CharWordTable;

@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_RoguelikeActivitySeedModeData.fbs";
+
+table Torappu_RoguelikeActivityTable {
+	seedModeDict:[dict__System_String_Torappu_RoguelikeActivitySeedModeData];
+}
+
+
+root_type Torappu_RoguelikeActivityTable;

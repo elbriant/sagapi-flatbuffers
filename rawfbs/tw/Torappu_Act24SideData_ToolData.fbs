@@ -1,0 +1,17 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_Act24SideData_ToolData {
+	toolId:string;
+	sortId:int32;
+	toolName:string;
+	toolDesc:string;
+	toolIcon1:string;
+	toolIcon2:string;
+	toolUnlockDesc:string;
+	toolBuffId:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+	toolStageId:string;
+}
+
+
+root_type Torappu_Act24SideData_ToolData;

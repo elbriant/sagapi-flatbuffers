@@ -1,0 +1,12 @@
+include "Torappu_ItemBundle.fbs";
+include "Torappu_StageData_SpecialProgressInfo.fbs";
+
+table Torappu_StageData_SpecialStoryInfo {
+	stageId:string;
+	rewards:[Torappu_ItemBundle];
+	progressInfo:Torappu_StageData_SpecialProgressInfo;
+	imageId:string;
+}
+
+
+root_type Torappu_StageData_SpecialStoryInfo;

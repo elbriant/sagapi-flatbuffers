@@ -1,0 +1,7 @@
+
+enum Torappu_PlayerBattleRank : int32 {
+	FAIL = 1,
+	PASS = 2,
+	COMPLETE = 3,
+	ENUM_DEFAULT_VALUE = 0
+}

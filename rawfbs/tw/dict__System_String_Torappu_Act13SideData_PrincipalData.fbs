@@ -1,0 +1,9 @@
+include "Torappu_Act13SideData_PrincipalData.fbs";
+
+table dict__System_String_Torappu_Act13SideData_PrincipalData {
+	dict_key:string;
+	dict_value:Torappu_Act13SideData_PrincipalData;
+}
+
+
+root_type dict__System_String_Torappu_Act13SideData_PrincipalData;

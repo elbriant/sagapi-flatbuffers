@@ -1,0 +1,9 @@
+include "Torappu_ActivityTable_TemplateTrapData.fbs";
+
+table dict__System_String_Torappu_ActivityTable_TemplateTrapData {
+	dict_key:string;
+	dict_value:Torappu_ActivityTable_TemplateTrapData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityTable_TemplateTrapData;

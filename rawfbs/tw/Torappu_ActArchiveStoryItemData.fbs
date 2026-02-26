@@ -1,0 +1,8 @@
+
+table Torappu_ActArchiveStoryItemData {
+	storyId:string;
+	storySortId:int32;
+}
+
+
+root_type Torappu_ActArchiveStoryItemData;

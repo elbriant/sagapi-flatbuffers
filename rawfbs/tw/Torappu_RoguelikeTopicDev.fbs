@@ -1,0 +1,18 @@
+include "Torappu_RoguelikeTopicDevNodeType.fbs";
+include "Torappu_RoguelikeTopicDisplayItem.fbs";
+
+table Torappu_RoguelikeTopicDev {
+	buffId:string;
+	sortId:int32;
+	nodeType:Torappu_RoguelikeTopicDevNodeType;
+	nextNodeId:[string];
+	frontNodeId:[string];
+	tokenCost:int32;
+	buffName:string;
+	buffIconId:string;
+	buffTypeName:string;
+	buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem];
+}
+
+
+root_type Torappu_RoguelikeTopicDev;

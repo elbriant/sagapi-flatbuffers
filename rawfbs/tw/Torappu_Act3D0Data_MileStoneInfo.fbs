@@ -1,0 +1,15 @@
+include "Torappu_Act3D0Data_GoodType.fbs";
+include "Torappu_ItemBundle.fbs";
+include "dict__System_String_Torappu_ItemBundle.fbs";
+
+table Torappu_Act3D0Data_MileStoneInfo {
+	mileStoneId:string;
+	orderId:int32;
+	mileStoneType:Torappu_Act3D0Data_GoodType;
+	normalItem:Torappu_ItemBundle;
+	specialItemDict:[dict__System_String_Torappu_ItemBundle];
+	tokenNum:int32;
+}
+
+
+root_type Torappu_Act3D0Data_MileStoneInfo;

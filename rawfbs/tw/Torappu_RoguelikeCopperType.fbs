@@ -1,0 +1,10 @@
+
+enum Torappu_RoguelikeCopperType : int32 {
+	NONE = 0,
+	BLANK = 1,
+	FIGHT = 2,
+	RESOURCE = 3,
+	UNSOUND = 4,
+	TREASURE = 5,
+	SPECIAL = 6
+}

@@ -1,0 +1,10 @@
+include "Torappu_GridPosition.fbs";
+include "Torappu_SharedConsts_Direction.fbs";
+
+table Torappu_LevelData_PredefinedData_PredefinedCharacter {
+	position:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+}
+
+
+root_type Torappu_LevelData_PredefinedData_PredefinedCharacter;

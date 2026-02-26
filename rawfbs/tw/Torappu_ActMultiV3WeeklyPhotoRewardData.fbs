@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActMultiV3WeeklyPhotoRewardData {
+	order:int32;
+	titleDesc:string;
+	unlockTime:int64;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ActMultiV3WeeklyPhotoRewardData;

@@ -1,0 +1,8 @@
+include "Torappu_CharPatchData_UnlockCond_Item.fbs";
+
+table Torappu_CharPatchData_UnlockCond {
+	conds:[Torappu_CharPatchData_UnlockCond_Item];
+}
+
+
+root_type Torappu_CharPatchData_UnlockCond;

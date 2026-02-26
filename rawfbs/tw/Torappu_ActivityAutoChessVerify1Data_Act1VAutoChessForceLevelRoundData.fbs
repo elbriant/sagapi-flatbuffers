@@ -1,0 +1,9 @@
+include "dict__System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData {
+	round:int32;
+	roundData:[dict__System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData];
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData;

@@ -1,0 +1,15 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_RarityRankMask.fbs";
+include "Torappu_ProfessionID.fbs";
+include "Torappu_RarityRank.fbs";
+
+table Torappu_RoguelikeGameUpgradeTicketData {
+	id:string;
+	profession:Torappu_ProfessionCategory;
+	rarity:Torappu_RarityRankMask;
+	professionList:[Torappu_ProfessionID];
+	rarityList:[Torappu_RarityRank];
+}
+
+
+root_type Torappu_RoguelikeGameUpgradeTicketData;

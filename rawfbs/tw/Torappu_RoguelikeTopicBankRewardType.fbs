@@ -1,0 +1,9 @@
+
+enum Torappu_RoguelikeTopicBankRewardType : int32 {
+	NONE = 0,
+	UNLOCK_ITEM = 1,
+	ADD_SHOP_POS = 2,
+	UNLOCK_WITHDRAW = 3,
+	UNLOCK_SHOP_BATTLE = 4,
+	UNLOCK_SHOP_REFRESH = 5
+}

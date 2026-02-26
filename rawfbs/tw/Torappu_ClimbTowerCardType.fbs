@@ -1,0 +1,5 @@
+
+enum Torappu_ClimbTowerCardType : int32 {
+	SEASON = 0,
+	TOWER = 1
+}

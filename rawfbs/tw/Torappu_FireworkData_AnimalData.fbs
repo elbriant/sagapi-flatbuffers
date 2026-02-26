@@ -1,0 +1,21 @@
+include "Torappu_FireworkData_FireworkType.fbs";
+
+table Torappu_FireworkData_AnimalData {
+	animalId:string;
+	sortId:int32;
+	animalName:string;
+	animalBuffDesc1:string;
+	animalBuffDesc2:string;
+	unlockLevel:string;
+	type:Torappu_FireworkData_FireworkType;
+	noneOutlineUnselectIconId:[string];
+	outlineIconId:[string];
+	noneOutlineSelectIconId:[string];
+	unlockToast:string;
+	unlockToastIconId:string;
+	changedToast:string;
+	fireworkAnimalNameIconId:string;
+}
+
+
+root_type Torappu_FireworkData_AnimalData;

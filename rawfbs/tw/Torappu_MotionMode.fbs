@@ -1,0 +1,6 @@
+
+enum Torappu_MotionMode : int32 {
+	WALK = 0,
+	FLY = 1,
+	E_NUM = 2
+}

@@ -1,0 +1,10 @@
+include "Torappu_DataUnlockType.fbs";
+
+table Torappu_NPCUnlock {
+	unLockType:Torappu_DataUnlockType;
+	unLockParam:string;
+	unLockString:string;
+}
+
+
+root_type Torappu_NPCUnlock;

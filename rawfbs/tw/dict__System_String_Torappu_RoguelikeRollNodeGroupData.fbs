@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeRollNodeGroupData.fbs";
+
+table dict__System_String_Torappu_RoguelikeRollNodeGroupData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeRollNodeGroupData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeRollNodeGroupData;

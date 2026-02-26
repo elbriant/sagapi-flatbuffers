@@ -1,0 +1,15 @@
+
+enum Torappu_VoiceLangType : int32 {
+	NONE = 0,
+	JP = 1,
+	CN_MANDARIN = 2,
+	EN = 3,
+	KR = 4,
+	CN_TOPOLECT = 5,
+	LINKAGE = 6,
+	ITA = 7,
+	GER = 8,
+	RUS = 9,
+	FRE = 10,
+	SPA = 11
+}

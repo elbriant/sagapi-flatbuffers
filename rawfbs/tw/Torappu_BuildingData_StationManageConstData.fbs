@@ -1,0 +1,19 @@
+
+table Torappu_BuildingData_StationManageConstData {
+	cantWorkToastNoTiredChar:string;
+	cantWorkToastNoAvailQueue:string;
+	cantWorkToastNoNeed:string;
+	cantRestToastNoTiredChar:string;
+	cantRestToastNoAvailDorm:string;
+	workBatchToast:string;
+	restBatchToast:string;
+	roomNoAvailQueueToast:string;
+	cantUseNoPerson:string;
+	cantUseWorking:string;
+	queueCleared:string;
+	updateTime:int64;
+	dormLockUpdateTime:int64;
+}
+
+
+root_type Torappu_BuildingData_StationManageConstData;

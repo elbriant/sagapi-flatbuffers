@@ -1,0 +1,9 @@
+include "Torappu_AllPlayerCheckinData.fbs";
+
+table dict__System_String_Torappu_AllPlayerCheckinData {
+	dict_key:string;
+	dict_value:Torappu_AllPlayerCheckinData;
+}
+
+
+root_type dict__System_String_Torappu_AllPlayerCheckinData;

@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_LODLEVEL.fbs";
+
+table dict__Torappu_BuildingData_LODLEVEL_list___1_System_String {
+	dict_key:Torappu_BuildingData_LODLEVEL;
+	dict_value:[string];
+}
+
+
+root_type dict__Torappu_BuildingData_LODLEVEL_list___1_System_String;

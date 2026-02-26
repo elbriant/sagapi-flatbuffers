@@ -1,0 +1,16 @@
+include "Torappu_Act1VAutoChessEffectType.fbs";
+include "Torappu_Act1VAutoChessEffectCounterType.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData {
+	effectId:string;
+	effectType:Torappu_Act1VAutoChessEffectType;
+	effectCounterType:Torappu_Act1VAutoChessEffectCounterType;
+	continuedRound:int32;
+	effectName:string;
+	effectDesc:string;
+	effectDecoIconId:string;
+	isMainEnemyEffect:bool;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData;

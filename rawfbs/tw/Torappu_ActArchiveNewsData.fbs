@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveNewsItemData.fbs";
+
+table Torappu_ActArchiveNewsData {
+	news:[dict__System_String_Torappu_ActArchiveNewsItemData];
+}
+
+
+root_type Torappu_ActArchiveNewsData;

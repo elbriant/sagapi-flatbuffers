@@ -1,0 +1,9 @@
+include "Torappu_OpenServerData.fbs";
+
+table dict__System_String_Torappu_OpenServerData {
+	dict_key:string;
+	dict_value:Torappu_OpenServerData;
+}
+
+
+root_type dict__System_String_Torappu_OpenServerData;

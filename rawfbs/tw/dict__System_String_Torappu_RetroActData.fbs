@@ -1,0 +1,9 @@
+include "Torappu_RetroActData.fbs";
+
+table dict__System_String_Torappu_RetroActData {
+	dict_key:string;
+	dict_value:Torappu_RetroActData;
+}
+
+
+root_type dict__System_String_Torappu_RetroActData;

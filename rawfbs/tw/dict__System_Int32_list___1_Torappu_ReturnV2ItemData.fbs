@@ -1,0 +1,9 @@
+include "Torappu_ReturnV2ItemData.fbs";
+
+table dict__System_Int32_list___1_Torappu_ReturnV2ItemData {
+	dict_key:int32;
+	dict_value:[Torappu_ReturnV2ItemData];
+}
+
+
+root_type dict__System_Int32_list___1_Torappu_ReturnV2ItemData;

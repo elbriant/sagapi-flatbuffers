@@ -1,0 +1,6 @@
+
+enum Torappu_MissionItemBgType : int32 {
+	COMMON = 0,
+	Equipment = 1,
+	Char = 2
+}

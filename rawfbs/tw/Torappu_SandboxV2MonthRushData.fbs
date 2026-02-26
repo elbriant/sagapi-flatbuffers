@@ -1,0 +1,20 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SandboxV2MonthRushData {
+	monthlyRushId:string;
+	startTime:int64;
+	endTime:int64;
+	isLast:bool;
+	sortId:int32;
+	rushGroupKey:string;
+	monthlyRushName:string;
+	monthlyRushDes:string;
+	weatherId:string;
+	nodeId:string;
+	conditionGroup:string;
+	conditionDesc:string;
+	rewardItemList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_SandboxV2MonthRushData;

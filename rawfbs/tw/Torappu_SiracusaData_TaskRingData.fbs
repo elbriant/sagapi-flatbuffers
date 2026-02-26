@@ -1,0 +1,16 @@
+include "Torappu_SiracusaData_TaskRingLogicType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SiracusaData_TaskRingData {
+	taskRingId:string;
+	sortIndex:int32;
+	charCardId:string;
+	logicType:Torappu_SiracusaData_TaskRingLogicType;
+	ringText:string;
+	item:Torappu_ItemBundle;
+	isPrecious:bool;
+	taskIdList:[string];
+}
+
+
+root_type Torappu_SiracusaData_TaskRingData;

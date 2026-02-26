@@ -1,0 +1,9 @@
+include "Torappu_StoryVariantData.fbs";
+
+table dict__System_String_Torappu_StoryVariantData {
+	dict_key:string;
+	dict_value:Torappu_StoryVariantData;
+}
+
+
+root_type dict__System_String_Torappu_StoryVariantData;

@@ -1,0 +1,294 @@
+
+enum Torappu_RecommendItemTagTips : int32 {
+	ONSALE = 0,
+	DEADLINE = 1,
+	NONE = 2
+}
+
+enum Torappu_ShopRouteTarget : int32 {
+	RECOMMENDSHOP = 0,
+	CASHSHOP = 1,
+	GIFTPACKAGE = 2,
+	SKINSHOP = 3,
+	HQCSHOP = 4,
+	LQCSHOP = 5,
+	EXQCSHOP = 6,
+	SOCAILSHOP = 7,
+	FURNSHOP = 8,
+	REPSHOP = 9,
+	LMGTSSHOP = 10,
+	EPGSSHOP = 11,
+	CLASSICSHOP = 12,
+	NONE = 13
+}
+
+table Torappu_ShopRecommendData {
+	imgId:string;
+	slotIndex:int32;
+	cmd:Torappu_ShopRouteTarget;
+	param1:string;
+	param2:string;
+	skinId:string;
+}
+
+
+
+table Torappu_ShopRecommendGroup {
+	recommendGroup:[int32];
+	dataList:[Torappu_ShopRecommendData];
+}
+
+
+
+table Torappu_ShopKeeperWord {
+	id:string;
+	text:string;
+}
+
+
+
+enum Torappu_ShopRecommendTemplateType : int32 {
+	DEFAULT = 0,
+	NORSKIN = 1,
+	RETURNSKIN = 2,
+	NORFURN = 3,
+	NORGIFT = 4
+}
+
+table Torappu_ShopRecommendTemplateNormalGiftParam {
+	showStartTs:int64;
+	showEndTs:int64;
+	goodId:string;
+	giftPackageName:string;
+	price:int32;
+	logoId:string;
+	color:string;
+	haveMark:bool;
+	availCount:int32;
+}
+
+
+
+table Torappu_ShopRecommendTemplateNormalSkinParam {
+	showStartTs:int64;
+	showEndTs:int64;
+	skinIds:[string];
+	skinGroupName:string;
+	brandIconId:string;
+	colorBack:string;
+	colorText:string;
+	text:string;
+}
+
+
+
+table Torappu_ShopRecommendTemplateNormalFurnParam {
+	showStartTs:int64;
+	showEndTs:int64;
+	furnPackId:string;
+	isNew:bool;
+	isPackSell:bool;
+	count:int32;
+	colorBack:string;
+	colorText:string;
+	actId:string;
+}
+
+
+
+table Torappu_ShopRecommendTemplateReturnSkinParam {
+	showStartTs:int64;
+	showEndTs:int64;
+}
+
+
+
+table Torappu_ShopRecommendTemplateParam {
+	normalGiftParam:Torappu_ShopRecommendTemplateNormalGiftParam;
+	normalSkinParam:Torappu_ShopRecommendTemplateNormalSkinParam;
+	normalFurnParam:Torappu_ShopRecommendTemplateNormalFurnParam;
+	returnSkinParam:Torappu_ShopRecommendTemplateReturnSkinParam;
+}
+
+
+
+table Torappu_ShopRecommendItem {
+	tagId:string;
+	displayType:string;
+	tagName:string;
+	itemTag:Torappu_RecommendItemTagTips;
+	orderNum:int32;
+	startDatetime:int64;
+	endDatetime:int64;
+	groupList:[Torappu_ShopRecommendGroup];
+	tagWord:Torappu_ShopKeeperWord;
+	templateType:Torappu_ShopRecommendTemplateType;
+	templateParam:Torappu_ShopRecommendTemplateParam;
+}
+
+
+
+table Torappu_ShopCreditUnlockItem {
+	sortId:int32;
+	unlockNum:int32;
+	charId:string;
+}
+
+
+
+table Torappu_ShopCreditUnlockGroup {
+	id:string;
+	index:string;
+	startDateTime:int64;
+	charDict:[Torappu_ShopCreditUnlockItem];
+}
+
+
+
+table dict__System_String_Torappu_ShopCreditUnlockGroup {
+	dict_key:string;
+	dict_value:Torappu_ShopCreditUnlockGroup;
+}
+
+
+
+table Torappu_ShopClientData_ShopKeeperData {
+	welcomeWords:[Torappu_ShopKeeperWord];
+	clickWords:[Torappu_ShopKeeperWord];
+}
+
+
+
+table Torappu_ShopCarouselData_Item {
+	spriteId:string;
+	startTime:int64;
+	endTime:int64;
+	cmd:Torappu_ShopRouteTarget;
+	param1:string;
+	skinId:string;
+	furniId:string;
+}
+
+
+
+table Torappu_ShopCarouselData {
+	items:[Torappu_ShopCarouselData_Item];
+}
+
+
+
+table Torappu_ChooseShopRelation {
+	goodId:string;
+	optionList:[string];
+}
+
+
+
+enum Torappu_ShopUnlockType : int32 {
+	ALWAYS_UNLOCK = 0,
+	SKIN_UNLOCK = 1,
+	FURN_UNLOCK = 2,
+	BOTH_SKIN_FURN = 3
+}
+
+table dict__System_String_Torappu_ShopUnlockType {
+	dict_key:string;
+	dict_value:Torappu_ShopUnlockType;
+}
+
+
+
+enum Torappu_ShopCondTrigPackageType : int32 {
+	NONE = 0,
+	RETURN_PROGRESS = 1,
+	RETURN_ONCE = 2,
+	NEW_PROGRESS = 3
+}
+
+table Torappu_ShopClientGPData {
+	goodId:string;
+	displayName:string;
+	condTrigPackageType:Torappu_ShopCondTrigPackageType;
+}
+
+
+
+table dict__System_String_Torappu_ShopClientGPData {
+	dict_key:string;
+	dict_value:Torappu_ShopClientGPData;
+}
+
+
+
+enum Torappu_ShopGPTabType : int32 {
+	DEFAULT_ALL = 0,
+	MONTH_CARD = 1,
+	PERM = 2,
+	NEWBIE = 3,
+	RETURN = 4,
+	RECOMMOND = 5,
+	TIMELY = 6
+}
+
+table Torappu_ShopGPTabDisplayData {
+	tabId:string;
+	tabName:string;
+	tabType:Torappu_ShopGPTabType;
+	recomDisplayNum:int32;
+	tabPicId:string;
+	tabPicOnColor:string;
+	tabPicOffColor:string;
+	sortId:int32;
+	tabStartTime:int64;
+	tabEndTime:int64;
+	markerPicId:string;
+}
+
+
+
+table dict__System_String_Torappu_ShopGPTabDisplayData {
+	dict_key:string;
+	dict_value:Torappu_ShopGPTabDisplayData;
+}
+
+
+
+table Torappu_LMTGSShopSchedule {
+	gachaPoolId:string;
+	LMTGSId:string;
+	iconColor:string;
+	iconBackColor:string;
+	storeTextColor:string;
+	startTime:int64;
+	endTime:int64;
+}
+
+
+
+table Torappu_LMTGSShopOverlaySchedule {
+	gachaPoolId1:string;
+	gachaPoolId2:string;
+	picId:string;
+}
+
+
+
+table Torappu_ShopClientData {
+	recommendList:[Torappu_ShopRecommendItem];
+	creditUnlockGroup:[dict__System_String_Torappu_ShopCreditUnlockGroup];
+	shopKeeperData:Torappu_ShopClientData_ShopKeeperData;
+	carousels:[Torappu_ShopCarouselData];
+	chooseShopRelations:[Torappu_ChooseShopRelation];
+	shopUnlockDict:[dict__System_String_Torappu_ShopUnlockType];
+	extraQCShopRule:[string];
+	repQCShopRule:[string];
+	shopGPDataDict:[dict__System_String_Torappu_ShopClientGPData];
+	tabDisplayData:[dict__System_String_Torappu_ShopGPTabDisplayData];
+	shopMonthlySubGoodId:string;
+	limitedShopSchedule:[Torappu_LMTGSShopSchedule];
+	overlaySchedule:[Torappu_LMTGSShopOverlaySchedule];
+}
+
+
+
+root_type Torappu_ShopClientData;

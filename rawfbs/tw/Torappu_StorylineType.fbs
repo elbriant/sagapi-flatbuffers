@@ -1,0 +1,5 @@
+
+enum Torappu_StorylineType : int32 {
+	CONTINUE = 0,
+	DISCRETE = 1
+}

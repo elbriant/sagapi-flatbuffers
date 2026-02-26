@@ -1,0 +1,9 @@
+
+table Torappu_EquipTalentData {
+	displayRangeId:bool;
+	upgradeDescription:string;
+	talentIndex:int32;
+}
+
+
+root_type Torappu_EquipTalentData;

@@ -1,0 +1,9 @@
+include "Torappu_RuneStageGroupData.fbs";
+
+table dict__System_String_Torappu_RuneStageGroupData {
+	dict_key:string;
+	dict_value:Torappu_RuneStageGroupData;
+}
+
+
+root_type dict__System_String_Torappu_RuneStageGroupData;

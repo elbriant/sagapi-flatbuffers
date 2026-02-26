@@ -1,0 +1,23 @@
+include "Torappu_Act27SideData_Act27SideMileStoneFurniRewardData.fbs";
+
+table Torappu_Act27SideData_Act27SideConstData {
+	stageId:string;
+	stageCode:string;
+	purchasePriceName:[string];
+	furniRewardList:[Torappu_Act27SideData_Act27SideMileStoneFurniRewardData];
+	prizeText:string;
+	playerShopId:string;
+	milestonePointName:string;
+	inquirePanelTitle:string;
+	inquirePanelDesc:string;
+	gain123:[float];
+	gain113:[float];
+	gain122:[float];
+	gain111:[float];
+	gain11None:[float];
+	gain12None:[float];
+	campaignEnemyCnt:int32;
+}
+
+
+root_type Torappu_Act27SideData_Act27SideConstData;

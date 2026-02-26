@@ -1,0 +1,11 @@
+
+enum Torappu_SandboxV2FoodAttribute : int32 {
+	NONE = 0,
+	SURVIVE = 1,
+	COST = 2,
+	ATTACK = 3,
+	COOLDOWN = 4,
+	SKILL_POINT = 5,
+	SPECIAL = 6,
+	ENHANCED = 7
+}

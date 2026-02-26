@@ -1,0 +1,14 @@
+include "Torappu_SandboxV2ChallengeConst.fbs";
+include "dict__System_String_Torappu_SandboxV2ChallengeModeUnlockData.fbs";
+include "dict__System_String_Torappu_SandboxV2ChallengeModeRewardData.fbs";
+include "Torappu_SandboxV2ChallengeModeDifficultyData.fbs";
+
+table Torappu_SandboxV2ChallengeModeData {
+	challengeConst:Torappu_SandboxV2ChallengeConst;
+	challengeModeUnlockData:[dict__System_String_Torappu_SandboxV2ChallengeModeUnlockData];
+	challengeModeRewardData:[dict__System_String_Torappu_SandboxV2ChallengeModeRewardData];
+	challengeModeDifficultyData:[Torappu_SandboxV2ChallengeModeDifficultyData];
+}
+
+
+root_type Torappu_SandboxV2ChallengeModeData;

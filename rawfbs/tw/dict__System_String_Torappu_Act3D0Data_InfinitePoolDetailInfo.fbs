@@ -1,0 +1,9 @@
+include "Torappu_Act3D0Data_InfinitePoolDetailInfo.fbs";
+
+table dict__System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo {
+	dict_key:string;
+	dict_value:Torappu_Act3D0Data_InfinitePoolDetailInfo;
+}
+
+
+root_type dict__System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo;

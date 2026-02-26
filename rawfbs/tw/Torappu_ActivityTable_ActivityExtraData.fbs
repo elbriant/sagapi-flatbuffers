@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActMainlineBpExtraData.fbs";
+
+table Torappu_ActivityTable_ActivityExtraData {
+	typeMainlineBpData:[dict__System_String_Torappu_ActMainlineBpExtraData];
+}
+
+
+root_type Torappu_ActivityTable_ActivityExtraData;

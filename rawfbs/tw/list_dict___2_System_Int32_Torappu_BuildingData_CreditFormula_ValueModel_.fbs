@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_CreditFormula_ValueModel.fbs";
+
+table list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_ {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_CreditFormula_ValueModel;
+}
+
+
+root_type list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_;

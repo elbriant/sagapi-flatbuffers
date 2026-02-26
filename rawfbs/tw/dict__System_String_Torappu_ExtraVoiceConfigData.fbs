@@ -1,0 +1,9 @@
+include "Torappu_ExtraVoiceConfigData.fbs";
+
+table dict__System_String_Torappu_ExtraVoiceConfigData {
+	dict_key:string;
+	dict_value:Torappu_ExtraVoiceConfigData;
+}
+
+
+root_type dict__System_String_Torappu_ExtraVoiceConfigData;

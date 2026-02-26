@@ -1,0 +1,8 @@
+
+enum Torappu_Act35SideData_DialogueType : int32 {
+	NONE = 0,
+	ENTRY = 1,
+	BONUS = 2,
+	BUY = 3,
+	PROCESS = 4
+}

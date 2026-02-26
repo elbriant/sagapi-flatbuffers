@@ -1,0 +1,15 @@
+include "Torappu_CrisisClientData_SeasonInfo.fbs";
+
+table Torappu_CrisisClientData {
+	seasonInfo:[Torappu_CrisisClientData_SeasonInfo];
+	meta:string;
+	unlockCoinLv3:int32;
+	hardPointPerm:int32;
+	hardPointTemp:int32;
+	voiceGrade:int32;
+	crisisRuneCoinUnlockItemTitle:string;
+	crisisRuneCoinUnlockItemDesc:string;
+}
+
+
+root_type Torappu_CrisisClientData;

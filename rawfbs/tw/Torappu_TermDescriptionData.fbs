@@ -1,0 +1,9 @@
+
+table Torappu_TermDescriptionData {
+	termId:string;
+	termName:string;
+	description:string;
+}
+
+
+root_type Torappu_TermDescriptionData;

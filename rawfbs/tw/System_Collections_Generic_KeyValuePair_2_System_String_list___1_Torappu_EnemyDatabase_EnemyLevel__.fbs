@@ -1,0 +1,9 @@
+include "Torappu_EnemyDatabase_EnemyLevel.fbs";
+
+table System_Collections_Generic_KeyValuePair_2_System_String_list___1_Torappu_EnemyDatabase_EnemyLevel__ {
+	key:string;
+	value:[Torappu_EnemyDatabase_EnemyLevel];
+}
+
+
+root_type System_Collections_Generic_KeyValuePair_2_System_String_list___1_Torappu_EnemyDatabase_EnemyLevel__;

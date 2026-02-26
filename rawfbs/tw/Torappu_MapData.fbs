@@ -1,0 +1,16 @@
+include "System_Int16A__.fbs";
+include "Torappu_TileData.fbs";
+include "Torappu_MapData_Edge.fbs";
+include "Torappu_MapEffectData.fbs";
+
+table Torappu_MapData {
+	map:System_Int16A__;
+	tiles:[Torappu_TileData];
+	blockEdges:[Torappu_MapData_Edge];
+	tags:[string];
+	effects:[Torappu_MapEffectData];
+	layerRects:[string];
+}
+
+
+root_type Torappu_MapData;

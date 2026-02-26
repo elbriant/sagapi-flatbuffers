@@ -1,0 +1,22 @@
+
+table Torappu_Act5funConst {
+	storyStageId:string;
+	betStageId:string;
+	storyRoundnumber:int32;
+	betRoundnumber:int32;
+	initialFundStory:int32;
+	initialFundBet:int32;
+	minFundDrop:int32;
+	maxFund:int64;
+	selectTime:float;
+	npcCountInRound:int32;
+	selectDescription:string;
+	selectLeftDescription:string;
+	selectRightDescription:string;
+	fundDescription:string;
+	confirmDescription:string;
+	loadingDescription:string;
+}
+
+
+root_type Torappu_Act5funConst;

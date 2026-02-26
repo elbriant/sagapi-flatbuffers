@@ -1,0 +1,23 @@
+include "Torappu_TemplateMissionBigRewardType.fbs";
+include "Torappu_TemplateMissionTitleType.fbs";
+include "Torappu_TemplateMissionCoinInfoType.fbs";
+
+table Torappu_TemplateMissionStyleData {
+	bigRewardType:Torappu_TemplateMissionBigRewardType;
+	bigRewardParamList:[string];
+	isMissionListCommonType:bool;
+	isMissionItemCommonType:bool;
+	missionItemMainColor:string;
+	isMissionItemCompleteUseMainColor:bool;
+	missionItemCompleteColor:string;
+	isMissionRewardItemCommonType:bool;
+	isClaimAllBtnCommonType:bool;
+	claimAllBtnMainColor:string;
+	claimAllBtnTips:string;
+	titleType:Torappu_TemplateMissionTitleType;
+	coinType:Torappu_TemplateMissionCoinInfoType;
+	coinBackColor:string;
+}
+
+
+root_type Torappu_TemplateMissionStyleData;

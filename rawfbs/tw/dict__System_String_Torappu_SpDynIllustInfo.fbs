@@ -1,0 +1,9 @@
+include "Torappu_SpDynIllustInfo.fbs";
+
+table dict__System_String_Torappu_SpDynIllustInfo {
+	dict_key:string;
+	dict_value:Torappu_SpDynIllustInfo;
+}
+
+
+root_type dict__System_String_Torappu_SpDynIllustInfo;

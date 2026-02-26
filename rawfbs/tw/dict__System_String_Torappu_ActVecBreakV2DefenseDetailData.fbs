@@ -1,0 +1,9 @@
+include "Torappu_ActVecBreakV2DefenseDetailData.fbs";
+
+table dict__System_String_Torappu_ActVecBreakV2DefenseDetailData {
+	dict_key:string;
+	dict_value:Torappu_ActVecBreakV2DefenseDetailData;
+}
+
+
+root_type dict__System_String_Torappu_ActVecBreakV2DefenseDetailData;

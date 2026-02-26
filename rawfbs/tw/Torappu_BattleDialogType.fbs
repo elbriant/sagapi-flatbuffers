@@ -1,0 +1,8 @@
+
+enum Torappu_BattleDialogType : int32 {
+	NONE = 0,
+	BEFORE = 1,
+	REACT = 2,
+	AFTER = 3,
+	ENUM = 4
+}

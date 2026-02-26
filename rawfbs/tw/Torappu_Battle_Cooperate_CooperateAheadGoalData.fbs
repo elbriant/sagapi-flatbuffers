@@ -1,0 +1,8 @@
+
+table Torappu_Battle_Cooperate_CooperateAheadGoalData {
+	aheadCnt:int32;
+	level:int32;
+}
+
+
+root_type Torappu_Battle_Cooperate_CooperateAheadGoalData;

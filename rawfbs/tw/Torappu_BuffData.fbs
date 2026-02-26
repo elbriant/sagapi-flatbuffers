@@ -1,0 +1,48 @@
+include "Torappu_AttributeModifierData.fbs";
+include "Torappu_BuffData_StatusResistable.fbs";
+include "Torappu_BuffData_OverrideType.fbs";
+include "Torappu_BuffData_OnEventPriority.fbs";
+include "Torappu_LifeType.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_BuffData {
+	attributes:Torappu_AttributeModifierData;
+	buffKey:string;
+	loadFromDB:bool;
+	isDurableBuff:bool;
+	isDamageMissable:bool;
+	isSilenceable:bool;
+	isStunnable:bool;
+	isFreezable:bool;
+	isLevitatable:bool;
+	statusResistable:Torappu_BuffData_StatusResistable;
+	templateKey:string;
+	disableOverride:bool;
+	overrideKey:string;
+	overrideType:Torappu_BuffData_OverrideType;
+	maxStackCnt:int32;
+	refreshRemainingTimeWhenStackMax:bool;
+	clearAllStackCntWhenTimeUp:bool;
+	maxValidStackCnt:int32;
+	independentCharacterSource:bool;
+	overrideEffectKey:string;
+	overrideOnEventPriority:bool;
+	onEventPriority:Torappu_BuffData_OnEventPriority;
+	audioSignal:string;
+	lifeTimeType:Torappu_LifeType;
+	takeSnapshotWhenExtend:bool;
+	durationKey:string;
+	lifeTime:float;
+	triggerLifeType:Torappu_LifeType;
+	triggerCnt:int32;
+	triggerInterval:float;
+	waitFirstTriggerInterval:bool;
+	firstTriggerInterval:float;
+	priority:int32;
+	priorityBBKeys:[string];
+	stripBlackboardParamsWithBuffKey:bool;
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_BuffData;

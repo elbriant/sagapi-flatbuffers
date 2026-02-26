@@ -1,0 +1,8 @@
+
+enum Torappu_SandboxV2EventType : int32 {
+	NONE = 0,
+	EVENT = 1,
+	MISSION = 2,
+	QUEST_EVENT = 3,
+	QUEST_MISSION = 4
+}

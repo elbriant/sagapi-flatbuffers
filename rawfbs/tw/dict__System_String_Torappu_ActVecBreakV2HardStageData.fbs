@@ -1,0 +1,9 @@
+include "Torappu_ActVecBreakV2HardStageData.fbs";
+
+table dict__System_String_Torappu_ActVecBreakV2HardStageData {
+	dict_key:string;
+	dict_value:Torappu_ActVecBreakV2HardStageData;
+}
+
+
+root_type dict__System_String_Torappu_ActVecBreakV2HardStageData;

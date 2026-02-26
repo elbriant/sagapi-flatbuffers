@@ -1,0 +1,10 @@
+
+table Torappu_ActMultiV3ReportData {
+	id:string;
+	sortId:int32;
+	txt:string;
+	desc:string;
+}
+
+
+root_type Torappu_ActMultiV3ReportData;

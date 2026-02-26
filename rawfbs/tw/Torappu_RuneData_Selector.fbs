@@ -1,0 +1,28 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_BuildableType.fbs";
+include "Torappu_PlayerSideMask.fbs";
+include "Torappu_Battle_SideType.fbs";
+include "Torappu_TileData_HeightTypeMask.fbs";
+
+table Torappu_RuneData_Selector {
+	professionMask:Torappu_ProfessionCategory;
+	buildableMask:Torappu_BuildableType;
+	playerSideMask:Torappu_PlayerSideMask;
+	sideType:Torappu_Battle_SideType;
+	charIdFilter:[string];
+	enemyIdFilter:[string];
+	enemyIdExcludeFilter:[string];
+	enemyLevelTypeFilter:[string];
+	enemyActionHiddenGroupFilter:[string];
+	skillIdFilter:[string];
+	tileKeyFilter:[string];
+	groupTagFilter:[string];
+	filterTagFilter:[string];
+	filterTagExcludeFilter:[string];
+	subProfessionExcludeFilter:[string];
+	mapTagFilter:[string];
+	heightTypeMask:Torappu_TileData_HeightTypeMask;
+}
+
+
+root_type Torappu_RuneData_Selector;

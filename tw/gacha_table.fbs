@@ -1,0 +1,326 @@
+
+enum Torappu_GachaRuleType : int32 {
+	NORMAL = 0,
+	LIMITED = 1,
+	LINKAGE = 2,
+	ATTAIN = 3,
+	CLASSIC = 4,
+	SINGLE = 5,
+	FESCLASSIC = 6,
+	CLASSIC_ATTAIN = 7,
+	SPECIAL = 8,
+	DOUBLE = 9,
+	CLASSIC_DOUBLE = 10
+}
+
+table Newtonsoft_Json_Linq_JObject {
+	jobj_bson:string;
+}
+
+
+
+table Torappu_GachaPoolClientData {
+	gachaPoolId:string;
+	gachaIndex:int32;
+	openTime:int64;
+	endTime:int64;
+	gachaPoolName:string;
+	gachaPoolSummary:string;
+	gachaPoolDetail:string;
+	guaranteeName:string;
+	guarantee5Avail:int32;
+	guarantee5Count:int32;
+	LMTGSID:string;
+	CDPrimColor:string;
+	CDSecColor:string;
+	freeBackColor:string;
+	gachaRuleType:Torappu_GachaRuleType;
+	dynMeta:Newtonsoft_Json_Linq_JObject;
+	linkageRuleId:string;
+	linkageParam:Newtonsoft_Json_Linq_JObject;
+	limitParam:Newtonsoft_Json_Linq_JObject;
+}
+
+
+
+table Torappu_NewbeeGachaPoolClientData {
+	gachaPoolId:string;
+	gachaIndex:int32;
+	gachaPoolName:string;
+	gachaPoolDetail:string;
+	gachaPrice:int32;
+	gachaTimes:int32;
+	gachaOffset:string;
+}
+
+
+
+enum Torappu_ItemType : int32 {
+	NONE = 0,
+	CHAR = 1,
+	CARD_EXP = 2,
+	MATERIAL = 3,
+	GOLD = 4,
+	EXP_PLAYER = 5,
+	TKT_TRY = 6,
+	TKT_RECRUIT = 7,
+	TKT_INST_FIN = 8,
+	TKT_GACHA = 9,
+	ACTIVITY_COIN = 10,
+	DIAMOND = 11,
+	DIAMOND_SHD = 12,
+	HGG_SHD = 13,
+	LGG_SHD = 14,
+	FURN = 15,
+	AP_GAMEPLAY = 16,
+	AP_BASE = 17,
+	SOCIAL_PT = 18,
+	CHAR_SKIN = 19,
+	TKT_GACHA_10 = 20,
+	TKT_GACHA_PRSV = 21,
+	AP_ITEM = 22,
+	AP_SUPPLY = 23,
+	RENAMING_CARD = 24,
+	RENAMING_CARD_2 = 25,
+	ET_STAGE = 26,
+	ACTIVITY_ITEM = 27,
+	VOUCHER_PICK = 28,
+	VOUCHER_CGACHA = 29,
+	VOUCHER_MGACHA = 30,
+	CRS_SHOP_COIN = 31,
+	CRS_RUNE_COIN = 32,
+	LMTGS_COIN = 33,
+	EPGS_COIN = 34,
+	LIMITED_TKT_GACHA_10 = 35,
+	LIMITED_FREE_GACHA = 36,
+	REP_COIN = 37,
+	ROGUELIKE = 38,
+	LINKAGE_TKT_GACHA_10 = 39,
+	VOUCHER_ELITE_II_4 = 40,
+	VOUCHER_ELITE_II_5 = 41,
+	VOUCHER_ELITE_II_6 = 42,
+	VOUCHER_SKIN = 43,
+	RETRO_COIN = 44,
+	PLAYER_AVATAR = 45,
+	UNI_COLLECTION = 46,
+	VOUCHER_FULL_POTENTIAL = 47,
+	RL_COIN = 48,
+	RETURN_CREDIT = 49,
+	MEDAL = 50,
+	CHARM = 51,
+	HOME_BACKGROUND = 52,
+	EXTERMINATION_AGENT = 53,
+	OPTIONAL_VOUCHER_PICK = 54,
+	ACT_CART_COMPONENT = 55,
+	VOUCHER_LEVELMAX_6 = 56,
+	VOUCHER_LEVELMAX_5 = 57,
+	VOUCHER_LEVELMAX_4 = 58,
+	VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+	VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+	VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+	ACTIVITY_POTENTIAL = 62,
+	ITEM_PACK = 63,
+	SANDBOX = 64,
+	FAVOR_ADD_ITEM = 65,
+	CLASSIC_SHD = 66,
+	CLASSIC_TKT_GACHA = 67,
+	CLASSIC_TKT_GACHA_10 = 68,
+	LIMITED_BUFF = 69,
+	CLASSIC_FES_PICK_TIER_5 = 70,
+	CLASSIC_FES_PICK_TIER_6 = 71,
+	RETURN_PROGRESS = 72,
+	NEW_PROGRESS = 73,
+	MCARD_VOUCHER = 74,
+	MATERIAL_ISSUE_VOUCHER = 75,
+	CRS_SHOP_COIN_V2 = 76,
+	HOME_THEME = 77,
+	SANDBOX_PERM = 78,
+	SANDBOX_TOKEN = 79,
+	TEMPLATE_TRAP = 80,
+	NAME_CARD_SKIN = 81,
+	EMOTICON_SET = 82,
+	EXCLUSIVE_TKT_GACHA = 83,
+	EXCLUSIVE_TKT_GACHA_10 = 84,
+	SO_CHAR_EXP = 85,
+	GIFTPACKAGE_TKT = 86
+}
+
+table Torappu_ItemBundle {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+}
+
+
+
+table Torappu_SpecialRecruitPool_SpecialRecruitCostData {
+	timeLength:int32;
+	recruitPrice:int32;
+	itemCosts:[Torappu_ItemBundle];
+}
+
+
+
+table Torappu_SpecialRecruitPool {
+	recruitId:string;
+	tagName:string;
+	tagId:int32;
+	order:int32;
+	startDateTime:int64;
+	endDateTime:int64;
+	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
+}
+
+
+
+table Torappu_GachaTag {
+	tagId:int32;
+	tagName:string;
+	tagGroup:int32;
+}
+
+
+
+table Torappu_RecruitPool_RecruitTime {
+	timeLength:int32;
+	recruitPrice:int32;
+}
+
+
+
+table Torappu_RecruitPool {
+	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
+}
+
+
+
+table dict__System_Int32_Torappu_ItemBundle {
+	dict_key:int32;
+	dict_value:Torappu_ItemBundle;
+}
+
+
+
+table Torappu_PotentialMaterialConverterConfig {
+	items:[dict__System_Int32_Torappu_ItemBundle];
+}
+
+
+
+table Torappu_GachaData_RecruitRange {
+	rarityStart:int32;
+	rarityEnd:int32;
+}
+
+
+
+table dict__System_Int32_Torappu_GachaData_RecruitRange {
+	dict_key:int32;
+	dict_value:Torappu_GachaData_RecruitRange;
+}
+
+
+
+table dict__System_Int32_list___1_System_Int32 {
+	dict_key:int32;
+	dict_value:[int32];
+}
+
+
+
+table Torappu_GachaData_CarouselData {
+	poolId:string;
+	index:int32;
+	startTime:int64;
+	endTime:int64;
+	spriteId:string;
+}
+
+
+
+table Torappu_GachaData_FreeLimitGachaData {
+	poolId:string;
+	openTime:int64;
+	endTime:int64;
+	freeCount:int32;
+}
+
+
+
+table Torappu_GachaData_LimitTenGachaTkt {
+	itemId:string;
+	endTime:int64;
+}
+
+
+
+table Torappu_GachaData_LinkageTenGachaTkt {
+	itemId:string;
+	endTime:int64;
+	gachaPoolId:string;
+}
+
+
+
+table Torappu_GachaData_NormalGachaTkt {
+	itemId:string;
+	endTime:int64;
+	gachaPoolId:string;
+	isTen:bool;
+}
+
+
+
+table Torappu_GachaData_FesGachaPoolRelateItem {
+	rarityRank5ItemId:string;
+	rarityRank6ItemId:string;
+}
+
+
+
+table dict__System_String_Torappu_GachaData_FesGachaPoolRelateItem {
+	dict_key:string;
+	dict_value:Torappu_GachaData_FesGachaPoolRelateItem;
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table dict__System_Int32_System_Single {
+	dict_key:int32;
+	dict_value:float;
+}
+
+
+
+table Torappu_GachaData {
+	gachaPoolClient:[Torappu_GachaPoolClientData];
+	newbeeGachaPoolClient:[Torappu_NewbeeGachaPoolClientData];
+	specialRecruitPool:[Torappu_SpecialRecruitPool];
+	gachaTags:[Torappu_GachaTag];
+	recruitPool:Torappu_RecruitPool;
+	potentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
+	classicPotentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
+	recruitRarityTable:[dict__System_Int32_Torappu_GachaData_RecruitRange];
+	specialTagRarityTable:[dict__System_Int32_list___1_System_Int32];
+	recruitDetail:string;
+	showGachaLogEntry:bool;
+	carousel:[Torappu_GachaData_CarouselData];
+	freeGacha:[Torappu_GachaData_FreeLimitGachaData];
+	limitTenGachaItem:[Torappu_GachaData_LimitTenGachaTkt];
+	linkageTenGachaItem:[Torappu_GachaData_LinkageTenGachaTkt];
+	normalGachaItem:[Torappu_GachaData_NormalGachaTkt];
+	fesGachaPoolRelateItem:[dict__System_String_Torappu_GachaData_FesGachaPoolRelateItem];
+	dicRecruit6StarHint:[dict__System_String_System_String];
+	specialGachaPercentDict:[dict__System_Int32_System_Single];
+}
+
+
+
+root_type Torappu_GachaData;

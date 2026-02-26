@@ -1,0 +1,30 @@
+include "Torappu_ActArchiveRelicData.fbs";
+include "Torappu_ActArchiveCapsuleData.fbs";
+include "Torappu_ActArchiveTrapData.fbs";
+include "Torappu_ActArchiveChatData.fbs";
+include "Torappu_ActArchiveEndbookData.fbs";
+include "Torappu_ActArchiveBuffData.fbs";
+include "Torappu_ActArchiveTotemData.fbs";
+include "Torappu_ActArchiveChaosData.fbs";
+include "Torappu_ActArchiveFragmentData.fbs";
+include "Torappu_ActArchiveDisasterData.fbs";
+include "Torappu_ActArchiveWrathData.fbs";
+include "Torappu_ActArchiveCopperData.fbs";
+
+table Torappu_RoguelikeArchiveComponentData {
+	relic:Torappu_ActArchiveRelicData;
+	capsule:Torappu_ActArchiveCapsuleData;
+	trap:Torappu_ActArchiveTrapData;
+	chat:Torappu_ActArchiveChatData;
+	endbook:Torappu_ActArchiveEndbookData;
+	buff:Torappu_ActArchiveBuffData;
+	totem:Torappu_ActArchiveTotemData;
+	chaos:Torappu_ActArchiveChaosData;
+	fragment:Torappu_ActArchiveFragmentData;
+	disaster:Torappu_ActArchiveDisasterData;
+	wrath:Torappu_ActArchiveWrathData;
+	copper:Torappu_ActArchiveCopperData;
+}
+
+
+root_type Torappu_RoguelikeArchiveComponentData;

@@ -1,0 +1,8 @@
+
+table Torappu_Battle_Cooperate_CooperateTeamWeight {
+	teamName:string;
+	weight:int32;
+}
+
+
+root_type Torappu_Battle_Cooperate_CooperateTeamWeight;

@@ -1,0 +1,9 @@
+include "Torappu_StageData_StageDropInfo.fbs";
+
+table dict__System_String_Torappu_StageData_StageDropInfo {
+	dict_key:string;
+	dict_value:Torappu_StageData_StageDropInfo;
+}
+
+
+root_type dict__System_String_Torappu_StageData_StageDropInfo;

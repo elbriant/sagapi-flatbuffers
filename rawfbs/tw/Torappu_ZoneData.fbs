@@ -1,0 +1,23 @@
+include "Torappu_ZoneType.fbs";
+
+table Torappu_ZoneData {
+	zoneID:string;
+	zoneIndex:int32;
+	type:Torappu_ZoneType;
+	zoneNameFirst:string;
+	zoneNameSecond:string;
+	zoneNameTitleCurrent:string;
+	zoneNameTitleUnCurrent:string;
+	zoneNameTitleEx:string;
+	zoneNameThird:string;
+	lockedText:string;
+	antiSpoilerId:string;
+	canPreview:bool;
+	hasAdditionalPanel:bool;
+	sixStarMilestoneGroupId:string;
+	bindMainlineZoneId:string;
+	bindMainlineRetroZoneId:string;
+}
+
+
+root_type Torappu_ZoneData;

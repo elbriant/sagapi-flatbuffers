@@ -1,0 +1,9 @@
+include "Torappu_CartComponents.fbs";
+
+table dict__System_String_Torappu_CartComponents {
+	dict_key:string;
+	dict_value:Torappu_CartComponents;
+}
+
+
+root_type dict__System_String_Torappu_CartComponents;

@@ -1,0 +1,9 @@
+include "Torappu_GachaData_RecruitRange.fbs";
+
+table dict__System_Int32_Torappu_GachaData_RecruitRange {
+	dict_key:int32;
+	dict_value:Torappu_GachaData_RecruitRange;
+}
+
+
+root_type dict__System_Int32_Torappu_GachaData_RecruitRange;

@@ -1,0 +1,9 @@
+include "Torappu_TileAppendInfo.fbs";
+
+table list_dict___2_System_String_Torappu_TileAppendInfo_ {
+	dict_key:string;
+	dict_value:Torappu_TileAppendInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_TileAppendInfo_;

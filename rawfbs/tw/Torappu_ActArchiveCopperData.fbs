@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_ActArchiveCopperItemData.fbs";
+include "dict__System_String_Torappu_ActArchiveCopperTypeData.fbs";
+include "dict__System_String_Torappu_ActArchiveCopperGildData.fbs";
+include "dict__System_String_Torappu_ActArchiveCopperLuckyLevelData.fbs";
+
+table Torappu_ActArchiveCopperData {
+	coppers:[dict__System_String_Torappu_ActArchiveCopperItemData];
+	copperTypes:[dict__System_String_Torappu_ActArchiveCopperTypeData];
+	gilds:[dict__System_String_Torappu_ActArchiveCopperGildData];
+	luckyLevels:[dict__System_String_Torappu_ActArchiveCopperLuckyLevelData];
+}
+
+
+root_type Torappu_ActArchiveCopperData;

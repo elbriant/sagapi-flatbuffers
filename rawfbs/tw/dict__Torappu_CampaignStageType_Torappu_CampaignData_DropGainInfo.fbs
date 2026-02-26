@@ -1,0 +1,10 @@
+include "Torappu_CampaignStageType.fbs";
+include "Torappu_CampaignData_DropGainInfo.fbs";
+
+table dict__Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo {
+	dict_key:Torappu_CampaignStageType;
+	dict_value:Torappu_CampaignData_DropGainInfo;
+}
+
+
+root_type dict__Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo;

@@ -1,0 +1,10 @@
+include "Torappu_PlayerBattleRank.fbs";
+
+table Torappu_CharPatchData_UnlockCond_Item {
+	stageId:string;
+	completeState:Torappu_PlayerBattleRank;
+	unlockTs:int64;
+}
+
+
+root_type Torappu_CharPatchData_UnlockCond_Item;

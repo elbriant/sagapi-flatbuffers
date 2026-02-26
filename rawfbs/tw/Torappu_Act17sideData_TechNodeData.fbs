@@ -1,0 +1,15 @@
+
+table Torappu_Act17sideData_TechNodeData {
+	nodeId:string;
+	techTreeId:string;
+	techTreeName:string;
+	techPic:string;
+	techSpecialPic:string;
+	endEventId:string;
+	confirmDes:string;
+	techDesList:[string];
+	missionIdList:[string];
+}
+
+
+root_type Torappu_Act17sideData_TechNodeData;

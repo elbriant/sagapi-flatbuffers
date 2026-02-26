@@ -1,0 +1,9 @@
+include "Torappu_Act42D0Data_Act42D0EffectInfoData.fbs";
+
+table dict__System_String_Torappu_Act42D0Data_Act42D0EffectInfoData {
+	dict_key:string;
+	dict_value:Torappu_Act42D0Data_Act42D0EffectInfoData;
+}
+
+
+root_type dict__System_String_Torappu_Act42D0Data_Act42D0EffectInfoData;

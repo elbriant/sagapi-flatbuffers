@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_RoguelikeNodeUpgradeData.fbs";
+
+table Torappu_RoguelikeNodeUpgradeModuleData {
+	nodeUpgradeDataMap:[dict__System_String_Torappu_RoguelikeNodeUpgradeData];
+}
+
+
+root_type Torappu_RoguelikeNodeUpgradeModuleData;

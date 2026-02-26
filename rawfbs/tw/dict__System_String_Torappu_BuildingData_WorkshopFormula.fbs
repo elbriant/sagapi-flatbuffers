@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_WorkshopFormula.fbs";
+
+table dict__System_String_Torappu_BuildingData_WorkshopFormula {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_WorkshopFormula;
+}
+
+
+root_type dict__System_String_Torappu_BuildingData_WorkshopFormula;

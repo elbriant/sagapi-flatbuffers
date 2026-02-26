@@ -1,0 +1,34 @@
+include "Torappu_RoguelikeTopicMode.fbs";
+include "Torappu_RoguelikeTopicDifficulty_RuleDescReplacement.fbs";
+include "Torappu_RoguelikeTopicDifficultyWarningType.fbs";
+
+table Torappu_RoguelikeTopicDifficulty {
+	modeDifficulty:Torappu_RoguelikeTopicMode;
+	grade:int32;
+	name:string;
+	nameImage:string;
+	subName:string;
+	enrollId:string;
+	haveInitialRelicIcon:bool;
+	scoreFactor:float;
+	canUnlockItem:bool;
+	doMonthTask:bool;
+	ruleDesc:string;
+	ruleDescReplacements:[Torappu_RoguelikeTopicDifficulty_RuleDescReplacement];
+	failTitle:string;
+	failImageId:string;
+	failForceDesc:string;
+	sortId:int32;
+	equivalentGrade:int32;
+	color:string;
+	bpValue:int32;
+	bossValue:int32;
+	addDesc:string;
+	warningType:Torappu_RoguelikeTopicDifficultyWarningType;
+	unlockText:string;
+	displayIconId:string;
+	hideEndingStory:bool;
+}
+
+
+root_type Torappu_RoguelikeTopicDifficulty;

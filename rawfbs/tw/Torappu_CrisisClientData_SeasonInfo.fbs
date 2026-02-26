@@ -1,0 +1,16 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_CrisisClientData_SeasonInfo {
+	seasonId:string;
+	startTs:int64;
+	endTs:int64;
+	name:string;
+	crisisRuneCoinUnlockItem:Torappu_ItemBundle;
+	permBgm:string;
+	medalGroupId:string;
+	bgmHardPoint:int32;
+	permBgmHard:string;
+}
+
+
+root_type Torappu_CrisisClientData_SeasonInfo;

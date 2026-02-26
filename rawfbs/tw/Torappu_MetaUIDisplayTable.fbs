@@ -1,0 +1,18 @@
+include "Torappu_TipsMetaDisplayItem.fbs";
+include "Torappu_FlashAlertAfterStageDisplayMetaItem.fbs";
+include "Torappu_MapPreviewDisplayMetaItem.fbs";
+include "Torappu_BattleFinishDisplayMetaItem.fbs";
+include "Torappu_BattleLoadingDisplayMetaItem.fbs";
+include "Torappu_BattleAutoBattleMetaItem.fbs";
+
+table Torappu_MetaUIDisplayTable {
+	tipsMetaList:[Torappu_TipsMetaDisplayItem];
+	flashAlertAfterStageItemList:[Torappu_FlashAlertAfterStageDisplayMetaItem];
+	mapPreviewDisplayMetaItemList:[Torappu_MapPreviewDisplayMetaItem];
+	battleFinishDisplayMetaItemList:[Torappu_BattleFinishDisplayMetaItem];
+	battleLoadingDisplayMetaItemList:[Torappu_BattleLoadingDisplayMetaItem];
+	battleAutoBattleMetaItemList:[Torappu_BattleAutoBattleMetaItem];
+}
+
+
+root_type Torappu_MetaUIDisplayTable;

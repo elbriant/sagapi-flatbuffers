@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeCommonDevRawTextBuffGroup {
+	nodeIdList:[string];
+	groupIconId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_RoguelikeCommonDevRawTextBuffGroup;

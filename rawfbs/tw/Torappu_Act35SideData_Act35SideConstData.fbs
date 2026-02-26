@@ -1,0 +1,23 @@
+include "Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo.fbs";
+
+table Torappu_Act35SideData_Act35SideConstData {
+	campaignStageId:string;
+	campaignEnemyCnt:int32;
+	milestoneGrandRewardInfoList:[Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo];
+	unlockLevelId:string;
+	birdSpineLowRate:float;
+	birdSpineHighRate:float;
+	cardMaxLevel:int32;
+	maxSlotCnt:int32;
+	cardRefreshNum:int32;
+	initSlotCnt:int32;
+	bonusMaterialId:string;
+	introRoundIdList:[string];
+	challengeUnlockText:string;
+	slotUnlockText:string;
+	estimateRatio:int32;
+	carvingUnlockToastText:string;
+}
+
+
+root_type Torappu_Act35SideData_Act35SideConstData;

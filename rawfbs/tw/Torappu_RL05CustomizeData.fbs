@@ -1,0 +1,14 @@
+include "Torappu_RoguelikeCommonDevelopmentData.fbs";
+include "Torappu_RL05DifficultyExt.fbs";
+include "Torappu_RoguelikeGameShopDialogData.fbs";
+include "Torappu_RL05EndingText.fbs";
+
+table Torappu_RL05CustomizeData {
+	commonDevelopment:Torappu_RoguelikeCommonDevelopmentData;
+	difficulties:[Torappu_RL05DifficultyExt];
+	specialShopDialog:Torappu_RoguelikeGameShopDialogData;
+	endingText:Torappu_RL05EndingText;
+}
+
+
+root_type Torappu_RL05CustomizeData;

@@ -1,0 +1,18 @@
+include "Torappu_ClimbTowerLevelType.fbs";
+include "Torappu_ClimbTowerLevelDropInfo.fbs";
+
+table Torappu_ClimbTowerSingleLevelData {
+	id:string;
+	levelId:string;
+	towerId:string;
+	layerNum:int32;
+	code:string;
+	name:string;
+	desc:string;
+	levelType:Torappu_ClimbTowerLevelType;
+	loadingPicId:string;
+	dropInfo:Torappu_ClimbTowerLevelDropInfo;
+}
+
+
+root_type Torappu_ClimbTowerSingleLevelData;

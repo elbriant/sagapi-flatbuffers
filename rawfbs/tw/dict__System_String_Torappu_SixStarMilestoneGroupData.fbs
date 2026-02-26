@@ -1,0 +1,9 @@
+include "Torappu_SixStarMilestoneGroupData.fbs";
+
+table dict__System_String_Torappu_SixStarMilestoneGroupData {
+	dict_key:string;
+	dict_value:Torappu_SixStarMilestoneGroupData;
+}
+
+
+root_type dict__System_String_Torappu_SixStarMilestoneGroupData;

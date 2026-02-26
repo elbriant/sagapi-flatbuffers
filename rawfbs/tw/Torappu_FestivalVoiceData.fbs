@@ -1,0 +1,10 @@
+include "Torappu_CharWordShowType.fbs";
+include "Torappu_FestivalTimeData.fbs";
+
+table Torappu_FestivalVoiceData {
+	showType:Torappu_CharWordShowType;
+	timeData:[Torappu_FestivalTimeData];
+}
+
+
+root_type Torappu_FestivalVoiceData;

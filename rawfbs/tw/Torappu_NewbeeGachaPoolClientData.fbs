@@ -1,0 +1,13 @@
+
+table Torappu_NewbeeGachaPoolClientData {
+	gachaPoolId:string;
+	gachaIndex:int32;
+	gachaPoolName:string;
+	gachaPoolDetail:string;
+	gachaPrice:int32;
+	gachaTimes:int32;
+	gachaOffset:string;
+}
+
+
+root_type Torappu_NewbeeGachaPoolClientData;

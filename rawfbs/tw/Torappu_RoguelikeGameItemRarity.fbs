@@ -1,0 +1,8 @@
+
+enum Torappu_RoguelikeGameItemRarity : int32 {
+	NONE = 0,
+	BORN = 1,
+	NORMAL = 2,
+	RARE = 3,
+	SUPER_RARE = 4
+}

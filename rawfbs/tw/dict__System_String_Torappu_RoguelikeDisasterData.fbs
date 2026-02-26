@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeDisasterData.fbs";
+
+table dict__System_String_Torappu_RoguelikeDisasterData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeDisasterData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeDisasterData;

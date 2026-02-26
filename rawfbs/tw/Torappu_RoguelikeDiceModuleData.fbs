@@ -1,0 +1,16 @@
+include "dict__System_String_Torappu_RoguelikeDiceData.fbs";
+include "dict__System_String_Torappu_RoguelikeDiceRuleData.fbs";
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_RoguelikeDiceRuleGroupData.fbs";
+include "Torappu_RoguelikeDicePredefineData.fbs";
+
+table Torappu_RoguelikeDiceModuleData {
+	dice:[dict__System_String_Torappu_RoguelikeDiceData];
+	diceEvents:[dict__System_String_Torappu_RoguelikeDiceRuleData];
+	diceChoices:[dict__System_String_System_String];
+	diceRuleGroups:[dict__System_String_Torappu_RoguelikeDiceRuleGroupData];
+	dicePredefines:[Torappu_RoguelikeDicePredefineData];
+}
+
+
+root_type Torappu_RoguelikeDiceModuleData;

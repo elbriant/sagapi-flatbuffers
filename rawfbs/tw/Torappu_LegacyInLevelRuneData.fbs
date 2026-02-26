@@ -1,0 +1,15 @@
+include "Torappu_LevelData_Difficulty.fbs";
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_BuildableType.fbs";
+include "Torappu_Blackboard.fbs";
+
+table Torappu_LegacyInLevelRuneData {
+	difficultyMask:Torappu_LevelData_Difficulty;
+	key:string;
+	professionMask:Torappu_ProfessionCategory;
+	buildableMask:Torappu_BuildableType;
+	blackboard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_LegacyInLevelRuneData;

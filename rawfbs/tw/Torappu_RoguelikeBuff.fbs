@@ -1,0 +1,9 @@
+include "Torappu_Blackboard.fbs";
+
+table Torappu_RoguelikeBuff {
+	key:string;
+	blackboard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_RoguelikeBuff;

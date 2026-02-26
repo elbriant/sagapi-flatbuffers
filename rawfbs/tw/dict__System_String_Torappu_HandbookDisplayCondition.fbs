@@ -1,0 +1,9 @@
+include "Torappu_HandbookDisplayCondition.fbs";
+
+table dict__System_String_Torappu_HandbookDisplayCondition {
+	dict_key:string;
+	dict_value:Torappu_HandbookDisplayCondition;
+}
+
+
+root_type dict__System_String_Torappu_HandbookDisplayCondition;

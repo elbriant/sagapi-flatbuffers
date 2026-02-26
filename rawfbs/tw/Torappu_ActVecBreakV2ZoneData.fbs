@@ -1,0 +1,8 @@
+
+table Torappu_ActVecBreakV2ZoneData {
+	zoneId:string;
+	stageLockHint:string;
+}
+
+
+root_type Torappu_ActVecBreakV2ZoneData;

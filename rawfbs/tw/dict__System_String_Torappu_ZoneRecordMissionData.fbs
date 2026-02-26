@@ -1,0 +1,9 @@
+include "Torappu_ZoneRecordMissionData.fbs";
+
+table dict__System_String_Torappu_ZoneRecordMissionData {
+	dict_key:string;
+	dict_value:Torappu_ZoneRecordMissionData;
+}
+
+
+root_type dict__System_String_Torappu_ZoneRecordMissionData;

@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeChoiceDisplayType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	ITEM = 2,
+	TASK = 3
+}

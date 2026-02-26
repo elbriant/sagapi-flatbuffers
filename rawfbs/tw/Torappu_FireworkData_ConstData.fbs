@@ -1,0 +1,10 @@
+
+table Torappu_FireworkData_ConstData {
+	maxFireworkNum:int32;
+	maxFireworkPlateRowCount:int32;
+	unlockStageCode:string;
+	dontDisplayFireworkPluginStageList:[string];
+}
+
+
+root_type Torappu_FireworkData_ConstData;

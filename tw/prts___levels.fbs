@@ -1,0 +1,664 @@
+
+enum Torappu_BattleFunctionDisableMask : int32 {
+	NONE = 0,
+	CARD_LIST = 1,
+	CHARACTER_MENU = 2,
+	CHARACTER_INFO = 4,
+	SYSTEM_MENU = 8,
+	PAUSE_BUTTON = 16,
+	SPEED_SWITCHER_BUTTON = 32,
+	BATTLE_STATUS = 64,
+	COST_PANEL = 128,
+	SLOW_MOTION = 256,
+	PAUSE_BUTTON_INTERACT = 512,
+	SYSTEM_MENU_INTERACT = 1024,
+	SPEED_SWITCHER_BUTTON_INTERACT = 2048,
+	UNIT_HUD_SKILL_CAST_MASK = 4096,
+	WITHDRAWABLE_PANEL = 8192,
+	COST_PANEL_KEEP_CHARACTERLIMIT = 16384,
+	CHARACTER_LIMIT = 32768,
+	AUTOCHESS_SELL_OR_DESTORY = 65536,
+	CHARACTER_MENU_PANEL = 131072,
+	ALL = 262143
+}
+
+table Torappu_Blackboard {
+}
+
+
+
+table Torappu_LevelData_Options {
+	characterLimit:int32;
+	maxLifePoint:int32;
+	initialCost:int32;
+	maxCost:int32;
+	costIncreaseTime:float;
+	moveMultiplier:float;
+	steeringEnabled:bool;
+	isTrainingLevel:bool;
+	isHardTrainingLevel:bool;
+	isPredefinedCardsSelectable:bool;
+	maxPlayTime:float;
+	functionDisableMask:Torappu_BattleFunctionDisableMask;
+	configBlackBoard:Torappu_Blackboard;
+}
+
+
+
+
+
+enum Torappu_TileData_HeightType : int32 {
+	LOWLAND = 0,
+	HIGHLAND = 1,
+	E_NUM = 2
+}
+
+enum Torappu_BuildableType : int32 {
+	NONE = 0,
+	MELEE = 1,
+	RANGED = 2,
+	ALL = 3
+}
+
+enum Torappu_MotionMask : int32 {
+	NONE = 0,
+	WALK_ONLY = 1,
+	FLY_ONLY = 2,
+	ALL = 3
+}
+
+enum Torappu_PlayerSideMask : uint8 {
+	ALL = 0,
+	SIDE_A = 2,
+	SIDE_B = 4,
+	NONE = 255
+}
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
+table UnityEngine_Vector3 {
+	x:float;
+	y:float;
+	z:float;
+}
+
+
+
+enum Torappu_SharedConsts_Direction : int32 {
+	UP = 0,
+	RIGHT = 1,
+	DOWN = 2,
+	LEFT = 3,
+	E_NUM = 4,
+	INVALID = 4
+}
+
+table Torappu_MapEffectData {
+	key:string;
+	offset:UnityEngine_Vector3;
+	direction:Torappu_SharedConsts_Direction;
+}
+
+
+
+table Torappu_TileData {
+	tileKey:string;
+	heightType:Torappu_TileData_HeightType;
+	buildableType:Torappu_BuildableType;
+	passableMask:Torappu_MotionMask;
+	playerSideMask:Torappu_PlayerSideMask;
+	blackboard:[Torappu_Blackboard_DataPair];
+	effects:[Torappu_MapEffectData];
+}
+
+
+
+table Torappu_GridPosition {
+	row:int32;
+	col:int32;
+}
+
+
+
+table Torappu_MapData_Edge {
+	pos:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+	blockMask:Torappu_MotionMask;
+}
+
+
+
+table Torappu_MapData {
+	map:System_Int16A__;
+	tiles:[Torappu_TileData];
+	blockEdges:[Torappu_MapData_Edge];
+	tags:[string];
+	effects:[Torappu_MapEffectData];
+	layerRects:[string];
+}
+
+
+
+enum Torappu_LevelData_Difficulty : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	FOUR_STAR = 2,
+	EASY = 4,
+	SIX_STAR = 8,
+	ALL = 15
+}
+
+enum Torappu_ProfessionCategory : int32 {
+	NONE = 0,
+	WARRIOR = 1,
+	SNIPER = 2,
+	TANK = 4,
+	MEDIC = 8,
+	SUPPORT = 16,
+	CASTER = 32,
+	SPECIAL = 64,
+	TOKEN = 128,
+	TRAP = 256,
+	PIONEER = 512
+}
+
+table Torappu_LegacyInLevelRuneData {
+	difficultyMask:Torappu_LevelData_Difficulty;
+	key:string;
+	professionMask:Torappu_ProfessionCategory;
+	buildableMask:Torappu_BuildableType;
+	blackboard:Torappu_Blackboard;
+}
+
+
+
+table dict__System_String_list___1_Torappu_LegacyInLevelRuneData {
+	dict_key:string;
+	dict_value:[Torappu_LegacyInLevelRuneData];
+}
+
+
+
+table Torappu_LevelData_GlobalBuffData {
+	prefabKey:string;
+	blackboard:Torappu_Blackboard;
+	overrideCameraEffect:string;
+	passProfessionMaskFlag:bool;
+	professionMask:Torappu_ProfessionCategory;
+	playerSideMask:Torappu_PlayerSideMask;
+}
+
+
+
+enum Torappu_MotionMode : int32 {
+	WALK = 0,
+	FLY = 1,
+	E_NUM = 2
+}
+
+table UnityEngine_Vector2 {
+	x:float;
+	y:float;
+}
+
+
+
+enum Torappu_CheckpointType : int32 {
+	MOVE = 0,
+	WAIT_FOR_SECONDS = 1,
+	WAIT_FOR_PLAY_TIME = 2,
+	WAIT_CURRENT_FRAGMENT_TIME = 3,
+	WAIT_CURRENT_WAVE_TIME = 4,
+	DISAPPEAR = 5,
+	APPEAR_AT_POS = 6,
+	ALERT = 7,
+	PATROL_MOVE = 8,
+	WAIT_BOSSRUSH_WAVE = 9,
+	INVALID = 10
+}
+
+table Torappu_RouteData_CheckpointData {
+	type:Torappu_CheckpointType;
+	time:float;
+	position:Torappu_GridPosition;
+	reachOffset:UnityEngine_Vector2;
+	randomizeReachOffset:bool;
+	reachDistance:float;
+}
+
+
+
+table Torappu_RouteData {
+	motionMode:Torappu_MotionMode;
+	startPosition:Torappu_GridPosition;
+	endPosition:Torappu_GridPosition;
+	spawnRandomRange:UnityEngine_Vector2;
+	spawnOffset:UnityEngine_Vector2;
+	checkpoints:[Torappu_RouteData_CheckpointData];
+	allowDiagonalMove:bool;
+	visitEveryTileCenter:bool;
+	visitEveryNodeCenter:bool;
+	visitEveryCheckPoint:bool;
+}
+
+
+
+table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
+	currentCryptoKey:int32;
+	hiddenValue:int32;
+	inited:bool;
+	fakeValue:int32;
+	fakeValueActive:bool;
+}
+
+
+
+table CodeStage_AntiCheat_Common_ACTkByte4 {
+	b1:uint8;
+	b2:uint8;
+	b3:uint8;
+	b4:uint8;
+}
+
+
+
+table CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat {
+	currentCryptoKey:int32;
+	hiddenValue:int32;
+	hiddenValueOldByte4:CodeStage_AntiCheat_Common_ACTkByte4;
+	inited:bool;
+	fakeValue:float;
+	fakeValueActive:bool;
+}
+
+
+
+table Torappu_AttributesData {
+	maxHp:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	atk:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	def:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	magicResistance:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	cost:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	blockCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	moveSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	attackSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	baseAttackTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	respawnTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	hpRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	spRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	maxDeployCount:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	maxDeckStackCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	tauntLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	massLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	baseForceLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	stunImmune:bool;
+	silenceImmune:bool;
+	sleepImmune:bool;
+	frozenImmune:bool;
+	levitateImmune:bool;
+	disarmedCombatImmune:bool;
+	fearedImmune:bool;
+	palsyImmune:bool;
+	attractImmune:bool;
+}
+
+
+
+enum Torappu_SourceApplyWay : int32 {
+	NONE = 0,
+	MELEE = 1,
+	RANGED = 2,
+	ALL = 3
+}
+
+enum Torappu_EnemyLevelType : int32 {
+	NORMAL = 0,
+	ELITE = 1,
+	BOSS = 2,
+	E_NUM = 3
+}
+
+table Torappu_LevelData_EnemyData_ESkillData {
+	prefabKey:string;
+	priority:int32;
+	cooldown:float;
+	initCooldown:float;
+	spCost:int32;
+	blackboard:Torappu_Blackboard;
+}
+
+
+
+enum Torappu_SpType : int32 {
+	NONE = 0,
+	INCREASE_WITH_TIME = 1,
+	INCREASE_WHEN_ATTACK = 2,
+	INCREASE_WHEN_TAKEN_DAMAGE = 4,
+	ATTACK_OR_DAMAGE = 6,
+	ALL = 7
+}
+
+table Torappu_LevelData_EnemyData_ESpData {
+	spType:Torappu_SpType;
+	maxSp:int32;
+	initSp:int32;
+	increment:float;
+}
+
+
+
+table Torappu_DynamicAbilityData {
+	atRoot:bool;
+	prefabKey:string;
+	blackboard:Torappu_Blackboard;
+}
+
+
+
+table Torappu_LevelData_EnemyData_RuntimeData {
+	dynamicAbilities:[Torappu_DynamicAbilityData];
+	skinData:[string];
+}
+
+
+
+table Torappu_LevelData_EnemyData {
+	name:string;
+	description:string;
+	key:string;
+	attributes:Torappu_AttributesData;
+	applyWay:Torappu_SourceApplyWay;
+	motion:Torappu_MotionMode;
+	enemyTags:[string];
+	notCountInTotal:bool;
+	alias:string;
+	lifePointReduce:int32;
+	rangeRadius:float;
+	numOfExtraDrops:int32;
+	viewRadius:float;
+	levelType:Torappu_EnemyLevelType;
+	talentBlackboard:Torappu_Blackboard;
+	skills:[Torappu_LevelData_EnemyData_ESkillData];
+	spData:Torappu_LevelData_EnemyData_ESpData;
+	m_runtimeData:Torappu_LevelData_EnemyData_RuntimeData;
+}
+
+
+
+table Torappu_Undefinable_1_System_String_ {
+	m_defined:bool;
+	m_value:string;
+}
+
+
+
+table Torappu_Undefinable_1_System_Int32_ {
+	m_defined:bool;
+	m_value:int32;
+}
+
+
+
+table Torappu_Undefinable_1_System_Single_ {
+	m_defined:bool;
+	m_value:float;
+}
+
+
+
+table Torappu_Undefinable_1_System_Boolean_ {
+	m_defined:bool;
+	m_value:bool;
+}
+
+
+
+table Torappu_EnemyDatabase_AttributesData {
+	maxHp:Torappu_Undefinable_1_System_Int32_;
+	atk:Torappu_Undefinable_1_System_Int32_;
+	def:Torappu_Undefinable_1_System_Int32_;
+	magicResistance:Torappu_Undefinable_1_System_Single_;
+	cost:Torappu_Undefinable_1_System_Int32_;
+	blockCnt:Torappu_Undefinable_1_System_Int32_;
+	moveSpeed:Torappu_Undefinable_1_System_Single_;
+	attackSpeed:Torappu_Undefinable_1_System_Single_;
+	baseAttackTime:Torappu_Undefinable_1_System_Single_;
+	respawnTime:Torappu_Undefinable_1_System_Int32_;
+	hpRecoveryPerSec:Torappu_Undefinable_1_System_Single_;
+	spRecoveryPerSec:Torappu_Undefinable_1_System_Single_;
+	maxDeployCount:Torappu_Undefinable_1_System_Int32_;
+	massLevel:Torappu_Undefinable_1_System_Int32_;
+	baseForceLevel:Torappu_Undefinable_1_System_Int32_;
+	tauntLevel:Torappu_Undefinable_1_System_Int32_;
+	epDamageResistance:Torappu_Undefinable_1_System_Single_;
+	epResistance:Torappu_Undefinable_1_System_Single_;
+	damageHitratePhysical:Torappu_Undefinable_1_System_Single_;
+	damageHitrateMagical:Torappu_Undefinable_1_System_Single_;
+	epBreakRecoverSpeed:Torappu_Undefinable_1_System_Single_;
+	stunImmune:Torappu_Undefinable_1_System_Boolean_;
+	silenceImmune:Torappu_Undefinable_1_System_Boolean_;
+	sleepImmune:Torappu_Undefinable_1_System_Boolean_;
+	frozenImmune:Torappu_Undefinable_1_System_Boolean_;
+	levitateImmune:Torappu_Undefinable_1_System_Boolean_;
+	disarmedCombatImmune:Torappu_Undefinable_1_System_Boolean_;
+	fearedImmune:Torappu_Undefinable_1_System_Boolean_;
+	palsyImmune:Torappu_Undefinable_1_System_Boolean_;
+	attractImmune:Torappu_Undefinable_1_System_Boolean_;
+}
+
+
+
+table Torappu_Undefinable_1_Torappu_SourceApplyWay_ {
+	m_defined:bool;
+	m_value:Torappu_SourceApplyWay;
+}
+
+
+
+table Torappu_Undefinable_1_Torappu_MotionMode_ {
+	m_defined:bool;
+	m_value:Torappu_MotionMode;
+}
+
+
+
+table Torappu_Undefinable_1_System_StringA__ {
+	m_defined:bool;
+	m_value:[string];
+}
+
+
+
+table Torappu_Undefinable_1_Torappu_EnemyLevelType_ {
+	m_defined:bool;
+	m_value:Torappu_EnemyLevelType;
+}
+
+
+
+table Torappu_EnemyDatabase_EnemyData {
+	name:Torappu_Undefinable_1_System_String_;
+	description:Torappu_Undefinable_1_System_String_;
+	prefabKey:Torappu_Undefinable_1_System_String_;
+	attributes:Torappu_EnemyDatabase_AttributesData;
+	applyWay:Torappu_Undefinable_1_Torappu_SourceApplyWay_;
+	motion:Torappu_Undefinable_1_Torappu_MotionMode_;
+	enemyTags:Torappu_Undefinable_1_System_StringA__;
+	lifePointReduce:Torappu_Undefinable_1_System_Int32_;
+	levelType:Torappu_Undefinable_1_Torappu_EnemyLevelType_;
+	rangeRadius:Torappu_Undefinable_1_System_Single_;
+	numOfExtraDrops:Torappu_Undefinable_1_System_Int32_;
+	viewRadius:Torappu_Undefinable_1_System_Single_;
+	notCountInTotal:Torappu_Undefinable_1_System_Boolean_;
+	talentBlackboard:Torappu_Blackboard;
+	skills:[Torappu_LevelData_EnemyData_ESkillData];
+	spData:Torappu_LevelData_EnemyData_ESpData;
+}
+
+
+
+table Torappu_LevelData_EnemyDataDbReference {
+	useDb:bool;
+	id:string;
+	level:int32;
+	overwrittenData:Torappu_EnemyDatabase_EnemyData;
+}
+
+
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int32 {
+	SPAWN = 0,
+	PREVIEW_CURSOR = 1,
+	STORY = 2,
+	TUTORIAL = 3,
+	PLAY_BGM = 4,
+	DISPLAY_ENEMY_INFO = 5,
+	ACTIVATE_PREDEFINED = 6,
+	PLAY_OPERA = 7,
+	TRIGGER_PREDEFINED = 8,
+	BATTLE_EVENTS = 9,
+	WITHDRAW_PREDEFINED = 10,
+	DIALOG = 11,
+	SHOW_ALL_HIDDEN_CARDS = 12,
+	EMPTY = 13,
+	E_NUM = 14
+}
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType : int32 {
+	ALWAYS = 0,
+	PER_DAY = 1,
+	NEVER = 2,
+	PER_SETTLE_DAY = 3,
+	PER_SEASON = 4
+}
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType : int32 {
+	ALWAYS = 0,
+	PER_DAY = 1,
+	NEVER = 2,
+	PER_SETTLE_DAY = 3,
+	PER_SEASON = 4
+}
+
+table Torappu_LevelData_WaveData_FragmentData_ActionData {
+	actionType:Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType;
+	managedByScheduler:bool;
+	key:string;
+	count:int32;
+	preDelay:float;
+	interval:float;
+	routeIndex:int32;
+	blockFragment:bool;
+	autoPreviewRoute:bool;
+	autoDisplayEnemyInfo:bool;
+	isUnharmfulAndAlwaysCountAsKilled:bool;
+	hiddenGroup:string;
+	randomSpawnGroupKey:string;
+	randomSpawnGroupPackKey:string;
+	randomType:Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType;
+	refreshType:Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType;
+	weight:int32;
+	dontBlockWave:bool;
+	forceBlockWaveInBranch:bool;
+}
+
+
+
+table Torappu_LevelData_WaveData_FragmentData {
+	preDelay:float;
+	actions:[Torappu_LevelData_WaveData_FragmentData_ActionData];
+}
+
+
+
+table Torappu_LevelData_WaveData {
+	preDelay:float;
+	postDelay:float;
+	maxTimeWaitingForNextWave:float;
+	fragments:[Torappu_LevelData_WaveData_FragmentData];
+	advancedWaveTag:string;
+}
+
+
+
+table Torappu_LevelData_BranchData_PhaseData {
+	preDelay:float;
+	actions:[Torappu_LevelData_WaveData_FragmentData_ActionData];
+}
+
+
+
+table Torappu_LevelData_BranchData {
+	phases:[Torappu_LevelData_BranchData_PhaseData];
+}
+
+
+
+table list_dict___2_System_String_Torappu_LevelData_BranchData_ {
+	dict_key:string;
+	dict_value:Torappu_LevelData_BranchData;
+}
+
+
+
+table Torappu_LevelData_PredefinedData_PredefinedCharacter {
+	position:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+}
+
+
+
+table Torappu_LevelData_PredefinedData_PredefinedCard {
+}
+
+
+
+table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
+	initialCnt:int32;
+}
+
+
+
+table Torappu_LevelData_PredefinedData {
+	characterInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter];
+	tokenInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter];
+	characterCards:[Torappu_LevelData_PredefinedData_PredefinedCard];
+	tokenCards:[Torappu_LevelData_PredefinedData_PredefinedTokenCard];
+}
+
+
+
+table Torappu_LevelData {
+	options:Torappu_LevelData_Options;
+	levelId:string;
+	mapId:string;
+	bgmEvent:string;
+	environmentSe:string;
+	mapData:Torappu_MapData;
+	tilesDisallowToLocate:[Torappu_GridPosition];
+	runes:[Torappu_LegacyInLevelRuneData];
+	optionalRunes:[dict__System_String_list___1_Torappu_LegacyInLevelRuneData];
+	globalBuffs:[Torappu_LevelData_GlobalBuffData];
+	routes:[Torappu_RouteData];
+	extraRoutes:[Torappu_RouteData];
+	enemies:[Torappu_LevelData_EnemyData];
+	enemyDbRefs:[Torappu_LevelData_EnemyDataDbReference];
+	waves:[Torappu_LevelData_WaveData];
+	branches:[list_dict___2_System_String_Torappu_LevelData_BranchData_];
+	predefines:Torappu_LevelData_PredefinedData;
+	hardPredefines:Torappu_LevelData_PredefinedData;
+	excludeCharIdList:[string];
+	randomSeed:int32;
+	operaConfig:string;
+	cameraPlugin:string;
+}
+
+
+
+root_type Torappu_LevelData;

@@ -1,0 +1,14 @@
+include "dict__System_Int32_Torappu_DefaultCheckInData_CheckInDailyInfo.fbs";
+include "dict__System_String_System_Int64.fbs";
+include "Torappu_DefaultCheckInData_DynamicCheckInData.fbs";
+include "Torappu_DefaultCheckInData_ExtraCheckinDailyInfo.fbs";
+
+table Torappu_DefaultCheckInData {
+	checkInList:[dict__System_Int32_Torappu_DefaultCheckInData_CheckInDailyInfo];
+	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	dynCheckInData:Torappu_DefaultCheckInData_DynamicCheckInData;
+	extraCheckinList:[Torappu_DefaultCheckInData_ExtraCheckinDailyInfo];
+}
+
+
+root_type Torappu_DefaultCheckInData;

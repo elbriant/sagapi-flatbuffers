@@ -1,0 +1,24 @@
+include "dict__System_String_Torappu_Act35SideData_Act35SideChallengeData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideRoundData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideChallengeTaskData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideCardData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideMaterialData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideDialogueGroupData.fbs";
+include "Torappu_Act35SideData_Act35SideConstData.fbs";
+include "Torappu_Act35SideData_Act35SideMileStoneData.fbs";
+include "dict__System_String_Torappu_Act35SideData_Act35SideZoneAdditionData.fbs";
+
+table Torappu_Act35SideData {
+	challengeDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideChallengeData];
+	roundDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideRoundData];
+	taskDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideChallengeTaskData];
+	cardDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideCardData];
+	materialDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideMaterialData];
+	dialogueGroupDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideDialogueGroupData];
+	constData:Torappu_Act35SideData_Act35SideConstData;
+	mileStoneList:[Torappu_Act35SideData_Act35SideMileStoneData];
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act35SideData_Act35SideZoneAdditionData];
+}
+
+
+root_type Torappu_Act35SideData;

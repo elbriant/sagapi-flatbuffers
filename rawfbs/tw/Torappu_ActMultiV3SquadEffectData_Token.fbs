@@ -1,0 +1,9 @@
+
+table Torappu_ActMultiV3SquadEffectData_Token {
+	name:string;
+	desc:string;
+	iconId:string;
+}
+
+
+root_type Torappu_ActMultiV3SquadEffectData_Token;

@@ -1,0 +1,17 @@
+
+table Torappu_ActivityTable_ActivityHiddenStageUnlockConditionData {
+	unlockStageId:string;
+	unlockTemplate:string;
+	unlockParams:[string];
+	missionStageId:string;
+	unlockedName:string;
+	lockedName:string;
+	lockCode:string;
+	unlockedDes:string;
+	templateDesc:string;
+	desc:string;
+	riddle:string;
+}
+
+
+root_type Torappu_ActivityTable_ActivityHiddenStageUnlockConditionData;

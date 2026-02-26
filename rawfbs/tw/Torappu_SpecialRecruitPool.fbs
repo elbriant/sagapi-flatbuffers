@@ -1,0 +1,14 @@
+include "Torappu_SpecialRecruitPool_SpecialRecruitCostData.fbs";
+
+table Torappu_SpecialRecruitPool {
+	recruitId:string;
+	tagName:string;
+	tagId:int32;
+	order:int32;
+	startDateTime:int64;
+	endDateTime:int64;
+	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
+}
+
+
+root_type Torappu_SpecialRecruitPool;

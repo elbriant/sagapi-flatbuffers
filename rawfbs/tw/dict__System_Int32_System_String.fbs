@@ -1,0 +1,8 @@
+
+table dict__System_Int32_System_String {
+	dict_key:int32;
+	dict_value:string;
+}
+
+
+root_type dict__System_Int32_System_String;

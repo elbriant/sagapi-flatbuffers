@@ -1,0 +1,8 @@
+include "Torappu_OccPer.fbs";
+
+table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
+}
+
+
+root_type Torappu_StageData_DisplayDetailRewards;

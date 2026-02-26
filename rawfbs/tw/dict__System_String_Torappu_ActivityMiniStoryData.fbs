@@ -1,0 +1,9 @@
+include "Torappu_ActivityMiniStoryData.fbs";
+
+table dict__System_String_Torappu_ActivityMiniStoryData {
+	dict_key:string;
+	dict_value:Torappu_ActivityMiniStoryData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityMiniStoryData;

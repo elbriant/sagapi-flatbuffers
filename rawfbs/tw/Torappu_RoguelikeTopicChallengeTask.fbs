@@ -1,0 +1,10 @@
+
+table Torappu_RoguelikeTopicChallengeTask {
+	taskId:string;
+	taskDes:string;
+	completionClass:string;
+	completionParams:[string];
+}
+
+
+root_type Torappu_RoguelikeTopicChallengeTask;

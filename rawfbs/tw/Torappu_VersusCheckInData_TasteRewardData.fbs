@@ -1,0 +1,10 @@
+include "Torappu_VersusCheckInData_TasteType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_VersusCheckInData_TasteRewardData {
+	tasteType:Torappu_VersusCheckInData_TasteType;
+	rewardItem:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_VersusCheckInData_TasteRewardData;

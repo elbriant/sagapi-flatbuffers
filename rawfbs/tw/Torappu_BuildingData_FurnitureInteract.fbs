@@ -1,0 +1,7 @@
+
+enum Torappu_BuildingData_FurnitureInteract : int32 {
+	NONE = 0,
+	ANIMATOR = 1,
+	MUSIC = 2,
+	FUNCTION = 3
+}

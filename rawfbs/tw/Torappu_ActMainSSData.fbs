@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActMainSSZoneAdditionData.fbs";
+
+table Torappu_ActMainSSData {
+	zoneAdditionDataMap:[dict__System_String_Torappu_ActMainSSZoneAdditionData];
+}
+
+
+root_type Torappu_ActMainSSData;

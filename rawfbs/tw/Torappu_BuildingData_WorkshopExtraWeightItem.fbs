@@ -1,0 +1,9 @@
+
+table Torappu_BuildingData_WorkshopExtraWeightItem {
+	weight:int32;
+	itemId:string;
+	itemCount:int32;
+}
+
+
+root_type Torappu_BuildingData_WorkshopExtraWeightItem;

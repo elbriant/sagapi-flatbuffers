@@ -1,0 +1,10 @@
+include "Torappu_HotUpdateMetaPicData.fbs";
+include "Torappu_HotUpdateMetaMovieData.fbs";
+
+table Torappu_HotUpdateMetaTable {
+	picList:[Torappu_HotUpdateMetaPicData];
+	movieInfo:Torappu_HotUpdateMetaMovieData;
+}
+
+
+root_type Torappu_HotUpdateMetaTable;

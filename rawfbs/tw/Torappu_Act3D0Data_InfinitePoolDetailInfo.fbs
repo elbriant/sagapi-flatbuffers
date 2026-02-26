@@ -1,0 +1,9 @@
+include "Torappu_Act3D0Data_InfinitePoolDetailInfo_PoolItemInfo.fbs";
+
+table Torappu_Act3D0Data_InfinitePoolDetailInfo {
+	poolId:string;
+	poolItemInfo:[Torappu_Act3D0Data_InfinitePoolDetailInfo_PoolItemInfo];
+}
+
+
+root_type Torappu_Act3D0Data_InfinitePoolDetailInfo;

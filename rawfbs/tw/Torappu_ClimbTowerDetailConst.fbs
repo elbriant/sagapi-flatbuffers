@@ -1,0 +1,25 @@
+
+table Torappu_ClimbTowerDetailConst {
+	unlockLevelId:string;
+	unlockModuleNumRequirement:int32;
+	lowerItemId:string;
+	lowerItemLimit:int32;
+	higherItemId:string;
+	higherItemLimit:int32;
+	initCharCount:int32;
+	charRecruitTimes:int32;
+	charRecruitChoiceCount:int32;
+	subcardStageSort:int32;
+	assistCharLimit:int32;
+	firstClearTaskDesc:string;
+	subCardObtainDesc:string;
+	subGodCardUnlockDesc:string;
+	sweepStartTime:int64;
+	sweepOpenOrdinaryLayer:int32;
+	sweepOpenDifficultLayer:int32;
+	sweepCostCount:int32;
+	squadMemStartTime:int64;
+}
+
+
+root_type Torappu_ClimbTowerDetailConst;

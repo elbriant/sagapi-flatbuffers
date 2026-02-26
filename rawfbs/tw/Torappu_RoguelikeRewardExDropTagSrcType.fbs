@@ -1,0 +1,9 @@
+
+enum Torappu_RoguelikeRewardExDropTagSrcType : int32 {
+	NONE = 0,
+	TREASURE = 1,
+	TOTEM = 2,
+	EXPLORE_TOOL = 3,
+	COPPER = 4,
+	EVIL_TEMPLE = 5
+}

@@ -1,0 +1,6 @@
+
+enum Torappu_ActivityCompleteType : int32 {
+	SPECIAL = 0,
+	CAN_COMPLETE = 1,
+	CANNOT_COMPLETE = 2
+}

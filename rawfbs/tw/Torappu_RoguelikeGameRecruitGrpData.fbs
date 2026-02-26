@@ -1,0 +1,11 @@
+
+table Torappu_RoguelikeGameRecruitGrpData {
+	id:string;
+	iconId:string;
+	name:string;
+	desc:string;
+	unlockDesc:string;
+}
+
+
+root_type Torappu_RoguelikeGameRecruitGrpData;

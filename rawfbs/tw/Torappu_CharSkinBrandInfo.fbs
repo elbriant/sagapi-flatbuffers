@@ -1,0 +1,16 @@
+include "Torappu_CharSkinGroupInfo.fbs";
+include "Torappu_CharSkinKvImgInfo.fbs";
+
+table Torappu_CharSkinBrandInfo {
+	brandId:string;
+	groupList:[Torappu_CharSkinGroupInfo];
+	kvImgIdList:[Torappu_CharSkinKvImgInfo];
+	brandName:string;
+	brandCapitalName:string;
+	description:string;
+	publishTime:int64;
+	sortId:int32;
+}
+
+
+root_type Torappu_CharSkinBrandInfo;

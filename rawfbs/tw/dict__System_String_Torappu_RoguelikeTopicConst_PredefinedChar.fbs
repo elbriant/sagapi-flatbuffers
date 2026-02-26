@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeTopicConst_PredefinedChar.fbs";
+
+table dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeTopicConst_PredefinedChar;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar;

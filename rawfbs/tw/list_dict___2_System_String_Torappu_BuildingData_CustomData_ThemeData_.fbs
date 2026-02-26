@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_CustomData_ThemeData.fbs";
+
+table list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_ThemeData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_;

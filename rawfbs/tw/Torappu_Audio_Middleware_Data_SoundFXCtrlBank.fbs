@@ -1,0 +1,11 @@
+include "Torappu_Audio_Middleware_Data_Bank.fbs";
+
+table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
+	m_targetBank:Torappu_Audio_Middleware_Data_Bank;
+	targetBank:string;
+	ctrlStop:bool;
+	ctrlStopFadetime:float;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_SoundFXCtrlBank;

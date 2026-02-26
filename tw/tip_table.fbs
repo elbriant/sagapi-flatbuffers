@@ -1,0 +1,36 @@
+
+enum Torappu_TipData_Category : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	UI = 2,
+	BUILDING = 4,
+	GACHA = 8,
+	MISC = 16,
+	ALL = 31
+}
+
+table Torappu_TipData {
+	tip:string;
+	weight:float;
+	category:Torappu_TipData_Category;
+}
+
+
+
+table Torappu_WorldViewTip {
+	title:string;
+	description:string;
+	backgroundPicId:string;
+	weight:float;
+}
+
+
+
+table Torappu_TipTable {
+	tips:[Torappu_TipData];
+	worldViewTips:[Torappu_WorldViewTip];
+}
+
+
+
+root_type Torappu_TipTable;

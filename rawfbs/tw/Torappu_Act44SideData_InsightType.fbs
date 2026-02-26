@@ -1,0 +1,6 @@
+
+enum Torappu_Act44SideData_InsightType : int32 {
+	PATIENCE = 0,
+	ATTENTION = 1,
+	TRUST = 2
+}

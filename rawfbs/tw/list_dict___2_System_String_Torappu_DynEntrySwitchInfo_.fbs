@@ -1,0 +1,9 @@
+include "Torappu_DynEntrySwitchInfo.fbs";
+
+table list_dict___2_System_String_Torappu_DynEntrySwitchInfo_ {
+	dict_key:string;
+	dict_value:Torappu_DynEntrySwitchInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_DynEntrySwitchInfo_;

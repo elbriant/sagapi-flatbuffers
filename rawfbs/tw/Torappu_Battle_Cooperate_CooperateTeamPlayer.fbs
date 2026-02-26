@@ -1,0 +1,9 @@
+
+table Torappu_Battle_Cooperate_CooperateTeamPlayer {
+	forward:string;
+	goalkeeper:string;
+	muscleman:string;
+}
+
+
+root_type Torappu_Battle_Cooperate_CooperateTeamPlayer;

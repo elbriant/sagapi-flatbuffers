@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeWrathModuleConsts {
+	getWrathTransition:string;
+	getWrathToast:string;
+	hiddenWrathType:string;
+}
+
+
+root_type Torappu_RoguelikeWrathModuleConsts;

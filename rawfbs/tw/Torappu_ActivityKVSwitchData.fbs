@@ -1,0 +1,8 @@
+include "list_dict___2_System_String_Torappu_KVSwitchInfo_.fbs";
+
+table Torappu_ActivityKVSwitchData {
+	kvSwitchInfo:[list_dict___2_System_String_Torappu_KVSwitchInfo_];
+}
+
+
+root_type Torappu_ActivityKVSwitchData;

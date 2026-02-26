@@ -1,0 +1,8 @@
+include "dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData.fbs";
+
+table Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData {
+	levels:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData];
+}
+
+
+root_type Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData;

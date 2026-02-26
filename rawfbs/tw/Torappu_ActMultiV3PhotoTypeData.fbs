@@ -1,0 +1,12 @@
+include "Torappu_ActMultiV3PhotoSlotData.fbs";
+
+table Torappu_ActMultiV3PhotoTypeData {
+	photoTypeName:string;
+	sortId:int32;
+	background:string;
+	photoDesc:string;
+	slots:[Torappu_ActMultiV3PhotoSlotData];
+}
+
+
+root_type Torappu_ActMultiV3PhotoTypeData;

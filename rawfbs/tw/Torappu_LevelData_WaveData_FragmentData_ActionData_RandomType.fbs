@@ -1,0 +1,8 @@
+
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType : int32 {
+	ALWAYS = 0,
+	PER_DAY = 1,
+	NEVER = 2,
+	PER_SETTLE_DAY = 3,
+	PER_SEASON = 4
+}

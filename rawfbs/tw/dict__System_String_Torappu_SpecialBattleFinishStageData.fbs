@@ -1,0 +1,9 @@
+include "Torappu_SpecialBattleFinishStageData.fbs";
+
+table dict__System_String_Torappu_SpecialBattleFinishStageData {
+	dict_key:string;
+	dict_value:Torappu_SpecialBattleFinishStageData;
+}
+
+
+root_type dict__System_String_Torappu_SpecialBattleFinishStageData;

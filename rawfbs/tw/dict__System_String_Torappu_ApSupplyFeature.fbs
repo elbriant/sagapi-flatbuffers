@@ -1,0 +1,9 @@
+include "Torappu_ApSupplyFeature.fbs";
+
+table dict__System_String_Torappu_ApSupplyFeature {
+	dict_key:string;
+	dict_value:Torappu_ApSupplyFeature;
+}
+
+
+root_type dict__System_String_Torappu_ApSupplyFeature;

@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerSingleLevelData.fbs";
+
+table dict__System_String_Torappu_ClimbTowerSingleLevelData {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerSingleLevelData;
+}
+
+
+root_type dict__System_String_Torappu_ClimbTowerSingleLevelData;

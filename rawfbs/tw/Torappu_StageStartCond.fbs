@@ -1,0 +1,10 @@
+include "Torappu_StageStartCond_RequireChar.fbs";
+
+table Torappu_StageStartCond {
+	requireChars:[Torappu_StageStartCond_RequireChar];
+	excludeAssists:[string];
+	isNotPass:bool;
+}
+
+
+root_type Torappu_StageStartCond;

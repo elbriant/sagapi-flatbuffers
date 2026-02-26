@@ -1,0 +1,5 @@
+
+enum Torappu_CharacterData_PotentialRank_TypeEnum : int32 {
+	BUFF = 0,
+	CUSTOM = 1
+}

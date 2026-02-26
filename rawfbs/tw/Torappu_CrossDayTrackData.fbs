@@ -1,0 +1,8 @@
+
+table Torappu_CrossDayTrackData {
+	updateEndTs:int64;
+	id:string;
+}
+
+
+root_type Torappu_CrossDayTrackData;

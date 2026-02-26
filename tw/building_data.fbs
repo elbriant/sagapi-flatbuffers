@@ -1,0 +1,1185 @@
+
+table list_dict___2_System_String_System_Int32_ {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
+enum Torappu_BuildingData_RoomType : int32 {
+	NONE = 0,
+	CONTROL = 1,
+	POWER = 2,
+	MANUFACTURE = 4,
+	SHOP = 8,
+	DORMITORY = 16,
+	MEETING = 32,
+	HIRE = 64,
+	ELEVATOR = 128,
+	CORRIDOR = 256,
+	TRADING = 512,
+	WORKSHOP = 1024,
+	TRAINING = 2048,
+	PRIVATE = 4096,
+	FUNCTIONAL = 3710,
+	ALL = 8191
+}
+
+table Torappu_BuildingData_RoomUnlockCond_CondItem {
+	type:Torappu_BuildingData_RoomType;
+	level:int32;
+	count:int32;
+}
+
+
+
+table list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_ {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_RoomUnlockCond_CondItem;
+}
+
+
+
+table Torappu_BuildingData_RoomUnlockCond {
+	id:string;
+	number:[list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_RoomUnlockCond {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_RoomUnlockCond;
+}
+
+
+
+enum Torappu_BuildingData_RoomCategory : int32 {
+	NONE = 0,
+	FUNCTION = 1,
+	OUTPUT = 2,
+	CUSTOM = 4,
+	ELEVATOR = 8,
+	CORRIDOR = 16,
+	SPECIAL = 32,
+	CUSTOM_P = 64,
+	ELEVATOR_P = 128,
+	CORRIDOR_P = 256,
+	ALL = 511
+}
+
+table Torappu_GridPosition {
+	row:int32;
+	col:int32;
+}
+
+
+
+enum Torappu_ItemType : int32 {
+	NONE = 0,
+	CHAR = 1,
+	CARD_EXP = 2,
+	MATERIAL = 3,
+	GOLD = 4,
+	EXP_PLAYER = 5,
+	TKT_TRY = 6,
+	TKT_RECRUIT = 7,
+	TKT_INST_FIN = 8,
+	TKT_GACHA = 9,
+	ACTIVITY_COIN = 10,
+	DIAMOND = 11,
+	DIAMOND_SHD = 12,
+	HGG_SHD = 13,
+	LGG_SHD = 14,
+	FURN = 15,
+	AP_GAMEPLAY = 16,
+	AP_BASE = 17,
+	SOCIAL_PT = 18,
+	CHAR_SKIN = 19,
+	TKT_GACHA_10 = 20,
+	TKT_GACHA_PRSV = 21,
+	AP_ITEM = 22,
+	AP_SUPPLY = 23,
+	RENAMING_CARD = 24,
+	RENAMING_CARD_2 = 25,
+	ET_STAGE = 26,
+	ACTIVITY_ITEM = 27,
+	VOUCHER_PICK = 28,
+	VOUCHER_CGACHA = 29,
+	VOUCHER_MGACHA = 30,
+	CRS_SHOP_COIN = 31,
+	CRS_RUNE_COIN = 32,
+	LMTGS_COIN = 33,
+	EPGS_COIN = 34,
+	LIMITED_TKT_GACHA_10 = 35,
+	LIMITED_FREE_GACHA = 36,
+	REP_COIN = 37,
+	ROGUELIKE = 38,
+	LINKAGE_TKT_GACHA_10 = 39,
+	VOUCHER_ELITE_II_4 = 40,
+	VOUCHER_ELITE_II_5 = 41,
+	VOUCHER_ELITE_II_6 = 42,
+	VOUCHER_SKIN = 43,
+	RETRO_COIN = 44,
+	PLAYER_AVATAR = 45,
+	UNI_COLLECTION = 46,
+	VOUCHER_FULL_POTENTIAL = 47,
+	RL_COIN = 48,
+	RETURN_CREDIT = 49,
+	MEDAL = 50,
+	CHARM = 51,
+	HOME_BACKGROUND = 52,
+	EXTERMINATION_AGENT = 53,
+	OPTIONAL_VOUCHER_PICK = 54,
+	ACT_CART_COMPONENT = 55,
+	VOUCHER_LEVELMAX_6 = 56,
+	VOUCHER_LEVELMAX_5 = 57,
+	VOUCHER_LEVELMAX_4 = 58,
+	VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+	VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+	VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+	ACTIVITY_POTENTIAL = 62,
+	ITEM_PACK = 63,
+	SANDBOX = 64,
+	FAVOR_ADD_ITEM = 65,
+	CLASSIC_SHD = 66,
+	CLASSIC_TKT_GACHA = 67,
+	CLASSIC_TKT_GACHA_10 = 68,
+	LIMITED_BUFF = 69,
+	CLASSIC_FES_PICK_TIER_5 = 70,
+	CLASSIC_FES_PICK_TIER_6 = 71,
+	RETURN_PROGRESS = 72,
+	NEW_PROGRESS = 73,
+	MCARD_VOUCHER = 74,
+	MATERIAL_ISSUE_VOUCHER = 75,
+	CRS_SHOP_COIN_V2 = 76,
+	HOME_THEME = 77,
+	SANDBOX_PERM = 78,
+	SANDBOX_TOKEN = 79,
+	TEMPLATE_TRAP = 80,
+	NAME_CARD_SKIN = 81,
+	EMOTICON_SET = 82,
+	EXCLUSIVE_TKT_GACHA = 83,
+	EXCLUSIVE_TKT_GACHA_10 = 84,
+	SO_CHAR_EXP = 85,
+	GIFTPACKAGE_TKT = 86
+}
+
+table Torappu_ItemBundle {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+}
+
+
+
+table Torappu_BuildingData_RoomData_BuildCost {
+	items:[Torappu_ItemBundle];
+	time:int64;
+	labor:int32;
+}
+
+
+
+table Torappu_BuildingData_RoomData_PhaseData {
+	overrideName:string;
+	overridePrefabId:string;
+	unlockCondId:string;
+	buildCost:Torappu_BuildingData_RoomData_BuildCost;
+	electricity:int32;
+	maxStationedNum:int32;
+	manpowerCost:int64;
+}
+
+
+
+table Torappu_BuildingData_RoomData {
+	id:Torappu_BuildingData_RoomType;
+	name:string;
+	description:string;
+	defaultPrefabId:string;
+	canLevelDown:bool;
+	maxCount:int32;
+	category:Torappu_BuildingData_RoomCategory;
+	size:Torappu_GridPosition;
+	phases:[Torappu_BuildingData_RoomData_PhaseData];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_RoomData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_RoomData;
+}
+
+
+
+table Torappu_BuildingData_LayoutData_RoomSlot {
+	id:string;
+	cleanCostId:string;
+	costLabor:int32;
+	provideLabor:int32;
+	size:Torappu_GridPosition;
+	offset:Torappu_GridPosition;
+	category:Torappu_BuildingData_RoomCategory;
+	storeyId:string;
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_LayoutData_RoomSlot {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_LayoutData_RoomSlot;
+}
+
+
+
+table Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost {
+	items:[Torappu_ItemBundle];
+}
+
+
+
+table list_dict___2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_ {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost;
+}
+
+
+
+table Torappu_BuildingData_LayoutData_SlotCleanCost {
+	id:string;
+	number:[list_dict___2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_LayoutData_SlotCleanCost {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost;
+}
+
+
+
+enum Torappu_BuildingData_LayoutData_StoreyData_Type : int32 {
+	UPGROUND = 0,
+	DOWNGROUND = 1
+}
+
+table Torappu_BuildingData_LayoutData_StoreyData {
+	id:string;
+	yOffset:int32;
+	unlockControlLevel:int32;
+	type:Torappu_BuildingData_LayoutData_StoreyData_Type;
+}
+
+
+
+table list_dict___2_System_String_Torappu_BuildingData_LayoutData_StoreyData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_LayoutData_StoreyData;
+}
+
+
+
+table Torappu_BuildingData_LayoutData {
+	id:string;
+	slots:[dict__System_String_Torappu_BuildingData_LayoutData_RoomSlot];
+	cleanCosts:[dict__System_String_Torappu_BuildingData_LayoutData_SlotCleanCost];
+	storeys:[list_dict___2_System_String_Torappu_BuildingData_LayoutData_StoreyData_];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_LayoutData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_LayoutData;
+}
+
+
+
+table Torappu_BuildingData_PrefabInfo {
+	id:string;
+	blueprintRoomOverrideId:string;
+	size:Torappu_GridPosition;
+	floorGridSize:Torappu_GridPosition;
+	backWallGridSize:Torappu_GridPosition;
+	obstacleId:string;
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_PrefabInfo {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_PrefabInfo;
+}
+
+
+
+table Torappu_BuildingData_ControlRoomBean {
+	basicCostBuff:int32;
+}
+
+
+
+table Torappu_BuildingData_ManufactRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+
+table Torappu_BuildingData_ShopPhase {
+	counterNum:int32;
+	speed:float;
+	moneyCapacity:int32;
+}
+
+
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase_ {
+	phases:[Torappu_BuildingData_ShopPhase];
+}
+
+
+
+table Torappu_BuildingData_HireRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+
+table Torappu_BuildingData_DormPhase {
+	manpowerRecover:int32;
+	decorationLimit:int32;
+}
+
+
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_DormPhase_ {
+	phases:[Torappu_BuildingData_DormPhase];
+}
+
+
+
+table Torappu_BuildingData_PrivatePhase {
+	decorationLimit:int32;
+}
+
+
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase_ {
+	phases:[Torappu_BuildingData_PrivatePhase];
+}
+
+
+
+table Torappu_BuildingData_MeetingRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+
+table Torappu_BuildingData_TradingRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+
+table Torappu_BuildingData_WorkshopPhase {
+	manpowerFactor:float;
+}
+
+
+
+table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase_ {
+	phases:[Torappu_BuildingData_WorkshopPhase];
+}
+
+
+
+table Torappu_BuildingData_TrainingBean {
+	basicSpeedBuff:float;
+}
+
+
+
+table Torappu_BuildingData_PowerRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+
+enum Torappu_EvolvePhase : int32 {
+	PHASE_0 = 0,
+	PHASE_1 = 1,
+	PHASE_2 = 2,
+	PHASE_3 = 3,
+	E_NUM = 4
+}
+
+table Torappu_CharacterData_UnlockCondition {
+	phase:Torappu_EvolvePhase;
+	level:int32;
+}
+
+
+
+table Torappu_BuildingData_BuildingBuffCharSlot_SlotItem {
+	buffId:string;
+	cond:Torappu_CharacterData_UnlockCondition;
+}
+
+
+
+table Torappu_BuildingData_BuildingBuffCharSlot {
+	buffData:[Torappu_BuildingData_BuildingBuffCharSlot_SlotItem];
+}
+
+
+
+table Torappu_BuildingData_BuildingCharacter {
+	charId:string;
+	maxManpower:int64;
+	buffChar:[Torappu_BuildingData_BuildingBuffCharSlot];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_BuildingCharacter {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_BuildingCharacter;
+}
+
+
+
+enum Torappu_BuildingData_BuffCategory : int32 {
+	NONE = 0,
+	FUNCTION = 1,
+	OUTPUT = 2,
+	RECOVERY = 3
+}
+
+table Torappu_BuildingData_BuildingBuff {
+	buffId:string;
+	buffName:string;
+	buffIcon:string;
+	skillIcon:string;
+	sortId:int32;
+	buffColor:string;
+	textColor:string;
+	buffCategory:Torappu_BuildingData_BuffCategory;
+	roomType:Torappu_BuildingData_RoomType;
+	description:string;
+	efficiency:int32;
+	targetGroupSortId:int32;
+	targets:[string];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_BuildingBuff {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_BuildingBuff;
+}
+
+
+
+table dict__System_String_list___1_System_String {
+	dict_key:string;
+	dict_value:[string];
+}
+
+
+
+enum Torappu_BuildingData_FurnitureInteract : int32 {
+	NONE = 0,
+	ANIMATOR = 1,
+	MUSIC = 2,
+	FUNCTION = 3
+}
+
+enum Torappu_BuildingData_FurnitureType : int32 {
+	FLOOR = 0,
+	CARPET = 1,
+	SEATING = 2,
+	BEDDING = 3,
+	TABLE = 4,
+	CABINET = 5,
+	DECORATION = 6,
+	WALLPAPER = 7,
+	WALLDECO = 8,
+	WALLLAMP = 9,
+	CEILING = 10,
+	CEILINGLAMP = 11,
+	FUNCTION = 12,
+	INTERACT = 13
+}
+
+enum Torappu_BuildingData_FurnitureSubType : int32 {
+	NONE = 0,
+	CHAIR = 1,
+	SOFA = 2,
+	BARSTOOL = 3,
+	STOOL = 4,
+	BENCH = 5,
+	ORTHER_S = 6,
+	POSTER = 7,
+	CURTAIN = 8,
+	BOARD_WD = 9,
+	SHELF = 10,
+	INSTRUMENT_WD = 11,
+	ART_WD = 12,
+	PLAQUE = 13,
+	CONTRACT = 14,
+	ANNIHILATION = 15,
+	ORTHER_WD = 16,
+	FLOORLAMP = 17,
+	PLANT = 18,
+	PARTITION = 19,
+	COOKING = 20,
+	CATERING = 21,
+	DEVICE = 22,
+	INSTRUMENT_D = 23,
+	ART_D = 24,
+	BOARD_D = 25,
+	ENTERTAINMENT = 26,
+	STORAGE = 27,
+	DRESSING = 28,
+	WARM = 29,
+	WASH = 30,
+	ORTHER_D = 31,
+	COLUMN = 32,
+	DECORATION_C = 33,
+	CURTAIN_C = 34,
+	DEVICE_C = 35,
+	CONTRACT_2 = 36,
+	LIGHT = 37,
+	ORTHER_C = 38,
+	VISITOR = 39,
+	MUSIC = 40
+}
+
+enum Torappu_BuildingData_FurnitureLocation : int32 {
+	NONE = 0,
+	WALL = 1,
+	FLOOR = 2,
+	CARPET = 3,
+	CEILING = 4,
+	POSTER = 5,
+	CEILINGDECAL = 6
+}
+
+enum Torappu_BuildingData_FurnitureCategory : int32 {
+	FURNITURE = 0,
+	WALL = 1,
+	FLOOR = 2
+}
+
+table Torappu_BuildingData_WorkshopExtraWeightItem {
+	weight:int32;
+	itemId:string;
+	itemCount:int32;
+}
+
+
+
+table Torappu_BuildingData_CustomData_FurnitureData {
+	id:string;
+	sortId:int32;
+	name:string;
+	iconId:string;
+	interactType:Torappu_BuildingData_FurnitureInteract;
+	musicId:string;
+	type:Torappu_BuildingData_FurnitureType;
+	subType:Torappu_BuildingData_FurnitureSubType;
+	location:Torappu_BuildingData_FurnitureLocation;
+	category:Torappu_BuildingData_FurnitureCategory;
+	validOnRotate:bool;
+	enableRotate:bool;
+	rarity:int32;
+	themeId:string;
+	groupId:string;
+	width:int32;
+	depth:int32;
+	height:int32;
+	comfort:int32;
+	usage:string;
+	description:string;
+	obtainApproach:string;
+	processedProductId:string;
+	processedProductCount:int32;
+	processedByProductPercentage:int32;
+	processedByProductGroup:[Torappu_BuildingData_WorkshopExtraWeightItem];
+	canBeDestroy:bool;
+	isOnly:int32;
+	enableRoomType:int32;
+	quantity:int32;
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_CustomData_FurnitureData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_FurnitureData;
+}
+
+
+
+table Torappu_BuildingData_CustomData_ThemeQuickSetupItem {
+	furnitureId:string;
+	pos0:int32;
+	pos1:int32;
+	dir:int32;
+}
+
+
+
+table Torappu_BuildingData_CustomData_ThemeData {
+	id:string;
+	enableRoomType:int32;
+	sortId:int32;
+	name:string;
+	themeType:string;
+	desc:string;
+	quickSetup:[Torappu_BuildingData_CustomData_ThemeQuickSetupItem];
+	groups:[string];
+	furnitures:[string];
+}
+
+
+
+table list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_ThemeData;
+}
+
+
+
+table Torappu_BuildingData_CustomData_GroupData {
+	id:string;
+	sortId:int32;
+	name:string;
+	themeId:string;
+	comfort:int32;
+	count:int32;
+	furniture:[string];
+}
+
+
+
+table list_dict___2_System_String_Torappu_BuildingData_CustomData_GroupData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_GroupData;
+}
+
+
+
+table Torappu_BuildingData_CustomData_FurnitureTypeData {
+	type:Torappu_BuildingData_FurnitureType;
+	name:string;
+	enableRoomType:int32;
+}
+
+
+
+table list_dict___2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_ {
+	dict_key:Torappu_BuildingData_FurnitureType;
+	dict_value:Torappu_BuildingData_CustomData_FurnitureTypeData;
+}
+
+
+
+table Torappu_BuildingData_CustomData_FurnitureSubTypeData {
+	subType:Torappu_BuildingData_FurnitureSubType;
+	name:string;
+	type:Torappu_BuildingData_FurnitureType;
+	sortId:int32;
+	countLimit:int32;
+	enableRoomType:int32;
+}
+
+
+
+table list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_ {
+	dict_key:Torappu_BuildingData_FurnitureSubType;
+	dict_value:Torappu_BuildingData_CustomData_FurnitureSubTypeData;
+}
+
+
+
+table Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem {
+	furnitureId:string;
+	xOffset:int32;
+	yOffset:int32;
+	defaultPrefabId:string;
+}
+
+
+
+table list_dict___2_System_String_list___1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__ {
+	dict_key:string;
+	dict_value:[Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem];
+}
+
+
+
+table Torappu_BuildingData_CustomData_InteractItem {
+	skinId:string;
+}
+
+
+
+table dict__System_String_list___1_Torappu_BuildingData_CustomData_InteractItem {
+	dict_key:string;
+	dict_value:[Torappu_BuildingData_CustomData_InteractItem];
+}
+
+
+
+enum Torappu_BuildingData_DiySortType : int32 {
+	NONE = 0,
+	THEME = 1,
+	FURNITURE = 2,
+	FURNITURE_IN_THEME = 3,
+	RECENT_THEME = 4,
+	RECENT_FURNITURE = 5,
+	MEETING_THEME = 6,
+	MEETING_FURNITURE = 7,
+	MEETING_FURNITURE_IN_THEME = 8,
+	MEETING_RECENT_THEME = 9,
+	MEETING_RECENT_FURNITURE = 10
+}
+
+enum Torappu_BuildingData_DiyUISortOrder : int32 {
+	DESC = 0,
+	ASC = 1
+}
+
+table Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData {
+	name:string;
+	sequences:[string];
+	stableSequence:string;
+	stableSequenceOrder:Torappu_BuildingData_DiyUISortOrder;
+}
+
+
+
+table Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+	diySortType:Torappu_BuildingData_DiySortType;
+	expandState:string;
+	defaultTemplateIndex:int32;
+	defaultTemplateOrder:Torappu_BuildingData_DiyUISortOrder;
+	templates:[Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_DiyUISortTemplateListData;
+}
+
+
+
+table dict__Torappu_BuildingData_DiySortType_dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+	dict_key:Torappu_BuildingData_DiySortType;
+	dict_value:[dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData];
+}
+
+
+
+table Torappu_BuildingData_CustomData {
+	furnitures:[dict__System_String_Torappu_BuildingData_CustomData_FurnitureData];
+	themes:[list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_];
+	groups:[list_dict___2_System_String_Torappu_BuildingData_CustomData_GroupData_];
+	types:[list_dict___2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_];
+	subTypes:[list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_];
+	defaultFurnitures:[list_dict___2_System_String_list___1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__];
+	interactGroups:[dict__System_String_list___1_Torappu_BuildingData_CustomData_InteractItem];
+	diyUISortTemplates:[dict__Torappu_BuildingData_DiySortType_dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData];
+}
+
+
+
+enum Torappu_BuildingData_FormulaItemType : int32 {
+	NONE = 0,
+	F_EVOLVE = 1,
+	F_BUILDING = 2,
+	F_GOLD = 3,
+	F_DIAMOND = 4,
+	F_FURNITURE = 5,
+	F_EXP = 6,
+	F_ASC = 7,
+	F_SKILL = 8
+}
+
+table Torappu_BuildingData_ManufactFormula_UnlockRoom {
+	roomId:Torappu_BuildingData_RoomType;
+	roomLevel:int32;
+	roomCount:int32;
+}
+
+
+
+table Torappu_BuildingData_ManufactFormula_UnlockStage {
+	stageId:string;
+	rank:int32;
+}
+
+
+
+table Torappu_BuildingData_ManufactFormula {
+	formulaId:string;
+	itemId:string;
+	count:int32;
+	weight:int32;
+	costPoint:int64;
+	formulaType:Torappu_BuildingData_FormulaItemType;
+	buffType:string;
+	costs:[Torappu_ItemBundle];
+	requireRooms:[Torappu_BuildingData_ManufactFormula_UnlockRoom];
+	requireStages:[Torappu_BuildingData_ManufactFormula_UnlockStage];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_ManufactFormula {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_ManufactFormula;
+}
+
+
+
+table Torappu_BuildingData_ShopFormula_UnlockRoom {
+	roomId:Torappu_BuildingData_RoomType;
+	roomLevel:int32;
+}
+
+
+
+table Torappu_BuildingData_ShopFormula {
+	formulaId:string;
+	itemId:string;
+	formulaType:Torappu_BuildingData_FormulaItemType;
+	costPoint:int64;
+	gainItem:Torappu_ItemBundle;
+	requireRooms:[Torappu_BuildingData_ShopFormula_UnlockRoom];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_ShopFormula {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_ShopFormula;
+}
+
+
+
+table Torappu_BuildingData_WorkshopFormula_UnlockRoom {
+	roomId:Torappu_BuildingData_RoomType;
+	roomLevel:int32;
+	roomCount:int32;
+}
+
+
+
+table Torappu_BuildingData_WorkshopFormula_UnlockStage {
+	stageId:string;
+	rank:int32;
+}
+
+
+
+table Torappu_BuildingData_WorkshopFormula {
+	sortId:int32;
+	formulaId:string;
+	rarity:int32;
+	itemId:string;
+	count:int32;
+	goldCost:int64;
+	apCost:int64;
+	formulaType:Torappu_BuildingData_FormulaItemType;
+	buffType:string;
+	extraOutcomeRate:float;
+	extraOutcomeGroup:[Torappu_BuildingData_WorkshopExtraWeightItem];
+	costs:[Torappu_ItemBundle];
+	requireRooms:[Torappu_BuildingData_WorkshopFormula_UnlockRoom];
+	requireStages:[Torappu_BuildingData_WorkshopFormula_UnlockStage];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_WorkshopFormula {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_WorkshopFormula;
+}
+
+
+
+table Torappu_BuildingData_CreditFormula_ValueModel {
+	basic:int32;
+	addition:int32;
+}
+
+
+
+table list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_ {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_CreditFormula_ValueModel;
+}
+
+
+
+table Torappu_BuildingData_CreditFormula {
+	initiative:[list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+	passive:[list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+}
+
+
+
+table dict__System_String_System_Int32 {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
+enum Torappu_ItemRarity : int32 {
+	TIER_1 = 0,
+	TIER_2 = 1,
+	TIER_3 = 2,
+	TIER_4 = 3,
+	TIER_5 = 4,
+	TIER_6 = 5,
+	E_NUM = 6
+}
+
+table Torappu_BuildingData_WorkshopRarityInfo {
+	name:string;
+	order:int32;
+	rarityList:[Torappu_ItemRarity];
+	color:string;
+}
+
+
+
+table Torappu_BuildingData_SlotPrequeData {
+	roomType:Torappu_BuildingData_RoomType;
+	name:string;
+	typeSortId:int32;
+	isPreque:bool;
+	prequeNum:int32;
+}
+
+
+
+table list_dict___2_System_String_Torappu_BuildingData_SlotPrequeData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_SlotPrequeData;
+}
+
+
+
+table Torappu_BuildingData_DormitoryPrequeData {
+	roomType:Torappu_BuildingData_RoomType;
+	name:string;
+}
+
+
+
+table list_dict___2_System_String_Torappu_BuildingData_DormitoryPrequeData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_DormitoryPrequeData;
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_BuildingData_StationManageConstData {
+	cantWorkToastNoTiredChar:string;
+	cantWorkToastNoAvailQueue:string;
+	cantWorkToastNoNeed:string;
+	cantRestToastNoTiredChar:string;
+	cantRestToastNoAvailDorm:string;
+	workBatchToast:string;
+	restBatchToast:string;
+	roomNoAvailQueueToast:string;
+	cantUseNoPerson:string;
+	cantUseWorking:string;
+	queueCleared:string;
+	updateTime:int64;
+	dormLockUpdateTime:int64;
+}
+
+
+
+enum Torappu_BuildingData_CharStationFilterType : int32 {
+	All = 0,
+	DormLock = 1,
+	NotStationed = 2
+}
+
+table Torappu_BuildingData_StationManageFilterInfo {
+	charStationFilterType:Torappu_BuildingData_CharStationFilterType;
+	name:string;
+}
+
+
+
+table dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_StationManageFilterInfo;
+}
+
+
+
+table Torappu_BuildingData_MusicSingleData {
+	bgmId:string;
+	bgmSortId:int32;
+	bgmStartTime:int64;
+	bgmName:string;
+	gameMusicId:string;
+	obtainApproach:string;
+	bgmDescUnlocked:string;
+	unlockType:string;
+	unlockParams:[string];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_MusicSingleData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_MusicSingleData;
+}
+
+
+
+table Torappu_BuildingData_MusicData {
+	defaultMusic:string;
+	musicDatas:[dict__System_String_Torappu_BuildingData_MusicSingleData];
+}
+
+
+
+table Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo {
+	targets:[string];
+	sortId:int32;
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo;
+}
+
+
+
+table Torappu_BuildingData_BuildingRoomTypeBuffSortData {
+	hasEfficiencySort:bool;
+	defaultGroupSortId:int32;
+	efficiencyTargetDict:[dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_BuildingRoomTypeBuffSortData;
+}
+
+
+
+table Torappu_BuildingData {
+	controlSlotId:string;
+	meetingSlotId:string;
+	initMaxLabor:int32;
+	laborRecoverTime:int32;
+	manufactInputCapacity:int32;
+	shopCounterCapacity:int32;
+	comfortLimit:int32;
+	creditInitiativeLimit:int32;
+	creditPassiveLimit:int32;
+	creditComfortFactor:int32;
+	creditGuaranteed:int32;
+	creditCeiling:int32;
+	manufactUnlockTips:string;
+	shopUnlockTips:string;
+	manufactStationBuff:float;
+	comfortManpowerRecoverFactor:int32;
+	manpowerDisplayFactor:int32;
+	shopOutputRatio:[list_dict___2_System_String_System_Int32_];
+	shopStackRatio:[list_dict___2_System_String_System_Int32_];
+	basicFavorPerDay:int32;
+	humanResourceLimit:int32;
+	tiredApThreshold:int64;
+	processedCountRatio:int32;
+	tradingStrategyUnlockLevel:int32;
+	tradingReduceTimeUnit:int32;
+	tradingLaborCostUnit:int32;
+	manufactReduceTimeUnit:int32;
+	manufactLaborCostUnit:int32;
+	laborAssistUnlockLevel:int32;
+	apToLaborUnlockLevel:int32;
+	apToLaborRatio:int32;
+	socialResourceLimit:int32;
+	socialSlotNum:int32;
+	furniDuplicationLimit:int32;
+	assistFavorReport:int64;
+	manufactManpowerCostByNum:[int32];
+	tradingManpowerCostByNum:[int32];
+	trainingBonusMax:int32;
+	betaRemoveTime:int64;
+	furniHighlightTime:float;
+	canNotVisitToast:string;
+	musicPlayerOpenTime:int64;
+	roomsWithoutRemoveStaff:[string];
+	privateFavorLevelThresholds:[int32];
+	roomUnlockConds:[dict__System_String_Torappu_BuildingData_RoomUnlockCond];
+	rooms:[dict__System_String_Torappu_BuildingData_RoomData];
+	layouts:[dict__System_String_Torappu_BuildingData_LayoutData];
+	prefabs:[dict__System_String_Torappu_BuildingData_PrefabInfo];
+	controlData:Torappu_BuildingData_ControlRoomBean;
+	manufactData:Torappu_BuildingData_ManufactRoomBean;
+	shopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase_;
+	hireData:Torappu_BuildingData_HireRoomBean;
+	dormData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_DormPhase_;
+	privateRoomData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase_;
+	meetingData:Torappu_BuildingData_MeetingRoomBean;
+	tradingData:Torappu_BuildingData_TradingRoomBean;
+	workshopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase_;
+	trainingData:Torappu_BuildingData_TrainingBean;
+	powerData:Torappu_BuildingData_PowerRoomBean;
+	chars:[dict__System_String_Torappu_BuildingData_BuildingCharacter];
+	buffs:[dict__System_String_Torappu_BuildingData_BuildingBuff];
+	workshopBonus:[dict__System_String_list___1_System_String];
+	customData:Torappu_BuildingData_CustomData;
+	manufactFormulas:[dict__System_String_Torappu_BuildingData_ManufactFormula];
+	shopFormulas:[dict__System_String_Torappu_BuildingData_ShopFormula];
+	workshopFormulas:[dict__System_String_Torappu_BuildingData_WorkshopFormula];
+	creditFormula:Torappu_BuildingData_CreditFormula;
+	goldItems:[dict__System_String_System_Int32];
+	assistantUnlock:[int32];
+	workshopRarities:[Torappu_BuildingData_WorkshopRarityInfo];
+	todoItemSortPriorityDict:[dict__System_String_System_Int32];
+	slotPrequeDatas:[list_dict___2_System_String_Torappu_BuildingData_SlotPrequeData_];
+	dormitoryPrequeDatas:[list_dict___2_System_String_Torappu_BuildingData_DormitoryPrequeData_];
+	workshopTargetDesDict:[dict__System_String_System_String];
+	tradingOrderDesDict:[dict__System_String_System_String];
+	stationManageConstData:Torappu_BuildingData_StationManageConstData;
+	stationManageFilterInfos:[dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo];
+	musicData:Torappu_BuildingData_MusicData;
+	emojis:[string];
+	categoryNames:[dict__System_String_System_String];
+	buffSortData:[dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData];
+}
+
+
+
+root_type Torappu_BuildingData;

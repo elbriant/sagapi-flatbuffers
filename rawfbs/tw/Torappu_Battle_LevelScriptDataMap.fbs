@@ -1,0 +1,12 @@
+include "dict__System_String_list___1_System_String.fbs";
+
+table Torappu_Battle_LevelScriptDataMap {
+	levelScriptDataCharacterDict:[dict__System_String_list___1_System_String];
+	levelScriptDataEnemyDict:[dict__System_String_list___1_System_String];
+	levelScriptDataLevelDict:[dict__System_String_list___1_System_String];
+	levelScriptDataGameModeDict:[dict__System_String_list___1_System_String];
+	levelScriptDataMiscList:[string];
+}
+
+
+root_type Torappu_Battle_LevelScriptDataMap;

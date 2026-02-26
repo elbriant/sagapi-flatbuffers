@@ -1,0 +1,7 @@
+
+enum Torappu_Battle_Cooperate_EndTileType : int32 {
+	NONE = 0,
+	MY_SIDE = 1,
+	MATE_SIDE = 2,
+	SHARED = 3
+}

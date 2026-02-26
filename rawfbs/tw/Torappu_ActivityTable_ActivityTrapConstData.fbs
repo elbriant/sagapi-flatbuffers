@@ -1,0 +1,9 @@
+
+table Torappu_ActivityTable_ActivityTrapConstData {
+	stageUnlockTrapDesc:string;
+	trapMaximum:int32;
+	stageCanNotUseTrap:[string];
+}
+
+
+root_type Torappu_ActivityTable_ActivityTrapConstData;

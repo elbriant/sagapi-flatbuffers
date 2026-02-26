@@ -1,0 +1,15 @@
+include "Torappu_Act3D0Data_GoodType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act3D0Data_InfinitePoolDetailInfo_PoolItemInfo {
+	goodId:string;
+	goodType:Torappu_Act3D0Data_GoodType;
+	itemInfo:Torappu_ItemBundle;
+	perCount:int32;
+	weight:int32;
+	type:string;
+	orderId:int32;
+}
+
+
+root_type Torappu_Act3D0Data_InfinitePoolDetailInfo_PoolItemInfo;

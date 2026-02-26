@@ -1,0 +1,9 @@
+
+enum Torappu_Audio_MixerDesc_Category : int32 {
+	CUSTOM = 0,
+	FX_UI = 1,
+	FX_BATTLE = 2,
+	MUSIC = 3,
+	VOICE = 4,
+	MASTER = 5
+}

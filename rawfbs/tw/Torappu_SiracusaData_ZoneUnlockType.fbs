@@ -1,0 +1,6 @@
+
+enum Torappu_SiracusaData_ZoneUnlockType : int32 {
+	NONE = 0,
+	STAGE_UNLOCK = 1,
+	TASK_UNLOCK = 2
+}

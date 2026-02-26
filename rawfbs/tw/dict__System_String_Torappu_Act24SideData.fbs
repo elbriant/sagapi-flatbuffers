@@ -1,0 +1,9 @@
+include "Torappu_Act24SideData.fbs";
+
+table dict__System_String_Torappu_Act24SideData {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData;
+}
+
+
+root_type dict__System_String_Torappu_Act24SideData;

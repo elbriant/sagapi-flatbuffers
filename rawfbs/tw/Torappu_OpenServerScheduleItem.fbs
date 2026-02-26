@@ -1,0 +1,13 @@
+
+table Torappu_OpenServerScheduleItem {
+	id:string;
+	versionId:string;
+	startTs:int32;
+	endTs:int32;
+	totalCheckinDescption:string;
+	chainLoginDescription:string;
+	charImg:string;
+}
+
+
+root_type Torappu_OpenServerScheduleItem;

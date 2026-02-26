@@ -1,0 +1,13 @@
+include "Torappu_BattleUniEquipData.fbs";
+include "Torappu_Blackboard.fbs";
+include "dict__System_String_Torappu_Blackboard.fbs";
+
+table Torappu_BattleEquipPerLevelPack {
+	equipLevel:int32;
+	parts:[Torappu_BattleUniEquipData];
+	attributeBlackboard:Torappu_Blackboard;
+	tokenAttributeBlackboard:[dict__System_String_Torappu_Blackboard];
+}
+
+
+root_type Torappu_BattleEquipPerLevelPack;

@@ -1,0 +1,10 @@
+
+table Torappu_CampaignGroupData {
+	groupId:string;
+	activeCamps:[string];
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_CampaignGroupData;

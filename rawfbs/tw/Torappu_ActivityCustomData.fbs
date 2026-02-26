@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_Act17sideData.fbs";
+include "dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData.fbs";
+include "dict__System_String_Torappu_Act20SideData.fbs";
+include "dict__System_String_Torappu_Act21SideData.fbs";
+
+table Torappu_ActivityCustomData {
+	typeAct17sideData:[dict__System_String_Torappu_Act17sideData];
+	typeAct25sideData:[dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData];
+	typeAct20sideData:[dict__System_String_Torappu_Act20SideData];
+	typeAct21sideData:[dict__System_String_Torappu_Act21SideData];
+}
+
+
+root_type Torappu_ActivityCustomData;

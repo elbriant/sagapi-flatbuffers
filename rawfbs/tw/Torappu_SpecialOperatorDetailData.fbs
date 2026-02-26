@@ -1,0 +1,26 @@
+include "System_Int32A_.fbs";
+include "Torappu_SpecialOperatorDetailConstData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailTabData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailNodeUnlockData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailEvolveNodeData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailSkillNodeData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailTalentNodeData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailMasterNodeData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDiagramData.fbs";
+
+table Torappu_SpecialOperatorDetailData {
+	specialOperatorExpMap:[System_Int32A_];
+	detailConstData:Torappu_SpecialOperatorDetailConstData;
+	tabData:[dict__System_String_Torappu_SpecialOperatorDetailTabData];
+	nodeUnlockData:[dict__System_String_Torappu_SpecialOperatorDetailNodeUnlockData];
+	evolveNodeData:[dict__System_String_Torappu_SpecialOperatorDetailEvolveNodeData];
+	skillNodeData:[dict__System_String_Torappu_SpecialOperatorDetailSkillNodeData];
+	talentNodeData:[dict__System_String_Torappu_SpecialOperatorDetailTalentNodeData];
+	masterNodeData:[dict__System_String_Torappu_SpecialOperatorDetailMasterNodeData];
+	uniEquipNodeData:[dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData];
+	nodeDiagramMap:[dict__System_String_Torappu_SpecialOperatorDiagramData];
+}
+
+
+root_type Torappu_SpecialOperatorDetailData;

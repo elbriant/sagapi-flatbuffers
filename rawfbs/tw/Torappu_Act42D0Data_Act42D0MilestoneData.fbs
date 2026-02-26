@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act42D0Data_Act42D0MilestoneData {
+	milestoneId:string;
+	orderId:int32;
+	tokenNum:int32;
+	item:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0MilestoneData;

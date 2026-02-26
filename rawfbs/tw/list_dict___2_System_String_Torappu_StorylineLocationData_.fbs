@@ -1,0 +1,9 @@
+include "Torappu_StorylineLocationData.fbs";
+
+table list_dict___2_System_String_Torappu_StorylineLocationData_ {
+	dict_key:string;
+	dict_value:Torappu_StorylineLocationData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_StorylineLocationData_;

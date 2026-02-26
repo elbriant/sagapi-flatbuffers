@@ -1,0 +1,10 @@
+
+table Torappu_ActArchiveChaosItemData {
+	id:string;
+	isHidden:bool;
+	enrollId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ActArchiveChaosItemData;

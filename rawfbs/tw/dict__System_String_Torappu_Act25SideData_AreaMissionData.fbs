@@ -1,0 +1,9 @@
+include "Torappu_Act25SideData_AreaMissionData.fbs";
+
+table dict__System_String_Torappu_Act25SideData_AreaMissionData {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_AreaMissionData;
+}
+
+
+root_type dict__System_String_Torappu_Act25SideData_AreaMissionData;

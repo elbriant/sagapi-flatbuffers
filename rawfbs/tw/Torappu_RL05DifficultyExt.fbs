@@ -1,0 +1,15 @@
+include "Torappu_RoguelikeTopicMode.fbs";
+
+table Torappu_RL05DifficultyExt {
+	modeDifficulty:Torappu_RoguelikeTopicMode;
+	grade:int32;
+	buffs:[string];
+	buffDesc:[string];
+	leftWrathDesc:string;
+	relicDevLevel:string;
+	gildProbDisplay:string;
+	skyStepDescription:string;
+}
+
+
+root_type Torappu_RL05DifficultyExt;

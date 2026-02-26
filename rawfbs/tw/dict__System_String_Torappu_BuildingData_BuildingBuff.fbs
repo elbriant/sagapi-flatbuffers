@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_BuildingBuff.fbs";
+
+table dict__System_String_Torappu_BuildingData_BuildingBuff {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_BuildingBuff;
+}
+
+
+root_type dict__System_String_Torappu_BuildingData_BuildingBuff;

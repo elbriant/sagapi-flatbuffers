@@ -1,0 +1,11 @@
+
+table Torappu_Act6FunStageAdditionData {
+	description:string;
+	npcDialogText:string;
+	previewCharPicId:string;
+	feverCoinNum:int32;
+	isHiddenStage:bool;
+}
+
+
+root_type Torappu_Act6FunStageAdditionData;

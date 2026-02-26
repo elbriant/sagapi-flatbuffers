@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_RoguelikeChaosData.fbs";
+include "Torappu_RoguelikeChaosRangeData.fbs";
+include "dict__System_String_dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo.fbs";
+include "Torappu_RoguelikeChaosModuleConsts.fbs";
+
+table Torappu_RoguelikeChaosModuleData {
+	chaosDatas:[dict__System_String_Torappu_RoguelikeChaosData];
+	chaosRanges:[Torappu_RoguelikeChaosRangeData];
+	levelInfoDict:[dict__System_String_dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo];
+	moduleConsts:Torappu_RoguelikeChaosModuleConsts;
+}
+
+
+root_type Torappu_RoguelikeChaosModuleData;

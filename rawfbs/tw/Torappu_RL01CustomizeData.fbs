@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_RoguelikeTopicDev.fbs";
+include "dict__System_String_Torappu_RoguelikeTopicDevToken.fbs";
+include "Torappu_RL01EndingText.fbs";
+include "Torappu_RL01DifficultyExt.fbs";
+
+table Torappu_RL01CustomizeData {
+	developments:[dict__System_String_Torappu_RoguelikeTopicDev];
+	developmentTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	endingText:Torappu_RL01EndingText;
+	difficulties:[Torappu_RL01DifficultyExt];
+}
+
+
+root_type Torappu_RL01CustomizeData;

@@ -1,0 +1,12 @@
+include "Torappu_Act4funPerformWordData.fbs";
+
+table Torappu_Act4funPerformInfo {
+	performId:string;
+	performFinishedPicId:string;
+	fixedCmpGroup:string;
+	cmpGroups:[string];
+	words:[Torappu_Act4funPerformWordData];
+}
+
+
+root_type Torappu_Act4funPerformInfo;

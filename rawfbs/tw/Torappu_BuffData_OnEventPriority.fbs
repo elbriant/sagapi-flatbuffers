@@ -1,0 +1,9 @@
+
+enum Torappu_BuffData_OnEventPriority : int32 {
+	HIGHER_PRIORITY = 2000,
+	HIGH_PRIORITY = 1000,
+	DEFAULT = 0,
+	LOW_PRIORITY = -1000,
+	LOWER_PRIORITY = -2000,
+	LOWEST_PRIORITY = -3000
+}

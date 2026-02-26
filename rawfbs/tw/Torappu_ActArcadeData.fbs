@@ -1,0 +1,20 @@
+include "dict__System_String_Torappu_ActArcadeData_ArcadeStageAdditionalData.fbs";
+include "list_dict___2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_.fbs";
+include "dict__System_String_Torappu_ActArcadeData_ArcadeBadgeData.fbs";
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_ActArcadeData_ArcadeBadgeTypeData.fbs";
+include "Torappu_ActArcadeData_ArcadeMilestoneItemData.fbs";
+include "Torappu_ActArcadeData_ArcadeConstData.fbs";
+
+table Torappu_ActArcadeData {
+	stageAdditionDataDict:[dict__System_String_Torappu_ActArcadeData_ArcadeStageAdditionalData];
+	zoneAdditionalDataDict:[list_dict___2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_];
+	badgeDataDict:[dict__System_String_Torappu_ActArcadeData_ArcadeBadgeData];
+	tireBadgeIdDict:[dict__System_String_System_String];
+	badgeTypeDataDict:[dict__System_String_Torappu_ActArcadeData_ArcadeBadgeTypeData];
+	milestoneList:[Torappu_ActArcadeData_ArcadeMilestoneItemData];
+	constData:Torappu_ActArcadeData_ArcadeConstData;
+}
+
+
+root_type Torappu_ActArcadeData;

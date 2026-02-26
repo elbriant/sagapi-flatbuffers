@@ -1,0 +1,12 @@
+
+enum Torappu_SandboxV2BaseUnlockFuncType : int32 {
+	NONE = 0,
+	HOME_PUTPOST = 1,
+	HOME_PORTABLE = 2,
+	REWARDSHOP = 3,
+	TECH = 4,
+	REAR = 5,
+	BUILD = 6,
+	SHOP = 7,
+	RACING = 8
+}

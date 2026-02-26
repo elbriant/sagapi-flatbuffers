@@ -1,0 +1,17 @@
+
+enum Torappu_SandboxPermItemType : int32 {
+	NONE = 0,
+	TACTICAL = 1,
+	BUILDING = 2,
+	BUILDINGMAT = 3,
+	FOOD = 4,
+	FOODMAT = 5,
+	SPECIALMAT = 6,
+	COIN = 9,
+	CRAFT = 10,
+	PLACEHOLDER = 11,
+	STAMINAPOT = 12,
+	ANIMAL = 13,
+	INSECT = 14,
+	SLUGITEM = 15
+}

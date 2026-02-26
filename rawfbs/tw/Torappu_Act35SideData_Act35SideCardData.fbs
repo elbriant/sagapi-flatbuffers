@@ -1,0 +1,13 @@
+include "Torappu_Act35SideData_Act35SideCardLevelData.fbs";
+
+table Torappu_Act35SideData_Act35SideCardData {
+	cardId:string;
+	sortId:int32;
+	rank:int32;
+	cardFace:string;
+	cardPic:string;
+	levelDataList:[Torappu_Act35SideData_Act35SideCardLevelData];
+}
+
+
+root_type Torappu_Act35SideData_Act35SideCardData;

@@ -1,0 +1,8 @@
+
+table Torappu_MissionWeeklyRewardConf {
+	beginTime:int64;
+	endTime:int64;
+}
+
+
+root_type Torappu_MissionWeeklyRewardConf;

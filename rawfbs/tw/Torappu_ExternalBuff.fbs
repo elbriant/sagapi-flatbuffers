@@ -1,0 +1,8 @@
+include "Torappu_AttributeModifierData.fbs";
+
+table Torappu_ExternalBuff {
+	attributes:Torappu_AttributeModifierData;
+}
+
+
+root_type Torappu_ExternalBuff;

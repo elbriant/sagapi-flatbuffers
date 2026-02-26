@@ -1,0 +1,9 @@
+include "Torappu_DynamicAbilityData.fbs";
+
+table Torappu_LevelData_EnemyData_RuntimeData {
+	dynamicAbilities:[Torappu_DynamicAbilityData];
+	skinData:[string];
+}
+
+
+root_type Torappu_LevelData_EnemyData_RuntimeData;

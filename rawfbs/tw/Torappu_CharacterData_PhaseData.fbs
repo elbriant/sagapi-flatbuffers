@@ -1,0 +1,13 @@
+include "Torappu_CharacterData_AttributesKeyFrame.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_CharacterData_PhaseData {
+	characterPrefabKey:string;
+	rangeId:string;
+	maxLevel:int32;
+	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
+	evolveCost:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_CharacterData_PhaseData;

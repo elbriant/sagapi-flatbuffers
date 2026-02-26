@@ -1,0 +1,9 @@
+
+table Torappu_ActMultiV3TitleData {
+	order:int32;
+	titleDesc:string;
+	isBack:bool;
+}
+
+
+root_type Torappu_ActMultiV3TitleData;

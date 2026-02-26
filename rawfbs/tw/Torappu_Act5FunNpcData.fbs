@@ -1,0 +1,14 @@
+include "Torappu_NpcStrategy.fbs";
+
+table Torappu_Act5FunNpcData {
+	npcId:string;
+	avatarId:string;
+	name:string;
+	priority:float;
+	specialStrategy:Torappu_NpcStrategy;
+	npcProb:float;
+	defaultEnemyScore:float;
+}
+
+
+root_type Torappu_Act5FunNpcData;

@@ -1,0 +1,8 @@
+
+enum Torappu_ShopRecommendTemplateType : int32 {
+	DEFAULT = 0,
+	NORSKIN = 1,
+	RETURNSKIN = 2,
+	NORFURN = 3,
+	NORGIFT = 4
+}

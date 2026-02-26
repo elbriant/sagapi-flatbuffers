@@ -1,0 +1,16 @@
+include "dict__System_Int32_Torappu_AllPlayerCheckinData_DailyInfo.fbs";
+include "dict__System_String_System_Int64.fbs";
+include "list_dict___2_System_String_Torappu_AllPlayerCheckinData_PublicBehaviour_.fbs";
+include "list_dict___2_System_String_Torappu_AllPlayerCheckinData_PersonalBehaviour_.fbs";
+include "Torappu_AllPlayerCheckinData_ConstData.fbs";
+
+table Torappu_AllPlayerCheckinData {
+	checkInList:[dict__System_Int32_Torappu_AllPlayerCheckinData_DailyInfo];
+	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	pubBhvs:[list_dict___2_System_String_Torappu_AllPlayerCheckinData_PublicBehaviour_];
+	personalBhvs:[list_dict___2_System_String_Torappu_AllPlayerCheckinData_PersonalBehaviour_];
+	constData:Torappu_AllPlayerCheckinData_ConstData;
+}
+
+
+root_type Torappu_AllPlayerCheckinData;

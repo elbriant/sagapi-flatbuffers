@@ -1,0 +1,11 @@
+include "Torappu_RuneStageGroupData_RuneStageInst.fbs";
+
+table Torappu_RuneStageGroupData {
+	groupId:string;
+	activeRuneStages:[Torappu_RuneStageGroupData_RuneStageInst];
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_RuneStageGroupData;

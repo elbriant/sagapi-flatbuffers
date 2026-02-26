@@ -1,0 +1,9 @@
+
+table Torappu_Act4funCmtInfo {
+	iconId:string;
+	name:string;
+	cmtTxt:string;
+}
+
+
+root_type Torappu_Act4funCmtInfo;

@@ -1,0 +1,16 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act24SideData_MealData {
+	mealId:string;
+	sortId:int32;
+	mealName:string;
+	mealEffectDesc:string;
+	mealDesc:string;
+	mealIcon:string;
+	mealCost:int32;
+	mealRewardAP:int32;
+	mealRewardItemInfo:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_Act24SideData_MealData;

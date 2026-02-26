@@ -1,0 +1,13 @@
+include "Torappu_CharacterData_PotentialRank_TypeEnum.fbs";
+include "Torappu_ExternalBuff.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_CharacterData_PotentialRank {
+	type:Torappu_CharacterData_PotentialRank_TypeEnum;
+	description:string;
+	buff:Torappu_ExternalBuff;
+	equivalentCost:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_CharacterData_PotentialRank;

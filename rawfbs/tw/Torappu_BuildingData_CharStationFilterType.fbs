@@ -1,0 +1,6 @@
+
+enum Torappu_BuildingData_CharStationFilterType : int32 {
+	All = 0,
+	DormLock = 1,
+	NotStationed = 2
+}

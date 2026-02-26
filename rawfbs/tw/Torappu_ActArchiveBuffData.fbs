@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveBuffItemData.fbs";
+
+table Torappu_ActArchiveBuffData {
+	buff:[dict__System_String_Torappu_ActArchiveBuffItemData];
+}
+
+
+root_type Torappu_ActArchiveBuffData;

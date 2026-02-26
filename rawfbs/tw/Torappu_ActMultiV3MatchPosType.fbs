@@ -1,0 +1,6 @@
+
+enum Torappu_ActMultiV3MatchPosType : int32 {
+	NORMAL = 0,
+	COACH = 1,
+	STUDENT = 2
+}

@@ -1,0 +1,9 @@
+include "Torappu_VersusCheckInData_TasteInfoData.fbs";
+
+table dict__System_Int32_Torappu_VersusCheckInData_TasteInfoData {
+	dict_key:int32;
+	dict_value:Torappu_VersusCheckInData_TasteInfoData;
+}
+
+
+root_type dict__System_Int32_Torappu_VersusCheckInData_TasteInfoData;

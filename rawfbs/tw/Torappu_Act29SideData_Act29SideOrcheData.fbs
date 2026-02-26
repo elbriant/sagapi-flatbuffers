@@ -1,0 +1,13 @@
+include "Torappu_Act29SideData_Act29SideOrcheType.fbs";
+
+table Torappu_Act29SideData_Act29SideOrcheData {
+	id:string;
+	name:string;
+	desc:string;
+	icon:string;
+	sortId:int32;
+	orcheType:Torappu_Act29SideData_Act29SideOrcheType;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideOrcheData;

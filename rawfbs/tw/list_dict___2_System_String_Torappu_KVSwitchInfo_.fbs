@@ -1,0 +1,9 @@
+include "Torappu_KVSwitchInfo.fbs";
+
+table list_dict___2_System_String_Torappu_KVSwitchInfo_ {
+	dict_key:string;
+	dict_value:Torappu_KVSwitchInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_KVSwitchInfo_;

@@ -1,0 +1,9 @@
+
+table Torappu_SpecialOperatorDetailTalentNodeData {
+	nodeId:string;
+	talentIndex:int32;
+	updateCount:int32;
+}
+
+
+root_type Torappu_SpecialOperatorDetailTalentNodeData;

@@ -1,0 +1,9 @@
+include "list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_.fbs";
+
+table Torappu_BuildingData_RoomUnlockCond {
+	id:string;
+	number:[list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
+}
+
+
+root_type Torappu_BuildingData_RoomUnlockCond;

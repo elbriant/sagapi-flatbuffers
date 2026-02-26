@@ -1,0 +1,19 @@
+include "Torappu_SandboxPermTemplateType.fbs";
+include "Torappu_SandboxPermBasicData_HomeEntryDisplayData.fbs";
+
+table Torappu_SandboxPermBasicData {
+	topicId:string;
+	topicTemplate:Torappu_SandboxPermTemplateType;
+	topicName:string;
+	topicStartTime:int64;
+	fullStoredTime:int64;
+	sortId:int32;
+	priceItemId:string;
+	templateShopId:string;
+	homeEntryDisplayData:[Torappu_SandboxPermBasicData_HomeEntryDisplayData];
+	webBusType:string;
+	medalGroupId:string;
+}
+
+
+root_type Torappu_SandboxPermBasicData;

@@ -1,0 +1,9 @@
+include "Torappu_SourceApplyWay.fbs";
+
+table Torappu_Undefinable_1_Torappu_SourceApplyWay_ {
+	m_defined:bool;
+	m_value:Torappu_SourceApplyWay;
+}
+
+
+root_type Torappu_Undefinable_1_Torappu_SourceApplyWay_;

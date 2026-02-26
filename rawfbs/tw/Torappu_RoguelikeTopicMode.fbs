@@ -1,0 +1,10 @@
+
+enum Torappu_RoguelikeTopicMode : int32 {
+	NONE = 0,
+	EASY = 1,
+	NORMAL = 2,
+	HARD = 3,
+	NORML_END = 4,
+	MONTH_TEAM = 5,
+	CHALLENGE = 6
+}

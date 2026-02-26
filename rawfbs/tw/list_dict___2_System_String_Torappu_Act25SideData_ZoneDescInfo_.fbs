@@ -1,0 +1,9 @@
+include "Torappu_Act25SideData_ZoneDescInfo.fbs";
+
+table list_dict___2_System_String_Torappu_Act25SideData_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_ZoneDescInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_Act25SideData_ZoneDescInfo_;

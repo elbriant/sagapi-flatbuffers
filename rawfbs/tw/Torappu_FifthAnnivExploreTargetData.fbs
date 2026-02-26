@@ -1,0 +1,18 @@
+include "dict__System_String_System_Int32.fbs";
+
+table Torappu_FifthAnnivExploreTargetData {
+	id:string;
+	linkStageId:string;
+	targetValues:[dict__System_String_System_Int32];
+	requireEventId:string;
+	lockedLevelId:string;
+	isEnd:bool;
+	name:string;
+	endName:string;
+	desc:string;
+	successDesc:string;
+	successIconId:string;
+}
+
+
+root_type Torappu_FifthAnnivExploreTargetData;

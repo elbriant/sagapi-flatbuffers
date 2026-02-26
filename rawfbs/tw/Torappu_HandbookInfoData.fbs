@@ -1,0 +1,13 @@
+include "Torappu_HandBookStoryViewData.fbs";
+include "Torappu_HandbookAvgGroupData.fbs";
+
+table Torappu_HandbookInfoData {
+	charID:string;
+	infoName:string;
+	isLimited:bool;
+	storyTextAudio:[Torappu_HandBookStoryViewData];
+	handbookAvgList:[Torappu_HandbookAvgGroupData];
+}
+
+
+root_type Torappu_HandbookInfoData;

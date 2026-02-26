@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_MailArchiveItemData.fbs";
+include "Torappu_MailArchiveConstData.fbs";
+
+table Torappu_MailArchiveData {
+	mailArchiveInfoDict:[dict__System_String_Torappu_MailArchiveItemData];
+	constData:Torappu_MailArchiveConstData;
+}
+
+
+root_type Torappu_MailArchiveData;

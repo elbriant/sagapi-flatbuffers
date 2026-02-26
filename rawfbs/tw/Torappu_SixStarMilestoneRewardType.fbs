@@ -1,0 +1,5 @@
+
+enum Torappu_SixStarMilestoneRewardType : int32 {
+	UNLOCK_STAGE = 0,
+	REWARD = 1
+}

@@ -1,0 +1,12 @@
+include "dict__System_String_Torappu_RoguelikeSkyNodeData.fbs";
+include "Torappu_RoguelikeSkyNodeSubTypeData.fbs";
+include "Torappu_RoguelikeSkyModuleConsts.fbs";
+
+table Torappu_RoguelikeSkyModuleData {
+	nodeData:[dict__System_String_Torappu_RoguelikeSkyNodeData];
+	subTypeData:[Torappu_RoguelikeSkyNodeSubTypeData];
+	moduleConsts:Torappu_RoguelikeSkyModuleConsts;
+}
+
+
+root_type Torappu_RoguelikeSkyModuleData;

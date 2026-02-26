@@ -1,0 +1,15 @@
+
+table Torappu_ActArchiveTimelineItemData {
+	timelineId:string;
+	timelineSortId:int32;
+	timelineTitle:string;
+	timelineDes:string;
+	picIdList:[string];
+	audioIdList:[string];
+	avgIdList:[string];
+	storyIdList:[string];
+	newsIdList:[string];
+}
+
+
+root_type Torappu_ActArchiveTimelineItemData;

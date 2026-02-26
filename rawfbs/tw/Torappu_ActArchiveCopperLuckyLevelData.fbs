@@ -1,0 +1,11 @@
+include "Torappu_RoguelikeCopperLuckyLevel.fbs";
+
+table Torappu_ActArchiveCopperLuckyLevelData {
+	luckyLevel:Torappu_RoguelikeCopperLuckyLevel;
+	luckyName:string;
+	luckyDesc:string;
+	luckyUsage:string;
+}
+
+
+root_type Torappu_ActArchiveCopperLuckyLevelData;

@@ -1,0 +1,10 @@
+include "Torappu_OpenServerItemData.fbs";
+
+table Torappu_ChainLoginData {
+	order:int32;
+	item:Torappu_OpenServerItemData;
+	colorId:int32;
+}
+
+
+root_type Torappu_ChainLoginData;

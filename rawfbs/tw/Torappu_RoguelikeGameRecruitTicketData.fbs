@@ -1,0 +1,18 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_RarityRankMask.fbs";
+include "Torappu_ProfessionID.fbs";
+include "Torappu_RarityRank.fbs";
+
+table Torappu_RoguelikeGameRecruitTicketData {
+	id:string;
+	profession:Torappu_ProfessionCategory;
+	rarity:Torappu_RarityRankMask;
+	professionList:[Torappu_ProfessionID];
+	rarityList:[Torappu_RarityRank];
+	extraEliteNum:int32;
+	extraFreeRarity:[Torappu_RarityRank];
+	extraCharIds:[string];
+}
+
+
+root_type Torappu_RoguelikeGameRecruitTicketData;

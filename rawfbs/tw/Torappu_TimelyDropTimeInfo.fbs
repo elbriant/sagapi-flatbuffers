@@ -1,0 +1,18 @@
+include "dict__System_String_System_Int64.fbs";
+
+table Torappu_TimelyDropTimeInfo {
+	startTs:int64;
+	endTs:int64;
+	stagePic:string;
+	dropPicId:string;
+	stageUnlock:string;
+	entranceDownPicId:string;
+	entranceUpPicId:string;
+	timelyGroupId:string;
+	weeklyPicId:string;
+	isReplace:bool;
+	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+}
+
+
+root_type Torappu_TimelyDropTimeInfo;

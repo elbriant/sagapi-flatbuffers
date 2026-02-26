@@ -1,0 +1,8 @@
+
+table Torappu_NewVoiceTimeData {
+	timestamp:int64;
+	charSet:[string];
+}
+
+
+root_type Torappu_NewVoiceTimeData;

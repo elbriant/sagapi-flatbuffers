@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeCommonDevDifficultyNodeInfo.fbs";
+
+table dict__System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeCommonDevDifficultyNodeInfo;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo;

@@ -1,0 +1,12 @@
+
+table Torappu_ActivityEnemyDuelPoolData {
+	enemyId:string;
+	poolNormal:float;
+	poolSmallEnemy:float;
+	poolBoss:float;
+	poolMusic:float;
+	poolNoSurpriseEnemy:float;
+}
+
+
+root_type Torappu_ActivityEnemyDuelPoolData;

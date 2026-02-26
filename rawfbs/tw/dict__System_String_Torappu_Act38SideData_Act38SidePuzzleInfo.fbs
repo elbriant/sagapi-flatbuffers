@@ -1,0 +1,9 @@
+include "Torappu_Act38SideData_Act38SidePuzzleInfo.fbs";
+
+table dict__System_String_Torappu_Act38SideData_Act38SidePuzzleInfo {
+	dict_key:string;
+	dict_value:Torappu_Act38SideData_Act38SidePuzzleInfo;
+}
+
+
+root_type dict__System_String_Torappu_Act38SideData_Act38SidePuzzleInfo;

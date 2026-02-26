@@ -1,0 +1,11 @@
+
+table Torappu_ActivityEnemyDuelSingleCommentData {
+	commentId:string;
+	priority:int32;
+	template:string;
+	param:[string];
+	commentText:string;
+}
+
+
+root_type Torappu_ActivityEnemyDuelSingleCommentData;

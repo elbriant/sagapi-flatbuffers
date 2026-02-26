@@ -1,0 +1,8 @@
+
+table Torappu_SpecialBattleFinishStageData {
+	stageId:string;
+	skipAccomplishPerform:bool;
+}
+
+
+root_type Torappu_SpecialBattleFinishStageData;

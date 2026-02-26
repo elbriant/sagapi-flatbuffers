@@ -1,0 +1,10 @@
+
+table Torappu_SiracusaData_ItemCardInfoData {
+	cardId:string;
+	cardName:string;
+	cardDesc:string;
+	optionScript:string;
+}
+
+
+root_type Torappu_SiracusaData_ItemCardInfoData;

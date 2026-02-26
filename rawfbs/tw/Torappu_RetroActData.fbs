@@ -1,0 +1,18 @@
+include "Torappu_RetroType.fbs";
+include "Torappu_ActivityType.fbs";
+
+table Torappu_RetroActData {
+	retroId:string;
+	type:Torappu_RetroType;
+	linkedActId:[string];
+	startTime:int64;
+	trailStartTime:int64;
+	index:int32;
+	name:string;
+	haveTrail:bool;
+	customActId:string;
+	customActType:Torappu_ActivityType;
+}
+
+
+root_type Torappu_RetroActData;

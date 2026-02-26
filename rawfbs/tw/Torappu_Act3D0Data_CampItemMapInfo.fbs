@@ -1,0 +1,9 @@
+include "dict__System_String_Torappu_ItemBundle.fbs";
+
+table Torappu_Act3D0Data_CampItemMapInfo {
+	goodId:string;
+	itemDict:[dict__System_String_Torappu_ItemBundle];
+}
+
+
+root_type Torappu_Act3D0Data_CampItemMapInfo;

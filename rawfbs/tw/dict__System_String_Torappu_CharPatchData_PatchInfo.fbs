@@ -1,0 +1,9 @@
+include "Torappu_CharPatchData_PatchInfo.fbs";
+
+table dict__System_String_Torappu_CharPatchData_PatchInfo {
+	dict_key:string;
+	dict_value:Torappu_CharPatchData_PatchInfo;
+}
+
+
+root_type dict__System_String_Torappu_CharPatchData_PatchInfo;

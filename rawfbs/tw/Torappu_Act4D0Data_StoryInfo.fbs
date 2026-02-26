@@ -1,0 +1,12 @@
+
+table Torappu_Act4D0Data_StoryInfo {
+	storyKey:string;
+	storyId:string;
+	storySort:string;
+	storyName:string;
+	lockDesc:string;
+	storyDesc:string;
+}
+
+
+root_type Torappu_Act4D0Data_StoryInfo;

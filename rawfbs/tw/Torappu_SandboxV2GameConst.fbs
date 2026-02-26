@@ -1,0 +1,46 @@
+include "Torappu_SandboxV2SeasonType.fbs";
+
+table Torappu_SandboxV2GameConst {
+	mainMapId:string;
+	baseTrapId:string;
+	portableTrapId:string;
+	doorTrapId:string;
+	mineTrapId:string;
+	neutralBossEnemyId:[string];
+	nestTrapId:string;
+	shopNpcName:string;
+	daysBetweenAssessment:int32;
+	portableConstructUnlockLevel:int32;
+	outpostConstructUnlockLevel:int32;
+	maxEnemyCountSameTimeInRush:int32;
+	maxPreDelayTimeInRush:float;
+	maxSaveCnt:int32;
+	firstSeasonDuration:int32;
+	seasonTransitionLoop:[Torappu_SandboxV2SeasonType];
+	seasonDurationLoop:[int32];
+	firstSeasonStartAngle:float;
+	seasonTransitionAngleLoop:[float];
+	seasonAngle:float;
+	battleItemDesc:string;
+	foodDesc:string;
+	multipleSurvivalDayDesc:string;
+	multipleTips:string;
+	techProgressScore:int32;
+	otherEnemyRushName:string;
+	surviveDayText:string;
+	survivePeriodText:string;
+	surviveScoreText:string;
+	actionPointScoreText:string;
+	nodeExploreDesc:string;
+	dungeonExploreDesc:string;
+	nodeCompleteDesc:string;
+	noRiftDungeonDesc:string;
+	baseRushedDesc:string;
+	riftBaseDesc:string;
+	riftBaseRushedDesc:string;
+	dungeonTriggeredGuideQuestList:[string];
+	noLogInEnemyStatsEnemyId:[string];
+}
+
+
+root_type Torappu_SandboxV2GameConst;

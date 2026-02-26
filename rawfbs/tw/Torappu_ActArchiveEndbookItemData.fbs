@@ -1,0 +1,13 @@
+
+table Torappu_ActArchiveEndbookItemData {
+	endBookId:string;
+	sortId:int32;
+	enrollId:string;
+	isLast:bool;
+	endbookName:string;
+	unlockDesc:string;
+	textId:string;
+}
+
+
+root_type Torappu_ActArchiveEndbookItemData;

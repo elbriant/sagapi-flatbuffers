@@ -1,0 +1,9 @@
+include "Torappu_CampaignData.fbs";
+
+table dict__System_String_Torappu_CampaignData {
+	dict_key:string;
+	dict_value:Torappu_CampaignData;
+}
+
+
+root_type dict__System_String_Torappu_CampaignData;

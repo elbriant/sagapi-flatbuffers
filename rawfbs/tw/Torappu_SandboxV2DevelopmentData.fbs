@@ -1,0 +1,20 @@
+include "Torappu_SandboxV2DevelopmentType.fbs";
+
+table Torappu_SandboxV2DevelopmentData {
+	techId:string;
+	techType:Torappu_SandboxV2DevelopmentType;
+	positionX:int32;
+	positionY:int32;
+	frontNodeId:string;
+	nextNodeIds:[string];
+	limitBaseLevel:int32;
+	tokenCost:int32;
+	techName:string;
+	techIconId:string;
+	nodeTitle:string;
+	rawDesc:string;
+	canBuffReserch:bool;
+}
+
+
+root_type Torappu_SandboxV2DevelopmentData;

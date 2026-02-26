@@ -1,0 +1,23 @@
+include "Torappu_RL03DevelopmentNodeType.fbs";
+include "Torappu_RL03DevelopmentEffectType.fbs";
+include "Torappu_RoguelikeTopicDisplayItem.fbs";
+
+table Torappu_RL03Development {
+	buffId:string;
+	nodeType:Torappu_RL03DevelopmentNodeType;
+	frontNodeId:[string];
+	nextNodeId:[string];
+	positionRow:int32;
+	positionOrder:int32;
+	tokenCost:int32;
+	buffName:string;
+	buffIconId:string;
+	effectType:Torappu_RL03DevelopmentEffectType;
+	rawDesc:[string];
+	buffDisplayInfo:[Torappu_RoguelikeTopicDisplayItem];
+	groupId:string;
+	enrollId:string;
+}
+
+
+root_type Torappu_RL03Development;

@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_RecordRewardServerData {
+	stageId:string;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_RecordRewardServerData;

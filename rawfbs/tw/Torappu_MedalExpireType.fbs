@@ -1,0 +1,7 @@
+
+enum Torappu_MedalExpireType : int32 {
+	NONE = 0,
+	INIT = 1,
+	TEMP = 2,
+	PERM = 3
+}

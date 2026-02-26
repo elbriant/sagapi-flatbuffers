@@ -1,0 +1,11 @@
+include "dict__System_String_Torappu_CrossDayTrackData.fbs";
+
+table Torappu_CrossDayTrackTypeData {
+	type:string;
+	startTs:int64;
+	expireTs:int64;
+	dataDict:[dict__System_String_Torappu_CrossDayTrackData];
+}
+
+
+root_type Torappu_CrossDayTrackTypeData;

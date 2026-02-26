@@ -1,0 +1,10 @@
+
+table Torappu_ActVecBreakV2DefenseDetailData {
+	stageId:string;
+	buffId:string;
+	defenseCharLimit:int32;
+	bossIconId:string;
+}
+
+
+root_type Torappu_ActVecBreakV2DefenseDetailData;

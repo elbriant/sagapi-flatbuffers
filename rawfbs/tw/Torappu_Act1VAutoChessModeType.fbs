@@ -1,0 +1,6 @@
+
+enum Torappu_Act1VAutoChessModeType : int32 {
+	TRAINING = 0,
+	FUNNY = 1,
+	NORMAL = 2
+}

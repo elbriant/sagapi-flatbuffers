@@ -1,0 +1,9 @@
+include "Torappu_Act12SideData_MissionDescInfo.fbs";
+
+table list_dict___2_System_String_Torappu_Act12SideData_MissionDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act12SideData_MissionDescInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_Act12SideData_MissionDescInfo_;

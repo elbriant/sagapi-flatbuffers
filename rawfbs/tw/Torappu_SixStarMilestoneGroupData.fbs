@@ -1,0 +1,10 @@
+include "Torappu_SixStarMilestoneItemData.fbs";
+
+table Torappu_SixStarMilestoneGroupData {
+	groupId:string;
+	stageIdList:[string];
+	milestoneDataList:[Torappu_SixStarMilestoneItemData];
+}
+
+
+root_type Torappu_SixStarMilestoneGroupData;

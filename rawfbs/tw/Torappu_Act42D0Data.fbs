@@ -1,0 +1,23 @@
+include "dict__System_String_Torappu_Act42D0Data_Act42D0AreaInfoData.fbs";
+include "dict__System_String_Torappu_Act42D0Data_Act42D0StageInfoData.fbs";
+include "dict__System_String_Torappu_Act42D0Data_Act42D0EffectGroupInfoData.fbs";
+include "dict__System_String_Torappu_Act42D0Data_Act42D0EffectInfoData.fbs";
+include "dict__System_String_Torappu_Act42D0Data_Act42D0ChallengeInfoData.fbs";
+include "dict__System_String_Torappu_Act42D0Data_Act42D0StageRatingInfoData.fbs";
+include "Torappu_Act42D0Data_Act42D0MilestoneData.fbs";
+include "Torappu_Act42D0Data_Act42D0ConstData.fbs";
+
+table Torappu_Act42D0Data {
+	areaInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0AreaInfoData];
+	stageInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0StageInfoData];
+	effectGroupInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0EffectGroupInfoData];
+	effectInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0EffectInfoData];
+	challengeInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0ChallengeInfoData];
+	stageRatingInfoData:[dict__System_String_Torappu_Act42D0Data_Act42D0StageRatingInfoData];
+	milestoneData:[Torappu_Act42D0Data_Act42D0MilestoneData];
+	constData:Torappu_Act42D0Data_Act42D0ConstData;
+	trackPointPeriodData:[int64];
+}
+
+
+root_type Torappu_Act42D0Data;

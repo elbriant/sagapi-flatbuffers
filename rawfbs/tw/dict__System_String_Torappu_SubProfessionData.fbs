@@ -1,0 +1,9 @@
+include "Torappu_SubProfessionData.fbs";
+
+table dict__System_String_Torappu_SubProfessionData {
+	dict_key:string;
+	dict_value:Torappu_SubProfessionData;
+}
+
+
+root_type dict__System_String_Torappu_SubProfessionData;

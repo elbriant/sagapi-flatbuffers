@@ -1,0 +1,23 @@
+include "Torappu_CharWordVoiceType.fbs";
+include "Torappu_DataUnlockType.fbs";
+include "Torappu_CharWordUnlockParam.fbs";
+include "Torappu_CharWordShowType.fbs";
+
+table Torappu_CharWordData {
+	charWordId:string;
+	wordKey:string;
+	charId:string;
+	voiceId:string;
+	voiceText:string;
+	voiceTitle:string;
+	voiceIndex:int32;
+	voiceType:Torappu_CharWordVoiceType;
+	unlockType:Torappu_DataUnlockType;
+	unlockParam:[Torappu_CharWordUnlockParam];
+	lockDescription:string;
+	placeType:Torappu_CharWordShowType;
+	voiceAsset:string;
+}
+
+
+root_type Torappu_CharWordData;

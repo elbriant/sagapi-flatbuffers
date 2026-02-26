@@ -1,0 +1,13 @@
+include "Torappu_ActMultiV3PrepareStepType.fbs";
+
+table Torappu_ActMultiV3SelectStepData {
+	stepType:Torappu_ActMultiV3PrepareStepType;
+	sortId:int32;
+	time:int32;
+	hintTime:int32;
+	title:string;
+	desc:string;
+}
+
+
+root_type Torappu_ActMultiV3SelectStepData;

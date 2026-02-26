@@ -1,0 +1,9 @@
+include "dict__System_String_System_Int32.fbs";
+
+table Torappu_Act4funValueEffectInfoData {
+	valueEffectId:string;
+	effectParams:[dict__System_String_System_Int32];
+}
+
+
+root_type Torappu_Act4funValueEffectInfoData;

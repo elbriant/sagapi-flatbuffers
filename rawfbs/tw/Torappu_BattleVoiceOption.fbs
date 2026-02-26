@@ -1,0 +1,12 @@
+include "Torappu_BattleVoiceOption_BattleVoiceType.fbs";
+
+table Torappu_BattleVoiceOption {
+	voiceType:Torappu_BattleVoiceOption_BattleVoiceType;
+	priority:int32;
+	overlapIfSamePriority:bool;
+	cooldown:float;
+	delay:float;
+}
+
+
+root_type Torappu_BattleVoiceOption;

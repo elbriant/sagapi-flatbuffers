@@ -1,0 +1,32 @@
+include "Torappu_RoguelikeModuleType.fbs";
+include "Torappu_RoguelikeSanCheckModuleData.fbs";
+include "Torappu_RoguelikeDiceModuleData.fbs";
+include "Torappu_RoguelikeChaosModuleData.fbs";
+include "Torappu_RoguelikeTotemBuffModuleData.fbs";
+include "Torappu_RoguelikeVisionModuleData.fbs";
+include "Torappu_RoguelikeFragmentModuleData.fbs";
+include "Torappu_RoguelikeDisasterModuleData.fbs";
+include "Torappu_RoguelikeNodeUpgradeModuleData.fbs";
+include "Torappu_RoguelikeCopperModuleData.fbs";
+include "Torappu_RoguelikeWrathModuleData.fbs";
+include "Torappu_RoguelikeCandleModuleData.fbs";
+include "Torappu_RoguelikeSkyModuleData.fbs";
+
+table Torappu_RoguelikeModule {
+	moduleTypes:[Torappu_RoguelikeModuleType];
+	sanCheck:Torappu_RoguelikeSanCheckModuleData;
+	dice:Torappu_RoguelikeDiceModuleData;
+	chaos:Torappu_RoguelikeChaosModuleData;
+	totemBuff:Torappu_RoguelikeTotemBuffModuleData;
+	vision:Torappu_RoguelikeVisionModuleData;
+	fragment:Torappu_RoguelikeFragmentModuleData;
+	disaster:Torappu_RoguelikeDisasterModuleData;
+	nodeUpgrade:Torappu_RoguelikeNodeUpgradeModuleData;
+	copper:Torappu_RoguelikeCopperModuleData;
+	wrath:Torappu_RoguelikeWrathModuleData;
+	candle:Torappu_RoguelikeCandleModuleData;
+	sky:Torappu_RoguelikeSkyModuleData;
+}
+
+
+root_type Torappu_RoguelikeModule;

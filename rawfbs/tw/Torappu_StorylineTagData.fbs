@@ -1,0 +1,11 @@
+
+table Torappu_StorylineTagData {
+	tagId:string;
+	sortId:int32;
+	tagDesc:string;
+	textColor:string;
+	bkgColor:string;
+}
+
+
+root_type Torappu_StorylineTagData;

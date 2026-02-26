@@ -1,0 +1,8 @@
+
+table Torappu_Act5FunSettleSuccessData {
+	count:int32;
+	desc:string;
+}
+
+
+root_type Torappu_Act5FunSettleSuccessData;

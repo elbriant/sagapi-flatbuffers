@@ -1,0 +1,11 @@
+
+table Torappu_Act36SideData_Act36SideTokenHandbookData {
+	tokenHandbookId:string;
+	spriteId:string;
+	sortId:int32;
+	tokenAbility:string;
+	tokenDescrption:string;
+}
+
+
+root_type Torappu_Act36SideData_Act36SideTokenHandbookData;

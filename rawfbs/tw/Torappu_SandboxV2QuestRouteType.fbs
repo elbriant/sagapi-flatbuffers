@@ -1,0 +1,8 @@
+
+enum Torappu_SandboxV2QuestRouteType : int32 {
+	NONE = 0,
+	ENEMY_RUSH = 1,
+	EVENT = 2,
+	NODE = 3,
+	NPC = 4
+}

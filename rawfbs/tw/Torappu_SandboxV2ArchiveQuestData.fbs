@@ -1,0 +1,19 @@
+include "Torappu_SandboxV2ArchiveQuestType.fbs";
+include "Torappu_SandboxV2ArchiveQuestAvgData.fbs";
+include "Torappu_SandboxV2ArchiveQuestCgData.fbs";
+include "Torappu_SandboxV2ArchiveQuestZoneData.fbs";
+
+table Torappu_SandboxV2ArchiveQuestData {
+	id:string;
+	sortId:int32;
+	questType:Torappu_SandboxV2ArchiveQuestType;
+	name:string;
+	desc:string;
+	avgDataList:[Torappu_SandboxV2ArchiveQuestAvgData];
+	cgDataList:[Torappu_SandboxV2ArchiveQuestCgData];
+	npcPicIdList:[string];
+	zoneData:Torappu_SandboxV2ArchiveQuestZoneData;
+}
+
+
+root_type Torappu_SandboxV2ArchiveQuestData;

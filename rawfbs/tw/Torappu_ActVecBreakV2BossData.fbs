@@ -1,0 +1,14 @@
+
+table Torappu_ActVecBreakV2BossData {
+	enemyId:string;
+	name:string;
+	desc:string;
+	level:int32;
+	iconId:string;
+	levelDecoFigureId:string;
+	levelDecoSignId:string;
+	decoId:string;
+}
+
+
+root_type Torappu_ActVecBreakV2BossData;

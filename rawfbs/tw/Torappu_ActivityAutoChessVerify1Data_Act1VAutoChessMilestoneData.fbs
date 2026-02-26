@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData {
+	milestoneId:string;
+	orderId:int32;
+	tokenNum:int32;
+	item:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData;

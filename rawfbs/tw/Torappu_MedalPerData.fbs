@@ -1,0 +1,25 @@
+include "Torappu_MedalRarity.fbs";
+include "Torappu_MedalExpireTime.fbs";
+include "Torappu_MedalRewardGroupData.fbs";
+
+table Torappu_MedalPerData {
+	medalId:string;
+	medalName:string;
+	medalType:string;
+	slotId:int32;
+	preMedalIdList:[string];
+	rarity:Torappu_MedalRarity;
+	template:string;
+	unlockParam:[string];
+	getMethod:string;
+	description:string;
+	advancedMedal:string;
+	originMedal:string;
+	displayTime:int64;
+	expireTimes:[Torappu_MedalExpireTime];
+	medalRewardGroup:[Torappu_MedalRewardGroupData];
+	isHidden:bool;
+}
+
+
+root_type Torappu_MedalPerData;

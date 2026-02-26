@@ -1,0 +1,20 @@
+include "Torappu_SkillType.fbs";
+include "Torappu_SkillDurationType.fbs";
+include "Torappu_SpData.fbs";
+include "CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat.fbs";
+include "Torappu_Blackboard.fbs";
+
+table Torappu_SkillDataBundle_LevelData {
+	name:string;
+	rangeId:string;
+	description:string;
+	skillType:Torappu_SkillType;
+	durationType:Torappu_SkillDurationType;
+	spData:Torappu_SpData;
+	prefabId:string;
+	duration:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+	blackboard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_SkillDataBundle_LevelData;

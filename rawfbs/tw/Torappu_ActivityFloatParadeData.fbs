@@ -1,0 +1,16 @@
+include "Torappu_ActivityFloatParadeData_ConstData.fbs";
+include "Torappu_ActivityFloatParadeData_DailyData.fbs";
+include "dict__System_String_dict__System_String_Torappu_ActivityFloatParadeData_RewardPool.fbs";
+include "Torappu_ActivityFloatParadeData_Tactic.fbs";
+include "dict__System_String_Torappu_ActivityFloatParadeData_GroupData.fbs";
+
+table Torappu_ActivityFloatParadeData {
+	constData:Torappu_ActivityFloatParadeData_ConstData;
+	dailyDataDic:[Torappu_ActivityFloatParadeData_DailyData];
+	rewardPools:[dict__System_String_dict__System_String_Torappu_ActivityFloatParadeData_RewardPool];
+	tacticList:[Torappu_ActivityFloatParadeData_Tactic];
+	groupInfos:[dict__System_String_Torappu_ActivityFloatParadeData_GroupData];
+}
+
+
+root_type Torappu_ActivityFloatParadeData;

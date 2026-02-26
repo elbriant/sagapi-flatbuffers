@@ -1,0 +1,10 @@
+include "Torappu_Act13SideData_LongTermMissionGroupData.fbs";
+
+table Torappu_Act13SideData_OrgSectionData {
+	sectionName:string;
+	sortId:int32;
+	groupData:Torappu_Act13SideData_LongTermMissionGroupData;
+}
+
+
+root_type Torappu_Act13SideData_OrgSectionData;

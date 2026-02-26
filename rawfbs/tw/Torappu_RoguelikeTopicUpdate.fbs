@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeTopicUpdate {
+	updateId:string;
+	topicUpdateTime:int64;
+	topicEndTime:int64;
+}
+
+
+root_type Torappu_RoguelikeTopicUpdate;

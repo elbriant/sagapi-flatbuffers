@@ -1,0 +1,11 @@
+include "dict__System_String_list___1_Torappu_StageData_ConditionDesc.fbs";
+
+table Torappu_OverrideUnlockInfo {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	unlockDict:[dict__System_String_list___1_Torappu_StageData_ConditionDesc];
+}
+
+
+root_type Torappu_OverrideUnlockInfo;

@@ -1,0 +1,10 @@
+include "Torappu_StoryData_Trigger_TriggerType.fbs";
+
+table Torappu_StoryData_Trigger {
+	type:Torappu_StoryData_Trigger_TriggerType;
+	key:string;
+	useRegex:bool;
+}
+
+
+root_type Torappu_StoryData_Trigger;

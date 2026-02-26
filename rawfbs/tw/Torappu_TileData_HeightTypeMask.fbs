@@ -1,0 +1,7 @@
+
+enum Torappu_TileData_HeightTypeMask : int32 {
+	NONE = 0,
+	LOWLAND = 1,
+	HIGHLAND = 2,
+	ALL = 3
+}

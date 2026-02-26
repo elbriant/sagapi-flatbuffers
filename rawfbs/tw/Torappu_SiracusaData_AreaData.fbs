@@ -1,0 +1,14 @@
+include "Torappu_SiracusaData_ZoneUnlockType.fbs";
+
+table Torappu_SiracusaData_AreaData {
+	areaId:string;
+	areaName:string;
+	areaSubName:string;
+	unlockType:Torappu_SiracusaData_ZoneUnlockType;
+	unlockStage:string;
+	areaIconId:string;
+	pointList:[string];
+}
+
+
+root_type Torappu_SiracusaData_AreaData;

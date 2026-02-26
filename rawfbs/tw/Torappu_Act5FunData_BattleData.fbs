@@ -1,0 +1,19 @@
+include "Torappu_Act5funConst.fbs";
+include "dict__System_String_Torappu_Act5FunRoundData.fbs";
+include "dict__System_String_Torappu_Act5FunNpcData.fbs";
+include "Torappu_Act5FunNpcSelectorData.fbs";
+include "dict__System_String_Torappu_Act5FunChoiceRewardData.fbs";
+include "dict__System_String_Torappu_Act5FunEnemyIdMappingData.fbs";
+
+table Torappu_Act5FunData_BattleData {
+	battleConstData:Torappu_Act5funConst;
+	roundData:[dict__System_String_Torappu_Act5FunRoundData];
+	npcData:[dict__System_String_Torappu_Act5FunNpcData];
+	npcSelectorData:[Torappu_Act5FunNpcSelectorData];
+	choiceRewardData:[dict__System_String_Torappu_Act5FunChoiceRewardData];
+	enemyIdMappingData:[dict__System_String_Torappu_Act5FunEnemyIdMappingData];
+	battleStreak:[float];
+}
+
+
+root_type Torappu_Act5FunData_BattleData;

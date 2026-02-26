@@ -1,0 +1,10 @@
+
+enum Torappu_BuildingData_FurnitureLocation : int32 {
+	NONE = 0,
+	WALL = 1,
+	FLOOR = 2,
+	CARPET = 3,
+	CEILING = 4,
+	POSTER = 5,
+	CEILINGDECAL = 6
+}

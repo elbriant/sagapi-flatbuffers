@@ -1,0 +1,31 @@
+include "dict__System_String_Torappu_ItemData.fbs";
+include "dict__System_String_Torappu_ExpItemFeature.fbs";
+include "dict__System_Int32_dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_ApSupplyFeature.fbs";
+include "dict__System_String_Torappu_CharVoucherItemFeature.fbs";
+include "dict__System_String_System_Int32.fbs";
+include "dict__System_String_Torappu_UniCollectionInfo.fbs";
+include "dict__System_String_Torappu_ItemPackInfo.fbs";
+include "dict__System_String_Torappu_FullPotentialCharacterInfo.fbs";
+include "dict__System_String_Torappu_ActivityPotentialCharacterInfo.fbs";
+include "dict__System_String_Torappu_FavorCharacterInfo.fbs";
+include "dict__System_String_System_String.fbs";
+
+table Torappu_InventoryData {
+	items:[dict__System_String_Torappu_ItemData];
+	expItems:[dict__System_String_Torappu_ExpItemFeature];
+	potentialItems:[dict__System_Int32_dict__System_String_System_String];
+	apSupplies:[dict__System_String_Torappu_ApSupplyFeature];
+	charVoucherItems:[dict__System_String_Torappu_CharVoucherItemFeature];
+	uniqueInfo:[dict__System_String_System_Int32];
+	itemTimeLimit:[dict__System_String_System_Int32];
+	uniCollectionInfo:[dict__System_String_Torappu_UniCollectionInfo];
+	itemPackInfos:[dict__System_String_Torappu_ItemPackInfo];
+	fullPotentialCharacters:[dict__System_String_Torappu_FullPotentialCharacterInfo];
+	activityPotentialCharacters:[dict__System_String_Torappu_ActivityPotentialCharacterInfo];
+	favorCharacters:[dict__System_String_Torappu_FavorCharacterInfo];
+	itemShopNameDict:[dict__System_String_System_String];
+}
+
+
+root_type Torappu_InventoryData;

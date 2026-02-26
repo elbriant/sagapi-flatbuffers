@@ -1,0 +1,9 @@
+
+enum Torappu_RL02DevelopmentNodeType : int32 {
+	NONE = 0,
+	SMALL = 1,
+	NORMAL = 2,
+	LARGE_RHODES = 3,
+	LARGE_ABYSSAL = 4,
+	LARGE_IBERIA = 5
+}

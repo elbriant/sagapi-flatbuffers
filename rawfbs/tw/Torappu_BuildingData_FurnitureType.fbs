@@ -1,0 +1,17 @@
+
+enum Torappu_BuildingData_FurnitureType : int32 {
+	FLOOR = 0,
+	CARPET = 1,
+	SEATING = 2,
+	BEDDING = 3,
+	TABLE = 4,
+	CABINET = 5,
+	DECORATION = 6,
+	WALLPAPER = 7,
+	WALLDECO = 8,
+	WALLLAMP = 9,
+	CEILING = 10,
+	CEILINGLAMP = 11,
+	FUNCTION = 12,
+	INTERACT = 13
+}

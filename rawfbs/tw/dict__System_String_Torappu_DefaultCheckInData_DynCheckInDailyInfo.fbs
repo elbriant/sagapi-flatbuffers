@@ -1,0 +1,9 @@
+include "Torappu_DefaultCheckInData_DynCheckInDailyInfo.fbs";
+
+table dict__System_String_Torappu_DefaultCheckInData_DynCheckInDailyInfo {
+	dict_key:string;
+	dict_value:Torappu_DefaultCheckInData_DynCheckInDailyInfo;
+}
+
+
+root_type dict__System_String_Torappu_DefaultCheckInData_DynCheckInDailyInfo;

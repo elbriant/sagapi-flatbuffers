@@ -1,0 +1,8 @@
+
+table Torappu_StorylineConstData {
+	recommendHideGuideGroupId:string;
+	tutorialSelectStorylineId:string;
+}
+
+
+root_type Torappu_StorylineConstData;

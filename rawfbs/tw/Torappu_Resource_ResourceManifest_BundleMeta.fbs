@@ -1,0 +1,10 @@
+
+table Torappu_Resource_ResourceManifest_BundleMeta {
+	name:string;
+	props:int32;
+	sccIndex:int32;
+	allDependencies:[int32];
+}
+
+
+root_type Torappu_Resource_ResourceManifest_BundleMeta;

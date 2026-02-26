@@ -1,0 +1,12 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_ActVecBreakV2BattleBuffData {
+	buffId:string;
+	name:string;
+	desc:string;
+	iconId:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_ActVecBreakV2BattleBuffData;

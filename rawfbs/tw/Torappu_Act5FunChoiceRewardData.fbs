@@ -1,0 +1,10 @@
+
+table Torappu_Act5FunChoiceRewardData {
+	choiceId:string;
+	name:string;
+	percentage:float;
+	isSpecialStyle:bool;
+}
+
+
+root_type Torappu_Act5FunChoiceRewardData;

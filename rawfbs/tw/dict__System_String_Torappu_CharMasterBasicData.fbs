@@ -1,0 +1,9 @@
+include "Torappu_CharMasterBasicData.fbs";
+
+table dict__System_String_Torappu_CharMasterBasicData {
+	dict_key:string;
+	dict_value:Torappu_CharMasterBasicData;
+}
+
+
+root_type dict__System_String_Torappu_CharMasterBasicData;

@@ -1,0 +1,8 @@
+include "dict__System_String_System_String.fbs";
+
+table Torappu_LanguageData {
+	strings:[dict__System_String_System_String];
+}
+
+
+root_type Torappu_LanguageData;

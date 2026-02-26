@@ -1,0 +1,14 @@
+
+table Torappu_ZoneRecordUnlockData {
+	noteId:string;
+	zoneId:string;
+	initialName:string;
+	finalName:string;
+	accordingExposeId:string;
+	initialDes:string;
+	finalDes:string;
+	remindDes:string;
+}
+
+
+root_type Torappu_ZoneRecordUnlockData;

@@ -1,0 +1,9 @@
+include "Torappu_MissionWeeklyRewardConf.fbs";
+
+table dict__System_String_Torappu_MissionWeeklyRewardConf {
+	dict_key:string;
+	dict_value:Torappu_MissionWeeklyRewardConf;
+}
+
+
+root_type dict__System_String_Torappu_MissionWeeklyRewardConf;

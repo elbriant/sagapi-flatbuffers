@@ -1,0 +1,10 @@
+include "Torappu_Audio_MixerDesc_Category.fbs";
+
+table Torappu_Audio_MixerDesc {
+	category:Torappu_Audio_MixerDesc_Category;
+	customGroup:string;
+	important:bool;
+}
+
+
+root_type Torappu_Audio_MixerDesc;

@@ -1,0 +1,8 @@
+include "Torappu_SandboxV2RewardItemConfigData.fbs";
+
+table Torappu_SandboxV2RewardData {
+	rewardList:[Torappu_SandboxV2RewardItemConfigData];
+}
+
+
+root_type Torappu_SandboxV2RewardData;

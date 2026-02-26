@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_StationManageFilterInfo.fbs";
+
+table dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo {
+	dict_key:int32;
+	dict_value:Torappu_BuildingData_StationManageFilterInfo;
+}
+
+
+root_type dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo;

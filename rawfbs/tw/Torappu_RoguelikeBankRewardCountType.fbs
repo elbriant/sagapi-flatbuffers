@@ -1,0 +1,5 @@
+
+enum Torappu_RoguelikeBankRewardCountType : int32 {
+	HIGHEST_RECORD = 0,
+	TOTAL_SUM = 1
+}

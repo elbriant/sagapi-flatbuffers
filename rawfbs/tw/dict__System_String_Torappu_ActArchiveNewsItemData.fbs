@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveNewsItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveNewsItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveNewsItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveNewsItemData;

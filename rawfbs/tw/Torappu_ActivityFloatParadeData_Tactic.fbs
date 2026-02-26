@@ -1,0 +1,12 @@
+include "list_dict___2_System_String_System_Single_.fbs";
+
+table Torappu_ActivityFloatParadeData_Tactic {
+	id:int32;
+	name:string;
+	packName:string;
+	briefName:string;
+	rewardVar:[list_dict___2_System_String_System_Single_];
+}
+
+
+root_type Torappu_ActivityFloatParadeData_Tactic;

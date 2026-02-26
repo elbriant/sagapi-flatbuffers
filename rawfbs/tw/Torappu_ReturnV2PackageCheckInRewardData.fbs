@@ -1,0 +1,15 @@
+include "dict__System_Int32_list___1_Torappu_ReturnV2ItemData.fbs";
+
+table Torappu_ReturnV2PackageCheckInRewardData {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	getTime:int32;
+	bindGPGoodId:string;
+	totalCheckInDay:int32;
+	iconId:string;
+	rewardDict:[dict__System_Int32_list___1_Torappu_ReturnV2ItemData];
+}
+
+
+root_type Torappu_ReturnV2PackageCheckInRewardData;

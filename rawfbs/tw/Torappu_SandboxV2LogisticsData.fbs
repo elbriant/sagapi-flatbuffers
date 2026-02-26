@@ -1,0 +1,14 @@
+include "Torappu_ProfessionCategory.fbs";
+
+table Torappu_SandboxV2LogisticsData {
+	id:string;
+	desc:string;
+	noBuffDesc:string;
+	iconId:string;
+	profession:Torappu_ProfessionCategory;
+	sortId:int32;
+	levelParams:[string];
+}
+
+
+root_type Torappu_SandboxV2LogisticsData;

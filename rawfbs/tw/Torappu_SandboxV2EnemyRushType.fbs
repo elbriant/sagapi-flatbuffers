@@ -1,0 +1,11 @@
+
+enum Torappu_SandboxV2EnemyRushType : int32 {
+	NORMAL = 0,
+	ELITE = 1,
+	BOSS = 2,
+	BANDIT = 3,
+	RALLY = 4,
+	THIEF = 5,
+	MESSENGER = 6,
+	INSECT = 7
+}

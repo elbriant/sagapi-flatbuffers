@@ -1,0 +1,9 @@
+include "Torappu_VoiceLangType.fbs";
+
+table Torappu_VoiceLangGroupData {
+	name:string;
+	members:[Torappu_VoiceLangType];
+}
+
+
+root_type Torappu_VoiceLangGroupData;

@@ -1,0 +1,9 @@
+include "Torappu_AutoChessMiscConfig_SceneEffectSetting.fbs";
+
+table dict__System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting {
+	dict_key:string;
+	dict_value:Torappu_AutoChessMiscConfig_SceneEffectSetting;
+}
+
+
+root_type dict__System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting;

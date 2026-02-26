@@ -1,0 +1,9 @@
+include "Torappu_Act29SideData_Act29SideOrcheData.fbs";
+
+table dict__System_String_Torappu_Act29SideData_Act29SideOrcheData {
+	dict_key:string;
+	dict_value:Torappu_Act29SideData_Act29SideOrcheData;
+}
+
+
+root_type dict__System_String_Torappu_Act29SideData_Act29SideOrcheData;

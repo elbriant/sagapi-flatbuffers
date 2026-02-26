@@ -1,0 +1,10 @@
+include "Torappu_Blackboard.fbs";
+
+table Torappu_DynamicAbilityData {
+	atRoot:bool;
+	prefabKey:string;
+	blackboard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_DynamicAbilityData;

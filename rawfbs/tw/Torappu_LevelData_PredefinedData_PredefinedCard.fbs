@@ -1,0 +1,6 @@
+
+table Torappu_LevelData_PredefinedData_PredefinedCard {
+}
+
+
+root_type Torappu_LevelData_PredefinedData_PredefinedCard;

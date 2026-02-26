@@ -1,0 +1,16 @@
+include "dict__System_String_Torappu_CrisisV2SeasonInfo.fbs";
+include "list_dict___2_System_Int32_Torappu_CrisisV2AppraiseWrap_.fbs";
+include "Torappu_CrisisV2ConstData.fbs";
+include "dict__System_String_list___1_Torappu_RuneData.fbs";
+include "Torappu_RecalRuneSharedData.fbs";
+
+table Torappu_CrisisV2SharedData {
+	seasonInfoDataMap:[dict__System_String_Torappu_CrisisV2SeasonInfo];
+	scoreLevelToAppraiseDataMap:[list_dict___2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
+	constData:Torappu_CrisisV2ConstData;
+	battleCommentRuneData:[dict__System_String_list___1_Torappu_RuneData];
+	recalRuneData:Torappu_RecalRuneSharedData;
+}
+
+
+root_type Torappu_CrisisV2SharedData;

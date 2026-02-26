@@ -1,0 +1,8 @@
+include "Torappu_LevelData_BranchData_PhaseData.fbs";
+
+table Torappu_LevelData_BranchData {
+	phases:[Torappu_LevelData_BranchData_PhaseData];
+}
+
+
+root_type Torappu_LevelData_BranchData;

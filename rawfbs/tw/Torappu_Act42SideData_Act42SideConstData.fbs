@@ -1,0 +1,20 @@
+
+table Torappu_Act42SideData_Act42SideConstData {
+	coffeeName:string;
+	dailyCoffee:int32;
+	coffeeLimit:int32;
+	coffeeContent:string;
+	minGunTaskDisplay:string;
+	unlockStageId:string;
+	toastGunTaskCompleted:string;
+	toastGunTaskLocked:string;
+	toastStageBlock:string;
+	toastEntryLocked:string;
+	toastFileLocked:string;
+	toastGunLocked:string;
+	toastNoCoffee:string;
+	toastOuterUnlock:string;
+}
+
+
+root_type Torappu_Act42SideData_Act42SideConstData;

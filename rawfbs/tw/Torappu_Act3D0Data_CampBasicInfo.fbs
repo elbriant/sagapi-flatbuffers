@@ -1,0 +1,10 @@
+
+table Torappu_Act3D0Data_CampBasicInfo {
+	campId:string;
+	campName:string;
+	campDesc:string;
+	rewardDesc:string;
+}
+
+
+root_type Torappu_Act3D0Data_CampBasicInfo;

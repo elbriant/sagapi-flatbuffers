@@ -1,0 +1,9 @@
+
+table Torappu_StorylineMainlineData {
+	zoneId:string;
+	retroId:string;
+	decoImageId:string;
+}
+
+
+root_type Torappu_StorylineMainlineData;

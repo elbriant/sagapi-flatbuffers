@@ -1,0 +1,7 @@
+
+enum Torappu_ItemClassifyType : int32 {
+	NONE = 0,
+	CONSUME = 1,
+	NORMAL = 2,
+	MATERIAL = 3
+}

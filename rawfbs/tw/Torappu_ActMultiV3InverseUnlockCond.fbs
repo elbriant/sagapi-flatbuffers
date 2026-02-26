@@ -1,0 +1,9 @@
+include "Torappu_ActMultiV3MapDiffType.fbs";
+
+table Torappu_ActMultiV3InverseUnlockCond {
+	diff:Torappu_ActMultiV3MapDiffType;
+	requireStarCnt:int32;
+}
+
+
+root_type Torappu_ActMultiV3InverseUnlockCond;

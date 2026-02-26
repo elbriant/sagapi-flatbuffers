@@ -1,0 +1,27 @@
+include "Torappu_Act25SideData_ConstData.fbs";
+include "list_dict___2_System_String_Torappu_Act25SideData_ZoneDescInfo_.fbs";
+include "dict__System_String_Torappu_Act25SideData_ArchiveItemData.fbs";
+include "dict__System_String_Torappu_Act25SideData_ArchiveMapInfoData.fbs";
+include "dict__System_String_Torappu_Act25SideData_AreaInfoData.fbs";
+include "dict__System_String_Torappu_Act25SideData_AreaMissionData.fbs";
+include "dict__System_String_Torappu_Act25SideData_BattlePerformanceData.fbs";
+include "dict__System_String_Torappu_Act25SideData_KeyData.fbs";
+include "dict__System_String_Torappu_Act25SideData_FogUnlockData.fbs";
+include "Torappu_Act25SideData_DailyFarmData.fbs";
+
+table Torappu_Act25SideData {
+	tokenItemId:string;
+	constData:Torappu_Act25SideData_ConstData;
+	zoneDescList:[list_dict___2_System_String_Torappu_Act25SideData_ZoneDescInfo_];
+	archiveItemData:[dict__System_String_Torappu_Act25SideData_ArchiveItemData];
+	arcMapInfoData:[dict__System_String_Torappu_Act25SideData_ArchiveMapInfoData];
+	areaInfoData:[dict__System_String_Torappu_Act25SideData_AreaInfoData];
+	areaMissionData:[dict__System_String_Torappu_Act25SideData_AreaMissionData];
+	battlePerformanceData:[dict__System_String_Torappu_Act25SideData_BattlePerformanceData];
+	keyData:[dict__System_String_Torappu_Act25SideData_KeyData];
+	fogUnlockData:[dict__System_String_Torappu_Act25SideData_FogUnlockData];
+	farmList:[Torappu_Act25SideData_DailyFarmData];
+}
+
+
+root_type Torappu_Act25SideData;

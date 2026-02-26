@@ -1,0 +1,11 @@
+include "dict__System_String_Torappu_MonthlySignInGroupData.fbs";
+include "dict__System_String_list___1_Torappu_MonthlyDailyBonusGroup.fbs";
+
+table Torappu_CheckInTable {
+	groups:[dict__System_String_Torappu_MonthlySignInGroupData];
+	monthlySubItem:[dict__System_String_list___1_Torappu_MonthlyDailyBonusGroup];
+	currentMonthlySubId:string;
+}
+
+
+root_type Torappu_CheckInTable;

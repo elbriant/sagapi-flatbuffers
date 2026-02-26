@@ -1,0 +1,16 @@
+include "Torappu_SandboxV2FoodMatType.fbs";
+include "Torappu_SandboxV2FoodAttribute.fbs";
+include "Torappu_SandboxV2FoodVariantType.fbs";
+
+table Torappu_SandboxV2FoodMatData {
+	id:string;
+	type:Torappu_SandboxV2FoodMatType;
+	attribute:Torappu_SandboxV2FoodAttribute;
+	variantType:Torappu_SandboxV2FoodVariantType;
+	bonusDuration:int32;
+	buffDesc:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_SandboxV2FoodMatData;

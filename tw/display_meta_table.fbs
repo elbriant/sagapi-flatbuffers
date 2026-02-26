@@ -1,0 +1,614 @@
+
+enum Torappu_PlayerAvatarGroupType : int32 {
+	NONE = 0,
+	ASSISTANT = 1,
+	DEFAULT = 2,
+	SPECIAL = 3,
+	ACTIVITY = 4,
+	DYNAMIC = 5
+}
+
+table Torappu_PlayerAvatarPerData {
+	avatarId:string;
+	avatarType:Torappu_PlayerAvatarGroupType;
+	avatarIdSort:int32;
+	avatarIdDesc:string;
+	avatarItemName:string;
+	avatarItemDesc:string;
+	avatarItemUsage:string;
+	obtainApproach:string;
+	dynAvatarId:string;
+}
+
+
+
+table Torappu_PlayerAvatarGroupData {
+	avatarType:Torappu_PlayerAvatarGroupType;
+	typeName:string;
+	sortId:int32;
+	avatarIdList:[string];
+}
+
+
+
+table dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData {
+	dict_key:Torappu_PlayerAvatarGroupType;
+	dict_value:Torappu_PlayerAvatarGroupData;
+}
+
+
+
+table Torappu_PlayerAvatarData {
+	defaultAvatarId:string;
+	avatarList:[Torappu_PlayerAvatarPerData];
+	avatarTypeData:[dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData];
+}
+
+
+
+enum Torappu_HomeMultiFormChangeRule : int32 {
+	NONE = 0,
+	TIME = 1
+}
+
+table Torappu_HomeBackgroundMultiFormData {
+	multiFormBgId:string;
+	sortId:int32;
+	bgMusicId:string;
+}
+
+
+
+table Torappu_HomeBackgroundSingleData {
+	bgId:string;
+	bgSortId:int32;
+	bgStartTime:int64;
+	bgName:string;
+	bgDes:string;
+	bgUsage:string;
+	isMultiForm:bool;
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	multiFormList:[Torappu_HomeBackgroundMultiFormData];
+	obtainApproach:string;
+	unlockDesList:[string];
+}
+
+
+
+table Torappu_HomeThemeMultiFormData {
+	multiFormTmId:string;
+	sortId:int32;
+}
+
+
+
+enum Torappu_ItemRarity : int32 {
+	TIER_1 = 0,
+	TIER_2 = 1,
+	TIER_3 = 2,
+	TIER_4 = 3,
+	TIER_5 = 4,
+	TIER_6 = 5,
+	E_NUM = 6
+}
+
+table Torappu_HomeThemeDisplayData {
+	id:string;
+	type:string;
+	sortId:int32;
+	startTime:int64;
+	tmName:string;
+	tmDes:string;
+	tmUsage:string;
+	isMultiForm:bool;
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	multiFormList:[Torappu_HomeThemeMultiFormData];
+	obtainApproach:string;
+	unlockDesList:[string];
+	isLimitObtain:bool;
+	hideWhenLimit:bool;
+	rarity:Torappu_ItemRarity;
+}
+
+
+
+table Torappu_HomeBackgroundLimitInfoData {
+	limitInfoId:string;
+	startTime:int64;
+	endTime:int64;
+	invalidObtainDesc:string;
+	displayAfterEndTime:bool;
+}
+
+
+
+table Torappu_HomeBackgroundLimitData {
+	bgId:string;
+	limitInfos:[Torappu_HomeBackgroundLimitInfoData];
+}
+
+
+
+table dict__System_String_Torappu_HomeBackgroundLimitData {
+	dict_key:string;
+	dict_value:Torappu_HomeBackgroundLimitData;
+}
+
+
+
+table Torappu_HomeThemeLimitInfoData {
+	startTime:int64;
+	endTime:int64;
+	invalidObtainDesc:string;
+}
+
+
+
+table Torappu_HomeThemeLimitData {
+	id:string;
+	limitInfos:[Torappu_HomeThemeLimitInfoData];
+}
+
+
+
+table dict__System_String_Torappu_HomeThemeLimitData {
+	dict_key:string;
+	dict_value:Torappu_HomeThemeLimitData;
+}
+
+
+
+table Torappu_HomeMultiFormInfoData {
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	bgDesc:string;
+	tmDesc:string;
+}
+
+
+
+table Torappu_HomeMultiFormTimeRuleData {
+	id:string;
+	startHour:int32;
+}
+
+
+
+table dict__System_String_list___1_Torappu_HomeMultiFormTimeRuleData {
+	dict_key:string;
+	dict_value:[Torappu_HomeMultiFormTimeRuleData];
+}
+
+
+
+table Torappu_HomeBackgroundData {
+	defaultBackgroundId:string;
+	defaultThemeId:string;
+	homeBgDataList:[Torappu_HomeBackgroundSingleData];
+	themeList:[Torappu_HomeThemeDisplayData];
+	backgroundLimitData:[dict__System_String_Torappu_HomeBackgroundLimitData];
+	themeLimitData:[dict__System_String_Torappu_HomeThemeLimitData];
+	multiFormInfoData:[Torappu_HomeMultiFormInfoData];
+	timeRuleData:[dict__System_String_list___1_Torappu_HomeMultiFormTimeRuleData];
+	defaultBgMusicId:string;
+	themeStartTime:int64;
+}
+
+
+
+enum Torappu_NameCardV2ModuleType : int32 {
+	NONE = 0,
+	BACKGROUND = 1,
+	ILLUST = 2,
+	COLLECT = 3,
+	AVATAR = 4,
+	REMOVABLE = 5,
+	AVATAR_SIMPLE = 6
+}
+
+table Torappu_NameCardV2ModuleData {
+	id:string;
+	type:Torappu_NameCardV2ModuleType;
+}
+
+
+
+table dict__System_String_Torappu_NameCardV2ModuleData {
+	dict_key:string;
+	dict_value:Torappu_NameCardV2ModuleData;
+}
+
+
+
+enum Torappu_NameCardV2ModuleSubType : int32 {
+	NONE = 0,
+	SIGN = 1,
+	ASSIST = 2,
+	MEDAL = 3,
+	MAINLINE = 4,
+	EQUIPMENT = 5
+}
+
+table Torappu_NameCardV2RemovableModuleData {
+	sortId:int32;
+	subType:Torappu_NameCardV2ModuleSubType;
+	name:string;
+}
+
+
+
+table dict__System_String_Torappu_NameCardV2RemovableModuleData {
+	dict_key:string;
+	dict_value:Torappu_NameCardV2RemovableModuleData;
+}
+
+
+
+enum Torappu_NameCardV2SkinType : int32 {
+	NONE = 0,
+	MAINLINE = 1,
+	ACTIVITY = 2
+}
+
+table Torappu_NameCardV2TimeLimitInfo {
+	id:string;
+	availStartTime:int64;
+	availEndTime:int64;
+}
+
+
+
+table Torappu_NameCardV2SkinData {
+	id:string;
+	name:string;
+	type:Torappu_NameCardV2SkinType;
+	sortId:int32;
+	isSpTheme:bool;
+	defaultShowDetail:bool;
+	themeName:string;
+	themeEnName:string;
+	skinStartTime:int64;
+	skinDesc:string;
+	usageDesc:string;
+	skinApproach:string;
+	unlockConditionCnt:int32;
+	unlockDescList:[string];
+	fixedModuleList:[string];
+	rarity:Torappu_ItemRarity;
+	skinTmplCnt:int32;
+	canChangeTmpl:bool;
+	isTimeLimit:bool;
+	timeLimitInfoList:[Torappu_NameCardV2TimeLimitInfo];
+}
+
+
+
+table dict__System_String_Torappu_NameCardV2SkinData {
+	dict_key:string;
+	dict_value:Torappu_NameCardV2SkinData;
+}
+
+
+
+table Torappu_NameCardV2Consts {
+	defaultNameCardSkinId:string;
+	canUidHide:bool;
+	removableModuleMaxCount:int32;
+}
+
+
+
+table Torappu_NameCardV2Data {
+	fixedModuleData:[dict__System_String_Torappu_NameCardV2ModuleData];
+	removableModuleData:[dict__System_String_Torappu_NameCardV2RemovableModuleData];
+	skinData:[dict__System_String_Torappu_NameCardV2SkinData];
+	consts:Torappu_NameCardV2Consts;
+}
+
+
+
+enum Torappu_MailArchiveItemType : int32 {
+	NORMAL = 0,
+	BIRTHDAY = 1,
+	OPEN_SERVER = 2
+}
+
+enum Torappu_ItemType : int32 {
+	NONE = 0,
+	CHAR = 1,
+	CARD_EXP = 2,
+	MATERIAL = 3,
+	GOLD = 4,
+	EXP_PLAYER = 5,
+	TKT_TRY = 6,
+	TKT_RECRUIT = 7,
+	TKT_INST_FIN = 8,
+	TKT_GACHA = 9,
+	ACTIVITY_COIN = 10,
+	DIAMOND = 11,
+	DIAMOND_SHD = 12,
+	HGG_SHD = 13,
+	LGG_SHD = 14,
+	FURN = 15,
+	AP_GAMEPLAY = 16,
+	AP_BASE = 17,
+	SOCIAL_PT = 18,
+	CHAR_SKIN = 19,
+	TKT_GACHA_10 = 20,
+	TKT_GACHA_PRSV = 21,
+	AP_ITEM = 22,
+	AP_SUPPLY = 23,
+	RENAMING_CARD = 24,
+	RENAMING_CARD_2 = 25,
+	ET_STAGE = 26,
+	ACTIVITY_ITEM = 27,
+	VOUCHER_PICK = 28,
+	VOUCHER_CGACHA = 29,
+	VOUCHER_MGACHA = 30,
+	CRS_SHOP_COIN = 31,
+	CRS_RUNE_COIN = 32,
+	LMTGS_COIN = 33,
+	EPGS_COIN = 34,
+	LIMITED_TKT_GACHA_10 = 35,
+	LIMITED_FREE_GACHA = 36,
+	REP_COIN = 37,
+	ROGUELIKE = 38,
+	LINKAGE_TKT_GACHA_10 = 39,
+	VOUCHER_ELITE_II_4 = 40,
+	VOUCHER_ELITE_II_5 = 41,
+	VOUCHER_ELITE_II_6 = 42,
+	VOUCHER_SKIN = 43,
+	RETRO_COIN = 44,
+	PLAYER_AVATAR = 45,
+	UNI_COLLECTION = 46,
+	VOUCHER_FULL_POTENTIAL = 47,
+	RL_COIN = 48,
+	RETURN_CREDIT = 49,
+	MEDAL = 50,
+	CHARM = 51,
+	HOME_BACKGROUND = 52,
+	EXTERMINATION_AGENT = 53,
+	OPTIONAL_VOUCHER_PICK = 54,
+	ACT_CART_COMPONENT = 55,
+	VOUCHER_LEVELMAX_6 = 56,
+	VOUCHER_LEVELMAX_5 = 57,
+	VOUCHER_LEVELMAX_4 = 58,
+	VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+	VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+	VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+	ACTIVITY_POTENTIAL = 62,
+	ITEM_PACK = 63,
+	SANDBOX = 64,
+	FAVOR_ADD_ITEM = 65,
+	CLASSIC_SHD = 66,
+	CLASSIC_TKT_GACHA = 67,
+	CLASSIC_TKT_GACHA_10 = 68,
+	LIMITED_BUFF = 69,
+	CLASSIC_FES_PICK_TIER_5 = 70,
+	CLASSIC_FES_PICK_TIER_6 = 71,
+	RETURN_PROGRESS = 72,
+	NEW_PROGRESS = 73,
+	MCARD_VOUCHER = 74,
+	MATERIAL_ISSUE_VOUCHER = 75,
+	CRS_SHOP_COIN_V2 = 76,
+	HOME_THEME = 77,
+	SANDBOX_PERM = 78,
+	SANDBOX_TOKEN = 79,
+	TEMPLATE_TRAP = 80,
+	NAME_CARD_SKIN = 81,
+	EMOTICON_SET = 82,
+	EXCLUSIVE_TKT_GACHA = 83,
+	EXCLUSIVE_TKT_GACHA_10 = 84,
+	SO_CHAR_EXP = 85,
+	GIFTPACKAGE_TKT = 86
+}
+
+table Torappu_ItemBundle {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+}
+
+
+
+table Torappu_MailArchiveItemData {
+	id:string;
+	type:Torappu_MailArchiveItemType;
+	sortId:int32;
+	displayReceiveTs:int64;
+	year:int32;
+	dateDelta:int32;
+	senderId:string;
+	title:string;
+	content:string;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+
+table dict__System_String_Torappu_MailArchiveItemData {
+	dict_key:string;
+	dict_value:Torappu_MailArchiveItemData;
+}
+
+
+
+table Torappu_MailArchiveConstData {
+	funcOpenTs:int64;
+}
+
+
+
+table Torappu_MailArchiveData {
+	mailArchiveInfoDict:[dict__System_String_Torappu_MailArchiveItemData];
+	constData:Torappu_MailArchiveConstData;
+}
+
+
+
+table Torappu_MailSenderSingleInfo {
+	senderId:string;
+	senderName:string;
+	avatarId:string;
+}
+
+
+
+table dict__System_String_Torappu_MailSenderSingleInfo {
+	dict_key:string;
+	dict_value:Torappu_MailSenderSingleInfo;
+}
+
+
+
+table Torappu_MailSenderData {
+	senderDict:[dict__System_String_Torappu_MailSenderSingleInfo];
+}
+
+
+
+enum Torappu_EmojiSceneType : int32 {
+	NONE = 0,
+	ACTMULTIV3_ROOM = 1,
+	ACTMULTIV3_PICK = 2,
+	ACTMULTIV3_BATTLE = 3,
+	ENEMYDUEL_BATTLE = 4
+}
+
+table Torappu_EmoticonData_EmojiData {
+	id:string;
+	type:Torappu_EmojiSceneType;
+	sortId:int32;
+	picId:string;
+	desc:string;
+}
+
+
+
+table dict__System_String_Torappu_EmoticonData_EmojiData {
+	dict_key:string;
+	dict_value:Torappu_EmoticonData_EmojiData;
+}
+
+
+
+table dict__System_String_list___1_System_String {
+	dict_key:string;
+	dict_value:[string];
+}
+
+
+
+table Torappu_EmoticonData {
+	emojiDataDict:[dict__System_String_Torappu_EmoticonData_EmojiData];
+	emoticonThemeDataDict:[dict__System_String_list___1_System_String];
+}
+
+
+
+table Torappu_StoryVariantData {
+	plotTaskId:string;
+	spStoryId:string;
+	storyId:string;
+	priority:int32;
+	startTime:int64;
+	endTime:int64;
+	template:string;
+	param:[string];
+}
+
+
+
+table dict__System_String_Torappu_StoryVariantData {
+	dict_key:string;
+	dict_value:Torappu_StoryVariantData;
+}
+
+
+
+enum Torappu_UIGuideTarget : int32 {
+	NONE = 0,
+	BUILDING_CONTROL = 1,
+	BUILDING_DORM = 2,
+	BUILDING_HIRE = 3,
+	BUILDING_MANUFACT = 4,
+	BUILDING_MEETING = 5,
+	BUILDING_TRADING = 6,
+	CHAR_INFO = 7,
+	FRIEND = 8,
+	RECRUIT = 9,
+	SHOP = 10,
+	SQUAD_NORMAL = 11,
+	SQUAD_BATTLE = 12,
+	STAGE_MAINLINE = 13,
+	BUILDING_POWER = 14,
+	MISSION = 15,
+	CHAR_SKILL_SELECT = 16,
+	BUILDING_WORKSHOP = 17,
+	STAGE_CAMPAIGN = 18,
+	CHAR_EVOLVE = 19,
+	HANDBOOK = 20,
+	BUILDING_FURN_SHOP = 21,
+	BUILDING_TRAINING = 22,
+	STAGE_ACTIVITY = 23,
+	CRISIS_STAGE = 24,
+	ROGUELIKE_CHARSELECT = 25,
+	ROGUELIKE_BP = 26,
+	CLIMB_TOWER_ENTRY = 27,
+	CLIMB_TOWER_LAYER = 28,
+	ROGUELIKE_DUNGEON = 31,
+	RL03_TOTEM = 32,
+	GROCERY = 33,
+	TUNING = 34,
+	CRISIS_V2 = 35,
+	MISSION_ARCHIVE = 36,
+	FIFTH_ANNIV_EXPLORE = 37,
+	CARVING = 38,
+	VEC_BREAK = 39,
+	FIREWORK = 40,
+	BUILDING_STATION_MANAGE = 41,
+	ACT_MULTI_V3 = 42,
+	ENEMY_DUEL = 43,
+	VEC_BREAK_V2 = 44,
+	GUN_TASK = 45,
+	SPECIAL_OPERATOR = 46,
+	INFORMANT = 47
+}
+
+table Torappu_GuidebookConfigData {
+	configId:string;
+	sortId:int32;
+	pageIdList:[string];
+}
+
+
+
+table Torappu_GuidebookGroupData {
+	groupId:string;
+	guideTarget:Torappu_UIGuideTarget;
+	subSignal:string;
+	configList:[Torappu_GuidebookConfigData];
+}
+
+
+
+table dict__System_String_Torappu_GuidebookGroupData {
+	dict_key:string;
+	dict_value:Torappu_GuidebookGroupData;
+}
+
+
+
+table Torappu_DisplayMetaData {
+	playerAvatarData:Torappu_PlayerAvatarData;
+	homeBackgroundData:Torappu_HomeBackgroundData;
+	nameCardV2Data:Torappu_NameCardV2Data;
+	mailArchiveData:Torappu_MailArchiveData;
+	mailSenderData:Torappu_MailSenderData;
+	emoticonData:Torappu_EmoticonData;
+	storyVariantData:[dict__System_String_Torappu_StoryVariantData];
+	guidebookGroupDatas:[dict__System_String_Torappu_GuidebookGroupData];
+}
+
+
+
+root_type Torappu_DisplayMetaData;

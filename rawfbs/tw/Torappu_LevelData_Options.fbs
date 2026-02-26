@@ -1,0 +1,21 @@
+include "Torappu_BattleFunctionDisableMask.fbs";
+include "Torappu_Blackboard.fbs";
+
+table Torappu_LevelData_Options {
+	characterLimit:int32;
+	maxLifePoint:int32;
+	initialCost:int32;
+	maxCost:int32;
+	costIncreaseTime:float;
+	moveMultiplier:float;
+	steeringEnabled:bool;
+	isTrainingLevel:bool;
+	isHardTrainingLevel:bool;
+	isPredefinedCardsSelectable:bool;
+	maxPlayTime:float;
+	functionDisableMask:Torappu_BattleFunctionDisableMask;
+	configBlackBoard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_LevelData_Options;

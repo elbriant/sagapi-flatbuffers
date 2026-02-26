@@ -1,0 +1,15 @@
+include "Torappu_Act25SideData_Act25sideTechType.fbs";
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_Act25SideData_BattlePerformanceData {
+	itemId:string;
+	sortId:int32;
+	itemName:string;
+	itemIcon:string;
+	itemDesc:string;
+	itemTechType:Torappu_Act25SideData_Act25sideTechType;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_Act25SideData_BattlePerformanceData;

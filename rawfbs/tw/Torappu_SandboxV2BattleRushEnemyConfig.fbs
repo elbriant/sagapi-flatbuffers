@@ -1,0 +1,11 @@
+
+table Torappu_SandboxV2BattleRushEnemyConfig {
+	enemyKey:string;
+	branchId:string;
+	count:int32;
+	interval:float;
+	preDelay:float;
+}
+
+
+root_type Torappu_SandboxV2BattleRushEnemyConfig;

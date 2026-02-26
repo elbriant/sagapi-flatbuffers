@@ -1,0 +1,40 @@
+include "dict__System_String_Torappu_Act17sideData_PlaceData.fbs";
+include "dict__System_String_Torappu_Act17sideData_NodeInfoData.fbs";
+include "dict__System_String_Torappu_Act17sideData_LandmarkNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_StoryNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_BattleNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_TreasureNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_EventNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_TechNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_ChoiceNodeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_EventData.fbs";
+include "dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData.fbs";
+include "dict__System_String_Torappu_Act17sideData_TechTreeData.fbs";
+include "dict__System_String_Torappu_Act17sideData_TechTreeBranchData.fbs";
+include "dict__System_String_Torappu_Act17sideData_MainlineChapterData.fbs";
+include "dict__System_String_Torappu_Act17sideData_MainlineData.fbs";
+include "Torappu_Act17sideData_ZoneData.fbs";
+include "Torappu_Act17sideData_ConstData.fbs";
+
+table Torappu_Act17sideData {
+	placeDataMap:[dict__System_String_Torappu_Act17sideData_PlaceData];
+	nodeInfoDataMap:[dict__System_String_Torappu_Act17sideData_NodeInfoData];
+	landmarkNodeDataMap:[dict__System_String_Torappu_Act17sideData_LandmarkNodeData];
+	storyNodeDataMap:[dict__System_String_Torappu_Act17sideData_StoryNodeData];
+	battleNodeDataMap:[dict__System_String_Torappu_Act17sideData_BattleNodeData];
+	treasureNodeDataMap:[dict__System_String_Torappu_Act17sideData_TreasureNodeData];
+	eventNodeDataMap:[dict__System_String_Torappu_Act17sideData_EventNodeData];
+	techNodeDataMap:[dict__System_String_Torappu_Act17sideData_TechNodeData];
+	choiceNodeDataMap:[dict__System_String_Torappu_Act17sideData_ChoiceNodeData];
+	eventDataMap:[dict__System_String_Torappu_Act17sideData_EventData];
+	archiveItemUnlockDataMap:[dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData];
+	techTreeDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeData];
+	techTreeBranchDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeBranchData];
+	mainlineChapterDataMap:[dict__System_String_Torappu_Act17sideData_MainlineChapterData];
+	mainlineDataMap:[dict__System_String_Torappu_Act17sideData_MainlineData];
+	zoneDataList:[Torappu_Act17sideData_ZoneData];
+	constData:Torappu_Act17sideData_ConstData;
+}
+
+
+root_type Torappu_Act17sideData;

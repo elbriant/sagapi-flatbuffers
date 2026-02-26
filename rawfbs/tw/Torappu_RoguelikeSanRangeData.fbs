@@ -1,0 +1,13 @@
+include "Torappu_SanEffectRank.fbs";
+
+table Torappu_RoguelikeSanRangeData {
+	sanMax:int32;
+	diceGroupId:string;
+	description:string;
+	sanDungeonEffect:Torappu_SanEffectRank;
+	sanEffectRank:Torappu_SanEffectRank;
+	sanEndingDesc:string;
+}
+
+
+root_type Torappu_RoguelikeSanRangeData;

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeArchiveEnroll.fbs";
+
+table dict__System_String_Torappu_RoguelikeArchiveEnroll {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeArchiveEnroll;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeArchiveEnroll;

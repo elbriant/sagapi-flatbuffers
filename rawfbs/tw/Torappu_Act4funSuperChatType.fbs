@@ -1,0 +1,5 @@
+
+enum Torappu_Act4funSuperChatType : int32 {
+	ROLLED = 0,
+	RELATED = 1
+}

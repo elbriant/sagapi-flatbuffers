@@ -1,0 +1,24 @@
+include "Torappu_ActArchiveTimelineData.fbs";
+include "Torappu_ActArchiveMusicData.fbs";
+include "Torappu_ActArchivePicData.fbs";
+include "Torappu_ActArchiveStoryData.fbs";
+include "Torappu_ActArchiveAvgData.fbs";
+include "Torappu_ActArchiveNewsData.fbs";
+include "dict__System_String_Torappu_ActArchiveLandmarkItemData.fbs";
+include "dict__System_String_Torappu_ActArchiveChapterLogData.fbs";
+include "Torappu_ActArchiveChallengeBookData.fbs";
+
+table Torappu_ActArchiveComponentData {
+	timeline:Torappu_ActArchiveTimelineData;
+	music:Torappu_ActArchiveMusicData;
+	pic:Torappu_ActArchivePicData;
+	story:Torappu_ActArchiveStoryData;
+	avg:Torappu_ActArchiveAvgData;
+	news:Torappu_ActArchiveNewsData;
+	landmark:[dict__System_String_Torappu_ActArchiveLandmarkItemData];
+	log:[dict__System_String_Torappu_ActArchiveChapterLogData];
+	challengeBook:Torappu_ActArchiveChallengeBookData;
+}
+
+
+root_type Torappu_ActArchiveComponentData;

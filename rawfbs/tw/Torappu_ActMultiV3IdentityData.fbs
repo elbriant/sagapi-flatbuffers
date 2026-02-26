@@ -1,0 +1,13 @@
+include "Torappu_ActMultiV3IdentityType.fbs";
+
+table Torappu_ActMultiV3IdentityData {
+	id:string;
+	sortId:int32;
+	picId:string;
+	type:Torappu_ActMultiV3IdentityType;
+	maxNum:int32;
+	color:string;
+}
+
+
+root_type Torappu_ActMultiV3IdentityData;

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeAlchemyFormulationData.fbs";
+
+table dict__System_String_Torappu_RoguelikeAlchemyFormulationData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeAlchemyFormulationData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeAlchemyFormulationData;

@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2ItemTrapData.fbs";
+
+table dict__System_String_Torappu_SandboxV2ItemTrapData {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2ItemTrapData;
+}
+
+
+root_type dict__System_String_Torappu_SandboxV2ItemTrapData;

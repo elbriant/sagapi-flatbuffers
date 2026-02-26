@@ -1,0 +1,8 @@
+
+enum Torappu_ActMultiV3MapDiffType : int32 {
+	NONE = 0,
+	TRAINING = 1,
+	ORDINARY = 2,
+	DIFFICULTY = 3,
+	EXTREMELY = 4
+}

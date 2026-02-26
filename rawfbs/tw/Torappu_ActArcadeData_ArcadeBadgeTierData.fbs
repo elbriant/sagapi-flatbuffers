@@ -1,0 +1,17 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_ActArcadeData_ArcadeBadgeTierData {
+	badgeTierId:string;
+	sortId:int32;
+	badgeTierIconId:string;
+	badgeTierShareIconId:string;
+	badgeTierEffectId:string;
+	title:string;
+	desc:string;
+	buffId:string;
+	unlockDesc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeBadgeTierData;

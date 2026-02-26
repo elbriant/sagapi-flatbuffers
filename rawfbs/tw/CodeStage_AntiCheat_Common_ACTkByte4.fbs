@@ -1,0 +1,10 @@
+
+table CodeStage_AntiCheat_Common_ACTkByte4 {
+	b1:uint8;
+	b2:uint8;
+	b3:uint8;
+	b4:uint8;
+}
+
+
+root_type CodeStage_AntiCheat_Common_ACTkByte4;

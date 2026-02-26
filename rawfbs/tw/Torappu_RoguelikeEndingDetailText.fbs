@@ -1,0 +1,16 @@
+include "Torappu_RoguelikeEventType.fbs";
+include "Torappu_RoguelikeEndingDetailText_Type.fbs";
+
+table Torappu_RoguelikeEndingDetailText {
+	textId:string;
+	text:string;
+	eventType:Torappu_RoguelikeEventType;
+	spZoneEvtType:string;
+	showType:Torappu_RoguelikeEndingDetailText_Type;
+	choiceSceneId:string;
+	paramList:[string];
+	otherPara1:string;
+}
+
+
+root_type Torappu_RoguelikeEndingDetailText;

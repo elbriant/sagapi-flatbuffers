@@ -1,0 +1,9 @@
+include "Torappu_Act4funSpLiveMatInfoData.fbs";
+
+table dict__System_String_Torappu_Act4funSpLiveMatInfoData {
+	dict_key:string;
+	dict_value:Torappu_Act4funSpLiveMatInfoData;
+}
+
+
+root_type dict__System_String_Torappu_Act4funSpLiveMatInfoData;

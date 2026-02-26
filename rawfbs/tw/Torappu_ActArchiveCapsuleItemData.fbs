@@ -1,0 +1,10 @@
+
+table Torappu_ActArchiveCapsuleItemData {
+	capsuleId:string;
+	capsuleSortId:int32;
+	englishName:string;
+	enrollId:string;
+}
+
+
+root_type Torappu_ActArchiveCapsuleItemData;

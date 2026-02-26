@@ -1,0 +1,30 @@
+include "Torappu_Act29SideData_Act29SideProductType.fbs";
+
+table Torappu_Act29SideData_Act29SideProductGroupData {
+	groupId:string;
+	groupName:string;
+	groupIcon:string;
+	groupDesc:string;
+	defaultBgmSignal:string;
+	productList:[string];
+	groupEngName:string;
+	groupSmallName:string;
+	groupTypeIcon:string;
+	groupStoreIconId:string;
+	groupTypeBasePic:string;
+	groupTypeEyeIcon:string;
+	groupSortId:int32;
+	formList:[string];
+	sheetId:string;
+	sheetNum:int32;
+	sheetRotateSpd:float;
+	productType:Torappu_Act29SideData_Act29SideProductType;
+	productDescColor:string;
+	playTintColor:string;
+	confirmTintColor:string;
+	confirmDescColor:string;
+	bagThemeColor:string;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideProductGroupData;

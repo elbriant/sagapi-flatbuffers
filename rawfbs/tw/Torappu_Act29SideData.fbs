@@ -1,0 +1,28 @@
+include "dict__System_String_Torappu_Act29SideData_Act29SideFragData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideOrcheData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideProductGroupData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideProductData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideFormData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideInvestResultData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideInvestData.fbs";
+include "Torappu_Act29SideData_Act29SideConstData.fbs";
+include "dict__System_String_Torappu_Act29SideData_Act29SideZoneAdditionData.fbs";
+include "Torappu_Act29SideData_Act29SideMusicData.fbs";
+
+table Torappu_Act29SideData {
+	fragDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideFragData];
+	orcheDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideOrcheData];
+	productGroupDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideProductGroupData];
+	productDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideProductData];
+	formDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideFormData];
+	investResultDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideInvestResultData];
+	investDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideInvestData];
+	majorInvestIdList:[string];
+	rareInvestIdList:[string];
+	constData:Torappu_Act29SideData_Act29SideConstData;
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act29SideData_Act29SideZoneAdditionData];
+	musicDataMap:[Torappu_Act29SideData_Act29SideMusicData];
+}
+
+
+root_type Torappu_Act29SideData;

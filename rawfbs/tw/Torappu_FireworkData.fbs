@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_FireworkData_PlateData.fbs";
+include "dict__System_String_Torappu_FireworkData_AnimalData.fbs";
+include "dict__System_String_Torappu_FireworkData_LevelData.fbs";
+include "Torappu_FireworkData_ConstData.fbs";
+
+table Torappu_FireworkData {
+	plateData:[dict__System_String_Torappu_FireworkData_PlateData];
+	animalData:[dict__System_String_Torappu_FireworkData_AnimalData];
+	levelData:[dict__System_String_Torappu_FireworkData_LevelData];
+	constData:Torappu_FireworkData_ConstData;
+}
+
+
+root_type Torappu_FireworkData;

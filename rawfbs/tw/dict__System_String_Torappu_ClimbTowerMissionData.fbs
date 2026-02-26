@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerMissionData.fbs";
+
+table dict__System_String_Torappu_ClimbTowerMissionData {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerMissionData;
+}
+
+
+root_type dict__System_String_Torappu_ClimbTowerMissionData;

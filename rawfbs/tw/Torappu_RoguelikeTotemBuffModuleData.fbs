@@ -1,0 +1,12 @@
+include "dict__System_String_Torappu_RoguelikeTotemBuffData.fbs";
+include "dict__System_String_Torappu_RoguelikeTotemSubBuffData.fbs";
+include "Torappu_RoguelikeTotemModuleConsts.fbs";
+
+table Torappu_RoguelikeTotemBuffModuleData {
+	totemBuffDatas:[dict__System_String_Torappu_RoguelikeTotemBuffData];
+	subBuffs:[dict__System_String_Torappu_RoguelikeTotemSubBuffData];
+	moduleConsts:Torappu_RoguelikeTotemModuleConsts;
+}
+
+
+root_type Torappu_RoguelikeTotemBuffModuleData;

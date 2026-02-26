@@ -1,0 +1,16 @@
+
+enum Torappu_RoguelikeModuleType : int32 {
+	NONE = 0,
+	SANCHECK = 1,
+	DICE = 2,
+	CHAOS = 3,
+	TOTEMBUFF = 4,
+	VISION = 5,
+	FRAGMENT = 6,
+	DISASTER = 7,
+	NODE_UPGRADE = 8,
+	COPPER = 9,
+	WRATH = 10,
+	CANDLE = 11,
+	SKY = 12
+}

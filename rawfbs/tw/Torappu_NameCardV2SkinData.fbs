@@ -1,0 +1,29 @@
+include "Torappu_NameCardV2SkinType.fbs";
+include "Torappu_ItemRarity.fbs";
+include "Torappu_NameCardV2TimeLimitInfo.fbs";
+
+table Torappu_NameCardV2SkinData {
+	id:string;
+	name:string;
+	type:Torappu_NameCardV2SkinType;
+	sortId:int32;
+	isSpTheme:bool;
+	defaultShowDetail:bool;
+	themeName:string;
+	themeEnName:string;
+	skinStartTime:int64;
+	skinDesc:string;
+	usageDesc:string;
+	skinApproach:string;
+	unlockConditionCnt:int32;
+	unlockDescList:[string];
+	fixedModuleList:[string];
+	rarity:Torappu_ItemRarity;
+	skinTmplCnt:int32;
+	canChangeTmpl:bool;
+	isTimeLimit:bool;
+	timeLimitInfoList:[Torappu_NameCardV2TimeLimitInfo];
+}
+
+
+root_type Torappu_NameCardV2SkinData;

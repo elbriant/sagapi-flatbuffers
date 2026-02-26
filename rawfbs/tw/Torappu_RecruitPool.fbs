@@ -1,0 +1,8 @@
+include "Torappu_RecruitPool_RecruitTime.fbs";
+
+table Torappu_RecruitPool {
+	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
+}
+
+
+root_type Torappu_RecruitPool;

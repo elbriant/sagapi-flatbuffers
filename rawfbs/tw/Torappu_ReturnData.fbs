@@ -1,0 +1,19 @@
+include "Torappu_ReturnConst.fbs";
+include "Torappu_ItemBundle.fbs";
+include "Torappu_ReturnIntroData.fbs";
+include "dict__System_String_list___1_Torappu_ReturnDailyTaskData.fbs";
+include "Torappu_ReturnLongTermTaskData.fbs";
+include "Torappu_ReturnCheckinData.fbs";
+
+table Torappu_ReturnData {
+	constData:Torappu_ReturnConst;
+	onceRewards:[Torappu_ItemBundle];
+	intro:[Torappu_ReturnIntroData];
+	returnDailyTaskDic:[dict__System_String_list___1_Torappu_ReturnDailyTaskData];
+	returnLongTermTaskList:[Torappu_ReturnLongTermTaskData];
+	creditsList:[Torappu_ItemBundle];
+	checkinRewardList:[Torappu_ReturnCheckinData];
+}
+
+
+root_type Torappu_ReturnData;

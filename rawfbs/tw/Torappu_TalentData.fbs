@@ -1,0 +1,17 @@
+include "Torappu_CharacterData_UnlockCondition.fbs";
+include "Torappu_Blackboard.fbs";
+
+table Torappu_TalentData {
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	prefabKey:string;
+	name:string;
+	description:string;
+	rangeId:string;
+	blackboard:Torappu_Blackboard;
+	tokenKey:string;
+	isHideTalent:bool;
+}
+
+
+root_type Torappu_TalentData;

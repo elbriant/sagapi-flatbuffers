@@ -1,0 +1,14 @@
+
+enum Torappu_BuildingData_RoomCategory : int32 {
+	NONE = 0,
+	FUNCTION = 1,
+	OUTPUT = 2,
+	CUSTOM = 4,
+	ELEVATOR = 8,
+	CORRIDOR = 16,
+	SPECIAL = 32,
+	CUSTOM_P = 64,
+	ELEVATOR_P = 128,
+	CORRIDOR_P = 256,
+	ALL = 511
+}

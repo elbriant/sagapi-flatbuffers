@@ -1,0 +1,18 @@
+include "Torappu_SandboxV2QuestRouteType.fbs";
+include "Torappu_SandboxV2QuestLineType.fbs";
+
+table Torappu_SandboxV2QuestData {
+	questId:string;
+	questLine:string;
+	questTitle:string;
+	questDesc:string;
+	questTargetDesc:string;
+	isDisplay:bool;
+	questRouteType:Torappu_SandboxV2QuestRouteType;
+	questLineType:Torappu_SandboxV2QuestLineType;
+	questRouteParam:string;
+	showProgressIndex:int32;
+}
+
+
+root_type Torappu_SandboxV2QuestData;

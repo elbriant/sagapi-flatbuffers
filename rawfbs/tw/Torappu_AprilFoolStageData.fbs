@@ -1,0 +1,19 @@
+include "Torappu_AppearanceStyle.fbs";
+include "Torappu_LevelData_Difficulty.fbs";
+include "Torappu_StageData_ConditionDesc.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_AprilFoolStageData {
+	stageId:string;
+	levelId:string;
+	code:string;
+	name:string;
+	appearanceStyle:Torappu_AppearanceStyle;
+	loadingPicId:string;
+	difficulty:Torappu_LevelData_Difficulty;
+	unlockCondition:[Torappu_StageData_ConditionDesc];
+	stageDropInfo:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_AprilFoolStageData;

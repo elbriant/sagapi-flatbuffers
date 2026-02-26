@@ -1,0 +1,8 @@
+include "dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards.fbs";
+
+table Torappu_ActivityStageRewardData {
+	stageRewardsDict:[dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards];
+}
+
+
+root_type Torappu_ActivityStageRewardData;

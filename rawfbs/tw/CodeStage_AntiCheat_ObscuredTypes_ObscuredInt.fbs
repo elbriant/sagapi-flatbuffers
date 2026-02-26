@@ -1,0 +1,11 @@
+
+table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
+	currentCryptoKey:int32;
+	hiddenValue:int32;
+	inited:bool;
+	fakeValue:int32;
+	fakeValueActive:bool;
+}
+
+
+root_type CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;

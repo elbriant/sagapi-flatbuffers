@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeGameCharBuffType : int32 {
+	NONE = 0,
+	MUTATION = 1,
+	EVOLUTION = 2
+}

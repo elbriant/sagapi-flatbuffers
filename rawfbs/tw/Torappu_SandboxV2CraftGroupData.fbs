@@ -1,0 +1,7 @@
+
+table Torappu_SandboxV2CraftGroupData {
+	items:[string];
+}
+
+
+root_type Torappu_SandboxV2CraftGroupData;

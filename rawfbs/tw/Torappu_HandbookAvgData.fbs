@@ -1,0 +1,13 @@
+
+table Torappu_HandbookAvgData {
+	storyId:string;
+	storySetId:string;
+	storySort:int32;
+	storyCanShow:bool;
+	storyIntro:string;
+	storyInfo:string;
+	storyTxt:string;
+}
+
+
+root_type Torappu_HandbookAvgData;

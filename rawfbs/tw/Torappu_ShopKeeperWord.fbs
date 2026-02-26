@@ -1,0 +1,8 @@
+
+table Torappu_ShopKeeperWord {
+	id:string;
+	text:string;
+}
+
+
+root_type Torappu_ShopKeeperWord;

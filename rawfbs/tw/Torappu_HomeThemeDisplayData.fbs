@@ -1,0 +1,24 @@
+include "Torappu_HomeMultiFormChangeRule.fbs";
+include "Torappu_HomeThemeMultiFormData.fbs";
+include "Torappu_ItemRarity.fbs";
+
+table Torappu_HomeThemeDisplayData {
+	id:string;
+	type:string;
+	sortId:int32;
+	startTime:int64;
+	tmName:string;
+	tmDes:string;
+	tmUsage:string;
+	isMultiForm:bool;
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	multiFormList:[Torappu_HomeThemeMultiFormData];
+	obtainApproach:string;
+	unlockDesList:[string];
+	isLimitObtain:bool;
+	hideWhenLimit:bool;
+	rarity:Torappu_ItemRarity;
+}
+
+
+root_type Torappu_HomeThemeDisplayData;
