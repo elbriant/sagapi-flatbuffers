@@ -1,0 +1,14 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act5D1Data_RuneUnlockData {
+	runeId:string;
+	priceItem:Torappu_ItemBundle;
+	runeName:string;
+	bgPic:string;
+	runeDesc:string;
+	sortId:int32;
+	iconId:string;
+}
+
+
+root_type Torappu_Act5D1Data_RuneUnlockData;

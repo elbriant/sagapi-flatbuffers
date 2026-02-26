@@ -1,0 +1,9 @@
+
+table Torappu_Act27SideData_Act27SideDynEntrySwitchData {
+	entryId:string;
+	startHour:int32;
+	signalId:string;
+}
+
+
+root_type Torappu_Act27SideData_Act27SideDynEntrySwitchData;

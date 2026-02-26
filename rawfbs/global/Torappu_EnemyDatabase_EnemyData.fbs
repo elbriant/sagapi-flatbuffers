@@ -1,0 +1,34 @@
+include "Torappu_Undefinable_1_System_String_.fbs";
+include "Torappu_EnemyDatabase_AttributesData.fbs";
+include "Torappu_Undefinable_1_Torappu_SourceApplyWay_.fbs";
+include "Torappu_Undefinable_1_Torappu_MotionMode_.fbs";
+include "Torappu_Undefinable_1_System_StringA__.fbs";
+include "Torappu_Undefinable_1_System_Int32_.fbs";
+include "Torappu_Undefinable_1_Torappu_EnemyLevelType_.fbs";
+include "Torappu_Undefinable_1_System_Single_.fbs";
+include "Torappu_Undefinable_1_System_Boolean_.fbs";
+include "Torappu_Blackboard.fbs";
+include "Torappu_LevelData_EnemyData_ESkillData.fbs";
+include "Torappu_LevelData_EnemyData_ESpData.fbs";
+
+table Torappu_EnemyDatabase_EnemyData {
+	name:Torappu_Undefinable_1_System_String_;
+	description:Torappu_Undefinable_1_System_String_;
+	prefabKey:Torappu_Undefinable_1_System_String_;
+	attributes:Torappu_EnemyDatabase_AttributesData;
+	applyWay:Torappu_Undefinable_1_Torappu_SourceApplyWay_;
+	motion:Torappu_Undefinable_1_Torappu_MotionMode_;
+	enemyTags:Torappu_Undefinable_1_System_StringA__;
+	lifePointReduce:Torappu_Undefinable_1_System_Int32_;
+	levelType:Torappu_Undefinable_1_Torappu_EnemyLevelType_;
+	rangeRadius:Torappu_Undefinable_1_System_Single_;
+	numOfExtraDrops:Torappu_Undefinable_1_System_Int32_;
+	viewRadius:Torappu_Undefinable_1_System_Single_;
+	notCountInTotal:Torappu_Undefinable_1_System_Boolean_;
+	talentBlackboard:Torappu_Blackboard;
+	skills:[Torappu_LevelData_EnemyData_ESkillData];
+	spData:Torappu_LevelData_EnemyData_ESpData;
+}
+
+
+root_type Torappu_EnemyDatabase_EnemyData;

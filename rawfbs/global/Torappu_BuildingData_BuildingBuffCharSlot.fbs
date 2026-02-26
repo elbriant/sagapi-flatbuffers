@@ -1,0 +1,8 @@
+include "Torappu_BuildingData_BuildingBuffCharSlot_SlotItem.fbs";
+
+table Torappu_BuildingData_BuildingBuffCharSlot {
+	buffData:[Torappu_BuildingData_BuildingBuffCharSlot_SlotItem];
+}
+
+
+root_type Torappu_BuildingData_BuildingBuffCharSlot;

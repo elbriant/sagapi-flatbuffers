@@ -1,0 +1,21 @@
+
+table Torappu_ActivityEnemyDuelRoundData {
+	roundId:string;
+	modeId:string;
+	round:int32;
+	enemyPredefined:bool;
+	roundScore:int32;
+	enemyScore:float;
+	enemyScoreRandom:float;
+	enemySideMinLeft:int32;
+	enemySideMaxLeft:int32;
+	enemySideMinRight:int32;
+	enemySideMaxRight:int32;
+	enemyPoolLeft:string;
+	enemyPoolRight:string;
+	canSkip:bool;
+	canAllIn:bool;
+}
+
+
+root_type Torappu_ActivityEnemyDuelRoundData;

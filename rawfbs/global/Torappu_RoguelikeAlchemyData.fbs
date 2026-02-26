@@ -1,0 +1,16 @@
+include "Torappu_RoguelikeFragmentType.fbs";
+include "Torappu_AlchemyPoolRarityType.fbs";
+
+table Torappu_RoguelikeAlchemyData {
+	fragmentTypeList:[Torappu_RoguelikeFragmentType];
+	fragmentSquareSum:int32;
+	poolRarity:Torappu_AlchemyPoolRarityType;
+	relicProp:float;
+	shieldProp:float;
+	populationProp:float;
+	overrideConditionBandIds:[string];
+	overrideRecipeId:string;
+}
+
+
+root_type Torappu_RoguelikeAlchemyData;

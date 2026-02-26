@@ -1,0 +1,8 @@
+
+table Torappu_BuildingData_CreditFormula_ValueModel {
+	basic:int32;
+	addition:int32;
+}
+
+
+root_type Torappu_BuildingData_CreditFormula_ValueModel;

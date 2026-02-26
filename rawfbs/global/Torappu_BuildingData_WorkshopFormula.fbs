@@ -1,0 +1,25 @@
+include "Torappu_BuildingData_FormulaItemType.fbs";
+include "Torappu_BuildingData_WorkshopExtraWeightItem.fbs";
+include "Torappu_ItemBundle.fbs";
+include "Torappu_BuildingData_WorkshopFormula_UnlockRoom.fbs";
+include "Torappu_BuildingData_WorkshopFormula_UnlockStage.fbs";
+
+table Torappu_BuildingData_WorkshopFormula {
+	sortId:int32;
+	formulaId:string;
+	rarity:int32;
+	itemId:string;
+	count:int32;
+	goldCost:int64;
+	apCost:int64;
+	formulaType:Torappu_BuildingData_FormulaItemType;
+	buffType:string;
+	extraOutcomeRate:float;
+	extraOutcomeGroup:[Torappu_BuildingData_WorkshopExtraWeightItem];
+	costs:[Torappu_ItemBundle];
+	requireRooms:[Torappu_BuildingData_WorkshopFormula_UnlockRoom];
+	requireStages:[Torappu_BuildingData_WorkshopFormula_UnlockStage];
+}
+
+
+root_type Torappu_BuildingData_WorkshopFormula;

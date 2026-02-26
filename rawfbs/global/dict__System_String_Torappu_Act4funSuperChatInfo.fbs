@@ -1,0 +1,9 @@
+include "Torappu_Act4funSuperChatInfo.fbs";
+
+table dict__System_String_Torappu_Act4funSuperChatInfo {
+	dict_key:string;
+	dict_value:Torappu_Act4funSuperChatInfo;
+}
+
+
+root_type dict__System_String_Torappu_Act4funSuperChatInfo;

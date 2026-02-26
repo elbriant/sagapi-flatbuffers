@@ -1,0 +1,21 @@
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData {
+	chessId:string;
+	goldenChessId:string;
+	isDiyChessSlot:bool;
+	chessLevel:int32;
+	shopLevelSortId:int32;
+	canBeRented:bool;
+	charId:string;
+	tmplId:string;
+	defaultSkillIndex:int32;
+	defaultUniEquipId:string;
+	backupCharId:string;
+	backupCharRepName:string;
+	backupCharSkillIndex:int32;
+	backupCharUniEquipId:string;
+	backupCharPotRank:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData;

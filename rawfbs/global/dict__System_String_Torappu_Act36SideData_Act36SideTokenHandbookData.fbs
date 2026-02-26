@@ -1,0 +1,9 @@
+include "Torappu_Act36SideData_Act36SideTokenHandbookData.fbs";
+
+table dict__System_String_Torappu_Act36SideData_Act36SideTokenHandbookData {
+	dict_key:string;
+	dict_value:Torappu_Act36SideData_Act36SideTokenHandbookData;
+}
+
+
+root_type dict__System_String_Torappu_Act36SideData_Act36SideTokenHandbookData;

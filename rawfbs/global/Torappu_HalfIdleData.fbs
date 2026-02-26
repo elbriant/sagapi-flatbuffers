@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_Act1VHalfIdleItemData.fbs";
+
+table Torappu_HalfIdleData {
+	itemData:[dict__System_String_Torappu_Act1VHalfIdleItemData];
+}
+
+
+root_type Torappu_HalfIdleData;

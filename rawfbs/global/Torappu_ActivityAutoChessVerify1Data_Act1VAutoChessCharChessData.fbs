@@ -1,0 +1,14 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData {
+	chessId:string;
+	isGolden:bool;
+	purchasePrice:int32;
+	status:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData;
+	upgradeChessId:string;
+	upgradeNum:int32;
+	damage:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData;

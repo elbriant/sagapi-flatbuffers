@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_Act6FunStageAdditionData.fbs";
+include "dict__System_String_list___1_Torappu_Act6FunAchievementData.fbs";
+include "dict__System_String_Torappu_Act6FunAchievementRewardData.fbs";
+include "Torappu_Act6FunConst.fbs";
+
+table Torappu_Act6FunData {
+	stageAdditionMap:[dict__System_String_Torappu_Act6FunStageAdditionData];
+	stageAchievementMap:[dict__System_String_list___1_Torappu_Act6FunAchievementData];
+	achievementRewardList:[dict__System_String_Torappu_Act6FunAchievementRewardData];
+	constData:Torappu_Act6FunConst;
+}
+
+
+root_type Torappu_Act6FunData;

@@ -1,0 +1,17 @@
+include "Torappu_MissionType.fbs";
+include "Torappu_MissionDisplayRewards.fbs";
+
+table Torappu_MissionGroup {
+	id:string;
+	title:string;
+	type:Torappu_MissionType;
+	preMissionGroup:string;
+	period:[int32];
+	rewards:[Torappu_MissionDisplayRewards];
+	missionIds:[string];
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_MissionGroup;

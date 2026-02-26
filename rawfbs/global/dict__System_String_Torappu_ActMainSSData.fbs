@@ -1,0 +1,9 @@
+include "Torappu_ActMainSSData.fbs";
+
+table dict__System_String_Torappu_ActMainSSData {
+	dict_key:string;
+	dict_value:Torappu_ActMainSSData;
+}
+
+
+root_type dict__System_String_Torappu_ActMainSSData;

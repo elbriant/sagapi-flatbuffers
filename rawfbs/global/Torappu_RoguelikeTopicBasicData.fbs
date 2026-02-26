@@ -1,0 +1,21 @@
+include "Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData.fbs";
+include "Torappu_RoguelikeModuleType.fbs";
+include "Torappu_RoguelikeTopicConfig.fbs";
+
+table Torappu_RoguelikeTopicBasicData {
+	id:string;
+	name:string;
+	startTime:int64;
+	disappearTimeOnMainScreen:int64;
+	sort:int32;
+	showMedalId:string;
+	medalGroupId:string;
+	fullStoredTime:int64;
+	lineText:string;
+	homeEntryDisplayData:[Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData];
+	moduleTypes:[Torappu_RoguelikeModuleType];
+	config:Torappu_RoguelikeTopicConfig;
+}
+
+
+root_type Torappu_RoguelikeTopicBasicData;

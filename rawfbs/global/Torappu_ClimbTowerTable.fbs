@@ -1,0 +1,29 @@
+include "dict__System_String_Torappu_ClimbTowerSingleTowerData.fbs";
+include "dict__System_String_Torappu_ClimbTowerSingleLevelData.fbs";
+include "dict__System_String_Torappu_ClimbTowerTacticalBuffData.fbs";
+include "dict__System_String_Torappu_ClimbTowerMainCardData.fbs";
+include "dict__System_String_Torappu_ClimbTowerSubCardData.fbs";
+include "dict__System_String_Torappu_ClimbTowerCurseCardData.fbs";
+include "dict__System_String_Torappu_ClimbTowerSeasonInfoData.fbs";
+include "Torappu_ClimbTowerDetailConst.fbs";
+include "Torappu_ClimbTowerRewardInfo.fbs";
+include "dict__System_String_Torappu_ClimbTowerMissionData.fbs";
+include "dict__System_String_Torappu_MissionGroup.fbs";
+
+table Torappu_ClimbTowerTable {
+	towers:[dict__System_String_Torappu_ClimbTowerSingleTowerData];
+	levels:[dict__System_String_Torappu_ClimbTowerSingleLevelData];
+	tacticalBuffs:[dict__System_String_Torappu_ClimbTowerTacticalBuffData];
+	mainCards:[dict__System_String_Torappu_ClimbTowerMainCardData];
+	subCards:[dict__System_String_Torappu_ClimbTowerSubCardData];
+	curseCards:[dict__System_String_Torappu_ClimbTowerCurseCardData];
+	seasonInfos:[dict__System_String_Torappu_ClimbTowerSeasonInfoData];
+	detailConst:Torappu_ClimbTowerDetailConst;
+	rewardInfoList:[Torappu_ClimbTowerRewardInfo];
+	rewardInfoListHardMode:[Torappu_ClimbTowerRewardInfo];
+	missionData:[dict__System_String_Torappu_ClimbTowerMissionData];
+	missionGroup:[dict__System_String_Torappu_MissionGroup];
+}
+
+
+root_type Torappu_ClimbTowerTable;

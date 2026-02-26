@@ -1,0 +1,9 @@
+include "Torappu_Act35SideData_Act35SideDialogueGroupData.fbs";
+
+table dict__System_String_Torappu_Act35SideData_Act35SideDialogueGroupData {
+	dict_key:string;
+	dict_value:Torappu_Act35SideData_Act35SideDialogueGroupData;
+}
+
+
+root_type dict__System_String_Torappu_Act35SideData_Act35SideDialogueGroupData;

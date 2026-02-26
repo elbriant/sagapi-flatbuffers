@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveChatItemData.fbs";
+
+table Torappu_ActArchiveChatGroupData {
+	sortId:int32;
+	chatItemList:[Torappu_ActArchiveChatItemData];
+}
+
+
+root_type Torappu_ActArchiveChatGroupData;

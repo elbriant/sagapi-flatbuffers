@@ -1,0 +1,29 @@
+include "Torappu_StoryReviewType.fbs";
+include "Torappu_StoryReviewUnlockType.fbs";
+include "Torappu_ItemType.fbs";
+include "Torappu_StoryData_Condition_StageCondition.fbs";
+
+table Torappu_StoryReviewInfoClientData {
+	storyReviewType:Torappu_StoryReviewType;
+	storyId:string;
+	storyGroup:string;
+	storySort:int32;
+	storyDependence:string;
+	storyCanShow:int32;
+	storyCode:string;
+	storyName:string;
+	storyPic:string;
+	storyInfo:string;
+	storyCanEnter:int32;
+	storyTxt:string;
+	avgTag:string;
+	unLockType:Torappu_StoryReviewUnlockType;
+	costItemType:Torappu_ItemType;
+	costItemId:string;
+	costItemCount:int32;
+	stageCount:int32;
+	requiredStages:[Torappu_StoryData_Condition_StageCondition];
+}
+
+
+root_type Torappu_StoryReviewInfoClientData;

@@ -1,0 +1,19 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_RoguelikeTopicBPGrandPrize {
+	grandPrizeDisplayId:string;
+	sortId:int32;
+	displayUnlockYear:int32;
+	displayUnlockMonth:int32;
+	acquireTitle:string;
+	purchaseTitle:string;
+	displayName:string;
+	displayDiscription:string;
+	bpLevelId:string;
+	itemBundle:Torappu_ItemBundle;
+	detailAnnounceTime:string;
+	picIdAftrerUnlock:string;
+}
+
+
+root_type Torappu_RoguelikeTopicBPGrandPrize;

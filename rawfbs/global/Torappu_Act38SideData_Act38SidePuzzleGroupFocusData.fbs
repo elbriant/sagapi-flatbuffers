@@ -1,0 +1,8 @@
+
+table Torappu_Act38SideData_Act38SidePuzzleGroupFocusData {
+	puzzleGroupId:string;
+	xAxisFocusPos:float;
+}
+
+
+root_type Torappu_Act38SideData_Act38SidePuzzleGroupFocusData;

@@ -1,0 +1,12 @@
+
+enum Torappu_BuildingData_FormulaItemType : int32 {
+	NONE = 0,
+	F_EVOLVE = 1,
+	F_BUILDING = 2,
+	F_GOLD = 3,
+	F_DIAMOND = 4,
+	F_FURNITURE = 5,
+	F_EXP = 6,
+	F_ASC = 7,
+	F_SKILL = 8
+}

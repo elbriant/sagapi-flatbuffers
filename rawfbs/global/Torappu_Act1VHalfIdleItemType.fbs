@@ -1,0 +1,11 @@
+
+enum Torappu_Act1VHalfIdleItemType : int32 {
+	NONE = 0,
+	LEVEL_EXP = 1,
+	SKILL_EXP = 2,
+	STRATEGY_POINT = 3,
+	ASC = 4,
+	GACHA = 5,
+	MODEL = 6,
+	ACTIVITY_ITEM = 7
+}

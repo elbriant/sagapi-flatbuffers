@@ -1,0 +1,9 @@
+include "Torappu_FavorDataFrames.fbs";
+
+table Torappu_FavorTable {
+	maxFavor:int32;
+	favorFrames:Torappu_FavorDataFrames;
+}
+
+
+root_type Torappu_FavorTable;

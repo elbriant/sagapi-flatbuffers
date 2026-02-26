@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2ChallengeModeDifficultyData {
+	challengeDay:int32;
+	diffDesc:string;
+}
+
+
+root_type Torappu_SandboxV2ChallengeModeDifficultyData;

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveComponentData.fbs";
+
+table dict__System_String_Torappu_ActArchiveComponentData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveComponentData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveComponentData;

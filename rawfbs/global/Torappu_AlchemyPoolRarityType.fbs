@@ -1,0 +1,7 @@
+
+enum Torappu_AlchemyPoolRarityType : int32 {
+	NONE = -1,
+	NORMAL = 0,
+	RARE = 1,
+	SUPER_RARE = 2
+}

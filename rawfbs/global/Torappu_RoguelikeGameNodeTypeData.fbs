@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeGameNodeTypeData {
+	name:string;
+	description:string;
+}
+
+
+root_type Torappu_RoguelikeGameNodeTypeData;

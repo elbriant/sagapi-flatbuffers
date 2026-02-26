@@ -1,0 +1,7 @@
+
+table Torappu_StageUnlockParam {
+	stageId:string;
+}
+
+
+root_type Torappu_StageUnlockParam;

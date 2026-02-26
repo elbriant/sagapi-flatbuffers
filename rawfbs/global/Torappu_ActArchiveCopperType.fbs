@@ -1,0 +1,7 @@
+
+enum Torappu_ActArchiveCopperType : int32 {
+	LUCK = 1,
+	COPPER = 2,
+	GILD = 3,
+	ENUM_DEFAULT_VALUE = 0
+}

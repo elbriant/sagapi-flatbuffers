@@ -1,0 +1,9 @@
+include "Torappu_UniEquipData.fbs";
+
+table dict__System_String_Torappu_UniEquipData {
+	dict_key:string;
+	dict_value:Torappu_UniEquipData;
+}
+
+
+root_type dict__System_String_Torappu_UniEquipData;

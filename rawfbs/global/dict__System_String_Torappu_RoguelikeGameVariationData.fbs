@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameVariationData.fbs";
+
+table dict__System_String_Torappu_RoguelikeGameVariationData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameVariationData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeGameVariationData;

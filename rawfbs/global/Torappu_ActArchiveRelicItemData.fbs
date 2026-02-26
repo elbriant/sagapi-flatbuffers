@@ -1,0 +1,12 @@
+
+table Torappu_ActArchiveRelicItemData {
+	relicId:string;
+	relicSortId:int32;
+	relicGroupId:int32;
+	orderId:string;
+	isSpRelic:bool;
+	enrollId:string;
+}
+
+
+root_type Torappu_ActArchiveRelicItemData;

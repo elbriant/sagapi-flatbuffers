@@ -1,0 +1,8 @@
+include "Torappu_RoguelikeDifficultyUpgradeRelicData.fbs";
+
+table Torappu_RoguelikeDifficultyUpgradeRelicGroupData {
+	relicData:[Torappu_RoguelikeDifficultyUpgradeRelicData];
+}
+
+
+root_type Torappu_RoguelikeDifficultyUpgradeRelicGroupData;

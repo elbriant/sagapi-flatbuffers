@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdleDiagramData_LineRelationData {
+	startPointList:[string];
+	endPointList:[string];
+}
+
+
+root_type Torappu_Act1VHalfIdleDiagramData_LineRelationData;

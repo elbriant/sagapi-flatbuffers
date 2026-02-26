@@ -1,0 +1,8 @@
+
+table Torappu_GridPosition {
+	row:int32;
+	col:int32;
+}
+
+
+root_type Torappu_GridPosition;

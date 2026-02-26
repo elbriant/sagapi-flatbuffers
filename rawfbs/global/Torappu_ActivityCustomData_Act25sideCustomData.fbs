@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_Act25SideData_BattlePerformanceData.fbs";
+
+table Torappu_ActivityCustomData_Act25sideCustomData {
+	battlePerformanceData:[dict__System_String_Torappu_Act25SideData_BattlePerformanceData];
+}
+
+
+root_type Torappu_ActivityCustomData_Act25sideCustomData;

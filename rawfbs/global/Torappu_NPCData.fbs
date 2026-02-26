@@ -1,0 +1,23 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_IllustNPCResType.fbs";
+include "dict__System_String_Torappu_NPCUnlock.fbs";
+
+table Torappu_NPCData {
+	npcId:string;
+	name:string;
+	appellation:string;
+	profession:Torappu_ProfessionCategory;
+	illustList:[string];
+	designerList:[string];
+	cv:string;
+	displayNumber:string;
+	nationId:string;
+	groupId:string;
+	teamId:string;
+	resType:Torappu_IllustNPCResType;
+	npcShowAudioInfoFlag:bool;
+	unlockDict:[dict__System_String_Torappu_NPCUnlock];
+}
+
+
+root_type Torappu_NPCData;

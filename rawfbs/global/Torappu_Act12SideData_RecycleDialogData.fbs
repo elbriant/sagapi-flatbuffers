@@ -1,0 +1,11 @@
+include "Torappu_Act12SideData_RecycleDialogType.fbs";
+include "Torappu_Act12SideData_RecycleAnimationState.fbs";
+
+table Torappu_Act12SideData_RecycleDialogData {
+	dialogType:Torappu_Act12SideData_RecycleDialogType;
+	dialog:string;
+	dialogExpress:Torappu_Act12SideData_RecycleAnimationState;
+}
+
+
+root_type Torappu_Act12SideData_RecycleDialogData;

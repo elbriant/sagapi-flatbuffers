@@ -1,0 +1,28 @@
+include "Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType.fbs";
+include "Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType.fbs";
+include "Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType.fbs";
+
+table Torappu_LevelData_WaveData_FragmentData_ActionData {
+	actionType:Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType;
+	managedByScheduler:bool;
+	key:string;
+	count:int32;
+	preDelay:float;
+	interval:float;
+	routeIndex:int32;
+	blockFragment:bool;
+	autoPreviewRoute:bool;
+	autoDisplayEnemyInfo:bool;
+	isUnharmfulAndAlwaysCountAsKilled:bool;
+	hiddenGroup:string;
+	randomSpawnGroupKey:string;
+	randomSpawnGroupPackKey:string;
+	randomType:Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType;
+	refreshType:Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType;
+	weight:int32;
+	dontBlockWave:bool;
+	forceBlockWaveInBranch:bool;
+}
+
+
+root_type Torappu_LevelData_WaveData_FragmentData_ActionData;

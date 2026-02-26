@@ -1,0 +1,10 @@
+include "Torappu_Battle_Cooperate_EndTileType.fbs";
+include "Torappu_Battle_Cooperate_CooperateEndTileInfo.fbs";
+
+table dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo {
+	dict_key:Torappu_Battle_Cooperate_EndTileType;
+	dict_value:Torappu_Battle_Cooperate_CooperateEndTileInfo;
+}
+
+
+root_type dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo;

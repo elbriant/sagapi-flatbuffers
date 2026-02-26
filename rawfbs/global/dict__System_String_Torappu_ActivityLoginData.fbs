@@ -1,0 +1,9 @@
+include "Torappu_ActivityLoginData.fbs";
+
+table dict__System_String_Torappu_ActivityLoginData {
+	dict_key:string;
+	dict_value:Torappu_ActivityLoginData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityLoginData;

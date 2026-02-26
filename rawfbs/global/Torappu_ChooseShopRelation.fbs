@@ -1,0 +1,8 @@
+
+table Torappu_ChooseShopRelation {
+	goodId:string;
+	optionList:[string];
+}
+
+
+root_type Torappu_ChooseShopRelation;

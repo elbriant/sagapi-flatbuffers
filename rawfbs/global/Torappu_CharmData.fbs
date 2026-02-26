@@ -1,0 +1,8 @@
+include "Torappu_CharmItemData.fbs";
+
+table Torappu_CharmData {
+	charmList:[Torappu_CharmItemData];
+}
+
+
+root_type Torappu_CharmData;

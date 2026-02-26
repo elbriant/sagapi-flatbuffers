@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeVisionModuleData_VisionChoiceConfig.fbs";
+
+table dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeVisionModuleData_VisionChoiceConfig;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig;

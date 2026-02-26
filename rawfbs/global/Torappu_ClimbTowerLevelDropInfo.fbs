@@ -1,0 +1,14 @@
+include "Torappu_WeightItemBundleA_.fbs";
+include "Torappu_StageData_DisplayRewards.fbs";
+include "Torappu_StageData_DisplayDetailRewards.fbs";
+include "dict__System_String_Torappu_ClimbTowerDropDisplayInfo.fbs";
+
+table Torappu_ClimbTowerLevelDropInfo {
+	passRewards:[Torappu_WeightItemBundleA_];
+	displayRewards:[Torappu_StageData_DisplayRewards];
+	displayDetailRewards:[Torappu_StageData_DisplayDetailRewards];
+	displayDropInfo:[dict__System_String_Torappu_ClimbTowerDropDisplayInfo];
+}
+
+
+root_type Torappu_ClimbTowerLevelDropInfo;

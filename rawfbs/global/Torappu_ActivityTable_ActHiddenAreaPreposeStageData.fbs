@@ -1,0 +1,9 @@
+include "Torappu_PlayerBattleRank.fbs";
+
+table Torappu_ActivityTable_ActHiddenAreaPreposeStageData {
+	stageId:string;
+	unlockRank:Torappu_PlayerBattleRank;
+}
+
+
+root_type Torappu_ActivityTable_ActHiddenAreaPreposeStageData;

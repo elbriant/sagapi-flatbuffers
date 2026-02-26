@@ -1,0 +1,6 @@
+
+enum Torappu_SiracusaData_CardGainType : int32 {
+	NONE = 0,
+	STAGE_GAIN = 1,
+	TASK_GAIN = 2
+}

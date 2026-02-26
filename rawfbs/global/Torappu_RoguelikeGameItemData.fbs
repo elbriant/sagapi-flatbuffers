@@ -1,0 +1,24 @@
+include "Torappu_RoguelikeGameItemType.fbs";
+include "Torappu_RoguelikeGameItemSubType.fbs";
+include "Torappu_RoguelikeGameItemRarity.fbs";
+
+table Torappu_RoguelikeGameItemData {
+	id:string;
+	name:string;
+	description:string;
+	usage:string;
+	obtainApproach:string;
+	iconId:string;
+	itemIconGroupId:string;
+	type:Torappu_RoguelikeGameItemType;
+	subType:Torappu_RoguelikeGameItemSubType;
+	rarity:Torappu_RoguelikeGameItemRarity;
+	sortId:int32;
+	canSacrifice:bool;
+	tinyIconColor:string;
+	unlockCondDesc:string;
+	shortUsage:string;
+}
+
+
+root_type Torappu_RoguelikeGameItemData;

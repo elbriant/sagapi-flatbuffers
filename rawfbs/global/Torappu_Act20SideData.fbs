@@ -1,0 +1,10 @@
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_Act20SideData_ResidentCartData.fbs";
+
+table Torappu_Act20SideData {
+	zoneAdditionDataMap:[dict__System_String_System_String];
+	residentCartDatas:[dict__System_String_Torappu_Act20SideData_ResidentCartData];
+}
+
+
+root_type Torappu_Act20SideData;

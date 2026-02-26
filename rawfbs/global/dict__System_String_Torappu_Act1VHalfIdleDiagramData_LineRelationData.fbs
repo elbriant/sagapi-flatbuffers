@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleDiagramData_LineRelationData.fbs";
+
+table dict__System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_LineRelationData;
+}
+
+
+root_type dict__System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData;

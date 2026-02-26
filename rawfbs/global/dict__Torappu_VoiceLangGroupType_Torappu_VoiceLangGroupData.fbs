@@ -1,0 +1,10 @@
+include "Torappu_VoiceLangGroupType.fbs";
+include "Torappu_VoiceLangGroupData.fbs";
+
+table dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData {
+	dict_key:Torappu_VoiceLangGroupType;
+	dict_value:Torappu_VoiceLangGroupData;
+}
+
+
+root_type dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData;

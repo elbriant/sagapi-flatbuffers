@@ -1,0 +1,13 @@
+include "Torappu_ActArchiveType.fbs";
+include "Torappu_Act13SideData_UnlockCondition.fbs";
+
+table Torappu_Act13SideData_ArchiveItemUnlockData {
+	itemId:string;
+	itemType:Torappu_ActArchiveType;
+	unlockCondition:Torappu_Act13SideData_UnlockCondition;
+	param1:string;
+	param2:string;
+}
+
+
+root_type Torappu_Act13SideData_ArchiveItemUnlockData;

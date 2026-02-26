@@ -1,0 +1,9 @@
+include "list_dict___2_System_String_Torappu_DynEntrySwitchInfo_.fbs";
+
+table Torappu_ActivityDynEntrySwitchData {
+	entrySwitchInfo:[list_dict___2_System_String_Torappu_DynEntrySwitchInfo_];
+	randomEntrySwitchInfo:[list_dict___2_System_String_Torappu_DynEntrySwitchInfo_];
+}
+
+
+root_type Torappu_ActivityDynEntrySwitchData;

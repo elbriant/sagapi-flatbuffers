@@ -1,0 +1,16 @@
+include "Torappu_ItemBundle.fbs";
+include "Torappu_Act5D1Data_GoodType.fbs";
+
+table Torappu_Act5D1Data_ShopGood {
+	goodId:string;
+	slotId:int32;
+	price:int32;
+	availCount:int32;
+	item:Torappu_ItemBundle;
+	progressGoodId:string;
+	goodType:Torappu_Act5D1Data_GoodType;
+	rarity:string;
+}
+
+
+root_type Torappu_Act5D1Data_ShopGood;

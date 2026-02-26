@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2BuildingItemData {
+	itemId:string;
+	itemRarity:int32;
+}
+
+
+root_type Torappu_SandboxV2BuildingItemData;

@@ -1,0 +1,5 @@
+
+enum Torappu_Battle_Cooperate_LASTROUNDRESULT : int32 {
+	GOAL = 0,
+	LOST = 1
+}

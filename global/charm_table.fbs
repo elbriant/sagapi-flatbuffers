@@ -1,0 +1,124 @@
+
+enum Torappu_CharmRarity : int32 {
+	NONE = 0,
+	LOW = 1,
+	MEDIUM = 2,
+	HIGH = 3
+}
+
+enum Torappu_ProfessionCategory : int32 {
+	NONE = 0,
+	WARRIOR = 1,
+	SNIPER = 2,
+	TANK = 4,
+	MEDIC = 8,
+	SUPPORT = 16,
+	CASTER = 32,
+	SPECIAL = 64,
+	TOKEN = 128,
+	TRAP = 256,
+	PIONEER = 512
+}
+
+enum Torappu_BuildableType : int32 {
+	NONE = 0,
+	MELEE = 1,
+	RANGED = 2,
+	ALL = 3
+}
+
+enum Torappu_PlayerSideMask : uint8 {
+	ALL = 0,
+	SIDE_A = 2,
+	SIDE_B = 4,
+	NONE = 255
+}
+
+enum Torappu_Battle_SideType : int32 {
+	NONE = 0,
+	ALLY = 1,
+	ENEMY = 2,
+	BOTH_ALLY_AND_ENEMY = 3,
+	NEUTRAL = 4,
+	ALL = 7
+}
+
+enum Torappu_TileData_HeightTypeMask : int32 {
+	NONE = 0,
+	LOWLAND = 1,
+	HIGHLAND = 2,
+	ALL = 3
+}
+
+table Torappu_RuneData_Selector {
+	professionMask:Torappu_ProfessionCategory;
+	buildableMask:Torappu_BuildableType;
+	playerSideMask:Torappu_PlayerSideMask;
+	sideType:Torappu_Battle_SideType;
+	charIdFilter:[string];
+	enemyIdFilter:[string];
+	enemyIdExcludeFilter:[string];
+	enemyLevelTypeFilter:[string];
+	enemyActionHiddenGroupFilter:[string];
+	skillIdFilter:[string];
+	tileKeyFilter:[string];
+	groupTagFilter:[string];
+	filterTagFilter:[string];
+	filterTagExcludeFilter:[string];
+	subProfessionExcludeFilter:[string];
+	mapTagFilter:[string];
+	heightTypeMask:Torappu_TileData_HeightTypeMask;
+}
+
+
+
+table Torappu_Blackboard {
+}
+
+
+
+table Torappu_RuneData {
+	key:string;
+	selector:Torappu_RuneData_Selector;
+	blackboard:Torappu_Blackboard;
+}
+
+
+
+table Torappu_RuneTable_PackedRuneData {
+	id:string;
+	points:float;
+	mutexGroupKey:string;
+	description:string;
+	runes:[Torappu_RuneData];
+}
+
+
+
+table Torappu_CharmItemData {
+	id:string;
+	sort:int32;
+	name:string;
+	icon:string;
+	itemUsage:string;
+	itemDesc:string;
+	itemObtainApproach:string;
+	rarity:Torappu_CharmRarity;
+	desc:string;
+	price:int32;
+	specialObtainApproach:string;
+	charmType:string;
+	obtainInRandom:bool;
+	dropStages:[string];
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table Torappu_CharmData {
+	charmList:[Torappu_CharmItemData];
+}
+
+
+
+root_type Torappu_CharmData;

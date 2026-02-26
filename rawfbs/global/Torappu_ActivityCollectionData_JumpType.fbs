@@ -1,0 +1,6 @@
+
+enum Torappu_ActivityCollectionData_JumpType : int32 {
+	NONE = 0,
+	ROGUE = 1,
+	CHAR_REPO = 2
+}

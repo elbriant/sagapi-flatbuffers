@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveDisasterItemData.fbs";
+
+table Torappu_ActArchiveDisasterData {
+	disasters:[dict__System_String_Torappu_ActArchiveDisasterItemData];
+}
+
+
+root_type Torappu_ActArchiveDisasterData;

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveBuffItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveBuffItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveBuffItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveBuffItemData;

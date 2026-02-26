@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorDetailUniEquipNodeData.fbs";
+
+table dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorDetailUniEquipNodeData;
+}
+
+
+root_type dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData;

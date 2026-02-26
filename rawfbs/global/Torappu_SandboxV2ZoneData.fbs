@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2ZoneData {
+	zoneId:string;
+	zoneName:string;
+	displayName:bool;
+	appellation:string;
+}
+
+
+root_type Torappu_SandboxV2ZoneData;

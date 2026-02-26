@@ -1,0 +1,9 @@
+include "Torappu_SandboxPermItemData.fbs";
+
+table dict__System_String_Torappu_SandboxPermItemData {
+	dict_key:string;
+	dict_value:Torappu_SandboxPermItemData;
+}
+
+
+root_type dict__System_String_Torappu_SandboxPermItemData;

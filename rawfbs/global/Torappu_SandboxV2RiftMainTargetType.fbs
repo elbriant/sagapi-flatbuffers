@@ -1,0 +1,11 @@
+
+enum Torappu_SandboxV2RiftMainTargetType : int32 {
+	NONE = 0,
+	FIND = 1,
+	BOSS_HUNT = 2,
+	WILD_HUNT = 3,
+	PROTECT = 4,
+	FIGHT = 5,
+	CATCH_THIEF = 6,
+	PREY_HUNT = 7
+}

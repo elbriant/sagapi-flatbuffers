@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeCopperType.fbs";
+
+table Torappu_ActArchiveCopperTypeData {
+	copperType:Torappu_RoguelikeCopperType;
+	typeName:string;
+	typeIconId:string;
+}
+
+
+root_type Torappu_ActArchiveCopperTypeData;

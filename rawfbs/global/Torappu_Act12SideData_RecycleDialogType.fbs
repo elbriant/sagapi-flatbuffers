@@ -1,0 +1,9 @@
+
+enum Torappu_Act12SideData_RecycleDialogType : int32 {
+	NONE = 0,
+	EMPTY = 1,
+	LOW = 2,
+	MEDIUM = 3,
+	HIGH = 4,
+	GACHA = 5
+}

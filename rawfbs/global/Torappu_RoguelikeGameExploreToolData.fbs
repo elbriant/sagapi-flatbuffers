@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeGameExploreToolData {
+	itemId:string;
+	trapId:string;
+	trapDesc:string;
+}
+
+
+root_type Torappu_RoguelikeGameExploreToolData;

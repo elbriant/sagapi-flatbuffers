@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SandboxV2ChallengeModeRewardData {
+	rewardId:string;
+	sortId:int32;
+	rewardDay:int32;
+	rewardItemList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_SandboxV2ChallengeModeRewardData;

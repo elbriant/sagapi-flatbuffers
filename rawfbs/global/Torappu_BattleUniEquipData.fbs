@@ -1,0 +1,16 @@
+include "Torappu_UniEquipTarget.fbs";
+include "Torappu_CharacterData_EquipTalentDataBundle.fbs";
+include "Torappu_CharacterData_EquipTraitDataBundle.fbs";
+
+table Torappu_BattleUniEquipData {
+	resKey:string;
+	target:Torappu_UniEquipTarget;
+	isToken:bool;
+	validInGameTag:string;
+	validInMapTag:string;
+	addOrOverrideTalentDataBundle:Torappu_CharacterData_EquipTalentDataBundle;
+	overrideTraitDataBundle:Torappu_CharacterData_EquipTraitDataBundle;
+}
+
+
+root_type Torappu_BattleUniEquipData;

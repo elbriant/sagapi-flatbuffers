@@ -1,0 +1,9 @@
+include "Torappu_Battle_Cooperate_CooperateTeamPlayer.fbs";
+
+table dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer {
+	dict_key:string;
+	dict_value:Torappu_Battle_Cooperate_CooperateTeamPlayer;
+}
+
+
+root_type dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer;

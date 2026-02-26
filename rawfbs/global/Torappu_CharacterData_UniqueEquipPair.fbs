@@ -1,0 +1,8 @@
+
+table Torappu_CharacterData_UniqueEquipPair {
+	key:string;
+	level:int32;
+}
+
+
+root_type Torappu_CharacterData_UniqueEquipPair;

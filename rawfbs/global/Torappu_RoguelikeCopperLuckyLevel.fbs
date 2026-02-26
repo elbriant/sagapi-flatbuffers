@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeCopperLuckyLevel : int32 {
+	NONE = 0,
+	HIGH = 1,
+	MID = 2,
+	LOW = 3
+}

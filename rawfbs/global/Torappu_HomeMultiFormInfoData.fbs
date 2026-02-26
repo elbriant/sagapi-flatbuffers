@@ -1,0 +1,10 @@
+include "Torappu_HomeMultiFormChangeRule.fbs";
+
+table Torappu_HomeMultiFormInfoData {
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	bgDesc:string;
+	tmDesc:string;
+}
+
+
+root_type Torappu_HomeMultiFormInfoData;

@@ -1,0 +1,10 @@
+
+table Torappu_FifthAnnivExploreBroadcastData {
+	id:string;
+	eventCount:int32;
+	stageId:string;
+	content:string;
+}
+
+
+root_type Torappu_FifthAnnivExploreBroadcastData;

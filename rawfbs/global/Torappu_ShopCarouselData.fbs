@@ -1,0 +1,8 @@
+include "Torappu_ShopCarouselData_Item.fbs";
+
+table Torappu_ShopCarouselData {
+	items:[Torappu_ShopCarouselData_Item];
+}
+
+
+root_type Torappu_ShopCarouselData;

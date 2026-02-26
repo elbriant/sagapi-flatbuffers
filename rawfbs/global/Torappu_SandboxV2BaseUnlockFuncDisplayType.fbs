@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2BaseUnlockFuncDisplayType : int32 {
+	NONE = 0,
+	NEW = 1,
+	UPDATE = 2,
+	NUMBER = 3
+}

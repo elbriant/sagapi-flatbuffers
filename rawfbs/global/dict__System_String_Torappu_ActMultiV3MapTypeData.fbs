@@ -1,0 +1,9 @@
+include "Torappu_ActMultiV3MapTypeData.fbs";
+
+table dict__System_String_Torappu_ActMultiV3MapTypeData {
+	dict_key:string;
+	dict_value:Torappu_ActMultiV3MapTypeData;
+}
+
+
+root_type dict__System_String_Torappu_ActMultiV3MapTypeData;

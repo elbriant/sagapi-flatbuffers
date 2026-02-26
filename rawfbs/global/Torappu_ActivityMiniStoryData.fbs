@@ -1,0 +1,12 @@
+include "list_dict___2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_.fbs";
+include "list_dict___2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_.fbs";
+
+table Torappu_ActivityMiniStoryData {
+	tokenItemId:string;
+	zoneDescList:[list_dict___2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_];
+	favorUpList:[list_dict___2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_];
+	extraDropZoneList:[string];
+}
+
+
+root_type Torappu_ActivityMiniStoryData;

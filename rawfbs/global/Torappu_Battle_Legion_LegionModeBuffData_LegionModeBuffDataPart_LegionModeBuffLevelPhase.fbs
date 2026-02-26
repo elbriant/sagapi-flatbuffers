@@ -1,0 +1,8 @@
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase {
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase;

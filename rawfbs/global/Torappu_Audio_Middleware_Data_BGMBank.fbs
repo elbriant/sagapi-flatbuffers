@@ -1,0 +1,12 @@
+
+table Torappu_Audio_Middleware_Data_BGMBank {
+	intro:string;
+	loop:string;
+	volume:float;
+	crossfade:float;
+	delay:float;
+	fadeStyleId:string;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_BGMBank;

@@ -1,0 +1,5 @@
+
+enum Torappu_ClimbTowerTaticalBuffType : int32 {
+	A = 0,
+	B = 1
+}

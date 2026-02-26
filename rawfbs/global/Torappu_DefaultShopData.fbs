@@ -1,0 +1,13 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_DefaultShopData {
+	goodId:string;
+	slotId:int32;
+	price:int32;
+	availCount:int32;
+	overrideName:string;
+	item:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_DefaultShopData;

@@ -1,0 +1,25 @@
+include "dict__System_String_Torappu_Act44SideData_Act44SideZoneAdditionData.fbs";
+include "dict__System_String_Torappu_Act44SideData_Act44SideCustomerData.fbs";
+include "dict__System_String_Torappu_Act44SideData_Act44SideTagData.fbs";
+include "dict__System_String_Torappu_Act44SideData_Act44SideChoiceData.fbs";
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_Act44SideData_Act44SideNewsData.fbs";
+include "dict__System_String_Torappu_Act44SideData_Act44SideInsightData.fbs";
+include "Torappu_Act44SideData_Act44SideMileStoneData.fbs";
+include "Torappu_Act44SideData_Act44SideConstData.fbs";
+
+table Torappu_Act44SideData {
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act44SideData_Act44SideZoneAdditionData];
+	customerDataMap:[dict__System_String_Torappu_Act44SideData_Act44SideCustomerData];
+	tagDataMap:[dict__System_String_Torappu_Act44SideData_Act44SideTagData];
+	choiceDataMap:[dict__System_String_Torappu_Act44SideData_Act44SideChoiceData];
+	customerDialogMap:[dict__System_String_System_String];
+	keeperDialogMap:[dict__System_String_System_String];
+	newsDataMap:[dict__System_String_Torappu_Act44SideData_Act44SideNewsData];
+	insightDescMap:[dict__System_String_Torappu_Act44SideData_Act44SideInsightData];
+	mileStoneList:[Torappu_Act44SideData_Act44SideMileStoneData];
+	constData:Torappu_Act44SideData_Act44SideConstData;
+}
+
+
+root_type Torappu_Act44SideData;

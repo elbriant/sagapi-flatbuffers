@@ -1,0 +1,7 @@
+
+table Torappu_RoguelikeSanCheckConsts {
+	sanDecreaseToast:string;
+}
+
+
+root_type Torappu_RoguelikeSanCheckConsts;

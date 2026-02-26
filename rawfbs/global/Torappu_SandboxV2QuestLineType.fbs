@@ -1,0 +1,8 @@
+
+enum Torappu_SandboxV2QuestLineType : int32 {
+	NONE = 0,
+	MAIN = 1,
+	SIDE = 2,
+	GUIDE = 3,
+	TRAINING = 4
+}

@@ -1,0 +1,9 @@
+include "Torappu_OccPer.fbs";
+
+table Torappu_ActivityBossRushData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
+	dropCount:int32;
+}
+
+
+root_type Torappu_ActivityBossRushData_DisplayDetailRewards;

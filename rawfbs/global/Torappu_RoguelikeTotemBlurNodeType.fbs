@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeTotemBlurNodeType : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	NO_BATTLE = 2
+}

@@ -1,0 +1,9 @@
+
+enum Torappu_SandboxV2DevelopmentType : int32 {
+	NONE = 0,
+	SURVIVE = 1,
+	COLLECT = 2,
+	SHOP = 3,
+	BATTLE = 4,
+	DUNGEON = 5
+}

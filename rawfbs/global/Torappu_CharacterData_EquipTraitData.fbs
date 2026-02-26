@@ -1,0 +1,7 @@
+
+table Torappu_CharacterData_EquipTraitData {
+	additionalDescription:string;
+}
+
+
+root_type Torappu_CharacterData_EquipTraitData;

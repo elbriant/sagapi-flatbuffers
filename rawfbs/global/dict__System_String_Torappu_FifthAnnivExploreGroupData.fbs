@@ -1,0 +1,9 @@
+include "Torappu_FifthAnnivExploreGroupData.fbs";
+
+table dict__System_String_Torappu_FifthAnnivExploreGroupData {
+	dict_key:string;
+	dict_value:Torappu_FifthAnnivExploreGroupData;
+}
+
+
+root_type dict__System_String_Torappu_FifthAnnivExploreGroupData;

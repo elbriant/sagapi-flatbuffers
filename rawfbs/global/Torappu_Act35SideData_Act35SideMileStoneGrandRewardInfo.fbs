@@ -1,0 +1,8 @@
+
+table Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo {
+	itemName:string;
+	level:int32;
+}
+
+
+root_type Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo;

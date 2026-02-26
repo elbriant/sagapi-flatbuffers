@@ -1,0 +1,7 @@
+
+enum Torappu_RL02DevelopmentEffectType : int32 {
+	BUFF = 0,
+	RAW_TEXT_EFFECT = 1,
+	RAW_TEXT_BAND = 2,
+	NONE = 10
+}

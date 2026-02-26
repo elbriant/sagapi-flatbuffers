@@ -1,0 +1,6 @@
+
+table Torappu_MissionDailyRewardConf {
+}
+
+
+root_type Torappu_MissionDailyRewardConf;

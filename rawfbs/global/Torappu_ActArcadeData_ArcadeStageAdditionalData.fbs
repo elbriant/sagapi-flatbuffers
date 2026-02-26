@@ -1,0 +1,13 @@
+include "Torappu_ActArcadeData_ArcadeStageRankRewardData.fbs";
+
+table Torappu_ActArcadeData_ArcadeStageAdditionalData {
+	stageId:string;
+	zoneId:string;
+	mechDescription:string;
+	sortId:int32;
+	maxSlot:int32;
+	rankRewardData:Torappu_ActArcadeData_ArcadeStageRankRewardData;
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeStageAdditionalData;

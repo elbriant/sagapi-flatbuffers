@@ -1,0 +1,59 @@
+
+table Torappu_RL03EndingText {
+	summaryActor:string;
+	summaryTop:string;
+	summaryZone:string;
+	summaryEnding:string;
+	summaryDifficultyZone:string;
+	summaryDifficultyEnding:string;
+	summaryMode:string;
+	summaryGroup:string;
+	summarySupport:string;
+	summaryNormalRecruit:string;
+	summaryDirectRecruit:string;
+	summaryFriendRecruit:string;
+	summaryFreeRecruit:string;
+	summaryMonthRecruit:string;
+	summaryUpgrade:string;
+	summaryCompleteEnding:string;
+	summaryEachZone:string;
+	summaryMeetSpZone:string;
+	summaryPerfectBattle:string;
+	summaryMeetBattle:string;
+	summaryMeetEvent:string;
+	summaryMeetShop:string;
+	summaryMeetTreasure:string;
+	summaryMeetSecretpath:string;
+	summaryExchangeRelic:string;
+	summaryMeetTrade:string;
+	summaryBuy:string;
+	summaryBuyWithPriceId:string;
+	summaryInvest:string;
+	summaryGet:string;
+	summaryRelic:string;
+	summarySafeHouse:string;
+	summaryFailEnd:string;
+	summaryGetTotem:string;
+	summaryDemoPointUp:string;
+	summaryDemoPointDown:string;
+	summaryDemoGradeUp:string;
+	summaryDemoGradeDown:string;
+	summaryVisionPointUp:string;
+	summaryVisionPointDown:string;
+	summaryVisionGradeUp:string;
+	summaryVisionGradeDown:string;
+	summaryFightWin:string;
+	summaryFightFail:string;
+	summaryExchangeTotem:string;
+	summaryUseTotem:string;
+	summaryVisionGrade:string;
+	summaryStockRecruitTicket:string;
+	summaryDuelWin:string;
+	summaryDuelTie:string;
+	summaryDuelLose:string;
+	summaryExpeditionGo:string;
+	summaryExpeditionBack:string;
+}
+
+
+root_type Torappu_RL03EndingText;

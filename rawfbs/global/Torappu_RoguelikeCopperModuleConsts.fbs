@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeCopperModuleConsts {
+	copperDrawMaxNum:int32;
+	copperDrawMinNum:int32;
+}
+
+
+root_type Torappu_RoguelikeCopperModuleConsts;

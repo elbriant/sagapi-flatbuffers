@@ -1,0 +1,15 @@
+include "dict__System_String_Torappu_DefaultCheckInData_DynCheckInDailyInfo.fbs";
+include "dict__System_String_Torappu_DefaultCheckInData_OptionInfo.fbs";
+include "dict__System_String_list___1_Torappu_ItemBundle.fbs";
+include "Torappu_DefaultCheckInData_DynamicCheckInConsts.fbs";
+
+table Torappu_DefaultCheckInData_DynamicCheckInData {
+	dynCheckInDict:[dict__System_String_Torappu_DefaultCheckInData_DynCheckInDailyInfo];
+	dynOptionDict:[dict__System_String_Torappu_DefaultCheckInData_OptionInfo];
+	dynItemDict:[dict__System_String_list___1_Torappu_ItemBundle];
+	constData:Torappu_DefaultCheckInData_DynamicCheckInConsts;
+	initOption:string;
+}
+
+
+root_type Torappu_DefaultCheckInData_DynamicCheckInData;

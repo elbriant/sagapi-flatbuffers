@@ -1,0 +1,10 @@
+include "Torappu_Act1VHalfIdleBattleItemType.fbs";
+
+table Torappu_Act1VWeightedBattleItemPool {
+	poolKey:string;
+	type:Torappu_Act1VHalfIdleBattleItemType;
+	weight:float;
+}
+
+
+root_type Torappu_Act1VWeightedBattleItemPool;

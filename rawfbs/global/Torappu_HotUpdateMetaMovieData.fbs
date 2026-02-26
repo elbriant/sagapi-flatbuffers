@@ -1,0 +1,10 @@
+
+table Torappu_HotUpdateMetaMovieData {
+	videoId:string;
+	videoPath:string;
+	endTime:int64;
+	sortId:int32;
+}
+
+
+root_type Torappu_HotUpdateMetaMovieData;

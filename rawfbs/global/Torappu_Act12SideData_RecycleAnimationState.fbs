@@ -1,0 +1,6 @@
+
+enum Torappu_Act12SideData_RecycleAnimationState : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	SMILE = 2
+}

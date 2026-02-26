@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveResData_AudioArchiveResItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveResData_AudioArchiveResItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveResData_AudioArchiveResItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveResData_AudioArchiveResItemData;

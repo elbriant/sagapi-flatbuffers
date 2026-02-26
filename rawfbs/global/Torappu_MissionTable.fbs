@@ -1,0 +1,28 @@
+include "dict__System_String_Torappu_MissionData.fbs";
+include "dict__System_String_Torappu_MissionGroup.fbs";
+include "dict__System_String_Torappu_MissionDailyRewardConf.fbs";
+include "dict__System_String_Torappu_MissionWeeklyRewardConf.fbs";
+include "dict__System_String_Torappu_SOCharMissionGroup.fbs";
+include "dict__System_String_Torappu_DailyMissionGroupInfo.fbs";
+include "Torappu_DailyMissionGroupInfo.fbs";
+include "Torappu_MainlineMissionEndImageData.fbs";
+include "dict__System_String_Torappu_CrossAppShareMission.fbs";
+include "Torappu_CrossAppShareMissionConst.fbs";
+include "dict__System_String_Torappu_GuideMissionGroupInfo.fbs";
+
+table Torappu_MissionTable {
+	missions:[dict__System_String_Torappu_MissionData];
+	missionGroups:[dict__System_String_Torappu_MissionGroup];
+	periodicalRewards:[dict__System_String_Torappu_MissionDailyRewardConf];
+	weeklyRewards:[dict__System_String_Torappu_MissionWeeklyRewardConf];
+	soCharMissionGroupInfo:[dict__System_String_Torappu_SOCharMissionGroup];
+	dailyMissionGroupInfo:[dict__System_String_Torappu_DailyMissionGroupInfo];
+	dailyMissionPeriodInfo:[Torappu_DailyMissionGroupInfo];
+	mainlineMissionEndImageDataList:[Torappu_MainlineMissionEndImageData];
+	crossAppShareMissions:[dict__System_String_Torappu_CrossAppShareMission];
+	crossAppShareMissionConst:Torappu_CrossAppShareMissionConst;
+	guideMissionGroupInfo:[dict__System_String_Torappu_GuideMissionGroupInfo];
+}
+
+
+root_type Torappu_MissionTable;

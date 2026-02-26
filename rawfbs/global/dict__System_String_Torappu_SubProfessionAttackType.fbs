@@ -1,0 +1,9 @@
+include "Torappu_SubProfessionAttackType.fbs";
+
+table dict__System_String_Torappu_SubProfessionAttackType {
+	dict_key:string;
+	dict_value:Torappu_SubProfessionAttackType;
+}
+
+
+root_type dict__System_String_Torappu_SubProfessionAttackType;

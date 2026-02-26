@@ -1,0 +1,9 @@
+include "dict__System_String_System_String.fbs";
+
+table dict__System_String_dict__System_String_System_String {
+	dict_key:string;
+	dict_value:[dict__System_String_System_String];
+}
+
+
+root_type dict__System_String_dict__System_String_System_String;

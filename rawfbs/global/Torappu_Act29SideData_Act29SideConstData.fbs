@@ -1,0 +1,22 @@
+
+table Torappu_Act29SideData_Act29SideConstData {
+	majorInvestUnlockItemName:string;
+	wrongTipsTriggerTime:int32;
+	majorInvestCompleteImgId:string;
+	majorInvestUnknownAvatarId:string;
+	majorInvestDetailDesc1:string;
+	majorInvestDetailDesc2:string;
+	majorInvestDetailDesc3:string;
+	majorInvestDetailDesc4:string;
+	hiddenInvestImgId:string;
+	hiddenInvestHeadImgId:string;
+	hiddenInvestNpcName:string;
+	unlockLevelId:string;
+	investResultHint:string;
+	investUnlockText:string;
+	noOrcheDesc:string;
+	investTrackId:string;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideConstData;

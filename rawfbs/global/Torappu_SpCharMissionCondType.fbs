@@ -1,0 +1,5 @@
+
+enum Torappu_SpCharMissionCondType : int32 {
+	NONE = 0,
+	EVOLVE_PHASE = 1
+}

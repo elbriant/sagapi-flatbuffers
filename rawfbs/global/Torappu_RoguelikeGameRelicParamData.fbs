@@ -1,0 +1,11 @@
+include "Torappu_RoguelikeGameRelicCheckType.fbs";
+include "Torappu_RoguelikeGameRelicCheckParam.fbs";
+
+table Torappu_RoguelikeGameRelicParamData {
+	id:string;
+	checkCharBoxTypes:[Torappu_RoguelikeGameRelicCheckType];
+	checkCharBoxParams:[Torappu_RoguelikeGameRelicCheckParam];
+}
+
+
+root_type Torappu_RoguelikeGameRelicParamData;

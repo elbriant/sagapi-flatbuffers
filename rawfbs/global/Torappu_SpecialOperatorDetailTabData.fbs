@@ -1,0 +1,11 @@
+include "Torappu_SpecialOperatorDetailNodeType.fbs";
+
+table Torappu_SpecialOperatorDetailTabData {
+	soTabId:string;
+	soTabName:string;
+	soTabSortId:int32;
+	nodeType:Torappu_SpecialOperatorDetailNodeType;
+}
+
+
+root_type Torappu_SpecialOperatorDetailTabData;

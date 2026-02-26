@@ -1,0 +1,229 @@
+
+table Torappu_Audio_Middleware_Data_BGMBank {
+	intro:string;
+	loop:string;
+	volume:float;
+	crossfade:float;
+	delay:float;
+	fadeStyleId:string;
+}
+
+
+
+enum Torappu_Audio_MixerDesc_Category : int32 {
+	CUSTOM = 0,
+	FX_UI = 1,
+	FX_BATTLE = 2,
+	MUSIC = 3,
+	VOICE = 4,
+	MASTER = 5
+}
+
+table Torappu_Audio_MixerDesc {
+	category:Torappu_Audio_MixerDesc_Category;
+	customGroup:string;
+	important:bool;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX {
+	m_runtimeBank:Torappu_Audio_Middleware_Data_SoundFXBank;
+	asset:string;
+	weight:float;
+	important:bool;
+	is2D:bool;
+	delay:float;
+	minPitch:float;
+	maxPitch:float;
+	minVolume:float;
+	maxVolume:float;
+	ignoreTimeScale:bool;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_SoundFXBank {
+	m_totalWeight:float;
+	mixerDesc:Torappu_Audio_MixerDesc;
+	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];
+	maxSoundAllowed:int32;
+	popOldest:bool;
+	customMixerGroup:string;
+	loop:bool;
+}
+
+
+
+table dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank {
+	dict_key:string;
+	dict_value:[Torappu_Audio_Middleware_Data_Bank];
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_Audio_Middleware_TorappuAudioMiddleware {
+	m_banks:[dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank];
+	m_bankAlias:[dict__System_String_System_String];
+	m_bankList:[Torappu_Audio_Middleware_Data_Bank];
+}
+
+
+
+table Torappu_Audio_Middleware_AudioAtom {
+	bank:Torappu_Audio_Middleware_Data_Bank;
+	name:string;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_Bank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
+	m_targetBank:Torappu_Audio_Middleware_Data_Bank;
+	targetBank:string;
+	ctrlStop:bool;
+	ctrlStopFadetime:float;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_SnapshotBank {
+	targetSnapshot:string;
+	hookSoundFxBank:string;
+	delay:float;
+	duration:float;
+}
+
+
+
+enum Torappu_BattleVoiceOption_BattleVoiceType : int32 {
+	BATTLE_START = 0,
+	ENCOUNTER_ENEMY = 1,
+	PLACE_CHAR = 2,
+	FOCUS_CHAR = 3,
+	SKILL_ACTIVE = 4,
+	SKILL_PASSIVE_IMP = 5,
+	SKILL_PASSIVE_NOR = 6,
+	NORMAL_ATTACK = 7,
+	E_NUM = 8
+}
+
+table Torappu_BattleVoiceOption {
+	voiceType:Torappu_BattleVoiceOption_BattleVoiceType;
+	priority:int32;
+	overlapIfSamePriority:bool;
+	cooldown:float;
+	delay:float;
+}
+
+
+
+table Torappu_BattleVoiceData {
+	crossfade:float;
+	minTimeDeltaForEnemyEncounter:float;
+	minSpCostForImportantPassiveSkill:int32;
+	voiceTypeOptions:[Torappu_BattleVoiceOption];
+}
+
+
+
+table Torappu_Audio_Middleware_Data_MusicData {
+	id:string;
+	name:string;
+	bank:string;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_DuckingData {
+	bank:string;
+	volume:float;
+	fadeTime:float;
+	delay:float;
+	fadeStyleId:string;
+}
+
+
+
+enum Torappu_Audio_Middleware_Data_AudioFadeType : int32 {
+	LINEAR = 0,
+	CONCAVE = 1
+}
+
+table Torappu_Audio_Middleware_Data_FadeStyleData {
+	styleName:string;
+	fadeinTime:float;
+	fadeoutTime:float;
+	fadeinType:Torappu_Audio_Middleware_Data_AudioFadeType;
+	fadeoutType:Torappu_Audio_Middleware_Data_AudioFadeType;
+}
+
+
+
+enum Torappu_VoiceLangType : int32 {
+	NONE = 0,
+	JP = 1,
+	CN_MANDARIN = 2,
+	EN = 3,
+	KR = 4,
+	CN_TOPOLECT = 5,
+	LINKAGE = 6,
+	ITA = 7,
+	GER = 8,
+	RUS = 9,
+	FRE = 10,
+	SPA = 11
+}
+
+table dict__Torappu_VoiceLangType_System_String {
+	dict_key:Torappu_VoiceLangType;
+	dict_value:string;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_SoundFXVoiceLangData {
+	key:string(key);
+	value:[dict__Torappu_VoiceLangType_System_String];
+}
+
+
+
+table dict__System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData {
+	dict_key:string;
+	dict_value:Torappu_Audio_Middleware_Data_SoundFXVoiceLangData;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_TorappuAudioData {
+	bgmBanks:[Torappu_Audio_Middleware_Data_BGMBank];
+	soundFXBanks:[Torappu_Audio_Middleware_Data_SoundFXBank];
+	soundFXCtrlBanks:[Torappu_Audio_Middleware_Data_SoundFXCtrlBank];
+	snapshotBanks:[Torappu_Audio_Middleware_Data_SnapshotBank];
+	battleVoice:Torappu_BattleVoiceData;
+	musics:[Torappu_Audio_Middleware_Data_MusicData];
+	duckings:[Torappu_Audio_Middleware_Data_DuckingData];
+	fadeStyles:[Torappu_Audio_Middleware_Data_FadeStyleData];
+	soundFxVoiceLang:[dict__System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData];
+	bankAlias:[dict__System_String_System_String];
+}
+
+
+
+root_type Torappu_Audio_Middleware_Data_TorappuAudioData;

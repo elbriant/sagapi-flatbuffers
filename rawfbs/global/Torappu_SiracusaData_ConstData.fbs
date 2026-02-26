@@ -1,0 +1,9 @@
+
+table Torappu_SiracusaData_ConstData {
+	operaDailyNum:int32;
+	operaAllUnlockTime:int64;
+	defaultFocusArea:string;
+}
+
+
+root_type Torappu_SiracusaData_ConstData;

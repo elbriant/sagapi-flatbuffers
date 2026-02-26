@@ -1,0 +1,9 @@
+
+enum Torappu_ActArcadeData_SubModeType : int32 {
+	IGNORE = -1,
+	MINER = 0,
+	DRAW = 1,
+	LINE = 2,
+	CAR = 3,
+	E_NUM = 4
+}

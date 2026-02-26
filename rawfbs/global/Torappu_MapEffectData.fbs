@@ -1,0 +1,11 @@
+include "UnityEngine_Vector3.fbs";
+include "Torappu_SharedConsts_Direction.fbs";
+
+table Torappu_MapEffectData {
+	key:string;
+	offset:UnityEngine_Vector3;
+	direction:Torappu_SharedConsts_Direction;
+}
+
+
+root_type Torappu_MapEffectData;

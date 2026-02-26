@@ -1,0 +1,9 @@
+include "Torappu_StageData_DisplayDetailRewards.fbs";
+
+table dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards {
+	dict_key:string;
+	dict_value:[Torappu_StageData_DisplayDetailRewards];
+}
+
+
+root_type dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards;

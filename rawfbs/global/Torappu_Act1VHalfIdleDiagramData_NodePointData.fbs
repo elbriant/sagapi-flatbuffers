@@ -1,0 +1,7 @@
+
+table Torappu_Act1VHalfIdleDiagramData_NodePointData {
+	nodeId:string;
+}
+
+
+root_type Torappu_Act1VHalfIdleDiagramData_NodePointData;

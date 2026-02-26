@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchivePicItemData.fbs";
+
+table Torappu_ActArchivePicData {
+	pics:[dict__System_String_Torappu_ActArchivePicItemData];
+}
+
+
+root_type Torappu_ActArchivePicData;

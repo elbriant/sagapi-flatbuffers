@@ -1,0 +1,17 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_LongTermCheckInGroupData {
+	groupId:string;
+	sortId:int32;
+	startTs:int64;
+	level:int32;
+	days:int32;
+	bkgImgId:string;
+	titleImgId:string;
+	tipText:string;
+	bottomText:string;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_LongTermCheckInGroupData;

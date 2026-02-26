@@ -1,0 +1,14 @@
+include "dict__System_String_Torappu_NameCardV2ModuleData.fbs";
+include "dict__System_String_Torappu_NameCardV2RemovableModuleData.fbs";
+include "dict__System_String_Torappu_NameCardV2SkinData.fbs";
+include "Torappu_NameCardV2Consts.fbs";
+
+table Torappu_NameCardV2Data {
+	fixedModuleData:[dict__System_String_Torappu_NameCardV2ModuleData];
+	removableModuleData:[dict__System_String_Torappu_NameCardV2RemovableModuleData];
+	skinData:[dict__System_String_Torappu_NameCardV2SkinData];
+	consts:Torappu_NameCardV2Consts;
+}
+
+
+root_type Torappu_NameCardV2Data;

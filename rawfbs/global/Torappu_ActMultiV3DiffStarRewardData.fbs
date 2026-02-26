@@ -1,0 +1,10 @@
+include "Torappu_ActMultiV3MapDiffType.fbs";
+include "Torappu_ActMultiV3StarRewardData.fbs";
+
+table Torappu_ActMultiV3DiffStarRewardData {
+	diffType:Torappu_ActMultiV3MapDiffType;
+	starRewardDatas:[Torappu_ActMultiV3StarRewardData];
+}
+
+
+root_type Torappu_ActMultiV3DiffStarRewardData;

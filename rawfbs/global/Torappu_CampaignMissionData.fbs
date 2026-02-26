@@ -1,0 +1,11 @@
+
+table Torappu_CampaignMissionData {
+	id:string;
+	sortId:int32;
+	param:[string];
+	description:string;
+	breakFeeAdd:int32;
+}
+
+
+root_type Torappu_CampaignMissionData;

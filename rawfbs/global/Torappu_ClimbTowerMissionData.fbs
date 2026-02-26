@@ -1,0 +1,8 @@
+
+table Torappu_ClimbTowerMissionData {
+	bindGodCardId:string;
+	bindTowerId:string;
+}
+
+
+root_type Torappu_ClimbTowerMissionData;

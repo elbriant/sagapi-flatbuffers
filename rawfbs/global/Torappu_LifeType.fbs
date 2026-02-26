@@ -1,0 +1,7 @@
+
+enum Torappu_LifeType : uint8 {
+	IMMEDIATELY = 0,
+	LIMITED = 1,
+	INFINITY = 2,
+	CUSTOM = 3
+}

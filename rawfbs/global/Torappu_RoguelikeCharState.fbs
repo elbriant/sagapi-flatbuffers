@@ -1,0 +1,12 @@
+
+enum Torappu_RoguelikeCharState : int32 {
+	NORMAL = 0,
+	UPGRADE = 1,
+	UPGRADE_BUFF = 2,
+	UPGRADE_BONUS = 3,
+	FREE = 4,
+	ASSIST = 5,
+	THIRD = 6,
+	MONTHLY = 7,
+	THIRD_LOW = 8
+}

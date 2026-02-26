@@ -1,0 +1,8 @@
+
+table Torappu_Act5D0Data_ZoneDescInfo {
+	zoneId:string;
+	lockedText:string;
+}
+
+
+root_type Torappu_Act5D0Data_ZoneDescInfo;

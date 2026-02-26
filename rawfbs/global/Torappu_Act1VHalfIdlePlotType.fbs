@@ -1,0 +1,8 @@
+
+enum Torappu_Act1VHalfIdlePlotType : int32 {
+	NONE = 0,
+	LANDSCAPE = 1,
+	ROAD = 2,
+	ROADSIDE = 3,
+	SPECIAL = 4
+}

@@ -1,0 +1,9 @@
+include "Torappu_ActivityInterlockData_StageAdditionData.fbs";
+
+table dict__System_String_Torappu_ActivityInterlockData_StageAdditionData {
+	dict_key:string;
+	dict_value:Torappu_ActivityInterlockData_StageAdditionData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityInterlockData_StageAdditionData;

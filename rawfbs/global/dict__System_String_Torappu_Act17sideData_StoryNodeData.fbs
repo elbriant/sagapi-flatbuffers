@@ -1,0 +1,9 @@
+include "Torappu_Act17sideData_StoryNodeData.fbs";
+
+table dict__System_String_Torappu_Act17sideData_StoryNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_StoryNodeData;
+}
+
+
+root_type dict__System_String_Torappu_Act17sideData_StoryNodeData;

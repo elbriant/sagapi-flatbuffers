@@ -1,0 +1,12 @@
+
+table Torappu_Act17sideData_LandmarkNodeData {
+	nodeId:string;
+	landmarkId:string;
+	landmarkName:string;
+	landmarkPic:string;
+	landmarkSpecialPic:string;
+	landmarkDesList:[string];
+}
+
+
+root_type Torappu_Act17sideData_LandmarkNodeData;

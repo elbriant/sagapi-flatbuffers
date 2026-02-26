@@ -1,0 +1,10 @@
+
+table Torappu_Act1VHalfIdleEnemyDropBundle {
+	exp:int32;
+	mileStoneCnt:int32;
+	battleItemDropPool:string;
+	resourceItemDropPool:string;
+}
+
+
+root_type Torappu_Act1VHalfIdleEnemyDropBundle;

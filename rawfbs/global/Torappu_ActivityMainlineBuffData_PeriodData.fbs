@@ -1,0 +1,15 @@
+include "Torappu_ActivityMainlineBuffData_PeriodData_StepData.fbs";
+
+table Torappu_ActivityMainlineBuffData_PeriodData {
+	id:string;
+	startTime:int64;
+	endTime:int64;
+	favorUpCharDesc:string;
+	favorUpImgName:string;
+	newChapterImgName:string;
+	newChapterZoneId:string;
+	stepDataList:[Torappu_ActivityMainlineBuffData_PeriodData_StepData];
+}
+
+
+root_type Torappu_ActivityMainlineBuffData_PeriodData;

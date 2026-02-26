@@ -1,0 +1,9 @@
+include "dict__Torappu_StageDiffGroup_Torappu_StoryStageShowGroup.fbs";
+
+table dict__System_String_dict__Torappu_StageDiffGroup_Torappu_StoryStageShowGroup {
+	dict_key:string;
+	dict_value:[dict__Torappu_StageDiffGroup_Torappu_StoryStageShowGroup];
+}
+
+
+root_type dict__System_String_dict__Torappu_StageDiffGroup_Torappu_StoryStageShowGroup;

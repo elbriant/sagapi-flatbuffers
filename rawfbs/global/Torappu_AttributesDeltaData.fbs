@@ -1,0 +1,6 @@
+
+table Torappu_AttributesDeltaData {
+}
+
+
+root_type Torappu_AttributesDeltaData;

@@ -1,0 +1,24 @@
+include "list_dict___2_System_String_Torappu_Act9D0Data_ZoneDescInfo_.fbs";
+include "list_dict___2_System_String_Torappu_Act9D0Data_FavorUpInfo_.fbs";
+include "dict__System_String_Torappu_Act9D0Data_SubMissionInfo.fbs";
+include "dict__System_String_System_Int64.fbs";
+include "dict__System_String_Torappu_Act9D0Data_ActivityNewsInfo.fbs";
+include "dict__System_String_Torappu_Act9D0Data_ActivityNewsServerInfo.fbs";
+include "dict__System_String_System_String.fbs";
+include "Torappu_Act9D0Data_Act9D0ConstData.fbs";
+
+table Torappu_Act9D0Data {
+	tokenItemId:string;
+	zoneDescList:[list_dict___2_System_String_Torappu_Act9D0Data_ZoneDescInfo_];
+	favorUpList:[list_dict___2_System_String_Torappu_Act9D0Data_FavorUpInfo_];
+	subMissionInfo:[dict__System_String_Torappu_Act9D0Data_SubMissionInfo];
+	hasSubMission:bool;
+	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	newsInfoList:[dict__System_String_Torappu_Act9D0Data_ActivityNewsInfo];
+	newsServerInfoList:[dict__System_String_Torappu_Act9D0Data_ActivityNewsServerInfo];
+	miscHub:[dict__System_String_System_String];
+	constData:Torappu_Act9D0Data_Act9D0ConstData;
+}
+
+
+root_type Torappu_Act9D0Data;

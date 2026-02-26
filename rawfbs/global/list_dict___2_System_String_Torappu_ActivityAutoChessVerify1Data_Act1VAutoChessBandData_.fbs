@@ -1,0 +1,9 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData.fbs";
+
+table list_dict___2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_;

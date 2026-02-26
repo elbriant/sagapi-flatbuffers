@@ -1,0 +1,35 @@
+include "dict__System_String_Torappu_Act4funPerformGroupInfo.fbs";
+include "dict__System_String_Torappu_Act4funPerformInfo.fbs";
+include "dict__System_String_Torappu_Act4funLiveMatInfoData.fbs";
+include "dict__System_String_Torappu_Act4funSpLiveMatInfoData.fbs";
+include "dict__System_String_Torappu_Act4funValueEffectInfoData.fbs";
+include "dict__System_String_Torappu_Act4funLiveValueInfoData.fbs";
+include "dict__System_String_Torappu_Act4funSuperChatInfo.fbs";
+include "dict__System_String_Torappu_Act4funCmtGroupInfo.fbs";
+include "dict__System_String_Torappu_Act4funEndingInfo.fbs";
+include "dict__System_String_Torappu_Act4funTokenInfoData.fbs";
+include "dict__System_String_Torappu_Act4funMissionData.fbs";
+include "Torappu_Act4funConst.fbs";
+include "dict__System_String_Torappu_Act4funStageExtraData.fbs";
+
+table Torappu_Act4funData {
+	performGroupInfoDict:[dict__System_String_Torappu_Act4funPerformGroupInfo];
+	performInfoDict:[dict__System_String_Torappu_Act4funPerformInfo];
+	normalMatDict:[dict__System_String_Torappu_Act4funLiveMatInfoData];
+	spMatDict:[dict__System_String_Torappu_Act4funSpLiveMatInfoData];
+	valueEffectInfoDict:[dict__System_String_Torappu_Act4funValueEffectInfoData];
+	liveValueInfoDict:[dict__System_String_Torappu_Act4funLiveValueInfoData];
+	superChatInfoDict:[dict__System_String_Torappu_Act4funSuperChatInfo];
+	cmtGroupInfoDict:[dict__System_String_Torappu_Act4funCmtGroupInfo];
+	cmtUsers:[string];
+	endingDict:[dict__System_String_Torappu_Act4funEndingInfo];
+	tokenLevelInfos:[dict__System_String_Torappu_Act4funTokenInfoData];
+	missionDatas:[dict__System_String_Torappu_Act4funMissionData];
+	constant:Torappu_Act4funConst;
+	stageExtraDatas:[dict__System_String_Torappu_Act4funStageExtraData];
+	randomMsgText:[string];
+	randomUserIconId:[string];
+}
+
+
+root_type Torappu_Act4funData;

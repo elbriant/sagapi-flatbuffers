@@ -1,0 +1,15 @@
+include "Torappu_Act25SideData_Act25SideArchiveItemType.fbs";
+include "Torappu_Act25SideData_Act25SideArchiveItemUnlockType.fbs";
+
+table Torappu_Act25SideData_ArchiveItemData {
+	itemId:string;
+	itemType:Torappu_Act25SideData_Act25SideArchiveItemType;
+	itemUnlockType:Torappu_Act25SideData_Act25SideArchiveItemUnlockType;
+	itemUnlockParam:string;
+	unlockDesc:string;
+	iconId:string;
+	itemName:string;
+}
+
+
+root_type Torappu_Act25SideData_ArchiveItemData;

@@ -1,0 +1,14 @@
+include "Torappu_ActivityCollectionData_JumpType.fbs";
+
+table Torappu_ActivityCollectionData_Consts {
+	showJumpBtn:bool;
+	jumpBtnType:Torappu_ActivityCollectionData_JumpType;
+	jumpBtnParam1:string;
+	jumpBtnParam2:string;
+	dailyTaskDisabled:bool;
+	dailyTaskStartTime:int64;
+	isSimpleMode:bool;
+}
+
+
+root_type Torappu_ActivityCollectionData_Consts;

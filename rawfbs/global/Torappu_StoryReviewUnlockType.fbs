@@ -1,0 +1,7 @@
+
+enum Torappu_StoryReviewUnlockType : int32 {
+	STAGE_CLEAR = 0,
+	USE_ITEM = 1,
+	BY_START_TIME = 2,
+	NOTHING = 3
+}

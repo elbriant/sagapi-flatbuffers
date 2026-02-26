@@ -1,0 +1,9 @@
+include "Torappu_ActivityBossRushData_BossRushStageType.fbs";
+
+table dict__Torappu_ActivityBossRushData_BossRushStageType_System_String {
+	dict_key:Torappu_ActivityBossRushData_BossRushStageType;
+	dict_value:string;
+}
+
+
+root_type dict__Torappu_ActivityBossRushData_BossRushStageType_System_String;

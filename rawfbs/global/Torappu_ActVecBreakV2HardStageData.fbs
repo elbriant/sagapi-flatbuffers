@@ -1,0 +1,12 @@
+include "Torappu_ActVecBreakV2StageOrderType.fbs";
+include "Torappu_ActVecBreakV2BossData.fbs";
+
+table Torappu_ActVecBreakV2HardStageData {
+	stageId:string;
+	orderType:Torappu_ActVecBreakV2StageOrderType;
+	storyDesc:string;
+	bossData:Torappu_ActVecBreakV2BossData;
+}
+
+
+root_type Torappu_ActVecBreakV2HardStageData;

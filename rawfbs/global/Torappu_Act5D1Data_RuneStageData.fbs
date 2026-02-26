@@ -1,0 +1,13 @@
+
+table Torappu_Act5D1Data_RuneStageData {
+	stageId:string;
+	levelId:string;
+	code:string;
+	name:string;
+	loadingPicId:string;
+	description:string;
+	picId:string;
+}
+
+
+root_type Torappu_Act5D1Data_RuneStageData;

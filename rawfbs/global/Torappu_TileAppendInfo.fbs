@@ -1,0 +1,10 @@
+
+table Torappu_TileAppendInfo {
+	tileKey:string;
+	name:string;
+	description:string;
+	isFunctional:bool;
+}
+
+
+root_type Torappu_TileAppendInfo;

@@ -1,0 +1,9 @@
+include "Torappu_ActivityInterlockData.fbs";
+
+table dict__System_String_Torappu_ActivityInterlockData {
+	dict_key:string;
+	dict_value:Torappu_ActivityInterlockData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityInterlockData;

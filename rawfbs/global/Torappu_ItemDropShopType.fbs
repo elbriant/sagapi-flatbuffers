@@ -1,0 +1,9 @@
+
+enum Torappu_ItemDropShopType : int32 {
+	HGGSHD_SHOP = 0,
+	LGGSHD_SHOP = 1,
+	XSHD_SHOP = 2,
+	EPGS_SHOP = 3,
+	REP_SHOP = 4,
+	CLASSIC_SHOP = 5
+}

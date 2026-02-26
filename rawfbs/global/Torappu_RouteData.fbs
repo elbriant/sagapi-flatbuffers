@@ -1,0 +1,20 @@
+include "Torappu_MotionMode.fbs";
+include "Torappu_GridPosition.fbs";
+include "UnityEngine_Vector2.fbs";
+include "Torappu_RouteData_CheckpointData.fbs";
+
+table Torappu_RouteData {
+	motionMode:Torappu_MotionMode;
+	startPosition:Torappu_GridPosition;
+	endPosition:Torappu_GridPosition;
+	spawnRandomRange:UnityEngine_Vector2;
+	spawnOffset:UnityEngine_Vector2;
+	checkpoints:[Torappu_RouteData_CheckpointData];
+	allowDiagonalMove:bool;
+	visitEveryTileCenter:bool;
+	visitEveryNodeCenter:bool;
+	visitEveryCheckPoint:bool;
+}
+
+
+root_type Torappu_RouteData;

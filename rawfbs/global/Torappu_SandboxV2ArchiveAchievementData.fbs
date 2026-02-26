@@ -1,0 +1,12 @@
+
+table Torappu_SandboxV2ArchiveAchievementData {
+	id:string;
+	achievementType:[string];
+	raritySortId:int32;
+	sortId:int32;
+	name:string;
+	desc:string;
+}
+
+
+root_type Torappu_SandboxV2ArchiveAchievementData;

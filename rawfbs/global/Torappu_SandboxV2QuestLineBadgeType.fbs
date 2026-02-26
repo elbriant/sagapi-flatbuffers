@@ -1,0 +1,8 @@
+
+enum Torappu_SandboxV2QuestLineBadgeType : int32 {
+	NONE = 0,
+	SIDE = 1,
+	GUIDE = 2,
+	MAIN = 3,
+	RIFT = 4
+}

@@ -1,0 +1,11 @@
+include "Torappu_Act1VHalfIdleGachaPoolType.fbs";
+
+table Torappu_Act1VHalfIdleGachaPoolTypeData {
+	poolType:Torappu_Act1VHalfIdleGachaPoolType;
+	typeName:string;
+	desc:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleGachaPoolTypeData;

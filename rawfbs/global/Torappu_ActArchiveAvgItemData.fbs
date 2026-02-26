@@ -1,0 +1,8 @@
+
+table Torappu_ActArchiveAvgItemData {
+	avgId:string;
+	avgSortId:int32;
+}
+
+
+root_type Torappu_ActArchiveAvgItemData;

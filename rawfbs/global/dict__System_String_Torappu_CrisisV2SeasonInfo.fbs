@@ -1,0 +1,9 @@
+include "Torappu_CrisisV2SeasonInfo.fbs";
+
+table dict__System_String_Torappu_CrisisV2SeasonInfo {
+	dict_key:string;
+	dict_value:Torappu_CrisisV2SeasonInfo;
+}
+
+
+root_type dict__System_String_Torappu_CrisisV2SeasonInfo;

@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_AutoChessMiscConfig.fbs";
+
+table Torappu_BattleMiscConfigs {
+	palsyLimitedStackCnt:int32;
+	palsyOverflowEffect:string;
+	autoChessMiscConfigs:[dict__System_String_Torappu_AutoChessMiscConfig];
+}
+
+
+root_type Torappu_BattleMiscConfigs;

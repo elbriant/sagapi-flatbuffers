@@ -1,0 +1,15 @@
+
+table Torappu_BuildingData_MusicSingleData {
+	bgmId:string;
+	bgmSortId:int32;
+	bgmStartTime:int64;
+	bgmName:string;
+	gameMusicId:string;
+	obtainApproach:string;
+	bgmDescUnlocked:string;
+	unlockType:string;
+	unlockParams:[string];
+}
+
+
+root_type Torappu_BuildingData_MusicSingleData;

@@ -1,0 +1,9 @@
+include "Torappu_Act6FunAchievementData.fbs";
+
+table dict__System_String_list___1_Torappu_Act6FunAchievementData {
+	dict_key:string;
+	dict_value:[Torappu_Act6FunAchievementData];
+}
+
+
+root_type dict__System_String_list___1_Torappu_Act6FunAchievementData;

@@ -1,0 +1,6 @@
+
+enum Torappu_ActArcadeData_BadgeType : int32 {
+	COMMON = 0,
+	ZONE = 1,
+	ULTIMATE = 2
+}

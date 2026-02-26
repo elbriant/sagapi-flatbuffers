@@ -1,0 +1,25 @@
+
+table Torappu_CharSkinData_DisplaySkin {
+	skinName:string;
+	colorList:[string];
+	titleList:[string];
+	modelName:string;
+	drawerList:[string];
+	designerList:[string];
+	skinGroupId:string;
+	skinGroupName:string;
+	skinGroupSortIndex:int32;
+	content:string;
+	dialog:string;
+	usage:string;
+	description:string;
+	obtainApproach:string;
+	sortId:int32;
+	displayTagId:string;
+	getTime:int64;
+	onYear:int32;
+	onPeriod:int32;
+}
+
+
+root_type Torappu_CharSkinData_DisplaySkin;

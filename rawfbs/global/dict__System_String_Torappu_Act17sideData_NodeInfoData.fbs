@@ -1,0 +1,9 @@
+include "Torappu_Act17sideData_NodeInfoData.fbs";
+
+table dict__System_String_Torappu_Act17sideData_NodeInfoData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_NodeInfoData;
+}
+
+
+root_type dict__System_String_Torappu_Act17sideData_NodeInfoData;

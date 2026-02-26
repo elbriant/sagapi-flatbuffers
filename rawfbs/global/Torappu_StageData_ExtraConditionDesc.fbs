@@ -1,0 +1,9 @@
+
+table Torappu_StageData_ExtraConditionDesc {
+	index:int32;
+	template:string;
+	unlockParam:[string];
+}
+
+
+root_type Torappu_StageData_ExtraConditionDesc;

@@ -1,0 +1,6 @@
+
+enum Torappu_SkinVoiceType : int32 {
+	NONE = 0,
+	ILLUST = 1,
+	ALL = 2
+}

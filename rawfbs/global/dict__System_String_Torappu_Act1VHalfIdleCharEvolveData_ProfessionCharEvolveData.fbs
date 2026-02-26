@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData.fbs";
+
+table dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData;
+}
+
+
+root_type dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData;

@@ -1,0 +1,10 @@
+
+table Torappu_Act24SideData_ZoneAdditionData {
+	zoneId:string;
+	zoneIcon:string;
+	unlockText:string;
+	displayTime:string;
+}
+
+
+root_type Torappu_Act24SideData_ZoneAdditionData;

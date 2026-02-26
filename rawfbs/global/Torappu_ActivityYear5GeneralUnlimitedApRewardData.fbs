@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivityYear5GeneralUnlimitedApRewardData {
+	rewardIndex:int32;
+	rewardItem:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_ActivityYear5GeneralUnlimitedApRewardData;

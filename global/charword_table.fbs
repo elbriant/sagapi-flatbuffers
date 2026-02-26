@@ -1,0 +1,294 @@
+
+enum Torappu_CharWordVoiceType : int32 {
+	ONLY_TEXT = 0,
+	HAVE_CV = 1,
+	ENUM = 2
+}
+
+enum Torappu_DataUnlockType : int32 {
+	DIRECT = 0,
+	AWAKE = 1,
+	FAVOR = 2,
+	STAGE = 3,
+	ITEM = 4,
+	NEVER = 5,
+	PATCH = 6,
+	NONE = 7
+}
+
+table Torappu_CharWordUnlockParam {
+	valueStr:string;
+	valueInt:int32;
+}
+
+
+
+enum Torappu_CharWordShowType : int32 {
+	HOME_SHOW = 0,
+	HOME_PLACE = 1,
+	HOME_WAIT = 2,
+	GACHA = 3,
+	EVOLVE_ONE = 4,
+	EVOLVE_TWO = 5,
+	FOUR_STAR = 6,
+	THREE_STAR = 7,
+	TWO_STAR = 8,
+	LOSE = 9,
+	LEVEL_UP = 10,
+	SQUAD = 11,
+	SQUAD_FIRST = 12,
+	BATTLE_START = 13,
+	BATTLE_FACE_ENEMY = 14,
+	BATTLE_SELECT = 15,
+	BATTLE_PLACE = 16,
+	BATTLE_SKILL_1 = 17,
+	BATTLE_SKILL_2 = 18,
+	BATTLE_SKILL_3 = 19,
+	BATTLE_SKILL_4 = 20,
+	BUILDING_PLACE = 21,
+	BUILDING_DRAGGING = 22,
+	BUILDING_FAVOR_BUBBLE = 23,
+	BUILDING_TOUCHING = 24,
+	LOADING_PANEL = 25,
+	BIRTHDAY = 26,
+	NEW_YEAR = 27,
+	VALENT_DAY = 28,
+	DRAGON_BOAT_FESTIVAL = 29,
+	HALLOWEEN_DAY = 30,
+	CHRISMATS_DAY = 31,
+	GREETING = 32,
+	ANNIVERSARY = 33,
+	UNUSED = 34,
+	E_ALL = 35
+}
+
+table Torappu_CharWordData {
+	charWordId:string;
+	wordKey:string;
+	charId:string;
+	voiceId:string;
+	voiceText:string;
+	voiceTitle:string;
+	voiceIndex:int32;
+	voiceType:Torappu_CharWordVoiceType;
+	unlockType:Torappu_DataUnlockType;
+	unlockParam:[Torappu_CharWordUnlockParam];
+	lockDescription:string;
+	placeType:Torappu_CharWordShowType;
+	voiceAsset:string;
+}
+
+
+
+table dict__System_String_Torappu_CharWordData {
+	dict_key:string;
+	dict_value:Torappu_CharWordData;
+}
+
+
+
+table Torappu_CharExtraWordData {
+	wordKey:string;
+	charId:string;
+	voiceId:string;
+	voiceText:string;
+}
+
+
+
+table dict__System_String_Torappu_CharExtraWordData {
+	dict_key:string;
+	dict_value:Torappu_CharExtraWordData;
+}
+
+
+
+enum Torappu_VoiceLangType : int32 {
+	NONE = 0,
+	JP = 1,
+	CN_MANDARIN = 2,
+	EN = 3,
+	KR = 4,
+	CN_TOPOLECT = 5,
+	LINKAGE = 6,
+	ITA = 7,
+	GER = 8,
+	RUS = 9,
+	FRE = 10,
+	SPA = 11
+}
+
+table Torappu_VoiceLangInfoData {
+	wordkey:string;
+	voiceLangType:Torappu_VoiceLangType;
+	cvName:[string];
+	voicePath:string;
+}
+
+
+
+table dict__Torappu_VoiceLangType_Torappu_VoiceLangInfoData {
+	dict_key:Torappu_VoiceLangType;
+	dict_value:Torappu_VoiceLangInfoData;
+}
+
+
+
+table Torappu_VoiceLangData {
+	wordkeys:[string];
+	charId:string;
+	voiceLangInfoDataDict:[dict__Torappu_VoiceLangType_Torappu_VoiceLangInfoData];
+}
+
+
+
+table dict__System_String_Torappu_VoiceLangData {
+	dict_key:string;
+	dict_value:Torappu_VoiceLangData;
+}
+
+
+
+enum Torappu_VoiceLangGroupType : int32 {
+	NONE = 0,
+	CN_MANDARIN = 1,
+	JP = 2,
+	EN = 3,
+	KR = 4,
+	CUSTOM = 5,
+	LINKAGE = 6
+}
+
+table Torappu_VoiceLangTypeData {
+	name:string;
+	groupType:Torappu_VoiceLangGroupType;
+}
+
+
+
+table dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData {
+	dict_key:Torappu_VoiceLangType;
+	dict_value:Torappu_VoiceLangTypeData;
+}
+
+
+
+table Torappu_VoiceLangGroupData {
+	name:string;
+	members:[Torappu_VoiceLangType];
+}
+
+
+
+table dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData {
+	dict_key:Torappu_VoiceLangGroupType;
+	dict_value:Torappu_VoiceLangGroupData;
+}
+
+
+
+table dict__System_String_Torappu_VoiceLangType {
+	dict_key:string;
+	dict_value:Torappu_VoiceLangType;
+}
+
+
+
+table Torappu_NewVoiceTimeData {
+	timestamp:int64;
+	charSet:[string];
+}
+
+
+
+table dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData {
+	dict_key:Torappu_VoiceLangType;
+	dict_value:[Torappu_NewVoiceTimeData];
+}
+
+
+
+enum Torappu_FestivalVoiceTimeType : int32 {
+	NONE = 0,
+	FESTIVAL = 1,
+	BIRTHDAY = 2
+}
+
+table Torappu_FestivalTimeInterval {
+	startTs:int64;
+	endTs:int64;
+}
+
+
+
+table Torappu_FestivalTimeData {
+	timeType:Torappu_FestivalVoiceTimeType;
+	interval:Torappu_FestivalTimeInterval;
+}
+
+
+
+table Torappu_FestivalVoiceData {
+	showType:Torappu_CharWordShowType;
+	timeData:[Torappu_FestivalTimeData];
+}
+
+
+
+table dict__System_String_Torappu_FestivalVoiceData {
+	dict_key:string;
+	dict_value:Torappu_FestivalVoiceData;
+}
+
+
+
+table Torappu_FestivalVoiceWeightData {
+	showType:Torappu_CharWordShowType;
+	weight:float;
+	priority:int32;
+}
+
+
+
+table dict__System_String_Torappu_FestivalVoiceWeightData {
+	dict_key:string;
+	dict_value:Torappu_FestivalVoiceWeightData;
+}
+
+
+
+table Torappu_ExtraVoiceConfigData {
+	voiceId:string;
+	validVoiceLang:[Torappu_VoiceLangType];
+}
+
+
+
+table dict__System_String_Torappu_ExtraVoiceConfigData {
+	dict_key:string;
+	dict_value:Torappu_ExtraVoiceConfigData;
+}
+
+
+
+table Torappu_CharWordTable {
+	charWords:[dict__System_String_Torappu_CharWordData];
+	charExtraWords:[dict__System_String_Torappu_CharExtraWordData];
+	voiceLangDict:[dict__System_String_Torappu_VoiceLangData];
+	defaultLangType:Torappu_VoiceLangType;
+	newTagList:[string];
+	voiceLangTypeDict:[dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData];
+	voiceLangGroupTypeDict:[dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData];
+	charDefaultTypeDict:[dict__System_String_Torappu_VoiceLangType];
+	startTimeWithTypeDict:[dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData];
+	displayGroupTypeList:[Torappu_VoiceLangGroupType];
+	displayTypeList:[Torappu_VoiceLangType];
+	playVoiceRange:Torappu_CharWordShowType;
+	fesVoiceData:[dict__System_String_Torappu_FestivalVoiceData];
+	fesVoiceWeight:[dict__System_String_Torappu_FestivalVoiceWeightData];
+	extraVoiceConfigData:[dict__System_String_Torappu_ExtraVoiceConfigData];
+}
+
+
+
+root_type Torappu_CharWordTable;

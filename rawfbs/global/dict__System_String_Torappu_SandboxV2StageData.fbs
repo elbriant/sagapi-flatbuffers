@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2StageData.fbs";
+
+table dict__System_String_Torappu_SandboxV2StageData {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2StageData;
+}
+
+
+root_type dict__System_String_Torappu_SandboxV2StageData;

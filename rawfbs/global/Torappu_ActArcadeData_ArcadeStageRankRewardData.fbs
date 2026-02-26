@@ -1,0 +1,11 @@
+include "Torappu_ActArcadeData_Rank.fbs";
+include "Torappu_ActArcadeData_ArcadeStageRankRewardLevelData.fbs";
+
+table Torappu_ActArcadeData_ArcadeStageRankRewardData {
+	stageId:string;
+	maxRewardRank:Torappu_ActArcadeData_Rank;
+	rankRewardLevelDatas:[Torappu_ActArcadeData_ArcadeStageRankRewardLevelData];
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeStageRankRewardData;

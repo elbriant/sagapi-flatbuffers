@@ -1,0 +1,7 @@
+
+table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
+	initialCnt:int32;
+}
+
+
+root_type Torappu_LevelData_PredefinedData_PredefinedTokenCard;

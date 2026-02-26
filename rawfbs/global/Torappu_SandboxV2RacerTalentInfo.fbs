@@ -1,0 +1,11 @@
+include "Torappu_SandboxV2RacerTalentType.fbs";
+
+table Torappu_SandboxV2RacerTalentInfo {
+	talentId:string;
+	talentType:Torappu_SandboxV2RacerTalentType;
+	talentIconId:string;
+	desc:string;
+}
+
+
+root_type Torappu_SandboxV2RacerTalentInfo;

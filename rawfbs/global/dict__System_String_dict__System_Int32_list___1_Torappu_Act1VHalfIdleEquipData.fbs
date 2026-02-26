@@ -1,0 +1,9 @@
+include "dict__System_Int32_list___1_Torappu_Act1VHalfIdleEquipData.fbs";
+
+table dict__System_String_dict__System_Int32_list___1_Torappu_Act1VHalfIdleEquipData {
+	dict_key:string;
+	dict_value:[dict__System_Int32_list___1_Torappu_Act1VHalfIdleEquipData];
+}
+
+
+root_type dict__System_String_dict__System_Int32_list___1_Torappu_Act1VHalfIdleEquipData;

@@ -1,0 +1,15 @@
+include "Torappu_SandboxPermItemType.fbs";
+
+table Torappu_SandboxPermItemData {
+	itemId:string;
+	itemType:Torappu_SandboxPermItemType;
+	itemName:string;
+	itemUsage:string;
+	itemDesc:string;
+	itemRarity:int32;
+	sortId:int32;
+	obtainApproach:string;
+}
+
+
+root_type Torappu_SandboxPermItemData;

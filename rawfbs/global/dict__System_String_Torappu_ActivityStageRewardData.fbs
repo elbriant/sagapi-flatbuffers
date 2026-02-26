@@ -1,0 +1,9 @@
+include "Torappu_ActivityStageRewardData.fbs";
+
+table dict__System_String_Torappu_ActivityStageRewardData {
+	dict_key:string;
+	dict_value:Torappu_ActivityStageRewardData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityStageRewardData;

@@ -1,0 +1,9 @@
+
+table Torappu_Act5D1Data_RuneReleaseData {
+	runeId:string;
+	stageId:string;
+	releaseTime:int64;
+}
+
+
+root_type Torappu_Act5D1Data_RuneReleaseData;

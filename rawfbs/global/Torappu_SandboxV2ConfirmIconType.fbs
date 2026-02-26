@@ -1,0 +1,14 @@
+
+enum Torappu_SandboxV2ConfirmIconType : int32 {
+	COMMON = 0,
+	EMERGENCY = 1,
+	QUIT = 2,
+	EVACUATE = 3,
+	EVACUATELOSS = 4,
+	NORMAL = 5,
+	COMBAT = 6,
+	CONSTRUCT = 7,
+	NEXTDAY = 8,
+	RIFT_EXIT = 9,
+	LOAD_ARCHIVE = 10
+}

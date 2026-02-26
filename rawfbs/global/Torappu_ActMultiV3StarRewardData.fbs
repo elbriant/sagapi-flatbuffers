@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActMultiV3StarRewardData {
+	starNum:int32;
+	rewards:[Torappu_ItemBundle];
+	dailyMissionPoint:int32;
+}
+
+
+root_type Torappu_ActMultiV3StarRewardData;

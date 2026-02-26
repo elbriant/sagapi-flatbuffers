@@ -1,0 +1,11 @@
+include "Torappu_MedalGroupData.fbs";
+
+table Torappu_MedalTypeData {
+	medalGroupId:string;
+	sortId:int32;
+	medalName:string;
+	groupData:[Torappu_MedalGroupData];
+}
+
+
+root_type Torappu_MedalTypeData;

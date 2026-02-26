@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeTopicMonthSquad.fbs";
+
+table dict__System_String_Torappu_RoguelikeTopicMonthSquad {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeTopicMonthSquad;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeTopicMonthSquad;

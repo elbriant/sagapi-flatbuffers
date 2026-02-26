@@ -1,0 +1,9 @@
+
+table Torappu_EnemyHandbookRaceData {
+	id:string;
+	raceName:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_EnemyHandbookRaceData;

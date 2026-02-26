@@ -1,0 +1,18 @@
+include "Torappu_SandboxV2BaseUpdateCondition.fbs";
+include "dict__System_String_System_Int32.fbs";
+include "Torappu_SandboxV2BaseFunctionPreviewData.fbs";
+
+table Torappu_SandboxV2BaseUpdateData {
+	baseLevelId:string;
+	baseLevel:int32;
+	conditions:[Torappu_SandboxV2BaseUpdateCondition];
+	items:[dict__System_String_System_Int32];
+	previewDatas:[Torappu_SandboxV2BaseFunctionPreviewData];
+	scoreFactor:string;
+	portableRepairCost:int32;
+	entryCount:int32;
+	repairCost:int32;
+}
+
+
+root_type Torappu_SandboxV2BaseUpdateData;

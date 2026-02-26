@@ -1,0 +1,10 @@
+include "Torappu_RarityRank.fbs";
+include "dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData.fbs";
+
+table Torappu_Act1VHalfIdleCharEvolveData {
+	rarity:Torappu_RarityRank;
+	professionEvolveData:[dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData];
+}
+
+
+root_type Torappu_Act1VHalfIdleCharEvolveData;

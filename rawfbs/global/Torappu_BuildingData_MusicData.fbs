@@ -1,0 +1,9 @@
+include "dict__System_String_Torappu_BuildingData_MusicSingleData.fbs";
+
+table Torappu_BuildingData_MusicData {
+	defaultMusic:string;
+	musicDatas:[dict__System_String_Torappu_BuildingData_MusicSingleData];
+}
+
+
+root_type Torappu_BuildingData_MusicData;

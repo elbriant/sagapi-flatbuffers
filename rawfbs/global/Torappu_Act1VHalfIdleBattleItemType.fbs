@@ -1,0 +1,5 @@
+
+enum Torappu_Act1VHalfIdleBattleItemType : int32 {
+	EQUIP = 0,
+	TRAP = 1
+}

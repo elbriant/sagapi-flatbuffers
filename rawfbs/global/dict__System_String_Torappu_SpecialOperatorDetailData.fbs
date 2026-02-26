@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorDetailData.fbs";
+
+table dict__System_String_Torappu_SpecialOperatorDetailData {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorDetailData;
+}
+
+
+root_type dict__System_String_Torappu_SpecialOperatorDetailData;

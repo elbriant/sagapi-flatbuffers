@@ -1,0 +1,8 @@
+
+table Torappu_CharSkinData_TokenSkinInfo {
+	tokenId:string;
+	tokenSkinId:string;
+}
+
+
+root_type Torappu_CharSkinData_TokenSkinInfo;

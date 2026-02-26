@@ -1,0 +1,12 @@
+include "Torappu_ActivityBossRushData_BossRushStageType.fbs";
+
+table Torappu_ActivityBossRushData_BossRushStageAdditionData {
+	stageId:string;
+	stageType:Torappu_ActivityBossRushData_BossRushStageType;
+	stageGroupId:string;
+	teamIdList:[string];
+	unlockText:string;
+}
+
+
+root_type Torappu_ActivityBossRushData_BossRushStageAdditionData;

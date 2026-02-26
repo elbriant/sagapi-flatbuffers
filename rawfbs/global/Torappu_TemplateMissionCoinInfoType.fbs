@@ -1,0 +1,5 @@
+
+enum Torappu_TemplateMissionCoinInfoType : int32 {
+	COMMON = 0,
+	CUSTOM = 1
+}

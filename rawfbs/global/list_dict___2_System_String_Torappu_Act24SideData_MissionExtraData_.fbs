@@ -1,0 +1,9 @@
+include "Torappu_Act24SideData_MissionExtraData.fbs";
+
+table list_dict___2_System_String_Torappu_Act24SideData_MissionExtraData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_MissionExtraData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_Act24SideData_MissionExtraData_;

@@ -1,0 +1,8 @@
+
+table Torappu_GachaData_LimitTenGachaTkt {
+	itemId:string;
+	endTime:int64;
+}
+
+
+root_type Torappu_GachaData_LimitTenGachaTkt;

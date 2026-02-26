@@ -1,0 +1,7 @@
+
+enum Torappu_PlayerStageState : int32 {
+	UNLOCKED = 0,
+	PLAYED = 1,
+	PASS = 2,
+	COMPLETE = 3
+}

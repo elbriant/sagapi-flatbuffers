@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdleGachaCharData {
+	charId:string;
+	isLinkageChar:bool;
+}
+
+
+root_type Torappu_Act1VHalfIdleGachaCharData;

@@ -1,0 +1,9 @@
+include "Torappu_CharacterData_UnlockCondition.fbs";
+
+table Torappu_BuildingData_BuildingBuffCharSlot_SlotItem {
+	buffId:string;
+	cond:Torappu_CharacterData_UnlockCondition;
+}
+
+
+root_type Torappu_BuildingData_BuildingBuffCharSlot_SlotItem;

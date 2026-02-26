@@ -1,0 +1,10 @@
+include "Torappu_HandBookStoryViewData_StoryText.fbs";
+
+table Torappu_HandBookStoryViewData {
+	stories:[Torappu_HandBookStoryViewData_StoryText];
+	storyTitle:string;
+	unLockorNot:bool;
+}
+
+
+root_type Torappu_HandBookStoryViewData;

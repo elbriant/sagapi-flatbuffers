@@ -1,0 +1,11 @@
+
+table Torappu_ActArchiveResData_NewsFormatData {
+	typeId:string;
+	typeName:string;
+	typeLogo:string;
+	typeMainLogo:string;
+	typeMainSealing:string;
+}
+
+
+root_type Torappu_ActArchiveResData_NewsFormatData;

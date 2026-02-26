@@ -1,0 +1,9 @@
+include "Torappu_NameCardV2RemovableModuleData.fbs";
+
+table dict__System_String_Torappu_NameCardV2RemovableModuleData {
+	dict_key:string;
+	dict_value:Torappu_NameCardV2RemovableModuleData;
+}
+
+
+root_type dict__System_String_Torappu_NameCardV2RemovableModuleData;

@@ -1,0 +1,8 @@
+
+table UnityEngine_Vector2 {
+	x:float;
+	y:float;
+}
+
+
+root_type UnityEngine_Vector2;

@@ -1,0 +1,11 @@
+include "Torappu_SpType.fbs";
+
+table Torappu_LevelData_EnemyData_ESpData {
+	spType:Torappu_SpType;
+	maxSp:int32;
+	initSp:int32;
+	increment:float;
+}
+
+
+root_type Torappu_LevelData_EnemyData_ESpData;

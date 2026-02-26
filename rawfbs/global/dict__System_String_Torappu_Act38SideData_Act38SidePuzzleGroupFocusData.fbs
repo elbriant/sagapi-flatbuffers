@@ -1,0 +1,9 @@
+include "Torappu_Act38SideData_Act38SidePuzzleGroupFocusData.fbs";
+
+table dict__System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData {
+	dict_key:string;
+	dict_value:Torappu_Act38SideData_Act38SidePuzzleGroupFocusData;
+}
+
+
+root_type dict__System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData;

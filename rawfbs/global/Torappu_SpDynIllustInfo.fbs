@@ -1,0 +1,10 @@
+
+table Torappu_SpDynIllustInfo {
+	skinId:string;
+	spDynIllustId:string;
+	spDynIllustSkinTag:string;
+	spIllustId:string;
+}
+
+
+root_type Torappu_SpDynIllustInfo;

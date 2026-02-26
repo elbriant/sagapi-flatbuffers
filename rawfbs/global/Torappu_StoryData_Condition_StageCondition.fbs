@@ -1,0 +1,10 @@
+include "Torappu_PlayerStageState.fbs";
+
+table Torappu_StoryData_Condition_StageCondition {
+	stageId:string;
+	minState:Torappu_PlayerStageState;
+	maxState:Torappu_PlayerStageState;
+}
+
+
+root_type Torappu_StoryData_Condition_StageCondition;

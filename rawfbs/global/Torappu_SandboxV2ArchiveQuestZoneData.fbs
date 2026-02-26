@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2ArchiveQuestZoneData {
+	zoneId:string;
+	zoneName:string;
+	zoneBgPicId:string;
+	zoneNameIdEn:string;
+}
+
+
+root_type Torappu_SandboxV2ArchiveQuestZoneData;

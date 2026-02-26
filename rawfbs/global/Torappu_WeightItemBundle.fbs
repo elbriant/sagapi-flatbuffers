@@ -1,0 +1,13 @@
+include "Torappu_ItemType.fbs";
+include "Torappu_StageDropType.fbs";
+
+table Torappu_WeightItemBundle {
+	id:string;
+	type:Torappu_ItemType;
+	dropType:Torappu_StageDropType;
+	count:int32;
+	weight:int32;
+}
+
+
+root_type Torappu_WeightItemBundle;

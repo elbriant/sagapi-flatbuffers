@@ -1,0 +1,16 @@
+include "Torappu_EnemyHandbookLevelInfoData_RangePair.fbs";
+
+table Torappu_EnemyHandbookLevelInfoData {
+	classLevel:string;
+	attack:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	def:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	magicRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	maxHP:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	moveSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	attackSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	enemyDamageRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	enemyRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+}
+
+
+root_type Torappu_EnemyHandbookLevelInfoData;

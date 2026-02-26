@@ -1,0 +1,11 @@
+
+table Torappu_ActivityInterlockData_TreasureMonsterData {
+	lockStageKey:string;
+	enemyId:string;
+	enemyName:string;
+	enemyIcon:string;
+	enemyDescription:string;
+}
+
+
+root_type Torappu_ActivityInterlockData_TreasureMonsterData;

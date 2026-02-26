@@ -1,0 +1,9 @@
+include "Torappu_AutoChessMiscConfig.fbs";
+
+table dict__System_String_Torappu_AutoChessMiscConfig {
+	dict_key:string;
+	dict_value:Torappu_AutoChessMiscConfig;
+}
+
+
+root_type dict__System_String_Torappu_AutoChessMiscConfig;

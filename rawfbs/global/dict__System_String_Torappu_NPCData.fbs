@@ -1,0 +1,9 @@
+include "Torappu_NPCData.fbs";
+
+table dict__System_String_Torappu_NPCData {
+	dict_key:string;
+	dict_value:Torappu_NPCData;
+}
+
+
+root_type dict__System_String_Torappu_NPCData;

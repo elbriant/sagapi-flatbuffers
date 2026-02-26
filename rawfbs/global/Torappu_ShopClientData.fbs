@@ -1,0 +1,29 @@
+include "Torappu_ShopRecommendItem.fbs";
+include "dict__System_String_Torappu_ShopCreditUnlockGroup.fbs";
+include "Torappu_ShopClientData_ShopKeeperData.fbs";
+include "Torappu_ShopCarouselData.fbs";
+include "Torappu_ChooseShopRelation.fbs";
+include "dict__System_String_Torappu_ShopUnlockType.fbs";
+include "dict__System_String_Torappu_ShopClientGPData.fbs";
+include "dict__System_String_Torappu_ShopGPTabDisplayData.fbs";
+include "Torappu_LMTGSShopSchedule.fbs";
+include "Torappu_LMTGSShopOverlaySchedule.fbs";
+
+table Torappu_ShopClientData {
+	recommendList:[Torappu_ShopRecommendItem];
+	creditUnlockGroup:[dict__System_String_Torappu_ShopCreditUnlockGroup];
+	shopKeeperData:Torappu_ShopClientData_ShopKeeperData;
+	carousels:[Torappu_ShopCarouselData];
+	chooseShopRelations:[Torappu_ChooseShopRelation];
+	shopUnlockDict:[dict__System_String_Torappu_ShopUnlockType];
+	extraQCShopRule:[string];
+	repQCShopRule:[string];
+	shopGPDataDict:[dict__System_String_Torappu_ShopClientGPData];
+	tabDisplayData:[dict__System_String_Torappu_ShopGPTabDisplayData];
+	shopMonthlySubGoodId:string;
+	limitedShopSchedule:[Torappu_LMTGSShopSchedule];
+	overlaySchedule:[Torappu_LMTGSShopOverlaySchedule];
+}
+
+
+root_type Torappu_ShopClientData;

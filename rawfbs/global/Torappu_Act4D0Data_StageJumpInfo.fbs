@@ -1,0 +1,11 @@
+
+table Torappu_Act4D0Data_StageJumpInfo {
+	stageKey:string;
+	zoneId:string;
+	stageId:string;
+	unlockDesc:string;
+	lockDesc:string;
+}
+
+
+root_type Torappu_Act4D0Data_StageJumpInfo;

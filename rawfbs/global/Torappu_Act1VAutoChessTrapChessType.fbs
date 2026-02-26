@@ -1,0 +1,6 @@
+
+enum Torappu_Act1VAutoChessTrapChessType : int32 {
+	NONE = 0,
+	EQUIP = 1,
+	MAGIC = 2
+}

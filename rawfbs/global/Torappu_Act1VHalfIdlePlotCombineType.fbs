@@ -1,0 +1,7 @@
+
+enum Torappu_Act1VHalfIdlePlotCombineType : int32 {
+	NONE = 0,
+	SINGLE = 1,
+	PLUS = 2,
+	PLUS_OR = 3
+}

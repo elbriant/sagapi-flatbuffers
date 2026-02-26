@@ -1,0 +1,42 @@
+
+table Torappu_SandboxV2RacingConstData {
+	attributeNameList:[string];
+	racerMaxValue:[int32];
+	bagFullHintPercent:float;
+	tempBagFullHintPercent:float;
+	bagName:string;
+	tempBagName:string;
+	bagEmptyLeftDesc:string;
+	bagEmptyRightDesc:string;
+	tempBagEmptyLeftDesc:string;
+	tempBagEmptyRightDesc:string;
+	bornTalentIconId:string;
+	bornTalentTitle:string;
+	learnedTalentIconId:string;
+	learnedTalentTitle:string;
+	talentEmptyDesc:string;
+	slugItemId:string;
+	racingHpFactor:float;
+	racingSpeedFactor:float;
+	racingAccelerationFactor:float;
+	recoverMoveSpeed:float;
+	recoverHpFactor:float;
+	bleedingFactor:float;
+	maxSteeringFactor:float;
+	steeringMassLevelFactor:float;
+	steeringMoveSpeedFactor:float;
+	safeAngleCos:float;
+	safeCollisionForceLevel:float;
+	tileCollisionFactor:float;
+	collisionForceSector:[float];
+	collisionForceLevel:[float];
+	collisionSpeedLoss:[float];
+	collisionHpLoss:[float];
+	tileCollisionSpeedLoss:[float];
+	tileCollisionHpLoss:[float];
+	autoUseItemTimeRange:[float];
+	recoverAcceleration:float;
+}
+
+
+root_type Torappu_SandboxV2RacingConstData;

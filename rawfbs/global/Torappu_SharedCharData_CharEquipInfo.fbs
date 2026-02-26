@@ -1,0 +1,8 @@
+
+table Torappu_SharedCharData_CharEquipInfo {
+	locked:bool;
+	level:int32;
+}
+
+
+root_type Torappu_SharedCharData_CharEquipInfo;

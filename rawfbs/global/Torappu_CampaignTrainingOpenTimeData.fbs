@@ -1,0 +1,10 @@
+
+table Torappu_CampaignTrainingOpenTimeData {
+	groupId:string;
+	stages:[string];
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_CampaignTrainingOpenTimeData;

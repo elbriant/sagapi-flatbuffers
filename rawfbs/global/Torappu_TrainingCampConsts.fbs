@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_TrainingCampConsts {
+	unlockStageId:string;
+	updateDesc:string;
+	rewardItem:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_TrainingCampConsts;

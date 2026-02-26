@@ -1,0 +1,10 @@
+
+enum Torappu_ShopGPTabType : int32 {
+	DEFAULT_ALL = 0,
+	MONTH_CARD = 1,
+	PERM = 2,
+	NEWBIE = 3,
+	RETURN = 4,
+	RECOMMOND = 5,
+	TIMELY = 6
+}

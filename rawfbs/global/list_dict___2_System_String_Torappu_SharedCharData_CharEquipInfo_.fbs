@@ -1,0 +1,9 @@
+include "Torappu_SharedCharData_CharEquipInfo.fbs";
+
+table list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_ {
+	dict_key:string;
+	dict_value:Torappu_SharedCharData_CharEquipInfo;
+}
+
+
+root_type list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_;

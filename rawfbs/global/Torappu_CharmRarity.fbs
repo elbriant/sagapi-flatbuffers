@@ -1,0 +1,7 @@
+
+enum Torappu_CharmRarity : int32 {
+	NONE = 0,
+	LOW = 1,
+	MEDIUM = 2,
+	HIGH = 3
+}

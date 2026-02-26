@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveResData_PicArchiveResItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveResData_PicArchiveResItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveResData_PicArchiveResItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveResData_PicArchiveResItemData;

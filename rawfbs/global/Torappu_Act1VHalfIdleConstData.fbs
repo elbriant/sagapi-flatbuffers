@@ -1,0 +1,58 @@
+include "Torappu_Act1VHalfIdleEnemyPreloadMeta.fbs";
+include "Torappu_Act1VHalfIdleConstData_ProfessionDesc.fbs";
+include "list_dict___2_System_String_System_Int32_.fbs";
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_Act1VHalfIdleConstData {
+	incomeProductionItems:[string];
+	milestoneId:string;
+	discount:[int32];
+	skillLevels:[int32];
+	levelExpItemId:string;
+	skillExpItemId:string;
+	normalStageIds:[string];
+	hardStageIds:[string];
+	techCostItemId:string;
+	assistBaseNum:int32;
+	preloadEnemy:[Torappu_Act1VHalfIdleEnemyPreloadMeta];
+	preloadTrap:[string];
+	defaultMaxDiscountSkillLevel:int32;
+	npcMaxDiscountSkillLevel:int32;
+	forbiddenAssistCharIds:[string];
+	maxEvolvePhase:int32;
+	maxSafeEnemyDuration:int32;
+	overloadLoseLifePoint:int32;
+	trapModifyBossTriggerTime:int32;
+	normalEnemyOverloadCnt:int32;
+	eliteEnemyOverloadCnt:int32;
+	bossEnemyOverloadCnt:int32;
+	maxEquipNumInBag:int32;
+	bossBranchName:string;
+	bossPreviewBranchName:string;
+	enemyCapacityIdWhiteList:[string];
+	unlockStageId:string;
+	professionDesc:[Torappu_Act1VHalfIdleConstData_ProfessionDesc];
+	productMaxEfficiencyDict:[list_dict___2_System_String_System_Int32_];
+	efficiencyDurationMax:int32;
+	produceCd:int32;
+	harvestHintThresholdTime:int32;
+	constRuneDatas:[Torappu_RuneTable_PackedRuneData];
+	milestoneTrackId:string;
+	maxDeckCardNum:int32;
+	tutorialStageId:string;
+	predefinedPlotIds:[string];
+	predefinedCharIds:[string];
+	enemyOverloadWarningRatio:float;
+	battleFinishWarningTime:int32;
+	gachaNumMax:int32;
+	battleCustomTileHighlightColor:string;
+	battleCustomTileEmissionColor:string;
+	battleEquipLevelColors:[string];
+	battleFailHintStr:[string];
+	trapDropWeightStep:int32;
+	unlockSpecialPlot:[string];
+	bossEnterBgmKey:string;
+}
+
+
+root_type Torappu_Act1VHalfIdleConstData;

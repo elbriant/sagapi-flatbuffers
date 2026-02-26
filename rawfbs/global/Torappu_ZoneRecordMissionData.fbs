@@ -1,0 +1,10 @@
+
+table Torappu_ZoneRecordMissionData {
+	missionId:string;
+	recordStageId:string;
+	templateDesc:string;
+	desc:string;
+}
+
+
+root_type Torappu_ZoneRecordMissionData;

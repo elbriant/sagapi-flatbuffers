@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2EventSceneData {
+	eventSceneId:string;
+	title:string;
+	desc:string;
+	choiceIds:[string];
+}
+
+
+root_type Torappu_SandboxV2EventSceneData;

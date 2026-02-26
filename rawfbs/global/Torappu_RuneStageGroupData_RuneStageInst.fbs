@@ -1,0 +1,8 @@
+
+table Torappu_RuneStageGroupData_RuneStageInst {
+	stageId:string;
+	activePackedRuneIds:[string];
+}
+
+
+root_type Torappu_RuneStageGroupData_RuneStageInst;

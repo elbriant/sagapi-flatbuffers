@@ -1,0 +1,9 @@
+
+table Torappu_HomeThemeLimitInfoData {
+	startTime:int64;
+	endTime:int64;
+	invalidObtainDesc:string;
+}
+
+
+root_type Torappu_HomeThemeLimitInfoData;

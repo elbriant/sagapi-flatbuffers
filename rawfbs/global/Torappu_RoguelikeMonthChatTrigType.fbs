@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeMonthChatTrigType : int32 {
+	NONE = 0,
+	TRANSITING = 1,
+	DUNGEON = 2
+}

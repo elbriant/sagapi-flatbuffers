@@ -1,0 +1,12 @@
+
+enum Torappu_SandboxV2ItemTrapTag : int32 {
+	OUTPUT = 0,
+	COLLECTION = 1,
+	IMPAIR = 2,
+	ENHANCE = 3,
+	EXPLORE = 4,
+	SPECTACLE = 5,
+	DECORATE = 6,
+	DEFEND = 7,
+	SCOUT = 8
+}

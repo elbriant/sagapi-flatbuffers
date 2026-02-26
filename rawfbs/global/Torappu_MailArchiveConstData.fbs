@@ -1,0 +1,7 @@
+
+table Torappu_MailArchiveConstData {
+	funcOpenTs:int64;
+}
+
+
+root_type Torappu_MailArchiveConstData;

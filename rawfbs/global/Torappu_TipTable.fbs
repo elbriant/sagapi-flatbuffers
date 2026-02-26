@@ -1,0 +1,10 @@
+include "Torappu_TipData.fbs";
+include "Torappu_WorldViewTip.fbs";
+
+table Torappu_TipTable {
+	tips:[Torappu_TipData];
+	worldViewTips:[Torappu_WorldViewTip];
+}
+
+
+root_type Torappu_TipTable;

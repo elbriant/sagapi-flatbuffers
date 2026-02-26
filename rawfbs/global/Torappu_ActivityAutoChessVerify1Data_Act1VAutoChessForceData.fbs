@@ -1,0 +1,15 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData {
+	forceId:string;
+	sortId:int32;
+	forceName:string;
+	forceIconId:string;
+	forceDesc:string;
+	leaderEnemyId:string;
+	leaderName:string;
+	modeHpDatas:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData];
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData;

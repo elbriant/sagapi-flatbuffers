@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeSanRangeData.fbs";
+include "Torappu_RoguelikeSanCheckConsts.fbs";
+
+table Torappu_RoguelikeSanCheckModuleData {
+	sanRanges:[Torappu_RoguelikeSanRangeData];
+	moduleConsts:Torappu_RoguelikeSanCheckConsts;
+}
+
+
+root_type Torappu_RoguelikeSanCheckModuleData;

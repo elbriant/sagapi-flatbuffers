@@ -1,0 +1,8 @@
+
+enum Torappu_EmojiSceneType : int32 {
+	NONE = 0,
+	ACTMULTIV3_ROOM = 1,
+	ACTMULTIV3_PICK = 2,
+	ACTMULTIV3_BATTLE = 3,
+	ENEMYDUEL_BATTLE = 4
+}

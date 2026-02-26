@@ -1,0 +1,12 @@
+include "dict__System_String_Torappu_TrainingCampStageData.fbs";
+include "Torappu_NewTrainingCampStageData.fbs";
+include "Torappu_TrainingCampConsts.fbs";
+
+table Torappu_TrainingCampData {
+	stageData:[dict__System_String_Torappu_TrainingCampStageData];
+	newTrainingCampStages:[Torappu_NewTrainingCampStageData];
+	consts:Torappu_TrainingCampConsts;
+}
+
+
+root_type Torappu_TrainingCampData;

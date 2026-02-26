@@ -1,0 +1,12 @@
+include "Torappu_Act35SideData_Act35sideCardMaterialData.fbs";
+
+table Torappu_Act35SideData_Act35SideCardLevelData {
+	cardLevel:int32;
+	cardName:string;
+	cardDesc:string;
+	inputMaterialList:[Torappu_Act35SideData_Act35sideCardMaterialData];
+	outputMaterialList:[Torappu_Act35SideData_Act35sideCardMaterialData];
+}
+
+
+root_type Torappu_Act35SideData_Act35SideCardLevelData;

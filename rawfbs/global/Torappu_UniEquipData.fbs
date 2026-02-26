@@ -1,0 +1,36 @@
+include "Torappu_EvolvePhase.fbs";
+include "dict__System_String_System_Int32.fbs";
+include "dict__System_Int32_list___1_Torappu_ItemBundle.fbs";
+include "Torappu_UniEquipType.fbs";
+
+table Torappu_UniEquipData {
+	uniEquipId:string;
+	uniEquipName:string;
+	uniEquipIcon:string;
+	uniEquipDesc:string;
+	typeIcon:string;
+	typeName1:string;
+	typeName2:string;
+	equipShiningColor:string;
+	showEvolvePhase:Torappu_EvolvePhase;
+	unlockEvolvePhase:Torappu_EvolvePhase;
+	charId:string;
+	tmplId:string;
+	showLevel:int32;
+	unlockLevel:int32;
+	missionList:[string];
+	unlockFavors:[dict__System_String_System_Int32];
+	itemCost:[dict__System_Int32_list___1_Torappu_ItemBundle];
+	type:Torappu_UniEquipType;
+	uniEquipGetTime:int64;
+	uniEquipShowEnd:int64;
+	charEquipOrder:int32;
+	hasUnlockMission:bool;
+	isSpecialEquip:bool;
+	specialEquipDesc:string;
+	specialEquipColor:string;
+	charColor:string;
+}
+
+
+root_type Torappu_UniEquipData;

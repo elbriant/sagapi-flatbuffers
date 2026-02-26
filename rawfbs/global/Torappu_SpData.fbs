@@ -1,0 +1,16 @@
+include "Torappu_SpType.fbs";
+include "Torappu_ItemBundle.fbs";
+include "CodeStage_AntiCheat_ObscuredTypes_ObscuredInt.fbs";
+include "CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat.fbs";
+
+table Torappu_SpData {
+	spType:Torappu_SpType;
+	levelUpCost:[Torappu_ItemBundle];
+	maxChargeTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	spCost:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	initSp:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	increment:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+}
+
+
+root_type Torappu_SpData;

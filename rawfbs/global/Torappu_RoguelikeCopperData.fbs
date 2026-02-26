@@ -1,0 +1,17 @@
+include "Torappu_RoguelikeCopperLuckyLevel.fbs";
+include "Torappu_RoguelikeCopperBuffType.fbs";
+
+table Torappu_RoguelikeCopperData {
+	id:string;
+	groupId:string;
+	gildTypeId:string;
+	luckyLevel:Torappu_RoguelikeCopperLuckyLevel;
+	buffType:Torappu_RoguelikeCopperBuffType;
+	layerCntDesc:string;
+	poemList:[string];
+	alwaysShowCountDown:bool;
+	buffItemIdList:[string];
+}
+
+
+root_type Torappu_RoguelikeCopperData;

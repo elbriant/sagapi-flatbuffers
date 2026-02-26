@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveMusicItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveMusicItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveMusicItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveMusicItemData;

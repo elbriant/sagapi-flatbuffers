@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2EventChoiceType : int32 {
+	NONE = 0,
+	NEXT = 1,
+	LEAVE = 2,
+	MISSION = 3
+}

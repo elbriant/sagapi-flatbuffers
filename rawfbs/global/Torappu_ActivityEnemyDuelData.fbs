@@ -1,0 +1,34 @@
+include "Torappu_ActivityEnemyDuelMilestoneItemData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelModeData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelRoundData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelPoolData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelNpcData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelNpcSelectorGroupData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelEnemyData.fbs";
+include "dict__System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData.fbs";
+include "Torappu_ActivityEnemyDuelAnnounceData.fbs";
+include "dict__System_String_list_dict___2_System_String_Torappu_ActivityEnemyDuelSingleCommentData.fbs";
+include "Torappu_ActivityEnemyDuelConstData.fbs";
+include "Torappu_ActivityEnemyDuelConstToastData.fbs";
+include "Torappu_ActivityEnemyDuelTipsData.fbs";
+
+table Torappu_ActivityEnemyDuelData {
+	milestoneList:[Torappu_ActivityEnemyDuelMilestoneItemData];
+	modeData:[dict__System_String_Torappu_ActivityEnemyDuelModeData];
+	roundData:[dict__System_String_Torappu_ActivityEnemyDuelRoundData];
+	poolData:[dict__System_String_Torappu_ActivityEnemyDuelPoolData];
+	npcData:[dict__System_String_Torappu_ActivityEnemyDuelNpcData];
+	npcSelectorData:[dict__System_String_Torappu_ActivityEnemyDuelNpcSelectorGroupData];
+	enemyData:[dict__System_String_Torappu_ActivityEnemyDuelEnemyData];
+	extraScoreData:[dict__System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData];
+	basicScores:[int32];
+	announceData:[Torappu_ActivityEnemyDuelAnnounceData];
+	commentData:[dict__System_String_list_dict___2_System_String_Torappu_ActivityEnemyDuelSingleCommentData];
+	constData:Torappu_ActivityEnemyDuelConstData;
+	constToastData:Torappu_ActivityEnemyDuelConstToastData;
+	tipsData:[Torappu_ActivityEnemyDuelTipsData];
+	enabledEmoticonThemeIdList:[string];
+}
+
+
+root_type Torappu_ActivityEnemyDuelData;

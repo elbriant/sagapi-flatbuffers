@@ -1,0 +1,40 @@
+
+table Torappu_Act4funConst {
+	liveMatAmtLowerLimit:int32;
+	liveTurnUpperLimit:int32;
+	superChatCountDownNum:int32;
+	badEndingPerformEffectTitle:string;
+	performEffectTitle:string;
+	defaultPerformPicId:string;
+	defaultTxtBackground:string;
+	openingPerformGroup:string;
+	forgetPerformGroup:string;
+	runPerformGroup:string;
+	liveMatDefaultUserIcon:string;
+	liveMatAttributeIcon:string;
+	liveMatAttribIconDiffNum:int32;
+	liveValueAbsLimit:int32;
+	cmtAppearTimeLowerLimit:float;
+	cmtAppearTimeUpperLimit:float;
+	subtitleIntervalTime:float;
+	mainPageEventDes:string;
+	spStageEndingTip:string;
+	noLiveEndingTip:string;
+	notEnoughEndingTip:string;
+	enoughEndingTip:string;
+	mainPagePersonal:string;
+	mainPageJobDes:string;
+	endingPageConfirmTxt:string;
+	runConfirmTxt:string;
+	mainPageDiamondMissionId:string;
+	reconnectConfirmTxt:string;
+	studyStageId:string;
+	goodEndingToastTxt:string;
+	tokenLevelUpToastTxt:string;
+	studyStageToastTxt:string;
+	matNotEnoughToastTxt:string;
+	formalLevelUnlockToastTxt:string;
+}
+
+
+root_type Torappu_Act4funConst;

@@ -1,0 +1,9 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_SpecialOperatorDetailEvolveNodeData {
+	nodeId:string;
+	toEvolvePhase:Torappu_EvolvePhase;
+}
+
+
+root_type Torappu_SpecialOperatorDetailEvolveNodeData;

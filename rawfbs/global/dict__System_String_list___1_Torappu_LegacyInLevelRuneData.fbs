@@ -1,0 +1,9 @@
+include "Torappu_LegacyInLevelRuneData.fbs";
+
+table dict__System_String_list___1_Torappu_LegacyInLevelRuneData {
+	dict_key:string;
+	dict_value:[Torappu_LegacyInLevelRuneData];
+}
+
+
+root_type dict__System_String_list___1_Torappu_LegacyInLevelRuneData;

@@ -1,0 +1,12 @@
+include "dict__System_String_Torappu_SandboxPermBasicData.fbs";
+include "Torappu_SandboxPermDetailData.fbs";
+include "dict__System_String_Torappu_SandboxPermItemData.fbs";
+
+table Torappu_SandboxPermTable {
+	basicInfo:[dict__System_String_Torappu_SandboxPermBasicData];
+	detail:Torappu_SandboxPermDetailData;
+	itemData:[dict__System_String_Torappu_SandboxPermItemData];
+}
+
+
+root_type Torappu_SandboxPermTable;

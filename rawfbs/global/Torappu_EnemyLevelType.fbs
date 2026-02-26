@@ -1,0 +1,7 @@
+
+enum Torappu_EnemyLevelType : int32 {
+	NORMAL = 0,
+	ELITE = 1,
+	BOSS = 2,
+	E_NUM = 3
+}

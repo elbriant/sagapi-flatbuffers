@@ -1,0 +1,9 @@
+include "dict__System_Int32_System_Int32.fbs";
+
+table Torappu_BasedRecruitPool_RecruitConstants {
+	tagPriceList:[dict__System_Int32_System_Int32];
+	maxRecruitTime:int32;
+}
+
+
+root_type Torappu_BasedRecruitPool_RecruitConstants;

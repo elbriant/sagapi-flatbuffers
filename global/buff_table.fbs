@@ -1,0 +1,201 @@
+
+enum Torappu_AbnormalFlag : int32 {
+	STUNNED = 0,
+	SP_RECOVER_STOPPED = 1,
+	TARGET_FREE = 2,
+	BLOCK_FREE = 3,
+	HIDDEN = 4,
+	INVINCIBLE = 5,
+	UNDEADABLE = 6,
+	HEAL_FREE = 7,
+	UNBALANCE_IMMUNE = 8,
+	INVISIBLE = 9,
+	UNUSED_PLACEHOLDER_2 = 14,
+	ALLY_TARGET_FREE = 15,
+	UNUSED_PLACEHOLDER_1 = 10,
+	DISARMED = 11,
+	SILENCED = 12,
+	UNMOVABLE = 13,
+	FROZEN = 16,
+	CAMOUFLAGE = 17,
+	FORCE_DISARMED = 18,
+	STUNNED_NO_AMPLIFY_DAMAGE = 19,
+	DISABLE_COMBAT = 20,
+	ELEMENT_FREE_ALL = 21,
+	UNMOVABLE_PRIVATE = 22,
+	COLD = 23,
+	SKILL_NOT_ACTIVATABLE = 24,
+	LEVITATE = 25,
+	DURANCE = 26,
+	NOT_WITHDRAWABLE = 27,
+	OUT_OF_GROUND = 28,
+	SP_MODIFY_STOPPED = 29,
+	ANTI_STATUS_RESISTABLE = 30,
+	DISARMED_COMBAT = 31,
+	TOWER_TARGET_FREE = 32,
+	FEARED = 33,
+	SKILL_ACTIVABLE_IN_ABNORMAL = 34,
+	MOTION_TARGET_FREE = 35,
+	FORCE_LEVITATE = 36,
+	BUFF_ADD_CAN_BE_CANCELED_IF_DEFENSE = 37,
+	DEFENSE_BUFF_ADD_IF_CANCELABLE_BUFF = 38,
+	PALSY = 39,
+	PALSYING = 40,
+	ATTRACTED = 41,
+	E_NUM = 42
+}
+
+enum Torappu_AbnormalCombo : int32 {
+	SLEEPING = 0,
+	SHELTERING = 1,
+	E_NUM = 2
+}
+
+enum Torappu_AttributeType : int32 {
+	MAX_HP = 0,
+	ATK = 1,
+	DEF = 2,
+	MAGIC_RESISTANCE = 3,
+	COST = 4,
+	BLOCK_CNT = 5,
+	MOVE_SPEED = 6,
+	ATTACK_SPEED = 7,
+	BASE_ATTACK_TIME = 8,
+	RESERVED_0 = 9,
+	RESERVED_1 = 10,
+	RESERVED_2 = 11,
+	RESERVED_3 = 12,
+	HP_RECOVERY_PER_SEC = 13,
+	SP_RECOVERY_PER_SEC = 14,
+	ABILITY_RANGE_FORWARD_EXTEND = 15,
+	MAX_DEPLOY_COUNT = 16,
+	DEF_PENETRATE = 17,
+	MAGIC_RESIST_PENETRATE = 18,
+	HP_RECOVERY_PER_SEC_BY_MAX_HP_RATIO = 19,
+	TAUNT_LEVEL = 20,
+	RESPAWN_TIME = 21,
+	MAX_DECK_STACK_CNT = 22,
+	MASS_LEVEL = 23,
+	BASE_FORCE_LEVEL = 24,
+	DEF_PENETRATE_FIXED = 25,
+	ONE_MINUS_STATUS_RESISTANCE = 26,
+	MAGIC_RESIST_PENETRATE_FIXED = 27,
+	MAX_EP = 28,
+	EP_RECOVERY_PER_SEC = 29,
+	SP_RECOVER_RATIO = 30,
+	EP_DAMAGE_RESISTANCE = 31,
+	EP_RESISTANCE = 32,
+	DAMAGE_HITRATE_PHYSICAL = 33,
+	DAMAGE_HITRATE_MAGICAL = 34,
+	EP_BREAK_RECOVER_SPEED = 35,
+	E_NUM = 36
+}
+
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int32 {
+	ADDITION = 0,
+	MULTIPLIER = 1,
+	FINAL_ADDITION = 2,
+	FINAL_SCALER = 3
+}
+
+table Torappu_AttributeModifierData_AttributeModifier {
+	attributeType:Torappu_AttributeType;
+	formulaItem:Torappu_AttributeModifierData_AttributeModifier_FormulaItemType;
+	value:float;
+	loadFromBlackboard:bool;
+	fetchBaseValueFromSourceEntity:bool;
+}
+
+
+
+table Torappu_AttributeModifierData {
+	abnormalFlags:[Torappu_AbnormalFlag];
+	abnormalImmunes:[Torappu_AbnormalFlag];
+	abnormalAntis:[Torappu_AbnormalFlag];
+	abnormalCombos:[Torappu_AbnormalCombo];
+	abnormalComboImmunes:[Torappu_AbnormalCombo];
+	attributeModifiers:[Torappu_AttributeModifierData_AttributeModifier];
+}
+
+
+
+enum Torappu_BuffData_StatusResistable : uint8 {
+	NO = 0,
+	YES = 1,
+	AUTOMATIC = 2
+}
+
+enum Torappu_BuffData_OverrideType : int32 {
+	DEFAULT = 0,
+	STACK = 1,
+	UNIQUE = 2,
+	EXTEND = 3,
+	EXTEND_TIME = 4
+}
+
+enum Torappu_BuffData_OnEventPriority : int32 {
+	HIGHER_PRIORITY = 2000,
+	HIGH_PRIORITY = 1000,
+	DEFAULT = 0,
+	LOW_PRIORITY = -1000,
+	LOWER_PRIORITY = -2000,
+	LOWEST_PRIORITY = -3000
+}
+
+enum Torappu_LifeType : uint8 {
+	IMMEDIATELY = 0,
+	LIMITED = 1,
+	INFINITY = 2,
+	CUSTOM = 3
+}
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
+table Torappu_BuffData {
+	attributes:Torappu_AttributeModifierData;
+	buffKey:string;
+	loadFromDB:bool;
+	isDurableBuff:bool;
+	isDamageMissable:bool;
+	isSilenceable:bool;
+	isStunnable:bool;
+	isFreezable:bool;
+	isLevitatable:bool;
+	statusResistable:Torappu_BuffData_StatusResistable;
+	templateKey:string;
+	disableOverride:bool;
+	overrideKey:string;
+	overrideType:Torappu_BuffData_OverrideType;
+	maxStackCnt:int32;
+	refreshRemainingTimeWhenStackMax:bool;
+	clearAllStackCntWhenTimeUp:bool;
+	maxValidStackCnt:int32;
+	independentCharacterSource:bool;
+	overrideEffectKey:string;
+	overrideOnEventPriority:bool;
+	onEventPriority:Torappu_BuffData_OnEventPriority;
+	audioSignal:string;
+	lifeTimeType:Torappu_LifeType;
+	takeSnapshotWhenExtend:bool;
+	durationKey:string;
+	lifeTime:float;
+	triggerLifeType:Torappu_LifeType;
+	triggerCnt:int32;
+	triggerInterval:float;
+	waitFirstTriggerInterval:bool;
+	firstTriggerInterval:float;
+	priority:int32;
+	priorityBBKeys:[string];
+	stripBlackboardParamsWithBuffKey:bool;
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+
+root_type Torappu_BuffData;

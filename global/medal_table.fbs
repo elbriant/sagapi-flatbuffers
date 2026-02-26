@@ -1,0 +1,30 @@
+
+enum Torappu_MedalExpireType : int32 {
+	NONE = 0,
+	INIT = 1,
+	TEMP = 2,
+	PERM = 3
+}
+
+table Torappu_MedalExpireTime {
+	start:int64;
+	end:int64;
+	type:Torappu_MedalExpireType;
+}
+
+
+
+table Torappu_MedalGroupData {
+	groupId:string;
+	groupName:string;
+	groupDesc:string;
+	medalId:[string];
+	sortId:int32;
+	groupBackColor:string;
+	groupGetTime:int64;
+	sharedExpireTimes:[Torappu_MedalExpireTime];
+}
+
+
+
+root_type Torappu_MedalGroupData;

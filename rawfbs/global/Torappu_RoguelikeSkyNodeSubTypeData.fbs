@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeSkyZoneNodeType.fbs";
+
+table Torappu_RoguelikeSkyNodeSubTypeData {
+	evtType:Torappu_RoguelikeSkyZoneNodeType;
+	subTypeId:int32;
+	desc:string;
+}
+
+
+root_type Torappu_RoguelikeSkyNodeSubTypeData;

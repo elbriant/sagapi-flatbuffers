@@ -1,0 +1,7 @@
+
+table Torappu_CrossAppShareMissionConst {
+	nameCardShareMissionId:string;
+}
+
+
+root_type Torappu_CrossAppShareMissionConst;

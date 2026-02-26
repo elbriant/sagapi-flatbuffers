@@ -1,0 +1,6 @@
+
+enum Torappu_StorylineStorySetType : int32 {
+	MAINLINE = 0,
+	SS = 1,
+	COLLECT = 2
+}

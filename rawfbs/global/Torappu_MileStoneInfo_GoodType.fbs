@@ -1,0 +1,5 @@
+
+enum Torappu_MileStoneInfo_GoodType : int32 {
+	NORMAL = 0,
+	SPECIAL = 1
+}

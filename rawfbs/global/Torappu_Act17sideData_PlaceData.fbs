@@ -1,0 +1,12 @@
+
+table Torappu_Act17sideData_PlaceData {
+	placeId:string;
+	placeDesc:string;
+	lockEventId:string;
+	zoneId:string;
+	visibleCondType:string;
+	visibleParams:[string];
+}
+
+
+root_type Torappu_Act17sideData_PlaceData;

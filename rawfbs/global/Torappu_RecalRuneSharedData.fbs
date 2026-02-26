@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_RecalRuneSeasonData.fbs";
+include "Torappu_RecalRuneConstData.fbs";
+
+table Torappu_RecalRuneSharedData {
+	seasons:[dict__System_String_Torappu_RecalRuneSeasonData];
+	constData:Torappu_RecalRuneConstData;
+}
+
+
+root_type Torappu_RecalRuneSharedData;

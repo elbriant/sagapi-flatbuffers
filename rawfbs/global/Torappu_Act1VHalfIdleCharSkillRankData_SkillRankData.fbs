@@ -1,0 +1,9 @@
+
+table Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData {
+	skillLevel:int32;
+	cost:int32;
+	accumulatedCost:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData;

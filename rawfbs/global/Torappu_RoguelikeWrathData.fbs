@@ -1,0 +1,13 @@
+
+table Torappu_RoguelikeWrathData {
+	id:string;
+	group:string;
+	level:int32;
+	name:string;
+	levelName:string;
+	functionDesc:string;
+	desc:string;
+}
+
+
+root_type Torappu_RoguelikeWrathData;

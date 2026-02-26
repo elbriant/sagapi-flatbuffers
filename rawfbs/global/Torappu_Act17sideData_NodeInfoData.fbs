@@ -1,0 +1,17 @@
+include "Torappu_Act17sideData_NodeType.fbs";
+include "Torappu_Act17sideData_TrackPointType.fbs";
+
+table Torappu_Act17sideData_NodeInfoData {
+	nodeId:string;
+	nodeType:Torappu_Act17sideData_NodeType;
+	sortId:int32;
+	placeId:string;
+	isPointPlace:bool;
+	chapterId:string;
+	trackPointType:Torappu_Act17sideData_TrackPointType;
+	unlockCondType:string;
+	unlockParams:[string];
+}
+
+
+root_type Torappu_Act17sideData_NodeInfoData;

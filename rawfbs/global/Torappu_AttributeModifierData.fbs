@@ -1,0 +1,15 @@
+include "Torappu_AbnormalFlag.fbs";
+include "Torappu_AbnormalCombo.fbs";
+include "Torappu_AttributeModifierData_AttributeModifier.fbs";
+
+table Torappu_AttributeModifierData {
+	abnormalFlags:[Torappu_AbnormalFlag];
+	abnormalImmunes:[Torappu_AbnormalFlag];
+	abnormalAntis:[Torappu_AbnormalFlag];
+	abnormalCombos:[Torappu_AbnormalCombo];
+	abnormalComboImmunes:[Torappu_AbnormalCombo];
+	attributeModifiers:[Torappu_AttributeModifierData_AttributeModifier];
+}
+
+
+root_type Torappu_AttributeModifierData;

@@ -1,0 +1,40 @@
+include "Torappu_LevelData_Options.fbs";
+include "Torappu_MapData.fbs";
+include "Torappu_GridPosition.fbs";
+include "Torappu_LegacyInLevelRuneData.fbs";
+include "dict__System_String_list___1_Torappu_LegacyInLevelRuneData.fbs";
+include "Torappu_LevelData_GlobalBuffData.fbs";
+include "Torappu_RouteData.fbs";
+include "Torappu_LevelData_EnemyData.fbs";
+include "Torappu_LevelData_EnemyDataDbReference.fbs";
+include "Torappu_LevelData_WaveData.fbs";
+include "list_dict___2_System_String_Torappu_LevelData_BranchData_.fbs";
+include "Torappu_LevelData_PredefinedData.fbs";
+
+table Torappu_LevelData {
+	options:Torappu_LevelData_Options;
+	levelId:string;
+	mapId:string;
+	bgmEvent:string;
+	environmentSe:string;
+	mapData:Torappu_MapData;
+	tilesDisallowToLocate:[Torappu_GridPosition];
+	runes:[Torappu_LegacyInLevelRuneData];
+	optionalRunes:[dict__System_String_list___1_Torappu_LegacyInLevelRuneData];
+	globalBuffs:[Torappu_LevelData_GlobalBuffData];
+	routes:[Torappu_RouteData];
+	extraRoutes:[Torappu_RouteData];
+	enemies:[Torappu_LevelData_EnemyData];
+	enemyDbRefs:[Torappu_LevelData_EnemyDataDbReference];
+	waves:[Torappu_LevelData_WaveData];
+	branches:[list_dict___2_System_String_Torappu_LevelData_BranchData_];
+	predefines:Torappu_LevelData_PredefinedData;
+	hardPredefines:Torappu_LevelData_PredefinedData;
+	excludeCharIdList:[string];
+	randomSeed:int32;
+	operaConfig:string;
+	cameraPlugin:string;
+}
+
+
+root_type Torappu_LevelData;

@@ -1,0 +1,11 @@
+include "Torappu_PlayerAvatarGroupType.fbs";
+
+table Torappu_PlayerAvatarGroupData {
+	avatarType:Torappu_PlayerAvatarGroupType;
+	typeName:string;
+	sortId:int32;
+	avatarIdList:[string];
+}
+
+
+root_type Torappu_PlayerAvatarGroupData;

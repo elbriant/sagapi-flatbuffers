@@ -1,0 +1,9 @@
+include "Torappu_Act4funCmtGroupInfo.fbs";
+
+table dict__System_String_Torappu_Act4funCmtGroupInfo {
+	dict_key:string;
+	dict_value:Torappu_Act4funCmtGroupInfo;
+}
+
+
+root_type dict__System_String_Torappu_Act4funCmtGroupInfo;

@@ -1,0 +1,12 @@
+include "Torappu_CommonAvailCheck.fbs";
+
+table Torappu_BattleAutoBattleMetaItem {
+	battleAutoBattleDisplayKey:string;
+	isAllStageActive:bool;
+	relateActId:string;
+	stageIdList:[string];
+	availCheck:Torappu_CommonAvailCheck;
+}
+
+
+root_type Torappu_BattleAutoBattleMetaItem;

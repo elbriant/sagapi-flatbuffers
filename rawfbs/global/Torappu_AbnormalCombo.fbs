@@ -1,0 +1,6 @@
+
+enum Torappu_AbnormalCombo : int32 {
+	SLEEPING = 0,
+	SHELTERING = 1,
+	E_NUM = 2
+}

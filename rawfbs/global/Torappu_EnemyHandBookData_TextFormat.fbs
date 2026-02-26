@@ -1,0 +1,6 @@
+
+enum Torappu_EnemyHandBookData_TextFormat : int32 {
+	NORMAL = 0,
+	TITLE = 1,
+	SILENCE = 2
+}

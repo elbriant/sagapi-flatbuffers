@@ -1,0 +1,16 @@
+include "Torappu_Act17sideData_ChoiceNodeOptionData.fbs";
+
+table Torappu_Act17sideData_ChoiceNodeData {
+	nodeId:string;
+	choicePic:string;
+	isDisposable:bool;
+	choiceSpecialPic:string;
+	choiceName:string;
+	choiceDesList:[string];
+	cancelDes:string;
+	choiceNum:int32;
+	optionList:[Torappu_Act17sideData_ChoiceNodeOptionData];
+}
+
+
+root_type Torappu_Act17sideData_ChoiceNodeData;

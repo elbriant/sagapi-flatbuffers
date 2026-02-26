@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2NpcType : int32 {
+	NORMAL = 0,
+	FIXED_RIFT = 1,
+	RANDOM_RIFT = 2,
+	PREY_RIFT = 3
+}

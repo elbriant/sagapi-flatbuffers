@@ -1,0 +1,14 @@
+
+table Torappu_ActivityTable_TemplateTrapData {
+	trapId:string;
+	sortId:int32;
+	trapName:string;
+	trapDesc:string;
+	trapText:string;
+	trapTaskId:string;
+	trapUnlockDesc:string;
+	trapBuffId:string;
+}
+
+
+root_type Torappu_ActivityTable_TemplateTrapData;

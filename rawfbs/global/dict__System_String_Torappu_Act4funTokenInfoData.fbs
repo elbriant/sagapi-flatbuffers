@@ -1,0 +1,9 @@
+include "Torappu_Act4funTokenInfoData.fbs";
+
+table dict__System_String_Torappu_Act4funTokenInfoData {
+	dict_key:string;
+	dict_value:Torappu_Act4funTokenInfoData;
+}
+
+
+root_type dict__System_String_Torappu_Act4funTokenInfoData;

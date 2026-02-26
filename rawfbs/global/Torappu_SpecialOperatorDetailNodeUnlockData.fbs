@@ -1,0 +1,19 @@
+include "Torappu_SpecialOperatorDetailNodeType.fbs";
+include "Torappu_EvolvePhase.fbs";
+include "Torappu_SpecialOperatorConditionViewType.fbs";
+
+table Torappu_SpecialOperatorDetailNodeUnlockData {
+	nodeId:string;
+	nodeType:Torappu_SpecialOperatorDetailNodeType;
+	isInGameMechanics:bool;
+	unlockEvolvePhase:Torappu_EvolvePhase;
+	unlockLevel:int32;
+	unlockTaskId:string;
+	frontNodeId:string;
+	ifAutoUnlock:bool;
+	conditionViewType:Torappu_SpecialOperatorConditionViewType;
+	topoOrder:int32;
+}
+
+
+root_type Torappu_SpecialOperatorDetailNodeUnlockData;

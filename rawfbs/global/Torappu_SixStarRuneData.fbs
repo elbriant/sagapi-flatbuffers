@@ -1,0 +1,9 @@
+
+table Torappu_SixStarRuneData {
+	runeId:string;
+	runeDesc:string;
+	runeKey:string;
+}
+
+
+root_type Torappu_SixStarRuneData;

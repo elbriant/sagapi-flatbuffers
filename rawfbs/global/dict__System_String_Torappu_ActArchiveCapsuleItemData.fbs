@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveCapsuleItemData.fbs";
+
+table dict__System_String_Torappu_ActArchiveCapsuleItemData {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveCapsuleItemData;
+}
+
+
+root_type dict__System_String_Torappu_ActArchiveCapsuleItemData;

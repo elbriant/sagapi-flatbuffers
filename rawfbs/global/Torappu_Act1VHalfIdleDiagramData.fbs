@@ -1,0 +1,16 @@
+include "dict__System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData.fbs";
+include "dict__System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData.fbs";
+include "dict__System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData.fbs";
+include "dict__System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData.fbs";
+
+table Torappu_Act1VHalfIdleDiagramData {
+	width:float;
+	height:float;
+	pointPosDataMap:[dict__System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData];
+	linePosDataMap:[dict__System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData];
+	lineRelationDataMap:[dict__System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData];
+	nodePointDataMap:[dict__System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData];
+}
+
+
+root_type Torappu_Act1VHalfIdleDiagramData;

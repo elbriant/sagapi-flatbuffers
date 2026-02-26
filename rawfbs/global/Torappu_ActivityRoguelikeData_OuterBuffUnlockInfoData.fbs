@@ -1,0 +1,9 @@
+include "list_dict___2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_.fbs";
+
+table Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData {
+	buffId:string;
+	buffUnlockInfos:[list_dict___2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_];
+}
+
+
+root_type Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData;

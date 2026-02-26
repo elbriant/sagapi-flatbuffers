@@ -1,0 +1,12 @@
+
+table Torappu_SiracusaData_PointData {
+	pointId:string;
+	areaId:string;
+	pointName:string;
+	pointDesc:string;
+	pointIconId:string;
+	pointItaName:string;
+}
+
+
+root_type Torappu_SiracusaData_PointData;

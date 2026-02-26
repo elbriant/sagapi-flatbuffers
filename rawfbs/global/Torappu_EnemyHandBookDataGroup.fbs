@@ -1,0 +1,12 @@
+include "Torappu_EnemyHandbookLevelInfoData.fbs";
+include "dict__System_String_Torappu_EnemyHandBookData.fbs";
+include "dict__System_String_Torappu_EnemyHandbookRaceData.fbs";
+
+table Torappu_EnemyHandBookDataGroup {
+	levelInfoList:[Torappu_EnemyHandbookLevelInfoData];
+	enemyData:[dict__System_String_Torappu_EnemyHandBookData];
+	raceData:[dict__System_String_Torappu_EnemyHandbookRaceData];
+}
+
+
+root_type Torappu_EnemyHandBookDataGroup;

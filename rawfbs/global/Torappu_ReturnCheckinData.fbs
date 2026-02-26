@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ReturnCheckinData {
+	isImportant:bool;
+	checkinRewardItems:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ReturnCheckinData;

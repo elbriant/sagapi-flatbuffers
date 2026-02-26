@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeSkyModuleConsts {
+	skyApItemId:string;
+	skyMaxColumns:int32;
+	skySacrificeChoiceDynamicKey:string;
+}
+
+
+root_type Torappu_RoguelikeSkyModuleConsts;

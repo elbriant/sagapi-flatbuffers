@@ -1,0 +1,9 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData.fbs";
+
+table dict__System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData;

@@ -1,0 +1,19 @@
+include "Torappu_RoguelikeGameChoiceType.fbs";
+include "Torappu_RoguelikeChoiceLeftDecoType.fbs";
+include "Torappu_RoguelikeChoiceDisplayData.fbs";
+
+table Torappu_RoguelikeGameChoiceData {
+	id:string;
+	title:string;
+	description:string;
+	lockedCoverDesc:string;
+	type:Torappu_RoguelikeGameChoiceType;
+	leftDecoType:Torappu_RoguelikeChoiceLeftDecoType;
+	nextSceneId:string;
+	icon:string;
+	displayData:Torappu_RoguelikeChoiceDisplayData;
+	forceShowWhenOnlyLeave:bool;
+}
+
+
+root_type Torappu_RoguelikeGameChoiceData;

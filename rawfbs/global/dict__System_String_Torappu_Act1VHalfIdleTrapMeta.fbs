@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleTrapMeta.fbs";
+
+table dict__System_String_Torappu_Act1VHalfIdleTrapMeta {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleTrapMeta;
+}
+
+
+root_type dict__System_String_Torappu_Act1VHalfIdleTrapMeta;

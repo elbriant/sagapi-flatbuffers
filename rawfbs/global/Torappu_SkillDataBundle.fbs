@@ -1,0 +1,11 @@
+include "Torappu_SkillDataBundle_LevelData.fbs";
+
+table Torappu_SkillDataBundle {
+	skillId:string;
+	iconId:string;
+	hidden:bool;
+	levels:[Torappu_SkillDataBundle_LevelData];
+}
+
+
+root_type Torappu_SkillDataBundle;

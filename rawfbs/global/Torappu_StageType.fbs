@@ -1,0 +1,14 @@
+
+enum Torappu_StageType : int32 {
+	MAIN = 0,
+	DAILY = 1,
+	TRAINING = 2,
+	ACTIVITY = 3,
+	GUIDE = 4,
+	SUB = 5,
+	CAMPAIGN = 6,
+	SPECIAL_STORY = 7,
+	HANDBOOK_BATTLE = 8,
+	CLIMB_TOWER = 9,
+	ENUM = 10
+}

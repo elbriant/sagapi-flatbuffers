@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_RoguelikeActivityBasicData.fbs";
+include "Torappu_RoguelikeActivityTable.fbs";
+
+table Torappu_RoguelikeActivityData {
+	basicDatas:[dict__System_String_Torappu_RoguelikeActivityBasicData];
+	activityTable:Torappu_RoguelikeActivityTable;
+}
+
+
+root_type Torappu_RoguelikeActivityData;

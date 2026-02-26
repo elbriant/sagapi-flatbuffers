@@ -1,0 +1,15 @@
+include "dict__Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo.fbs";
+
+table Torappu_Act4funLiveMatInfoData {
+	liveMatId:string;
+	stageId:string;
+	name:string;
+	picId:string;
+	tagTxt:string;
+	emojiIcon:string;
+	selectedPerformId:string;
+	effectInfos:[dict__Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo];
+}
+
+
+root_type Torappu_Act4funLiveMatInfoData;

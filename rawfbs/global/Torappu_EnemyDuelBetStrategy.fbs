@@ -1,0 +1,11 @@
+
+enum Torappu_EnemyDuelBetStrategy : int32 {
+	DEFAULT = 0,
+	CHOOSE_WIN = 1,
+	CHOOSE_ODD = 2,
+	FOLLOW_FEWER = 3,
+	FOLLOW_MORE = 4,
+	CHOOSE_ODD_ENEMY_COUNT = 5,
+	CHOOSE_EVEN_ENEMY_COUNT = 6,
+	ALWAYS_LEFT = 7
+}

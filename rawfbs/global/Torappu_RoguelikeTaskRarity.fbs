@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeTaskRarity : int32 {
+	NORMAL = 0,
+	RARE = 1,
+	SUPER_RARE = 2
+}

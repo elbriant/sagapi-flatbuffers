@@ -1,0 +1,26 @@
+include "Torappu_RoguelikeTotemColorType.fbs";
+include "Torappu_RoguelikeTotemPosType.fbs";
+include "Torappu_RoguelikeTotemLinkedNodeTypeData.fbs";
+
+table Torappu_RoguelikeTotemBuffData {
+	totemId:string;
+	color:Torappu_RoguelikeTotemColorType;
+	pos:Torappu_RoguelikeTotemPosType;
+	rhythm:string;
+	normalDesc:string;
+	synergyDesc:string;
+	archiveDesc:string;
+	combineGroupName:string;
+	bgIconId:string;
+	isManual:bool;
+	linkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
+	distanceMin:int32;
+	distanceMax:int32;
+	vertPassable:bool;
+	expandLength:int32;
+	onlyForVert:bool;
+	portalLinkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
+}
+
+
+root_type Torappu_RoguelikeTotemBuffData;

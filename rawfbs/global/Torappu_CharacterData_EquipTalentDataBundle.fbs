@@ -1,0 +1,8 @@
+include "Torappu_EquipTalentData.fbs";
+
+table Torappu_CharacterData_EquipTalentDataBundle {
+	candidates:[Torappu_EquipTalentData];
+}
+
+
+root_type Torappu_CharacterData_EquipTalentDataBundle;

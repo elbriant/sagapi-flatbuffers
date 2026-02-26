@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActArcadeData_ArcadeMilestoneItemData {
+	mileStoneId:string;
+	mileStoneLvl:int32;
+	needPointCnt:int32;
+	reward:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeMilestoneItemData;

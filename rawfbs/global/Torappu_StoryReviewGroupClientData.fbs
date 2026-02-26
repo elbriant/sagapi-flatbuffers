@@ -1,0 +1,27 @@
+include "Torappu_StoryReviewEntryType.fbs";
+include "Torappu_StoryReviewType.fbs";
+include "Torappu_ItemBundle.fbs";
+include "Torappu_StoryReviewInfoClientData.fbs";
+
+table Torappu_StoryReviewGroupClientData {
+	id:string;
+	name:string;
+	entryType:Torappu_StoryReviewEntryType;
+	actType:Torappu_StoryReviewType;
+	startTime:int64;
+	endTime:int64;
+	startShowTime:int64;
+	endShowTime:int64;
+	remakeStartTime:int64;
+	remakeEndTime:int64;
+	storyEntryPicId:string;
+	storyPicId:string;
+	storyMainColor:string;
+	customType:int32;
+	storyCompleteMedalId:string;
+	rewards:[Torappu_ItemBundle];
+	infoUnlockDatas:[Torappu_StoryReviewInfoClientData];
+}
+
+
+root_type Torappu_StoryReviewGroupClientData;

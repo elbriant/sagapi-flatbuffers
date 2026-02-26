@@ -1,0 +1,19 @@
+include "Torappu_BuildingData_RoomType.fbs";
+include "Torappu_BuildingData_RoomCategory.fbs";
+include "Torappu_GridPosition.fbs";
+include "Torappu_BuildingData_RoomData_PhaseData.fbs";
+
+table Torappu_BuildingData_RoomData {
+	id:Torappu_BuildingData_RoomType;
+	name:string;
+	description:string;
+	defaultPrefabId:string;
+	canLevelDown:bool;
+	maxCount:int32;
+	category:Torappu_BuildingData_RoomCategory;
+	size:Torappu_GridPosition;
+	phases:[Torappu_BuildingData_RoomData_PhaseData];
+}
+
+
+root_type Torappu_BuildingData_RoomData;

@@ -1,0 +1,9 @@
+include "Torappu_UniEquipTrack.fbs";
+
+table Torappu_UniEquipTimeInfo {
+	timeStamp:int64;
+	trackList:[Torappu_UniEquipTrack];
+}
+
+
+root_type Torappu_UniEquipTimeInfo;

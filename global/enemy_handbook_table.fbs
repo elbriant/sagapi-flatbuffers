@@ -1,0 +1,109 @@
+
+table Torappu_EnemyHandbookLevelInfoData_RangePair {
+	min:float;
+	max:float;
+}
+
+
+
+table Torappu_EnemyHandbookLevelInfoData {
+	classLevel:string;
+	attack:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	def:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	magicRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	maxHP:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	moveSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	attackSpeed:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	enemyDamageRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+	enemyRes:Torappu_EnemyHandbookLevelInfoData_RangePair;
+}
+
+
+
+enum Torappu_EnemyLevelType : int32 {
+	NORMAL = 0,
+	ELITE = 1,
+	BOSS = 2,
+	E_NUM = 3
+}
+
+table dict__System_String_System_Int32 {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
+enum Torappu_EnemyHandBookData_TextFormat : int32 {
+	NORMAL = 0,
+	TITLE = 1,
+	SILENCE = 2
+}
+
+table Torappu_EnemyHandBookData_Abilty {
+	text:string;
+	textFormat:Torappu_EnemyHandBookData_TextFormat;
+}
+
+
+
+enum Torappu_EnemyHandBookDamageType : int32 {
+	PHYSIC = 0,
+	MAGIC = 1,
+	HEAL = 2,
+	NO_DAMAGE = 3
+}
+
+table Torappu_EnemyHandBookData {
+	enemyId:string;
+	enemyIndex:string;
+	enemyTags:[string];
+	sortId:int32;
+	name:string;
+	enemyLevel:Torappu_EnemyLevelType;
+	description:string;
+	attackType:string;
+	ability:string;
+	isInvalidKilled:bool;
+	overrideKillCntInfos:[dict__System_String_System_Int32];
+	hideInHandbook:bool;
+	hideInStage:bool;
+	abilityList:[Torappu_EnemyHandBookData_Abilty];
+	linkEnemies:[string];
+	damageType:[Torappu_EnemyHandBookDamageType];
+	invisibleDetail:bool;
+}
+
+
+
+table dict__System_String_Torappu_EnemyHandBookData {
+	dict_key:string;
+	dict_value:Torappu_EnemyHandBookData;
+}
+
+
+
+table Torappu_EnemyHandbookRaceData {
+	id:string;
+	raceName:string;
+	sortId:int32;
+}
+
+
+
+table dict__System_String_Torappu_EnemyHandbookRaceData {
+	dict_key:string;
+	dict_value:Torappu_EnemyHandbookRaceData;
+}
+
+
+
+table Torappu_EnemyHandBookDataGroup {
+	levelInfoList:[Torappu_EnemyHandbookLevelInfoData];
+	enemyData:[dict__System_String_Torappu_EnemyHandBookData];
+	raceData:[dict__System_String_Torappu_EnemyHandbookRaceData];
+}
+
+
+
+root_type Torappu_EnemyHandBookDataGroup;

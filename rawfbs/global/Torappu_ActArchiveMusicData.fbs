@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveMusicItemData.fbs";
+
+table Torappu_ActArchiveMusicData {
+	musics:[dict__System_String_Torappu_ActArchiveMusicItemData];
+}
+
+
+root_type Torappu_ActArchiveMusicData;

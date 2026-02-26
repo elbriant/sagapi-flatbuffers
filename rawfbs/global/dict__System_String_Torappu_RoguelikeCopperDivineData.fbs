@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeCopperDivineData.fbs";
+
+table dict__System_String_Torappu_RoguelikeCopperDivineData {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeCopperDivineData;
+}
+
+
+root_type dict__System_String_Torappu_RoguelikeCopperDivineData;

@@ -1,0 +1,14 @@
+
+table Torappu_ReturnV2Const {
+	startTime:int64;
+	unlockLv:int32;
+	unlockStage:string;
+	permMissionTime:int32;
+	pointId:string;
+	returnPriceDesc:string;
+	dailySupplyDesc:string;
+	oldGPId:string;
+}
+
+
+root_type Torappu_ReturnV2Const;

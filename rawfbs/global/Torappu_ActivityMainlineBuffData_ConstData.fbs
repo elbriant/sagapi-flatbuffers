@@ -1,0 +1,7 @@
+
+table Torappu_ActivityMainlineBuffData_ConstData {
+	favorUpStageRange:string;
+}
+
+
+root_type Torappu_ActivityMainlineBuffData_ConstData;

@@ -1,0 +1,11 @@
+
+table Torappu_ActArchiveResData_LandmarkArchiveResItemData {
+	landmarkId:string;
+	landmarkName:string;
+	landmarkPic:string;
+	landmarkDesc:string;
+	landmarkEngName:string;
+}
+
+
+root_type Torappu_ActArchiveResData_LandmarkArchiveResItemData;

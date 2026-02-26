@@ -1,0 +1,14 @@
+include "dict__System_String_System_Int32.fbs";
+
+table Torappu_Act35SideData_Act35SideRoundData {
+	roundId:string;
+	challengeId:string;
+	round:int32;
+	roundPassRating:int32;
+	isMaterialRandom:bool;
+	fixedMaterialList:[dict__System_String_System_Int32];
+	passRoundCoin:int32;
+}
+
+
+root_type Torappu_Act35SideData_Act35SideRoundData;

@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeTopicDevNodeType : int32 {
+	BRANCH = 0,
+	KEY = 1,
+	NONE = 10
+}

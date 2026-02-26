@@ -1,0 +1,10 @@
+
+table Torappu_CharExtraWordData {
+	wordKey:string;
+	charId:string;
+	voiceId:string;
+	voiceText:string;
+}
+
+
+root_type Torappu_CharExtraWordData;

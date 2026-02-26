@@ -1,0 +1,7 @@
+
+table Torappu_FifthAnnivExploreMissionData {
+	progressUpLimit:int32;
+}
+
+
+root_type Torappu_FifthAnnivExploreMissionData;

@@ -1,0 +1,8 @@
+
+table dict__System_Int32_System_Single {
+	dict_key:int32;
+	dict_value:float;
+}
+
+
+root_type dict__System_Int32_System_Single;

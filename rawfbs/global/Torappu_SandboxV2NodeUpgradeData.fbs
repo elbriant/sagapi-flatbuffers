@@ -1,0 +1,17 @@
+include "Torappu_SandboxPermItemType.fbs";
+include "Torappu_SandboxV2ItemTrapTag.fbs";
+
+table Torappu_SandboxV2NodeUpgradeData {
+	nodeUpgradeId:string;
+	name:string;
+	description:string;
+	upgradeDesc:string;
+	upgradeTips:string;
+	itemType:Torappu_SandboxPermItemType;
+	itemTag:Torappu_SandboxV2ItemTrapTag;
+	itemCnt:int32;
+	itemRarity:int32;
+}
+
+
+root_type Torappu_SandboxV2NodeUpgradeData;

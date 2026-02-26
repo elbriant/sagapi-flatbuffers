@@ -1,0 +1,9 @@
+include "Torappu_Act42SideData_Act42SideFileData.fbs";
+
+table list_dict___2_System_String_Torappu_Act42SideData_Act42SideFileData_ {
+	dict_key:string;
+	dict_value:Torappu_Act42SideData_Act42SideFileData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_Act42SideData_Act42SideFileData_;

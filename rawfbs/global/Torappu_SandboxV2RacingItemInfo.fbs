@@ -1,0 +1,11 @@
+include "Torappu_Blackboard.fbs";
+
+table Torappu_SandboxV2RacingItemInfo {
+	racerItemId:string;
+	name:string;
+	iconId:string;
+	blackboard:Torappu_Blackboard;
+}
+
+
+root_type Torappu_SandboxV2RacingItemInfo;

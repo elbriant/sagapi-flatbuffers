@@ -1,0 +1,14 @@
+include "Torappu_MileStoneInfo_GoodType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_MileStoneInfo {
+	mileStoneId:string;
+	orderId:int32;
+	tokenNum:int32;
+	mileStoneType:Torappu_MileStoneInfo_GoodType;
+	normalItem:Torappu_ItemBundle;
+	IsBonus:int32;
+}
+
+
+root_type Torappu_MileStoneInfo;

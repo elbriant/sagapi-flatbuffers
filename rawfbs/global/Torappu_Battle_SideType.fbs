@@ -1,0 +1,9 @@
+
+enum Torappu_Battle_SideType : int32 {
+	NONE = 0,
+	ALLY = 1,
+	ENEMY = 2,
+	BOTH_ALLY_AND_ENEMY = 3,
+	NEUTRAL = 4,
+	ALL = 7
+}

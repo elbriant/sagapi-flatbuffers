@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ZoneRecordMissionData.fbs";
+
+table Torappu_ZoneMetaData {
+	ZoneRecordMissionData:[dict__System_String_Torappu_ZoneRecordMissionData];
+}
+
+
+root_type Torappu_ZoneMetaData;

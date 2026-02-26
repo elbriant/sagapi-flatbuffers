@@ -1,0 +1,14 @@
+
+table Torappu_StoryVariantData {
+	plotTaskId:string;
+	spStoryId:string;
+	storyId:string;
+	priority:int32;
+	startTime:int64;
+	endTime:int64;
+	template:string;
+	param:[string];
+}
+
+
+root_type Torappu_StoryVariantData;

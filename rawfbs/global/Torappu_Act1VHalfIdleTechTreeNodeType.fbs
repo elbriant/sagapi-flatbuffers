@@ -1,0 +1,6 @@
+
+enum Torappu_Act1VHalfIdleTechTreeNodeType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	DIFFICULTY = 2
+}

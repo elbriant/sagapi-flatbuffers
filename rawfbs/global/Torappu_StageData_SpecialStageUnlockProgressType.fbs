@@ -1,0 +1,5 @@
+
+enum Torappu_StageData_SpecialStageUnlockProgressType : int32 {
+	ONCE = 0,
+	PROGRESS = 1
+}

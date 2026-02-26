@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveRelicItemData.fbs";
+
+table Torappu_ActArchiveRelicData {
+	relic:[dict__System_String_Torappu_ActArchiveRelicItemData];
+}
+
+
+root_type Torappu_ActArchiveRelicData;

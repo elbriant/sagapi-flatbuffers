@@ -1,0 +1,55 @@
+include "Torappu_ActMultiV3SelectStepData.fbs";
+include "Torappu_ActMultiV3SquadInfoData.fbs";
+include "Torappu_ActMultiV3IdentityData.fbs";
+include "Torappu_ActMultiV3SquadEffectData.fbs";
+include "dict__System_String_Torappu_ActMultiV3TargetMissionData.fbs";
+include "dict__System_String_Torappu_ActMultiV3MapTypeData.fbs";
+include "dict__System_String_Torappu_ActMultiV3MapData.fbs";
+include "dict__System_String_Torappu_ActMultiV3MapModeData.fbs";
+include "dict__System_String_Torappu_ActMultiV3MapDiffData.fbs";
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_ActMultiV3TitleData.fbs";
+include "dict__System_String_Torappu_ActMultiV3PhotoTypeData.fbs";
+include "dict__System_String_Torappu_ActMultiV3WeeklyPhotoRewardData.fbs";
+include "dict__System_String_Torappu_ActMultiV3MatchPosData.fbs";
+include "dict__System_String_Torappu_ActMultiV3DiffStarRewardData.fbs";
+include "Torappu_ActMultiV3MilestoneData.fbs";
+include "Torappu_ActMultiV3TipsData.fbs";
+include "Torappu_ActMultiV3ReportData.fbs";
+include "Torappu_ActMultiV3TempCharData.fbs";
+include "Torappu_ActMultiV3ConstToastData.fbs";
+include "Torappu_ActMultiV3ConstData.fbs";
+include "dict__System_String_Torappu_ActMultiV3SailBoatLevelPoolData.fbs";
+include "dict__System_String_list___1_Torappu_ActMultiV3SailBoatBlockPoolData.fbs";
+include "dict__System_String_Torappu_ActMultiV3SailBoatBlockInfoData.fbs";
+
+table Torappu_ActMultiV3Data {
+	selectStepDataList:[Torappu_ActMultiV3SelectStepData];
+	squadInfoList:[Torappu_ActMultiV3SquadInfoData];
+	identityDataList:[Torappu_ActMultiV3IdentityData];
+	squadEffectList:[Torappu_ActMultiV3SquadEffectData];
+	targetMissionDataDict:[dict__System_String_Torappu_ActMultiV3TargetMissionData];
+	mapTypeDataDict:[dict__System_String_Torappu_ActMultiV3MapTypeData];
+	mapDataDict:[dict__System_String_Torappu_ActMultiV3MapData];
+	mapModeDataDict:[dict__System_String_Torappu_ActMultiV3MapModeData];
+	mapDiffDataDict:[dict__System_String_Torappu_ActMultiV3MapDiffData];
+	missionTitleDict:[dict__System_String_System_String];
+	titleDataDict:[dict__System_String_Torappu_ActMultiV3TitleData];
+	photoTypeDataDict:[dict__System_String_Torappu_ActMultiV3PhotoTypeData];
+	photoWeeklyRewardDataDict:[dict__System_String_Torappu_ActMultiV3WeeklyPhotoRewardData];
+	matchPosDataDict:[dict__System_String_Torappu_ActMultiV3MatchPosData];
+	enabledEmoticonThemeIdList:[string];
+	diffStarRewardDict:[dict__System_String_Torappu_ActMultiV3DiffStarRewardData];
+	milestoneList:[Torappu_ActMultiV3MilestoneData];
+	tipsDataList:[Torappu_ActMultiV3TipsData];
+	reportDataList:[Torappu_ActMultiV3ReportData];
+	tempCharDataList:[Torappu_ActMultiV3TempCharData];
+	constToastData:Torappu_ActMultiV3ConstToastData;
+	constData:Torappu_ActMultiV3ConstData;
+	sailBoatLevelPoolDict:[dict__System_String_Torappu_ActMultiV3SailBoatLevelPoolData];
+	sailBoatBlockPoolDict:[dict__System_String_list___1_Torappu_ActMultiV3SailBoatBlockPoolData];
+	sailBoatBlockInfoList:[dict__System_String_Torappu_ActMultiV3SailBoatBlockInfoData];
+}
+
+
+root_type Torappu_ActMultiV3Data;

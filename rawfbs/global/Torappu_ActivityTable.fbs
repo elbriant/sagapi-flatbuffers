@@ -1,0 +1,66 @@
+include "dict__System_String_Torappu_ActivityTable_BasicData.fbs";
+include "dict__System_String_Torappu_ActivityTable_HomeActivityConfig.fbs";
+include "dict__System_String_System_String.fbs";
+include "dict__System_String_System_Int64.fbs";
+include "Torappu_MissionData.fbs";
+include "Torappu_MissionGroup.fbs";
+include "Torappu_ActivityTable_ActivityDetailTable.fbs";
+include "Torappu_ActivityTable_ActivityExtraData.fbs";
+include "dict__System_String_list___1_System_String.fbs";
+include "list_dict___2_System_String_list___1_System_Int64__.fbs";
+include "dict__System_String_Newtonsoft_Json_Linq_JObject.fbs";
+include "dict__System_String_Torappu_ActivityStageRewardData.fbs";
+include "Torappu_ActivityThemeData.fbs";
+include "Torappu_AprilFoolTable.fbs";
+include "Torappu_CartData.fbs";
+include "Torappu_SiracusaData.fbs";
+include "Torappu_FireworkData.fbs";
+include "Torappu_HalfIdleData.fbs";
+include "dict__System_String_Torappu_ActivityKVSwitchData.fbs";
+include "dict__System_String_Torappu_ActivityDynEntrySwitchData.fbs";
+include "Torappu_ActivityTable_ActivityHiddenStageData.fbs";
+include "dict__System_String_Torappu_MissionArchiveData.fbs";
+include "Torappu_FifthAnnivExploreData.fbs";
+include "dict__System_String_dict__System_String_System_String.fbs";
+include "dict__System_String_Torappu_ActivityTable_ActivityTrapsData.fbs";
+include "dict__System_String_Torappu_ActivityTable_ActivityTrapMissionsData.fbs";
+include "dict__System_String_Torappu_RuneTable_PackedRuneData.fbs";
+include "dict__System_String_Torappu_TemplateMissionStyleData.fbs";
+include "dict__System_String_Torappu_CrossDayTrackTypeData.fbs";
+
+table Torappu_ActivityTable {
+	basicInfo:[dict__System_String_Torappu_ActivityTable_BasicData];
+	homeActConfig:[dict__System_String_Torappu_ActivityTable_HomeActivityConfig];
+	zoneToActivity:[dict__System_String_System_String];
+	actTimeTrackPoint:[dict__System_String_System_Int64];
+	missionData:[Torappu_MissionData];
+	missionGroup:[Torappu_MissionGroup];
+	replicateMissions:[dict__System_String_System_String];
+	activity:Torappu_ActivityTable_ActivityDetailTable;
+	extraData:Torappu_ActivityTable_ActivityExtraData;
+	activityItems:[dict__System_String_list___1_System_String];
+	syncPoints:[list_dict___2_System_String_list___1_System_Int64__];
+	dynActs:[dict__System_String_Newtonsoft_Json_Linq_JObject];
+	stageRewardsData:[dict__System_String_Torappu_ActivityStageRewardData];
+	actThemes:[Torappu_ActivityThemeData];
+	actFunData:Torappu_AprilFoolTable;
+	carData:Torappu_CartData;
+	siracusaData:Torappu_SiracusaData;
+	fireworkData:Torappu_FireworkData;
+	halfIdleData:Torappu_HalfIdleData;
+	kvSwitchData:[dict__System_String_Torappu_ActivityKVSwitchData];
+	dynEntrySwitchData:[dict__System_String_Torappu_ActivityDynEntrySwitchData];
+	hiddenStageData:[Torappu_ActivityTable_ActivityHiddenStageData];
+	missionArchives:[dict__System_String_Torappu_MissionArchiveData];
+	fifthAnnivExploreData:Torappu_FifthAnnivExploreData;
+	stringRes:[dict__System_String_dict__System_String_System_String];
+	activityTraps:[dict__System_String_Torappu_ActivityTable_ActivityTrapsData];
+	activityTrapMissions:[dict__System_String_Torappu_ActivityTable_ActivityTrapMissionsData];
+	trapRuneDataDict:[dict__System_String_Torappu_RuneTable_PackedRuneData];
+	activityTemplateMissionStyles:[dict__System_String_Torappu_TemplateMissionStyleData];
+	activityCrossDayTrackTypeDataDict:[dict__System_String_Torappu_CrossDayTrackTypeData];
+	activityCrossDayTrackTypeMap:[dict__System_String_list___1_System_String];
+}
+
+
+root_type Torappu_ActivityTable;

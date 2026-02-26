@@ -1,0 +1,9 @@
+
+table Torappu_StageDiffGroupTable {
+	normalId:string;
+	toughId:string;
+	easyId:string;
+}
+
+
+root_type Torappu_StageDiffGroupTable;

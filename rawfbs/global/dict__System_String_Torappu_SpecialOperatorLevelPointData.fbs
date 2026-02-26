@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorLevelPointData.fbs";
+
+table dict__System_String_Torappu_SpecialOperatorLevelPointData {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorLevelPointData;
+}
+
+
+root_type dict__System_String_Torappu_SpecialOperatorLevelPointData;

@@ -1,0 +1,6 @@
+
+enum Torappu_SandboxV2QuestLineScopeType : int32 {
+	MAIN = 0,
+	RIFT = 1,
+	ALL = 2
+}

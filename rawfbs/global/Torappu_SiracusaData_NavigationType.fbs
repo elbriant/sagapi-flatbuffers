@@ -1,0 +1,7 @@
+
+enum Torappu_SiracusaData_NavigationType : int32 {
+	NONE = 0,
+	AVG = 1,
+	LEVEL = 2,
+	CHAR_CARD = 3
+}

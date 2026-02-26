@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_RoguelikeWrathData.fbs";
+include "Torappu_RoguelikeWrathModuleConsts.fbs";
+
+table Torappu_RoguelikeWrathModuleData {
+	wrathData:[dict__System_String_Torappu_RoguelikeWrathData];
+	moduleConsts:Torappu_RoguelikeWrathModuleConsts;
+}
+
+
+root_type Torappu_RoguelikeWrathModuleData;

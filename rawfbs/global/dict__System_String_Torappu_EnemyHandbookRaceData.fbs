@@ -1,0 +1,9 @@
+include "Torappu_EnemyHandbookRaceData.fbs";
+
+table dict__System_String_Torappu_EnemyHandbookRaceData {
+	dict_key:string;
+	dict_value:Torappu_EnemyHandbookRaceData;
+}
+
+
+root_type dict__System_String_Torappu_EnemyHandbookRaceData;

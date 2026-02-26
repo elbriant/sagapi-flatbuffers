@@ -1,0 +1,9 @@
+
+table Torappu_Act4funPerformWordData {
+	text:string;
+	picId:string;
+	backgroundId:string;
+}
+
+
+root_type Torappu_Act4funPerformWordData;

@@ -1,0 +1,12 @@
+
+table Torappu_Act44SideData_Act44SideCustomerData {
+	id:string;
+	name:string;
+	imgId:string;
+	iconId:string;
+	isSp:bool;
+	description:string;
+}
+
+
+root_type Torappu_Act44SideData_Act44SideCustomerData;

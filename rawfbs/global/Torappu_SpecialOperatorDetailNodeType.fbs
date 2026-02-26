@@ -1,0 +1,9 @@
+
+enum Torappu_SpecialOperatorDetailNodeType : int32 {
+	NONE = 0,
+	EVOLVE = 1,
+	SKILL = 2,
+	TALENT = 3,
+	MASTER = 4,
+	UNIEQUIP = 5
+}

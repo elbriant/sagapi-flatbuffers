@@ -1,0 +1,16 @@
+
+table Torappu_ExtraBattleLogDataKey {
+	description:string;
+	sourceId:string;
+	sourceMode:string;
+	enemyId:string;
+	enemyApplyWay:string;
+	projectileName:string;
+	abilityName:string;
+	enemyLevelType:string;
+	enemyTag:[string];
+	logAlias:string;
+}
+
+
+root_type Torappu_ExtraBattleLogDataKey;

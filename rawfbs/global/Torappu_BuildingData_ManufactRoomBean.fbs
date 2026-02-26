@@ -1,0 +1,7 @@
+
+table Torappu_BuildingData_ManufactRoomBean {
+	basicSpeedBuff:float;
+}
+
+
+root_type Torappu_BuildingData_ManufactRoomBean;

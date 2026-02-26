@@ -1,0 +1,9 @@
+
+table Torappu_SandboxV2BaseUpdateCondition {
+	desc:string;
+	limitCond:string;
+	param:[string];
+}
+
+
+root_type Torappu_SandboxV2BaseUpdateCondition;

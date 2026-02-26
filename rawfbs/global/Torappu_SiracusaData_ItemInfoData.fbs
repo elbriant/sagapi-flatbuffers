@@ -1,0 +1,11 @@
+
+table Torappu_SiracusaData_ItemInfoData {
+	itemId:string;
+	itemName:string;
+	itemItalyName:string;
+	itemDesc:string;
+	itemIcon:string;
+}
+
+
+root_type Torappu_SiracusaData_ItemInfoData;

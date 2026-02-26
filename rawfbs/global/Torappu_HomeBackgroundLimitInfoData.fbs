@@ -1,0 +1,11 @@
+
+table Torappu_HomeBackgroundLimitInfoData {
+	limitInfoId:string;
+	startTime:int64;
+	endTime:int64;
+	invalidObtainDesc:string;
+	displayAfterEndTime:bool;
+}
+
+
+root_type Torappu_HomeBackgroundLimitInfoData;

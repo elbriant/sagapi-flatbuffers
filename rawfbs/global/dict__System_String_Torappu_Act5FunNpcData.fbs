@@ -1,0 +1,9 @@
+include "Torappu_Act5FunNpcData.fbs";
+
+table dict__System_String_Torappu_Act5FunNpcData {
+	dict_key:string;
+	dict_value:Torappu_Act5FunNpcData;
+}
+
+
+root_type dict__System_String_Torappu_Act5FunNpcData;

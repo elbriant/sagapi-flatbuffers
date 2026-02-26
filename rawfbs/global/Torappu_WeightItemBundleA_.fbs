@@ -1,0 +1,8 @@
+include "Torappu_WeightItemBundle.fbs";
+
+table Torappu_WeightItemBundleA_ {
+	arr_values:[Torappu_WeightItemBundle];
+}
+
+
+root_type Torappu_WeightItemBundleA_;

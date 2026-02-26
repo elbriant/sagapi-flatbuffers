@@ -1,0 +1,20 @@
+
+table Torappu_ActivityEnemyDuelConstToastData {
+	createRoomAliveFailed:string;
+	joinRoomAliveFailed:string;
+	roomIdFormatError:string;
+	emptyRoomId:string;
+	noRoom:string;
+	continuousClicks:string;
+	matchAliveFailed:string;
+	serverOverloaded:string;
+	matchTimeout:string;
+	unlockMultiMode:string;
+	unlockRoomMode:string;
+	addFriendInRoom:string;
+	roomIdCopySuccess:string;
+	entryModeLock:string;
+}
+
+
+root_type Torappu_ActivityEnemyDuelConstToastData;

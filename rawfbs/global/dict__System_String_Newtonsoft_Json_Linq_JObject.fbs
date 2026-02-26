@@ -1,0 +1,9 @@
+include "Newtonsoft_Json_Linq_JObject.fbs";
+
+table dict__System_String_Newtonsoft_Json_Linq_JObject {
+	dict_key:string;
+	dict_value:Newtonsoft_Json_Linq_JObject;
+}
+
+
+root_type dict__System_String_Newtonsoft_Json_Linq_JObject;

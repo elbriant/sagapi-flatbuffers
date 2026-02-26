@@ -1,0 +1,11 @@
+
+table Torappu_ClimbTowerCurseCardData {
+	id:string;
+	towerIdList:[string];
+	name:string;
+	desc:string;
+	trapId:string;
+}
+
+
+root_type Torappu_ClimbTowerCurseCardData;

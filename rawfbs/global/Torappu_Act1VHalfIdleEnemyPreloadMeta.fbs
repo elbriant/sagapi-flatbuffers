@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdleEnemyPreloadMeta {
+	enemyId:string;
+	level:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleEnemyPreloadMeta;

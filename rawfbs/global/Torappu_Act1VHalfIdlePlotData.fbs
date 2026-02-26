@@ -1,0 +1,26 @@
+include "Torappu_Act1VHalfIdlePlotType.fbs";
+include "Torappu_Act1VHalfIdlePlotData_ItemDropData.fbs";
+include "Torappu_Act1VHalfIdlePlotData_PlotCombineData.fbs";
+
+table Torappu_Act1VHalfIdlePlotData {
+	plotId:string;
+	plotName:string;
+	plotType:Torappu_Act1VHalfIdlePlotType;
+	trapId:string;
+	initUnlock:bool;
+	rarity:int32;
+	sortId:int32;
+	isBasePlot:bool;
+	iconId:string;
+	funcDesc:string;
+	flavorDesc:string;
+	enemyIds:[string];
+	enemyDesc:string;
+	itemIdShown:string;
+	itemDropData:[Torappu_Act1VHalfIdlePlotData_ItemDropData];
+	prevCombineData:Torappu_Act1VHalfIdlePlotData_PlotCombineData;
+	derivedPlots:[string];
+}
+
+
+root_type Torappu_Act1VHalfIdlePlotData;

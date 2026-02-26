@@ -1,0 +1,10 @@
+
+table Torappu_Act1VHalfIdleWeightedBattleEquip {
+	weight:float;
+	equipId:string;
+	level:int32;
+	alias:string;
+}
+
+
+root_type Torappu_Act1VHalfIdleWeightedBattleEquip;

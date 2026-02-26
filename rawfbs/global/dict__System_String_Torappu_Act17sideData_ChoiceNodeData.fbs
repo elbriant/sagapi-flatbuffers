@@ -1,0 +1,9 @@
+include "Torappu_Act17sideData_ChoiceNodeData.fbs";
+
+table dict__System_String_Torappu_Act17sideData_ChoiceNodeData {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_ChoiceNodeData;
+}
+
+
+root_type dict__System_String_Torappu_Act17sideData_ChoiceNodeData;

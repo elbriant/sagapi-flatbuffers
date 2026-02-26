@@ -1,0 +1,8 @@
+
+table list_dict___2_System_String_System_Single_ {
+	dict_key:string;
+	dict_value:float;
+}
+
+
+root_type list_dict___2_System_String_System_Single_;

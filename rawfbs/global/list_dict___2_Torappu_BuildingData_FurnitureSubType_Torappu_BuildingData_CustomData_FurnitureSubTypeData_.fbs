@@ -1,0 +1,10 @@
+include "Torappu_BuildingData_FurnitureSubType.fbs";
+include "Torappu_BuildingData_CustomData_FurnitureSubTypeData.fbs";
+
+table list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_ {
+	dict_key:Torappu_BuildingData_FurnitureSubType;
+	dict_value:Torappu_BuildingData_CustomData_FurnitureSubTypeData;
+}
+
+
+root_type list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_;

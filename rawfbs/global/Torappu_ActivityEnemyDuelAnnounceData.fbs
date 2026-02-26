@@ -1,0 +1,10 @@
+
+table Torappu_ActivityEnemyDuelAnnounceData {
+	startTs:int64;
+	endTs:int64;
+	announceText:string;
+	showNew:bool;
+}
+
+
+root_type Torappu_ActivityEnemyDuelAnnounceData;

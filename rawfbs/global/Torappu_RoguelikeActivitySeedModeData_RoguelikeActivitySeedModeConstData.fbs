@@ -1,0 +1,19 @@
+
+table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData {
+	seedModeIntro:string;
+	emptyTextHint:string;
+	errorTextHint:string;
+	legitimateTextHint:string;
+	seedModeConfirmReplacement:string;
+	difficultyLevelTextHint:string;
+	lockedDifficultyLevelTextHint:string;
+	setDifficultyLevelTextHint:string;
+	notEnabledTextHint:string;
+	enabledTextHint:string;
+	useSucceededTextHint:string;
+	officialUseSucceededTextHint:string;
+	seedModeLockedTextHint:string;
+}
+
+
+root_type Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData;

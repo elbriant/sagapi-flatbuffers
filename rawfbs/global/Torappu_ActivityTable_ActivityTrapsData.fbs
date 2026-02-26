@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_ActivityTable_TemplateTrapData.fbs";
+include "Torappu_ActivityTable_ActivityTrapConstData.fbs";
+
+table Torappu_ActivityTable_ActivityTrapsData {
+	templateTraps:[dict__System_String_Torappu_ActivityTable_TemplateTrapData];
+	trapConstData:Torappu_ActivityTable_ActivityTrapConstData;
+}
+
+
+root_type Torappu_ActivityTable_ActivityTrapsData;

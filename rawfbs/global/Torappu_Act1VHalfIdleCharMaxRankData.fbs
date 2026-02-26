@@ -1,0 +1,12 @@
+include "Torappu_RarityRank.fbs";
+include "dict__System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData.fbs";
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_Act1VHalfIdleCharMaxRankData {
+	rarity:Torappu_RarityRank;
+	maxRankData:[dict__System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData];
+	maxEvolvePhase:Torappu_EvolvePhase;
+}
+
+
+root_type Torappu_Act1VHalfIdleCharMaxRankData;

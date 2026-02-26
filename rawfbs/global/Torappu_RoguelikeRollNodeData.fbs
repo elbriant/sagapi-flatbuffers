@@ -1,0 +1,9 @@
+include "dict__System_String_Torappu_RoguelikeRollNodeGroupData.fbs";
+
+table Torappu_RoguelikeRollNodeData {
+	zoneId:string;
+	groups:[dict__System_String_Torappu_RoguelikeRollNodeGroupData];
+}
+
+
+root_type Torappu_RoguelikeRollNodeData;

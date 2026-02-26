@@ -1,0 +1,9 @@
+include "Torappu_OverrideDropInfo.fbs";
+
+table dict__System_String_Torappu_OverrideDropInfo {
+	dict_key:string;
+	dict_value:Torappu_OverrideDropInfo;
+}
+
+
+root_type dict__System_String_Torappu_OverrideDropInfo;

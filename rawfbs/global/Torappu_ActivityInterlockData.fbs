@@ -1,0 +1,16 @@
+include "dict__System_String_Torappu_ActivityInterlockData_StageAdditionData.fbs";
+include "dict__System_String_Torappu_ActivityInterlockData_TreasureMonsterData.fbs";
+include "Torappu_SharedCharData.fbs";
+include "Torappu_ActivityInterlockData_MileStoneItemInfo.fbs";
+include "dict__System_String_list___1_Torappu_ActivityInterlockData_FinalStageProgressData.fbs";
+
+table Torappu_ActivityInterlockData {
+	stageAdditionInfoMap:[dict__System_String_Torappu_ActivityInterlockData_StageAdditionData];
+	treasureMonsterMap:[dict__System_String_Torappu_ActivityInterlockData_TreasureMonsterData];
+	specialAssistData:Torappu_SharedCharData;
+	mileStoneItemList:[Torappu_ActivityInterlockData_MileStoneItemInfo];
+	finalStageProgressMap:[dict__System_String_list___1_Torappu_ActivityInterlockData_FinalStageProgressData];
+}
+
+
+root_type Torappu_ActivityInterlockData;

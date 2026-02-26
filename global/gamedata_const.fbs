@@ -1,0 +1,296 @@
+
+table System_Int32A_ {
+	arr_values:[int32];
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_GameDataConsts_CharAssistRefreshTimeState {
+	Hour:int32;
+	Minute:int32;
+}
+
+
+
+enum Torappu_ItemType : int32 {
+	NONE = 0,
+	CHAR = 1,
+	CARD_EXP = 2,
+	MATERIAL = 3,
+	GOLD = 4,
+	EXP_PLAYER = 5,
+	TKT_TRY = 6,
+	TKT_RECRUIT = 7,
+	TKT_INST_FIN = 8,
+	TKT_GACHA = 9,
+	ACTIVITY_COIN = 10,
+	DIAMOND = 11,
+	DIAMOND_SHD = 12,
+	HGG_SHD = 13,
+	LGG_SHD = 14,
+	FURN = 15,
+	AP_GAMEPLAY = 16,
+	AP_BASE = 17,
+	SOCIAL_PT = 18,
+	CHAR_SKIN = 19,
+	TKT_GACHA_10 = 20,
+	TKT_GACHA_PRSV = 21,
+	AP_ITEM = 22,
+	AP_SUPPLY = 23,
+	RENAMING_CARD = 24,
+	RENAMING_CARD_2 = 25,
+	ET_STAGE = 26,
+	ACTIVITY_ITEM = 27,
+	VOUCHER_PICK = 28,
+	VOUCHER_CGACHA = 29,
+	VOUCHER_MGACHA = 30,
+	CRS_SHOP_COIN = 31,
+	CRS_RUNE_COIN = 32,
+	LMTGS_COIN = 33,
+	EPGS_COIN = 34,
+	LIMITED_TKT_GACHA_10 = 35,
+	LIMITED_FREE_GACHA = 36,
+	REP_COIN = 37,
+	ROGUELIKE = 38,
+	LINKAGE_TKT_GACHA_10 = 39,
+	VOUCHER_ELITE_II_4 = 40,
+	VOUCHER_ELITE_II_5 = 41,
+	VOUCHER_ELITE_II_6 = 42,
+	VOUCHER_SKIN = 43,
+	RETRO_COIN = 44,
+	PLAYER_AVATAR = 45,
+	UNI_COLLECTION = 46,
+	VOUCHER_FULL_POTENTIAL = 47,
+	RL_COIN = 48,
+	RETURN_CREDIT = 49,
+	MEDAL = 50,
+	CHARM = 51,
+	HOME_BACKGROUND = 52,
+	EXTERMINATION_AGENT = 53,
+	OPTIONAL_VOUCHER_PICK = 54,
+	ACT_CART_COMPONENT = 55,
+	VOUCHER_LEVELMAX_6 = 56,
+	VOUCHER_LEVELMAX_5 = 57,
+	VOUCHER_LEVELMAX_4 = 58,
+	VOUCHER_SKILL_SPECIALLEVELMAX_6 = 59,
+	VOUCHER_SKILL_SPECIALLEVELMAX_5 = 60,
+	VOUCHER_SKILL_SPECIALLEVELMAX_4 = 61,
+	ACTIVITY_POTENTIAL = 62,
+	ITEM_PACK = 63,
+	SANDBOX = 64,
+	FAVOR_ADD_ITEM = 65,
+	CLASSIC_SHD = 66,
+	CLASSIC_TKT_GACHA = 67,
+	CLASSIC_TKT_GACHA_10 = 68,
+	LIMITED_BUFF = 69,
+	CLASSIC_FES_PICK_TIER_5 = 70,
+	CLASSIC_FES_PICK_TIER_6 = 71,
+	RETURN_PROGRESS = 72,
+	NEW_PROGRESS = 73,
+	MCARD_VOUCHER = 74,
+	MATERIAL_ISSUE_VOUCHER = 75,
+	CRS_SHOP_COIN_V2 = 76,
+	HOME_THEME = 77,
+	SANDBOX_PERM = 78,
+	SANDBOX_TOKEN = 79,
+	TEMPLATE_TRAP = 80,
+	NAME_CARD_SKIN = 81,
+	EMOTICON_SET = 82,
+	EXCLUSIVE_TKT_GACHA = 83,
+	EXCLUSIVE_TKT_GACHA_10 = 84,
+	SO_CHAR_EXP = 85,
+	GIFTPACKAGE_TKT = 86,
+	VOUCHER_SKIN_V2 = 87,
+	RANDOM_VOUCHER_SKIN = 88,
+	ACT1VHALFIDLE_ITEM = 89,
+	PLOT_ITEM = 90
+}
+
+table Torappu_ItemBundle {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+}
+
+
+
+table list_dict___2_System_Int32_System_Int32_ {
+	dict_key:int32;
+	dict_value:int32;
+}
+
+
+
+table Torappu_TermDescriptionData {
+	termId:string;
+	termName:string;
+	description:string;
+}
+
+
+
+table dict__System_String_Torappu_TermDescriptionData {
+	dict_key:string;
+	dict_value:Torappu_TermDescriptionData;
+}
+
+
+
+enum Torappu_SubProfessionAttackType : int32 {
+	NONE = 0,
+	PHYSICAL = 1,
+	MAGICAL = 2,
+	HEAL = 3
+}
+
+table dict__System_String_Torappu_SubProfessionAttackType {
+	dict_key:string;
+	dict_value:Torappu_SubProfessionAttackType;
+}
+
+
+
+table Torappu_GameDataConsts_FeverGameData {
+	feverDuration:float;
+	feverNeed:float;
+}
+
+
+
+table Torappu_GameDataConsts {
+	maxPlayerLevel:int32;
+	playerExpMap:[int32];
+	playerApMap:[int32];
+	maxLevel:[System_Int32A_];
+	characterExpMap:[System_Int32A_];
+	characterUpgradeCostMap:[System_Int32A_];
+	evolveGoldCost:[System_Int32A_];
+	completeGainBonus:float;
+	playerApRegenSpeed:int32;
+	maxPracticeTicket:int32;
+	advancedGachaCrystalCost:int32;
+	completeCrystalBonus:int32;
+	initPlayerGold:int32;
+	initPlayerDiamondShard:int32;
+	initCampaignTotalFee:int32;
+	initRecruitTagList:[int32];
+	initCharIdList:[string];
+	attackMax:float;
+	defMax:float;
+	hpMax:float;
+	reMax:float;
+	diamondToShdRate:int32;
+	requestSameFriendCD:int32;
+	baseMaxFriendNum:int32;
+	maxStarFriendNum:int32;
+	maxSquadAssistDisplayNum:int32;
+	friendStarEditTrackTs:int64;
+	hardDiamondDrop:int32;
+	instFinDmdShdCost:int32;
+	easyCrystalBonus:int32;
+	diamondMaterialToShardExchangeRatio:int32;
+	diamondHandbookStageGain:int32;
+	apBuyCost:int32;
+	apBuyThreshold:int32;
+	creditLimit:int32;
+	monthlySubRemainTimeLimitDays:int32;
+	friendAssistRarityLimit:[int32];
+	mainlineCompatibleDesc:string;
+	mainlineToughDesc:string;
+	mainlineEasyDesc:string;
+	mainlineNormalDesc:string;
+	rejectSpCharMission:int64;
+	addedRewardDisplayZone:string;
+	oneDiamondAp:int32;
+	charRotationPresetMaxCnt:int32;
+	charRotationSkinListMaxCnt:int32;
+	defaultCRPresetCharId:string;
+	defaultCRPresetCharSkinId:string;
+	defaultCRPresetBGId:string;
+	defaultCRPresetThemeId:string;
+	defaultCRPresetName:string;
+	charRotationPresetTrackTs:int64;
+	uniequipArchiveSysTrackTs:int64;
+	manufactPromptTime:int32;
+	mainGuideActivedStageId:string;
+	richTextStyles:[dict__System_String_System_String];
+	charAssistRefreshTime:[Torappu_GameDataConsts_CharAssistRefreshTimeState];
+	normalRecruitLockedString:[string];
+	commonPotentialLvlUpCount:int32;
+	weeklyOverrideDesc:string;
+	voucherDiv:int32;
+	recruitPoolVersion:int32;
+	v006RecruitTimeStep1Refresh:int64;
+	v006RecruitTimeStep2Check:int64;
+	v006RecruitTimeStep2Flush:int64;
+	buyApTimeNoLimitFlag:bool;
+	isLMGTSEnabled:bool;
+	legacyTime:int64;
+	legacyItemList:[Torappu_ItemBundle];
+	useAssistSocialPt:int32;
+	useAssistSocialPtMaxCount:int32;
+	assistBeUsedSocialPt:[list_dict___2_System_Int32_System_Int32_];
+	pushForces:[float];
+	pushForceZeroIndex:int32;
+	normalGachaUnlockPrice:[int32];
+	pullForces:[float];
+	pullForceZeroIndex:int32;
+	multiInComeByRank:[string];
+	LMTGSToEPGSRatio:int32;
+	newBeeGiftEPGS:int32;
+	lMTGSDescConstOne:string;
+	lMTGSDescConstTwo:string;
+	defCDPrimColor:string;
+	defCDSecColor:string;
+	mailBannerType:[string];
+	monthlySubWarningTime:int64;
+	UnlimitSkinOutOfTime:int64;
+	replicateShopStartTime:int64;
+	operatorRecordsStartTime:int64;
+	isDynIllustEnabled:bool;
+	isDynIllustStartEnabled:bool;
+	isClassicQCShopEnabled:bool;
+	isRoguelikeTopicFuncEnabled:bool;
+	isSandboxPermFuncEnabled:bool;
+	isRoguelikeAvgAchieveFuncEnabled:bool;
+	isClassicPotentialItemFuncEnabled:bool;
+	isClassicGachaPoolFuncEnabled:bool;
+	isSpecialGachaPoolFuncEnabled:bool;
+	isVoucherClassicItemDistinguishable:bool;
+	isRecalRuneFuncEnabled:bool;
+	voucherSkinRedeem:int32;
+	voucherSkinDesc:string;
+	charmEquipCount:int32;
+	termDescriptionDict:[dict__System_String_Torappu_TermDescriptionData];
+	storyReviewUnlockItemLackTip:string;
+	dataVersion:string;
+	resPrefVersion:string;
+	announceWebBusType:string;
+	videoPlayerWebBusType:string;
+	gachaLogBusType:string;
+	defaultMinMultipleBattleTimes:int32;
+	defaultMaxMultipleBattleTimes:int32;
+	multipleActionOpen:bool;
+	subProfessionDamageTypePairs:[dict__System_String_Torappu_SubProfessionAttackType];
+	classicProtectChar:[string];
+	feverGameData:Torappu_GameDataConsts_FeverGameData;
+	birthdaySettingDesc:string;
+	birthdaySettingConfirmDesc:string;
+	birthdaySettingLeapConfirmDesc:string;
+	leapBirthdayRewardMonth:int32;
+	leapBirthdayRewardDay:int32;
+	birthdaySettingShowStageId:string;
+	isBirthdayFuncEnabled:bool;
+	isSoCharEnabled:bool;
+}
+
+
+
+root_type Torappu_GameDataConsts;

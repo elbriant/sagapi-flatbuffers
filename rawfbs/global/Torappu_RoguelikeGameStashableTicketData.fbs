@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeGameStashableTicketData {
+	ticketId:string;
+	stashedTicketId:string;
+}
+
+
+root_type Torappu_RoguelikeGameStashableTicketData;

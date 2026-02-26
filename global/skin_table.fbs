@@ -1,0 +1,181 @@
+
+table Torappu_CharSkinData_TokenSkinInfo {
+	tokenId:string;
+	tokenSkinId:string;
+}
+
+
+
+table Torappu_CharSkinData_BattleSkin {
+	overwritePrefab:bool;
+	skinOrPrefabId:string;
+}
+
+
+
+enum Torappu_SkinVoiceType : int32 {
+	NONE = 0,
+	ILLUST = 1,
+	ALL = 2
+}
+
+table Torappu_CharSkinData_DisplaySkin {
+	skinName:string;
+	colorList:[string];
+	titleList:[string];
+	modelName:string;
+	drawerList:[string];
+	designerList:[string];
+	skinGroupId:string;
+	skinGroupName:string;
+	skinGroupSortIndex:int32;
+	content:string;
+	dialog:string;
+	usage:string;
+	description:string;
+	obtainApproach:string;
+	sortId:int32;
+	displayTagId:string;
+	getTime:int64;
+	onYear:int32;
+	onPeriod:int32;
+}
+
+
+
+table Torappu_CharSkinData {
+	skinId:string;
+	charId:string;
+	tokenSkinMap:[Torappu_CharSkinData_TokenSkinInfo];
+	m_illustId:string;
+	m_spIllustId:string;
+	m_dynIllustId:string;
+	m_spDynIllustId:string;
+	m_avatarId:string;
+	m_portraitId:string;
+	m_dynPortraitId:string;
+	m_dynEntranceId:string;
+	m_buildingId:string;
+	m_battleSkin:Torappu_CharSkinData_BattleSkin;
+	m_isBuyAble:bool;
+	tmplId:string;
+	voiceId:string;
+	voiceType:Torappu_SkinVoiceType;
+	displaySkin:Torappu_CharSkinData_DisplaySkin;
+}
+
+
+
+table dict__System_String_Torappu_CharSkinData {
+	dict_key:string;
+	dict_value:Torappu_CharSkinData;
+}
+
+
+
+table list_dict___2_System_Int32_System_String_ {
+	dict_key:int32;
+	dict_value:string;
+}
+
+
+
+table dict__System_String_list_dict___2_System_Int32_System_String {
+	dict_key:string;
+	dict_value:[list_dict___2_System_Int32_System_String_];
+}
+
+
+
+table list_dict___2_System_String_System_String_ {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table dict__System_String_list_dict___2_System_String_System_String {
+	dict_key:string;
+	dict_value:[list_dict___2_System_String_System_String_];
+}
+
+
+
+table Torappu_CharSkinGroupInfo {
+	skinGroupId:string;
+	publishTime:int64;
+}
+
+
+
+table Torappu_CharSkinKvImgInfo {
+	kvImgId:string;
+	linkedSkinGroupId:string;
+}
+
+
+
+table Torappu_CharSkinBrandInfo {
+	brandId:string;
+	groupList:[Torappu_CharSkinGroupInfo];
+	kvImgIdList:[Torappu_CharSkinKvImgInfo];
+	brandName:string;
+	brandCapitalName:string;
+	description:string;
+	publishTime:int64;
+	sortId:int32;
+}
+
+
+
+table dict__System_String_Torappu_CharSkinBrandInfo {
+	dict_key:string;
+	dict_value:Torappu_CharSkinBrandInfo;
+}
+
+
+
+table Torappu_SpecialSkinInfo {
+	skinId:string;
+	startTime:int64;
+	endTime:int64;
+}
+
+
+
+table Torappu_SpDynIllustInfo {
+	skinId:string;
+	spDynIllustId:string;
+	spDynIllustSkinTag:string;
+	spIllustId:string;
+}
+
+
+
+table dict__System_String_Torappu_SpDynIllustInfo {
+	dict_key:string;
+	dict_value:Torappu_SpDynIllustInfo;
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_SkinTable {
+	charSkins:[dict__System_String_Torappu_CharSkinData];
+	buildinEvolveMap:[dict__System_String_list_dict___2_System_Int32_System_String];
+	buildinPatchMap:[dict__System_String_list_dict___2_System_String_System_String];
+	brandList:[dict__System_String_Torappu_CharSkinBrandInfo];
+	specialSkinInfoList:[Torappu_SpecialSkinInfo];
+	spDynSkins:[dict__System_String_Torappu_SpDynIllustInfo];
+	spDynIllustSkinTagsMap:[dict__System_String_System_String];
+}
+
+
+
+root_type Torappu_SkinTable;

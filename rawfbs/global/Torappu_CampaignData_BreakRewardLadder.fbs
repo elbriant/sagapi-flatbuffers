@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_CampaignData_BreakRewardLadder {
+	killCnt:int32;
+	breakFeeAdd:int32;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_CampaignData_BreakRewardLadder;

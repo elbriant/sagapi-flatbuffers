@@ -1,0 +1,15 @@
+include "Torappu_CommonUnlockType.fbs";
+include "Torappu_StageUnlockParam.fbs";
+include "Torappu_CharUnlockParam.fbs";
+
+table Torappu_CommonAvailCheck {
+	startTs:int64;
+	endTs:int64;
+	type:Torappu_CommonUnlockType;
+	rate:float;
+	stageUnlockParam:Torappu_StageUnlockParam;
+	charUnlockParam:Torappu_CharUnlockParam;
+}
+
+
+root_type Torappu_CommonAvailCheck;

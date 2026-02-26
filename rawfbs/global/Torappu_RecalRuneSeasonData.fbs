@@ -1,0 +1,18 @@
+include "Torappu_ItemBundle.fbs";
+include "dict__System_String_Torappu_RecalRuneStageData.fbs";
+
+table Torappu_RecalRuneSeasonData {
+	seasonId:string;
+	sortId:int32;
+	startTs:int64;
+	seasonCode:string;
+	juniorReward:Torappu_ItemBundle;
+	seniorReward:Torappu_ItemBundle;
+	seniorRewardHint:string;
+	mainMedalId:string;
+	picId:string;
+	stages:[dict__System_String_Torappu_RecalRuneStageData];
+}
+
+
+root_type Torappu_RecalRuneSeasonData;

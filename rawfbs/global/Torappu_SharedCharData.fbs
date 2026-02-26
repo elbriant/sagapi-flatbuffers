@@ -1,0 +1,25 @@
+include "Torappu_SharedCharData_SharedCharSkillData.fbs";
+include "list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_.fbs";
+include "dict__System_String_System_Int32.fbs";
+include "list_dict___2_System_String_Torappu_SharedCharData_TmplData_.fbs";
+
+table Torappu_SharedCharData {
+	charId:string;
+	potentialRank:int32;
+	m_skillIndex:int32;
+	m_skinId:string;
+	m_skills:[Torappu_SharedCharData_SharedCharSkillData];
+	m_selectEquip:string;
+	m_equips:[list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_];
+	mainSkillLvl:int32;
+	evolvePhase:int32;
+	level:int32;
+	favorPoint:int32;
+	crisisRecord:[dict__System_String_System_Int32];
+	crisisV2Record:[dict__System_String_System_Int32];
+	currentTmpl:string;
+	tmpl:[list_dict___2_System_String_Torappu_SharedCharData_TmplData_];
+}
+
+
+root_type Torappu_SharedCharData;

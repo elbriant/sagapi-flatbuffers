@@ -1,0 +1,18 @@
+include "dict__System_String_Torappu_AprilFoolStageData.fbs";
+include "dict__System_String_list___1_Torappu_AprilFoolScoreData.fbs";
+include "Torappu_AprilFoolConst.fbs";
+include "Torappu_Act4funData.fbs";
+include "Torappu_Act5FunData.fbs";
+include "Torappu_Act6FunData.fbs";
+
+table Torappu_AprilFoolTable {
+	stages:[dict__System_String_Torappu_AprilFoolStageData];
+	scoreDict:[dict__System_String_list___1_Torappu_AprilFoolScoreData];
+	constant:Torappu_AprilFoolConst;
+	act4FunData:Torappu_Act4funData;
+	act5FunData:Torappu_Act5FunData;
+	act6FunData:Torappu_Act6FunData;
+}
+
+
+root_type Torappu_AprilFoolTable;

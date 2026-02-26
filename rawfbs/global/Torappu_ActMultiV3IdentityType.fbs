@@ -1,0 +1,8 @@
+
+enum Torappu_ActMultiV3IdentityType : int32 {
+	NONE = 0,
+	HIGH = 1,
+	LOW = 2,
+	TEMPORARY = 3,
+	ALL = 4
+}

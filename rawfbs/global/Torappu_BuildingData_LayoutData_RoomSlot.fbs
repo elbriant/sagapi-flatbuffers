@@ -1,0 +1,16 @@
+include "Torappu_GridPosition.fbs";
+include "Torappu_BuildingData_RoomCategory.fbs";
+
+table Torappu_BuildingData_LayoutData_RoomSlot {
+	id:string;
+	cleanCostId:string;
+	costLabor:int32;
+	provideLabor:int32;
+	size:Torappu_GridPosition;
+	offset:Torappu_GridPosition;
+	category:Torappu_BuildingData_RoomCategory;
+	storeyId:string;
+}
+
+
+root_type Torappu_BuildingData_LayoutData_RoomSlot;

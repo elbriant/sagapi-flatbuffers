@@ -1,0 +1,9 @@
+
+table Torappu_LevelScenePair {
+	levelId:string;
+	sceneId:string;
+	hookedMapPreviewId:string;
+}
+
+
+root_type Torappu_LevelScenePair;

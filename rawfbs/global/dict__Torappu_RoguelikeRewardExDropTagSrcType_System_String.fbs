@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeRewardExDropTagSrcType.fbs";
+
+table dict__Torappu_RoguelikeRewardExDropTagSrcType_System_String {
+	dict_key:Torappu_RoguelikeRewardExDropTagSrcType;
+	dict_value:string;
+}
+
+
+root_type dict__Torappu_RoguelikeRewardExDropTagSrcType_System_String;

@@ -1,0 +1,7 @@
+
+table Torappu_AutoChessMiscConfig_SceneEffectSetting {
+	effectId:string;
+}
+
+
+root_type Torappu_AutoChessMiscConfig_SceneEffectSetting;

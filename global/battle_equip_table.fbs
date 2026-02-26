@@ -1,0 +1,77 @@
+
+enum Torappu_UniEquipTarget : int32 {
+	NONE = 0,
+	TRAIT = 1,
+	TRAIT_DATA_ONLY = 2,
+	TALENT = 3,
+	TALENT_DATA_ONLY = 4,
+	DISPLAY = 5,
+	OVERWRITE_BATTLE_DATA = 6
+}
+
+table Torappu_EquipTalentData {
+	displayRangeId:bool;
+	upgradeDescription:string;
+	talentIndex:int32;
+}
+
+
+
+table Torappu_CharacterData_EquipTalentDataBundle {
+	candidates:[Torappu_EquipTalentData];
+}
+
+
+
+table Torappu_CharacterData_EquipTraitData {
+	additionalDescription:string;
+}
+
+
+
+table Torappu_CharacterData_EquipTraitDataBundle {
+	candidates:[Torappu_CharacterData_EquipTraitData];
+}
+
+
+
+table Torappu_BattleUniEquipData {
+	resKey:string;
+	target:Torappu_UniEquipTarget;
+	isToken:bool;
+	validInGameTag:string;
+	validInMapTag:string;
+	addOrOverrideTalentDataBundle:Torappu_CharacterData_EquipTalentDataBundle;
+	overrideTraitDataBundle:Torappu_CharacterData_EquipTraitDataBundle;
+}
+
+
+
+table Torappu_Blackboard {
+}
+
+
+
+table dict__System_String_Torappu_Blackboard {
+	dict_key:string;
+	dict_value:Torappu_Blackboard;
+}
+
+
+
+table Torappu_BattleEquipPerLevelPack {
+	equipLevel:int32;
+	parts:[Torappu_BattleUniEquipData];
+	attributeBlackboard:Torappu_Blackboard;
+	tokenAttributeBlackboard:[dict__System_String_Torappu_Blackboard];
+}
+
+
+
+table Torappu_BattleEquipPack {
+	phases:[Torappu_BattleEquipPerLevelPack];
+}
+
+
+
+root_type Torappu_BattleEquipPack;

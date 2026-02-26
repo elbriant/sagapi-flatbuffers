@@ -1,0 +1,24 @@
+include "Torappu_Act13SideData_ConstData.fbs";
+include "dict__System_String_Torappu_Act13SideData_OrgData.fbs";
+include "dict__System_String_Torappu_Act13SideData_PrincipalData.fbs";
+include "dict__System_String_Torappu_Act13SideData_LongTermMissionData.fbs";
+include "Torappu_Act13SideData_DailyMissionData.fbs";
+include "dict__System_String_Torappu_Act13SideData_DailyMissionRewardGroupData.fbs";
+include "dict__System_String_Torappu_Act13SideData_ArchiveItemUnlockData.fbs";
+include "dict__System_String_Torappu_ActivityTable_ActivityHiddenAreaData.fbs";
+include "dict__System_String_Torappu_Act13SideData_ZoneAdditionData.fbs";
+
+table Torappu_Act13SideData {
+	constData:Torappu_Act13SideData_ConstData;
+	orgDataMap:[dict__System_String_Torappu_Act13SideData_OrgData];
+	principalDataMap:[dict__System_String_Torappu_Act13SideData_PrincipalData];
+	longTermMissionDataMap:[dict__System_String_Torappu_Act13SideData_LongTermMissionData];
+	dailyMissionDataList:[Torappu_Act13SideData_DailyMissionData];
+	dailyRewardGroupDataMap:[dict__System_String_Torappu_Act13SideData_DailyMissionRewardGroupData];
+	archiveItemUnlockData:[dict__System_String_Torappu_Act13SideData_ArchiveItemUnlockData];
+	hiddenAreaData:[dict__System_String_Torappu_ActivityTable_ActivityHiddenAreaData];
+	zoneAddtionDataMap:[dict__System_String_Torappu_Act13SideData_ZoneAdditionData];
+}
+
+
+root_type Torappu_Act13SideData;

@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveChatGroupData.fbs";
+
+table Torappu_ActArchiveChatData {
+	chat:[dict__System_String_Torappu_ActArchiveChatGroupData];
+}
+
+
+root_type Torappu_ActArchiveChatData;

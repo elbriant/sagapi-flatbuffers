@@ -1,0 +1,18 @@
+include "Torappu_Audio_Middleware_Data_SoundFXBank.fbs";
+
+table Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX {
+	m_runtimeBank:Torappu_Audio_Middleware_Data_SoundFXBank;
+	asset:string;
+	weight:float;
+	important:bool;
+	is2D:bool;
+	delay:float;
+	minPitch:float;
+	maxPitch:float;
+	minVolume:float;
+	maxVolume:float;
+	ignoreTimeScale:bool;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX;

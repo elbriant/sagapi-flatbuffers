@@ -1,0 +1,10 @@
+include "Torappu_CharacterData_UnlockCondition.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_CharacterData_SkillLevelCost {
+	unlockCond:Torappu_CharacterData_UnlockCondition;
+	lvlUpCost:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_CharacterData_SkillLevelCost;

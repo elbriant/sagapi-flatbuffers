@@ -1,0 +1,8 @@
+
+table Torappu_Act4funStageExtraData {
+	description:string;
+	valueIconId:string;
+}
+
+
+root_type Torappu_Act4funStageExtraData;

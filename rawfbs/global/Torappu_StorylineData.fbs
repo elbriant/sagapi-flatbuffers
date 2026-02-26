@@ -1,0 +1,18 @@
+include "Torappu_StorylineType.fbs";
+include "list_dict___2_System_String_Torappu_StorylineLocationData_.fbs";
+
+table Torappu_StorylineData {
+	storylineId:string;
+	storylineType:Torappu_StorylineType;
+	sortId:int32;
+	storylineName:string;
+	storylineIconId:string;
+	storylineLogoId:string;
+	backgroundId:string;
+	hasVideoToPlay:bool;
+	startTs:int64;
+	locations:[list_dict___2_System_String_Torappu_StorylineLocationData_];
+}
+
+
+root_type Torappu_StorylineData;

@@ -1,0 +1,10 @@
+
+table Torappu_SpecialOperatorDetailSkillNodeData {
+	nodeId:string;
+	skillKey:string;
+	skillLevel:int32;
+	skillSpLevel:int32;
+}
+
+
+root_type Torappu_SpecialOperatorDetailSkillNodeData;

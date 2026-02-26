@@ -1,0 +1,16 @@
+
+table Torappu_ActRecruitOnlyData_RecruitOnlyItemData {
+	id:string;
+	phaseNum:int32;
+	tagId:int32;
+	tagTimes:int32;
+	startTime:int64;
+	endTime:int64;
+	startTimeDesc:string;
+	endTimeDesc:string;
+	desc1:string;
+	desc2:string;
+}
+
+
+root_type Torappu_ActRecruitOnlyData_RecruitOnlyItemData;

@@ -1,0 +1,8 @@
+
+table Torappu_CharPatchData_PatchInfo {
+	tmplIds:[string];
+	defaultPatch:string;
+}
+
+
+root_type Torappu_CharPatchData_PatchInfo;

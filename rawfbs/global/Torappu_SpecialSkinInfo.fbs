@@ -1,0 +1,9 @@
+
+table Torappu_SpecialSkinInfo {
+	skinId:string;
+	startTime:int64;
+	endTime:int64;
+}
+
+
+root_type Torappu_SpecialSkinInfo;

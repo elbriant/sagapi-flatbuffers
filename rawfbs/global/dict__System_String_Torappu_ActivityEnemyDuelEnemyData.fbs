@@ -1,0 +1,9 @@
+include "Torappu_ActivityEnemyDuelEnemyData.fbs";
+
+table dict__System_String_Torappu_ActivityEnemyDuelEnemyData {
+	dict_key:string;
+	dict_value:Torappu_ActivityEnemyDuelEnemyData;
+}
+
+
+root_type dict__System_String_Torappu_ActivityEnemyDuelEnemyData;

@@ -1,0 +1,15 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_SandboxV2TutorialRepoCharData {
+	instId:int32;
+	charId:string;
+	evolvePhase:Torappu_EvolvePhase;
+	level:int32;
+	favorPoint:int32;
+	potentialRank:int32;
+	mainSkillLv:int32;
+	specSkillList:[int32];
+}
+
+
+root_type Torappu_SandboxV2TutorialRepoCharData;

@@ -1,0 +1,67 @@
+
+table Torappu_GridPosition {
+	row:int32;
+	col:int32;
+}
+
+
+
+table Torappu_BuildingData_ObstaclePoint {
+	offset:Torappu_GridPosition;
+	edgeWalkableMask:uint8;
+}
+
+
+
+table Torappu_BuildingData_ObstacleData {
+	floorObstacles:[Torappu_BuildingData_ObstaclePoint];
+	backwallObstacles:[Torappu_BuildingData_ObstaclePoint];
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_ObstacleData {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_ObstacleData;
+}
+
+
+
+enum Torappu_BuildingData_LODLEVEL : int32 {
+	HIGHEST = 0,
+	HIGH = 1,
+	LOW = 2,
+	LOWEST = 3,
+	COUNT = 4
+}
+
+table dict__Torappu_BuildingData_LODLEVEL_list___1_System_String {
+	dict_key:Torappu_BuildingData_LODLEVEL;
+	dict_value:[string];
+}
+
+
+
+table Torappu_BuildingData_FurnitureLODConfig {
+	showedObjNames:[dict__Torappu_BuildingData_LODLEVEL_list___1_System_String];
+	isOverWrite:bool;
+}
+
+
+
+table dict__System_String_Torappu_BuildingData_FurnitureLODConfig {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_FurnitureLODConfig;
+}
+
+
+
+table Torappu_BuildingData_BuildingLocalData {
+	furnitureObstacleData:[dict__System_String_Torappu_BuildingData_ObstacleData];
+	roomObstacleData:[dict__System_String_Torappu_BuildingData_ObstacleData];
+	furnitureLODConfig:[dict__System_String_Torappu_BuildingData_FurnitureLODConfig];
+}
+
+
+
+root_type Torappu_BuildingData_BuildingLocalData;

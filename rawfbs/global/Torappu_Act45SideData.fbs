@@ -1,0 +1,14 @@
+include "list_dict___2_System_String_Torappu_Act45SideData_Act45SideCharData_.fbs";
+include "list_dict___2_System_String_Torappu_Act45SideData_Act45SideMailData_.fbs";
+include "Torappu_Act45SideData_Act45SideConstData.fbs";
+include "dict__System_String_Torappu_Act45SideData_Act45SideZoneAdditionData.fbs";
+
+table Torappu_Act45SideData {
+	charData:[list_dict___2_System_String_Torappu_Act45SideData_Act45SideCharData_];
+	mailData:[list_dict___2_System_String_Torappu_Act45SideData_Act45SideMailData_];
+	constData:Torappu_Act45SideData_Act45SideConstData;
+	zoneAdditionDataMap:[dict__System_String_Torappu_Act45SideData_Act45SideZoneAdditionData];
+}
+
+
+root_type Torappu_Act45SideData;

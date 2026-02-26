@@ -1,0 +1,9 @@
+include "Torappu_Act24SideData_MealData.fbs";
+
+table list_dict___2_System_String_Torappu_Act24SideData_MealData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_MealData;
+}
+
+
+root_type list_dict___2_System_String_Torappu_Act24SideData_MealData_;

@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleWeightedBattleEquip.fbs";
+
+table dict__System_String_list___1_Torappu_Act1VHalfIdleWeightedBattleEquip {
+	dict_key:string;
+	dict_value:[Torappu_Act1VHalfIdleWeightedBattleEquip];
+}
+
+
+root_type dict__System_String_list___1_Torappu_Act1VHalfIdleWeightedBattleEquip;

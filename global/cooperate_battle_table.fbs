@@ -1,0 +1,100 @@
+
+enum Torappu_Battle_Cooperate_EndTileType : int32 {
+	NONE = 0,
+	MY_SIDE = 1,
+	MATE_SIDE = 2,
+	SHARED = 3
+}
+
+table Torappu_Battle_Cooperate_CooperateEndTileInfo {
+	name:string;
+	description:string;
+}
+
+
+
+table dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo {
+	dict_key:Torappu_Battle_Cooperate_EndTileType;
+	dict_value:Torappu_Battle_Cooperate_CooperateEndTileInfo;
+}
+
+
+
+table Torappu_Battle_Cooperate_CooperateAheadGoalData {
+	aheadCnt:int32;
+	level:int32;
+}
+
+
+
+enum Torappu_Battle_Cooperate_LASTROUNDRESULT : int32 {
+	GOAL = 0,
+	LOST = 1
+}
+
+table dict__Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32 {
+	dict_key:Torappu_Battle_Cooperate_LASTROUNDRESULT;
+	dict_value:int32;
+}
+
+
+
+table Torappu_Battle_Cooperate_CooperateWaveWeight {
+	wave:int32;
+	weight:int32;
+}
+
+
+
+table dict__System_Int32_list___1_Torappu_Battle_Cooperate_CooperateWaveWeight {
+	dict_key:int32;
+	dict_value:[Torappu_Battle_Cooperate_CooperateWaveWeight];
+}
+
+
+
+table Torappu_Battle_Cooperate_CooperateTeamWeight {
+	teamName:string;
+	weight:int32;
+}
+
+
+
+table Torappu_Battle_Cooperate_CooperateTeamPlayer {
+	forward:string;
+	goalkeeper:string;
+	muscleman:string;
+}
+
+
+
+table dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer {
+	dict_key:string;
+	dict_value:Torappu_Battle_Cooperate_CooperateTeamPlayer;
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_Battle_Cooperate_CooperateModeBattleData {
+	costTransferred:int32;
+	getMaxMsgCntInOneUpdate:int32;
+	endTileInfo:[dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo];
+	footballAheadGoalCntFactor:[Torappu_Battle_Cooperate_CooperateAheadGoalData];
+	footballHardTypeFactor:int32;
+	footballLastRoundResultFactor:[dict__Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32];
+	footballLevelOfWaveFactor:[dict__System_Int32_list___1_Torappu_Battle_Cooperate_CooperateWaveWeight];
+	footballTeamWeights:[Torappu_Battle_Cooperate_CooperateTeamWeight];
+	footballTeamPlayers:[dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer];
+	footballPlayersName:[dict__System_String_System_String];
+}
+
+
+
+root_type Torappu_Battle_Cooperate_CooperateModeBattleData;

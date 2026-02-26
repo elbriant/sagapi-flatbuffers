@@ -1,0 +1,7 @@
+
+enum Torappu_ActMultiV3BlockType : int32 {
+	NONE = 0,
+	START = 1,
+	END = 2,
+	MID = 3
+}

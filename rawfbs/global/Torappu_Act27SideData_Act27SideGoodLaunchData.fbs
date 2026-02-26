@@ -1,0 +1,13 @@
+
+table Torappu_Act27SideData_Act27SideGoodLaunchData {
+	groupId:string;
+	startTime:int64;
+	stageId:string;
+	code:string;
+	drinkId:string;
+	foodId:string;
+	souvenirId:string;
+}
+
+
+root_type Torappu_Act27SideData_Act27SideGoodLaunchData;

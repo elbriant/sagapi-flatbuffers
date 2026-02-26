@@ -1,0 +1,9 @@
+include "Torappu_MiniActTrialData_RuleType.fbs";
+
+table Torappu_MiniActTrialData_RuleData {
+	ruleType:Torappu_MiniActTrialData_RuleType;
+	ruleText:string;
+}
+
+
+root_type Torappu_MiniActTrialData_RuleData;

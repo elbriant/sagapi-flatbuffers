@@ -1,0 +1,19 @@
+include "Torappu_Act13SideData_PrestigeData.fbs";
+include "dict__System_Int32_Torappu_ItemBundle.fbs";
+include "Torappu_Act13SideData_OrgSectionData.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act13SideData_OrgData {
+	orgId:string;
+	orgName:string;
+	orgEnName:string;
+	openTime:int64;
+	principalIdList:[string];
+	prestigeList:[Torappu_Act13SideData_PrestigeData];
+	agendaCount2PrestigeItemMap:[dict__System_Int32_Torappu_ItemBundle];
+	orgSectionList:[Torappu_Act13SideData_OrgSectionData];
+	prestigeItem:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_Act13SideData_OrgData;

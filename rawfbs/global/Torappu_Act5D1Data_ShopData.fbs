@@ -1,0 +1,10 @@
+include "dict__System_String_Torappu_Act5D1Data_ShopGood.fbs";
+include "dict__System_String_list___1_Torappu_Act5D1Data_ProgessGoodItem.fbs";
+
+table Torappu_Act5D1Data_ShopData {
+	shopGoods:[dict__System_String_Torappu_Act5D1Data_ShopGood];
+	progressGoods:[dict__System_String_list___1_Torappu_Act5D1Data_ProgessGoodItem];
+}
+
+
+root_type Torappu_Act5D1Data_ShopData;

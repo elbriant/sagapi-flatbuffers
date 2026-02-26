@@ -1,0 +1,15 @@
+include "Torappu_Act3D0Data_GachaBoxType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act3D0Data_GachaBoxInfo {
+	gachaBoxId:string;
+	boxType:Torappu_Act3D0Data_GachaBoxType;
+	keyGoodId:string;
+	tokenId:Torappu_ItemBundle;
+	tokenNumOnce:int32;
+	unlockImg:string;
+	nextGachaBoxInfoId:string;
+}
+
+
+root_type Torappu_Act3D0Data_GachaBoxInfo;

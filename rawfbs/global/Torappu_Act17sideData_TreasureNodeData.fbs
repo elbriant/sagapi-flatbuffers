@@ -1,0 +1,19 @@
+include "Torappu_ItemBundle.fbs";
+include "Torappu_Act17sideData_TreasureType.fbs";
+
+table Torappu_Act17sideData_TreasureNodeData {
+	nodeId:string;
+	treasureId:string;
+	treasureName:string;
+	treasurePic:string;
+	treasureSpecialPic:string;
+	endEventId:string;
+	confirmDes:string;
+	treasureDesList:[string];
+	missionIdList:[string];
+	rewardList:[Torappu_ItemBundle];
+	treasureType:Torappu_Act17sideData_TreasureType;
+}
+
+
+root_type Torappu_Act17sideData_TreasureNodeData;

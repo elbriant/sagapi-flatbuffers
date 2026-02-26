@@ -1,0 +1,8 @@
+include "Torappu_ReplicateData.fbs";
+
+table Torappu_ReplicateTable {
+	replicateList:[Torappu_ReplicateData];
+}
+
+
+root_type Torappu_ReplicateTable;

@@ -1,0 +1,9 @@
+include "Torappu_HomeThemeLimitInfoData.fbs";
+
+table Torappu_HomeThemeLimitData {
+	id:string;
+	limitInfos:[Torappu_HomeThemeLimitInfoData];
+}
+
+
+root_type Torappu_HomeThemeLimitData;

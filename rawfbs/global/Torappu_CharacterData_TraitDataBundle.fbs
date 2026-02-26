@@ -1,0 +1,8 @@
+include "Torappu_CharacterData_TraitData.fbs";
+
+table Torappu_CharacterData_TraitDataBundle {
+	candidates:[Torappu_CharacterData_TraitData];
+}
+
+
+root_type Torappu_CharacterData_TraitDataBundle;

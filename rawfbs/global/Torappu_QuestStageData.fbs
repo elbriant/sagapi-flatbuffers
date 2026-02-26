@@ -1,0 +1,11 @@
+
+table Torappu_QuestStageData {
+	stageId:string;
+	stageRank:int32;
+	sortId:int32;
+	isUrgentStage:bool;
+	isDragonStage:bool;
+}
+
+
+root_type Torappu_QuestStageData;

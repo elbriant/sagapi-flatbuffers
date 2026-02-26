@@ -1,0 +1,18 @@
+include "dict__System_String_Torappu_RL02Development.fbs";
+include "dict__System_String_Torappu_RoguelikeTopicDevToken.fbs";
+include "Torappu_RL02DevRawTextBuffGroup.fbs";
+include "Torappu_RL02DevelopmentLine.fbs";
+include "Torappu_RL02EndingText.fbs";
+include "Torappu_RL02DifficultyExt.fbs";
+
+table Torappu_RL02CustomizeData {
+	developments:[dict__System_String_Torappu_RL02Development];
+	developmentTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developmentRawTextGroup:[Torappu_RL02DevRawTextBuffGroup];
+	developmentLines:[Torappu_RL02DevelopmentLine];
+	endingText:Torappu_RL02EndingText;
+	difficulties:[Torappu_RL02DifficultyExt];
+}
+
+
+root_type Torappu_RL02CustomizeData;

@@ -1,0 +1,32 @@
+include "Torappu_AttributesData.fbs";
+include "Torappu_SourceApplyWay.fbs";
+include "Torappu_MotionMode.fbs";
+include "Torappu_EnemyLevelType.fbs";
+include "Torappu_Blackboard.fbs";
+include "Torappu_LevelData_EnemyData_ESkillData.fbs";
+include "Torappu_LevelData_EnemyData_ESpData.fbs";
+include "Torappu_LevelData_EnemyData_RuntimeData.fbs";
+
+table Torappu_LevelData_EnemyData {
+	name:string;
+	description:string;
+	key:string;
+	attributes:Torappu_AttributesData;
+	applyWay:Torappu_SourceApplyWay;
+	motion:Torappu_MotionMode;
+	enemyTags:[string];
+	notCountInTotal:bool;
+	alias:string;
+	lifePointReduce:int32;
+	rangeRadius:float;
+	numOfExtraDrops:int32;
+	viewRadius:float;
+	levelType:Torappu_EnemyLevelType;
+	talentBlackboard:Torappu_Blackboard;
+	skills:[Torappu_LevelData_EnemyData_ESkillData];
+	spData:Torappu_LevelData_EnemyData_ESpData;
+	m_runtimeData:Torappu_LevelData_EnemyData_RuntimeData;
+}
+
+
+root_type Torappu_LevelData_EnemyData;

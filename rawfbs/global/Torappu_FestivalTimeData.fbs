@@ -1,0 +1,10 @@
+include "Torappu_FestivalVoiceTimeType.fbs";
+include "Torappu_FestivalTimeInterval.fbs";
+
+table Torappu_FestivalTimeData {
+	timeType:Torappu_FestivalVoiceTimeType;
+	interval:Torappu_FestivalTimeInterval;
+}
+
+
+root_type Torappu_FestivalTimeData;

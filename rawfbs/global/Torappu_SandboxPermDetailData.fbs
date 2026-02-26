@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_SandboxV2Data.fbs";
+
+table Torappu_SandboxPermDetailData {
+	sandboxV2TemplateData:[dict__System_String_Torappu_SandboxV2Data];
+}
+
+
+root_type Torappu_SandboxPermDetailData;

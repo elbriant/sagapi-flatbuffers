@@ -1,0 +1,15 @@
+include "Torappu_ActMultiV3MatchPosType.fbs";
+include "Torappu_ActMultiV3MatchPosUnlockCond.fbs";
+
+table Torappu_ActMultiV3MatchPosData {
+	matchPos:Torappu_ActMultiV3MatchPosType;
+	sortId:int32;
+	name:string;
+	desc:string;
+	posToast:string;
+	matchDesc:string;
+	unlockCond:Torappu_ActMultiV3MatchPosUnlockCond;
+}
+
+
+root_type Torappu_ActMultiV3MatchPosData;

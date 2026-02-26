@@ -1,0 +1,16 @@
+include "Torappu_Act1VHalfIdleTechTreeNodeType.fbs";
+include "Torappu_Act1VHalfIdleTechTreeData_Effect.fbs";
+
+table Torappu_Act1VHalfIdleTechTreeData {
+	nodeId:string;
+	nodeType:Torappu_Act1VHalfIdleTechTreeNodeType;
+	prevNodeId:[string];
+	tokenCost:int32;
+	name:string;
+	iconId:string;
+	showPrevLockTips:bool;
+	effect:[Torappu_Act1VHalfIdleTechTreeData_Effect];
+}
+
+
+root_type Torappu_Act1VHalfIdleTechTreeData;

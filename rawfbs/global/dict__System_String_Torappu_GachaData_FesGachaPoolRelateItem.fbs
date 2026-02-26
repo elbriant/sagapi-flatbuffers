@@ -1,0 +1,9 @@
+include "Torappu_GachaData_FesGachaPoolRelateItem.fbs";
+
+table dict__System_String_Torappu_GachaData_FesGachaPoolRelateItem {
+	dict_key:string;
+	dict_value:Torappu_GachaData_FesGachaPoolRelateItem;
+}
+
+
+root_type dict__System_String_Torappu_GachaData_FesGachaPoolRelateItem;

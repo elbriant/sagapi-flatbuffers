@@ -1,0 +1,7 @@
+
+enum Torappu_Act1VHalfIdleEquipType : int32 {
+	WEAPON = 0,
+	ARMOR = 1,
+	ACCESSORY = 2,
+	NUM = 3
+}

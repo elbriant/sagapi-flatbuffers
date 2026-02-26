@@ -1,0 +1,9 @@
+
+enum Torappu_Act38SideData_NpcDialogType : int32 {
+	NONE = 0,
+	ENTER_PUZZLE = 1,
+	PLATE_ERROR = 2,
+	HINT_SUCC = 3,
+	HINT_FAIL = 4,
+	PUZZLE_SOLVED = 5
+}

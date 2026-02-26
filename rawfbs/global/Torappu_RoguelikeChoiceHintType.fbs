@@ -1,0 +1,19 @@
+
+enum Torappu_RoguelikeChoiceHintType : int32 {
+	NONE = 0,
+	ITEM = 1,
+	CANDLED_CHAR = 2,
+	GUIDED_CHAR = 3,
+	SACRIFICE = 4,
+	SACRIFICE_TOTEM = 5,
+	EXPEDITION = 6,
+	CANDLE = 7,
+	GUIDED = 8,
+	HP = 9,
+	VISION = 10,
+	STASHED_RECRUIT = 11,
+	CHAOS = 12,
+	FRAGMENT = 13,
+	SP_ZONE_AP = 14,
+	COPPER_LUCK = 15
+}

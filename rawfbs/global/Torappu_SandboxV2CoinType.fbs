@@ -1,0 +1,5 @@
+
+enum Torappu_SandboxV2CoinType : int32 {
+	DIMENSION_COIN = 0,
+	GOLD = 1
+}

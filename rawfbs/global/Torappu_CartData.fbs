@@ -1,0 +1,13 @@
+include "dict__System_String_Torappu_CartComponents.fbs";
+include "dict__System_String_Torappu_RuneTable_PackedRuneData.fbs";
+include "Torappu_CartData_CartConstData.fbs";
+
+table Torappu_CartData {
+	carDict:[dict__System_String_Torappu_CartComponents];
+	runeDataDict:[dict__System_String_Torappu_RuneTable_PackedRuneData];
+	cartStages:[string];
+	constData:Torappu_CartData_CartConstData;
+}
+
+
+root_type Torappu_CartData;

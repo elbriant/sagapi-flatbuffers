@@ -1,0 +1,43 @@
+
+table Torappu_ActMultiV3ConstToastData {
+	noRoom:string;
+	fullRoom:string;
+	roomIdFormatError:string;
+	roomIdCopySuccess:string;
+	banned:string;
+	serverOverload:string;
+	matchAliveFailed:string;
+	createRoomAliveFailed:string;
+	joinRoomAliveFailed:string;
+	roomOwnerReviseMap:string;
+	roomCollaboratorReviseMap:string;
+	roomCollaboratorJoinRoom:string;
+	roomCollaboratorExitRoom:string;
+	roomOwnerReviseMode:string;
+	roomCollaboratorReviseMode:string;
+	continuousClicks:string;
+	matchNoProject:string;
+	reportNoProject:string;
+	otherModeTrainingLock:string;
+	teamLock:string;
+	mentorLockTips:string;
+	unlockMentorInMatch:string;
+	unlockInverseMode:string;
+	unlockNewMapType:string;
+	teamFullLow:string;
+	teamFullHigh:string;
+	difficultUnlock:string;
+	weeklyAlbumTimeUnlock:string;
+	weeklyAlbumCommitUnlock:string;
+	squadLockHint:string;
+	squadEffectEditHint:string;
+	inverseModeUnlockHint:string;
+	noPhotoInTemplateHint:string;
+	cannotResubmitHint:string;
+	cannotSaveTitleChange:string;
+	matchPrepareRoomClose:string;
+	stageListViewTimeLockToast:string;
+}
+
+
+root_type Torappu_ActMultiV3ConstToastData;

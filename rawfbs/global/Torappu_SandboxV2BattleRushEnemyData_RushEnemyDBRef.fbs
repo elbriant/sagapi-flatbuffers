@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef {
+	id:string;
+	level:int32;
+}
+
+
+root_type Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef;

@@ -1,0 +1,15 @@
+include "Torappu_Act1VHalfIdleEquipType.fbs";
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_Act1VHalfIdleEquipData {
+	equipId:string;
+	alias:string;
+	iconId:string;
+	name:string;
+	level:int32;
+	equipType:Torappu_Act1VHalfIdleEquipType;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_Act1VHalfIdleEquipData;

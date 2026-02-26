@@ -1,0 +1,9 @@
+include "Torappu_Act9D0Data_ActivityNewsServerInfo.fbs";
+
+table dict__System_String_Torappu_Act9D0Data_ActivityNewsServerInfo {
+	dict_key:string;
+	dict_value:Torappu_Act9D0Data_ActivityNewsServerInfo;
+}
+
+
+root_type dict__System_String_Torappu_Act9D0Data_ActivityNewsServerInfo;

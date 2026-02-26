@@ -1,0 +1,6 @@
+
+enum Torappu_Act25SideData_Act25SideArchiveItemUnlockType : int32 {
+	MISSION = 0,
+	STAGE = 1,
+	BUFF = 2
+}

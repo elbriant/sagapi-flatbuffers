@@ -1,0 +1,16 @@
+include "Torappu_RecordRewardStageDiff.fbs";
+include "Torappu_StageDiffGroup.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_RecordRewardInfo {
+	bindStageId:string;
+	stageDiff1:Torappu_RecordRewardStageDiff;
+	stageDiff:Torappu_StageDiffGroup;
+	picRes:string;
+	textPath:string;
+	textDesc:string;
+	recordReward:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_RecordRewardInfo;

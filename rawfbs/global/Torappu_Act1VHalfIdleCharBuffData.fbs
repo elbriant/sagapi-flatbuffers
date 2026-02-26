@@ -1,0 +1,10 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_Act1VHalfIdleCharBuffInfo.fbs";
+
+table Torappu_Act1VHalfIdleCharBuffData {
+	prof:Torappu_ProfessionCategory;
+	buffInfos:[Torappu_Act1VHalfIdleCharBuffInfo];
+}
+
+
+root_type Torappu_Act1VHalfIdleCharBuffData;

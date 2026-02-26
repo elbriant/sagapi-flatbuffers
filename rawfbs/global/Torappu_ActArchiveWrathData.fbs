@@ -1,0 +1,8 @@
+include "dict__System_String_Torappu_ActArchiveWrathItemData.fbs";
+
+table Torappu_ActArchiveWrathData {
+	wraths:[dict__System_String_Torappu_ActArchiveWrathItemData];
+}
+
+
+root_type Torappu_ActArchiveWrathData;

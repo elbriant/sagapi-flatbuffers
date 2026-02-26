@@ -1,0 +1,9 @@
+
+table Torappu_Act25SideData_FogUnlockData {
+	lockId:string;
+	lockedCollectionIconId:string;
+	unlockedCollectionIconId:string;
+}
+
+
+root_type Torappu_Act25SideData_FogUnlockData;

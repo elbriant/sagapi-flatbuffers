@@ -1,0 +1,17 @@
+include "Torappu_Act42D0Data_Act42D0AreaDifficulty.fbs";
+
+table Torappu_Act42D0Data_Act42D0AreaInfoData {
+	areaId:string;
+	sortId:int32;
+	areaCode:string;
+	areaName:string;
+	difficulty:Torappu_Act42D0Data_Act42D0AreaDifficulty;
+	areaDesc:string;
+	costLimit:int32;
+	bossIcon:string;
+	bossId:string;
+	nextAreaStage:string;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0AreaInfoData;

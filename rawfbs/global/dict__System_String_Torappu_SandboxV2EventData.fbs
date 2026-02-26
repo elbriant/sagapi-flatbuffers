@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2EventData.fbs";
+
+table dict__System_String_Torappu_SandboxV2EventData {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2EventData;
+}
+
+
+root_type dict__System_String_Torappu_SandboxV2EventData;

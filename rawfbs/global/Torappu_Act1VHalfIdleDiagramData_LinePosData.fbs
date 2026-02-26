@@ -1,0 +1,9 @@
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_Act1VHalfIdleDiagramData_LinePosData {
+	startPos:UnityEngine_Vector2;
+	endPos:UnityEngine_Vector2;
+}
+
+
+root_type Torappu_Act1VHalfIdleDiagramData_LinePosData;

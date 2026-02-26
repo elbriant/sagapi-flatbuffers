@@ -1,0 +1,18 @@
+include "dict__System_String_Torappu_SpecialOperatorBasicData.fbs";
+include "dict__System_String_Torappu_SpecialOperatorDetailData.fbs";
+include "Torappu_SpecialOperatorModeData.fbs";
+include "dict__System_String_Torappu_MissionData.fbs";
+include "dict__System_String_Torappu_MissionGroup.fbs";
+include "Torappu_SpecialOperatorConstData.fbs";
+
+table Torappu_SpecialOperatorTable {
+	operatorBasicData:[dict__System_String_Torappu_SpecialOperatorBasicData];
+	operatorDetailData:[dict__System_String_Torappu_SpecialOperatorDetailData];
+	modeData:[Torappu_SpecialOperatorModeData];
+	nodeUnlockMissionData:[dict__System_String_Torappu_MissionData];
+	nodeUnlockMissionGroup:[dict__System_String_Torappu_MissionGroup];
+	constData:Torappu_SpecialOperatorConstData;
+}
+
+
+root_type Torappu_SpecialOperatorTable;
