@@ -90,7 +90,7 @@ namespace DNFBDmp {
 				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet"))) {
 				GenericInstSig genericInstSig = sig.ToGenericInstSig();
 				return genericInstSig.GenericArguments[0];
-			} else if (sig.IsSZArray) {
+			} else if (sig.IsSZArray || sig.IsArray) {
 				return sig.Next;
 			}
 			return null;
