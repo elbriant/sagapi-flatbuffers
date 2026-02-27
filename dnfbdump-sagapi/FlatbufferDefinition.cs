@@ -112,6 +112,10 @@ namespace DNFBDmp {
 				return "hg__internal__MapData";
 			}
 
+			if (sig.FullName == "Torappu.Blackboard") {
+				return "[Torappu_Blackboard_DataPair]";
+			}
+
 			string? prim = getPrimitiveType(sig);
 			if (prim != null) return prim;
 
@@ -232,7 +236,7 @@ namespace DNFBDmp {
 					while (currentDef != null) {
 						string fName = currentDef.FullName;
 						// Evitamos extraer los punteros de memoria internos del motor de Unity
-						if (fName == "System.Object" || fName == "System.ValueType" || fName.StartsWith("UnityEngine.")) {
+						if (fName == "System.Object" || fName == "System.ValueType" || fName.StartsWith("UnityEngine.") || fName.StartsWith("System.")) {
 							break;
 						}
 
