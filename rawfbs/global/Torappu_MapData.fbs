@@ -1,10 +1,9 @@
-include "System_Int16A__.fbs";
 include "Torappu_TileData.fbs";
 include "Torappu_MapData_Edge.fbs";
 include "Torappu_MapEffectData.fbs";
 
 table Torappu_MapData {
-	map:System_Int16A__;
+	map:[int16];
 	tiles:[Torappu_TileData];
 	blockEdges:[Torappu_MapData_Edge];
 	tags:[string];

@@ -46,8 +46,6 @@ table Torappu_LevelData_Options {
 
 
 
-
-
 enum Torappu_TileData_HeightType : int32 {
 	LOWLAND = 0,
 	HIGHLAND = 1,
@@ -136,7 +134,7 @@ table Torappu_MapData_Edge {
 
 
 table Torappu_MapData {
-	map:System_Int16A__;
+	map:[int16];
 	tiles:[Torappu_TileData];
 	blockEdges:[Torappu_MapData_Edge];
 	tags:[string];
