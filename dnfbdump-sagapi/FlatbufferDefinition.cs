@@ -108,6 +108,10 @@ namespace DNFBDmp {
 		}
 
 		private string? getType(TypeSig sig, TypeResolver resolver, IList<TypeSig>? genericArgs = null) {
+			if (sig.FullName == "System.Int16[,]") {
+				return "hg__internal__MapData";
+			}
+
 			string? prim = getPrimitiveType(sig);
 			if (prim != null) return prim;
 
@@ -231,10 +235,25 @@ namespace DNFBDmp {
 							}
 						}
 					}
-					// -----------------------------------------------------------------------
+					List<FieldDef> allFields = new List<FieldDef>();
+					TypeDef? currentDef = def;
 
-					foreach (FieldDef field in def.Fields) {
-						if (field.IsStatic || field.IsNotSerialized || hasJsonIgnore(field)) continue;
+					while (currentDef != null && currentDef.FullName != "System.Object" && currentDef.FullName != "System.ValueType") {
+						var fields = new List<FieldDef>();
+						foreach (FieldDef f in currentDef.Fields) {
+							if (!f.IsStatic && !f.IsNotSerialized && !hasJsonIgnore(f)) {
+								fields.Add(f);
+							}
+						}
+						allFields.InsertRange(0, fields); 
+
+						if (currentDef.BaseType != null) {
+							currentDef = currentDef.BaseType.ResolveTypeDef();
+						} else {
+							break;
+						}
+					}
+					foreach (FieldDef field in allFields) {
 						TypeSig fieldSig = handleGenericSig(field.FieldType, genericArgs);
 						string? type = getType(fieldSig, resolver, genericArgs);
 						
@@ -247,6 +266,8 @@ namespace DNFBDmp {
 						
 						fbBuilder.addTableField(cleanFieldName, type);
 					}
+					// -------------------------------------------------------------
+					
 					fbBuilder.endTable();
 				}
 			} else {
@@ -258,6 +279,10 @@ namespace DNFBDmp {
 
 			this.data = header.ToString() + "\n" + fbBuilder.build();
 			if (this.isRootType) this.data += $"\nroot_type {this.name};";
+			if (this.data.Contains("hg__internal__MapData")) {
+				string mapDataDef = "table hg__internal__MapData {\n\trow_size:int32;\n\tcolumn_size:int32;\n\tmatrix_data:[int16];\n}\n\n";
+				this.data = mapDataDef + this.data;
+			}
 			this.data = this.data.Replace("\r\n", "\n");
 
 			return true;
