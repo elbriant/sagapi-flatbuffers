@@ -22,22 +22,6 @@ enum Torappu_BattleFunctionDisableMask : int32 {
 	ALL = 262143
 }
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
-table Torappu_Blackboard {
-	_items:[Torappu_Blackboard_DataPair];
-	_size:int32;
-	_version:int32;
-}
-
-
-
 table Torappu_LevelData_Options {
 	characterLimit:int32;
 	maxLifePoint:int32;
@@ -51,7 +35,7 @@ table Torappu_LevelData_Options {
 	isPredefinedCardsSelectable:bool;
 	maxPlayTime:float;
 	functionDisableMask:Torappu_BattleFunctionDisableMask;
-	configBlackBoard:Torappu_Blackboard;
+	configBlackBoard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -88,6 +72,14 @@ enum Torappu_PlayerSideMask : uint8 {
 	SIDE_B = 4,
 	NONE = 255
 }
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
 
 table UnityEngine_Vector3 {
 }
@@ -177,7 +169,7 @@ table Torappu_LegacyInLevelRuneData {
 	key:string;
 	professionMask:Torappu_ProfessionCategory;
 	buildableMask:Torappu_BuildableType;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -191,7 +183,7 @@ table dict__System_String_list___1_Torappu_LegacyInLevelRuneData {
 
 table Torappu_LevelData_GlobalBuffData {
 	prefabKey:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	overrideCameraEffect:string;
 	passProfessionMaskFlag:bool;
 	professionMask:Torappu_ProfessionCategory;
@@ -332,7 +324,7 @@ table Torappu_LevelData_EnemyData_ESkillData {
 	cooldown:float;
 	initCooldown:float;
 	spCost:int32;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -358,7 +350,7 @@ table Torappu_LevelData_EnemyData_ESpData {
 table Torappu_DynamicAbilityData {
 	atRoot:bool;
 	prefabKey:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -385,7 +377,7 @@ table Torappu_LevelData_EnemyData {
 	numOfExtraDrops:int32;
 	viewRadius:float;
 	levelType:Torappu_EnemyLevelType;
-	talentBlackboard:Torappu_Blackboard;
+	talentBlackboard:[Torappu_Blackboard_DataPair];
 	skills:[Torappu_LevelData_EnemyData_ESkillData];
 	spData:Torappu_LevelData_EnemyData_ESpData;
 	m_runtimeData:Torappu_LevelData_EnemyData_RuntimeData;
@@ -498,7 +490,7 @@ table Torappu_EnemyDatabase_EnemyData {
 	numOfExtraDrops:Torappu_Undefinable_1_System_Int32_;
 	viewRadius:Torappu_Undefinable_1_System_Single_;
 	notCountInTotal:Torappu_Undefinable_1_System_Boolean_;
-	talentBlackboard:Torappu_Blackboard;
+	talentBlackboard:[Torappu_Blackboard_DataPair];
 	skills:[Torappu_LevelData_EnemyData_ESkillData];
 	spData:Torappu_LevelData_EnemyData_ESpData;
 }
@@ -647,7 +639,7 @@ table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
-	overrideSkillBlackboard:Torappu_Blackboard;
+	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
 	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
 	showSpIllust:bool;
 	masterInfos:[Torappu_CharacterData_MasterInfo];
@@ -665,7 +657,7 @@ table Torappu_LevelData_PredefinedData_PredefinedCard {
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
-	overrideSkillBlackboard:Torappu_Blackboard;
+	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
 	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
 	showSpIllust:bool;
 	masterInfos:[Torappu_CharacterData_MasterInfo];
@@ -681,7 +673,7 @@ table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
-	overrideSkillBlackboard:Torappu_Blackboard;
+	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
 	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
 	showSpIllust:bool;
 	masterInfos:[Torappu_CharacterData_MasterInfo];

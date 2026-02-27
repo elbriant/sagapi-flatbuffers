@@ -24,22 +24,6 @@ table Torappu_CharacterData_UnlockCondition {
 
 
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
-table Torappu_Blackboard {
-	_items:[Torappu_Blackboard_DataPair];
-	_size:int32;
-	_version:int32;
-}
-
-
-
 table Torappu_TalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
 	requiredPotentialRank:int32;
@@ -47,7 +31,7 @@ table Torappu_TalentData {
 	name:string;
 	description:string;
 	rangeId:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	tokenKey:string;
 	isHideTalent:bool;
 }
@@ -61,7 +45,7 @@ table Torappu_EquipTalentData {
 	name:string;
 	description:string;
 	rangeId:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	tokenKey:string;
 	isHideTalent:bool;
 	displayRangeId:bool;
@@ -81,7 +65,7 @@ table Torappu_CharacterData_EquipTalentDataBundle {
 table Torappu_CharacterData_EquipTraitData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
 	requiredPotentialRank:int32;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	overrideDescripton:string;
 	prefabKey:string;
 	rangeId:string;
@@ -109,7 +93,7 @@ table Torappu_BattleUniEquipData {
 
 table dict__System_String_Torappu_Blackboard {
 	dict_key:string;
-	dict_value:Torappu_Blackboard;
+	dict_value:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -117,7 +101,7 @@ table dict__System_String_Torappu_Blackboard {
 table Torappu_BattleEquipPerLevelPack {
 	equipLevel:int32;
 	parts:[Torappu_BattleUniEquipData];
-	attributeBlackboard:Torappu_Blackboard;
+	attributeBlackboard:[Torappu_Blackboard_DataPair];
 	tokenAttributeBlackboard:[dict__System_String_Torappu_Blackboard];
 }
 

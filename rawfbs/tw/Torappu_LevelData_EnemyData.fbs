@@ -2,7 +2,6 @@ include "Torappu_AttributesData.fbs";
 include "Torappu_SourceApplyWay.fbs";
 include "Torappu_MotionMode.fbs";
 include "Torappu_EnemyLevelType.fbs";
-include "Torappu_Blackboard.fbs";
 include "Torappu_LevelData_EnemyData_ESkillData.fbs";
 include "Torappu_LevelData_EnemyData_ESpData.fbs";
 include "Torappu_LevelData_EnemyData_RuntimeData.fbs";
@@ -22,7 +21,7 @@ table Torappu_LevelData_EnemyData {
 	numOfExtraDrops:int32;
 	viewRadius:float;
 	levelType:Torappu_EnemyLevelType;
-	talentBlackboard:Torappu_Blackboard;
+	talentBlackboard:[Torappu_Blackboard_DataPair];
 	skills:[Torappu_LevelData_EnemyData_ESkillData];
 	spData:Torappu_LevelData_EnemyData_ESpData;
 	m_runtimeData:Torappu_LevelData_EnemyData_RuntimeData;

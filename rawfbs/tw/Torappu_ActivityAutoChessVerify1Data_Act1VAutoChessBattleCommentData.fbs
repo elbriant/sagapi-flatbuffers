@@ -1,11 +1,10 @@
 include "Torappu_Act1VAutoChessCommentReportCountType.fbs";
-include "Torappu_Blackboard.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBattleCommentData {
 	template:string;
 	description:string;
 	reportType:Torappu_Act1VAutoChessCommentReportCountType;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 

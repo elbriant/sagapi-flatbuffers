@@ -1,5 +1,4 @@
 include "Torappu_BattleFunctionDisableMask.fbs";
-include "Torappu_Blackboard.fbs";
 
 table Torappu_LevelData_Options {
 	characterLimit:int32;
@@ -14,7 +13,7 @@ table Torappu_LevelData_Options {
 	isPredefinedCardsSelectable:bool;
 	maxPlayTime:float;
 	functionDisableMask:Torappu_BattleFunctionDisableMask;
-	configBlackBoard:Torappu_Blackboard;
+	configBlackBoard:[Torappu_Blackboard_DataPair];
 }
 
 

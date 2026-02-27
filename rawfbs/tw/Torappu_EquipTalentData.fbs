@@ -1,5 +1,4 @@
 include "Torappu_CharacterData_UnlockCondition.fbs";
-include "Torappu_Blackboard.fbs";
 
 table Torappu_EquipTalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
@@ -8,7 +7,7 @@ table Torappu_EquipTalentData {
 	name:string;
 	description:string;
 	rangeId:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	tokenKey:string;
 	isHideTalent:bool;
 	displayRangeId:bool;

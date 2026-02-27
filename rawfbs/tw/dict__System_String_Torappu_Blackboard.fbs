@@ -1,8 +1,7 @@
-include "Torappu_Blackboard.fbs";
 
 table dict__System_String_Torappu_Blackboard {
 	dict_key:string;
-	dict_value:Torappu_Blackboard;
+	dict_value:[Torappu_Blackboard_DataPair];
 }
 
 
