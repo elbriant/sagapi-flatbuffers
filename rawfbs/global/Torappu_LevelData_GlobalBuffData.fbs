@@ -1,10 +1,9 @@
-include "Torappu_Blackboard.fbs";
 include "Torappu_ProfessionCategory.fbs";
 include "Torappu_PlayerSideMask.fbs";
 
 table Torappu_LevelData_GlobalBuffData {
 	prefabKey:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	overrideCameraEffect:string;
 	passProfessionMaskFlag:bool;
 	professionMask:Torappu_ProfessionCategory;

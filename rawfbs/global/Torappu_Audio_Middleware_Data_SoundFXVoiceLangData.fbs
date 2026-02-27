@@ -1,10 +1,5 @@
 
 table Torappu_Audio_Middleware_Data_SoundFXVoiceLangData {
-	_buckets:[int32];
-	_count:int32;
-	_freeList:int32;
-	_freeCount:int32;
-	_version:int32;
 }
 
 

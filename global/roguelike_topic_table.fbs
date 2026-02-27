@@ -1248,25 +1248,9 @@ table dict__System_String_Torappu_RoguelikeGameStashableTicketData {
 
 
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
-table Torappu_Blackboard {
-	_items:[Torappu_Blackboard_DataPair];
-	_size:int32;
-	_version:int32;
-}
-
-
-
 table Torappu_RoguelikeBuff {
 	key:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 

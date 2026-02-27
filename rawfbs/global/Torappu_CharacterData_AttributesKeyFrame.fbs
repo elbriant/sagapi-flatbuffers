@@ -1,9 +1,5 @@
-include "Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_.fbs";
 
 table Torappu_CharacterData_AttributesKeyFrame {
-	_items:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
-	_size:int32;
-	_version:int32;
 }
 
 

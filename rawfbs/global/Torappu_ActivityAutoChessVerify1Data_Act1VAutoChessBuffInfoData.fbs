@@ -1,9 +1,8 @@
-include "Torappu_Blackboard.fbs";
 include "Torappu_Act1VAutoChessCountType.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData {
 	key:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	countType:Torappu_Act1VAutoChessCountType;
 }
 

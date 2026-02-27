@@ -1163,26 +1163,10 @@ table Torappu_RuneData_Selector {
 
 
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
-table Torappu_Blackboard {
-	_items:[Torappu_Blackboard_DataPair];
-	_size:int32;
-	_version:int32;
-}
-
-
-
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -4871,7 +4855,7 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBattleCommentData {
 	template:string;
 	description:string;
 	reportType:Torappu_Act1VAutoChessCommentReportCountType;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -4989,7 +4973,7 @@ enum Torappu_Act1VAutoChessCountType : int32 {
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData {
 	key:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 	countType:Torappu_Act1VAutoChessCountType;
 }
 

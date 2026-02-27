@@ -7,7 +7,6 @@ include "Torappu_Undefinable_1_System_Int32_.fbs";
 include "Torappu_Undefinable_1_Torappu_EnemyLevelType_.fbs";
 include "Torappu_Undefinable_1_System_Single_.fbs";
 include "Torappu_Undefinable_1_System_Boolean_.fbs";
-include "Torappu_Blackboard.fbs";
 include "Torappu_LevelData_EnemyData_ESkillData.fbs";
 include "Torappu_LevelData_EnemyData_ESpData.fbs";
 
@@ -25,7 +24,7 @@ table Torappu_EnemyDatabase_EnemyData {
 	numOfExtraDrops:Torappu_Undefinable_1_System_Int32_;
 	viewRadius:Torappu_Undefinable_1_System_Single_;
 	notCountInTotal:Torappu_Undefinable_1_System_Boolean_;
-	talentBlackboard:Torappu_Blackboard;
+	talentBlackboard:[Torappu_Blackboard_DataPair];
 	skills:[Torappu_LevelData_EnemyData_ESkillData];
 	spData:Torappu_LevelData_EnemyData_ESpData;
 }
