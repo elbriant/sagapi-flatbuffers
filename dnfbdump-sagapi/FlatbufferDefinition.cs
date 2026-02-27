@@ -224,46 +224,56 @@ namespace DNFBDmp {
 					fbBuilder.beginTable(this.name);
 
 					// --- PARCHE NATIVO: Rescatar Enums y tipos de diccionarios heredados ---
-					if (def.BaseType != null && def.BaseType.FullName.Contains("Dictionary")) {
-						var genericInst = def.BaseType.ToTypeSig() as GenericInstSig;
-						if (genericInst != null && genericInst.GenericArguments.Count >= 2) {
-							string? keyType = getType(genericInst.GenericArguments[0], resolver, genericArgs);
-							string? valueType = getType(genericInst.GenericArguments[1], resolver, genericArgs);
-							if (keyType != null && valueType != null) {
-								fbBuilder.addTableField("key", keyType + "(key)");
-								fbBuilder.addTableField("value", valueType);
-							}
-						}
-					}
-					List<FieldDef> allFields = new List<FieldDef>();
+					var allFields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
 					TypeDef? currentDef = def;
+					IList<TypeSig>? currentGenericArgs = genericArgs;
 
+					// 1. Escalar por el árbol de herencia recolectando campos con su contexto exacto
 					while (currentDef != null && currentDef.FullName != "System.Object" && currentDef.FullName != "System.ValueType") {
-						var fields = new List<FieldDef>();
+						var fields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
 						foreach (FieldDef f in currentDef.Fields) {
 							if (!f.IsStatic && !f.IsNotSerialized && !hasJsonIgnore(f)) {
-								fields.Add(f);
+								fields.Add(new Tuple<FieldDef, IList<TypeSig>?>(f, currentGenericArgs));
 							}
 						}
-						allFields.InsertRange(0, fields); 
+						// Insertamos al inicio para respetar el orden de memoria de FlatBuffers
+						allFields.InsertRange(0, fields);
 
+						// 2. Al subir a la clase padre, resolvemos sus argumentos genéricos
 						if (currentDef.BaseType != null) {
+							TypeSig baseSig = currentDef.BaseType.ToTypeSig();
+							if (baseSig.IsGenericInstanceType) {
+								GenericInstSig genericInst = baseSig.ToGenericInstSig();
+								var resolvedArgs = new List<TypeSig>();
+								foreach (var arg in genericInst.GenericArguments) {
+									// Traducimos el tipo genérico para que C# sepa qué es 'T'
+									resolvedArgs.Add(handleGenericSig(arg, currentGenericArgs));
+								}
+								currentGenericArgs = resolvedArgs;
+							} else {
+								// Si el padre no es genérico, vaciamos los argumentos
+								currentGenericArgs = null;
+							}
 							currentDef = currentDef.BaseType.ResolveTypeDef();
 						} else {
 							break;
 						}
 					}
-					foreach (FieldDef field in allFields) {
-						TypeSig fieldSig = handleGenericSig(field.FieldType, genericArgs);
-						string? type = getType(fieldSig, resolver, genericArgs);
+
+					// 3. Procesar los campos con su contexto genérico perfecto (Sin ocultar errores)
+					foreach (var tuple in allFields) {
+						FieldDef field = tuple.Item1;
+						IList<TypeSig>? fArgs = tuple.Item2;
 						
-						if (type == null) throw new Exception($"Can't find type for field '{field.Name}'");
+						TypeSig fieldSig = handleGenericSig(field.FieldType, fArgs);
+						string? type = getType(fieldSig, resolver, fArgs);
+						
+						if (type == null) throw new Exception($"Can't find type for field '{field.Name}' in '{def.FullName}'");
 						
 						string cleanFieldName = field.Name;
 						if (cleanFieldName.Contains("k__BackingField")) {
 							cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
 						}
-						
 						fbBuilder.addTableField(cleanFieldName, type);
 					}
 					// -------------------------------------------------------------
