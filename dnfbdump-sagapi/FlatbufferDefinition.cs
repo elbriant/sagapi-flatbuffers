@@ -228,8 +228,14 @@ namespace DNFBDmp {
 					TypeDef? currentDef = def;
 					IList<TypeSig>? currentGenericArgs = genericArgs;
 
-					// 1. Escalar por el árbol de herencia recolectando campos con su contexto exacto
-					while (currentDef != null && currentDef.FullName != "System.Object" && currentDef.FullName != "System.ValueType") {
+					// 1. Escalar por la herencia, PERO deteniéndonos en la frontera de Unity o .NET
+					while (currentDef != null) {
+						string fName = currentDef.FullName;
+						// Evitamos extraer los punteros de memoria internos del motor de Unity
+						if (fName == "System.Object" || fName == "System.ValueType" || fName.StartsWith("UnityEngine.")) {
+							break;
+						}
+
 						var fields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
 						foreach (FieldDef f in currentDef.Fields) {
 							if (!f.IsStatic && !f.IsNotSerialized && !hasJsonIgnore(f)) {
@@ -239,19 +245,21 @@ namespace DNFBDmp {
 						// Insertamos al inicio para respetar el orden de memoria de FlatBuffers
 						allFields.InsertRange(0, fields);
 
-						// 2. Al subir a la clase padre, resolvemos sus argumentos genéricos
+						// 2. Resolver los argumentos genericos de la clase padre
 						if (currentDef.BaseType != null) {
 							TypeSig baseSig = currentDef.BaseType.ToTypeSig();
 							if (baseSig.IsGenericInstanceType) {
 								GenericInstSig genericInst = baseSig.ToGenericInstSig();
 								var resolvedArgs = new List<TypeSig>();
 								foreach (var arg in genericInst.GenericArguments) {
-									// Traducimos el tipo genérico para que C# sepa qué es 'T'
-									resolvedArgs.Add(handleGenericSig(arg, currentGenericArgs));
+									try {
+										resolvedArgs.Add(handleGenericSig(arg, currentGenericArgs));
+									} catch {
+										resolvedArgs.Add(arg); 
+									}
 								}
 								currentGenericArgs = resolvedArgs;
 							} else {
-								// Si el padre no es genérico, vaciamos los argumentos
 								currentGenericArgs = null;
 							}
 							currentDef = currentDef.BaseType.ResolveTypeDef();
@@ -260,21 +268,32 @@ namespace DNFBDmp {
 						}
 					}
 
-					// 3. Procesar los campos con su contexto genérico perfecto (Sin ocultar errores)
+					// 3. Procesar los campos con Diagnostico Exacto
 					foreach (var tuple in allFields) {
 						FieldDef field = tuple.Item1;
 						IList<TypeSig>? fArgs = tuple.Item2;
 						
-						TypeSig fieldSig = handleGenericSig(field.FieldType, fArgs);
-						string? type = getType(fieldSig, resolver, fArgs);
-						
-						if (type == null) throw new Exception($"Can't find type for field '{field.Name}' in '{def.FullName}'");
-						
-						string cleanFieldName = field.Name;
-						if (cleanFieldName.Contains("k__BackingField")) {
-							cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
+						try {
+							TypeSig fieldSig = handleGenericSig(field.FieldType, fArgs);
+							
+							// FlatBuffers no soporta Punteros ni variables abstractas
+							if (fieldSig.IsPointer || fieldSig.IsByRef || fieldSig.IsGenericTypeParameter || fieldSig.IsGenericMethodParameter) {
+								Console.WriteLine($"[INFO] Ignorando campo no-serializable: {field.Name} en {def.FullName}");
+								continue;
+							}
+
+							string? type = getType(fieldSig, resolver, fArgs);
+							if (type != null) {
+								string cleanFieldName = field.Name;
+								if (cleanFieldName.Contains("k__BackingField")) {
+									cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
+								}
+								fbBuilder.addTableField(cleanFieldName, type);
+							}
+						} catch (Exception ex) {
+							// En lugar de crashear, te decimos EXACTAMENTE que campo fallo para que lo evalues
+							Console.WriteLine($"[ERROR] No se pudo procesar el campo '{field.Name}' en '{def.FullName}': {ex.Message}");
 						}
-						fbBuilder.addTableField(cleanFieldName, type);
 					}
 					// -------------------------------------------------------------
 					
