@@ -1,5 +1,13 @@
+include "Torappu_CharacterData_UnlockCondition.fbs";
+include "Torappu_Blackboard.fbs";
 
 table Torappu_CharacterData_EquipTraitData {
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	blackboard:Torappu_Blackboard;
+	overrideDescripton:string;
+	prefabKey:string;
+	rangeId:string;
 	additionalDescription:string;
 }
 

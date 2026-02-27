@@ -13,8 +13,6 @@ table dict__System_String_Torappu_SandboxV2NodeData {
 
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 
@@ -944,7 +942,18 @@ table Torappu_RuneData_Selector {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 

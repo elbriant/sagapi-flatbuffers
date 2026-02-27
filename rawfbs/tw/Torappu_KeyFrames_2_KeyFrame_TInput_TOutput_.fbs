@@ -1,0 +1,7 @@
+
+table Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_ {
+	level:int32;
+}
+
+
+root_type Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_;

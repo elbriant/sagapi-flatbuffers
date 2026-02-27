@@ -55,6 +55,20 @@ table Torappu_NewbeeGachaPoolClientData {
 
 
 
+table dict__System_Int32_System_Int32 {
+	dict_key:int32;
+	dict_value:int32;
+}
+
+
+
+table Torappu_BasedRecruitPool_RecruitConstants {
+	tagPriceList:[dict__System_Int32_System_Int32];
+	maxRecruitTime:int32;
+}
+
+
+
 enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
@@ -166,6 +180,7 @@ table Torappu_SpecialRecruitPool_SpecialRecruitCostData {
 
 
 table Torappu_SpecialRecruitPool {
+	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
 	tagId:int32;
@@ -193,6 +208,7 @@ table Torappu_RecruitPool_RecruitTime {
 
 
 table Torappu_RecruitPool {
+	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
 }
 

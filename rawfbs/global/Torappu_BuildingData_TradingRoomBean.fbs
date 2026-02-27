@@ -1,5 +1,7 @@
+include "Torappu_BuildingData_TradingPhase.fbs";
 
 table Torappu_BuildingData_TradingRoomBean {
+	phases:[Torappu_BuildingData_TradingPhase];
 	basicSpeedBuff:float;
 }
 

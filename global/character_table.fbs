@@ -58,7 +58,18 @@ table Torappu_CharacterData_UnlockCondition {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 
@@ -80,7 +91,16 @@ table Torappu_CharacterData_TraitDataBundle {
 
 
 
+table Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_ {
+	level:int32;
+}
+
+
+
 table Torappu_CharacterData_AttributesKeyFrame {
+	_items:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	_size:int32;
+	_version:int32;
 }
 
 
@@ -383,6 +403,9 @@ table Torappu_CharacterData_PotentialRank {
 
 
 table Torappu_CharacterData_AttributesDeltaKeyFrame {
+	_items:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	_size:int32;
+	_version:int32;
 }
 
 

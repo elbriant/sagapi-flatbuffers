@@ -9,7 +9,61 @@ enum Torappu_UniEquipTarget : int32 {
 	OVERWRITE_BATTLE_DATA = 6
 }
 
+enum Torappu_EvolvePhase : int32 {
+	PHASE_0 = 0,
+	PHASE_1 = 1,
+	PHASE_2 = 2,
+	PHASE_3 = 3,
+	E_NUM = 4
+}
+
+table Torappu_CharacterData_UnlockCondition {
+	phase:Torappu_EvolvePhase;
+	level:int32;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
+table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
+}
+
+
+
+table Torappu_TalentData {
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	prefabKey:string;
+	name:string;
+	description:string;
+	rangeId:string;
+	blackboard:Torappu_Blackboard;
+	tokenKey:string;
+	isHideTalent:bool;
+}
+
+
+
 table Torappu_EquipTalentData {
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	prefabKey:string;
+	name:string;
+	description:string;
+	rangeId:string;
+	blackboard:Torappu_Blackboard;
+	tokenKey:string;
+	isHideTalent:bool;
 	displayRangeId:bool;
 	upgradeDescription:string;
 	talentIndex:int32;
@@ -18,12 +72,19 @@ table Torappu_EquipTalentData {
 
 
 table Torappu_CharacterData_EquipTalentDataBundle {
+	candidates:[Torappu_TalentData];
 	candidates:[Torappu_EquipTalentData];
 }
 
 
 
 table Torappu_CharacterData_EquipTraitData {
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	blackboard:Torappu_Blackboard;
+	overrideDescripton:string;
+	prefabKey:string;
+	rangeId:string;
 	additionalDescription:string;
 }
 
@@ -42,11 +103,6 @@ table Torappu_BattleUniEquipData {
 	validInGameTag:string;
 	addOrOverrideTalentDataBundle:Torappu_CharacterData_EquipTalentDataBundle;
 	overrideTraitDataBundle:Torappu_CharacterData_EquipTraitDataBundle;
-}
-
-
-
-table Torappu_Blackboard {
 }
 
 

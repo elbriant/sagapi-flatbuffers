@@ -22,7 +22,18 @@ enum Torappu_BattleFunctionDisableMask : int32 {
 	ALL = 262143
 }
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 
@@ -44,6 +55,12 @@ table Torappu_LevelData_Options {
 	configBlackBoard:Torappu_Blackboard;
 }
 
+
+table hg__internal__MapData {
+	row_size:int32;
+	column_size:int32;
+	matrix_data:[int16];
+}
 
 
 enum Torappu_TileData_HeightType : int32 {
@@ -73,18 +90,7 @@ enum Torappu_PlayerSideMask : uint8 {
 	NONE = 255
 }
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
 table UnityEngine_Vector3 {
-	x:float;
-	y:float;
-	z:float;
 }
 
 
@@ -134,7 +140,7 @@ table Torappu_MapData_Edge {
 
 
 table Torappu_MapData {
-	map:[int16];
+	map:hg__internal__MapData;
 	tiles:[Torappu_TileData];
 	blockEdges:[Torappu_MapData_Edge];
 	tags:[string];
@@ -202,8 +208,6 @@ enum Torappu_MotionMode : int32 {
 }
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 
@@ -607,7 +611,50 @@ table list_dict___2_System_String_Torappu_LevelData_BranchData_ {
 
 
 
+enum Torappu_EvolvePhase : int32 {
+	PHASE_0 = 0,
+	PHASE_1 = 1,
+	PHASE_2 = 2,
+	PHASE_3 = 3,
+	E_NUM = 4
+}
+
+table Torappu_CharacterInst_Metadata {
+	characterKey:string;
+	level:int32;
+	phase:Torappu_EvolvePhase;
+	favorBattlePhase:int32;
+	potentialRank:int32;
+}
+
+
+
+table Torappu_CharacterData_UniqueEquipPair {
+	key:string;
+	level:int32;
+}
+
+
+
+table Torappu_CharacterData_MasterInfo {
+	masterId:string;
+	level:int32;
+}
+
+
+
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
+	inst:Torappu_CharacterInst_Metadata;
+	skillIndex:int32;
+	mainSkillLvl:int32;
+	skinId:string;
+	tmplId:string;
+	overrideSkillBlackboard:Torappu_Blackboard;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
+	hidden:bool;
+	alias:string;
 	position:Torappu_GridPosition;
 	direction:Torappu_SharedConsts_Direction;
 }
@@ -615,11 +662,33 @@ table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 
 
 table Torappu_LevelData_PredefinedData_PredefinedCard {
+	inst:Torappu_CharacterInst_Metadata;
+	skillIndex:int32;
+	mainSkillLvl:int32;
+	skinId:string;
+	tmplId:string;
+	overrideSkillBlackboard:Torappu_Blackboard;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
+	hidden:bool;
+	alias:string;
 }
 
 
 
 table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
+	inst:Torappu_CharacterInst_Metadata;
+	skillIndex:int32;
+	mainSkillLvl:int32;
+	skinId:string;
+	tmplId:string;
+	overrideSkillBlackboard:Torappu_Blackboard;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
+	hidden:bool;
+	alias:string;
 	initialCnt:int32;
 }
 

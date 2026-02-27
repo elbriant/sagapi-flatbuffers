@@ -1,5 +1,14 @@
 
+table Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_ {
+	level:int32;
+}
+
+
+
 table Torappu_FavorDataFrames {
+	_items:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	_size:int32;
+	_version:int32;
 }
 
 

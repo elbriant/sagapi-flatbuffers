@@ -110,7 +110,18 @@ table Torappu_Undefinable_1_Torappu_EnemyLevelType_ {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 

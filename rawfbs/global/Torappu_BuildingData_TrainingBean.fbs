@@ -1,5 +1,7 @@
+include "Torappu_BuildingData_TrainingPhase.fbs";
 
 table Torappu_BuildingData_TrainingBean {
+	phases:[Torappu_BuildingData_TrainingPhase];
 	basicSpeedBuff:float;
 }
 

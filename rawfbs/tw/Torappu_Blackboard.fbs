@@ -1,5 +1,9 @@
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 

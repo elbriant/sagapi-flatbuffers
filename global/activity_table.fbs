@@ -1163,7 +1163,18 @@ table Torappu_RuneData_Selector {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 
@@ -2654,6 +2665,22 @@ table dict__System_String_Torappu_ActivityBossRushData_BossRushStageAdditionData
 
 
 
+enum Torappu_StageDropType : int32 {
+	NONE = 0,
+	ONCE = 1,
+	NORMAL = 2,
+	SPECIAL = 3,
+	ADDITIONAL = 4,
+	APRETURN = 5,
+	DIAMOND_MATERIAL = 6,
+	FUNITURE_DROP = 7,
+	COMPLETE = 8,
+	CHARM_DROP = 9,
+	OVERRIDE_DROP = 10,
+	ITEM_RETURN = 11,
+	CONDITION_DROP = 12
+}
+
 enum Torappu_OccPer : int32 {
 	ALWAYS = 0,
 	ALMOST = 1,
@@ -2665,6 +2692,9 @@ enum Torappu_OccPer : int32 {
 }
 
 table Torappu_ActivityBossRushData_DisplayDetailRewards {
+	type:Torappu_ItemType;
+	id:string;
+	dropType:Torappu_StageDropType;
 	occPercent:Torappu_OccPer;
 	dropCount:int32;
 }
@@ -3156,22 +3186,6 @@ table list_dict___2_System_String_Torappu_Act24SideData_MissionExtraData_ {
 
 
 
-enum Torappu_StageDropType : int32 {
-	NONE = 0,
-	ONCE = 1,
-	NORMAL = 2,
-	SPECIAL = 3,
-	ADDITIONAL = 4,
-	APRETURN = 5,
-	DIAMOND_MATERIAL = 6,
-	FUNITURE_DROP = 7,
-	COMPLETE = 8,
-	CHARM_DROP = 9,
-	OVERRIDE_DROP = 10,
-	ITEM_RETURN = 11,
-	CONDITION_DROP = 12
-}
-
 table Torappu_WeightItemBundle {
 	id:string;
 	type:Torappu_ItemType;
@@ -3197,6 +3211,9 @@ table Torappu_StageData_DisplayRewards {
 
 
 table Torappu_StageData_DisplayDetailRewards {
+	type:Torappu_ItemType;
+	id:string;
+	dropType:Torappu_StageDropType;
 	occPercent:Torappu_OccPer;
 }
 
@@ -7153,8 +7170,6 @@ table Torappu_Act1VHalfIdleConstData {
 
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 
@@ -9116,6 +9131,25 @@ table Torappu_FifthAnnivExploreConst {
 
 
 table Torappu_FifthAnnivExploreMissionData {
+	id:string;
+	sortId:int32;
+	description:string;
+	type:Torappu_MissionType;
+	itemBgType:Torappu_MissionItemBgType;
+	preMissionIds:[string];
+	template:string;
+	templateType:string;
+	param:[string];
+	unlockCondition:string;
+	unlockParam:[string];
+	missionGroup:string;
+	toPage:string;
+	periodicalPoint:int32;
+	rewards:[Torappu_MissionDisplayRewards];
+	backImagePath:string;
+	foldId:string;
+	haveSubMissionToUnlock:bool;
+	countEndTs:int64;
 	progressUpLimit:int32;
 }
 

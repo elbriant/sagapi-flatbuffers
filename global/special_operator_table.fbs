@@ -173,8 +173,6 @@ table dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData {
 
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 

@@ -1,7 +1,13 @@
+include "Torappu_Audio_Middleware_TorappuAudioMiddleware.fbs";
+include "Torappu_Audio_Middleware_AudioAtom.fbs";
 include "Torappu_Audio_MixerDesc.fbs";
 include "Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX.fbs";
 
 table Torappu_Audio_Middleware_Data_SoundFXBank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 	m_totalWeight:float;
 	mixerDesc:Torappu_Audio_MixerDesc;
 	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];

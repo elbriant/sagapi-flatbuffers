@@ -1,5 +1,47 @@
 
+table Torappu_Audio_Middleware_AudioAtom {
+	bank:Torappu_Audio_Middleware_Data_Bank;
+	name:string;
+}
+
+
+
+table Torappu_Audio_Middleware_Data_Bank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
+}
+
+
+
+table dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank {
+	dict_key:string;
+	dict_value:[Torappu_Audio_Middleware_Data_Bank];
+}
+
+
+
+table dict__System_String_System_String {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+
+table Torappu_Audio_Middleware_TorappuAudioMiddleware {
+	m_banks:[dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank];
+	m_bankAlias:[dict__System_String_System_String];
+	m_bankList:[Torappu_Audio_Middleware_Data_Bank];
+}
+
+
+
 table Torappu_Audio_Middleware_Data_BGMBank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 	intro:string;
 	loop:string;
 	volume:float;
@@ -44,6 +86,10 @@ table Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX {
 
 
 table Torappu_Audio_Middleware_Data_SoundFXBank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 	m_totalWeight:float;
 	mixerDesc:Torappu_Audio_MixerDesc;
 	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];
@@ -55,45 +101,11 @@ table Torappu_Audio_Middleware_Data_SoundFXBank {
 
 
 
-table dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank {
-	dict_key:string;
-	dict_value:[Torappu_Audio_Middleware_Data_Bank];
-}
-
-
-
-table dict__System_String_System_String {
-	dict_key:string;
-	dict_value:string;
-}
-
-
-
-table Torappu_Audio_Middleware_TorappuAudioMiddleware {
-	m_banks:[dict__System_String_list___1_Torappu_Audio_Middleware_Data_Bank];
-	m_bankAlias:[dict__System_String_System_String];
-	m_bankList:[Torappu_Audio_Middleware_Data_Bank];
-}
-
-
-
-table Torappu_Audio_Middleware_AudioAtom {
-	bank:Torappu_Audio_Middleware_Data_Bank;
-	name:string;
-}
-
-
-
-table Torappu_Audio_Middleware_Data_Bank {
+table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
 	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
 	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
 	bankName:string;
 	name:string;
-}
-
-
-
-table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
 	m_targetBank:Torappu_Audio_Middleware_Data_Bank;
 	targetBank:string;
 	ctrlStop:bool;
@@ -103,6 +115,10 @@ table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
 
 
 table Torappu_Audio_Middleware_Data_SnapshotBank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 	targetSnapshot:string;
 	hookSoundFxBank:string;
 	delay:float;
@@ -175,31 +191,12 @@ table Torappu_Audio_Middleware_Data_FadeStyleData {
 
 
 
-enum Torappu_VoiceLangType : int32 {
-	NONE = 0,
-	JP = 1,
-	CN_MANDARIN = 2,
-	EN = 3,
-	KR = 4,
-	CN_TOPOLECT = 5,
-	LINKAGE = 6,
-	ITA = 7,
-	GER = 8,
-	RUS = 9,
-	FRE = 10,
-	SPA = 11
-}
-
-table dict__Torappu_VoiceLangType_System_String {
-	dict_key:Torappu_VoiceLangType;
-	dict_value:string;
-}
-
-
-
 table Torappu_Audio_Middleware_Data_SoundFXVoiceLangData {
-	key:string(key);
-	value:[dict__Torappu_VoiceLangType_System_String];
+	_buckets:[int32];
+	_count:int32;
+	_freeList:int32;
+	_freeCount:int32;
+	_version:int32;
 }
 
 

@@ -201,6 +201,9 @@ enum Torappu_OccPer : int32 {
 }
 
 table Torappu_StageData_DisplayDetailRewards {
+	type:Torappu_ItemType;
+	id:string;
+	dropType:Torappu_StageDropType;
 	occPercent:Torappu_OccPer;
 }
 
@@ -347,7 +350,18 @@ table Torappu_RuneData_Selector {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_Blackboard {
+	_items:[Torappu_Blackboard_DataPair];
+	_size:int32;
+	_version:int32;
 }
 
 
@@ -479,20 +493,6 @@ table Torappu_ClimbTowerRewardInfo {
 
 
 
-table Torappu_ClimbTowerMissionData {
-	bindGodCardId:string;
-	bindTowerId:string;
-}
-
-
-
-table dict__System_String_Torappu_ClimbTowerMissionData {
-	dict_key:string;
-	dict_value:Torappu_ClimbTowerMissionData;
-}
-
-
-
 enum Torappu_MissionType : int32 {
 	UNKNOWN = 0,
 	MAIN = 1,
@@ -508,10 +508,49 @@ enum Torappu_MissionType : int32 {
 	SPECIAL_OPERATOR_WEEKLY = 11
 }
 
+enum Torappu_MissionItemBgType : int32 {
+	COMMON = 0,
+	Equipment = 1,
+	Char = 2
+}
+
 table Torappu_MissionDisplayRewards {
 	type:Torappu_ItemType;
 	id:string;
 	count:int32;
+}
+
+
+
+table Torappu_ClimbTowerMissionData {
+	id:string;
+	sortId:int32;
+	description:string;
+	type:Torappu_MissionType;
+	itemBgType:Torappu_MissionItemBgType;
+	preMissionIds:[string];
+	template:string;
+	templateType:string;
+	param:[string];
+	unlockCondition:string;
+	unlockParam:[string];
+	missionGroup:string;
+	toPage:string;
+	periodicalPoint:int32;
+	rewards:[Torappu_MissionDisplayRewards];
+	backImagePath:string;
+	foldId:string;
+	haveSubMissionToUnlock:bool;
+	countEndTs:int64;
+	bindGodCardId:string;
+	bindTowerId:string;
+}
+
+
+
+table dict__System_String_Torappu_ClimbTowerMissionData {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerMissionData;
 }
 
 

@@ -316,13 +316,27 @@ table dict__System_String_Torappu_BuildingData_PrefabInfo {
 
 
 
+table Torappu_BuildingData_ControlRoomPhase {
+}
+
+
+
 table Torappu_BuildingData_ControlRoomBean {
+	phases:[Torappu_BuildingData_ControlRoomPhase];
 	basicCostBuff:int32;
 }
 
 
 
+table Torappu_BuildingData_ManufactPhase {
+	speed:float;
+	outputCapacity:int32;
+}
+
+
+
 table Torappu_BuildingData_ManufactRoomBean {
+	phases:[Torappu_BuildingData_ManufactPhase];
 	basicSpeedBuff:float;
 }
 
@@ -342,7 +356,16 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase_ {
 
 
 
+table Torappu_BuildingData_HirePhase {
+	economizeRate:float;
+	resSpeed:int32;
+	refreshTimes:int32;
+}
+
+
+
 table Torappu_BuildingData_HireRoomBean {
+	phases:[Torappu_BuildingData_HirePhase];
 	basicSpeedBuff:float;
 }
 
@@ -373,13 +396,31 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase_ {
 
 
 
+table Torappu_BuildingData_MeetingPhase {
+	friendSlotInc:int32;
+	maxVisitorNum:int32;
+	gatheringSpeed:int32;
+}
+
+
+
 table Torappu_BuildingData_MeetingRoomBean {
+	phases:[Torappu_BuildingData_MeetingPhase];
 	basicSpeedBuff:float;
 }
 
 
 
+table Torappu_BuildingData_TradingPhase {
+	orderSpeed:float;
+	orderLimit:int32;
+	orderRarity:int32;
+}
+
+
+
 table Torappu_BuildingData_TradingRoomBean {
+	phases:[Torappu_BuildingData_TradingPhase];
 	basicSpeedBuff:float;
 }
 
@@ -397,13 +438,26 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase_ {
 
 
 
+table Torappu_BuildingData_TrainingPhase {
+	specSkillLvlLimit:int32;
+}
+
+
+
 table Torappu_BuildingData_TrainingBean {
+	phases:[Torappu_BuildingData_TrainingPhase];
 	basicSpeedBuff:float;
 }
 
 
 
+table Torappu_BuildingData_PowerPhase {
+}
+
+
+
 table Torappu_BuildingData_PowerRoomBean {
+	phases:[Torappu_BuildingData_PowerPhase];
 	basicSpeedBuff:float;
 }
 
