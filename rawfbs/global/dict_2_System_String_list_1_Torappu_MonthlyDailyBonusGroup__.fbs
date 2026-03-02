@@ -1,0 +1,9 @@
+include "Torappu_MonthlyDailyBonusGroup.fbs";
+
+table dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__ {
+	dict_key:string;
+	dict_value:[Torappu_MonthlyDailyBonusGroup];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__;

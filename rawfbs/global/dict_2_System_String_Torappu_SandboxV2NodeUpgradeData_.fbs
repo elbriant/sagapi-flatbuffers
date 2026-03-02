@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2NodeUpgradeData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2NodeUpgradeData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2NodeUpgradeData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2NodeUpgradeData_;

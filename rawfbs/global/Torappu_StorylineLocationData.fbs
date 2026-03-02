@@ -4,8 +4,8 @@ include "Torappu_StorylineMainlineSplitData.fbs";
 table Torappu_StorylineLocationData {
 	locationId:string;
 	locationType:Torappu_StorylineLocationType;
-	sortId:int32;
-	startTime:int64;
+	sortId:int;
+	startTime:long;
 	presentStageId:string;
 	unlockStageId:string;
 	relevantStorySetId:string;

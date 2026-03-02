@@ -6,14 +6,14 @@ table Torappu_CharPatchData_PatchInfo {
 
 
 
-table dict__System_String_Torappu_CharPatchData_PatchInfo {
+table dict_2_System_String_Torappu_CharPatchData_PatchInfo_ {
 	dict_key:string;
 	dict_value:Torappu_CharPatchData_PatchInfo;
 }
 
 
 
-enum Torappu_SpecialOperatorTargetType : int32 {
+enum Torappu_SpecialOperatorTargetType : int {
 	NONE = 0,
 	ROGUE = 1
 }
@@ -26,14 +26,14 @@ table Torappu_CharacterData_PowerData {
 
 
 
-enum Torappu_BuildableType : int32 {
+enum Torappu_BuildableType : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_RarityRank : int32 {
+enum Torappu_RarityRank : int {
 	TIER_1 = 0,
 	TIER_2 = 1,
 	TIER_3 = 2,
@@ -43,7 +43,7 @@ enum Torappu_RarityRank : int32 {
 	E_NUM = 6
 }
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -57,7 +57,7 @@ enum Torappu_ProfessionCategory : int32 {
 	PIONEER = 512
 }
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -67,14 +67,22 @@ enum Torappu_EvolvePhase : int32 {
 
 table Torappu_CharacterData_UnlockCondition {
 	phase:Torappu_EvolvePhase;
-	level:int32;
+	level:int;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
 
 table Torappu_CharacterData_TraitData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	blackboard:[Torappu_Blackboard_DataPair];
 	overrideDescripton:string;
 	prefabKey:string;
@@ -94,7 +102,7 @@ table Torappu_CharacterData_AttributesKeyFrame {
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -190,7 +198,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -199,7 +207,7 @@ table Torappu_ItemBundle {
 table Torappu_CharacterData_PhaseData {
 	characterPrefabKey:string;
 	rangeId:string;
-	maxLevel:int32;
+	maxLevel:int;
 	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
 	evolveCost:[Torappu_ItemBundle];
 }
@@ -208,7 +216,7 @@ table Torappu_CharacterData_PhaseData {
 
 table Torappu_CharacterData_MainSkill_SpecializeLevelData {
 	unlockCond:Torappu_CharacterData_UnlockCondition;
-	lvlUpTime:int32;
+	lvlUpTime:int;
 	levelUpCost:[Torappu_ItemBundle];
 }
 
@@ -224,7 +232,7 @@ table Torappu_CharacterData_MainSkill {
 
 
 
-table dict__System_String_System_Boolean {
+table dict_2_System_String_System_Boolean_ {
 	dict_key:string;
 	dict_value:bool;
 }
@@ -233,7 +241,7 @@ table dict__System_String_System_Boolean {
 
 table Torappu_TalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	prefabKey:string;
 	name:string;
 	description:string;
@@ -251,12 +259,12 @@ table Torappu_CharacterData_TalentDataBundle {
 
 
 
-enum Torappu_CharacterData_PotentialRank_TypeEnum : int32 {
+enum Torappu_CharacterData_PotentialRank_TypeEnum : int {
 	BUFF = 0,
 	CUSTOM = 1
 }
 
-enum Torappu_AbnormalFlag : int32 {
+enum Torappu_AbnormalFlag : int {
 	STUNNED = 0,
 	SP_RECOVER_STOPPED = 1,
 	TARGET_FREE = 2,
@@ -302,13 +310,13 @@ enum Torappu_AbnormalFlag : int32 {
 	E_NUM = 42
 }
 
-enum Torappu_AbnormalCombo : int32 {
+enum Torappu_AbnormalCombo : int {
 	SLEEPING = 0,
 	SHELTERING = 1,
 	E_NUM = 2
 }
 
-enum Torappu_AttributeType : int32 {
+enum Torappu_AttributeType : int {
 	MAX_HP = 0,
 	ATK = 1,
 	DEF = 2,
@@ -348,7 +356,7 @@ enum Torappu_AttributeType : int32 {
 	E_NUM = 36
 }
 
-enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int32 {
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int {
 	ADDITION = 0,
 	MULTIPLIER = 1,
 	FINAL_ADDITION = 2,
@@ -406,7 +414,7 @@ table Torappu_CharacterData_SkillLevelCost {
 table Torappu_CharacterData {
 	name:string;
 	description:string;
-	sortIndex:int32;
+	sortIndex:int;
 	spTargetType:Torappu_SpecialOperatorTargetType;
 	spTargetId:string;
 	canUseGeneralPotentialItem:bool;
@@ -428,14 +436,14 @@ table Torappu_CharacterData {
 	itemObtainApproach:string;
 	isNotObtainable:bool;
 	isSpChar:bool;
-	maxPotentialLevel:int32;
+	maxPotentialLevel:int;
 	rarity:Torappu_RarityRank;
 	profession:Torappu_ProfessionCategory;
 	subProfessionId:string;
 	trait:Torappu_CharacterData_TraitDataBundle;
 	phases:[Torappu_CharacterData_PhaseData];
 	skills:[Torappu_CharacterData_MainSkill];
-	displayTokenDict:[dict__System_String_System_Boolean];
+	displayTokenDict:[dict_2_System_String_System_Boolean_];
 	talents:[Torappu_CharacterData_TalentDataBundle];
 	potentialRanks:[Torappu_CharacterData_PotentialRank];
 	favorKeyFrames:Torappu_CharacterData_AttributesDeltaKeyFrame;
@@ -444,14 +452,14 @@ table Torappu_CharacterData {
 
 
 
-table dict__System_String_Torappu_CharacterData {
+table dict_2_System_String_Torappu_CharacterData_ {
 	dict_key:string;
 	dict_value:Torappu_CharacterData;
 }
 
 
 
-enum Torappu_PlayerBattleRank : int32 {
+enum Torappu_PlayerBattleRank : int {
 	FAIL = 1,
 	PASS = 2,
 	COMPLETE = 3,
@@ -461,7 +469,7 @@ enum Torappu_PlayerBattleRank : int32 {
 table Torappu_CharPatchData_UnlockCond_Item {
 	stageId:string;
 	completeState:Torappu_PlayerBattleRank;
-	unlockTs:int64;
+	unlockTs:long;
 }
 
 
@@ -472,7 +480,7 @@ table Torappu_CharPatchData_UnlockCond {
 
 
 
-table dict__System_String_Torappu_CharPatchData_UnlockCond {
+table dict_2_System_String_Torappu_CharPatchData_UnlockCond_ {
 	dict_key:string;
 	dict_value:Torappu_CharPatchData_UnlockCond;
 }
@@ -481,14 +489,14 @@ table dict__System_String_Torappu_CharPatchData_UnlockCond {
 
 table Torappu_CharPatchData_PatchDetailInfo {
 	patchId:string;
-	sortId:int32;
+	sortId:int;
 	infoParam:string;
-	transSortId:int32;
+	transSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_CharPatchData_PatchDetailInfo {
+table dict_2_System_String_Torappu_CharPatchData_PatchDetailInfo_ {
 	dict_key:string;
 	dict_value:Torappu_CharPatchData_PatchDetailInfo;
 }
@@ -496,10 +504,10 @@ table dict__System_String_Torappu_CharPatchData_PatchDetailInfo {
 
 
 table Torappu_CharPatchData {
-	infos:[dict__System_String_Torappu_CharPatchData_PatchInfo];
-	patchChars:[dict__System_String_Torappu_CharacterData];
-	unlockConds:[dict__System_String_Torappu_CharPatchData_UnlockCond];
-	patchDetailInfoList:[dict__System_String_Torappu_CharPatchData_PatchDetailInfo];
+	infos:[dict_2_System_String_Torappu_CharPatchData_PatchInfo_];
+	patchChars:[dict_2_System_String_Torappu_CharacterData_];
+	unlockConds:[dict_2_System_String_Torappu_CharPatchData_UnlockCond_];
+	patchDetailInfoList:[dict_2_System_String_Torappu_CharPatchData_PatchDetailInfo_];
 }
 
 

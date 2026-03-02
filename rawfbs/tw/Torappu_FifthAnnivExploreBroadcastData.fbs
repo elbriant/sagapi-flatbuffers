@@ -1,7 +1,7 @@
 
 table Torappu_FifthAnnivExploreBroadcastData {
 	id:string;
-	eventCount:int32;
+	eventCount:int;
 	stageId:string;
 	content:string;
 }

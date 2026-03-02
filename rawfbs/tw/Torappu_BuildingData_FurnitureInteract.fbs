@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_FurnitureInteract : int32 {
+enum Torappu_BuildingData_FurnitureInteract : int {
 	NONE = 0,
 	ANIMATOR = 1,
 	MUSIC = 2,

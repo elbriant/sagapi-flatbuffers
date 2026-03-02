@@ -8,7 +8,7 @@ table Torappu_Act17sideData_ChoiceNodeData {
 	choiceName:string;
 	choiceDesList:[string];
 	cancelDes:string;
-	choiceNum:int32;
+	choiceNum:int;
 	optionList:[Torappu_Act17sideData_ChoiceNodeOptionData];
 }
 

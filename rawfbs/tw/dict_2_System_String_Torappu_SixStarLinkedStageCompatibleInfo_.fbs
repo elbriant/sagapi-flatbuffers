@@ -1,0 +1,9 @@
+include "Torappu_SixStarLinkedStageCompatibleInfo.fbs";
+
+table dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_ {
+	dict_key:string;
+	dict_value:Torappu_SixStarLinkedStageCompatibleInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_;

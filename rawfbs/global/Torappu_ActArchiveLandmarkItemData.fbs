@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveLandmarkItemData {
 	landmarkId:string;
-	landmarkSortId:int32;
+	landmarkSortId:int;
 }
 
 

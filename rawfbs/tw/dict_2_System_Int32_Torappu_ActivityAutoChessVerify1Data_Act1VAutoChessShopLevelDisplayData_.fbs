@@ -1,0 +1,9 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData.fbs";
+
+table dict_2_System_Int32_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData_ {
+	dict_key:int;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData;
+}
+
+
+root_type dict_2_System_Int32_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData_;

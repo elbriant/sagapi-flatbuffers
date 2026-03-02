@@ -1,5 +1,5 @@
 
-enum Torappu_Act17sideData_NodeType : int32 {
+enum Torappu_Act17sideData_NodeType : int {
 	LANDMARK = 0,
 	STORY = 1,
 	BATTLE = 2,

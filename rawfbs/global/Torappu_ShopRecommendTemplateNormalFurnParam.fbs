@@ -1,11 +1,11 @@
 
 table Torappu_ShopRecommendTemplateNormalFurnParam {
-	showStartTs:int64;
-	showEndTs:int64;
+	showStartTs:long;
+	showEndTs:long;
 	furnPackId:string;
 	isNew:bool;
 	isPackSell:bool;
-	count:int32;
+	count:int;
 	colorBack:string;
 	colorText:string;
 	actId:string;

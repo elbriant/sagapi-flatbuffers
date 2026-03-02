@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeActivityType : int32 {
+enum Torappu_RoguelikeActivityType : int {
 	NONE = 0,
 	SEED_MODE = 1
 }

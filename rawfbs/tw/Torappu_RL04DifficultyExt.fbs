@@ -2,7 +2,7 @@ include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RL04DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	leftDisasterDesc:string;
 	leftOverweightDesc:string;
 	relicDevLevel:string;

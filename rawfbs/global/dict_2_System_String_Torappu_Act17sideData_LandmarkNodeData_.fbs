@@ -1,0 +1,9 @@
+include "Torappu_Act17sideData_LandmarkNodeData.fbs";
+
+table dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_ {
+	dict_key:string;
+	dict_value:Torappu_Act17sideData_LandmarkNodeData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_;

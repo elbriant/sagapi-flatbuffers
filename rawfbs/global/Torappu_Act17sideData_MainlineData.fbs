@@ -2,7 +2,7 @@
 table Torappu_Act17sideData_MainlineData {
 	mainlineId:string;
 	nodeId:string;
-	sortId:int32;
+	sortId:int;
 	missionSort:string;
 	zoneId:string;
 	mainlineDes:string;

@@ -2,8 +2,8 @@
 table Torappu_CrisisV2SeasonInfo {
 	seasonId:string;
 	name:string;
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 	medalGroupId:string;
 	medalId:string;
 	themeColor1:string;

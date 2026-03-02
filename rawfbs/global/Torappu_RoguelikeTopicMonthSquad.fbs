@@ -14,10 +14,10 @@ table Torappu_RoguelikeTopicMonthSquad {
 	teamChars:[Torappu_RoguelikeTopicMonthSquadTeamChar];
 	zoneId:string;
 	chatId:string;
-	tokenRewardNum:int32;
+	tokenRewardNum:int;
 	items:[Torappu_ItemBundle];
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	taskDes:string;
 }
 

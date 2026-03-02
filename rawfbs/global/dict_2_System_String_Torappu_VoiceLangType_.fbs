@@ -1,0 +1,9 @@
+include "Torappu_VoiceLangType.fbs";
+
+table dict_2_System_String_Torappu_VoiceLangType_ {
+	dict_key:string;
+	dict_value:Torappu_VoiceLangType;
+}
+
+
+root_type dict_2_System_String_Torappu_VoiceLangType_;

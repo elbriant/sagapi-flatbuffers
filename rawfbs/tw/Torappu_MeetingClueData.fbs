@@ -8,17 +8,17 @@ table Torappu_MeetingClueData {
 	clueTypes:[Torappu_MeetingClueData_ClueTypeData];
 	receiveTimeBonus:[Torappu_MeetingClueData_ReceiveTimeBonus];
 	messageLeaveBoardConstData:Torappu_MeetingClueData_MessageLeaveBoardConstData;
-	inventoryLimit:int32;
-	outputBasicBonus:int32;
-	outputOperatorsBonus:int32;
-	cluePointLimit:int32;
-	expiredDays:int32;
-	transferBonus:int32;
-	recycleBonus:int32;
-	expiredBonus:int32;
-	communicationDuration:int32;
-	initiatorBonus:int32;
-	participantsBonus:int32;
+	inventoryLimit:int;
+	outputBasicBonus:int;
+	outputOperatorsBonus:int;
+	cluePointLimit:int;
+	expiredDays:int;
+	transferBonus:int;
+	recycleBonus:int;
+	expiredBonus:int;
+	communicationDuration:int;
+	initiatorBonus:int;
+	participantsBonus:int;
 	commuFoldDuration:float;
 }
 

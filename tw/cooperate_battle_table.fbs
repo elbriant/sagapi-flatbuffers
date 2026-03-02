@@ -1,5 +1,5 @@
 
-enum Torappu_Battle_Cooperate_EndTileType : int32 {
+enum Torappu_Battle_Cooperate_EndTileType : int {
 	NONE = 0,
 	MY_SIDE = 1,
 	MATE_SIDE = 2,
@@ -13,7 +13,7 @@ table Torappu_Battle_Cooperate_CooperateEndTileInfo {
 
 
 
-table dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo {
+table dict_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo_ {
 	dict_key:Torappu_Battle_Cooperate_EndTileType;
 	dict_value:Torappu_Battle_Cooperate_CooperateEndTileInfo;
 }
@@ -21,33 +21,33 @@ table dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_Cooper
 
 
 table Torappu_Battle_Cooperate_CooperateAheadGoalData {
-	aheadCnt:int32;
-	level:int32;
+	aheadCnt:int;
+	level:int;
 }
 
 
 
-enum Torappu_Battle_Cooperate_LASTROUNDRESULT : int32 {
+enum Torappu_Battle_Cooperate_LASTROUNDRESULT : int {
 	GOAL = 0,
 	LOST = 1
 }
 
-table dict__Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32 {
+table dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_ {
 	dict_key:Torappu_Battle_Cooperate_LASTROUNDRESULT;
-	dict_value:int32;
+	dict_value:int;
 }
 
 
 
 table Torappu_Battle_Cooperate_CooperateWaveWeight {
-	wave:int32;
-	weight:int32;
+	wave:int;
+	weight:int;
 }
 
 
 
-table dict__System_Int32_list___1_Torappu_Battle_Cooperate_CooperateWaveWeight {
-	dict_key:int32;
+table dict_2_System_Int32_list_1_Torappu_Battle_Cooperate_CooperateWaveWeight__ {
+	dict_key:int;
 	dict_value:[Torappu_Battle_Cooperate_CooperateWaveWeight];
 }
 
@@ -55,7 +55,7 @@ table dict__System_Int32_list___1_Torappu_Battle_Cooperate_CooperateWaveWeight {
 
 table Torappu_Battle_Cooperate_CooperateTeamWeight {
 	teamName:string;
-	weight:int32;
+	weight:int;
 }
 
 
@@ -68,14 +68,14 @@ table Torappu_Battle_Cooperate_CooperateTeamPlayer {
 
 
 
-table dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer {
+table dict_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer_ {
 	dict_key:string;
 	dict_value:Torappu_Battle_Cooperate_CooperateTeamPlayer;
 }
 
 
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -83,16 +83,16 @@ table dict__System_String_System_String {
 
 
 table Torappu_Battle_Cooperate_CooperateModeBattleData {
-	costTransferred:int32;
-	getMaxMsgCntInOneUpdate:int32;
-	endTileInfo:[dict__Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo];
+	costTransferred:int;
+	getMaxMsgCntInOneUpdate:int;
+	endTileInfo:[dict_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo_];
 	footballAheadGoalCntFactor:[Torappu_Battle_Cooperate_CooperateAheadGoalData];
-	footballHardTypeFactor:int32;
-	footballLastRoundResultFactor:[dict__Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32];
-	footballLevelOfWaveFactor:[dict__System_Int32_list___1_Torappu_Battle_Cooperate_CooperateWaveWeight];
+	footballHardTypeFactor:int;
+	footballLastRoundResultFactor:[dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_];
+	footballLevelOfWaveFactor:[dict_2_System_Int32_list_1_Torappu_Battle_Cooperate_CooperateWaveWeight__];
 	footballTeamWeights:[Torappu_Battle_Cooperate_CooperateTeamWeight];
-	footballTeamPlayers:[dict__System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer];
-	footballPlayersName:[dict__System_String_System_String];
+	footballTeamPlayers:[dict_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer_];
+	footballPlayersName:[dict_2_System_String_System_String_];
 }
 
 

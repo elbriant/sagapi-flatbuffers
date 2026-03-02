@@ -1,7 +1,7 @@
-include "list_dict___2_System_String_Torappu_KVSwitchInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_.fbs";
 
 table Torappu_ActivityKVSwitchData {
-	kvSwitchInfo:[list_dict___2_System_String_Torappu_KVSwitchInfo_];
+	kvSwitchInfo:[Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_];
 }
 
 

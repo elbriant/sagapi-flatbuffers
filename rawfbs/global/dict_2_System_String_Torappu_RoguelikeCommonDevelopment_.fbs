@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeCommonDevelopment.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeCommonDevelopment_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeCommonDevelopment;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeCommonDevelopment_;

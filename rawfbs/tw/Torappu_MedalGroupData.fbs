@@ -5,9 +5,9 @@ table Torappu_MedalGroupData {
 	groupName:string;
 	groupDesc:string;
 	medalId:[string];
-	sortId:int32;
+	sortId:int;
 	groupBackColor:string;
-	groupGetTime:int64;
+	groupGetTime:long;
 	sharedExpireTimes:[Torappu_MedalExpireTime];
 }
 

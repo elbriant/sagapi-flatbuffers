@@ -1,13 +1,13 @@
-include "dict__System_String_Torappu_CharPatchData_PatchInfo.fbs";
-include "dict__System_String_Torappu_CharacterData.fbs";
-include "dict__System_String_Torappu_CharPatchData_UnlockCond.fbs";
-include "dict__System_String_Torappu_CharPatchData_PatchDetailInfo.fbs";
+include "dict_2_System_String_Torappu_CharPatchData_PatchInfo_.fbs";
+include "dict_2_System_String_Torappu_CharacterData_.fbs";
+include "dict_2_System_String_Torappu_CharPatchData_UnlockCond_.fbs";
+include "dict_2_System_String_Torappu_CharPatchData_PatchDetailInfo_.fbs";
 
 table Torappu_CharPatchData {
-	infos:[dict__System_String_Torappu_CharPatchData_PatchInfo];
-	patchChars:[dict__System_String_Torappu_CharacterData];
-	unlockConds:[dict__System_String_Torappu_CharPatchData_UnlockCond];
-	patchDetailInfoList:[dict__System_String_Torappu_CharPatchData_PatchDetailInfo];
+	infos:[dict_2_System_String_Torappu_CharPatchData_PatchInfo_];
+	patchChars:[dict_2_System_String_Torappu_CharacterData_];
+	unlockConds:[dict_2_System_String_Torappu_CharPatchData_UnlockCond_];
+	patchDetailInfoList:[dict_2_System_String_Torappu_CharPatchData_PatchDetailInfo_];
 }
 
 

@@ -1,9 +1,9 @@
 include "Torappu_ProfessionCategory.fbs";
-include "dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData.fbs";
+include "dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_.fbs";
 
 table Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData {
 	profession:Torappu_ProfessionCategory;
-	evolveData:[dict__System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData];
+	evolveData:[dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_];
 }
 
 

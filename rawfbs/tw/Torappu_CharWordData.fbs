@@ -10,7 +10,7 @@ table Torappu_CharWordData {
 	voiceId:string;
 	voiceText:string;
 	voiceTitle:string;
-	voiceIndex:int32;
+	voiceIndex:int;
 	voiceType:Torappu_CharWordVoiceType;
 	unlockType:Torappu_DataUnlockType;
 	unlockParam:[Torappu_CharWordUnlockParam];

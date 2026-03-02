@@ -1,0 +1,9 @@
+include "Torappu_FifthAnnivExploreMissionData.fbs";
+
+table dict_2_System_String_Torappu_FifthAnnivExploreMissionData_ {
+	dict_key:string;
+	dict_value:Torappu_FifthAnnivExploreMissionData;
+}
+
+
+root_type dict_2_System_String_Torappu_FifthAnnivExploreMissionData_;

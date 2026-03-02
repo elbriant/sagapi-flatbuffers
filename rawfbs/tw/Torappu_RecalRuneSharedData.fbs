@@ -1,8 +1,8 @@
-include "dict__System_String_Torappu_RecalRuneSeasonData.fbs";
+include "dict_2_System_String_Torappu_RecalRuneSeasonData_.fbs";
 include "Torappu_RecalRuneConstData.fbs";
 
 table Torappu_RecalRuneSharedData {
-	seasons:[dict__System_String_Torappu_RecalRuneSeasonData];
+	seasons:[dict_2_System_String_Torappu_RecalRuneSeasonData_];
 	constData:Torappu_RecalRuneConstData;
 }
 

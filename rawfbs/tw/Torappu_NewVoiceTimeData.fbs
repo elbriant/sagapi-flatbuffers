@@ -1,6 +1,6 @@
 
 table Torappu_NewVoiceTimeData {
-	timestamp:int64;
+	timestamp:long;
 	charSet:[string];
 }
 

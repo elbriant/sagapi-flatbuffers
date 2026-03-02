@@ -2,10 +2,10 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_LongTermCheckInGroupData {
 	groupId:string;
-	sortId:int32;
-	startTs:int64;
-	level:int32;
-	days:int32;
+	sortId:int;
+	startTs:long;
+	level:int;
+	days:int;
 	bkgImgId:string;
 	titleImgId:string;
 	tipText:string;

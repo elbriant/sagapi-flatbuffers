@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveWrathItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveWrathItemData_.fbs";
 
 table Torappu_ActArchiveWrathData {
-	wraths:[dict__System_String_Torappu_ActArchiveWrathItemData];
+	wraths:[dict_2_System_String_Torappu_ActArchiveWrathItemData_];
 }
 
 

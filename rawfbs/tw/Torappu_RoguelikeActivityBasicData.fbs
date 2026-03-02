@@ -4,8 +4,8 @@ include "Torappu_RoguelikeTopicMode.fbs";
 table Torappu_RoguelikeActivityBasicData {
 	id:string;
 	type:Torappu_RoguelikeActivityType;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	isPresentSeedMode:bool;
 	isUnlockBadge:bool;
 	validMode:Torappu_RoguelikeTopicMode;

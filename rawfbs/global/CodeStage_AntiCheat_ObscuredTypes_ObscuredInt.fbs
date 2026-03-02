@@ -1,9 +1,9 @@
 
 table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
+	currentCryptoKey:int;
+	hiddenValue:int;
 	inited:bool;
-	fakeValue:int32;
+	fakeValue:int;
 	fakeValueActive:bool;
 }
 

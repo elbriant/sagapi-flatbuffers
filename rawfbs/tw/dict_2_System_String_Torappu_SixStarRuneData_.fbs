@@ -1,0 +1,9 @@
+include "Torappu_SixStarRuneData.fbs";
+
+table dict_2_System_String_Torappu_SixStarRuneData_ {
+	dict_key:string;
+	dict_value:Torappu_SixStarRuneData;
+}
+
+
+root_type dict_2_System_String_Torappu_SixStarRuneData_;

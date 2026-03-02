@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCopperLuckyLevel : int32 {
+enum Torappu_RoguelikeCopperLuckyLevel : int {
 	NONE = 0,
 	HIGH = 1,
 	MID = 2,

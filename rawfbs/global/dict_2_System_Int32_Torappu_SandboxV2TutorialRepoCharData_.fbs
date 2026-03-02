@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2TutorialRepoCharData.fbs";
+
+table dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_ {
+	dict_key:int;
+	dict_value:Torappu_SandboxV2TutorialRepoCharData;
+}
+
+
+root_type dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_;

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeExpStyleConfigParam.fbs";
+
+table dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_ {
+	dict_key:Torappu_RoguelikeExpStyleConfigParam;
+	dict_value:string;
+}
+
+
+root_type dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_;

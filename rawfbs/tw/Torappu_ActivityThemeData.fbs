@@ -6,12 +6,12 @@ table Torappu_ActivityThemeData {
 	id:string;
 	type:Torappu_ActivityThemeType;
 	funcId:string;
-	endTs:int64;
-	sortId:int32;
+	endTs:long;
+	sortId:int;
 	itemId:string;
 	timeNodes:[Torappu_ActivityThemeData_TimeNode];
 	picGroups:[Torappu_ActivityThemeData_PicGroup];
-	startTs:int64;
+	startTs:long;
 }
 
 

@@ -3,12 +3,12 @@ include "Torappu_SandboxV2DevelopmentLineStyle.fbs";
 table Torappu_SandboxV2DevelopmentLineSegmentData {
 	fromNodeId:string;
 	passingNodeIds:[string];
-	fromAxisPosX:int32;
-	fromAxisPosY:int32;
-	toAxisPosX:int32;
-	toAxisPosY:int32;
+	fromAxisPosX:int;
+	fromAxisPosY:int;
+	toAxisPosX:int;
+	toAxisPosY:int;
 	lineStyle:Torappu_SandboxV2DevelopmentLineStyle;
-	unlockBasementLevel:int32;
+	unlockBasementLevel:int;
 }
 
 

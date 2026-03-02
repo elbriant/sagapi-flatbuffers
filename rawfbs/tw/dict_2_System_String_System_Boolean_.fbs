@@ -1,0 +1,8 @@
+
+table dict_2_System_String_System_Boolean_ {
+	dict_key:string;
+	dict_value:bool;
+}
+
+
+root_type dict_2_System_String_System_Boolean_;

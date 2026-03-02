@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_FurnitureSubType : int32 {
+enum Torappu_BuildingData_FurnitureSubType : int {
 	NONE = 0,
 	CHAIR = 1,
 	SOFA = 2,

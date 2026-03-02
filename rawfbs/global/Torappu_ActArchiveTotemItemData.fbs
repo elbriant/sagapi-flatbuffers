@@ -4,7 +4,7 @@ table Torappu_ActArchiveTotemItemData {
 	id:string;
 	type:Torappu_ActArchiveTotemType;
 	enrollConditionId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

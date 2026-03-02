@@ -7,8 +7,8 @@ table Torappu_SandboxV2FoodData {
 	attributes:[Torappu_SandboxV2FoodAttribute];
 	recipes:[Torappu_SandboxV2FoodRecipeData];
 	variants:[Torappu_SandboxV2FoodVariantData];
-	duration:int32;
-	sortId:int32;
+	duration:int;
+	sortId:int;
 }
 
 

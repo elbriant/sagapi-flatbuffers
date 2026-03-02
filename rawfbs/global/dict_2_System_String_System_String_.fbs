@@ -1,0 +1,8 @@
+
+table dict_2_System_String_System_String_ {
+	dict_key:string;
+	dict_value:string;
+}
+
+
+root_type dict_2_System_String_System_String_;

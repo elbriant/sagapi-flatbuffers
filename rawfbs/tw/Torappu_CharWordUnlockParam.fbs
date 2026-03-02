@@ -1,7 +1,7 @@
 
 table Torappu_CharWordUnlockParam {
 	valueStr:string;
-	valueInt:int32;
+	valueInt:int;
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2SeasonType : int32 {
+enum Torappu_SandboxV2SeasonType : int {
 	NONE = 0,
 	DRY = 1,
 	RAINY = 2,

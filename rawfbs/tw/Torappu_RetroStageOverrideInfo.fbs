@@ -3,12 +3,12 @@ include "Torappu_StageData_StageDropInfo.fbs";
 table Torappu_RetroStageOverrideInfo {
 	dropInfo:Torappu_StageData_StageDropInfo;
 	zoneId:string;
-	apCost:int32;
-	apFailReturn:int32;
-	expGain:int32;
-	goldGain:int32;
-	passFavor:int32;
-	completeFavor:int32;
+	apCost:int;
+	apFailReturn:int;
+	expGain:int;
+	goldGain:int;
+	passFavor:int;
+	completeFavor:int;
 	canMultipleBattle:bool;
 }
 

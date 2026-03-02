@@ -1,0 +1,9 @@
+include "Torappu_GuidebookGroupData.fbs";
+
+table dict_2_System_String_Torappu_GuidebookGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_GuidebookGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_GuidebookGroupData_;

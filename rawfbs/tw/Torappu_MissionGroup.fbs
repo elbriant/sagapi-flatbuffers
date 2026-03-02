@@ -6,11 +6,11 @@ table Torappu_MissionGroup {
 	title:string;
 	type:Torappu_MissionType;
 	preMissionGroup:string;
-	period:[int32];
+	period:[int];
 	rewards:[Torappu_MissionDisplayRewards];
 	missionIds:[string];
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 

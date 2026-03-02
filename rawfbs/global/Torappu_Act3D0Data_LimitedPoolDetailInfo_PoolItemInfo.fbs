@@ -5,11 +5,11 @@ table Torappu_Act3D0Data_LimitedPoolDetailInfo_PoolItemInfo {
 	goodId:string;
 	itemInfo:Torappu_ItemBundle;
 	goodType:Torappu_Act3D0Data_GoodType;
-	perCount:int32;
-	totalCount:int32;
-	weight:int32;
+	perCount:int;
+	totalCount:int;
+	weight:int;
 	type:string;
-	orderId:int32;
+	orderId:int;
 }
 
 

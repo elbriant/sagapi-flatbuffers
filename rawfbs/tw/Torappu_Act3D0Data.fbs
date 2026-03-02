@@ -1,30 +1,30 @@
-include "list_dict___2_System_String_Torappu_Act3D0Data_CampBasicInfo_.fbs";
-include "dict__System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo.fbs";
-include "dict__System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo.fbs";
-include "dict__System_String_Torappu_Act3D0Data_InfinitePoolPercent.fbs";
-include "dict__System_String_Torappu_Act3D0Data_CampItemMapInfo.fbs";
-include "dict__System_String_Torappu_Act3D0Data_ClueInfo.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_CampItemMapInfo_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_ClueInfo_.fbs";
 include "Torappu_Act3D0Data_MileStoneInfo.fbs";
 include "Torappu_Act3D0Data_GachaBoxInfo.fbs";
-include "dict__System_String_Torappu_Act3D0Data_CampInfo.fbs";
-include "list_dict___2_System_String_Torappu_Act3D0Data_ZoneDescInfo_.fbs";
-include "list_dict___2_System_String_Torappu_CommonFavorUpInfo_.fbs";
+include "dict_2_System_String_Torappu_Act3D0Data_CampInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_.fbs";
 
 table Torappu_Act3D0Data {
-	campBasicInfo:[list_dict___2_System_String_Torappu_Act3D0Data_CampBasicInfo_];
-	limitedPoolList:[dict__System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo];
-	infinitePoolList:[dict__System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo];
-	infinitePercent:[dict__System_String_Torappu_Act3D0Data_InfinitePoolPercent];
-	campItemMapInfo:[dict__System_String_Torappu_Act3D0Data_CampItemMapInfo];
-	clueInfo:[dict__System_String_Torappu_Act3D0Data_ClueInfo];
+	campBasicInfo:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_];
+	limitedPoolList:[dict_2_System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo_];
+	infinitePoolList:[dict_2_System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo_];
+	infinitePercent:[dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_];
+	campItemMapInfo:[dict_2_System_String_Torappu_Act3D0Data_CampItemMapInfo_];
+	clueInfo:[dict_2_System_String_Torappu_Act3D0Data_ClueInfo_];
 	mileStoneInfo:[Torappu_Act3D0Data_MileStoneInfo];
 	mileStoneTokenId:string;
 	coinTokenId:string;
 	etTokenId:string;
 	gachaBoxInfo:[Torappu_Act3D0Data_GachaBoxInfo];
-	campInfo:[dict__System_String_Torappu_Act3D0Data_CampInfo];
-	zoneDesc:[list_dict___2_System_String_Torappu_Act3D0Data_ZoneDescInfo_];
-	favorUpList:[list_dict___2_System_String_Torappu_CommonFavorUpInfo_];
+	campInfo:[dict_2_System_String_Torappu_Act3D0Data_CampInfo_];
+	zoneDesc:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_];
 }
 
 

@@ -1,0 +1,9 @@
+include "Torappu_Act35SideData_Act35SideCardData.fbs";
+
+table dict_2_System_String_Torappu_Act35SideData_Act35SideCardData_ {
+	dict_key:string;
+	dict_value:Torappu_Act35SideData_Act35SideCardData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act35SideData_Act35SideCardData_;

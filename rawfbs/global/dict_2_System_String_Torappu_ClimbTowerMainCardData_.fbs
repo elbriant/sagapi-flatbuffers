@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerMainCardData.fbs";
+
+table dict_2_System_String_Torappu_ClimbTowerMainCardData_ {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerMainCardData;
+}
+
+
+root_type dict_2_System_String_Torappu_ClimbTowerMainCardData_;

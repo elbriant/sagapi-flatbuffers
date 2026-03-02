@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_LODLEVEL : int32 {
+enum Torappu_BuildingData_LODLEVEL : int {
 	HIGHEST = 0,
 	HIGH = 1,
 	LOW = 2,

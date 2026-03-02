@@ -1,10 +1,10 @@
 
 table Torappu_RoguelikeTopicDetailConst_PlayerLevelData {
-	exp:int32;
-	populationUp:int32;
-	squadCapacityUp:int32;
-	battleCharLimitUp:int32;
-	maxHpUp:int32;
+	exp:int;
+	populationUp:int;
+	squadCapacityUp:int;
+	battleCharLimitUp:int;
+	maxHpUp:int;
 }
 
 

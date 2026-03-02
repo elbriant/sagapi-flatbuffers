@@ -1,0 +1,8 @@
+
+table dict_2_System_String_System_Int64_ {
+	dict_key:string;
+	dict_value:long;
+}
+
+
+root_type dict_2_System_String_System_Int64_;

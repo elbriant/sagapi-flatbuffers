@@ -2,7 +2,7 @@ include "Torappu_MiniActTrialData_MiniActTrialRewardData.fbs";
 
 table Torappu_MiniActTrialData_MiniActTrialSingleData {
 	actId:string;
-	rewardStartTime:int64;
+	rewardStartTime:long;
 	themeColor:string;
 	rewardList:[Torappu_MiniActTrialData_MiniActTrialRewardData];
 }

@@ -1,4 +1,4 @@
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 include "Torappu_FifthAnnivExploreValueType.fbs";
 
 table Torappu_FifthAnnivExploreGroupData {
@@ -7,7 +7,7 @@ table Torappu_FifthAnnivExploreGroupData {
 	desc:string;
 	code:string;
 	iconId:string;
-	initialValues:[dict__System_String_System_Int32];
+	initialValues:[dict_2_System_String_System_Int32_];
 	heritageValueType:Torappu_FifthAnnivExploreValueType;
 }
 

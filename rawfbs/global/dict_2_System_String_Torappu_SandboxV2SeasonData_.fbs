@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2SeasonData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2SeasonData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2SeasonData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2SeasonData_;

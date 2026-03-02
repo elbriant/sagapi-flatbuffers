@@ -1,0 +1,9 @@
+include "Torappu_AllPlayerCheckinData_DailyInfo.fbs";
+
+table dict_2_System_Int32_Torappu_AllPlayerCheckinData_DailyInfo_ {
+	dict_key:int;
+	dict_value:Torappu_AllPlayerCheckinData_DailyInfo;
+}
+
+
+root_type dict_2_System_Int32_Torappu_AllPlayerCheckinData_DailyInfo_;

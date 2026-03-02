@@ -1,5 +1,5 @@
 
-enum Torappu_AppearanceStyle : int32 {
+enum Torappu_AppearanceStyle : int {
 	MAIN_NORMAL = 0,
 	MAIN_PREDEFINED = 1,
 	SUB = 2,

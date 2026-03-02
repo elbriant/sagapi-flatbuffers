@@ -2,7 +2,7 @@
 table Torappu_SiracusaData_StagePointInfoData {
 	stageId:string;
 	pointId:string;
-	sortId:int32;
+	sortId:int;
 	isTaskStage:bool;
 }
 

@@ -1,7 +1,7 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_NewbieCheckInPackageRewardData {
-	orderNum:int32;
+	orderNum:int;
 	itemBundle:Torappu_ItemBundle;
 }
 

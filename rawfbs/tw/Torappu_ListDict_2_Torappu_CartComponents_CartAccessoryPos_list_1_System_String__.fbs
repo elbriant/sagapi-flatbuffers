@@ -1,0 +1,9 @@
+include "Torappu_CartComponents_CartAccessoryPos.fbs";
+
+table Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_list_1_System_String__ {
+	dict_key:Torappu_CartComponents_CartAccessoryPos;
+	dict_value:[string];
+}
+
+
+root_type Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_list_1_System_String__;

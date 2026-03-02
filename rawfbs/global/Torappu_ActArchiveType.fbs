@@ -1,5 +1,5 @@
 
-enum Torappu_ActArchiveType : int32 {
+enum Torappu_ActArchiveType : int {
 	NONE = 0,
 	TIMELINE = 1,
 	MUSIC = 2,

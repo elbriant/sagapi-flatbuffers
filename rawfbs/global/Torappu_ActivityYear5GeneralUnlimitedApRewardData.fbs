@@ -1,7 +1,7 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActivityYear5GeneralUnlimitedApRewardData {
-	rewardIndex:int32;
+	rewardIndex:int;
 	rewardItem:Torappu_ItemBundle;
 }
 

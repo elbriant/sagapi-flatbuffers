@@ -3,15 +3,15 @@ include "Newtonsoft_Json_Linq_JObject.fbs";
 
 table Torappu_GachaPoolClientData {
 	gachaPoolId:string;
-	gachaIndex:int32;
-	openTime:int64;
-	endTime:int64;
+	gachaIndex:int;
+	openTime:long;
+	endTime:long;
 	gachaPoolName:string;
 	gachaPoolSummary:string;
 	gachaPoolDetail:string;
 	guaranteeName:string;
-	guarantee5Avail:int32;
-	guarantee5Count:int32;
+	guarantee5Avail:int;
+	guarantee5Count:int;
 	LMTGSID:string;
 	CDPrimColor:string;
 	CDSecColor:string;

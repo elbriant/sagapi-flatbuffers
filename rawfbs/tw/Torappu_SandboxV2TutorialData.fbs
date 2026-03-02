@@ -1,14 +1,14 @@
-include "dict__System_Int32_Torappu_SandboxV2TutorialRepoCharData.fbs";
-include "dict__System_String_Torappu_SandboxV2QuestData.fbs";
-include "dict__System_String_Torappu_SandboxV2GuideQuestData.fbs";
-include "dict__System_String_Torappu_SandboxV2QuestLineData.fbs";
+include "dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2QuestData_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2GuideQuestData_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2QuestLineData_.fbs";
 include "Torappu_SandboxV2TutorialBasicConst.fbs";
 
 table Torappu_SandboxV2TutorialData {
-	charRepoData:[dict__System_Int32_Torappu_SandboxV2TutorialRepoCharData];
-	questData:[dict__System_String_Torappu_SandboxV2QuestData];
-	guideQuestData:[dict__System_String_Torappu_SandboxV2GuideQuestData];
-	questLineData:[dict__System_String_Torappu_SandboxV2QuestLineData];
+	charRepoData:[dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_];
+	questData:[dict_2_System_String_Torappu_SandboxV2QuestData_];
+	guideQuestData:[dict_2_System_String_Torappu_SandboxV2GuideQuestData_];
+	questLineData:[dict_2_System_String_Torappu_SandboxV2QuestLineData_];
 	basicConst:Torappu_SandboxV2TutorialBasicConst;
 }
 

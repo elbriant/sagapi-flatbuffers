@@ -1,7 +1,7 @@
 include "Torappu_RoguelikeTopicDevTokenDisplayForm.fbs";
 
 table Torappu_RoguelikeTopicDevToken {
-	sortId:int32;
+	sortId:int;
 	displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm;
 	tokenDesc:string;
 }

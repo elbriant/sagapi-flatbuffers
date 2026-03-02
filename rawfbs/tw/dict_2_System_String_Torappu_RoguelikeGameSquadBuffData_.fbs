@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameSquadBuffData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameSquadBuffData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameSquadBuffData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameSquadBuffData_;

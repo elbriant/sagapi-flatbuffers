@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeEventType.fbs";
+include "Torappu_RoguelikeGameNodeTypeData.fbs";
+
+table dict_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData_ {
+	dict_key:Torappu_RoguelikeEventType;
+	dict_value:Torappu_RoguelikeGameNodeTypeData;
+}
+
+
+root_type dict_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData_;

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeSkyNodeData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeSkyNodeData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeSkyNodeData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeSkyNodeData_;

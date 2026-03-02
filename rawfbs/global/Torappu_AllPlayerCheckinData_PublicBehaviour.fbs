@@ -1,11 +1,11 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_AllPlayerCheckinData_PublicBehaviour {
-	sortId:int32;
+	sortId:int;
 	allBehaviorId:string;
-	displayOrder:int32;
+	displayOrder:int;
 	allBehaviorDesc:string;
-	requiringValue:int32;
+	requiringValue:int;
 	requireRepeatCompletion:bool;
 	rewardReceivedDesc:string;
 	rewards:[Torappu_ItemBundle];

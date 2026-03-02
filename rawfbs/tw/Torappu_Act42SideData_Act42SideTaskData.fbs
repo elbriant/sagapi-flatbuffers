@@ -5,7 +5,7 @@ table Torappu_Act42SideData_Act42SideTaskData {
 	preposedTaskId:string;
 	trustorId:string;
 	trustorName:string;
-	sortId:int32;
+	sortId:int;
 	taskName:string;
 	taskContent:string;
 	afterTaskContent:string;

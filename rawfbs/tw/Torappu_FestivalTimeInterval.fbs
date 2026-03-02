@@ -1,7 +1,7 @@
 
 table Torappu_FestivalTimeInterval {
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 

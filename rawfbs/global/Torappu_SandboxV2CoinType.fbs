@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2CoinType : int32 {
+enum Torappu_SandboxV2CoinType : int {
 	DIMENSION_COIN = 0,
 	GOLD = 1
 }

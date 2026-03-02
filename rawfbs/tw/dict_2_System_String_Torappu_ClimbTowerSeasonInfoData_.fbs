@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerSeasonInfoData.fbs";
+
+table dict_2_System_String_Torappu_ClimbTowerSeasonInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerSeasonInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_ClimbTowerSeasonInfoData_;

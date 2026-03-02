@@ -3,8 +3,8 @@ include "Torappu_ItemType.fbs";
 table Torappu_ClimbTowerDropDisplayInfo {
 	itemId:string;
 	type:Torappu_ItemType;
-	maxCount:int32;
-	minCount:int32;
+	maxCount:int;
+	minCount:int;
 }
 
 

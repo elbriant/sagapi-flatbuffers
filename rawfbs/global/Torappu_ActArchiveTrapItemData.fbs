@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveTrapItemData {
 	trapId:string;
-	trapSortId:int32;
+	trapSortId:int;
 	orderId:string;
 	enrollId:string;
 }

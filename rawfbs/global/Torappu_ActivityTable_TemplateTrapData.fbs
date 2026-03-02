@@ -1,7 +1,7 @@
 
 table Torappu_ActivityTable_TemplateTrapData {
 	trapId:string;
-	sortId:int32;
+	sortId:int;
 	trapName:string;
 	trapDesc:string;
 	trapText:string;

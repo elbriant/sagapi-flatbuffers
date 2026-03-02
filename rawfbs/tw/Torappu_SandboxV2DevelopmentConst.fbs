@@ -1,6 +1,6 @@
 
 table Torappu_SandboxV2DevelopmentConst {
-	techPointsTotal:int32;
+	techPointsTotal:int;
 }
 
 

@@ -8,9 +8,9 @@ table Torappu_ActivityTable_BasicData {
 	type:Torappu_ActivityType;
 	displayType:Torappu_ActivityDisplayType;
 	name:string;
-	startTime:int64;
-	endTime:int64;
-	rewardEndTime:int64;
+	startTime:long;
+	endTime:long;
+	rewardEndTime:long;
 	displayOnHome:bool;
 	hasStage:bool;
 	templateShopId:string;

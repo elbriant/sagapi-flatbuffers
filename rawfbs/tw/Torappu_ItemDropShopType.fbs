@@ -1,5 +1,5 @@
 
-enum Torappu_ItemDropShopType : int32 {
+enum Torappu_ItemDropShopType : int {
 	HGGSHD_SHOP = 0,
 	LGGSHD_SHOP = 1,
 	XSHD_SHOP = 2,

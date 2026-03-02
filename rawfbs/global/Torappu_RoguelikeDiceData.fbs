@@ -2,9 +2,9 @@
 table Torappu_RoguelikeDiceData {
 	diceId:string;
 	description:string;
-	isUpgradeDice:int32;
+	isUpgradeDice:int;
 	upgradeDiceId:string;
-	diceFaceCount:int32;
+	diceFaceCount:int;
 	battleDiceId:string;
 }
 

@@ -5,7 +5,7 @@ table Torappu_ClimbTowerMainCardData {
 	id:string;
 	type:Torappu_ClimbTowerCardType;
 	linkedTowerId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	desc:string;
 	subCardIds:[string];

@@ -1,0 +1,8 @@
+
+table dict_2_System_Int32_list_1_System_Int32__ {
+	dict_key:int;
+	dict_value:[int];
+}
+
+
+root_type dict_2_System_Int32_list_1_System_Int32__;

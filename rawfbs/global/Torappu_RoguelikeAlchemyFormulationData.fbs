@@ -3,7 +3,7 @@ include "Torappu_RoguelikeGameItemType.fbs";
 table Torappu_RoguelikeAlchemyFormulationData {
 	fragmentIds:[string];
 	rewardId:string;
-	rewardCount:int32;
+	rewardCount:int;
 	rewardItemType:Torappu_RoguelikeGameItemType;
 }
 

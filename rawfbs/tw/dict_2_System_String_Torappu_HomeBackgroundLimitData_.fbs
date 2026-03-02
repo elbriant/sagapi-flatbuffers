@@ -1,0 +1,9 @@
+include "Torappu_HomeBackgroundLimitData.fbs";
+
+table dict_2_System_String_Torappu_HomeBackgroundLimitData_ {
+	dict_key:string;
+	dict_value:Torappu_HomeBackgroundLimitData;
+}
+
+
+root_type dict_2_System_String_Torappu_HomeBackgroundLimitData_;

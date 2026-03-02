@@ -1,14 +1,14 @@
 include "Torappu_EvolvePhase.fbs";
 
 table Torappu_SandboxV2TutorialRepoCharData {
-	instId:int32;
+	instId:int;
 	charId:string;
 	evolvePhase:Torappu_EvolvePhase;
-	level:int32;
-	favorPoint:int32;
-	potentialRank:int32;
-	mainSkillLv:int32;
-	specSkillList:[int32];
+	level:int;
+	favorPoint:int;
+	potentialRank:int;
+	mainSkillLv:int;
+	specSkillList:[int];
 }
 
 

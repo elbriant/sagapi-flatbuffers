@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_Act25SideData_BattlePerformanceData.fbs";
+include "dict_2_System_String_Torappu_Act25SideData_BattlePerformanceData_.fbs";
 
 table Torappu_ActivityCustomData_Act25sideCustomData {
-	battlePerformanceData:[dict__System_String_Torappu_Act25SideData_BattlePerformanceData];
+	battlePerformanceData:[dict_2_System_String_Torappu_Act25SideData_BattlePerformanceData_];
 }
 
 

@@ -1,8 +1,8 @@
 
 table Torappu_AllPlayerCheckinData_PersonalBehaviour {
-	sortId:int32;
+	sortId:int;
 	personalBehaviorId:string;
-	displayOrder:int32;
+	displayOrder:int;
 	requireRepeatCompletion:bool;
 	desc:string;
 }

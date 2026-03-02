@@ -1,7 +1,7 @@
-include "dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData.fbs";
+include "dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_.fbs";
 
 table Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData {
-	levels:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData];
+	levels:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
 }
 
 

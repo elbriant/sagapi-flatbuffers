@@ -2,13 +2,13 @@
 table Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData {
 	topicId:string;
 	displayId:string;
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-enum Torappu_RoguelikeModuleType : int32 {
+enum Torappu_RoguelikeModuleType : int {
 	NONE = 0,
 	SANCHECK = 1,
 	DICE = 2,
@@ -24,7 +24,7 @@ enum Torappu_RoguelikeModuleType : int32 {
 	SKY = 12
 }
 
-enum Torappu_RoguelikeMonthChatTrigType : int32 {
+enum Torappu_RoguelikeMonthChatTrigType : int {
 	NONE = 0,
 	TRANSITING = 1,
 	DUNGEON = 2
@@ -43,12 +43,12 @@ table Torappu_RoguelikeTopicConfig {
 table Torappu_RoguelikeTopicBasicData {
 	id:string;
 	name:string;
-	startTime:int64;
-	disappearTimeOnMainScreen:int64;
-	sort:int32;
+	startTime:long;
+	disappearTimeOnMainScreen:long;
+	sort:int;
 	showMedalId:string;
 	medalGroupId:string;
-	fullStoredTime:int64;
+	fullStoredTime:long;
 	lineText:string;
 	homeEntryDisplayData:[Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData];
 	moduleTypes:[Torappu_RoguelikeModuleType];
@@ -57,14 +57,14 @@ table Torappu_RoguelikeTopicBasicData {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicBasicData {
+table dict_2_System_String_Torappu_RoguelikeTopicBasicData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicBasicData;
 }
 
 
 
-enum Torappu_RoguelikeCharState : int32 {
+enum Torappu_RoguelikeCharState : int {
 	NORMAL = 0,
 	UPGRADE = 1,
 	UPGRADE_BUFF = 2,
@@ -85,7 +85,7 @@ table Torappu_RoguelikeTopicConst_PredefinedChar {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar {
+table dict_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicConst_PredefinedChar;
 }
@@ -93,51 +93,51 @@ table dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar {
 
 
 table Torappu_RoguelikeTopicConst {
-	milestoneTokenRatio:int32;
+	milestoneTokenRatio:int;
 	outerBuffTokenRatio:float;
-	relicTokenRatio:int32;
+	relicTokenRatio:int;
 	rogueSystemUnlockStage:string;
-	ordiModeReOpenCoolDown:int32;
-	monthModeReOpenCoolDown:int32;
-	monthlyTaskUncompletedTime:int32;
-	monthlyTaskManualRefreshLimit:int32;
-	monthlyTeamUncompletedTime:int32;
-	bpPurchaseSystemUnlockTime:int64;
-	predefinedChars:[dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar];
+	ordiModeReOpenCoolDown:int;
+	monthModeReOpenCoolDown:int;
+	monthlyTaskUncompletedTime:int;
+	monthlyTaskManualRefreshLimit:int;
+	monthlyTeamUncompletedTime:int;
+	bpPurchaseSystemUnlockTime:long;
+	predefinedChars:[dict_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar_];
 }
 
 
 
 table Torappu_RoguelikeTopicUpdate {
 	updateId:string;
-	topicUpdateTime:int64;
-	topicEndTime:int64;
+	topicUpdateTime:long;
+	topicEndTime:long;
 }
 
 
 
-enum Torappu_RoguelikeEnrollType : int32 {
+enum Torappu_RoguelikeEnrollType : int {
 	DLC = 0,
 	REVIEW = 1
 }
 
 table Torappu_RoguelikeTopicEnroll {
 	enrollId:string;
-	enrollTime:int64;
+	enrollTime:long;
 	enrollType:Torappu_RoguelikeEnrollType;
-	enrollNoticeEndTime:int64;
+	enrollNoticeEndTime:long;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicEnroll {
+table dict_2_System_String_Torappu_RoguelikeTopicEnroll_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicEnroll;
 }
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -233,12 +233,12 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_RoguelikeTopicBP {
 	id:string;
-	level:int32;
-	tokenNum:int32;
-	nextTokenNum:int32;
+	level:int;
+	tokenNum:int;
+	nextTokenNum:int;
 	itemID:string;
 	itemType:Torappu_ItemType;
-	itemCount:int32;
+	itemCount:int;
 	isGoodPrize:bool;
 	isGrandPrize:bool;
 }
@@ -246,18 +246,18 @@ table Torappu_RoguelikeTopicBP {
 
 
 table Torappu_RoguelikeTopicMilestoneUpdateData {
-	updateTime:int64;
-	endTime:int64;
-	maxBpLevel:int32;
-	maxBpCount:int32;
-	maxDisplayBpCount:int32;
+	updateTime:long;
+	endTime:long;
+	maxBpLevel:int;
+	maxBpCount:int;
+	maxDisplayBpCount:int;
 }
 
 
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -265,9 +265,9 @@ table Torappu_ItemBundle {
 
 table Torappu_RoguelikeTopicBPGrandPrize {
 	grandPrizeDisplayId:string;
-	sortId:int32;
-	displayUnlockYear:int32;
-	displayUnlockMonth:int32;
+	sortId:int;
+	displayUnlockYear:int;
+	displayUnlockMonth:int;
 	acquireTitle:string;
 	purchaseTitle:string;
 	displayName:string;
@@ -280,7 +280,7 @@ table Torappu_RoguelikeTopicBPGrandPrize {
 
 
 
-enum Torappu_RoguelikeGameMonthTaskClass : int32 {
+enum Torappu_RoguelikeGameMonthTaskClass : int {
 	NONE = 0,
 	C = 1,
 	B = 2,
@@ -291,11 +291,11 @@ table Torappu_RoguelikeTopicMonthMission {
 	id:string;
 	taskName:string;
 	taskClass:Torappu_RoguelikeGameMonthTaskClass;
-	innerClassWeight:int32;
+	innerClassWeight:int;
 	template:string;
 	paramList:[string];
 	desc:string;
-	tokenRewardNum:int32;
+	tokenRewardNum:int;
 }
 
 
@@ -320,16 +320,16 @@ table Torappu_RoguelikeTopicMonthSquad {
 	teamChars:[Torappu_RoguelikeTopicMonthSquadTeamChar];
 	zoneId:string;
 	chatId:string;
-	tokenRewardNum:int32;
+	tokenRewardNum:int;
 	items:[Torappu_ItemBundle];
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	taskDes:string;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicMonthSquad {
+table dict_2_System_String_Torappu_RoguelikeTopicMonthSquad_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicMonthSquad;
 }
@@ -345,7 +345,7 @@ table Torappu_RoguelikeTopicChallengeTask {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicChallengeTask {
+table dict_2_System_String_Torappu_RoguelikeTopicChallengeTask_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicChallengeTask;
 }
@@ -354,16 +354,16 @@ table dict__System_String_Torappu_RoguelikeTopicChallengeTask {
 
 table Torappu_RoguelikeTopicChallenge {
 	challengeId:string;
-	sortId:int32;
+	sortId:int;
 	challengeName:string;
-	challengeGroup:int32;
-	challengeGroupSortId:int32;
+	challengeGroup:int;
+	challengeGroupSortId:int;
 	challengeGroupName:string;
 	challengeUnlockDesc:string;
 	challengeUnlockToastDesc:string;
 	challengeDes:string;
 	challengeConditionDes:[string];
-	challengeTasks:[dict__System_String_Torappu_RoguelikeTopicChallengeTask];
+	challengeTasks:[dict_2_System_String_Torappu_RoguelikeTopicChallengeTask_];
 	defaultTaskId:string;
 	rewards:[Torappu_ItemBundle];
 	challengeStoryId:string;
@@ -371,14 +371,14 @@ table Torappu_RoguelikeTopicChallenge {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicChallenge {
+table dict_2_System_String_Torappu_RoguelikeTopicChallenge_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicChallenge;
 }
 
 
 
-enum Torappu_RoguelikeTopicMode : int32 {
+enum Torappu_RoguelikeTopicMode : int {
 	NONE = 0,
 	EASY = 1,
 	NORMAL = 2,
@@ -395,7 +395,7 @@ table Torappu_RoguelikeTopicDifficulty_RuleDescReplacement {
 
 
 
-enum Torappu_RoguelikeTopicDifficultyWarningType : int32 {
+enum Torappu_RoguelikeTopicDifficultyWarningType : int {
 	NONE = 0,
 	NORMAL = 1,
 	HARD = 2
@@ -403,7 +403,7 @@ enum Torappu_RoguelikeTopicDifficultyWarningType : int32 {
 
 table Torappu_RoguelikeTopicDifficulty {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	name:string;
 	nameImage:string;
 	subName:string;
@@ -417,11 +417,11 @@ table Torappu_RoguelikeTopicDifficulty {
 	failTitle:string;
 	failImageId:string;
 	failForceDesc:string;
-	sortId:int32;
-	equivalentGrade:int32;
+	sortId:int;
+	equivalentGrade:int;
 	color:string;
-	bpValue:int32;
-	bossValue:int32;
+	bpValue:int;
+	bossValue:int;
 	addDesc:string;
 	warningType:Torappu_RoguelikeTopicDifficultyWarningType;
 	unlockText:string;
@@ -431,7 +431,7 @@ table Torappu_RoguelikeTopicDifficulty {
 
 
 
-enum Torappu_RoguelikeTopicBankRewardType : int32 {
+enum Torappu_RoguelikeTopicBankRewardType : int {
 	NONE = 0,
 	UNLOCK_ITEM = 1,
 	ADD_SHOP_POS = 2,
@@ -442,7 +442,7 @@ enum Torappu_RoguelikeTopicBankRewardType : int32 {
 
 table Torappu_RoguelikeTopicBankReward {
 	rewardId:string;
-	unlockGoldCnt:int32;
+	unlockGoldCnt:int;
 	rewardType:Torappu_RoguelikeTopicBankRewardType;
 	desc:string;
 }
@@ -451,8 +451,8 @@ table Torappu_RoguelikeTopicBankReward {
 
 table Torappu_ActArchiveRelicItemData {
 	relicId:string;
-	relicSortId:int32;
-	relicGroupId:int32;
+	relicSortId:int;
+	relicGroupId:int;
 	orderId:string;
 	isSpRelic:bool;
 	enrollId:string;
@@ -460,7 +460,7 @@ table Torappu_ActArchiveRelicItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveRelicItemData {
+table dict_2_System_String_Torappu_ActArchiveRelicItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveRelicItemData;
 }
@@ -468,21 +468,21 @@ table dict__System_String_Torappu_ActArchiveRelicItemData {
 
 
 table Torappu_ActArchiveRelicData {
-	relic:[dict__System_String_Torappu_ActArchiveRelicItemData];
+	relic:[dict_2_System_String_Torappu_ActArchiveRelicItemData_];
 }
 
 
 
 table Torappu_ActArchiveCapsuleItemData {
 	capsuleId:string;
-	capsuleSortId:int32;
+	capsuleSortId:int;
 	englishName:string;
 	enrollId:string;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveCapsuleItemData {
+table dict_2_System_String_Torappu_ActArchiveCapsuleItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveCapsuleItemData;
 }
@@ -490,21 +490,21 @@ table dict__System_String_Torappu_ActArchiveCapsuleItemData {
 
 
 table Torappu_ActArchiveCapsuleData {
-	capsule:[dict__System_String_Torappu_ActArchiveCapsuleItemData];
+	capsule:[dict_2_System_String_Torappu_ActArchiveCapsuleItemData_];
 }
 
 
 
 table Torappu_ActArchiveTrapItemData {
 	trapId:string;
-	trapSortId:int32;
+	trapSortId:int;
 	orderId:string;
 	enrollId:string;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveTrapItemData {
+table dict_2_System_String_Torappu_ActArchiveTrapItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveTrapItemData;
 }
@@ -512,13 +512,13 @@ table dict__System_String_Torappu_ActArchiveTrapItemData {
 
 
 table Torappu_ActArchiveTrapData {
-	trap:[dict__System_String_Torappu_ActArchiveTrapItemData];
+	trap:[dict_2_System_String_Torappu_ActArchiveTrapItemData_];
 }
 
 
 
 table Torappu_ActArchiveChatItemData {
-	floor:int32;
+	floor:int;
 	chatZoneId:string;
 	chatDesc:string;
 	chatStoryId:string;
@@ -527,13 +527,13 @@ table Torappu_ActArchiveChatItemData {
 
 
 table Torappu_ActArchiveChatGroupData {
-	sortId:int32;
+	sortId:int;
 	chatItemList:[Torappu_ActArchiveChatItemData];
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveChatGroupData {
+table dict_2_System_String_Torappu_ActArchiveChatGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveChatGroupData;
 }
@@ -541,14 +541,14 @@ table dict__System_String_Torappu_ActArchiveChatGroupData {
 
 
 table Torappu_ActArchiveChatData {
-	chat:[dict__System_String_Torappu_ActArchiveChatGroupData];
+	chat:[dict_2_System_String_Torappu_ActArchiveChatGroupData_];
 }
 
 
 
 table Torappu_ActArchiveEndbookItemData {
 	endBookId:string;
-	sortId:int32;
+	sortId:int;
 	enrollId:string;
 	isLast:bool;
 	endbookName:string;
@@ -561,7 +561,7 @@ table Torappu_ActArchiveEndbookItemData {
 table Torappu_ActArchiveEndbookGroupData {
 	endId:string;
 	endingId:string;
-	sortId:int32;
+	sortId:int;
 	title:string;
 	cgId:string;
 	backBlurId:string;
@@ -573,7 +573,7 @@ table Torappu_ActArchiveEndbookGroupData {
 
 
 
-table dict__System_String_Torappu_ActArchiveEndbookGroupData {
+table dict_2_System_String_Torappu_ActArchiveEndbookGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveEndbookGroupData;
 }
@@ -581,15 +581,15 @@ table dict__System_String_Torappu_ActArchiveEndbookGroupData {
 
 
 table Torappu_ActArchiveEndbookData {
-	endbook:[dict__System_String_Torappu_ActArchiveEndbookGroupData];
+	endbook:[dict_2_System_String_Torappu_ActArchiveEndbookGroupData_];
 }
 
 
 
 table Torappu_ActArchiveBuffItemData {
 	buffId:string;
-	buffGroupIndex:int32;
-	innerSortId:int32;
+	buffGroupIndex:int;
+	innerSortId:int;
 	name:string;
 	iconId:string;
 	usage:string;
@@ -599,7 +599,7 @@ table Torappu_ActArchiveBuffItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveBuffItemData {
+table dict_2_System_String_Torappu_ActArchiveBuffItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveBuffItemData;
 }
@@ -607,12 +607,12 @@ table dict__System_String_Torappu_ActArchiveBuffItemData {
 
 
 table Torappu_ActArchiveBuffData {
-	buff:[dict__System_String_Torappu_ActArchiveBuffItemData];
+	buff:[dict_2_System_String_Torappu_ActArchiveBuffItemData_];
 }
 
 
 
-enum Torappu_ActArchiveTotemType : int32 {
+enum Torappu_ActArchiveTotemType : int {
 	LOCATION = 0,
 	EFFECT = 1,
 	AFFIX = 2
@@ -622,12 +622,12 @@ table Torappu_ActArchiveTotemItemData {
 	id:string;
 	type:Torappu_ActArchiveTotemType;
 	enrollConditionId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveTotemItemData {
+table dict_2_System_String_Torappu_ActArchiveTotemItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveTotemItemData;
 }
@@ -635,7 +635,7 @@ table dict__System_String_Torappu_ActArchiveTotemItemData {
 
 
 table Torappu_ActArchiveTotemData {
-	totem:[dict__System_String_Torappu_ActArchiveTotemItemData];
+	totem:[dict_2_System_String_Torappu_ActArchiveTotemItemData_];
 }
 
 
@@ -644,12 +644,12 @@ table Torappu_ActArchiveChaosItemData {
 	id:string;
 	isHidden:bool;
 	enrollId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveChaosItemData {
+table dict_2_System_String_Torappu_ActArchiveChaosItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveChaosItemData;
 }
@@ -657,20 +657,20 @@ table dict__System_String_Torappu_ActArchiveChaosItemData {
 
 
 table Torappu_ActArchiveChaosData {
-	chaos:[dict__System_String_Torappu_ActArchiveChaosItemData];
+	chaos:[dict_2_System_String_Torappu_ActArchiveChaosItemData_];
 }
 
 
 
 table Torappu_ActArchiveFragmentItemData {
 	fragmentId:string;
-	sortId:int32;
+	sortId:int;
 	enrollConditionId:string;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveFragmentItemData {
+table dict_2_System_String_Torappu_ActArchiveFragmentItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveFragmentItemData;
 }
@@ -678,14 +678,14 @@ table dict__System_String_Torappu_ActArchiveFragmentItemData {
 
 
 table Torappu_ActArchiveFragmentData {
-	fragment:[dict__System_String_Torappu_ActArchiveFragmentItemData];
+	fragment:[dict_2_System_String_Torappu_ActArchiveFragmentItemData_];
 }
 
 
 
 table Torappu_ActArchiveDisasterItemData {
 	disasterId:string;
-	sortId:int32;
+	sortId:int;
 	enrollConditionId:string;
 	picSmallId:string;
 	picBigActiveId:string;
@@ -694,7 +694,7 @@ table Torappu_ActArchiveDisasterItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveDisasterItemData {
+table dict_2_System_String_Torappu_ActArchiveDisasterItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveDisasterItemData;
 }
@@ -702,14 +702,14 @@ table dict__System_String_Torappu_ActArchiveDisasterItemData {
 
 
 table Torappu_ActArchiveDisasterData {
-	disasters:[dict__System_String_Torappu_ActArchiveDisasterItemData];
+	disasters:[dict_2_System_String_Torappu_ActArchiveDisasterItemData_];
 }
 
 
 
 table Torappu_ActArchiveWrathItemData {
 	wrathId:string;
-	sortId:int32;
+	sortId:int;
 	picTitleId:string;
 	picSmallInactiveId:string;
 	picSmallActiveId:string;
@@ -721,7 +721,7 @@ table Torappu_ActArchiveWrathItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveWrathItemData {
+table dict_2_System_String_Torappu_ActArchiveWrathItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveWrathItemData;
 }
@@ -729,19 +729,19 @@ table dict__System_String_Torappu_ActArchiveWrathItemData {
 
 
 table Torappu_ActArchiveWrathData {
-	wraths:[dict__System_String_Torappu_ActArchiveWrathItemData];
+	wraths:[dict_2_System_String_Torappu_ActArchiveWrathItemData_];
 }
 
 
 
-enum Torappu_ActArchiveCopperType : int32 {
+enum Torappu_ActArchiveCopperType : int {
 	LUCK = 1,
 	COPPER = 2,
 	GILD = 3,
 	ENUM_DEFAULT_VALUE = 0
 }
 
-enum Torappu_RoguelikeCopperType : int32 {
+enum Torappu_RoguelikeCopperType : int {
 	NONE = 0,
 	BLANK = 1,
 	FIGHT = 2,
@@ -756,14 +756,14 @@ table Torappu_ActArchiveCopperItemData {
 	displayCopperId:string;
 	archiveType:Torappu_ActArchiveCopperType;
 	copperType:Torappu_RoguelikeCopperType;
-	sortId:int32;
+	sortId:int;
 	enrollId:string;
 	coppersInGroup:[string];
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveCopperItemData {
+table dict_2_System_String_Torappu_ActArchiveCopperItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveCopperItemData;
 }
@@ -778,7 +778,7 @@ table Torappu_ActArchiveCopperTypeData {
 
 
 
-table dict__System_String_Torappu_ActArchiveCopperTypeData {
+table dict_2_System_String_Torappu_ActArchiveCopperTypeData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveCopperTypeData;
 }
@@ -793,14 +793,14 @@ table Torappu_ActArchiveCopperGildData {
 
 
 
-table dict__System_String_Torappu_ActArchiveCopperGildData {
+table dict_2_System_String_Torappu_ActArchiveCopperGildData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveCopperGildData;
 }
 
 
 
-enum Torappu_RoguelikeCopperLuckyLevel : int32 {
+enum Torappu_RoguelikeCopperLuckyLevel : int {
 	NONE = 0,
 	HIGH = 1,
 	MID = 2,
@@ -816,7 +816,7 @@ table Torappu_ActArchiveCopperLuckyLevelData {
 
 
 
-table dict__System_String_Torappu_ActArchiveCopperLuckyLevelData {
+table dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveCopperLuckyLevelData;
 }
@@ -824,10 +824,10 @@ table dict__System_String_Torappu_ActArchiveCopperLuckyLevelData {
 
 
 table Torappu_ActArchiveCopperData {
-	coppers:[dict__System_String_Torappu_ActArchiveCopperItemData];
-	copperTypes:[dict__System_String_Torappu_ActArchiveCopperTypeData];
-	gilds:[dict__System_String_Torappu_ActArchiveCopperGildData];
-	luckyLevels:[dict__System_String_Torappu_ActArchiveCopperLuckyLevelData];
+	coppers:[dict_2_System_String_Torappu_ActArchiveCopperItemData_];
+	copperTypes:[dict_2_System_String_Torappu_ActArchiveCopperTypeData_];
+	gilds:[dict_2_System_String_Torappu_ActArchiveCopperGildData_];
+	luckyLevels:[dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_];
 }
 
 
@@ -849,7 +849,7 @@ table Torappu_RoguelikeArchiveComponentData {
 
 
 
-enum Torappu_ActArchiveType : int32 {
+enum Torappu_ActArchiveType : int {
 	NONE = 0,
 	TIMELINE = 1,
 	MUSIC = 2,
@@ -887,7 +887,7 @@ table Torappu_RoguelikeArchiveUnlockCondDesc {
 
 
 
-table dict__System_String_Torappu_RoguelikeArchiveUnlockCondDesc {
+table dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeArchiveUnlockCondDesc;
 }
@@ -901,7 +901,7 @@ table Torappu_RoguelikeArchiveEnroll {
 
 
 
-table dict__System_String_Torappu_RoguelikeArchiveEnroll {
+table dict_2_System_String_Torappu_RoguelikeArchiveEnroll_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeArchiveEnroll;
 }
@@ -909,30 +909,30 @@ table dict__System_String_Torappu_RoguelikeArchiveEnroll {
 
 
 table Torappu_RoguelikeArchiveUnlockCondData {
-	unlockCondDesc:[dict__System_String_Torappu_RoguelikeArchiveUnlockCondDesc];
-	enroll:[dict__System_String_Torappu_RoguelikeArchiveEnroll];
+	unlockCondDesc:[dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_];
+	enroll:[dict_2_System_String_Torappu_RoguelikeArchiveEnroll_];
 }
 
 
 
 table Torappu_RoguelikeTopicDetailConst_PlayerLevelData {
-	exp:int32;
-	populationUp:int32;
-	squadCapacityUp:int32;
-	battleCharLimitUp:int32;
-	maxHpUp:int32;
+	exp:int;
+	populationUp:int;
+	squadCapacityUp:int;
+	battleCharLimitUp:int;
+	maxHpUp:int;
 }
 
 
 
-table dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_ {
+	dict_key:int;
 	dict_value:Torappu_RoguelikeTopicDetailConst_PlayerLevelData;
 }
 
 
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -942,33 +942,33 @@ enum Torappu_EvolvePhase : int32 {
 
 table Torappu_RoguelikeTopicDetailConst_CharUpgradeData {
 	evolvePhase:Torappu_EvolvePhase;
-	skillLevel:int32;
-	skillSpecializeLevel:int32;
+	skillLevel:int;
+	skillSpecializeLevel:int;
 }
 
 
 
-table dict__System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_ {
+	dict_key:int;
 	dict_value:Torappu_RoguelikeTopicDetailConst_CharUpgradeData;
 }
 
 
 
-table dict__System_Int32_System_String {
-	dict_key:int32;
+table dict_2_System_Int32_System_String_ {
+	dict_key:int;
 	dict_value:string;
 }
 
 
 
 table Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData {
-	levels:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData];
+	levels:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData {
+table dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData;
 }
@@ -976,10 +976,10 @@ table dict__System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLeve
 
 
 table Torappu_RoguelikeTopicDetailConst {
-	playerLevelTable:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData];
-	charUpgradeTable:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData];
-	difficultyUpgradeRelicDescTable:[dict__System_Int32_System_String];
-	predefinedLevelTable:[dict__System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData];
+	playerLevelTable:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
+	charUpgradeTable:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_];
+	difficultyUpgradeRelicDescTable:[dict_2_System_Int32_System_String_];
+	predefinedLevelTable:[dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_];
 	tokenBpId:string;
 	tokenOuterBuffId:string;
 	spOperatorLockedMessage:string;
@@ -1005,15 +1005,15 @@ table Torappu_RoguelikeTopicDetailConst {
 	challengeTaskRewardName:string;
 	challengeTaskModeName:string;
 	challengeTaskName:string;
-	outerBuffTokenSum:int32;
+	outerBuffTokenSum:int;
 	needAllFrontNode:bool;
 	showBlurBack:bool;
-	endingIconBorderDifficulty:int32;
-	endingIconBorderCount:int32;
+	endingIconBorderDifficulty:int;
+	endingIconBorderCount:int;
 	copySeedModeInfo:string;
 	copySucceededTextHint:string;
-	historicalRecordsCount:int32;
-	historicalRecordsStartTime:int64;
+	historicalRecordsCount:int;
+	historicalRecordsStartTime:long;
 	historicalRecordsMode:Torappu_RoguelikeTopicMode;
 }
 
@@ -1021,23 +1021,23 @@ table Torappu_RoguelikeTopicDetailConst {
 
 table Torappu_RoguelikeGameInitData {
 	modeId:Torappu_RoguelikeTopicMode;
-	modeGrade:int32;
+	modeGrade:int;
 	predefinedId:string;
 	predefinedStyle:string;
 	initialBandRelic:[string];
 	initialRecruitGroup:[string];
-	initialHp:int32;
-	initialPopulation:int32;
-	initialGold:int32;
-	initialSquadCapacity:int32;
-	initialShield:int32;
-	initialMaxHp:int32;
-	initialKey:int32;
+	initialHp:int;
+	initialPopulation:int;
+	initialGold:int;
+	initialSquadCapacity:int;
+	initialShield:int;
+	initialMaxHp:int;
+	initialKey:int;
 }
 
 
 
-enum Torappu_LevelData_Difficulty : int32 {
+enum Torappu_LevelData_Difficulty : int {
 	NONE = 0,
 	NORMAL = 1,
 	FOUR_STAR = 2,
@@ -1056,8 +1056,8 @@ table Torappu_RoguelikeGameStageData {
 	loadingPicId:string;
 	description:string;
 	eliteDesc:string;
-	isBoss:int32;
-	isElite:int32;
+	isBoss:int;
+	isElite:int;
 	difficulty:Torappu_LevelData_Difficulty;
 	capsulePool:string;
 	capsuleProb:float;
@@ -1070,7 +1070,7 @@ table Torappu_RoguelikeGameStageData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameStageData {
+table dict_2_System_String_Torappu_RoguelikeGameStageData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameStageData;
 }
@@ -1094,7 +1094,7 @@ table Torappu_RoguelikeGameZoneData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameZoneData {
+table dict_2_System_String_Torappu_RoguelikeGameZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameZoneData;
 }
@@ -1106,7 +1106,7 @@ table Torappu_RoguelikeZoneVariationData {
 
 
 
-table dict__System_String_Torappu_RoguelikeZoneVariationData {
+table dict_2_System_String_Torappu_RoguelikeZoneVariationData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeZoneVariationData;
 }
@@ -1121,14 +1121,14 @@ table Torappu_RoguelikeGameTrapData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameTrapData {
+table dict_2_System_String_Torappu_RoguelikeGameTrapData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameTrapData;
 }
 
 
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -1142,7 +1142,7 @@ enum Torappu_ProfessionCategory : int32 {
 	PIONEER = 512
 }
 
-enum Torappu_RarityRankMask : int32 {
+enum Torappu_RarityRankMask : int {
 	NONE = 0,
 	TIER_1 = 1,
 	TIER_2 = 2,
@@ -1153,7 +1153,7 @@ enum Torappu_RarityRankMask : int32 {
 	ALL = 63
 }
 
-enum Torappu_ProfessionID : int32 {
+enum Torappu_ProfessionID : int {
 	WARRIOR = 0,
 	SNIPER = 1,
 	TANK = 2,
@@ -1166,7 +1166,7 @@ enum Torappu_ProfessionID : int32 {
 	TRAP = 8
 }
 
-enum Torappu_RarityRank : int32 {
+enum Torappu_RarityRank : int {
 	TIER_1 = 0,
 	TIER_2 = 1,
 	TIER_3 = 2,
@@ -1182,14 +1182,14 @@ table Torappu_RoguelikeGameRecruitTicketData {
 	rarity:Torappu_RarityRankMask;
 	professionList:[Torappu_ProfessionID];
 	rarityList:[Torappu_RarityRank];
-	extraEliteNum:int32;
+	extraEliteNum:int;
 	extraFreeRarity:[Torappu_RarityRank];
 	extraCharIds:[string];
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeGameRecruitTicketData {
+table dict_2_System_String_Torappu_RoguelikeGameRecruitTicketData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameRecruitTicketData;
 }
@@ -1206,14 +1206,14 @@ table Torappu_RoguelikeGameUpgradeTicketData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameUpgradeTicketData {
+table dict_2_System_String_Torappu_RoguelikeGameUpgradeTicketData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameUpgradeTicketData;
 }
 
 
 
-enum Torappu_CustomTicketType : int32 {
+enum Torappu_CustomTicketType : int {
 	NONE = 0,
 	PURIFY = 1,
 	GET_CANDLE = 2
@@ -1227,7 +1227,7 @@ table Torappu_RoguelikeGameCustomTicketData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameCustomTicketData {
+table dict_2_System_String_Torappu_RoguelikeGameCustomTicketData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameCustomTicketData;
 }
@@ -1241,9 +1241,17 @@ table Torappu_RoguelikeGameStashableTicketData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameStashableTicketData {
+table dict_2_System_String_Torappu_RoguelikeGameStashableTicketData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameStashableTicketData;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
@@ -1262,14 +1270,14 @@ table Torappu_RoguelikeGameRelicData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameRelicData {
+table dict_2_System_String_Torappu_RoguelikeGameRelicData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameRelicData;
 }
 
 
 
-enum Torappu_RoguelikeGameRelicCheckType : int32 {
+enum Torappu_RoguelikeGameRelicCheckType : int {
 	NONE = 0,
 	PROFESSION = 1,
 	SUB_PROFESSION = 2,
@@ -1279,7 +1287,7 @@ enum Torappu_RoguelikeGameRelicCheckType : int32 {
 table Torappu_RoguelikeGameRelicCheckParam {
 	valueProfessionMask:Torappu_ProfessionCategory;
 	valueStrs:[string];
-	valueInt:int32;
+	valueInt:int;
 }
 
 
@@ -1292,7 +1300,7 @@ table Torappu_RoguelikeGameRelicParamData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameRelicParamData {
+table dict_2_System_String_Torappu_RoguelikeGameRelicParamData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameRelicParamData;
 }
@@ -1309,14 +1317,14 @@ table Torappu_RoguelikeGameRecruitGrpData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameRecruitGrpData {
+table dict_2_System_String_Torappu_RoguelikeGameRecruitGrpData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameRecruitGrpData;
 }
 
 
 
-enum Torappu_RoguelikeGameChoiceType : int32 {
+enum Torappu_RoguelikeGameChoiceType : int {
 	NONE = 0,
 	LEAVE = 1,
 	NEXT = 2,
@@ -1336,7 +1344,7 @@ enum Torappu_RoguelikeGameChoiceType : int32 {
 	EXPEDITION_RETURN_ALL = 16
 }
 
-enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
+enum Torappu_RoguelikeChoiceLeftDecoType : int {
 	NONE = 0,
 	TASK = 1,
 	TASK_REWARD = 2,
@@ -1344,14 +1352,14 @@ enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
 	VISION = 4
 }
 
-enum Torappu_RoguelikeChoiceDisplayType : int32 {
+enum Torappu_RoguelikeChoiceDisplayType : int {
 	NONE = 0,
 	NORMAL = 1,
 	ITEM = 2,
 	TASK = 3
 }
 
-enum Torappu_RoguelikeChoiceHintType : int32 {
+enum Torappu_RoguelikeChoiceHintType : int {
 	NONE = 0,
 	ITEM = 1,
 	CANDLED_CHAR = 2,
@@ -1397,7 +1405,7 @@ table Torappu_RoguelikeGameChoiceData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameChoiceData {
+table dict_2_System_String_Torappu_RoguelikeGameChoiceData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameChoiceData;
 }
@@ -1410,20 +1418,20 @@ table Torappu_RoguelikeGameChoiceSceneData {
 	description:string;
 	background:string;
 	titleIcon:string;
-	subTypeId:int32;
+	subTypeId:int;
 	useHiddenMusic:bool;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeGameChoiceSceneData {
+table dict_2_System_String_Torappu_RoguelikeGameChoiceSceneData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameChoiceSceneData;
 }
 
 
 
-enum Torappu_RoguelikeEventType : int32 {
+enum Torappu_RoguelikeEventType : int {
 	NONE = 0,
 	BATTLE_NORMAL = 1,
 	BATTLE_ELITE = 2,
@@ -1459,7 +1467,7 @@ table Torappu_RoguelikeGameNodeTypeData {
 
 
 
-table dict__Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData {
+table dict_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData_ {
 	dict_key:Torappu_RoguelikeEventType;
 	dict_value:Torappu_RoguelikeGameNodeTypeData;
 }
@@ -1468,7 +1476,7 @@ table dict__Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData {
 
 table Torappu_RoguelikeGameNodeSubTypeData {
 	eventType:Torappu_RoguelikeEventType;
-	subTypeId:int32;
+	subTypeId:int;
 	iconId:string;
 	name:string;
 	description:string;
@@ -1476,7 +1484,7 @@ table Torappu_RoguelikeGameNodeSubTypeData {
 
 
 
-enum Torappu_RoguelikeGameVariationType : int32 {
+enum Torappu_RoguelikeGameVariationType : int {
 	NONE = 0,
 	MAP = 1,
 	RES = 2,
@@ -1496,7 +1504,7 @@ table Torappu_RoguelikeGameVariationData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameVariationData {
+table dict_2_System_String_Torappu_RoguelikeGameVariationData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameVariationData;
 }
@@ -1513,14 +1521,14 @@ table Torappu_RoguelikeGameFusionData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameFusionData {
+table dict_2_System_String_Torappu_RoguelikeGameFusionData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameFusionData;
 }
 
 
 
-enum Torappu_RoguelikeGameCharBuffType : int32 {
+enum Torappu_RoguelikeGameCharBuffType : int {
 	NONE = 0,
 	MUTATION = 1,
 	EVOLUTION = 2
@@ -1539,7 +1547,7 @@ table Torappu_RoguelikeGameCharBuffData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameCharBuffData {
+table dict_2_System_String_Torappu_RoguelikeGameCharBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameCharBuffData;
 }
@@ -1558,14 +1566,14 @@ table Torappu_RoguelikeGameSquadBuffData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameSquadBuffData {
+table dict_2_System_String_Torappu_RoguelikeGameSquadBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameSquadBuffData;
 }
 
 
 
-enum Torappu_RoguelikeTaskRarity : int32 {
+enum Torappu_RoguelikeTaskRarity : int {
 	NORMAL = 0,
 	RARE = 1,
 	SUPER_RARE = 2
@@ -1581,19 +1589,19 @@ table Torappu_RoguelikeTaskData {
 
 
 
-table dict__System_String_Torappu_RoguelikeTaskData {
+table dict_2_System_String_Torappu_RoguelikeTaskData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTaskData;
 }
 
 
 
-enum Torappu_RoguelikeBankRewardCountType : int32 {
+enum Torappu_RoguelikeBankRewardCountType : int {
 	HIGHEST_RECORD = 0,
 	TOTAL_SUM = 1
 }
 
-enum Torappu_RoguelikeRewardExDropTagSrcType : int32 {
+enum Torappu_RoguelikeRewardExDropTagSrcType : int {
 	NONE = 0,
 	TREASURE = 1,
 	TOTEM = 2,
@@ -1602,7 +1610,7 @@ enum Torappu_RoguelikeRewardExDropTagSrcType : int32 {
 	EVIL_TEMPLE = 5
 }
 
-table dict__Torappu_RoguelikeRewardExDropTagSrcType_System_String {
+table dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_ {
 	dict_key:Torappu_RoguelikeRewardExDropTagSrcType;
 	dict_value:string;
 }
@@ -1618,10 +1626,10 @@ table Torappu_RoguelikeGameConst {
 	squadCapacityItemId:string;
 	expItemId:string;
 	initialBandShowGradeFlag:bool;
-	bankMaxGold:int32;
+	bankMaxGold:int;
 	bankCostId:string;
-	bankDrawCount:int32;
-	bankDrawLimit:int32;
+	bankDrawCount:int;
+	bankDrawLimit:int;
 	bankRewardCountType:Torappu_RoguelikeBankRewardCountType;
 	spZoneShopBgmSignal:string;
 	mimicEnemyIds:[string];
@@ -1634,24 +1642,24 @@ table Torappu_RoguelikeGameConst {
 	shieldItemId:string;
 	keyItemId:string;
 	divinationKitItemId:string;
-	chestKeyCnt:int32;
+	chestKeyCnt:int;
 	chestKeyItemId:string;
 	keyColorId:string;
 	onceNodeTypeList:[Torappu_RoguelikeEventType];
 	vertNodeCostDialogUseItemIconType:bool;
-	gpScoreRatio:int32;
+	gpScoreRatio:int;
 	overflowUsageSquadBuff:string;
 	specialTrapId:string;
 	trapRewardRelicId:string;
 	unlockRouteItemId:string;
-	unlockRouteItemCount:int32;
+	unlockRouteItemCount:int;
 	hideBattleNodeName:string;
 	hideBattleNodeDescription:string;
 	hideNonBattleNodeName:string;
 	hideNonBattleNodeDescription:string;
 	charSelectExpeditionConflictToast:string;
 	charSelectNoUpgradeConflictToast:string;
-	itemDropTagDict:[dict__Torappu_RoguelikeRewardExDropTagSrcType_System_String];
+	itemDropTagDict:[dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_];
 	shopRefreshCostId:string;
 	expeditionLeaveToastFormat:string;
 	expeditionReturnDescCureUpgrade:string;
@@ -1673,7 +1681,7 @@ table Torappu_RoguelikeGameConst {
 	charSelectCandleConflictToast:string;
 	charSelectGuidedConflictToast:string;
 	charSelectNonGuidedConflictToast:string;
-	gainBuffDiffGrade:int32;
+	gainBuffDiffGrade:int;
 	dsPredictTips:string;
 	dsBuffActiveTips:string;
 	totemDesc:string;
@@ -1696,8 +1704,8 @@ table Torappu_RoguelikeGameConst {
 	gotCharsCandleBuffToast:string;
 	stashedRecruitNodeDescription:string;
 	stashedRecruitEmptyNodeDescription:string;
-	recruitStashMaxNum:int32;
-	recruitStashMinNum:int32;
+	recruitStashMaxNum:int;
+	recruitStashMinNum:int;
 	hasTopicCharSelectMenuButton:bool;
 }
 
@@ -1709,7 +1717,7 @@ table Torappu_RoguelikeGameShopDialogGroupData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameShopDialogGroupData {
+table dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameShopDialogGroupData;
 }
@@ -1717,12 +1725,12 @@ table dict__System_String_Torappu_RoguelikeGameShopDialogGroupData {
 
 
 table Torappu_RoguelikeGameShopDialogTypeData {
-	groups:[dict__System_String_Torappu_RoguelikeGameShopDialogGroupData];
+	groups:[dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_];
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeGameShopDialogTypeData {
+table dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameShopDialogTypeData;
 }
@@ -1730,7 +1738,7 @@ table dict__System_String_Torappu_RoguelikeGameShopDialogTypeData {
 
 
 table Torappu_RoguelikeGameShopDialogData {
-	types:[dict__System_String_Torappu_RoguelikeGameShopDialogTypeData];
+	types:[dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_];
 }
 
 
@@ -1743,7 +1751,7 @@ table Torappu_RoguelikeTopicCapsule {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicCapsule {
+table dict_2_System_String_Torappu_RoguelikeTopicCapsule_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicCapsule;
 }
@@ -1751,7 +1759,7 @@ table dict__System_String_Torappu_RoguelikeTopicCapsule {
 
 
 table Torappu_RoguelikeGameEndingData_LevelIcon {
-	level:int32;
+	level:int;
 	iconId:string;
 }
 
@@ -1759,19 +1767,19 @@ table Torappu_RoguelikeGameEndingData_LevelIcon {
 
 table Torappu_RoguelikeGameEndingData {
 	id:string;
-	familyId:int32;
+	familyId:int;
 	name:string;
 	desc:string;
 	bgId:string;
 	icons:[Torappu_RoguelikeGameEndingData_LevelIcon];
-	priority:int32;
+	priority:int;
 	changeEndingDesc:string;
 	bossIconId:string;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeGameEndingData {
+table dict_2_System_String_Torappu_RoguelikeGameEndingData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameEndingData;
 }
@@ -1783,12 +1791,12 @@ table Torappu_RoguelikeGameFailEndingData {
 	name:string;
 	desc:string;
 	iconId:string;
-	priority:int32;
+	priority:int;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeGameFailEndingData {
+table dict_2_System_String_Torappu_RoguelikeGameFailEndingData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameFailEndingData;
 }
@@ -1801,14 +1809,14 @@ table Torappu_RoguelikeBattleSummeryDescriptionData {
 
 
 
-table dict__Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData {
+table dict_2_Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData_ {
 	dict_key:Torappu_RoguelikeTopicMode;
 	dict_value:Torappu_RoguelikeBattleSummeryDescriptionData;
 }
 
 
 
-enum Torappu_TipData_Category : int32 {
+enum Torappu_TipData_Category : int {
 	NONE = 0,
 	BATTLE = 1,
 	UI = 2,
@@ -1826,7 +1834,7 @@ table Torappu_TipData {
 
 
 
-enum Torappu_RoguelikeGameItemType : int32 {
+enum Torappu_RoguelikeGameItemType : int {
 	NONE = 0,
 	HP = 1,
 	HPMAX = 2,
@@ -1876,7 +1884,7 @@ enum Torappu_RoguelikeGameItemType : int32 {
 	STASH_RECRUIT_LIMIT = 46
 }
 
-enum Torappu_RoguelikeGameItemSubType : int32 {
+enum Torappu_RoguelikeGameItemSubType : int {
 	NONE = 0,
 	CURSE = 1,
 	TEMP_TICKET = 2,
@@ -1887,7 +1895,7 @@ enum Torappu_RoguelikeGameItemSubType : int32 {
 	RED_CAPSULE = 64
 }
 
-enum Torappu_RoguelikeGameItemRarity : int32 {
+enum Torappu_RoguelikeGameItemRarity : int {
 	NONE = 0,
 	BORN = 1,
 	NORMAL = 2,
@@ -1906,7 +1914,7 @@ table Torappu_RoguelikeGameItemData {
 	type:Torappu_RoguelikeGameItemType;
 	subType:Torappu_RoguelikeGameItemSubType;
 	rarity:Torappu_RoguelikeGameItemRarity;
-	sortId:int32;
+	sortId:int;
 	canSacrifice:bool;
 	tinyIconColor:string;
 	unlockCondDesc:string;
@@ -1915,7 +1923,7 @@ table Torappu_RoguelikeGameItemData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameItemData {
+table dict_2_System_String_Torappu_RoguelikeGameItemData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameItemData;
 }
@@ -1924,20 +1932,20 @@ table dict__System_String_Torappu_RoguelikeGameItemData {
 
 table Torappu_RoguelikeBandRefData {
 	itemId:string;
-	bandLevel:int32;
+	bandLevel:int;
 	normalBandId:string;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeBandRefData {
+table dict_2_System_String_Torappu_RoguelikeBandRefData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeBandRefData;
 }
 
 
 
-enum Torappu_RoguelikeEndingDetailText_Type : int32 {
+enum Torappu_RoguelikeEndingDetailText_Type : int {
 	SHOW_CHOICE = 0,
 	SHOW_RELIC = 1,
 	SHOW_CAPSULE = 2,
@@ -1979,14 +1987,14 @@ table Torappu_RoguelikeEndingRelicDetailText {
 table Torappu_RoguelikeGameTreasureData {
 	treasureId:string;
 	groupId:string;
-	subIndex:int32;
+	subIndex:int;
 	name:string;
 	usage:string;
 }
 
 
 
-table dict__System_String_list___1_Torappu_RoguelikeGameTreasureData {
+table dict_2_System_String_list_1_Torappu_RoguelikeGameTreasureData__ {
 	dict_key:string;
 	dict_value:[Torappu_RoguelikeGameTreasureData];
 }
@@ -1995,7 +2003,7 @@ table dict__System_String_list___1_Torappu_RoguelikeGameTreasureData {
 
 table Torappu_RoguelikeDifficultyUpgradeRelicData {
 	relicId:string;
-	equivalentGrade:int32;
+	equivalentGrade:int;
 }
 
 
@@ -2006,7 +2014,7 @@ table Torappu_RoguelikeDifficultyUpgradeRelicGroupData {
 
 
 
-table dict__System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData {
+table dict_2_System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeDifficultyUpgradeRelicGroupData;
 }
@@ -2015,23 +2023,23 @@ table dict__System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData {
 
 table Torappu_RoguelikePredefinedStyleData {
 	styleId:string;
-	styleConfig:int32;
+	styleConfig:int;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikePredefinedStyleData {
+table dict_2_System_String_Torappu_RoguelikePredefinedStyleData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikePredefinedStyleData;
 }
 
 
 
-enum Torappu_RoguelikeExpStyleConfigParam : int32 {
+enum Torappu_RoguelikeExpStyleConfigParam : int {
 	BATTLE_END_HP_LOSE_TEXT = 0
 }
 
-table dict__Torappu_RoguelikeExpStyleConfigParam_System_String {
+table dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_ {
 	dict_key:Torappu_RoguelikeExpStyleConfigParam;
 	dict_value:string;
 }
@@ -2039,7 +2047,7 @@ table dict__Torappu_RoguelikeExpStyleConfigParam_System_String {
 
 
 table Torappu_RoguelikePredefinedExpStyleConfigData {
-	paramDict:[dict__Torappu_RoguelikeExpStyleConfigParam_System_String];
+	paramDict:[dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_];
 }
 
 
@@ -2058,7 +2066,7 @@ table Torappu_RoguelikeGameExploreToolData {
 
 
 
-table dict__System_String_Torappu_RoguelikeGameExploreToolData {
+table dict_2_System_String_Torappu_RoguelikeGameExploreToolData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeGameExploreToolData;
 }
@@ -2071,7 +2079,7 @@ table Torappu_RoguelikeRollNodeGroupData {
 
 
 
-table dict__System_String_Torappu_RoguelikeRollNodeGroupData {
+table dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeRollNodeGroupData;
 }
@@ -2080,19 +2088,19 @@ table dict__System_String_Torappu_RoguelikeRollNodeGroupData {
 
 table Torappu_RoguelikeRollNodeData {
 	zoneId:string;
-	groups:[dict__System_String_Torappu_RoguelikeRollNodeGroupData];
+	groups:[dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_];
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeRollNodeData {
+table dict_2_System_String_Torappu_RoguelikeRollNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeRollNodeData;
 }
 
 
 
-enum Torappu_RoguelikeActivityType : int32 {
+enum Torappu_RoguelikeActivityType : int {
 	NONE = 0,
 	SEED_MODE = 1
 }
@@ -2100,8 +2108,8 @@ enum Torappu_RoguelikeActivityType : int32 {
 table Torappu_RoguelikeActivityBasicData {
 	id:string;
 	type:Torappu_RoguelikeActivityType;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	isPresentSeedMode:bool;
 	isUnlockBadge:bool;
 	validMode:Torappu_RoguelikeTopicMode;
@@ -2109,7 +2117,7 @@ table Torappu_RoguelikeActivityBasicData {
 
 
 
-table dict__System_String_Torappu_RoguelikeActivityBasicData {
+table dict_2_System_String_Torappu_RoguelikeActivityBasicData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeActivityBasicData;
 }
@@ -2118,7 +2126,7 @@ table dict__System_String_Torappu_RoguelikeActivityBasicData {
 
 table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData {
 	seed:string;
-	sortId:int32;
+	sortId:int;
 	desc:string;
 }
 
@@ -2149,7 +2157,7 @@ table Torappu_RoguelikeActivitySeedModeData {
 
 
 
-table dict__System_String_Torappu_RoguelikeActivitySeedModeData {
+table dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeActivitySeedModeData;
 }
@@ -2157,13 +2165,13 @@ table dict__System_String_Torappu_RoguelikeActivitySeedModeData {
 
 
 table Torappu_RoguelikeActivityTable {
-	seedModeDict:[dict__System_String_Torappu_RoguelikeActivitySeedModeData];
+	seedModeDict:[dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_];
 }
 
 
 
 table Torappu_RoguelikeActivityData {
-	basicDatas:[dict__System_String_Torappu_RoguelikeActivityBasicData];
+	basicDatas:[dict_2_System_String_Torappu_RoguelikeActivityBasicData_];
 	activityTable:Torappu_RoguelikeActivityTable;
 }
 
@@ -2171,69 +2179,69 @@ table Torappu_RoguelikeActivityData {
 
 table Torappu_RoguelikeTopicDetail {
 	updates:[Torappu_RoguelikeTopicUpdate];
-	enrolls:[dict__System_String_Torappu_RoguelikeTopicEnroll];
+	enrolls:[dict_2_System_String_Torappu_RoguelikeTopicEnroll_];
 	milestones:[Torappu_RoguelikeTopicBP];
 	milestoneUpdates:[Torappu_RoguelikeTopicMilestoneUpdateData];
 	grandPrizes:[Torappu_RoguelikeTopicBPGrandPrize];
 	monthMission:[Torappu_RoguelikeTopicMonthMission];
-	monthSquad:[dict__System_String_Torappu_RoguelikeTopicMonthSquad];
-	challenges:[dict__System_String_Torappu_RoguelikeTopicChallenge];
+	monthSquad:[dict_2_System_String_Torappu_RoguelikeTopicMonthSquad_];
+	challenges:[dict_2_System_String_Torappu_RoguelikeTopicChallenge_];
 	difficulties:[Torappu_RoguelikeTopicDifficulty];
 	bankRewards:[Torappu_RoguelikeTopicBankReward];
 	archiveComp:Torappu_RoguelikeArchiveComponentData;
 	archiveUnlockCond:Torappu_RoguelikeArchiveUnlockCondData;
 	detailConst:Torappu_RoguelikeTopicDetailConst;
 	init:[Torappu_RoguelikeGameInitData];
-	stages:[dict__System_String_Torappu_RoguelikeGameStageData];
-	zones:[dict__System_String_Torappu_RoguelikeGameZoneData];
-	variation:[dict__System_String_Torappu_RoguelikeZoneVariationData];
-	traps:[dict__System_String_Torappu_RoguelikeGameTrapData];
-	recruitTickets:[dict__System_String_Torappu_RoguelikeGameRecruitTicketData];
-	upgradeTickets:[dict__System_String_Torappu_RoguelikeGameUpgradeTicketData];
-	customTickets:[dict__System_String_Torappu_RoguelikeGameCustomTicketData];
-	stashableTickets:[dict__System_String_Torappu_RoguelikeGameStashableTicketData];
-	relics:[dict__System_String_Torappu_RoguelikeGameRelicData];
-	relicParams:[dict__System_String_Torappu_RoguelikeGameRelicParamData];
-	recruitGrps:[dict__System_String_Torappu_RoguelikeGameRecruitGrpData];
-	choices:[dict__System_String_Torappu_RoguelikeGameChoiceData];
-	choiceScenes:[dict__System_String_Torappu_RoguelikeGameChoiceSceneData];
-	nodeTypeData:[dict__Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData];
+	stages:[dict_2_System_String_Torappu_RoguelikeGameStageData_];
+	zones:[dict_2_System_String_Torappu_RoguelikeGameZoneData_];
+	variation:[dict_2_System_String_Torappu_RoguelikeZoneVariationData_];
+	traps:[dict_2_System_String_Torappu_RoguelikeGameTrapData_];
+	recruitTickets:[dict_2_System_String_Torappu_RoguelikeGameRecruitTicketData_];
+	upgradeTickets:[dict_2_System_String_Torappu_RoguelikeGameUpgradeTicketData_];
+	customTickets:[dict_2_System_String_Torappu_RoguelikeGameCustomTicketData_];
+	stashableTickets:[dict_2_System_String_Torappu_RoguelikeGameStashableTicketData_];
+	relics:[dict_2_System_String_Torappu_RoguelikeGameRelicData_];
+	relicParams:[dict_2_System_String_Torappu_RoguelikeGameRelicParamData_];
+	recruitGrps:[dict_2_System_String_Torappu_RoguelikeGameRecruitGrpData_];
+	choices:[dict_2_System_String_Torappu_RoguelikeGameChoiceData_];
+	choiceScenes:[dict_2_System_String_Torappu_RoguelikeGameChoiceSceneData_];
+	nodeTypeData:[dict_2_Torappu_RoguelikeEventType_Torappu_RoguelikeGameNodeTypeData_];
 	subTypeData:[Torappu_RoguelikeGameNodeSubTypeData];
-	variationData:[dict__System_String_Torappu_RoguelikeGameVariationData];
-	fusionData:[dict__System_String_Torappu_RoguelikeGameFusionData];
-	charBuffData:[dict__System_String_Torappu_RoguelikeGameCharBuffData];
-	squadBuffData:[dict__System_String_Torappu_RoguelikeGameSquadBuffData];
-	taskData:[dict__System_String_Torappu_RoguelikeTaskData];
+	variationData:[dict_2_System_String_Torappu_RoguelikeGameVariationData_];
+	fusionData:[dict_2_System_String_Torappu_RoguelikeGameFusionData_];
+	charBuffData:[dict_2_System_String_Torappu_RoguelikeGameCharBuffData_];
+	squadBuffData:[dict_2_System_String_Torappu_RoguelikeGameSquadBuffData_];
+	taskData:[dict_2_System_String_Torappu_RoguelikeTaskData_];
 	gameConst:Torappu_RoguelikeGameConst;
 	shopDialogData:Torappu_RoguelikeGameShopDialogData;
-	capsuleDict:[dict__System_String_Torappu_RoguelikeTopicCapsule];
-	endings:[dict__System_String_Torappu_RoguelikeGameEndingData];
-	failEndings:[dict__System_String_Torappu_RoguelikeGameFailEndingData];
-	battleSummeryDescriptions:[dict__Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData];
+	capsuleDict:[dict_2_System_String_Torappu_RoguelikeTopicCapsule_];
+	endings:[dict_2_System_String_Torappu_RoguelikeGameEndingData_];
+	failEndings:[dict_2_System_String_Torappu_RoguelikeGameFailEndingData_];
+	battleSummeryDescriptions:[dict_2_Torappu_RoguelikeTopicMode_Torappu_RoguelikeBattleSummeryDescriptionData_];
 	battleLoadingTips:[Torappu_TipData];
-	items:[dict__System_String_Torappu_RoguelikeGameItemData];
-	bandRef:[dict__System_String_Torappu_RoguelikeBandRefData];
+	items:[dict_2_System_String_Torappu_RoguelikeGameItemData_];
+	bandRef:[dict_2_System_String_Torappu_RoguelikeBandRefData_];
 	endingDetailList:[Torappu_RoguelikeEndingDetailText];
 	endingRelicDetailList:[Torappu_RoguelikeEndingRelicDetailText];
-	treasures:[dict__System_String_list___1_Torappu_RoguelikeGameTreasureData];
-	difficultyUpgradeRelicGroups:[dict__System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData];
-	styles:[dict__System_String_Torappu_RoguelikePredefinedStyleData];
+	treasures:[dict_2_System_String_list_1_Torappu_RoguelikeGameTreasureData__];
+	difficultyUpgradeRelicGroups:[dict_2_System_String_Torappu_RoguelikeDifficultyUpgradeRelicGroupData_];
+	styles:[dict_2_System_String_Torappu_RoguelikePredefinedStyleData_];
 	styleConfig:Torappu_RoguelikePredefinedConstStyleData;
-	exploreTools:[dict__System_String_Torappu_RoguelikeGameExploreToolData];
-	rollNodeData:[dict__System_String_Torappu_RoguelikeRollNodeData];
+	exploreTools:[dict_2_System_String_Torappu_RoguelikeGameExploreToolData_];
+	rollNodeData:[dict_2_System_String_Torappu_RoguelikeRollNodeData_];
 	activity:Torappu_RoguelikeActivityData;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicDetail {
+table dict_2_System_String_Torappu_RoguelikeTopicDetail_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicDetail;
 }
 
 
 
-enum Torappu_SanEffectRank : int32 {
+enum Torappu_SanEffectRank : int {
 	SAN_EFFECT_0 = 0,
 	SAN_EFFECT_1 = 1,
 	SAN_EFFECT_2 = 2,
@@ -2241,7 +2249,7 @@ enum Torappu_SanEffectRank : int32 {
 }
 
 table Torappu_RoguelikeSanRangeData {
-	sanMax:int32;
+	sanMax:int;
 	diceGroupId:string;
 	description:string;
 	sanDungeonEffect:Torappu_SanEffectRank;
@@ -2267,22 +2275,22 @@ table Torappu_RoguelikeSanCheckModuleData {
 table Torappu_RoguelikeDiceData {
 	diceId:string;
 	description:string;
-	isUpgradeDice:int32;
+	isUpgradeDice:int;
 	upgradeDiceId:string;
-	diceFaceCount:int32;
+	diceFaceCount:int;
 	battleDiceId:string;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeDiceData {
+table dict_2_System_String_Torappu_RoguelikeDiceData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeDiceData;
 }
 
 
 
-enum Torappu_DiceResultClass : int32 {
+enum Torappu_DiceResultClass : int {
 	VERYBAD = 0,
 	BAD = 1,
 	NORMAL = 2,
@@ -2291,14 +2299,14 @@ enum Torappu_DiceResultClass : int32 {
 	BEST = 4
 }
 
-enum Torappu_DiceResultShowType : int32 {
+enum Torappu_DiceResultShowType : int {
 	RAW_TEXT = 0,
 	MUTATION = 1,
 	VIRTUE = 2
 }
 
 table Torappu_RoguelikeDiceRuleData {
-	dicePointMax:int32;
+	dicePointMax:int;
 	diceResultClass:Torappu_DiceResultClass;
 	diceGroupId:string;
 	diceEventId:string;
@@ -2312,14 +2320,14 @@ table Torappu_RoguelikeDiceRuleData {
 
 
 
-table dict__System_String_Torappu_RoguelikeDiceRuleData {
+table dict_2_System_String_Torappu_RoguelikeDiceRuleData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeDiceRuleData;
 }
 
 
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -2328,12 +2336,12 @@ table dict__System_String_System_String {
 
 table Torappu_RoguelikeDiceRuleGroupData {
 	ruleGroupId:string;
-	minGoodNum:int32;
+	minGoodNum:int;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeDiceRuleGroupData {
+table dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeDiceRuleGroupData;
 }
@@ -2342,18 +2350,18 @@ table dict__System_String_Torappu_RoguelikeDiceRuleGroupData {
 
 table Torappu_RoguelikeDicePredefineData {
 	modeId:Torappu_RoguelikeTopicMode;
-	modeGrade:int32;
+	modeGrade:int;
 	predefinedId:string;
-	initialDiceCount:int32;
+	initialDiceCount:int;
 }
 
 
 
 table Torappu_RoguelikeDiceModuleData {
-	dice:[dict__System_String_Torappu_RoguelikeDiceData];
-	diceEvents:[dict__System_String_Torappu_RoguelikeDiceRuleData];
-	diceChoices:[dict__System_String_System_String];
-	diceRuleGroups:[dict__System_String_Torappu_RoguelikeDiceRuleGroupData];
+	dice:[dict_2_System_String_Torappu_RoguelikeDiceData_];
+	diceEvents:[dict_2_System_String_Torappu_RoguelikeDiceRuleData_];
+	diceChoices:[dict_2_System_String_System_String_];
+	diceRuleGroups:[dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_];
 	dicePredefines:[Torappu_RoguelikeDicePredefineData];
 }
 
@@ -2361,7 +2369,7 @@ table Torappu_RoguelikeDiceModuleData {
 
 table Torappu_RoguelikeChaosData {
 	chaosId:string;
-	level:int32;
+	level:int;
 	nextChaosId:string;
 	prevChaosId:string;
 	iconId:string;
@@ -2369,55 +2377,55 @@ table Torappu_RoguelikeChaosData {
 	functionDesc:string;
 	desc:string;
 	sound:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeChaosData {
+table dict_2_System_String_Torappu_RoguelikeChaosData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeChaosData;
 }
 
 
 
-enum Torappu_ChaosEffectRank : int32 {
+enum Torappu_ChaosEffectRank : int {
 	CHAOS_EFFECT_0 = 0,
 	CHAOS_EFFECT_1 = 1,
 	CHAOS_EFFECT_2 = 2
 }
 
 table Torappu_RoguelikeChaosRangeData {
-	chaosMax:int32;
+	chaosMax:int;
 	chaosDungeonEffect:Torappu_ChaosEffectRank;
 }
 
 
 
 table Torappu_RoguelikeChaosPredefineLevelInfo {
-	chaosLevelBeginNum:int32;
-	chaosLevelEndNum:int32;
+	chaosLevelBeginNum:int;
+	chaosLevelEndNum:int;
 }
 
 
 
-table dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo_ {
+	dict_key:int;
 	dict_value:Torappu_RoguelikeChaosPredefineLevelInfo;
 }
 
 
 
-table dict__System_String_dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo {
+table dict_2_System_String_dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo__ {
 	dict_key:string;
-	dict_value:[dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo];
+	dict_value:[dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo_];
 }
 
 
 
 table Torappu_RoguelikeChaosModuleConsts {
-	maxChaosLevel:int32;
-	maxChaosSlot:int32;
+	maxChaosLevel:int;
+	maxChaosSlot:int;
 	chaosNotMaxDescription:string;
 	chaosMaxDescription:string;
 	chaosPredictDescription:string;
@@ -2426,15 +2434,15 @@ table Torappu_RoguelikeChaosModuleConsts {
 
 
 table Torappu_RoguelikeChaosModuleData {
-	chaosDatas:[dict__System_String_Torappu_RoguelikeChaosData];
+	chaosDatas:[dict_2_System_String_Torappu_RoguelikeChaosData_];
 	chaosRanges:[Torappu_RoguelikeChaosRangeData];
-	levelInfoDict:[dict__System_String_dict__System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo];
+	levelInfoDict:[dict_2_System_String_dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo__];
 	moduleConsts:Torappu_RoguelikeChaosModuleConsts;
 }
 
 
 
-enum Torappu_RoguelikeTotemColorType : int32 {
+enum Torappu_RoguelikeTotemColorType : int {
 	NONE = 0,
 	RED = 1,
 	GREEN = 2,
@@ -2442,12 +2450,12 @@ enum Torappu_RoguelikeTotemColorType : int32 {
 	ALL = 4
 }
 
-enum Torappu_RoguelikeTotemPosType : int32 {
+enum Torappu_RoguelikeTotemPosType : int {
 	LOCATION = 0,
 	EFFECT = 1
 }
 
-enum Torappu_RoguelikeTotemBlurNodeType : int32 {
+enum Torappu_RoguelikeTotemBlurNodeType : int {
 	NONE = 0,
 	BATTLE = 1,
 	NO_BATTLE = 2
@@ -2472,17 +2480,17 @@ table Torappu_RoguelikeTotemBuffData {
 	bgIconId:string;
 	isManual:bool;
 	linkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
-	distanceMin:int32;
-	distanceMax:int32;
+	distanceMin:int;
+	distanceMax:int;
 	vertPassable:bool;
-	expandLength:int32;
+	expandLength:int;
 	onlyForVert:bool;
 	portalLinkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTotemBuffData {
+table dict_2_System_String_Torappu_RoguelikeTotemBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTotemBuffData;
 }
@@ -2499,14 +2507,14 @@ table Torappu_RoguelikeTotemSubBuffData {
 
 
 
-table dict__System_String_Torappu_RoguelikeTotemSubBuffData {
+table dict_2_System_String_Torappu_RoguelikeTotemSubBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTotemSubBuffData;
 }
 
 
 
-table dict__Torappu_RoguelikeTotemColorType_System_String {
+table dict_2_Torappu_RoguelikeTotemColorType_System_String_ {
 	dict_key:Torappu_RoguelikeTotemColorType;
 	dict_value:string;
 }
@@ -2515,7 +2523,7 @@ table dict__Torappu_RoguelikeTotemColorType_System_String {
 
 table Torappu_RoguelikeTotemModuleConsts {
 	totemPredictDescription:string;
-	colorCombineDesc:[dict__Torappu_RoguelikeTotemColorType_System_String];
+	colorCombineDesc:[dict_2_Torappu_RoguelikeTotemColorType_System_String_];
 	bossCombineDesc:string;
 	battleNoPredictDescription:string;
 	shopNoGoodsDescription:string;
@@ -2524,18 +2532,18 @@ table Torappu_RoguelikeTotemModuleConsts {
 
 
 table Torappu_RoguelikeTotemBuffModuleData {
-	totemBuffDatas:[dict__System_String_Torappu_RoguelikeTotemBuffData];
-	subBuffs:[dict__System_String_Torappu_RoguelikeTotemSubBuffData];
+	totemBuffDatas:[dict_2_System_String_Torappu_RoguelikeTotemBuffData_];
+	subBuffs:[dict_2_System_String_Torappu_RoguelikeTotemSubBuffData_];
 	moduleConsts:Torappu_RoguelikeTotemModuleConsts;
 }
 
 
 
 table Torappu_RoguelikeVisionData {
-	sightNum:int32;
-	level:int32;
+	sightNum:int;
+	level:int;
 	canForesee:bool;
-	dividedDis:int32;
+	dividedDis:int;
 	status:string;
 	clr:string;
 	desc1:string;
@@ -2545,26 +2553,26 @@ table Torappu_RoguelikeVisionData {
 
 
 
-table dict__System_Int32_Torappu_RoguelikeVisionData {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_RoguelikeVisionData_ {
+	dict_key:int;
 	dict_value:Torappu_RoguelikeVisionData;
 }
 
 
 
-enum Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType : int32 {
+enum Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType : int {
 	LOWER = 0,
 	UPPER = 1
 }
 
 table Torappu_RoguelikeVisionModuleData_VisionChoiceConfig {
-	value:int32;
+	value:int;
 	type:Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig {
+table dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeVisionModuleData_VisionChoiceConfig;
 }
@@ -2572,7 +2580,7 @@ table dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig {
 
 
 table Torappu_RoguelikeVisionModuleConsts {
-	maxVision:int32;
+	maxVision:int;
 	totemBottomDescription:string;
 	chestBottomDescription:string;
 	goodsBottomDescription:string;
@@ -2581,14 +2589,14 @@ table Torappu_RoguelikeVisionModuleConsts {
 
 
 table Torappu_RoguelikeVisionModuleData {
-	visionDatas:[dict__System_Int32_Torappu_RoguelikeVisionData];
-	visionChoices:[dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig];
+	visionDatas:[dict_2_System_Int32_Torappu_RoguelikeVisionData_];
+	visionChoices:[dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_];
 	moduleConsts:Torappu_RoguelikeVisionModuleConsts;
 }
 
 
 
-enum Torappu_RoguelikeFragmentType : int32 {
+enum Torappu_RoguelikeFragmentType : int {
 	NONE = 0,
 	INSPIRATION = 1,
 	WISH = 2,
@@ -2598,13 +2606,13 @@ enum Torappu_RoguelikeFragmentType : int32 {
 table Torappu_RoguelikeFragmentData {
 	id:string;
 	type:Torappu_RoguelikeFragmentType;
-	value:int32;
-	weight:int32;
+	value:int;
+	weight:int;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeFragmentData {
+table dict_2_System_String_Torappu_RoguelikeFragmentData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeFragmentData;
 }
@@ -2620,7 +2628,7 @@ table Torappu_RoguelikeFragmentTypeData {
 
 
 
-table dict__System_String_Torappu_RoguelikeFragmentTypeData {
+table dict_2_System_String_Torappu_RoguelikeFragmentTypeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeFragmentTypeData;
 }
@@ -2631,11 +2639,11 @@ table Torappu_RoguelikeFragmentModuleConsts {
 	weightStatusSafeDesc:string;
 	weightStatusLimitDesc:string;
 	weightStatusOverweightDesc:string;
-	charWeightSlot:int32;
-	limitWeightThresholdValue:int32;
-	overWeightThresholdValue:int32;
-	maxAlchemyField:int32;
-	maxAlchemyCount:int32;
+	charWeightSlot:int;
+	limitWeightThresholdValue:int;
+	overWeightThresholdValue:int;
+	maxAlchemyField:int;
+	maxAlchemyCount:int;
 	fragmentBagWeightLimitTips:string;
 	fragmentBagWeightOverWeightTips:string;
 	weightUpgradeToastFormat:string;
@@ -2651,14 +2659,14 @@ table Torappu_RoguelikeFragmentBuffData {
 
 
 
-table dict__System_String_Torappu_RoguelikeFragmentBuffData {
+table dict_2_System_String_Torappu_RoguelikeFragmentBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeFragmentBuffData;
 }
 
 
 
-enum Torappu_AlchemyPoolRarityType : int32 {
+enum Torappu_AlchemyPoolRarityType : int {
 	NONE = -1,
 	NORMAL = 0,
 	RARE = 1,
@@ -2667,7 +2675,7 @@ enum Torappu_AlchemyPoolRarityType : int32 {
 
 table Torappu_RoguelikeAlchemyData {
 	fragmentTypeList:[Torappu_RoguelikeFragmentType];
-	fragmentSquareSum:int32;
+	fragmentSquareSum:int;
 	poolRarity:Torappu_AlchemyPoolRarityType;
 	relicProp:float;
 	shieldProp:float;
@@ -2678,7 +2686,7 @@ table Torappu_RoguelikeAlchemyData {
 
 
 
-table list_dict___2_System_String_Torappu_RoguelikeAlchemyData_ {
+table Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeAlchemyData;
 }
@@ -2688,13 +2696,13 @@ table list_dict___2_System_String_Torappu_RoguelikeAlchemyData_ {
 table Torappu_RoguelikeAlchemyFormulationData {
 	fragmentIds:[string];
 	rewardId:string;
-	rewardCount:int32;
+	rewardCount:int;
 	rewardItemType:Torappu_RoguelikeGameItemType;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeAlchemyFormulationData {
+table dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeAlchemyFormulationData;
 }
@@ -2702,26 +2710,26 @@ table dict__System_String_Torappu_RoguelikeAlchemyFormulationData {
 
 
 table Torappu_RoguelikeFragmentLevelRelatedData {
-	weightUp:int32;
+	weightUp:int;
 }
 
 
 
-table dict__System_Int32_Torappu_RoguelikeFragmentLevelRelatedData {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_ {
+	dict_key:int;
 	dict_value:Torappu_RoguelikeFragmentLevelRelatedData;
 }
 
 
 
 table Torappu_RoguelikeFragmentModuleData {
-	fragmentData:[dict__System_String_Torappu_RoguelikeFragmentData];
-	fragmentTypeData:[dict__System_String_Torappu_RoguelikeFragmentTypeData];
+	fragmentData:[dict_2_System_String_Torappu_RoguelikeFragmentData_];
+	fragmentTypeData:[dict_2_System_String_Torappu_RoguelikeFragmentTypeData_];
 	moduleConsts:Torappu_RoguelikeFragmentModuleConsts;
-	fragmentBuffData:[dict__System_String_Torappu_RoguelikeFragmentBuffData];
-	alchemyData:[list_dict___2_System_String_Torappu_RoguelikeAlchemyData_];
-	alchemyFormulaData:[dict__System_String_Torappu_RoguelikeAlchemyFormulationData];
-	fragmentLevelData:[dict__System_Int32_Torappu_RoguelikeFragmentLevelRelatedData];
+	fragmentBuffData:[dict_2_System_String_Torappu_RoguelikeFragmentBuffData_];
+	alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
+	alchemyFormulaData:[dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_];
+	fragmentLevelData:[dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_];
 }
 
 
@@ -2730,7 +2738,7 @@ table Torappu_RoguelikeDisasterData {
 	id:string;
 	iconId:string;
 	toastIconId:string;
-	level:int32;
+	level:int;
 	name:string;
 	levelName:string;
 	type:string;
@@ -2741,7 +2749,7 @@ table Torappu_RoguelikeDisasterData {
 
 
 
-table dict__System_String_Torappu_RoguelikeDisasterData {
+table dict_2_System_String_Torappu_RoguelikeDisasterData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeDisasterData;
 }
@@ -2749,7 +2757,7 @@ table dict__System_String_Torappu_RoguelikeDisasterData {
 
 
 table Torappu_RoguelikeDisasterModuleData {
-	disasterData:[dict__System_String_Torappu_RoguelikeDisasterData];
+	disasterData:[dict_2_System_String_Torappu_RoguelikeDisasterData_];
 }
 
 
@@ -2757,9 +2765,9 @@ table Torappu_RoguelikeDisasterModuleData {
 table Torappu_RoguelikePermNodeUpgradeItemData {
 	upgradeId:string;
 	nodeType:Torappu_RoguelikeEventType;
-	nodeLevel:int32;
+	nodeLevel:int;
 	costItemId:string;
-	costItemCount:int32;
+	costItemCount:int;
 	desc:string;
 	nodeName:string;
 }
@@ -2769,9 +2777,9 @@ table Torappu_RoguelikePermNodeUpgradeItemData {
 table Torappu_RoguelikeTempNodeUpgradeItemData {
 	upgradeId:string;
 	nodeType:Torappu_RoguelikeEventType;
-	sortId:int32;
+	sortId:int;
 	costItemId:string;
-	costItemCount:int32;
+	costItemCount:int;
 	desc:string;
 }
 
@@ -2779,14 +2787,14 @@ table Torappu_RoguelikeTempNodeUpgradeItemData {
 
 table Torappu_RoguelikeNodeUpgradeData {
 	nodeType:Torappu_RoguelikeEventType;
-	sortId:int32;
+	sortId:int;
 	permItemList:[Torappu_RoguelikePermNodeUpgradeItemData];
 	tempItemList:[Torappu_RoguelikeTempNodeUpgradeItemData];
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeNodeUpgradeData {
+table dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeNodeUpgradeData;
 }
@@ -2794,12 +2802,12 @@ table dict__System_String_Torappu_RoguelikeNodeUpgradeData {
 
 
 table Torappu_RoguelikeNodeUpgradeModuleData {
-	nodeUpgradeDataMap:[dict__System_String_Torappu_RoguelikeNodeUpgradeData];
+	nodeUpgradeDataMap:[dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_];
 }
 
 
 
-enum Torappu_RoguelikeCopperBuffType : int32 {
+enum Torappu_RoguelikeCopperBuffType : int {
 	NONE = 0,
 	REFRESH = 1,
 	MOVE = 2
@@ -2819,20 +2827,20 @@ table Torappu_RoguelikeCopperData {
 
 
 
-table dict__System_String_Torappu_RoguelikeCopperData {
+table dict_2_System_String_Torappu_RoguelikeCopperData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeCopperData;
 }
 
 
 
-enum Torappu_RoguelikeCopperDivineType : int32 {
+enum Torappu_RoguelikeCopperDivineType : int {
 	NONE = 0,
 	DIVINE = 1,
 	EVENT = 2
 }
 
-enum Torappu_RoguelikeCopperDivineResultType : int32 {
+enum Torappu_RoguelikeCopperDivineResultType : int {
 	NONE = 0,
 	GOOD = 1,
 	NORMAL = 2,
@@ -2849,7 +2857,7 @@ table Torappu_RoguelikeCopperDivineData {
 
 
 
-table dict__System_String_Torappu_RoguelikeCopperDivineData {
+table dict_2_System_String_Torappu_RoguelikeCopperDivineData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeCopperDivineData;
 }
@@ -2857,16 +2865,16 @@ table dict__System_String_Torappu_RoguelikeCopperDivineData {
 
 
 table Torappu_RoguelikeCopperModuleConsts {
-	copperDrawMaxNum:int32;
-	copperDrawMinNum:int32;
+	copperDrawMaxNum:int;
+	copperDrawMinNum:int;
 }
 
 
 
 table Torappu_RoguelikeCopperModuleData {
-	copperData:[dict__System_String_Torappu_RoguelikeCopperData];
-	copperDivineData:[dict__System_String_Torappu_RoguelikeCopperDivineData];
-	changeCopperMap:[dict__System_String_System_String];
+	copperData:[dict_2_System_String_Torappu_RoguelikeCopperData_];
+	copperDivineData:[dict_2_System_String_Torappu_RoguelikeCopperDivineData_];
+	changeCopperMap:[dict_2_System_String_System_String_];
 	moduleConsts:Torappu_RoguelikeCopperModuleConsts;
 }
 
@@ -2875,7 +2883,7 @@ table Torappu_RoguelikeCopperModuleData {
 table Torappu_RoguelikeWrathData {
 	id:string;
 	group:string;
-	level:int32;
+	level:int;
 	name:string;
 	levelName:string;
 	functionDesc:string;
@@ -2884,7 +2892,7 @@ table Torappu_RoguelikeWrathData {
 
 
 
-table dict__System_String_Torappu_RoguelikeWrathData {
+table dict_2_System_String_Torappu_RoguelikeWrathData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeWrathData;
 }
@@ -2900,7 +2908,7 @@ table Torappu_RoguelikeWrathModuleConsts {
 
 
 table Torappu_RoguelikeWrathModuleData {
-	wrathData:[dict__System_String_Torappu_RoguelikeWrathData];
+	wrathData:[dict_2_System_String_Torappu_RoguelikeWrathData_];
 	moduleConsts:Torappu_RoguelikeWrathModuleConsts;
 }
 
@@ -2920,7 +2928,7 @@ table Torappu_RoguelikeCandleModuleData {
 
 
 
-enum Torappu_RoguelikeSkyZoneNodeType : int32 {
+enum Torappu_RoguelikeSkyZoneNodeType : int {
 	NONE = 0,
 	ORIGIN = 1,
 	BATTLE = 2,
@@ -2951,7 +2959,7 @@ table Torappu_RoguelikeSkyNodeData {
 
 
 
-table dict__System_String_Torappu_RoguelikeSkyNodeData {
+table dict_2_System_String_Torappu_RoguelikeSkyNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeSkyNodeData;
 }
@@ -2960,7 +2968,7 @@ table dict__System_String_Torappu_RoguelikeSkyNodeData {
 
 table Torappu_RoguelikeSkyNodeSubTypeData {
 	evtType:Torappu_RoguelikeSkyZoneNodeType;
-	subTypeId:int32;
+	subTypeId:int;
 	desc:string;
 }
 
@@ -2968,14 +2976,14 @@ table Torappu_RoguelikeSkyNodeSubTypeData {
 
 table Torappu_RoguelikeSkyModuleConsts {
 	skyApItemId:string;
-	skyMaxColumns:int32;
+	skyMaxColumns:int;
 	skySacrificeChoiceDynamicKey:string;
 }
 
 
 
 table Torappu_RoguelikeSkyModuleData {
-	nodeData:[dict__System_String_Torappu_RoguelikeSkyNodeData];
+	nodeData:[dict_2_System_String_Torappu_RoguelikeSkyNodeData_];
 	subTypeData:[Torappu_RoguelikeSkyNodeSubTypeData];
 	moduleConsts:Torappu_RoguelikeSkyModuleConsts;
 }
@@ -3000,41 +3008,41 @@ table Torappu_RoguelikeModule {
 
 
 
-table dict__System_String_Torappu_RoguelikeModule {
+table dict_2_System_String_Torappu_RoguelikeModule_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeModule;
 }
 
 
 
-enum Torappu_RoguelikeTopicDevNodeType : int32 {
+enum Torappu_RoguelikeTopicDevNodeType : int {
 	BRANCH = 0,
 	KEY = 1,
 	NONE = 10
 }
 
-enum Torappu_RoguelikeTopicDevTokenDisplayForm : int32 {
+enum Torappu_RoguelikeTopicDevTokenDisplayForm : int {
 	ABSOLUTE_VAL = 0,
 	PERCENTAGE = 1
 }
 
 table Torappu_RoguelikeTopicDisplayItem {
 	displayType:string;
-	displayNum:int32;
+	displayNum:int;
 	displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm;
 	tokenDesc:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
 table Torappu_RoguelikeTopicDev {
 	buffId:string;
-	sortId:int32;
+	sortId:int;
 	nodeType:Torappu_RoguelikeTopicDevNodeType;
 	nextNodeId:[string];
 	frontNodeId:[string];
-	tokenCost:int32;
+	tokenCost:int;
 	buffName:string;
 	buffIconId:string;
 	buffTypeName:string;
@@ -3043,7 +3051,7 @@ table Torappu_RoguelikeTopicDev {
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicDev {
+table dict_2_System_String_Torappu_RoguelikeTopicDev_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicDev;
 }
@@ -3051,14 +3059,14 @@ table dict__System_String_Torappu_RoguelikeTopicDev {
 
 
 table Torappu_RoguelikeTopicDevToken {
-	sortId:int32;
+	sortId:int;
 	displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm;
 	tokenDesc:string;
 }
 
 
 
-table dict__System_String_Torappu_RoguelikeTopicDevToken {
+table dict_2_System_String_Torappu_RoguelikeTopicDevToken_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeTopicDevToken;
 }
@@ -3114,22 +3122,22 @@ table Torappu_RL01EndingText {
 
 table Torappu_RL01DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	buffDesc:[string];
 }
 
 
 
 table Torappu_RL01CustomizeData {
-	developments:[dict__System_String_Torappu_RoguelikeTopicDev];
-	developmentTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developments:[dict_2_System_String_Torappu_RoguelikeTopicDev_];
+	developmentTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	endingText:Torappu_RL01EndingText;
 	difficulties:[Torappu_RL01DifficultyExt];
 }
 
 
 
-enum Torappu_RL02DevelopmentNodeType : int32 {
+enum Torappu_RL02DevelopmentNodeType : int {
 	NONE = 0,
 	SMALL = 1,
 	NORMAL = 2,
@@ -3138,7 +3146,7 @@ enum Torappu_RL02DevelopmentNodeType : int32 {
 	LARGE_IBERIA = 5
 }
 
-enum Torappu_RL02DevelopmentEffectType : int32 {
+enum Torappu_RL02DevelopmentEffectType : int {
 	BUFF = 0,
 	RAW_TEXT_EFFECT = 1,
 	RAW_TEXT_BAND = 2,
@@ -3150,9 +3158,9 @@ table Torappu_RL02Development {
 	nodeType:Torappu_RL02DevelopmentNodeType;
 	frontNodeId:[string];
 	nextNodeId:[string];
-	positionP:int32;
-	positionR:int32;
-	tokenCost:int32;
+	positionP:int;
+	positionR:int;
+	tokenCost:int;
 	buffName:string;
 	buffIconId:string;
 	effectType:Torappu_RL02DevelopmentEffectType;
@@ -3163,7 +3171,7 @@ table Torappu_RL02Development {
 
 
 
-table dict__System_String_Torappu_RL02Development {
+table dict_2_System_String_Torappu_RL02Development_ {
 	dict_key:string;
 	dict_value:Torappu_RL02Development;
 }
@@ -3175,7 +3183,7 @@ table Torappu_RL02DevRawTextBuffGroup {
 	useLevelMark:bool;
 	groupIconId:string;
 	useUpBreak:bool;
-	sortId:int32;
+	sortId:int;
 }
 
 
@@ -3183,10 +3191,10 @@ table Torappu_RL02DevRawTextBuffGroup {
 table Torappu_RL02DevelopmentLine {
 	fromNode:string;
 	toNode:string;
-	fromNodeP:int32;
-	fromNodeR:int32;
-	toNodeP:int32;
-	toNodeR:int32;
+	fromNodeP:int;
+	fromNodeR:int;
+	toNodeP:int;
+	toNodeR:int;
 	enrollId:string;
 }
 
@@ -3210,10 +3218,10 @@ table Torappu_RL02EndingText {
 	summaryHiddenNotPassedDesc:string;
 	summaryKnightPassedDesc:string;
 	summaryKnightNotPassedDesc:string;
-	summaryGoldThreshold:int32;
+	summaryGoldThreshold:int;
 	summaryGoldHighDesc:string;
 	summaryGoldLowDesc:string;
-	summaryPracticeThreshold:int32;
+	summaryPracticeThreshold:int;
 	summaryPracticeHighDesc:string;
 	summaryPracticeLowDesc:string;
 }
@@ -3222,15 +3230,15 @@ table Torappu_RL02EndingText {
 
 table Torappu_RL02DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	buffDesc:[string];
 }
 
 
 
 table Torappu_RL02CustomizeData {
-	developments:[dict__System_String_Torappu_RL02Development];
-	developmentTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developments:[dict_2_System_String_Torappu_RL02Development_];
+	developmentTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	developmentRawTextGroup:[Torappu_RL02DevRawTextBuffGroup];
 	developmentLines:[Torappu_RL02DevelopmentLine];
 	endingText:Torappu_RL02EndingText;
@@ -3239,14 +3247,14 @@ table Torappu_RL02CustomizeData {
 
 
 
-enum Torappu_RL03DevelopmentNodeType : int32 {
+enum Torappu_RL03DevelopmentNodeType : int {
 	NONE = 0,
 	NORMAL = 1,
 	KEY = 2,
 	DIFFICULTY = 3
 }
 
-enum Torappu_RL03DevelopmentEffectType : int32 {
+enum Torappu_RL03DevelopmentEffectType : int {
 	BUFF = 0,
 	RAW_TEXT_EFFECT = 1,
 	RAW_TEXT_BAND = 2
@@ -3257,9 +3265,9 @@ table Torappu_RL03Development {
 	nodeType:Torappu_RL03DevelopmentNodeType;
 	frontNodeId:[string];
 	nextNodeId:[string];
-	positionRow:int32;
-	positionOrder:int32;
-	tokenCost:int32;
+	positionRow:int;
+	positionOrder:int;
+	tokenCost:int;
 	buffName:string;
 	buffIconId:string;
 	effectType:Torappu_RL03DevelopmentEffectType;
@@ -3271,7 +3279,7 @@ table Torappu_RL03Development {
 
 
 
-table dict__System_String_Torappu_RL03Development {
+table dict_2_System_String_Torappu_RL03Development_ {
 	dict_key:string;
 	dict_value:Torappu_RL03Development;
 }
@@ -3282,7 +3290,7 @@ table Torappu_RL03DevRawTextBuffGroup {
 	nodeIdList:[string];
 	useLevelMark:bool;
 	groupIconId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
@@ -3297,12 +3305,12 @@ table Torappu_RL03DevDifficultyNodePairInfo {
 table Torappu_RL03DevDifficultyNodeInfo {
 	buffId:string;
 	nodeMap:[Torappu_RL03DevDifficultyNodePairInfo];
-	enableGrade:int32;
+	enableGrade:int;
 }
 
 
 
-table dict__System_String_Torappu_RL03DevDifficultyNodeInfo {
+table dict_2_System_String_Torappu_RL03DevDifficultyNodeInfo_ {
 	dict_key:string;
 	dict_value:Torappu_RL03DevDifficultyNodeInfo;
 }
@@ -3369,7 +3377,7 @@ table Torappu_RL03EndingText {
 
 table Torappu_RL03DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	totemProb:float;
 	relicDevLevel:string;
 	buffs:[string];
@@ -3379,24 +3387,24 @@ table Torappu_RL03DifficultyExt {
 
 
 table Torappu_RL03CustomizeData {
-	developments:[dict__System_String_Torappu_RL03Development];
-	developmentsTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developments:[dict_2_System_String_Torappu_RL03Development_];
+	developmentsTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	developmentRawTextGroup:[Torappu_RL03DevRawTextBuffGroup];
-	developmentsDifficultyNodeInfos:[dict__System_String_Torappu_RL03DevDifficultyNodeInfo];
+	developmentsDifficultyNodeInfos:[dict_2_System_String_Torappu_RL03DevDifficultyNodeInfo_];
 	endingText:Torappu_RL03EndingText;
 	difficulties:[Torappu_RL03DifficultyExt];
 }
 
 
 
-enum Torappu_RoguelikeCommonDevelopmentNodeType : int32 {
+enum Torappu_RoguelikeCommonDevelopmentNodeType : int {
 	NONE = 0,
 	NORMAL = 1,
 	KEY = 2,
 	DIFFICULTY = 3
 }
 
-enum Torappu_RoguelikeCommonDevelopmentEffectType : int32 {
+enum Torappu_RoguelikeCommonDevelopmentEffectType : int {
 	BUFF = 0,
 	RAW_TEXT_EFFECT = 1,
 	RAW_TEXT_BAND = 2
@@ -3407,9 +3415,9 @@ table Torappu_RoguelikeCommonDevelopment {
 	nodeType:Torappu_RoguelikeCommonDevelopmentNodeType;
 	frontNodeId:[string];
 	nextNodeId:[string];
-	positionRow:int32;
-	positionOrder:int32;
-	tokenCost:int32;
+	positionRow:int;
+	positionOrder:int;
+	tokenCost:int;
 	buffName:string;
 	activeIconId:string;
 	inactiveIconId:string;
@@ -3423,7 +3431,7 @@ table Torappu_RoguelikeCommonDevelopment {
 
 
 
-table dict__System_String_Torappu_RoguelikeCommonDevelopment {
+table dict_2_System_String_Torappu_RoguelikeCommonDevelopment_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeCommonDevelopment;
 }
@@ -3433,7 +3441,7 @@ table dict__System_String_Torappu_RoguelikeCommonDevelopment {
 table Torappu_RoguelikeCommonDevRawTextBuffGroup {
 	nodeIdList:[string];
 	groupIconId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
@@ -3448,7 +3456,7 @@ table Torappu_RoguelikeCommonDevDifficultyNodePairInfo {
 table Torappu_RoguelikeCommonDevDifficultyNodeInfo {
 	buffId:string;
 	nodeMap:[Torappu_RoguelikeCommonDevDifficultyNodePairInfo];
-	enableGrade:int32;
+	enableGrade:int;
 	enableDesc:string;
 	lightId:string;
 	decoId:string;
@@ -3456,7 +3464,7 @@ table Torappu_RoguelikeCommonDevDifficultyNodeInfo {
 
 
 
-table dict__System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo {
+table dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeCommonDevDifficultyNodeInfo;
 }
@@ -3464,17 +3472,17 @@ table dict__System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo {
 
 
 table Torappu_RoguelikeCommonDevelopmentData {
-	developments:[dict__System_String_Torappu_RoguelikeCommonDevelopment];
-	developmentsTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developments:[dict_2_System_String_Torappu_RoguelikeCommonDevelopment_];
+	developmentsTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	developmentRawTextGroup:[Torappu_RoguelikeCommonDevRawTextBuffGroup];
-	developmentsDifficultyNodeInfos:[dict__System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo];
+	developmentsDifficultyNodeInfos:[dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_];
 }
 
 
 
 table Torappu_RL04DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	leftDisasterDesc:string;
 	leftOverweightDesc:string;
 	relicDevLevel:string;
@@ -3554,7 +3562,7 @@ table Torappu_RL04CustomizeData {
 
 table Torappu_RL05DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	buffs:[string];
 	buffDesc:[string];
 	leftWrathDesc:string;
@@ -3654,10 +3662,10 @@ table Torappu_RoguelikeTopicCustomizeData {
 
 
 table Torappu_RoguelikeTopicTable {
-	topics:[dict__System_String_Torappu_RoguelikeTopicBasicData];
+	topics:[dict_2_System_String_Torappu_RoguelikeTopicBasicData_];
 	constant:Torappu_RoguelikeTopicConst;
-	details:[dict__System_String_Torappu_RoguelikeTopicDetail];
-	modules:[dict__System_String_Torappu_RoguelikeModule];
+	details:[dict_2_System_String_Torappu_RoguelikeTopicDetail_];
+	modules:[dict_2_System_String_Torappu_RoguelikeModule_];
 	customizeData:Torappu_RoguelikeTopicCustomizeData;
 }
 

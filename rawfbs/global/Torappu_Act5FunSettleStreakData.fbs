@@ -1,6 +1,6 @@
 
 table Torappu_Act5FunSettleStreakData {
-	count:int32;
+	count:int;
 	desc:string;
 }
 

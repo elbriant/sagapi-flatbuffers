@@ -2,7 +2,7 @@
 table Torappu_MissionArchiveVoiceClipData {
 	charId:string;
 	voiceId:string;
-	index:int32;
+	index:int;
 }
 
 

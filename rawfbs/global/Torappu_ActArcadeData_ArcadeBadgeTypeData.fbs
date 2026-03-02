@@ -3,7 +3,7 @@ include "Torappu_ActArcadeData_BadgeType.fbs";
 table Torappu_ActArcadeData_ArcadeBadgeTypeData {
 	badgeType:Torappu_ActArcadeData_BadgeType;
 	badgeTypeName:string;
-	sortId:int32;
+	sortId:int;
 	buffRangeDesc:string;
 }
 

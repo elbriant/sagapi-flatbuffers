@@ -5,7 +5,7 @@ table Torappu_Act1VHalfIdleTechTreeData {
 	nodeId:string;
 	nodeType:Torappu_Act1VHalfIdleTechTreeNodeType;
 	prevNodeId:[string];
-	tokenCost:int32;
+	tokenCost:int;
 	name:string;
 	iconId:string;
 	showPrevLockTips:bool;

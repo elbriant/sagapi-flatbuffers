@@ -1,7 +1,7 @@
 
 table Torappu_HomeBackgroundMultiFormData {
 	multiFormBgId:string;
-	sortId:int32;
+	sortId:int;
 	bgMusicId:string;
 }
 

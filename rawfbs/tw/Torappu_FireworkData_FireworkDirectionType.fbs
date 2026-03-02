@@ -1,5 +1,5 @@
 
-enum Torappu_FireworkData_FireworkDirectionType : int32 {
+enum Torappu_FireworkData_FireworkDirectionType : int {
 	TWO_DIR = 0,
 	FOUR_DIR = 1
 }

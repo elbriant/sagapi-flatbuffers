@@ -2,7 +2,7 @@ include "Torappu_RoguelikeEventType.fbs";
 
 table Torappu_RoguelikeGameNodeSubTypeData {
 	eventType:Torappu_RoguelikeEventType;
-	subTypeId:int32;
+	subTypeId:int;
 	iconId:string;
 	name:string;
 	description:string;

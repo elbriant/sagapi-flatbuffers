@@ -1,7 +1,7 @@
 
 table Torappu_DynEntrySwitchInfo {
 	entryId:string;
-	sortId:int32;
+	sortId:int;
 	stageId:string;
 	signalId:string;
 }

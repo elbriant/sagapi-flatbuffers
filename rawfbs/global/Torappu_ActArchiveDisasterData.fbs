@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveDisasterItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveDisasterItemData_.fbs";
 
 table Torappu_ActArchiveDisasterData {
-	disasters:[dict__System_String_Torappu_ActArchiveDisasterItemData];
+	disasters:[dict_2_System_String_Torappu_ActArchiveDisasterItemData_];
 }
 
 

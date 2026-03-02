@@ -1,7 +1,7 @@
 
 table Torappu_Act27SideData_Act27SideGoodLaunchData {
 	groupId:string;
-	startTime:int64;
+	startTime:long;
 	stageId:string;
 	code:string;
 	drinkId:string;

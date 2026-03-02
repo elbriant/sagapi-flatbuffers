@@ -1,0 +1,9 @@
+include "Torappu_ActivityFloatParadeData_GroupData.fbs";
+
+table dict_2_System_String_Torappu_ActivityFloatParadeData_GroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityFloatParadeData_GroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityFloatParadeData_GroupData_;

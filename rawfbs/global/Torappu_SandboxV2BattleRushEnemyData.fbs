@@ -1,8 +1,8 @@
-include "dict__Torappu_SandboxV2EnemyRushType_list___1_Torappu_SandboxV2BattleRushEnemyGroupConfig.fbs";
+include "dict_2_Torappu_SandboxV2EnemyRushType_list_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__.fbs";
 include "Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef.fbs";
 
 table Torappu_SandboxV2BattleRushEnemyData {
-	rushEnemyGroupConfigs:[dict__Torappu_SandboxV2EnemyRushType_list___1_Torappu_SandboxV2BattleRushEnemyGroupConfig];
+	rushEnemyGroupConfigs:[dict_2_Torappu_SandboxV2EnemyRushType_list_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__];
 	rushEnemyDbRef:[Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef];
 }
 

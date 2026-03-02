@@ -1,10 +1,10 @@
 include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_ActivityBossRushData_RelicLevelInfo {
-	level:int32;
+	level:int;
 	effectDesc:string;
 	runeData:Torappu_RuneTable_PackedRuneData;
-	needItemCount:int32;
+	needItemCount:int;
 }
 
 

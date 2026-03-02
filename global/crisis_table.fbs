@@ -1,5 +1,5 @@
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -95,7 +95,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -103,13 +103,13 @@ table Torappu_ItemBundle {
 
 table Torappu_CrisisClientData_SeasonInfo {
 	seasonId:string;
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 	name:string;
 	crisisRuneCoinUnlockItem:Torappu_ItemBundle;
 	permBgm:string;
 	medalGroupId:string;
-	bgmHardPoint:int32;
+	bgmHardPoint:int;
 	permBgmHard:string;
 }
 
@@ -118,10 +118,10 @@ table Torappu_CrisisClientData_SeasonInfo {
 table Torappu_CrisisClientData {
 	seasonInfo:[Torappu_CrisisClientData_SeasonInfo];
 	meta:string;
-	unlockCoinLv3:int32;
-	hardPointPerm:int32;
-	hardPointTemp:int32;
-	voiceGrade:int32;
+	unlockCoinLv3:int;
+	hardPointPerm:int;
+	hardPointTemp:int;
+	voiceGrade:int;
 	crisisRuneCoinUnlockItemTitle:string;
 	crisisRuneCoinUnlockItemDesc:string;
 }

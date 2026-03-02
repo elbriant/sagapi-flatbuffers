@@ -11,7 +11,7 @@ table Torappu_SandboxV2QuestData {
 	questRouteType:Torappu_SandboxV2QuestRouteType;
 	questLineType:Torappu_SandboxV2QuestLineType;
 	questRouteParam:string;
-	showProgressIndex:int32;
+	showProgressIndex:int;
 }
 
 

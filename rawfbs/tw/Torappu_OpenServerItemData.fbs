@@ -3,7 +3,7 @@ include "Torappu_ItemType.fbs";
 table Torappu_OpenServerItemData {
 	itemId:string;
 	itemType:Torappu_ItemType;
-	count:int32;
+	count:int;
 	name:string;
 }
 

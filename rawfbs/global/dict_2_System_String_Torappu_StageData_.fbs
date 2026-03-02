@@ -1,0 +1,9 @@
+include "Torappu_StageData.fbs";
+
+table dict_2_System_String_Torappu_StageData_ {
+	dict_key:string;
+	dict_value:Torappu_StageData;
+}
+
+
+root_type dict_2_System_String_Torappu_StageData_;

@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleCharEvolveData.fbs";
+
+table dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharEvolveData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_;

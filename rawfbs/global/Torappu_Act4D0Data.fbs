@@ -3,7 +3,7 @@ include "Torappu_Act4D0Data_MileStoneStoryInfo.fbs";
 include "Torappu_Act4D0Data_StoryInfo.fbs";
 include "Torappu_Act4D0Data_StageJumpInfo.fbs";
 include "Torappu_ItemBundle.fbs";
-include "dict__System_String_System_Int64.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 
 table Torappu_Act4D0Data {
 	mileStoneItemList:[Torappu_Act4D0Data_MileStoneItemInfo];
@@ -12,7 +12,7 @@ table Torappu_Act4D0Data {
 	stageInfo:[Torappu_Act4D0Data_StageJumpInfo];
 	tokenItem:Torappu_ItemBundle;
 	charStoneId:string;
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
 	extraDropZones:[string];
 }
 

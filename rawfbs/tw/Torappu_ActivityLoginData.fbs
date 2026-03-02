@@ -1,10 +1,10 @@
 include "Torappu_ItemBundle.fbs";
-include "dict__System_String_System_Int64.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 
 table Torappu_ActivityLoginData {
 	description:string;
 	itemList:[Torappu_ItemBundle];
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
 }
 
 

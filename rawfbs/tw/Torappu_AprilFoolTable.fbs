@@ -1,13 +1,13 @@
-include "dict__System_String_Torappu_AprilFoolStageData.fbs";
-include "dict__System_String_list___1_Torappu_AprilFoolScoreData.fbs";
+include "dict_2_System_String_Torappu_AprilFoolStageData_.fbs";
+include "dict_2_System_String_list_1_Torappu_AprilFoolScoreData__.fbs";
 include "Torappu_AprilFoolConst.fbs";
 include "Torappu_Act4funData.fbs";
 include "Torappu_Act5FunData.fbs";
 include "Torappu_Act6FunData.fbs";
 
 table Torappu_AprilFoolTable {
-	stages:[dict__System_String_Torappu_AprilFoolStageData];
-	scoreDict:[dict__System_String_list___1_Torappu_AprilFoolScoreData];
+	stages:[dict_2_System_String_Torappu_AprilFoolStageData_];
+	scoreDict:[dict_2_System_String_list_1_Torappu_AprilFoolScoreData__];
 	constant:Torappu_AprilFoolConst;
 	act4FunData:Torappu_Act4funData;
 	act5FunData:Torappu_Act5FunData;

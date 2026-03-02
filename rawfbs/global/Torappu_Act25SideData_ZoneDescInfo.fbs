@@ -2,7 +2,7 @@
 table Torappu_Act25SideData_ZoneDescInfo {
 	zoneId:string;
 	unlockText:string;
-	displayStartTime:int64;
+	displayStartTime:long;
 }
 
 

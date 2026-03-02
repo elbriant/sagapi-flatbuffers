@@ -1,5 +1,5 @@
 
-enum Torappu_Act35SideData_DialogueNameBgType : int32 {
+enum Torappu_Act35SideData_DialogueNameBgType : int {
 	NONE = 0,
 	GREEN = 1,
 	BLUE = 2

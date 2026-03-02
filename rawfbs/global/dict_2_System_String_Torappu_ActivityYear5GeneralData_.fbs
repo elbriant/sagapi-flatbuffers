@@ -1,0 +1,9 @@
+include "Torappu_ActivityYear5GeneralData.fbs";
+
+table dict_2_System_String_Torappu_ActivityYear5GeneralData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityYear5GeneralData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityYear5GeneralData_;

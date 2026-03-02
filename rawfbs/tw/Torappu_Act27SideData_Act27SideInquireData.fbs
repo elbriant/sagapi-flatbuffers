@@ -1,7 +1,7 @@
 
 table Torappu_Act27SideData_Act27SideInquireData {
-	mileStonePt:int32;
-	inquireCount:int32;
+	mileStonePt:int;
+	inquireCount:int;
 }
 
 

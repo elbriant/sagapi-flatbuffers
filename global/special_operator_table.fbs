@@ -1,12 +1,12 @@
 
-enum Torappu_SpecialOperatorTargetType : int32 {
+enum Torappu_SpecialOperatorTargetType : int {
 	NONE = 0,
 	ROGUE = 1
 }
 
 table Torappu_SpecialOperatorBasicData {
 	soCharId:string;
-	sortId:int32;
+	sortId:int;
 	targetType:Torappu_SpecialOperatorTargetType;
 	targetId:string;
 	targetTopicName:string;
@@ -18,7 +18,7 @@ table Torappu_SpecialOperatorBasicData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorBasicData {
+table dict_2_System_String_Torappu_SpecialOperatorBasicData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorBasicData;
 }
@@ -26,7 +26,7 @@ table dict__System_String_Torappu_SpecialOperatorBasicData {
 
 
 table System_Int32A_ {
-	arr_values:[int32];
+	arr_values:[int];
 }
 
 
@@ -37,7 +37,7 @@ table Torappu_SpecialOperatorDetailConstData {
 
 
 
-enum Torappu_SpecialOperatorDetailNodeType : int32 {
+enum Torappu_SpecialOperatorDetailNodeType : int {
 	NONE = 0,
 	EVOLVE = 1,
 	SKILL = 2,
@@ -49,20 +49,20 @@ enum Torappu_SpecialOperatorDetailNodeType : int32 {
 table Torappu_SpecialOperatorDetailTabData {
 	soTabId:string;
 	soTabName:string;
-	soTabSortId:int32;
+	soTabSortId:int;
 	nodeType:Torappu_SpecialOperatorDetailNodeType;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailTabData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailTabData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailTabData;
 }
 
 
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -70,7 +70,7 @@ enum Torappu_EvolvePhase : int32 {
 	E_NUM = 4
 }
 
-enum Torappu_SpecialOperatorConditionViewType : int32 {
+enum Torappu_SpecialOperatorConditionViewType : int {
 	TASK = 0,
 	EVOLVEPHASE = 1
 }
@@ -80,17 +80,17 @@ table Torappu_SpecialOperatorDetailNodeUnlockData {
 	nodeType:Torappu_SpecialOperatorDetailNodeType;
 	isInGameMechanics:bool;
 	unlockEvolvePhase:Torappu_EvolvePhase;
-	unlockLevel:int32;
+	unlockLevel:int;
 	unlockTaskId:string;
 	frontNodeId:string;
 	ifAutoUnlock:bool;
 	conditionViewType:Torappu_SpecialOperatorConditionViewType;
-	topoOrder:int32;
+	topoOrder:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailNodeUnlockData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailNodeUnlockData;
 }
@@ -104,7 +104,7 @@ table Torappu_SpecialOperatorDetailEvolveNodeData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailEvolveNodeData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailEvolveNodeData;
 }
@@ -114,13 +114,13 @@ table dict__System_String_Torappu_SpecialOperatorDetailEvolveNodeData {
 table Torappu_SpecialOperatorDetailSkillNodeData {
 	nodeId:string;
 	skillKey:string;
-	skillLevel:int32;
-	skillSpLevel:int32;
+	skillLevel:int;
+	skillSpLevel:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailSkillNodeData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailSkillNodeData;
 }
@@ -129,13 +129,13 @@ table dict__System_String_Torappu_SpecialOperatorDetailSkillNodeData {
 
 table Torappu_SpecialOperatorDetailTalentNodeData {
 	nodeId:string;
-	talentIndex:int32;
-	updateCount:int32;
+	talentIndex:int;
+	updateCount:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailTalentNodeData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailTalentNodeData;
 }
@@ -145,12 +145,12 @@ table dict__System_String_Torappu_SpecialOperatorDetailTalentNodeData {
 table Torappu_SpecialOperatorDetailMasterNodeData {
 	nodeId:string;
 	masterId:string;
-	level:int32;
+	level:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailMasterNodeData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailMasterNodeData;
 }
@@ -160,12 +160,12 @@ table dict__System_String_Torappu_SpecialOperatorDetailMasterNodeData {
 table Torappu_SpecialOperatorDetailUniEquipNodeData {
 	nodeId:string;
 	uniEquipId:string;
-	equipLevel:int32;
+	equipLevel:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailUniEquipNodeData;
 }
@@ -183,7 +183,7 @@ table Torappu_SpecialOperatorPointPosData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorPointPosData {
+table dict_2_System_String_Torappu_SpecialOperatorPointPosData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorPointPosData;
 }
@@ -196,7 +196,7 @@ table Torappu_SpecialOperatorNodePointData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorNodePointData {
+table dict_2_System_String_Torappu_SpecialOperatorNodePointData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorNodePointData;
 }
@@ -209,7 +209,7 @@ table Torappu_SpecialOperatorElitePointData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorElitePointData {
+table dict_2_System_String_Torappu_SpecialOperatorElitePointData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorElitePointData;
 }
@@ -218,12 +218,12 @@ table dict__System_String_Torappu_SpecialOperatorElitePointData {
 
 table Torappu_SpecialOperatorLevelPointData {
 	evolvePhase:Torappu_EvolvePhase;
-	level:int32;
+	level:int;
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorLevelPointData {
+table dict_2_System_String_Torappu_SpecialOperatorLevelPointData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorLevelPointData;
 }
@@ -237,7 +237,7 @@ table Torappu_SpecialOperatorLinePosData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorLinePosData {
+table dict_2_System_String_Torappu_SpecialOperatorLinePosData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorLinePosData;
 }
@@ -251,7 +251,7 @@ table Torappu_SpecialOperatorLineRelationData {
 
 
 
-table dict__System_String_Torappu_SpecialOperatorLineRelationData {
+table dict_2_System_String_Torappu_SpecialOperatorLineRelationData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorLineRelationData;
 }
@@ -261,17 +261,17 @@ table dict__System_String_Torappu_SpecialOperatorLineRelationData {
 table Torappu_SpecialOperatorDiagramData {
 	width:float;
 	height:float;
-	pointPosDataMap:[dict__System_String_Torappu_SpecialOperatorPointPosData];
-	nodePointDataMap:[dict__System_String_Torappu_SpecialOperatorNodePointData];
-	elitePointDataMap:[dict__System_String_Torappu_SpecialOperatorElitePointData];
-	levelPointDataMap:[dict__System_String_Torappu_SpecialOperatorLevelPointData];
-	linePosDataMap:[dict__System_String_Torappu_SpecialOperatorLinePosData];
-	lineRelationDataMap:[dict__System_String_Torappu_SpecialOperatorLineRelationData];
+	pointPosDataMap:[dict_2_System_String_Torappu_SpecialOperatorPointPosData_];
+	nodePointDataMap:[dict_2_System_String_Torappu_SpecialOperatorNodePointData_];
+	elitePointDataMap:[dict_2_System_String_Torappu_SpecialOperatorElitePointData_];
+	levelPointDataMap:[dict_2_System_String_Torappu_SpecialOperatorLevelPointData_];
+	linePosDataMap:[dict_2_System_String_Torappu_SpecialOperatorLinePosData_];
+	lineRelationDataMap:[dict_2_System_String_Torappu_SpecialOperatorLineRelationData_];
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDiagramData {
+table dict_2_System_String_Torappu_SpecialOperatorDiagramData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDiagramData;
 }
@@ -281,19 +281,19 @@ table dict__System_String_Torappu_SpecialOperatorDiagramData {
 table Torappu_SpecialOperatorDetailData {
 	specialOperatorExpMap:[System_Int32A_];
 	detailConstData:Torappu_SpecialOperatorDetailConstData;
-	tabData:[dict__System_String_Torappu_SpecialOperatorDetailTabData];
-	nodeUnlockData:[dict__System_String_Torappu_SpecialOperatorDetailNodeUnlockData];
-	evolveNodeData:[dict__System_String_Torappu_SpecialOperatorDetailEvolveNodeData];
-	skillNodeData:[dict__System_String_Torappu_SpecialOperatorDetailSkillNodeData];
-	talentNodeData:[dict__System_String_Torappu_SpecialOperatorDetailTalentNodeData];
-	masterNodeData:[dict__System_String_Torappu_SpecialOperatorDetailMasterNodeData];
-	uniEquipNodeData:[dict__System_String_Torappu_SpecialOperatorDetailUniEquipNodeData];
-	nodeDiagramMap:[dict__System_String_Torappu_SpecialOperatorDiagramData];
+	tabData:[dict_2_System_String_Torappu_SpecialOperatorDetailTabData_];
+	nodeUnlockData:[dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_];
+	evolveNodeData:[dict_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData_];
+	skillNodeData:[dict_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData_];
+	talentNodeData:[dict_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData_];
+	masterNodeData:[dict_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData_];
+	uniEquipNodeData:[dict_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData_];
+	nodeDiagramMap:[dict_2_System_String_Torappu_SpecialOperatorDiagramData_];
 }
 
 
 
-table dict__System_String_Torappu_SpecialOperatorDetailData {
+table dict_2_System_String_Torappu_SpecialOperatorDetailData_ {
 	dict_key:string;
 	dict_value:Torappu_SpecialOperatorDetailData;
 }
@@ -307,7 +307,7 @@ table Torappu_SpecialOperatorModeData {
 
 
 
-enum Torappu_MissionType : int32 {
+enum Torappu_MissionType : int {
 	UNKNOWN = 0,
 	MAIN = 1,
 	DAILY = 2,
@@ -322,13 +322,13 @@ enum Torappu_MissionType : int32 {
 	SPECIAL_OPERATOR_WEEKLY = 11
 }
 
-enum Torappu_MissionItemBgType : int32 {
+enum Torappu_MissionItemBgType : int {
 	COMMON = 0,
 	Equipment = 1,
 	Char = 2
 }
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -425,14 +425,14 @@ enum Torappu_ItemType : int32 {
 table Torappu_MissionDisplayRewards {
 	type:Torappu_ItemType;
 	id:string;
-	count:int32;
+	count:int;
 }
 
 
 
 table Torappu_MissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	description:string;
 	type:Torappu_MissionType;
 	itemBgType:Torappu_MissionItemBgType;
@@ -444,17 +444,17 @@ table Torappu_MissionData {
 	unlockParam:[string];
 	missionGroup:string;
 	toPage:string;
-	periodicalPoint:int32;
+	periodicalPoint:int;
 	rewards:[Torappu_MissionDisplayRewards];
 	backImagePath:string;
 	foldId:string;
 	haveSubMissionToUnlock:bool;
-	countEndTs:int64;
+	countEndTs:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionData {
+table dict_2_System_String_Torappu_MissionData_ {
 	dict_key:string;
 	dict_value:Torappu_MissionData;
 }
@@ -466,16 +466,16 @@ table Torappu_MissionGroup {
 	title:string;
 	type:Torappu_MissionType;
 	preMissionGroup:string;
-	period:[int32];
+	period:[int];
 	rewards:[Torappu_MissionDisplayRewards];
 	missionIds:[string];
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionGroup {
+table dict_2_System_String_Torappu_MissionGroup_ {
 	dict_key:string;
 	dict_value:Torappu_MissionGroup;
 }
@@ -495,11 +495,11 @@ table Torappu_SpecialOperatorConstData {
 
 
 table Torappu_SpecialOperatorTable {
-	operatorBasicData:[dict__System_String_Torappu_SpecialOperatorBasicData];
-	operatorDetailData:[dict__System_String_Torappu_SpecialOperatorDetailData];
+	operatorBasicData:[dict_2_System_String_Torappu_SpecialOperatorBasicData_];
+	operatorDetailData:[dict_2_System_String_Torappu_SpecialOperatorDetailData_];
 	modeData:[Torappu_SpecialOperatorModeData];
-	nodeUnlockMissionData:[dict__System_String_Torappu_MissionData];
-	nodeUnlockMissionGroup:[dict__System_String_Torappu_MissionGroup];
+	nodeUnlockMissionData:[dict_2_System_String_Torappu_MissionData_];
+	nodeUnlockMissionGroup:[dict_2_System_String_Torappu_MissionGroup_];
 	constData:Torappu_SpecialOperatorConstData;
 }
 

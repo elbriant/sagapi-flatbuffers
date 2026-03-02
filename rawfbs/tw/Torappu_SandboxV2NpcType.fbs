@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2NpcType : int32 {
+enum Torappu_SandboxV2NpcType : int {
 	NORMAL = 0,
 	FIXED_RIFT = 1,
 	RANDOM_RIFT = 2,

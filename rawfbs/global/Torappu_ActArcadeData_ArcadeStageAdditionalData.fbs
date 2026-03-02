@@ -4,8 +4,8 @@ table Torappu_ActArcadeData_ArcadeStageAdditionalData {
 	stageId:string;
 	zoneId:string;
 	mechDescription:string;
-	sortId:int32;
-	maxSlot:int32;
+	sortId:int;
+	maxSlot:int;
 	rankRewardData:Torappu_ActArcadeData_ArcadeStageRankRewardData;
 }
 

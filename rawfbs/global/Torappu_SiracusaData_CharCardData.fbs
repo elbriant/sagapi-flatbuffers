@@ -2,7 +2,7 @@ include "Torappu_SiracusaData_CardGainType.fbs";
 
 table Torappu_SiracusaData_CharCardData {
 	charCardId:string;
-	sortIndex:int32;
+	sortIndex:int;
 	avgChar:string;
 	avgCharOffsetY:float;
 	charCardName:string;

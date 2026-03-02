@@ -1,0 +1,9 @@
+include "Torappu_Battle_Cooperate_CooperateWaveWeight.fbs";
+
+table dict_2_System_Int32_list_1_Torappu_Battle_Cooperate_CooperateWaveWeight__ {
+	dict_key:int;
+	dict_value:[Torappu_Battle_Cooperate_CooperateWaveWeight];
+}
+
+
+root_type dict_2_System_Int32_list_1_Torappu_Battle_Cooperate_CooperateWaveWeight__;

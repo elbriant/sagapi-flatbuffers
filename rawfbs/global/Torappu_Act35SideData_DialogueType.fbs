@@ -1,5 +1,5 @@
 
-enum Torappu_Act35SideData_DialogueType : int32 {
+enum Torappu_Act35SideData_DialogueType : int {
 	NONE = 0,
 	ENTRY = 1,
 	BONUS = 2,

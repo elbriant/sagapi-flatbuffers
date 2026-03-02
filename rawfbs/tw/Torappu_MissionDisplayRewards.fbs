@@ -3,7 +3,7 @@ include "Torappu_ItemType.fbs";
 table Torappu_MissionDisplayRewards {
 	type:Torappu_ItemType;
 	id:string;
-	count:int32;
+	count:int;
 }
 
 

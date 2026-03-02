@@ -9,9 +9,9 @@ table Torappu_ShopRecommendItem {
 	displayType:string;
 	tagName:string;
 	itemTag:Torappu_RecommendItemTagTips;
-	orderNum:int32;
-	startDatetime:int64;
-	endDatetime:int64;
+	orderNum:int;
+	startDatetime:long;
+	endDatetime:long;
 	groupList:[Torappu_ShopRecommendGroup];
 	tagWord:Torappu_ShopKeeperWord;
 	templateType:Torappu_ShopRecommendTemplateType;

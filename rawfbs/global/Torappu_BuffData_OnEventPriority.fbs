@@ -1,5 +1,5 @@
 
-enum Torappu_BuffData_OnEventPriority : int32 {
+enum Torappu_BuffData_OnEventPriority : int {
 	HIGHER_PRIORITY = 2000,
 	HIGH_PRIORITY = 1000,
 	DEFAULT = 0,

@@ -2,7 +2,7 @@ include "Torappu_EvolvePhase.fbs";
 
 table Torappu_SpecialOperatorLevelPointData {
 	evolvePhase:Torappu_EvolvePhase;
-	level:int32;
+	level:int;
 }
 
 

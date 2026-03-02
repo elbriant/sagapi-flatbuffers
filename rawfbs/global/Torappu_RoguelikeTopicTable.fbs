@@ -1,14 +1,14 @@
-include "dict__System_String_Torappu_RoguelikeTopicBasicData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicBasicData_.fbs";
 include "Torappu_RoguelikeTopicConst.fbs";
-include "dict__System_String_Torappu_RoguelikeTopicDetail.fbs";
-include "dict__System_String_Torappu_RoguelikeModule.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicDetail_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeModule_.fbs";
 include "Torappu_RoguelikeTopicCustomizeData.fbs";
 
 table Torappu_RoguelikeTopicTable {
-	topics:[dict__System_String_Torappu_RoguelikeTopicBasicData];
+	topics:[dict_2_System_String_Torappu_RoguelikeTopicBasicData_];
 	constant:Torappu_RoguelikeTopicConst;
-	details:[dict__System_String_Torappu_RoguelikeTopicDetail];
-	modules:[dict__System_String_Torappu_RoguelikeModule];
+	details:[dict_2_System_String_Torappu_RoguelikeTopicDetail_];
+	modules:[dict_2_System_String_Torappu_RoguelikeModule_];
 	customizeData:Torappu_RoguelikeTopicCustomizeData;
 }
 

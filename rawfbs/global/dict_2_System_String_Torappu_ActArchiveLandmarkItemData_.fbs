@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveLandmarkItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveLandmarkItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveLandmarkItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveLandmarkItemData_;

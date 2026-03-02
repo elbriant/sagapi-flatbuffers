@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ZoneRecordMissionData.fbs";
+include "dict_2_System_String_Torappu_ZoneRecordMissionData_.fbs";
 
 table Torappu_ZoneMetaData {
-	ZoneRecordMissionData:[dict__System_String_Torappu_ZoneRecordMissionData];
+	ZoneRecordMissionData:[dict_2_System_String_Torappu_ZoneRecordMissionData_];
 }
 
 

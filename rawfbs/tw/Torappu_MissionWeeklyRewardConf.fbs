@@ -4,12 +4,12 @@ include "Torappu_MissionDisplayRewards.fbs";
 table Torappu_MissionWeeklyRewardConf {
 	groupId:string;
 	id:string;
-	periodicalPointCost:int32;
+	periodicalPointCost:int;
 	type:Torappu_MissionType;
-	sortIndex:int32;
+	sortIndex:int;
 	rewards:[Torappu_MissionDisplayRewards];
-	beginTime:int64;
-	endTime:int64;
+	beginTime:long;
+	endTime:long;
 }
 
 

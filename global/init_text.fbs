@@ -1,5 +1,5 @@
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -7,7 +7,7 @@ table dict__System_String_System_String {
 
 
 table Torappu_LanguageData {
-	strings:[dict__System_String_System_String];
+	strings:[dict_2_System_String_System_String_];
 }
 
 

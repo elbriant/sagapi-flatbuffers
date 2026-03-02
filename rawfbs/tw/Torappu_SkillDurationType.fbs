@@ -1,5 +1,5 @@
 
-enum Torappu_SkillDurationType : int32 {
+enum Torappu_SkillDurationType : int {
 	NONE = 0,
 	AMMO = 1
 }

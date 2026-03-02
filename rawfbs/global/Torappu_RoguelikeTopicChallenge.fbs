@@ -1,18 +1,18 @@
-include "dict__System_String_Torappu_RoguelikeTopicChallengeTask.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicChallengeTask_.fbs";
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_RoguelikeTopicChallenge {
 	challengeId:string;
-	sortId:int32;
+	sortId:int;
 	challengeName:string;
-	challengeGroup:int32;
-	challengeGroupSortId:int32;
+	challengeGroup:int;
+	challengeGroupSortId:int;
 	challengeGroupName:string;
 	challengeUnlockDesc:string;
 	challengeUnlockToastDesc:string;
 	challengeDes:string;
 	challengeConditionDes:[string];
-	challengeTasks:[dict__System_String_Torappu_RoguelikeTopicChallengeTask];
+	challengeTasks:[dict_2_System_String_Torappu_RoguelikeTopicChallengeTask_];
 	defaultTaskId:string;
 	rewards:[Torappu_ItemBundle];
 	challengeStoryId:string;

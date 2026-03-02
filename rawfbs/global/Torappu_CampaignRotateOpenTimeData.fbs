@@ -4,9 +4,9 @@ table Torappu_CampaignRotateOpenTimeData {
 	stageId:string;
 	mapId:string;
 	unknownRegions:[string];
-	duration:int32;
-	startTs:int64;
-	endTs:int64;
+	duration:int;
+	startTs:long;
+	endTs:long;
 }
 
 

@@ -2,8 +2,8 @@ include "Torappu_EvolvePhase.fbs";
 
 table Torappu_RoguelikeTopicDetailConst_CharUpgradeData {
 	evolvePhase:Torappu_EvolvePhase;
-	skillLevel:int32;
-	skillSpecializeLevel:int32;
+	skillLevel:int;
+	skillSpecializeLevel:int;
 }
 
 

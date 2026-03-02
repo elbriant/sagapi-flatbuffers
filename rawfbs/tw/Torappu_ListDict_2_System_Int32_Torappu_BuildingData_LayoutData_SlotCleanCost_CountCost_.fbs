@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost.fbs";
+
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_ {
+	dict_key:int;
+	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost;
+}
+
+
+root_type Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_;

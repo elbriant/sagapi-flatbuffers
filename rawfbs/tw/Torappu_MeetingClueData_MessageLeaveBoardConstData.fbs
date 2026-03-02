@@ -1,9 +1,9 @@
 
 table Torappu_MeetingClueData_MessageLeaveBoardConstData {
-	visitorBonus:int32;
-	visitorBonusLimit:int32;
-	visitorToWeek:int32;
-	visitorPreWeek:int32;
+	visitorBonus:int;
+	visitorBonusLimit:int;
+	visitorToWeek:int;
+	visitorPreWeek:int;
 	bonusToast:string;
 	bonusLimitText:string;
 	recordsTextBonus:string;

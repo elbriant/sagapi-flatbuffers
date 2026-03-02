@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VAutoChessEffectCounterType : int32 {
+enum Torappu_Act1VAutoChessEffectCounterType : int {
 	NONE = 0,
 	TURN_COUNT = 1,
 	TRIGGER_COUNT = 2,

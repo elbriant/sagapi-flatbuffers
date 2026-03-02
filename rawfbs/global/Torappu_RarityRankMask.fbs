@@ -1,5 +1,5 @@
 
-enum Torappu_RarityRankMask : int32 {
+enum Torappu_RarityRankMask : int {
 	NONE = 0,
 	TIER_1 = 1,
 	TIER_2 = 2,

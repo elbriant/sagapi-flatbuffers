@@ -1,0 +1,9 @@
+include "Torappu_Battle_Cooperate_LASTROUNDRESULT.fbs";
+
+table dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_ {
+	dict_key:Torappu_Battle_Cooperate_LASTROUNDRESULT;
+	dict_value:int;
+}
+
+
+root_type dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_;

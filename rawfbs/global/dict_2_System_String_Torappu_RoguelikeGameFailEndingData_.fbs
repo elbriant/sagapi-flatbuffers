@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameFailEndingData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameFailEndingData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameFailEndingData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameFailEndingData_;

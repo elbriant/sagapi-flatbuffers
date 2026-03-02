@@ -1,18 +1,18 @@
-include "dict__System_String_Torappu_ZoneData.fbs";
-include "list_dict___2_System_String_Torappu_WeeklyZoneData_.fbs";
-include "dict__System_String_Torappu_ZoneValidInfo.fbs";
-include "dict__System_String_Torappu_MainlineZoneData.fbs";
-include "dict__System_String_Torappu_ZoneRecordGroupData.fbs";
-include "dict__System_String_list___1_System_String.fbs";
+include "dict_2_System_String_Torappu_ZoneData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_.fbs";
+include "dict_2_System_String_Torappu_ZoneValidInfo_.fbs";
+include "dict_2_System_String_Torappu_MainlineZoneData_.fbs";
+include "dict_2_System_String_Torappu_ZoneRecordGroupData_.fbs";
+include "dict_2_System_String_list_1_System_String__.fbs";
 include "Torappu_ZoneMetaData.fbs";
 
 table Torappu_ZoneTable {
-	zones:[dict__System_String_Torappu_ZoneData];
-	weeklyAdditionInfo:[list_dict___2_System_String_Torappu_WeeklyZoneData_];
-	zoneValidInfo:[dict__System_String_Torappu_ZoneValidInfo];
-	mainlineAdditionInfo:[dict__System_String_Torappu_MainlineZoneData];
-	zoneRecordGroupedData:[dict__System_String_Torappu_ZoneRecordGroupData];
-	zoneRecordRewardData:[dict__System_String_list___1_System_String];
+	zones:[dict_2_System_String_Torappu_ZoneData_];
+	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
+	zoneValidInfo:[dict_2_System_String_Torappu_ZoneValidInfo_];
+	mainlineAdditionInfo:[dict_2_System_String_Torappu_MainlineZoneData_];
+	zoneRecordGroupedData:[dict_2_System_String_Torappu_ZoneRecordGroupData_];
+	zoneRecordRewardData:[dict_2_System_String_list_1_System_String__];
 	mainlineZoneIdList:[string];
 	zoneMetaData:Torappu_ZoneMetaData;
 }

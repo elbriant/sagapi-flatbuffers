@@ -1,14 +1,14 @@
 
 table Torappu_ShopRecommendTemplateNormalGiftParam {
-	showStartTs:int64;
-	showEndTs:int64;
+	showStartTs:long;
+	showEndTs:long;
 	goodId:string;
 	giftPackageName:string;
-	price:int32;
+	price:int;
 	logoId:string;
 	color:string;
 	haveMark:bool;
-	availCount:int32;
+	availCount:int;
 }
 
 

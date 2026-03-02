@@ -1,15 +1,15 @@
-include "dict__System_String_Torappu_RL03Development.fbs";
-include "dict__System_String_Torappu_RoguelikeTopicDevToken.fbs";
+include "dict_2_System_String_Torappu_RL03Development_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicDevToken_.fbs";
 include "Torappu_RL03DevRawTextBuffGroup.fbs";
-include "dict__System_String_Torappu_RL03DevDifficultyNodeInfo.fbs";
+include "dict_2_System_String_Torappu_RL03DevDifficultyNodeInfo_.fbs";
 include "Torappu_RL03EndingText.fbs";
 include "Torappu_RL03DifficultyExt.fbs";
 
 table Torappu_RL03CustomizeData {
-	developments:[dict__System_String_Torappu_RL03Development];
-	developmentsTokens:[dict__System_String_Torappu_RoguelikeTopicDevToken];
+	developments:[dict_2_System_String_Torappu_RL03Development_];
+	developmentsTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	developmentRawTextGroup:[Torappu_RL03DevRawTextBuffGroup];
-	developmentsDifficultyNodeInfos:[dict__System_String_Torappu_RL03DevDifficultyNodeInfo];
+	developmentsDifficultyNodeInfos:[dict_2_System_String_Torappu_RL03DevDifficultyNodeInfo_];
 	endingText:Torappu_RL03EndingText;
 	difficulties:[Torappu_RL03DifficultyExt];
 }

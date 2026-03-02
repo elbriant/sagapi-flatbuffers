@@ -1,0 +1,9 @@
+include "Torappu_FestivalVoiceData.fbs";
+
+table dict_2_System_String_Torappu_FestivalVoiceData_ {
+	dict_key:string;
+	dict_value:Torappu_FestivalVoiceData;
+}
+
+
+root_type dict_2_System_String_Torappu_FestivalVoiceData_;

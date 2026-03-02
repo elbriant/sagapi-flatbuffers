@@ -1,5 +1,5 @@
 
-enum Torappu_ShopRouteTarget : int32 {
+enum Torappu_ShopRouteTarget : int {
 	RECOMMENDSHOP = 0,
 	CASHSHOP = 1,
 	GIFTPACKAGE = 2,

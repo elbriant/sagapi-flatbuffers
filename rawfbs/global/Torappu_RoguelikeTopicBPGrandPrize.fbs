@@ -2,9 +2,9 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_RoguelikeTopicBPGrandPrize {
 	grandPrizeDisplayId:string;
-	sortId:int32;
-	displayUnlockYear:int32;
-	displayUnlockMonth:int32;
+	sortId:int;
+	displayUnlockYear:int;
+	displayUnlockMonth:int;
 	acquireTitle:string;
 	purchaseTitle:string;
 	displayName:string;

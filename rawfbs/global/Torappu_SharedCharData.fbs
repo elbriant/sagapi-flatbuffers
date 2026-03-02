@@ -1,24 +1,24 @@
 include "Torappu_SharedCharData_SharedCharSkillData.fbs";
-include "list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_.fbs";
-include "dict__System_String_System_Int32.fbs";
-include "list_dict___2_System_String_Torappu_SharedCharData_TmplData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_.fbs";
 
 table Torappu_SharedCharData {
 	charId:string;
-	potentialRank:int32;
-	m_skillIndex:int32;
+	potentialRank:int;
+	m_skillIndex:int;
 	m_skinId:string;
 	m_skills:[Torappu_SharedCharData_SharedCharSkillData];
 	m_selectEquip:string;
-	m_equips:[list_dict___2_System_String_Torappu_SharedCharData_CharEquipInfo_];
-	mainSkillLvl:int32;
-	evolvePhase:int32;
-	level:int32;
-	favorPoint:int32;
-	crisisRecord:[dict__System_String_System_Int32];
-	crisisV2Record:[dict__System_String_System_Int32];
+	m_equips:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_];
+	mainSkillLvl:int;
+	evolvePhase:int;
+	level:int;
+	favorPoint:int;
+	crisisRecord:[dict_2_System_String_System_Int32_];
+	crisisV2Record:[dict_2_System_String_System_Int32_];
 	currentTmpl:string;
-	tmpl:[list_dict___2_System_String_Torappu_SharedCharData_TmplData_];
+	tmpl:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_];
 }
 
 

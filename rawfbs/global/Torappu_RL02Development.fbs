@@ -7,9 +7,9 @@ table Torappu_RL02Development {
 	nodeType:Torappu_RL02DevelopmentNodeType;
 	frontNodeId:[string];
 	nextNodeId:[string];
-	positionP:int32;
-	positionR:int32;
-	tokenCost:int32;
+	positionP:int;
+	positionR:int;
+	tokenCost:int;
 	buffName:string;
 	buffIconId:string;
 	effectType:Torappu_RL02DevelopmentEffectType;

@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VAutoChessTrapChessType : int32 {
+enum Torappu_Act1VAutoChessTrapChessType : int {
 	NONE = 0,
 	EQUIP = 1,
 	MAGIC = 2

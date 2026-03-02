@@ -1,5 +1,5 @@
 
-enum Torappu_ActArcadeData_SubModeType : int32 {
+enum Torappu_ActArcadeData_SubModeType : int {
 	IGNORE = -1,
 	MINER = 0,
 	DRAW = 1,

@@ -3,18 +3,18 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData {
 	chessId:string;
 	goldenChessId:string;
 	isDiyChessSlot:bool;
-	chessLevel:int32;
-	shopLevelSortId:int32;
+	chessLevel:int;
+	shopLevelSortId:int;
 	canBeRented:bool;
 	charId:string;
 	tmplId:string;
-	defaultSkillIndex:int32;
+	defaultSkillIndex:int;
 	defaultUniEquipId:string;
 	backupCharId:string;
 	backupCharRepName:string;
-	backupCharSkillIndex:int32;
+	backupCharSkillIndex:int;
 	backupCharUniEquipId:string;
-	backupCharPotRank:int32;
+	backupCharPotRank:int;
 }
 
 

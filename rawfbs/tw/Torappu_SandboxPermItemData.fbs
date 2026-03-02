@@ -6,8 +6,8 @@ table Torappu_SandboxPermItemData {
 	itemName:string;
 	itemUsage:string;
 	itemDesc:string;
-	itemRarity:int32;
-	sortId:int32;
+	itemRarity:int;
+	sortId:int;
 	obtainApproach:string;
 }
 

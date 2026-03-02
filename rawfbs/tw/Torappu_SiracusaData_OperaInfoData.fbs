@@ -1,11 +1,11 @@
 
 table Torappu_SiracusaData_OperaInfoData {
 	operaId:string;
-	sortId:int32;
+	sortId:int;
 	operaName:string;
 	operaSubName:string;
 	operaScore:string;
-	unlockTime:int64;
+	unlockTime:long;
 }
 
 

@@ -1,10 +1,10 @@
-include "dict__System_String_Torappu_CartComponents.fbs";
-include "dict__System_String_Torappu_RuneTable_PackedRuneData.fbs";
+include "dict_2_System_String_Torappu_CartComponents_.fbs";
+include "dict_2_System_String_Torappu_RuneTable_PackedRuneData_.fbs";
 include "Torappu_CartData_CartConstData.fbs";
 
 table Torappu_CartData {
-	carDict:[dict__System_String_Torappu_CartComponents];
-	runeDataDict:[dict__System_String_Torappu_RuneTable_PackedRuneData];
+	carDict:[dict_2_System_String_Torappu_CartComponents_];
+	runeDataDict:[dict_2_System_String_Torappu_RuneTable_PackedRuneData_];
 	cartStages:[string];
 	constData:Torappu_CartData_CartConstData;
 }

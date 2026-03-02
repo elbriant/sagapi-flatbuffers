@@ -8,17 +8,17 @@ table Torappu_CharSkinData_DisplaySkin {
 	designerList:[string];
 	skinGroupId:string;
 	skinGroupName:string;
-	skinGroupSortIndex:int32;
+	skinGroupSortIndex:int;
 	content:string;
 	dialog:string;
 	usage:string;
 	description:string;
 	obtainApproach:string;
-	sortId:int32;
+	sortId:int;
 	displayTagId:string;
-	getTime:int64;
-	onYear:int32;
-	onPeriod:int32;
+	getTime:long;
+	onYear:int;
+	onPeriod:int;
 }
 
 

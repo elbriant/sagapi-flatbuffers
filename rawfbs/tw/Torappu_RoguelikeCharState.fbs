@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCharState : int32 {
+enum Torappu_RoguelikeCharState : int {
 	NORMAL = 0,
 	UPGRADE = 1,
 	UPGRADE_BUFF = 2,

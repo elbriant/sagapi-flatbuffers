@@ -1,5 +1,5 @@
 
-enum Torappu_StoryReviewEntryType : int32 {
+enum Torappu_StoryReviewEntryType : int {
 	NONE = 0,
 	ACTIVITY = 1,
 	MINI_ACTIVITY = 2,

@@ -9,7 +9,7 @@ table Torappu_SandboxV2QuestLineData {
 	questLineBadgeType:Torappu_SandboxV2QuestLineBadgeType;
 	questLineScopeType:Torappu_SandboxV2QuestLineScopeType;
 	questLineDesc:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

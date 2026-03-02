@@ -1,8 +1,8 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_CampaignData_BreakRewardLadder {
-	killCnt:int32;
-	breakFeeAdd:int32;
+	killCnt:int;
+	breakFeeAdd:int;
 	rewards:[Torappu_ItemBundle];
 }
 

@@ -1,5 +1,5 @@
 
-enum Torappu_EnemyDuelBetStrategy : int32 {
+enum Torappu_EnemyDuelBetStrategy : int {
 	DEFAULT = 0,
 	CHOOSE_WIN = 1,
 	CHOOSE_ODD = 2,

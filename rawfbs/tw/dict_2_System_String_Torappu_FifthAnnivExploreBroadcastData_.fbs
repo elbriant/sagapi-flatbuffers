@@ -1,0 +1,9 @@
+include "Torappu_FifthAnnivExploreBroadcastData.fbs";
+
+table dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_ {
+	dict_key:string;
+	dict_value:Torappu_FifthAnnivExploreBroadcastData;
+}
+
+
+root_type dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_;

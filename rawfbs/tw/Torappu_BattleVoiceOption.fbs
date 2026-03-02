@@ -2,7 +2,7 @@ include "Torappu_BattleVoiceOption_BattleVoiceType.fbs";
 
 table Torappu_BattleVoiceOption {
 	voiceType:Torappu_BattleVoiceOption_BattleVoiceType;
-	priority:int32;
+	priority:int;
 	overlapIfSamePriority:bool;
 	cooldown:float;
 	delay:float;

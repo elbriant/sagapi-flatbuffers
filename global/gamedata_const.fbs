@@ -1,11 +1,11 @@
 
 table System_Int32A_ {
-	arr_values:[int32];
+	arr_values:[int];
 }
 
 
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -13,13 +13,13 @@ table dict__System_String_System_String {
 
 
 table Torappu_GameDataConsts_CharAssistRefreshTimeState {
-	Hour:int32;
-	Minute:int32;
+	Hour:int;
+	Minute:int;
 }
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -115,15 +115,15 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
 
 
-table list_dict___2_System_Int32_System_Int32_ {
-	dict_key:int32;
-	dict_value:int32;
+table Torappu_ListDict_2_System_Int32_System_Int32_ {
+	dict_key:int;
+	dict_value:int;
 }
 
 
@@ -136,21 +136,21 @@ table Torappu_TermDescriptionData {
 
 
 
-table dict__System_String_Torappu_TermDescriptionData {
+table dict_2_System_String_Torappu_TermDescriptionData_ {
 	dict_key:string;
 	dict_value:Torappu_TermDescriptionData;
 }
 
 
 
-enum Torappu_SubProfessionAttackType : int32 {
+enum Torappu_SubProfessionAttackType : int {
 	NONE = 0,
 	PHYSICAL = 1,
 	MAGICAL = 2,
 	HEAL = 3
 }
 
-table dict__System_String_Torappu_SubProfessionAttackType {
+table dict_2_System_String_Torappu_SubProfessionAttackType_ {
 	dict_key:string;
 	dict_value:Torappu_SubProfessionAttackType;
 }
@@ -165,95 +165,95 @@ table Torappu_GameDataConsts_FeverGameData {
 
 
 table Torappu_GameDataConsts {
-	maxPlayerLevel:int32;
-	playerExpMap:[int32];
-	playerApMap:[int32];
+	maxPlayerLevel:int;
+	playerExpMap:[int];
+	playerApMap:[int];
 	maxLevel:[System_Int32A_];
 	characterExpMap:[System_Int32A_];
 	characterUpgradeCostMap:[System_Int32A_];
 	evolveGoldCost:[System_Int32A_];
 	completeGainBonus:float;
-	playerApRegenSpeed:int32;
-	maxPracticeTicket:int32;
-	advancedGachaCrystalCost:int32;
-	completeCrystalBonus:int32;
-	initPlayerGold:int32;
-	initPlayerDiamondShard:int32;
-	initCampaignTotalFee:int32;
-	initRecruitTagList:[int32];
+	playerApRegenSpeed:int;
+	maxPracticeTicket:int;
+	advancedGachaCrystalCost:int;
+	completeCrystalBonus:int;
+	initPlayerGold:int;
+	initPlayerDiamondShard:int;
+	initCampaignTotalFee:int;
+	initRecruitTagList:[int];
 	initCharIdList:[string];
 	attackMax:float;
 	defMax:float;
 	hpMax:float;
 	reMax:float;
-	diamondToShdRate:int32;
-	requestSameFriendCD:int32;
-	baseMaxFriendNum:int32;
-	maxStarFriendNum:int32;
-	maxSquadAssistDisplayNum:int32;
-	friendStarEditTrackTs:int64;
-	hardDiamondDrop:int32;
-	instFinDmdShdCost:int32;
-	easyCrystalBonus:int32;
-	diamondMaterialToShardExchangeRatio:int32;
-	diamondHandbookStageGain:int32;
-	apBuyCost:int32;
-	apBuyThreshold:int32;
-	creditLimit:int32;
-	monthlySubRemainTimeLimitDays:int32;
-	friendAssistRarityLimit:[int32];
+	diamondToShdRate:int;
+	requestSameFriendCD:int;
+	baseMaxFriendNum:int;
+	maxStarFriendNum:int;
+	maxSquadAssistDisplayNum:int;
+	friendStarEditTrackTs:long;
+	hardDiamondDrop:int;
+	instFinDmdShdCost:int;
+	easyCrystalBonus:int;
+	diamondMaterialToShardExchangeRatio:int;
+	diamondHandbookStageGain:int;
+	apBuyCost:int;
+	apBuyThreshold:int;
+	creditLimit:int;
+	monthlySubRemainTimeLimitDays:int;
+	friendAssistRarityLimit:[int];
 	mainlineCompatibleDesc:string;
 	mainlineToughDesc:string;
 	mainlineEasyDesc:string;
 	mainlineNormalDesc:string;
-	rejectSpCharMission:int64;
+	rejectSpCharMission:long;
 	addedRewardDisplayZone:string;
-	oneDiamondAp:int32;
-	charRotationPresetMaxCnt:int32;
-	charRotationSkinListMaxCnt:int32;
+	oneDiamondAp:int;
+	charRotationPresetMaxCnt:int;
+	charRotationSkinListMaxCnt:int;
 	defaultCRPresetCharId:string;
 	defaultCRPresetCharSkinId:string;
 	defaultCRPresetBGId:string;
 	defaultCRPresetThemeId:string;
 	defaultCRPresetName:string;
-	charRotationPresetTrackTs:int64;
-	uniequipArchiveSysTrackTs:int64;
-	manufactPromptTime:int32;
+	charRotationPresetTrackTs:long;
+	uniequipArchiveSysTrackTs:long;
+	manufactPromptTime:int;
 	mainGuideActivedStageId:string;
-	richTextStyles:[dict__System_String_System_String];
+	richTextStyles:[dict_2_System_String_System_String_];
 	charAssistRefreshTime:[Torappu_GameDataConsts_CharAssistRefreshTimeState];
 	normalRecruitLockedString:[string];
-	commonPotentialLvlUpCount:int32;
+	commonPotentialLvlUpCount:int;
 	weeklyOverrideDesc:string;
-	voucherDiv:int32;
-	recruitPoolVersion:int32;
-	v006RecruitTimeStep1Refresh:int64;
-	v006RecruitTimeStep2Check:int64;
-	v006RecruitTimeStep2Flush:int64;
+	voucherDiv:int;
+	recruitPoolVersion:int;
+	v006RecruitTimeStep1Refresh:long;
+	v006RecruitTimeStep2Check:long;
+	v006RecruitTimeStep2Flush:long;
 	buyApTimeNoLimitFlag:bool;
 	isLMGTSEnabled:bool;
-	legacyTime:int64;
+	legacyTime:long;
 	legacyItemList:[Torappu_ItemBundle];
-	useAssistSocialPt:int32;
-	useAssistSocialPtMaxCount:int32;
-	assistBeUsedSocialPt:[list_dict___2_System_Int32_System_Int32_];
+	useAssistSocialPt:int;
+	useAssistSocialPtMaxCount:int;
+	assistBeUsedSocialPt:[Torappu_ListDict_2_System_Int32_System_Int32_];
 	pushForces:[float];
-	pushForceZeroIndex:int32;
-	normalGachaUnlockPrice:[int32];
+	pushForceZeroIndex:int;
+	normalGachaUnlockPrice:[int];
 	pullForces:[float];
-	pullForceZeroIndex:int32;
+	pullForceZeroIndex:int;
 	multiInComeByRank:[string];
-	LMTGSToEPGSRatio:int32;
-	newBeeGiftEPGS:int32;
+	LMTGSToEPGSRatio:int;
+	newBeeGiftEPGS:int;
 	lMTGSDescConstOne:string;
 	lMTGSDescConstTwo:string;
 	defCDPrimColor:string;
 	defCDSecColor:string;
 	mailBannerType:[string];
-	monthlySubWarningTime:int64;
-	UnlimitSkinOutOfTime:int64;
-	replicateShopStartTime:int64;
-	operatorRecordsStartTime:int64;
+	monthlySubWarningTime:long;
+	UnlimitSkinOutOfTime:long;
+	replicateShopStartTime:long;
+	operatorRecordsStartTime:long;
 	isDynIllustEnabled:bool;
 	isDynIllustStartEnabled:bool;
 	isClassicQCShopEnabled:bool;
@@ -265,27 +265,27 @@ table Torappu_GameDataConsts {
 	isSpecialGachaPoolFuncEnabled:bool;
 	isVoucherClassicItemDistinguishable:bool;
 	isRecalRuneFuncEnabled:bool;
-	voucherSkinRedeem:int32;
+	voucherSkinRedeem:int;
 	voucherSkinDesc:string;
-	charmEquipCount:int32;
-	termDescriptionDict:[dict__System_String_Torappu_TermDescriptionData];
+	charmEquipCount:int;
+	termDescriptionDict:[dict_2_System_String_Torappu_TermDescriptionData_];
 	storyReviewUnlockItemLackTip:string;
 	dataVersion:string;
 	resPrefVersion:string;
 	announceWebBusType:string;
 	videoPlayerWebBusType:string;
 	gachaLogBusType:string;
-	defaultMinMultipleBattleTimes:int32;
-	defaultMaxMultipleBattleTimes:int32;
+	defaultMinMultipleBattleTimes:int;
+	defaultMaxMultipleBattleTimes:int;
 	multipleActionOpen:bool;
-	subProfessionDamageTypePairs:[dict__System_String_Torappu_SubProfessionAttackType];
+	subProfessionDamageTypePairs:[dict_2_System_String_Torappu_SubProfessionAttackType_];
 	classicProtectChar:[string];
 	feverGameData:Torappu_GameDataConsts_FeverGameData;
 	birthdaySettingDesc:string;
 	birthdaySettingConfirmDesc:string;
 	birthdaySettingLeapConfirmDesc:string;
-	leapBirthdayRewardMonth:int32;
-	leapBirthdayRewardDay:int32;
+	leapBirthdayRewardMonth:int;
+	leapBirthdayRewardDay:int;
 	birthdaySettingShowStageId:string;
 	isBirthdayFuncEnabled:bool;
 	isSoCharEnabled:bool;

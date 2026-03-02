@@ -1,7 +1,7 @@
 
 table Torappu_CharacterData_UniqueEquipPair {
 	key:string;
-	level:int32;
+	level:int;
 }
 
 

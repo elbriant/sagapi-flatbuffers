@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeBandRefData {
 	itemId:string;
-	bandLevel:int32;
+	bandLevel:int;
 	normalBandId:string;
 }
 

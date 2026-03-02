@@ -1,0 +1,9 @@
+include "Torappu_EnemyHandBookData.fbs";
+
+table dict_2_System_String_Torappu_EnemyHandBookData_ {
+	dict_key:string;
+	dict_value:Torappu_EnemyHandBookData;
+}
+
+
+root_type dict_2_System_String_Torappu_EnemyHandBookData_;

@@ -2,18 +2,18 @@ include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RoguelikeGameInitData {
 	modeId:Torappu_RoguelikeTopicMode;
-	modeGrade:int32;
+	modeGrade:int;
 	predefinedId:string;
 	predefinedStyle:string;
 	initialBandRelic:[string];
 	initialRecruitGroup:[string];
-	initialHp:int32;
-	initialPopulation:int32;
-	initialGold:int32;
-	initialSquadCapacity:int32;
-	initialShield:int32;
-	initialMaxHp:int32;
-	initialKey:int32;
+	initialHp:int;
+	initialPopulation:int;
+	initialGold:int;
+	initialSquadCapacity:int;
+	initialShield:int;
+	initialMaxHp:int;
+	initialKey:int;
 }
 
 

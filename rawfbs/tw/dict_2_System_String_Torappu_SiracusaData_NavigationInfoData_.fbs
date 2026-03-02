@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_NavigationInfoData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_NavigationInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_NavigationInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_NavigationInfoData_;

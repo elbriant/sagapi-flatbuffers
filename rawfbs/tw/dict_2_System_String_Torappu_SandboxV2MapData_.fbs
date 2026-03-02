@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2MapData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2MapData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2MapData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2MapData_;

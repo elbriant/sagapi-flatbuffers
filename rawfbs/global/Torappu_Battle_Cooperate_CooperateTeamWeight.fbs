@@ -1,7 +1,7 @@
 
 table Torappu_Battle_Cooperate_CooperateTeamWeight {
 	teamName:string;
-	weight:int32;
+	weight:int;
 }
 
 

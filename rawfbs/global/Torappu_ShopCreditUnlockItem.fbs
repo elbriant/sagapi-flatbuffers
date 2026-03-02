@@ -1,7 +1,7 @@
 
 table Torappu_ShopCreditUnlockItem {
-	sortId:int32;
-	unlockNum:int32;
+	sortId:int;
+	unlockNum:int;
 	charId:string;
 }
 

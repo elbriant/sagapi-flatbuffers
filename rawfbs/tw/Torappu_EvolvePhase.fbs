@@ -1,5 +1,5 @@
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,

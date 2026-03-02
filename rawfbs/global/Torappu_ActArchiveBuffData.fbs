@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveBuffItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveBuffItemData_.fbs";
 
 table Torappu_ActArchiveBuffData {
-	buff:[dict__System_String_Torappu_ActArchiveBuffItemData];
+	buff:[dict_2_System_String_Torappu_ActArchiveBuffItemData_];
 }
 
 

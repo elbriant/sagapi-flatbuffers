@@ -1,9 +1,9 @@
-include "dict__System_String_Torappu_EmoticonData_EmojiData.fbs";
-include "dict__System_String_list___1_System_String.fbs";
+include "dict_2_System_String_Torappu_EmoticonData_EmojiData_.fbs";
+include "dict_2_System_String_list_1_System_String__.fbs";
 
 table Torappu_EmoticonData {
-	emojiDataDict:[dict__System_String_Torappu_EmoticonData_EmojiData];
-	emoticonThemeDataDict:[dict__System_String_list___1_System_String];
+	emojiDataDict:[dict_2_System_String_Torappu_EmoticonData_EmojiData_];
+	emoticonThemeDataDict:[dict_2_System_String_list_1_System_String__];
 }
 
 

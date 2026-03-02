@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2WeatherType : int32 {
+enum Torappu_SandboxV2WeatherType : int {
 	NORMAL = 0,
 	RAINFOREST = 1,
 	VOLCANO = 2,

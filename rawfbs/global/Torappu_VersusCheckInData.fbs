@@ -1,16 +1,16 @@
-include "dict__System_Int32_Torappu_VersusCheckInData_DailyInfo.fbs";
+include "dict_2_System_Int32_Torappu_VersusCheckInData_DailyInfo_.fbs";
 include "Torappu_VersusCheckInData_VoteData.fbs";
-include "dict__System_Int32_Torappu_VersusCheckInData_TasteInfoData.fbs";
-include "dict__Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData.fbs";
-include "dict__System_String_System_Int64.fbs";
+include "dict_2_System_Int32_Torappu_VersusCheckInData_TasteInfoData_.fbs";
+include "dict_2_Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData_.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 
 table Torappu_VersusCheckInData {
-	checkInDict:[dict__System_Int32_Torappu_VersusCheckInData_DailyInfo];
+	checkInDict:[dict_2_System_Int32_Torappu_VersusCheckInData_DailyInfo_];
 	voteTasteList:[Torappu_VersusCheckInData_VoteData];
-	tasteInfoDict:[dict__System_Int32_Torappu_VersusCheckInData_TasteInfoData];
-	tasteRewardDict:[dict__Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData];
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
-	versusTotalDays:int32;
+	tasteInfoDict:[dict_2_System_Int32_Torappu_VersusCheckInData_TasteInfoData_];
+	tasteRewardDict:[dict_2_Torappu_VersusCheckInData_TasteType_Torappu_VersusCheckInData_TasteRewardData_];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
+	versusTotalDays:int;
 	ruleText:string;
 }
 

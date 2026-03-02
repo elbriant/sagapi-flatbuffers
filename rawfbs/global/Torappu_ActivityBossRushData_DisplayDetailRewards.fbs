@@ -7,7 +7,7 @@ table Torappu_ActivityBossRushData_DisplayDetailRewards {
 	id:string;
 	dropType:Torappu_StageDropType;
 	occPercent:Torappu_OccPer;
-	dropCount:int32;
+	dropCount:int;
 }
 
 

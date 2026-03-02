@@ -1,7 +1,7 @@
 include "Torappu_Act35SideData_Act35sideCardMaterialData.fbs";
 
 table Torappu_Act35SideData_Act35SideCardLevelData {
-	cardLevel:int32;
+	cardLevel:int;
 	cardName:string;
 	cardDesc:string;
 	inputMaterialList:[Torappu_Act35SideData_Act35sideCardMaterialData];

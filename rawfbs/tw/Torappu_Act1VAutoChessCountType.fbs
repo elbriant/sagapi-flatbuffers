@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VAutoChessCountType : int32 {
+enum Torappu_Act1VAutoChessCountType : int {
 	NONE = 0,
 	BATTLE_LAYER = 1,
 	COUNTING = 2,

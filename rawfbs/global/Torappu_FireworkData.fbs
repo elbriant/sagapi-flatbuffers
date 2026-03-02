@@ -1,12 +1,12 @@
-include "dict__System_String_Torappu_FireworkData_PlateData.fbs";
-include "dict__System_String_Torappu_FireworkData_AnimalData.fbs";
-include "dict__System_String_Torappu_FireworkData_LevelData.fbs";
+include "dict_2_System_String_Torappu_FireworkData_PlateData_.fbs";
+include "dict_2_System_String_Torappu_FireworkData_AnimalData_.fbs";
+include "dict_2_System_String_Torappu_FireworkData_LevelData_.fbs";
 include "Torappu_FireworkData_ConstData.fbs";
 
 table Torappu_FireworkData {
-	plateData:[dict__System_String_Torappu_FireworkData_PlateData];
-	animalData:[dict__System_String_Torappu_FireworkData_AnimalData];
-	levelData:[dict__System_String_Torappu_FireworkData_LevelData];
+	plateData:[dict_2_System_String_Torappu_FireworkData_PlateData_];
+	animalData:[dict_2_System_String_Torappu_FireworkData_AnimalData_];
+	levelData:[dict_2_System_String_Torappu_FireworkData_LevelData_];
 	constData:Torappu_FireworkData_ConstData;
 }
 

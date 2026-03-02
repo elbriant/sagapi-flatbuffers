@@ -1,0 +1,9 @@
+include "Torappu_HandbookInfoData.fbs";
+
+table dict_2_System_String_Torappu_HandbookInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_HandbookInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_HandbookInfoData_;

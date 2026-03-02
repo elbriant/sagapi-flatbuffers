@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeChaosModuleConsts {
-	maxChaosLevel:int32;
-	maxChaosSlot:int32;
+	maxChaosLevel:int;
+	maxChaosSlot:int;
 	chaosNotMaxDescription:string;
 	chaosMaxDescription:string;
 	chaosPredictDescription:string;

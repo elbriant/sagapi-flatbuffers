@@ -1,0 +1,9 @@
+include "Torappu_Act4funValueEffectInfoData.fbs";
+
+table dict_2_System_String_Torappu_Act4funValueEffectInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_Act4funValueEffectInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act4funValueEffectInfoData_;

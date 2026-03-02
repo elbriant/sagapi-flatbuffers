@@ -1,8 +1,8 @@
 
 table Torappu_Act4D0Data_MileStoneStoryInfo {
 	mileStoneId:string;
-	orderId:int32;
-	tokenNum:int32;
+	orderId:int;
+	tokenNum:int;
 	storyKey:string;
 	desc:string;
 }

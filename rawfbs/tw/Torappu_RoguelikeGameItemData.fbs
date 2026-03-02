@@ -13,7 +13,7 @@ table Torappu_RoguelikeGameItemData {
 	type:Torappu_RoguelikeGameItemType;
 	subType:Torappu_RoguelikeGameItemSubType;
 	rarity:Torappu_RoguelikeGameItemRarity;
-	sortId:int32;
+	sortId:int;
 	canSacrifice:bool;
 	tinyIconColor:string;
 	unlockCondDesc:string;

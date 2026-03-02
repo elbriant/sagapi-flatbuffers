@@ -1,0 +1,9 @@
+include "Torappu_Act44SideData_Act44SideInsightData.fbs";
+
+table dict_2_System_String_Torappu_Act44SideData_Act44SideInsightData_ {
+	dict_key:string;
+	dict_value:Torappu_Act44SideData_Act44SideInsightData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act44SideData_Act44SideInsightData_;

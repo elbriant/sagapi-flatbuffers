@@ -1,6 +1,6 @@
 
 table Torappu_BuildingData_TrainingPhase {
-	specSkillLvlLimit:int32;
+	specSkillLvlLimit:int;
 }
 
 

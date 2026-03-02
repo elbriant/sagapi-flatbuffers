@@ -1,19 +1,19 @@
-include "dict__System_String_Torappu_CharSkinData.fbs";
-include "dict__System_String_list_dict___2_System_Int32_System_String.fbs";
-include "dict__System_String_list_dict___2_System_String_System_String.fbs";
-include "dict__System_String_Torappu_CharSkinBrandInfo.fbs";
+include "dict_2_System_String_Torappu_CharSkinData_.fbs";
+include "dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__.fbs";
+include "dict_2_System_String_Torappu_ListDict_2_System_String_System_String__.fbs";
+include "dict_2_System_String_Torappu_CharSkinBrandInfo_.fbs";
 include "Torappu_SpecialSkinInfo.fbs";
-include "dict__System_String_Torappu_SpDynIllustInfo.fbs";
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_Torappu_SpDynIllustInfo_.fbs";
+include "dict_2_System_String_System_String_.fbs";
 
 table Torappu_SkinTable {
-	charSkins:[dict__System_String_Torappu_CharSkinData];
-	buildinEvolveMap:[dict__System_String_list_dict___2_System_Int32_System_String];
-	buildinPatchMap:[dict__System_String_list_dict___2_System_String_System_String];
-	brandList:[dict__System_String_Torappu_CharSkinBrandInfo];
+	charSkins:[dict_2_System_String_Torappu_CharSkinData_];
+	buildinEvolveMap:[dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__];
+	buildinPatchMap:[dict_2_System_String_Torappu_ListDict_2_System_String_System_String__];
+	brandList:[dict_2_System_String_Torappu_CharSkinBrandInfo_];
 	specialSkinInfoList:[Torappu_SpecialSkinInfo];
-	spDynSkins:[dict__System_String_Torappu_SpDynIllustInfo];
-	spDynIllustSkinTagsMap:[dict__System_String_System_String];
+	spDynSkins:[dict_2_System_String_Torappu_SpDynIllustInfo_];
+	spDynIllustSkinTagsMap:[dict_2_System_String_System_String_];
 }
 
 

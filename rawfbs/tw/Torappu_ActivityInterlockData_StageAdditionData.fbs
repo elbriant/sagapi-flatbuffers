@@ -4,7 +4,7 @@ table Torappu_ActivityInterlockData_StageAdditionData {
 	stageId:string;
 	stageType:Torappu_ActivityInterlockData_InterlockStageType;
 	lockStageKey:string;
-	lockSortIndex:int32;
+	lockSortIndex:int;
 }
 
 

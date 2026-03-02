@@ -1,13 +1,13 @@
-include "dict__System_String_Torappu_LevelScenePair.fbs";
-include "dict__System_String_list___1_System_String.fbs";
+include "dict_2_System_String_Torappu_LevelScenePair_.fbs";
+include "dict_2_System_String_list_1_System_String__.fbs";
 include "Torappu_BattleMiscConfigs.fbs";
-include "dict__System_String_Torappu_ParticleEffectManagerConfig.fbs";
+include "dict_2_System_String_Torappu_ParticleEffectManagerConfig_.fbs";
 
 table Torappu_BattleMiscData {
-	levelScenePairs:[dict__System_String_Torappu_LevelScenePair];
-	effectBlacklist:[dict__System_String_list___1_System_String];
+	levelScenePairs:[dict_2_System_String_Torappu_LevelScenePair_];
+	effectBlacklist:[dict_2_System_String_list_1_System_String__];
 	miscConfig:Torappu_BattleMiscConfigs;
-	particleEffectManagerConfigs:[dict__System_String_Torappu_ParticleEffectManagerConfig];
+	particleEffectManagerConfigs:[dict_2_System_String_Torappu_ParticleEffectManagerConfig_];
 }
 
 

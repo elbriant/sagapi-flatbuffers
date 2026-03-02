@@ -2,7 +2,7 @@ include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_Act13SideData_DailyMissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	description:string;
 	missionName:string;
 	template:string;
@@ -12,7 +12,7 @@ table Torappu_Act13SideData_DailyMissionData {
 	orgPool:[string];
 	rewardPool:[string];
 	jumpStageId:string;
-	agendaCount:int32;
+	agendaCount:int;
 }
 
 

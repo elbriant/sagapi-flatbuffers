@@ -4,7 +4,7 @@ table Torappu_SandboxV2DiffModeData {
 	desc:string;
 	buffList:[string];
 	detailList:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

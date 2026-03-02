@@ -1,0 +1,9 @@
+include "Torappu_Act25SideData_FogUnlockData.fbs";
+
+table dict_2_System_String_Torappu_Act25SideData_FogUnlockData_ {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_FogUnlockData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act25SideData_FogUnlockData_;

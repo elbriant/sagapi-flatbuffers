@@ -1,8 +1,8 @@
 
 table Torappu_ClimbTowerRewardInfo {
-	stageSort:int32;
-	lowerItemCount:int32;
-	higherItemCount:int32;
+	stageSort:int;
+	lowerItemCount:int;
+	higherItemCount:int;
 }
 
 

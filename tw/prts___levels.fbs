@@ -1,5 +1,5 @@
 
-enum Torappu_BattleFunctionDisableMask : int32 {
+enum Torappu_BattleFunctionDisableMask : int {
 	NONE = 0,
 	CARD_LIST = 1,
 	CHARACTER_MENU = 2,
@@ -22,11 +22,19 @@ enum Torappu_BattleFunctionDisableMask : int32 {
 	ALL = 262143
 }
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_LevelData_Options {
-	characterLimit:int32;
-	maxLifePoint:int32;
-	initialCost:int32;
-	maxCost:int32;
+	characterLimit:int;
+	maxLifePoint:int;
+	initialCost:int;
+	maxCost:int;
 	costIncreaseTime:float;
 	moveMultiplier:float;
 	steeringEnabled:bool;
@@ -40,53 +48,45 @@ table Torappu_LevelData_Options {
 
 
 table hg__internal__MapData {
-	row_size:int32;
-	column_size:int32;
-	matrix_data:[int16];
+	row_size:int;
+	column_size:int;
+	matrix_data:[short];
 }
 
 
-enum Torappu_TileData_HeightType : int32 {
+enum Torappu_TileData_HeightType : int {
 	LOWLAND = 0,
 	HIGHLAND = 1,
 	E_NUM = 2
 }
 
-enum Torappu_BuildableType : int32 {
+enum Torappu_BuildableType : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_MotionMask : int32 {
+enum Torappu_MotionMask : int {
 	NONE = 0,
 	WALK_ONLY = 1,
 	FLY_ONLY = 2,
 	ALL = 3
 }
 
-enum Torappu_PlayerSideMask : uint8 {
+enum Torappu_PlayerSideMask : ubyte {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,
 	NONE = 255
 }
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
-}
-
-
-
 table UnityEngine_Vector3 {
 }
 
 
 
-enum Torappu_SharedConsts_Direction : int32 {
+enum Torappu_SharedConsts_Direction : int {
 	UP = 0,
 	RIGHT = 1,
 	DOWN = 2,
@@ -116,8 +116,8 @@ table Torappu_TileData {
 
 
 table Torappu_GridPosition {
-	row:int32;
-	col:int32;
+	row:int;
+	col:int;
 }
 
 
@@ -141,7 +141,7 @@ table Torappu_MapData {
 
 
 
-enum Torappu_LevelData_Difficulty : int32 {
+enum Torappu_LevelData_Difficulty : int {
 	NONE = 0,
 	NORMAL = 1,
 	FOUR_STAR = 2,
@@ -150,7 +150,7 @@ enum Torappu_LevelData_Difficulty : int32 {
 	ALL = 15
 }
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -174,7 +174,7 @@ table Torappu_LegacyInLevelRuneData {
 
 
 
-table dict__System_String_list___1_Torappu_LegacyInLevelRuneData {
+table dict_2_System_String_list_1_Torappu_LegacyInLevelRuneData__ {
 	dict_key:string;
 	dict_value:[Torappu_LegacyInLevelRuneData];
 }
@@ -192,7 +192,7 @@ table Torappu_LevelData_GlobalBuffData {
 
 
 
-enum Torappu_MotionMode : int32 {
+enum Torappu_MotionMode : int {
 	WALK = 0,
 	FLY = 1,
 	E_NUM = 2
@@ -203,7 +203,7 @@ table UnityEngine_Vector2 {
 
 
 
-enum Torappu_CheckpointType : int32 {
+enum Torappu_CheckpointType : int {
 	MOVE = 0,
 	WAIT_FOR_SECONDS = 1,
 	WAIT_FOR_PLAY_TIME = 2,
@@ -244,27 +244,27 @@ table Torappu_RouteData {
 
 
 table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
+	currentCryptoKey:int;
+	hiddenValue:int;
 	inited:bool;
-	fakeValue:int32;
+	fakeValue:int;
 	fakeValueActive:bool;
 }
 
 
 
 table CodeStage_AntiCheat_Common_ACTkByte4 {
-	b1:uint8;
-	b2:uint8;
-	b3:uint8;
-	b4:uint8;
+	b1:ubyte;
+	b2:ubyte;
+	b3:ubyte;
+	b4:ubyte;
 }
 
 
 
 table CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
+	currentCryptoKey:int;
+	hiddenValue:int;
 	hiddenValueOldByte4:CodeStage_AntiCheat_Common_ACTkByte4;
 	inited:bool;
 	fakeValue:float;
@@ -304,14 +304,14 @@ table Torappu_AttributesData {
 
 
 
-enum Torappu_SourceApplyWay : int32 {
+enum Torappu_SourceApplyWay : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_EnemyLevelType : int32 {
+enum Torappu_EnemyLevelType : int {
 	NORMAL = 0,
 	ELITE = 1,
 	BOSS = 2,
@@ -320,16 +320,16 @@ enum Torappu_EnemyLevelType : int32 {
 
 table Torappu_LevelData_EnemyData_ESkillData {
 	prefabKey:string;
-	priority:int32;
+	priority:int;
 	cooldown:float;
 	initCooldown:float;
-	spCost:int32;
+	spCost:int;
 	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
 
-enum Torappu_SpType : int32 {
+enum Torappu_SpType : int {
 	NONE = 0,
 	INCREASE_WITH_TIME = 1,
 	INCREASE_WHEN_ATTACK = 2,
@@ -340,8 +340,8 @@ enum Torappu_SpType : int32 {
 
 table Torappu_LevelData_EnemyData_ESpData {
 	spType:Torappu_SpType;
-	maxSp:int32;
-	initSp:int32;
+	maxSp:int;
+	initSp:int;
 	increment:float;
 }
 
@@ -372,9 +372,9 @@ table Torappu_LevelData_EnemyData {
 	enemyTags:[string];
 	notCountInTotal:bool;
 	alias:string;
-	lifePointReduce:int32;
+	lifePointReduce:int;
 	rangeRadius:float;
-	numOfExtraDrops:int32;
+	numOfExtraDrops:int;
 	viewRadius:float;
 	levelType:Torappu_EnemyLevelType;
 	talentBlackboard:[Torappu_Blackboard_DataPair];
@@ -394,7 +394,7 @@ table Torappu_Undefinable_1_System_String_ {
 
 table Torappu_Undefinable_1_System_Int32_ {
 	m_defined:bool;
-	m_value:int32;
+	m_value:int;
 }
 
 
@@ -500,13 +500,13 @@ table Torappu_EnemyDatabase_EnemyData {
 table Torappu_LevelData_EnemyDataDbReference {
 	useDb:bool;
 	id:string;
-	level:int32;
+	level:int;
 	overwrittenData:Torappu_EnemyDatabase_EnemyData;
 }
 
 
 
-enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int32 {
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int {
 	SPAWN = 0,
 	PREVIEW_CURSOR = 1,
 	STORY = 2,
@@ -524,7 +524,7 @@ enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int32 {
 	E_NUM = 14
 }
 
-enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType : int32 {
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType : int {
 	ALWAYS = 0,
 	PER_DAY = 1,
 	NEVER = 2,
@@ -532,7 +532,7 @@ enum Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType : int32 {
 	PER_SEASON = 4
 }
 
-enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType : int32 {
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType : int {
 	ALWAYS = 0,
 	PER_DAY = 1,
 	NEVER = 2,
@@ -544,10 +544,10 @@ table Torappu_LevelData_WaveData_FragmentData_ActionData {
 	actionType:Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType;
 	managedByScheduler:bool;
 	key:string;
-	count:int32;
+	count:int;
 	preDelay:float;
 	interval:float;
-	routeIndex:int32;
+	routeIndex:int;
 	blockFragment:bool;
 	autoPreviewRoute:bool;
 	autoDisplayEnemyInfo:bool;
@@ -557,7 +557,7 @@ table Torappu_LevelData_WaveData_FragmentData_ActionData {
 	randomSpawnGroupPackKey:string;
 	randomType:Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType;
 	refreshType:Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType;
-	weight:int32;
+	weight:int;
 	dontBlockWave:bool;
 	forceBlockWaveInBranch:bool;
 }
@@ -594,14 +594,14 @@ table Torappu_LevelData_BranchData {
 
 
 
-table list_dict___2_System_String_Torappu_LevelData_BranchData_ {
+table Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_ {
 	dict_key:string;
 	dict_value:Torappu_LevelData_BranchData;
 }
 
 
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -611,32 +611,32 @@ enum Torappu_EvolvePhase : int32 {
 
 table Torappu_CharacterInst_Metadata {
 	characterKey:string;
-	level:int32;
+	level:int;
 	phase:Torappu_EvolvePhase;
-	favorBattlePhase:int32;
-	potentialRank:int32;
+	favorBattlePhase:int;
+	potentialRank:int;
 }
 
 
 
 table Torappu_CharacterData_UniqueEquipPair {
 	key:string;
-	level:int32;
+	level:int;
 }
 
 
 
 table Torappu_CharacterData_MasterInfo {
 	masterId:string;
-	level:int32;
+	level:int;
 }
 
 
 
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	inst:Torappu_CharacterInst_Metadata;
-	skillIndex:int32;
-	mainSkillLvl:int32;
+	skillIndex:int;
+	mainSkillLvl:int;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
@@ -653,8 +653,8 @@ table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 
 table Torappu_LevelData_PredefinedData_PredefinedCard {
 	inst:Torappu_CharacterInst_Metadata;
-	skillIndex:int32;
-	mainSkillLvl:int32;
+	skillIndex:int;
+	mainSkillLvl:int;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
@@ -669,8 +669,8 @@ table Torappu_LevelData_PredefinedData_PredefinedCard {
 
 table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
 	inst:Torappu_CharacterInst_Metadata;
-	skillIndex:int32;
-	mainSkillLvl:int32;
+	skillIndex:int;
+	mainSkillLvl:int;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
@@ -679,7 +679,7 @@ table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
 	masterInfos:[Torappu_CharacterData_MasterInfo];
 	hidden:bool;
 	alias:string;
-	initialCnt:int32;
+	initialCnt:int;
 }
 
 
@@ -702,18 +702,18 @@ table Torappu_LevelData {
 	mapData:Torappu_MapData;
 	tilesDisallowToLocate:[Torappu_GridPosition];
 	runes:[Torappu_LegacyInLevelRuneData];
-	optionalRunes:[dict__System_String_list___1_Torappu_LegacyInLevelRuneData];
+	optionalRunes:[dict_2_System_String_list_1_Torappu_LegacyInLevelRuneData__];
 	globalBuffs:[Torappu_LevelData_GlobalBuffData];
 	routes:[Torappu_RouteData];
 	extraRoutes:[Torappu_RouteData];
 	enemies:[Torappu_LevelData_EnemyData];
 	enemyDbRefs:[Torappu_LevelData_EnemyDataDbReference];
 	waves:[Torappu_LevelData_WaveData];
-	branches:[list_dict___2_System_String_Torappu_LevelData_BranchData_];
+	branches:[Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_];
 	predefines:Torappu_LevelData_PredefinedData;
 	hardPredefines:Torappu_LevelData_PredefinedData;
 	excludeCharIdList:[string];
-	randomSeed:int32;
+	randomSeed:int;
 	operaConfig:string;
 	cameraPlugin:string;
 }

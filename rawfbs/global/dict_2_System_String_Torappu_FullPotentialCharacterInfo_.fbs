@@ -1,0 +1,9 @@
+include "Torappu_FullPotentialCharacterInfo.fbs";
+
+table dict_2_System_String_Torappu_FullPotentialCharacterInfo_ {
+	dict_key:string;
+	dict_value:Torappu_FullPotentialCharacterInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_FullPotentialCharacterInfo_;

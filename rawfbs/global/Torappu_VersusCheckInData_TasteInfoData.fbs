@@ -1,7 +1,7 @@
 include "Torappu_VersusCheckInData_TasteType.fbs";
 
 table Torappu_VersusCheckInData_TasteInfoData {
-	plTaste:int32;
+	plTaste:int;
 	tasteType:Torappu_VersusCheckInData_TasteType;
 	tasteText:string;
 }

@@ -1,18 +1,18 @@
-include "dict__System_String_Torappu_SandboxV2RacerBasicInfo.fbs";
-include "dict__System_String_Torappu_SandboxV2RacerTalentInfo.fbs";
-include "dict__System_String_Torappu_SandboxV2RacerNameInfo.fbs";
-include "dict__System_String_Torappu_SandboxV2RacerMedalInfo.fbs";
-include "dict__System_String_System_String.fbs";
-include "dict__System_String_Torappu_SandboxV2RacingItemInfo.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RacerBasicInfo_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RacerTalentInfo_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RacerNameInfo_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RacerMedalInfo_.fbs";
+include "dict_2_System_String_System_String_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RacingItemInfo_.fbs";
 include "Torappu_SandboxV2RacingConstData.fbs";
 
 table Torappu_SandboxV2RacingData {
-	racerBasicInfo:[dict__System_String_Torappu_SandboxV2RacerBasicInfo];
-	racerTalentInfo:[dict__System_String_Torappu_SandboxV2RacerTalentInfo];
-	racerNameInfo:[dict__System_String_Torappu_SandboxV2RacerNameInfo];
-	racerMedalInfo:[dict__System_String_Torappu_SandboxV2RacerMedalInfo];
-	enemyItemMap:[dict__System_String_System_String];
-	racingItemInfo:[dict__System_String_Torappu_SandboxV2RacingItemInfo];
+	racerBasicInfo:[dict_2_System_String_Torappu_SandboxV2RacerBasicInfo_];
+	racerTalentInfo:[dict_2_System_String_Torappu_SandboxV2RacerTalentInfo_];
+	racerNameInfo:[dict_2_System_String_Torappu_SandboxV2RacerNameInfo_];
+	racerMedalInfo:[dict_2_System_String_Torappu_SandboxV2RacerMedalInfo_];
+	enemyItemMap:[dict_2_System_String_System_String_];
+	racingItemInfo:[dict_2_System_String_Torappu_SandboxV2RacingItemInfo_];
 	constData:Torappu_SandboxV2RacingConstData;
 }
 

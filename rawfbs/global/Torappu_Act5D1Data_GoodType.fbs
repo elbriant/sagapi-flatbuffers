@@ -1,5 +1,5 @@
 
-enum Torappu_Act5D1Data_GoodType : int32 {
+enum Torappu_Act5D1Data_GoodType : int {
 	NORMAL = 0,
 	PROGRESS = 1
 }

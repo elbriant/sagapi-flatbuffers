@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_BattleTaskData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_BattleTaskData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_BattleTaskData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_BattleTaskData_;

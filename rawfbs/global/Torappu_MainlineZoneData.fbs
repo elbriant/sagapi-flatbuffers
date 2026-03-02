@@ -5,7 +5,7 @@ table Torappu_MainlineZoneData {
 	zoneId:string;
 	chapterId:string;
 	preposedZoneId:string;
-	zoneIndex:int32;
+	zoneIndex:int;
 	startStageId:string;
 	endStageId:string;
 	gameMusicId:string;
@@ -14,7 +14,7 @@ table Torappu_MainlineZoneData {
 	buttonName:string;
 	buttonStyle:Torappu_MainlineZoneData_ZoneReplayBtnType;
 	spoilAlert:bool;
-	zoneOpenTime:int64;
+	zoneOpenTime:long;
 	diffGroup:[Torappu_StageDiffGroup];
 }
 

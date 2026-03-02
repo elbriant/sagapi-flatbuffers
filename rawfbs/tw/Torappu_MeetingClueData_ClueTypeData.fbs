@@ -1,7 +1,7 @@
 
 table Torappu_MeetingClueData_ClueTypeData {
 	clueType:string;
-	clueNumber:int32;
+	clueNumber:int;
 }
 
 

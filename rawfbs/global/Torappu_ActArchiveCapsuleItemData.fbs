@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveCapsuleItemData {
 	capsuleId:string;
-	capsuleSortId:int32;
+	capsuleSortId:int;
 	englishName:string;
 	enrollId:string;
 }

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameStageData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameStageData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameStageData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameStageData_;

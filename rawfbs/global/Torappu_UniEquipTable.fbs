@@ -1,17 +1,17 @@
-include "dict__System_String_Torappu_UniEquipData.fbs";
-include "dict__System_String_Torappu_UniEquipMissionData.fbs";
-include "dict__System_String_Torappu_SubProfessionData.fbs";
-include "dict__System_String_System_Int32.fbs";
-include "dict__System_String_list___1_System_String.fbs";
+include "dict_2_System_String_Torappu_UniEquipData_.fbs";
+include "dict_2_System_String_Torappu_UniEquipMissionData_.fbs";
+include "dict_2_System_String_Torappu_SubProfessionData_.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
+include "dict_2_System_String_list_1_System_String__.fbs";
 include "Torappu_UniEquipTypeInfo.fbs";
 include "Torappu_UniEquipTimeInfo.fbs";
 
 table Torappu_UniEquipTable {
-	equipDict:[dict__System_String_Torappu_UniEquipData];
-	missionList:[dict__System_String_Torappu_UniEquipMissionData];
-	subProfDict:[dict__System_String_Torappu_SubProfessionData];
-	subProfToProfDict:[dict__System_String_System_Int32];
-	charEquip:[dict__System_String_list___1_System_String];
+	equipDict:[dict_2_System_String_Torappu_UniEquipData_];
+	missionList:[dict_2_System_String_Torappu_UniEquipMissionData_];
+	subProfDict:[dict_2_System_String_Torappu_SubProfessionData_];
+	subProfToProfDict:[dict_2_System_String_System_Int32_];
+	charEquip:[dict_2_System_String_list_1_System_String__];
 	equipTypeInfos:[Torappu_UniEquipTypeInfo];
 	equipTrackDict:[Torappu_UniEquipTimeInfo];
 }

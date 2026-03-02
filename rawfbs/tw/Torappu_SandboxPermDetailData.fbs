@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_SandboxV2Data.fbs";
+include "dict_2_System_String_Torappu_SandboxV2Data_.fbs";
 
 table Torappu_SandboxPermDetailData {
-	sandboxV2TemplateData:[dict__System_String_Torappu_SandboxV2Data];
+	sandboxV2TemplateData:[dict_2_System_String_Torappu_SandboxV2Data_];
 }
 
 

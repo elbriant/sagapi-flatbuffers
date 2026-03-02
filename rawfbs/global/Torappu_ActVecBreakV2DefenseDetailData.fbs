@@ -2,7 +2,7 @@
 table Torappu_ActVecBreakV2DefenseDetailData {
 	stageId:string;
 	buffId:string;
-	defenseCharLimit:int32;
+	defenseCharLimit:int;
 	bossIconId:string;
 }
 

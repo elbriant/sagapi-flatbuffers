@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxPermItemType : int32 {
+enum Torappu_SandboxPermItemType : int {
 	NONE = 0,
 	TACTICAL = 1,
 	BUILDING = 2,

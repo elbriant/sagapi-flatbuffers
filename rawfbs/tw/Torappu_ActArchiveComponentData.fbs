@@ -4,8 +4,8 @@ include "Torappu_ActArchivePicData.fbs";
 include "Torappu_ActArchiveStoryData.fbs";
 include "Torappu_ActArchiveAvgData.fbs";
 include "Torappu_ActArchiveNewsData.fbs";
-include "dict__System_String_Torappu_ActArchiveLandmarkItemData.fbs";
-include "dict__System_String_Torappu_ActArchiveChapterLogData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveLandmarkItemData_.fbs";
+include "dict_2_System_String_Torappu_ActArchiveChapterLogData_.fbs";
 include "Torappu_ActArchiveChallengeBookData.fbs";
 
 table Torappu_ActArchiveComponentData {
@@ -15,8 +15,8 @@ table Torappu_ActArchiveComponentData {
 	story:Torappu_ActArchiveStoryData;
 	avg:Torappu_ActArchiveAvgData;
 	news:Torappu_ActArchiveNewsData;
-	landmark:[dict__System_String_Torappu_ActArchiveLandmarkItemData];
-	log:[dict__System_String_Torappu_ActArchiveChapterLogData];
+	landmark:[dict_2_System_String_Torappu_ActArchiveLandmarkItemData_];
+	log:[dict_2_System_String_Torappu_ActArchiveChapterLogData_];
 	challengeBook:Torappu_ActArchiveChallengeBookData;
 }
 

@@ -1,8 +1,8 @@
 
 table Torappu_ActVecBreakV2StageRewardData_LimitedRewardData {
-	startTs:int64;
-	endTs:int64;
-	rewardCnt:int32;
+	startTs:long;
+	endTs:long;
+	rewardCnt:int;
 }
 
 

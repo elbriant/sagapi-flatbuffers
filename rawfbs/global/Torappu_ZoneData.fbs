@@ -2,7 +2,7 @@ include "Torappu_ZoneType.fbs";
 
 table Torappu_ZoneData {
 	zoneID:string;
-	zoneIndex:int32;
+	zoneIndex:int;
 	type:Torappu_ZoneType;
 	zoneNameFirst:string;
 	zoneNameSecond:string;

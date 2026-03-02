@@ -1,0 +1,8 @@
+
+table Torappu_ListDict_2_System_Int32_System_Int32_ {
+	dict_key:int;
+	dict_value:int;
+}
+
+
+root_type Torappu_ListDict_2_System_Int32_System_Int32_;

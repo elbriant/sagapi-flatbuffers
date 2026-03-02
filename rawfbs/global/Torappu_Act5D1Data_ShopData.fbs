@@ -1,9 +1,9 @@
-include "dict__System_String_Torappu_Act5D1Data_ShopGood.fbs";
-include "dict__System_String_list___1_Torappu_Act5D1Data_ProgessGoodItem.fbs";
+include "dict_2_System_String_Torappu_Act5D1Data_ShopGood_.fbs";
+include "dict_2_System_String_list_1_Torappu_Act5D1Data_ProgessGoodItem__.fbs";
 
 table Torappu_Act5D1Data_ShopData {
-	shopGoods:[dict__System_String_Torappu_Act5D1Data_ShopGood];
-	progressGoods:[dict__System_String_list___1_Torappu_Act5D1Data_ProgessGoodItem];
+	shopGoods:[dict_2_System_String_Torappu_Act5D1Data_ShopGood_];
+	progressGoods:[dict_2_System_String_list_1_Torappu_Act5D1Data_ProgessGoodItem__];
 }
 
 

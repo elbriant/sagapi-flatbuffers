@@ -1,5 +1,5 @@
 
-enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType : int32 {
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType : int {
 	ALWAYS = 0,
 	PER_DAY = 1,
 	NEVER = 2,

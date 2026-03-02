@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveChallengeBookItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_.fbs";
 
 table Torappu_ActArchiveChallengeBookData {
-	stories:[dict__System_String_Torappu_ActArchiveChallengeBookItemData];
+	stories:[dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_];
 }
 
 

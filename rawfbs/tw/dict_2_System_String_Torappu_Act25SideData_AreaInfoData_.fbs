@@ -1,0 +1,9 @@
+include "Torappu_Act25SideData_AreaInfoData.fbs";
+
+table dict_2_System_String_Torappu_Act25SideData_AreaInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_AreaInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act25SideData_AreaInfoData_;

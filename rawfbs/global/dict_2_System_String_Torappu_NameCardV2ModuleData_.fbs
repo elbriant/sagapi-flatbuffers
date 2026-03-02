@@ -1,0 +1,9 @@
+include "Torappu_NameCardV2ModuleData.fbs";
+
+table dict_2_System_String_Torappu_NameCardV2ModuleData_ {
+	dict_key:string;
+	dict_value:Torappu_NameCardV2ModuleData;
+}
+
+
+root_type dict_2_System_String_Torappu_NameCardV2ModuleData_;

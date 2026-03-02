@@ -2,7 +2,7 @@
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData {
 	stageId:string;
 	mode:[string];
-	weight:int32;
+	weight:int;
 }
 
 

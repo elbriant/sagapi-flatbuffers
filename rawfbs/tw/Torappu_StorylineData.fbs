@@ -1,15 +1,15 @@
 include "Torappu_StorylineType.fbs";
-include "list_dict___2_System_String_Torappu_StorylineLocationData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_.fbs";
 
 table Torappu_StorylineData {
 	storylineId:string;
 	storylineType:Torappu_StorylineType;
-	sortId:int32;
+	sortId:int;
 	storylineName:string;
 	storylineIconId:string;
 	backgroundId:string;
-	startTs:int64;
-	locations:[list_dict___2_System_String_Torappu_StorylineLocationData_];
+	startTs:long;
+	locations:[Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_];
 }
 
 

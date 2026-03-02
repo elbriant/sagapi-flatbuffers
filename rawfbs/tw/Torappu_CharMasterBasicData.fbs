@@ -4,7 +4,7 @@ include "Torappu_CharMasterLevelData.fbs";
 table Torappu_CharMasterBasicData {
 	charId:string;
 	masterId:string;
-	sortId:int32;
+	sortId:int;
 	masterType:Torappu_CharMasterType;
 	levelList:[Torappu_CharMasterLevelData];
 }

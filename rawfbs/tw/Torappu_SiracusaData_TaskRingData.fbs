@@ -3,7 +3,7 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_SiracusaData_TaskRingData {
 	taskRingId:string;
-	sortIndex:int32;
+	sortIndex:int;
 	charCardId:string;
 	logicType:Torappu_SiracusaData_TaskRingLogicType;
 	ringText:string;

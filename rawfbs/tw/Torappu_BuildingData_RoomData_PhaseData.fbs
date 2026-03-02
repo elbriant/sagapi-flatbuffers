@@ -5,9 +5,9 @@ table Torappu_BuildingData_RoomData_PhaseData {
 	overridePrefabId:string;
 	unlockCondId:string;
 	buildCost:Torappu_BuildingData_RoomData_BuildCost;
-	electricity:int32;
-	maxStationedNum:int32;
-	manpowerCost:int64;
+	electricity:int;
+	maxStationedNum:int;
+	manpowerCost:long;
 }
 
 

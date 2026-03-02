@@ -1,21 +1,21 @@
-include "dict__System_String_Torappu_CampaignData.fbs";
-include "dict__System_String_Torappu_CampaignGroupData.fbs";
-include "dict__System_String_Torappu_CampaignRegionData.fbs";
-include "dict__System_String_Torappu_CampaignZoneData.fbs";
-include "dict__System_String_Torappu_CampaignMissionData.fbs";
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_Torappu_CampaignData_.fbs";
+include "dict_2_System_String_Torappu_CampaignGroupData_.fbs";
+include "dict_2_System_String_Torappu_CampaignRegionData_.fbs";
+include "dict_2_System_String_Torappu_CampaignZoneData_.fbs";
+include "dict_2_System_String_Torappu_CampaignMissionData_.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 include "Torappu_CampaignConstTable.fbs";
 include "Torappu_CampaignRotateOpenTimeData.fbs";
 include "Torappu_CampaignTrainingOpenTimeData.fbs";
 include "Torappu_CampaignTrainingAllOpenTimeData.fbs";
 
 table Torappu_CampaignTable {
-	campaigns:[dict__System_String_Torappu_CampaignData];
-	campaignGroups:[dict__System_String_Torappu_CampaignGroupData];
-	campaignRegions:[dict__System_String_Torappu_CampaignRegionData];
-	campaignZones:[dict__System_String_Torappu_CampaignZoneData];
-	campaignMissions:[dict__System_String_Torappu_CampaignMissionData];
-	stageIndexInZoneMap:[dict__System_String_System_Int32];
+	campaigns:[dict_2_System_String_Torappu_CampaignData_];
+	campaignGroups:[dict_2_System_String_Torappu_CampaignGroupData_];
+	campaignRegions:[dict_2_System_String_Torappu_CampaignRegionData_];
+	campaignZones:[dict_2_System_String_Torappu_CampaignZoneData_];
+	campaignMissions:[dict_2_System_String_Torappu_CampaignMissionData_];
+	stageIndexInZoneMap:[dict_2_System_String_System_Int32_];
 	campaignConstTable:Torappu_CampaignConstTable;
 	campaignRotateStageOpenTimes:[Torappu_CampaignRotateOpenTimeData];
 	campaignTrainingStageOpenTimes:[Torappu_CampaignTrainingOpenTimeData];

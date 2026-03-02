@@ -1,10 +1,10 @@
 
-enum Torappu_ClimbTowerTowerType : int32 {
+enum Torappu_ClimbTowerTowerType : int {
 	TRAINING = 0,
 	NORMAL = 1
 }
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -96,14 +96,14 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
 
 
 table Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData {
-	levelNum:int32;
+	levelNum:int;
 	rewards:[Torappu_ItemBundle];
 }
 
@@ -111,8 +111,8 @@ table Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData {
 
 table Torappu_ClimbTowerSingleTowerData {
 	id:string;
-	sortId:int32;
-	stageNum:int32;
+	sortId:int;
+	stageNum:int;
 	name:string;
 	subName:string;
 	desc:string;
@@ -133,20 +133,20 @@ table Torappu_ClimbTowerSingleTowerData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerSingleTowerData {
+table dict_2_System_String_Torappu_ClimbTowerSingleTowerData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerSingleTowerData;
 }
 
 
 
-enum Torappu_ClimbTowerLevelType : int32 {
+enum Torappu_ClimbTowerLevelType : int {
 	NORMAL = 0,
 	HIGHLEVEL = 1,
 	BOSS = 2
 }
 
-enum Torappu_StageDropType : int32 {
+enum Torappu_StageDropType : int {
 	NONE = 0,
 	ONCE = 1,
 	NORMAL = 2,
@@ -165,8 +165,8 @@ table Torappu_WeightItemBundle {
 	id:string;
 	type:Torappu_ItemType;
 	dropType:Torappu_StageDropType;
-	count:int32;
-	weight:int32;
+	count:int;
+	weight:int;
 }
 
 
@@ -185,7 +185,7 @@ table Torappu_StageData_DisplayRewards {
 
 
 
-enum Torappu_OccPer : int32 {
+enum Torappu_OccPer : int {
 	ALWAYS = 0,
 	ALMOST = 1,
 	USUAL = 2,
@@ -207,13 +207,13 @@ table Torappu_StageData_DisplayDetailRewards {
 table Torappu_ClimbTowerDropDisplayInfo {
 	itemId:string;
 	type:Torappu_ItemType;
-	maxCount:int32;
-	minCount:int32;
+	maxCount:int;
+	minCount:int;
 }
 
 
 
-table dict__System_String_Torappu_ClimbTowerDropDisplayInfo {
+table dict_2_System_String_Torappu_ClimbTowerDropDisplayInfo_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerDropDisplayInfo;
 }
@@ -224,7 +224,7 @@ table Torappu_ClimbTowerLevelDropInfo {
 	passRewards:[Torappu_WeightItemBundleA_];
 	displayRewards:[Torappu_StageData_DisplayRewards];
 	displayDetailRewards:[Torappu_StageData_DisplayDetailRewards];
-	displayDropInfo:[dict__System_String_Torappu_ClimbTowerDropDisplayInfo];
+	displayDropInfo:[dict_2_System_String_Torappu_ClimbTowerDropDisplayInfo_];
 }
 
 
@@ -233,7 +233,7 @@ table Torappu_ClimbTowerSingleLevelData {
 	id:string;
 	levelId:string;
 	towerId:string;
-	layerNum:int32;
+	layerNum:int;
 	code:string;
 	name:string;
 	desc:string;
@@ -244,14 +244,14 @@ table Torappu_ClimbTowerSingleLevelData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerSingleLevelData {
+table dict_2_System_String_Torappu_ClimbTowerSingleLevelData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerSingleLevelData;
 }
 
 
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -265,7 +265,7 @@ enum Torappu_ProfessionCategory : int32 {
 	PIONEER = 512
 }
 
-enum Torappu_ClimbTowerTaticalBuffType : int32 {
+enum Torappu_ClimbTowerTaticalBuffType : int {
 	A = 0,
 	B = 1
 }
@@ -275,39 +275,39 @@ table Torappu_ClimbTowerTacticalBuffData {
 	desc:string;
 	profession:Torappu_ProfessionCategory;
 	isDefaultActive:bool;
-	sortId:int32;
+	sortId:int;
 	buffType:Torappu_ClimbTowerTaticalBuffType;
 }
 
 
 
-table dict__System_String_Torappu_ClimbTowerTacticalBuffData {
+table dict_2_System_String_Torappu_ClimbTowerTacticalBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerTacticalBuffData;
 }
 
 
 
-enum Torappu_ClimbTowerCardType : int32 {
+enum Torappu_ClimbTowerCardType : int {
 	SEASON = 0,
 	TOWER = 1
 }
 
-enum Torappu_BuildableType : int32 {
+enum Torappu_BuildableType : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_PlayerSideMask : uint8 {
+enum Torappu_PlayerSideMask : ubyte {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,
 	NONE = 255
 }
 
-enum Torappu_Battle_SideType : int32 {
+enum Torappu_Battle_SideType : int {
 	NONE = 0,
 	ALLY = 1,
 	ENEMY = 2,
@@ -316,7 +316,7 @@ enum Torappu_Battle_SideType : int32 {
 	ALL = 7
 }
 
-enum Torappu_TileData_HeightTypeMask : int32 {
+enum Torappu_TileData_HeightTypeMask : int {
 	NONE = 0,
 	LOWLAND = 1,
 	HIGHLAND = 2,
@@ -345,6 +345,14 @@ table Torappu_RuneData_Selector {
 
 
 
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
@@ -367,7 +375,7 @@ table Torappu_ClimbTowerMainCardData {
 	id:string;
 	type:Torappu_ClimbTowerCardType;
 	linkedTowerId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	desc:string;
 	subCardIds:[string];
@@ -377,7 +385,7 @@ table Torappu_ClimbTowerMainCardData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerMainCardData {
+table dict_2_System_String_Torappu_ClimbTowerMainCardData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerMainCardData;
 }
@@ -387,7 +395,7 @@ table dict__System_String_Torappu_ClimbTowerMainCardData {
 table Torappu_ClimbTowerSubCardData {
 	id:string;
 	mainCardId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	desc:string;
 	runeData:Torappu_RuneTable_PackedRuneData;
@@ -396,7 +404,7 @@ table Torappu_ClimbTowerSubCardData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerSubCardData {
+table dict_2_System_String_Torappu_ClimbTowerSubCardData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerSubCardData;
 }
@@ -413,7 +421,7 @@ table Torappu_ClimbTowerCurseCardData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerCurseCardData {
+table dict_2_System_String_Torappu_ClimbTowerCurseCardData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerCurseCardData;
 }
@@ -423,9 +431,9 @@ table dict__System_String_Torappu_ClimbTowerCurseCardData {
 table Torappu_ClimbTowerSeasonInfoData {
 	id:string;
 	name:string;
-	seasonNum:int32;
-	startTs:int64;
-	endTs:int64;
+	seasonNum:int;
+	startTs:long;
+	endTs:long;
 	towers:[string];
 	seasonCards:[string];
 	replicatedTowers:[string];
@@ -433,7 +441,7 @@ table Torappu_ClimbTowerSeasonInfoData {
 
 
 
-table dict__System_String_Torappu_ClimbTowerSeasonInfoData {
+table dict_2_System_String_Torappu_ClimbTowerSeasonInfoData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerSeasonInfoData;
 }
@@ -442,37 +450,37 @@ table dict__System_String_Torappu_ClimbTowerSeasonInfoData {
 
 table Torappu_ClimbTowerDetailConst {
 	unlockLevelId:string;
-	unlockModuleNumRequirement:int32;
+	unlockModuleNumRequirement:int;
 	lowerItemId:string;
-	lowerItemLimit:int32;
+	lowerItemLimit:int;
 	higherItemId:string;
-	higherItemLimit:int32;
-	initCharCount:int32;
-	charRecruitTimes:int32;
-	charRecruitChoiceCount:int32;
-	subcardStageSort:int32;
-	assistCharLimit:int32;
+	higherItemLimit:int;
+	initCharCount:int;
+	charRecruitTimes:int;
+	charRecruitChoiceCount:int;
+	subcardStageSort:int;
+	assistCharLimit:int;
 	firstClearTaskDesc:string;
 	subCardObtainDesc:string;
 	subGodCardUnlockDesc:string;
-	sweepStartTime:int64;
-	sweepOpenOrdinaryLayer:int32;
-	sweepOpenDifficultLayer:int32;
-	sweepCostCount:int32;
-	squadMemStartTime:int64;
+	sweepStartTime:long;
+	sweepOpenOrdinaryLayer:int;
+	sweepOpenDifficultLayer:int;
+	sweepCostCount:int;
+	squadMemStartTime:long;
 }
 
 
 
 table Torappu_ClimbTowerRewardInfo {
-	stageSort:int32;
-	lowerItemCount:int32;
-	higherItemCount:int32;
+	stageSort:int;
+	lowerItemCount:int;
+	higherItemCount:int;
 }
 
 
 
-enum Torappu_MissionType : int32 {
+enum Torappu_MissionType : int {
 	UNKNOWN = 0,
 	MAIN = 1,
 	DAILY = 2,
@@ -487,7 +495,7 @@ enum Torappu_MissionType : int32 {
 	SPECIAL_OPERATOR_WEEKLY = 11
 }
 
-enum Torappu_MissionItemBgType : int32 {
+enum Torappu_MissionItemBgType : int {
 	COMMON = 0,
 	Equipment = 1,
 	Char = 2
@@ -496,14 +504,14 @@ enum Torappu_MissionItemBgType : int32 {
 table Torappu_MissionDisplayRewards {
 	type:Torappu_ItemType;
 	id:string;
-	count:int32;
+	count:int;
 }
 
 
 
 table Torappu_ClimbTowerMissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	description:string;
 	type:Torappu_MissionType;
 	itemBgType:Torappu_MissionItemBgType;
@@ -515,19 +523,19 @@ table Torappu_ClimbTowerMissionData {
 	unlockParam:[string];
 	missionGroup:string;
 	toPage:string;
-	periodicalPoint:int32;
+	periodicalPoint:int;
 	rewards:[Torappu_MissionDisplayRewards];
 	backImagePath:string;
 	foldId:string;
 	haveSubMissionToUnlock:bool;
-	countEndTs:int64;
+	countEndTs:long;
 	bindGodCardId:string;
 	bindTowerId:string;
 }
 
 
 
-table dict__System_String_Torappu_ClimbTowerMissionData {
+table dict_2_System_String_Torappu_ClimbTowerMissionData_ {
 	dict_key:string;
 	dict_value:Torappu_ClimbTowerMissionData;
 }
@@ -539,16 +547,16 @@ table Torappu_MissionGroup {
 	title:string;
 	type:Torappu_MissionType;
 	preMissionGroup:string;
-	period:[int32];
+	period:[int];
 	rewards:[Torappu_MissionDisplayRewards];
 	missionIds:[string];
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionGroup {
+table dict_2_System_String_Torappu_MissionGroup_ {
 	dict_key:string;
 	dict_value:Torappu_MissionGroup;
 }
@@ -556,18 +564,18 @@ table dict__System_String_Torappu_MissionGroup {
 
 
 table Torappu_ClimbTowerTable {
-	towers:[dict__System_String_Torappu_ClimbTowerSingleTowerData];
-	levels:[dict__System_String_Torappu_ClimbTowerSingleLevelData];
-	tacticalBuffs:[dict__System_String_Torappu_ClimbTowerTacticalBuffData];
-	mainCards:[dict__System_String_Torappu_ClimbTowerMainCardData];
-	subCards:[dict__System_String_Torappu_ClimbTowerSubCardData];
-	curseCards:[dict__System_String_Torappu_ClimbTowerCurseCardData];
-	seasonInfos:[dict__System_String_Torappu_ClimbTowerSeasonInfoData];
+	towers:[dict_2_System_String_Torappu_ClimbTowerSingleTowerData_];
+	levels:[dict_2_System_String_Torappu_ClimbTowerSingleLevelData_];
+	tacticalBuffs:[dict_2_System_String_Torappu_ClimbTowerTacticalBuffData_];
+	mainCards:[dict_2_System_String_Torappu_ClimbTowerMainCardData_];
+	subCards:[dict_2_System_String_Torappu_ClimbTowerSubCardData_];
+	curseCards:[dict_2_System_String_Torappu_ClimbTowerCurseCardData_];
+	seasonInfos:[dict_2_System_String_Torappu_ClimbTowerSeasonInfoData_];
 	detailConst:Torappu_ClimbTowerDetailConst;
 	rewardInfoList:[Torappu_ClimbTowerRewardInfo];
 	rewardInfoListHardMode:[Torappu_ClimbTowerRewardInfo];
-	missionData:[dict__System_String_Torappu_ClimbTowerMissionData];
-	missionGroup:[dict__System_String_Torappu_MissionGroup];
+	missionData:[dict_2_System_String_Torappu_ClimbTowerMissionData_];
+	missionGroup:[dict_2_System_String_Torappu_MissionGroup_];
 }
 
 

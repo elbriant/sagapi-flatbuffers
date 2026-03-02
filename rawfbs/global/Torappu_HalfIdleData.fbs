@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_Act1VHalfIdleItemData.fbs";
+include "dict_2_System_String_Torappu_Act1VHalfIdleItemData_.fbs";
 
 table Torappu_HalfIdleData {
-	itemData:[dict__System_String_Torappu_Act1VHalfIdleItemData];
+	itemData:[dict_2_System_String_Torappu_Act1VHalfIdleItemData_];
 }
 
 

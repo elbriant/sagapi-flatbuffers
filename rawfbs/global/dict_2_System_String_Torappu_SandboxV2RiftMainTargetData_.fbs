@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2RiftMainTargetData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2RiftMainTargetData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2RiftMainTargetData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2RiftMainTargetData_;

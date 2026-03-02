@@ -1,10 +1,10 @@
 
 table Torappu_CampaignMissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	param:[string];
 	description:string;
-	breakFeeAdd:int32;
+	breakFeeAdd:int;
 }
 
 

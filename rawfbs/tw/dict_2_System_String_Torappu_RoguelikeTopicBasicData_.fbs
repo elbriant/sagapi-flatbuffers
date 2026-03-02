@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeTopicBasicData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeTopicBasicData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeTopicBasicData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeTopicBasicData_;

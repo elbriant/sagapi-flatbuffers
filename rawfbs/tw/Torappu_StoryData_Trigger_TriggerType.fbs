@@ -1,5 +1,5 @@
 
-enum Torappu_StoryData_Trigger_TriggerType : int32 {
+enum Torappu_StoryData_Trigger_TriggerType : int {
 	GAME_START = 0,
 	BEFORE_BATTLE = 1,
 	AFTER_BATTLE = 2,

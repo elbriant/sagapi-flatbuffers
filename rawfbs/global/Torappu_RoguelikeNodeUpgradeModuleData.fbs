@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_RoguelikeNodeUpgradeData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_.fbs";
 
 table Torappu_RoguelikeNodeUpgradeModuleData {
-	nodeUpgradeDataMap:[dict__System_String_Torappu_RoguelikeNodeUpgradeData];
+	nodeUpgradeDataMap:[dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_];
 }
 
 

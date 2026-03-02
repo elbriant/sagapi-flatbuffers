@@ -8,7 +8,7 @@ table Torappu_FlashAlertAfterStageDisplayMetaItem {
 	relateActId:string;
 	detailText:string;
 	isBasicInfo:bool;
-	times:int32;
+	times:int;
 }
 
 

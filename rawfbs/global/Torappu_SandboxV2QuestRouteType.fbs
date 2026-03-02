@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2QuestRouteType : int32 {
+enum Torappu_SandboxV2QuestRouteType : int {
 	NONE = 0,
 	ENEMY_RUSH = 1,
 	EVENT = 2,

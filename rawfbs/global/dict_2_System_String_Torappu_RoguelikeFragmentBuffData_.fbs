@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeFragmentBuffData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeFragmentBuffData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeFragmentBuffData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeFragmentBuffData_;

@@ -2,7 +2,7 @@ include "Torappu_FireworkData_FireworkType.fbs";
 
 table Torappu_FireworkData_AnimalData {
 	animalId:string;
-	sortId:int32;
+	sortId:int;
 	animalName:string;
 	animalBuffDesc1:string;
 	animalBuffDesc2:string;

@@ -9,8 +9,8 @@ table Torappu_SandboxV2NodeUpgradeData {
 	upgradeTips:string;
 	itemType:Torappu_SandboxPermItemType;
 	itemTag:Torappu_SandboxV2ItemTrapTag;
-	itemCnt:int32;
-	itemRarity:int32;
+	itemCnt:int;
+	itemRarity:int;
 }
 
 

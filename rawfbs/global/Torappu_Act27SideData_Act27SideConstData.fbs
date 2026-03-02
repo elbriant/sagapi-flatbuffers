@@ -16,7 +16,7 @@ table Torappu_Act27SideData_Act27SideConstData {
 	gain111:[float];
 	gain11None:[float];
 	gain12None:[float];
-	campaignEnemyCnt:int32;
+	campaignEnemyCnt:int;
 }
 
 

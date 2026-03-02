@@ -3,7 +3,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act25SideData_BattlePerformanceData {
 	itemId:string;
-	sortId:int32;
+	sortId:int;
 	itemName:string;
 	itemIcon:string;
 	itemDesc:string;

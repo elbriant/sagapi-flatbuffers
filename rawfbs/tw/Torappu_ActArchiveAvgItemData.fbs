@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveAvgItemData {
 	avgId:string;
-	avgSortId:int32;
+	avgSortId:int;
 }
 
 

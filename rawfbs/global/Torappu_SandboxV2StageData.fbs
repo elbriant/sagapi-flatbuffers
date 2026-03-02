@@ -5,8 +5,8 @@ table Torappu_SandboxV2StageData {
 	code:string;
 	name:string;
 	description:string;
-	actionCost:int32;
-	actionCostEnemyRush:int32;
+	actionCost:int;
+	actionCostEnemyRush:int;
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2CraftItemType : int32 {
+enum Torappu_SandboxV2CraftItemType : int {
 	BASE_BUILDING = 0,
 	TACTICAL = 1,
 	COMBAT_BUILDING = 2

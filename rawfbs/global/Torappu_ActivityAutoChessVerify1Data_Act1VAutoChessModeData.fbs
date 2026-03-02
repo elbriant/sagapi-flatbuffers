@@ -2,7 +2,7 @@ include "Torappu_Act1VAutoChessModeType.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeData {
 	modeId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	desc:string;
 	preposedMode:string;

@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2TrapItemType : int32 {
+enum Torappu_SandboxV2TrapItemType : int {
 	NONE = 0,
 	BATTLE = 1,
 	TACTICAL = 2,

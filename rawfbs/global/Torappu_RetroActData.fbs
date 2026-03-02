@@ -5,9 +5,9 @@ table Torappu_RetroActData {
 	retroId:string;
 	type:Torappu_RetroType;
 	linkedActId:[string];
-	startTime:int64;
-	trailStartTime:int64;
-	index:int32;
+	startTime:long;
+	trailStartTime:long;
+	index:int;
 	name:string;
 	haveTrail:bool;
 	customActId:string;

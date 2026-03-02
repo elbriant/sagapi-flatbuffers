@@ -1,5 +1,5 @@
 
-enum Torappu_NameCardV2SkinType : int32 {
+enum Torappu_NameCardV2SkinType : int {
 	NONE = 0,
 	MAINLINE = 1,
 	ACTIVITY = 2

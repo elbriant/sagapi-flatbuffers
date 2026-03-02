@@ -1,5 +1,5 @@
 
-enum Torappu_AbnormalCombo : int32 {
+enum Torappu_AbnormalCombo : int {
 	SLEEPING = 0,
 	SHELTERING = 1,
 	E_NUM = 2

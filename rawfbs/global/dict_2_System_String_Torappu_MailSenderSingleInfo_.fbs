@@ -1,0 +1,9 @@
+include "Torappu_MailSenderSingleInfo.fbs";
+
+table dict_2_System_String_Torappu_MailSenderSingleInfo_ {
+	dict_key:string;
+	dict_value:Torappu_MailSenderSingleInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_MailSenderSingleInfo_;

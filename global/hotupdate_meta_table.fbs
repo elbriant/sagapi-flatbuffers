@@ -1,15 +1,15 @@
 
-enum Torappu_HotUpdateMetaPicData_PicType : int32 {
+enum Torappu_HotUpdateMetaPicData_PicType : int {
 	NONE = 0,
 	SKIN = 1
 }
 
 table Torappu_HotUpdateMetaPicData {
 	picId:string;
-	groupId:int32;
-	sortId:int32;
-	startTime:int64;
-	endTime:int64;
+	groupId:int;
+	sortId:int;
+	startTime:long;
+	endTime:long;
 	textList:[string];
 	picType:Torappu_HotUpdateMetaPicData_PicType;
 	logoId:string;
@@ -21,8 +21,8 @@ table Torappu_HotUpdateMetaPicData {
 table Torappu_HotUpdateMetaMovieData {
 	videoId:string;
 	videoPath:string;
-	endTime:int64;
-	sortId:int32;
+	endTime:long;
+	sortId:int;
 }
 
 

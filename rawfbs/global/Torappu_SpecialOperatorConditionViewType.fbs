@@ -1,5 +1,5 @@
 
-enum Torappu_SpecialOperatorConditionViewType : int32 {
+enum Torappu_SpecialOperatorConditionViewType : int {
 	TASK = 0,
 	EVOLVEPHASE = 1
 }

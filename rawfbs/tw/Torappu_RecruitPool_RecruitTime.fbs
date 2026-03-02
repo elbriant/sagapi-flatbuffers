@@ -1,7 +1,7 @@
 
 table Torappu_RecruitPool_RecruitTime {
-	timeLength:int32;
-	recruitPrice:int32;
+	timeLength:int;
+	recruitPrice:int;
 }
 
 

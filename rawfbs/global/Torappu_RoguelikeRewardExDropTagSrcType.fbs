@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeRewardExDropTagSrcType : int32 {
+enum Torappu_RoguelikeRewardExDropTagSrcType : int {
 	NONE = 0,
 	TREASURE = 1,
 	TOTEM = 2,

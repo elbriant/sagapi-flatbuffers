@@ -2,8 +2,8 @@
 table Torappu_SandboxV2ArchiveAchievementData {
 	id:string;
 	achievementType:[string];
-	raritySortId:int32;
-	sortId:int32;
+	raritySortId:int;
+	sortId:int;
 	name:string;
 	desc:string;
 }

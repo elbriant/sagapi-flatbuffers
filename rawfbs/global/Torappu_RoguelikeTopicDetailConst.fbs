@@ -1,14 +1,14 @@
-include "dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData.fbs";
-include "dict__System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData.fbs";
-include "dict__System_Int32_System_String.fbs";
-include "dict__System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData.fbs";
+include "dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_.fbs";
+include "dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_.fbs";
+include "dict_2_System_Int32_System_String_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_.fbs";
 include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RoguelikeTopicDetailConst {
-	playerLevelTable:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData];
-	charUpgradeTable:[dict__System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData];
-	difficultyUpgradeRelicDescTable:[dict__System_Int32_System_String];
-	predefinedLevelTable:[dict__System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData];
+	playerLevelTable:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
+	charUpgradeTable:[dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_];
+	difficultyUpgradeRelicDescTable:[dict_2_System_Int32_System_String_];
+	predefinedLevelTable:[dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_];
 	tokenBpId:string;
 	tokenOuterBuffId:string;
 	spOperatorLockedMessage:string;
@@ -34,15 +34,15 @@ table Torappu_RoguelikeTopicDetailConst {
 	challengeTaskRewardName:string;
 	challengeTaskModeName:string;
 	challengeTaskName:string;
-	outerBuffTokenSum:int32;
+	outerBuffTokenSum:int;
 	needAllFrontNode:bool;
 	showBlurBack:bool;
-	endingIconBorderDifficulty:int32;
-	endingIconBorderCount:int32;
+	endingIconBorderDifficulty:int;
+	endingIconBorderCount:int;
 	copySeedModeInfo:string;
 	copySucceededTextHint:string;
-	historicalRecordsCount:int32;
-	historicalRecordsStartTime:int64;
+	historicalRecordsCount:int;
+	historicalRecordsStartTime:long;
 	historicalRecordsMode:Torappu_RoguelikeTopicMode;
 }
 

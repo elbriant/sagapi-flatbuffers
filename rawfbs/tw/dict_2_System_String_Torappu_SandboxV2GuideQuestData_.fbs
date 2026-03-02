@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2GuideQuestData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2GuideQuestData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2GuideQuestData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2GuideQuestData_;

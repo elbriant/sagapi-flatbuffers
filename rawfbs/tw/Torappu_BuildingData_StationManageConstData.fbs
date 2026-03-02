@@ -11,8 +11,8 @@ table Torappu_BuildingData_StationManageConstData {
 	cantUseNoPerson:string;
 	cantUseWorking:string;
 	queueCleared:string;
-	updateTime:int64;
-	dormLockUpdateTime:int64;
+	updateTime:long;
+	dormLockUpdateTime:long;
 }
 
 

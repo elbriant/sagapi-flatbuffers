@@ -1,7 +1,7 @@
 
 table Torappu_Act45SideData_Act45SideCharData {
 	charId:string;
-	sortId:int32;
+	sortId:int;
 	charIllustId:string;
 	charCardId:string;
 	charName:string;

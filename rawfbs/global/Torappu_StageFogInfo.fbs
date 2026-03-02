@@ -11,7 +11,7 @@ table Torappu_StageFogInfo {
 	lockDesc:string;
 	unlockItemId:string;
 	unlockItemType:Torappu_ItemType;
-	unlockItemNum:int32;
+	unlockItemNum:int;
 	preposedStageId:string;
 	preposedLockId:string;
 }

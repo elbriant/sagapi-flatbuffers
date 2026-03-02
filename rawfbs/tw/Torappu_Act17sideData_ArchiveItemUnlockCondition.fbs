@@ -1,5 +1,5 @@
 
-enum Torappu_Act17sideData_ArchiveItemUnlockCondition : int32 {
+enum Torappu_Act17sideData_ArchiveItemUnlockCondition : int {
 	NONE = 0,
 	STAGE = 1,
 	NODE = 2

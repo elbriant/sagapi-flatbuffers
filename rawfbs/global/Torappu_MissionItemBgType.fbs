@@ -1,5 +1,5 @@
 
-enum Torappu_MissionItemBgType : int32 {
+enum Torappu_MissionItemBgType : int {
 	COMMON = 0,
 	Equipment = 1,
 	Char = 2

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveEndbookGroupData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveEndbookGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveEndbookGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveEndbookGroupData_;

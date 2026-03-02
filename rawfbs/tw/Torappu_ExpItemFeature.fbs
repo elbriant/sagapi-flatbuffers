@@ -1,7 +1,7 @@
 
 table Torappu_ExpItemFeature {
 	id:string;
-	gainExp:int32;
+	gainExp:int;
 }
 
 

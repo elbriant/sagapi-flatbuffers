@@ -1,8 +1,8 @@
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_Act1VWeightedResItemBundle {
 	weight:float;
-	resources:[dict__System_String_System_Int32];
+	resources:[dict_2_System_String_System_Int32_];
 }
 
 

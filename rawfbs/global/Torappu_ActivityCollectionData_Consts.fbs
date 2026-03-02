@@ -6,7 +6,7 @@ table Torappu_ActivityCollectionData_Consts {
 	jumpBtnParam1:string;
 	jumpBtnParam2:string;
 	dailyTaskDisabled:bool;
-	dailyTaskStartTime:int64;
+	dailyTaskStartTime:long;
 	isSimpleMode:bool;
 }
 

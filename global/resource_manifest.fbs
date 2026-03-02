@@ -1,16 +1,16 @@
 
 table Torappu_Resource_ResourceManifest_BundleMeta {
 	name:string;
-	props:int32;
-	sccIndex:int32;
-	allDependencies:[int32];
+	props:int;
+	sccIndex:int;
+	allDependencies:[int];
 }
 
 
 
 table Torappu_Resource_ResourceManifest_AssetToBundleMeta {
 	assetName:string;
-	bundleIndex:int32;
+	bundleIndex:int;
 	name:string;
 	path:string;
 }
@@ -18,7 +18,7 @@ table Torappu_Resource_ResourceManifest_AssetToBundleMeta {
 
 
 table Torappu_Resource_ResourceManifest {
-	rawCount:int32;
+	rawCount:int;
 	bundles:[Torappu_Resource_ResourceManifest_BundleMeta];
 	assetToBundleList:[Torappu_Resource_ResourceManifest_AssetToBundleMeta];
 }

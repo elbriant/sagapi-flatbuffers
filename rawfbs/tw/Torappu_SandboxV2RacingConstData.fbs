@@ -1,7 +1,7 @@
 
 table Torappu_SandboxV2RacingConstData {
 	attributeNameList:[string];
-	racerMaxValue:[int32];
+	racerMaxValue:[int];
 	bagFullHintPercent:float;
 	tempBagFullHintPercent:float;
 	bagName:string;

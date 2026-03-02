@@ -5,8 +5,8 @@ include "Torappu_HandbookAvgData.fbs";
 table Torappu_HandbookAvgGroupData {
 	storySetId:string;
 	storySetName:string;
-	sortId:int32;
-	storyGetTime:int64;
+	sortId:int;
+	storyGetTime:long;
 	rewardItem:[Torappu_ItemBundle];
 	unlockParam:[Torappu_HandbookUnlockParam];
 	avgList:[Torappu_HandbookAvgData];

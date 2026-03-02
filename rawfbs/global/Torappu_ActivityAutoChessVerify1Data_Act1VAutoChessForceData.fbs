@@ -2,7 +2,7 @@ include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData {
 	forceId:string;
-	sortId:int32;
+	sortId:int;
 	forceName:string;
 	forceIconId:string;
 	forceDesc:string;

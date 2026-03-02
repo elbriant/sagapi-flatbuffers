@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_FurnitureType : int32 {
+enum Torappu_BuildingData_FurnitureType : int {
 	FLOOR = 0,
 	CARPET = 1,
 	SEATING = 2,

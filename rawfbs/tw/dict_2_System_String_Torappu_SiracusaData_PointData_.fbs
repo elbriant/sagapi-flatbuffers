@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_PointData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_PointData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_PointData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_PointData_;

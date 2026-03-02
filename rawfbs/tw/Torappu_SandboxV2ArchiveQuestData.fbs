@@ -5,7 +5,7 @@ include "Torappu_SandboxV2ArchiveQuestZoneData.fbs";
 
 table Torappu_SandboxV2ArchiveQuestData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	questType:Torappu_SandboxV2ArchiveQuestType;
 	name:string;
 	desc:string;

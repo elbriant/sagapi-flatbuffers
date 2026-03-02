@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorLinePosData.fbs";
+
+table dict_2_System_String_Torappu_SpecialOperatorLinePosData_ {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorLinePosData;
+}
+
+
+root_type dict_2_System_String_Torappu_SpecialOperatorLinePosData_;

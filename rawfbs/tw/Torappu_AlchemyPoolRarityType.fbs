@@ -1,5 +1,5 @@
 
-enum Torappu_AlchemyPoolRarityType : int32 {
+enum Torappu_AlchemyPoolRarityType : int {
 	NONE = -1,
 	NORMAL = 0,
 	RARE = 1,

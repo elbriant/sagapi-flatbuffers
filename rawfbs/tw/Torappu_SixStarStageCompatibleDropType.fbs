@@ -1,4 +1,4 @@
 
-enum Torappu_SixStarStageCompatibleDropType : int32 {
+enum Torappu_SixStarStageCompatibleDropType : int {
 	COMPLETE_ONLY = 0
 }

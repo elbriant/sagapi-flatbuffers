@@ -1,5 +1,5 @@
 
-enum Torappu_DataUnlockType : int32 {
+enum Torappu_DataUnlockType : int {
 	DIRECT = 0,
 	AWAKE = 1,
 	FAVOR = 2,
@@ -30,7 +30,7 @@ table Torappu_HandBookStoryViewData {
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -126,7 +126,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -144,7 +144,7 @@ table Torappu_HandbookUnlockParam {
 table Torappu_HandbookAvgData {
 	storyId:string;
 	storySetId:string;
-	storySort:int32;
+	storySort:int;
 	storyCanShow:bool;
 	storyIntro:string;
 	storyInfo:string;
@@ -156,8 +156,8 @@ table Torappu_HandbookAvgData {
 table Torappu_HandbookAvgGroupData {
 	storySetId:string;
 	storySetName:string;
-	sortId:int32;
-	storyGetTime:int64;
+	sortId:int;
+	storyGetTime:long;
 	rewardItem:[Torappu_ItemBundle];
 	unlockParam:[Torappu_HandbookUnlockParam];
 	avgList:[Torappu_HandbookAvgData];
@@ -176,14 +176,14 @@ table Torappu_HandbookInfoData {
 
 
 
-table dict__System_String_Torappu_HandbookInfoData {
+table dict_2_System_String_Torappu_HandbookInfoData_ {
 	dict_key:string;
 	dict_value:Torappu_HandbookInfoData;
 }
 
 
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -197,7 +197,7 @@ enum Torappu_ProfessionCategory : int32 {
 	PIONEER = 512
 }
 
-enum Torappu_IllustNPCResType : int32 {
+enum Torappu_IllustNPCResType : int {
 	NONE = 0,
 	NPC = 1,
 	CHAR = 2
@@ -211,7 +211,7 @@ table Torappu_NPCUnlock {
 
 
 
-table dict__System_String_Torappu_NPCUnlock {
+table dict_2_System_String_Torappu_NPCUnlock_ {
 	dict_key:string;
 	dict_value:Torappu_NPCUnlock;
 }
@@ -232,12 +232,12 @@ table Torappu_NPCData {
 	teamId:string;
 	resType:Torappu_IllustNPCResType;
 	npcShowAudioInfoFlag:bool;
-	unlockDict:[dict__System_String_Torappu_NPCUnlock];
+	unlockDict:[dict_2_System_String_Torappu_NPCUnlock_];
 }
 
 
 
-table dict__System_String_Torappu_NPCData {
+table dict_2_System_String_Torappu_NPCData_ {
 	dict_key:string;
 	dict_value:Torappu_NPCData;
 }
@@ -246,23 +246,23 @@ table dict__System_String_Torappu_NPCData {
 
 table Torappu_HandbookTeamMission {
 	id:string;
-	sort:int32;
+	sort:int;
 	powerId:string;
 	powerName:string;
 	item:Torappu_ItemBundle;
-	favorPoint:int32;
+	favorPoint:int;
 }
 
 
 
-table dict__System_String_Torappu_HandbookTeamMission {
+table dict_2_System_String_Torappu_HandbookTeamMission_ {
 	dict_key:string;
 	dict_value:Torappu_HandbookTeamMission;
 }
 
 
 
-enum Torappu_HandbookDisplayCondition_DisplayType : int32 {
+enum Torappu_HandbookDisplayCondition_DisplayType : int {
 	DISPLAY_IF_CHAREXIST = 0,
 	INVISIBLE_IF_CHAREXIST = 1
 }
@@ -275,7 +275,7 @@ table Torappu_HandbookDisplayCondition {
 
 
 
-table dict__System_String_Torappu_HandbookDisplayCondition {
+table dict_2_System_String_Torappu_HandbookDisplayCondition_ {
 	dict_key:string;
 	dict_value:Torappu_HandbookDisplayCondition;
 }
@@ -293,12 +293,12 @@ table Torappu_HandbookStoryStageData {
 	description:string;
 	unlockParam:[Torappu_HandbookUnlockParam];
 	rewardItem:[Torappu_ItemBundle];
-	stageGetTime:int64;
+	stageGetTime:long;
 }
 
 
 
-table dict__System_String_Torappu_HandbookStoryStageData {
+table dict_2_System_String_Torappu_HandbookStoryStageData_ {
 	dict_key:string;
 	dict_value:Torappu_HandbookStoryStageData;
 }
@@ -306,18 +306,18 @@ table dict__System_String_Torappu_HandbookStoryStageData {
 
 
 table Torappu_HandbookStageTimeData {
-	timestamp:int64;
+	timestamp:long;
 	charSet:[string];
 }
 
 
 
 table Torappu_HandbookInfoTable {
-	handbookDict:[dict__System_String_Torappu_HandbookInfoData];
-	npcDict:[dict__System_String_Torappu_NPCData];
-	teamMissionList:[dict__System_String_Torappu_HandbookTeamMission];
-	handbookDisplayConditionList:[dict__System_String_Torappu_HandbookDisplayCondition];
-	handbookStageData:[dict__System_String_Torappu_HandbookStoryStageData];
+	handbookDict:[dict_2_System_String_Torappu_HandbookInfoData_];
+	npcDict:[dict_2_System_String_Torappu_NPCData_];
+	teamMissionList:[dict_2_System_String_Torappu_HandbookTeamMission_];
+	handbookDisplayConditionList:[dict_2_System_String_Torappu_HandbookDisplayCondition_];
+	handbookStageData:[dict_2_System_String_Torappu_HandbookStoryStageData_];
 	handbookStageTime:[Torappu_HandbookStageTimeData];
 }
 

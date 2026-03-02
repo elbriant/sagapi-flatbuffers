@@ -1,0 +1,9 @@
+include "Torappu_CampaignGroupData.fbs";
+
+table dict_2_System_String_Torappu_CampaignGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_CampaignGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_CampaignGroupData_;

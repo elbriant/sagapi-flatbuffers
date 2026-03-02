@@ -1,9 +1,9 @@
 
 table Torappu_AprilFoolScoreData {
 	stageId:string;
-	sortId:int32;
+	sortId:int;
 	playerName:string;
-	playerScore:int64;
+	playerScore:long;
 }
 
 

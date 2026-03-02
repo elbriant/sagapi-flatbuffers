@@ -1,8 +1,8 @@
 
 table Torappu_VersusCheckInData_VoteData {
-	plSweetNum:int32;
-	plSaltyNum:int32;
-	plTaste:int32;
+	plSweetNum:int;
+	plSaltyNum:int;
+	plTaste:int;
 }
 
 

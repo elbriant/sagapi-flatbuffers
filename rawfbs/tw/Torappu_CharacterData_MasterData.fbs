@@ -1,7 +1,7 @@
 include "Torappu_TalentData.fbs";
 
 table Torappu_CharacterData_MasterData {
-	level:int32;
+	level:int;
 	masterId:string;
 	talentData:Torappu_TalentData;
 }

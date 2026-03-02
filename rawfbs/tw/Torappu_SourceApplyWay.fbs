@@ -1,5 +1,5 @@
 
-enum Torappu_SourceApplyWay : int32 {
+enum Torappu_SourceApplyWay : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,

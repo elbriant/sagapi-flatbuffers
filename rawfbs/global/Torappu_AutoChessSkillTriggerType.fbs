@@ -1,5 +1,5 @@
 
-enum Torappu_AutoChessSkillTriggerType : int32 {
+enum Torappu_AutoChessSkillTriggerType : int {
 	DEFAULT = 0,
 	ALWAYS = 1,
 	SEARCH = 2,

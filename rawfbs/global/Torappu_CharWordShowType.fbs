@@ -1,5 +1,5 @@
 
-enum Torappu_CharWordShowType : int32 {
+enum Torappu_CharWordShowType : int {
 	HOME_SHOW = 0,
 	HOME_PLACE = 1,
 	HOME_WAIT = 2,

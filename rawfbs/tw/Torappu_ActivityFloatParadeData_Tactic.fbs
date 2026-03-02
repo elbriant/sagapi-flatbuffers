@@ -1,11 +1,11 @@
-include "list_dict___2_System_String_System_Single_.fbs";
+include "Torappu_ListDict_2_System_String_System_Single_.fbs";
 
 table Torappu_ActivityFloatParadeData_Tactic {
-	id:int32;
+	id:int;
 	name:string;
 	packName:string;
 	briefName:string;
-	rewardVar:[list_dict___2_System_String_System_Single_];
+	rewardVar:[Torappu_ListDict_2_System_String_System_Single_];
 }
 
 

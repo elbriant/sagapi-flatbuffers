@@ -1,0 +1,9 @@
+include "Torappu_RecalRuneSeasonData.fbs";
+
+table dict_2_System_String_Torappu_RecalRuneSeasonData_ {
+	dict_key:string;
+	dict_value:Torappu_RecalRuneSeasonData;
+}
+
+
+root_type dict_2_System_String_Torappu_RecalRuneSeasonData_;

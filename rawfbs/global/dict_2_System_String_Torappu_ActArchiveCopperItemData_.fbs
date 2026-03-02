@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveCopperItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveCopperItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveCopperItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveCopperItemData_;

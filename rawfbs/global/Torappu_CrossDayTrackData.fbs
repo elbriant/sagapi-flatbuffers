@@ -1,6 +1,6 @@
 
 table Torappu_CrossDayTrackData {
-	updateEndTs:int64;
+	updateEndTs:long;
 	id:string;
 }
 

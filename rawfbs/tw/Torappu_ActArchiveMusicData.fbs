@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveMusicItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveMusicItemData_.fbs";
 
 table Torappu_ActArchiveMusicData {
-	musics:[dict__System_String_Torappu_ActArchiveMusicItemData];
+	musics:[dict_2_System_String_Torappu_ActArchiveMusicItemData_];
 }
 
 

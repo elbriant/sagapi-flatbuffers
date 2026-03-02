@@ -1,0 +1,9 @@
+include "Torappu_Act42SideData_Act42SideGunData.fbs";
+
+table dict_2_System_String_Torappu_Act42SideData_Act42SideGunData_ {
+	dict_key:string;
+	dict_value:Torappu_Act42SideData_Act42SideGunData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act42SideData_Act42SideGunData_;

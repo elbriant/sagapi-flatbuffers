@@ -2,7 +2,7 @@
 table Torappu_SubProfessionData {
 	subProfessionId:string;
 	subProfessionName:string;
-	subProfessionCatagory:int32;
+	subProfessionCatagory:int;
 }
 
 

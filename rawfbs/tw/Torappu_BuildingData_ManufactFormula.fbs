@@ -6,9 +6,9 @@ include "Torappu_BuildingData_ManufactFormula_UnlockStage.fbs";
 table Torappu_BuildingData_ManufactFormula {
 	formulaId:string;
 	itemId:string;
-	count:int32;
-	weight:int32;
-	costPoint:int64;
+	count:int;
+	weight:int;
+	costPoint:long;
 	formulaType:Torappu_BuildingData_FormulaItemType;
 	buffType:string;
 	costs:[Torappu_ItemBundle];

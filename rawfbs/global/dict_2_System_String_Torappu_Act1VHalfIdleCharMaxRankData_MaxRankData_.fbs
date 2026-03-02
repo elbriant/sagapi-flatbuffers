@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData.fbs";
+
+table dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_;

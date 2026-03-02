@@ -3,7 +3,7 @@ include "Torappu_OccPer.fbs";
 table Torappu_ItemData_StageDropInfo {
 	stageId:string;
 	occPer:Torappu_OccPer;
-	sortId:int32;
+	sortId:int;
 }
 
 

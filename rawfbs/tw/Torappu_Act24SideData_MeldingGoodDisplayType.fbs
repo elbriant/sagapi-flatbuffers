@@ -1,5 +1,5 @@
 
-enum Torappu_Act24SideData_MeldingGoodDisplayType : int32 {
+enum Torappu_Act24SideData_MeldingGoodDisplayType : int {
 	NONE = 0,
 	RARE_1 = 1,
 	RARE_2 = 2,

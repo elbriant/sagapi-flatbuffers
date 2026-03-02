@@ -1,0 +1,9 @@
+include "Torappu_ActMultiV3DiffStarRewardData.fbs";
+
+table dict_2_System_String_Torappu_ActMultiV3DiffStarRewardData_ {
+	dict_key:string;
+	dict_value:Torappu_ActMultiV3DiffStarRewardData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActMultiV3DiffStarRewardData_;

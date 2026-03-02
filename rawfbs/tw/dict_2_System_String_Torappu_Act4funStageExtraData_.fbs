@@ -1,0 +1,9 @@
+include "Torappu_Act4funStageExtraData.fbs";
+
+table dict_2_System_String_Torappu_Act4funStageExtraData_ {
+	dict_key:string;
+	dict_value:Torappu_Act4funStageExtraData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act4funStageExtraData_;

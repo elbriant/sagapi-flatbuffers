@@ -1,0 +1,9 @@
+include "Torappu_VersusCheckInData_DailyInfo.fbs";
+
+table dict_2_System_Int32_Torappu_VersusCheckInData_DailyInfo_ {
+	dict_key:int;
+	dict_value:Torappu_VersusCheckInData_DailyInfo;
+}
+
+
+root_type dict_2_System_Int32_Torappu_VersusCheckInData_DailyInfo_;

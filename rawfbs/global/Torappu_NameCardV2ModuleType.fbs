@@ -1,5 +1,5 @@
 
-enum Torappu_NameCardV2ModuleType : int32 {
+enum Torappu_NameCardV2ModuleType : int {
 	NONE = 0,
 	BACKGROUND = 1,
 	ILLUST = 2,

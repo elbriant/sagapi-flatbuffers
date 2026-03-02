@@ -8,8 +8,8 @@ table Torappu_ActArchiveResData_NewsArchiveResItemData {
 	newsFormat:Torappu_ActArchiveResData_NewsFormatData;
 	newsText:string;
 	newsAuthor:string;
-	paramP0:int32;
-	paramK:int32;
+	paramP0:int;
+	paramK:int;
 	paramR:float;
 	newsLines:[Torappu_ActArchiveResData_ActivityNewsLine];
 }

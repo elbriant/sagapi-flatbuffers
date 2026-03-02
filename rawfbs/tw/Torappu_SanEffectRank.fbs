@@ -1,5 +1,5 @@
 
-enum Torappu_SanEffectRank : int32 {
+enum Torappu_SanEffectRank : int {
 	SAN_EFFECT_0 = 0,
 	SAN_EFFECT_1 = 1,
 	SAN_EFFECT_2 = 2,

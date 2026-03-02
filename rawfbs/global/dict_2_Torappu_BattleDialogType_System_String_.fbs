@@ -1,0 +1,9 @@
+include "Torappu_BattleDialogType.fbs";
+
+table dict_2_Torappu_BattleDialogType_System_String_ {
+	dict_key:Torappu_BattleDialogType;
+	dict_value:string;
+}
+
+
+root_type dict_2_Torappu_BattleDialogType_System_String_;

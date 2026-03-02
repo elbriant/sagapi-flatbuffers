@@ -1,5 +1,5 @@
 
-enum Torappu_ActivityDisplayType : int32 {
+enum Torappu_ActivityDisplayType : int {
 	NONE = 0,
 	SIDESTORY = 1,
 	BRANCHLINE = 2,

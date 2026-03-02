@@ -2,7 +2,7 @@ include "Torappu_ShopRouteTarget.fbs";
 
 table Torappu_ShopRecommendData {
 	imgId:string;
-	slotIndex:int32;
+	slotIndex:int;
 	cmd:Torappu_ShopRouteTarget;
 	param1:string;
 	param2:string;

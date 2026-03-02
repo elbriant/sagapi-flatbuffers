@@ -2,7 +2,7 @@
 table Torappu_NameCardV2Consts {
 	defaultNameCardSkinId:string;
 	canUidHide:bool;
-	removableModuleMaxCount:int32;
+	removableModuleMaxCount:int;
 }
 
 

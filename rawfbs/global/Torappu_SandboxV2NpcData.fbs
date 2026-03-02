@@ -1,18 +1,18 @@
 include "Torappu_SandboxV2NpcType.fbs";
-include "dict__Torappu_BattleDialogType_System_String.fbs";
+include "dict_2_Torappu_BattleDialogType_System_String_.fbs";
 include "Torappu_SharedConsts_Direction.fbs";
 
 table Torappu_SandboxV2NpcData {
 	npcId:string;
 	trapId:string;
 	npcType:Torappu_SandboxV2NpcType;
-	dialogIds:[dict__Torappu_BattleDialogType_System_String];
-	npcLocation:[int32];
+	dialogIds:[dict_2_Torappu_BattleDialogType_System_String_];
+	npcLocation:[int];
 	npcOrientation:Torappu_SharedConsts_Direction;
 	picId:string;
 	picName:string;
 	showPic:bool;
-	reactSkillIndex:int32;
+	reactSkillIndex:int;
 }
 
 

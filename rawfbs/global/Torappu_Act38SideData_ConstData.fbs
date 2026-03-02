@@ -4,7 +4,7 @@ table Torappu_Act38SideData_ConstData {
 	puzzleMapAnimGroupId:string;
 	puzzleCrossDayTrackId:string;
 	puzzleListText:string;
-	puzzleRewardNum:int32;
+	puzzleRewardNum:int;
 }
 
 

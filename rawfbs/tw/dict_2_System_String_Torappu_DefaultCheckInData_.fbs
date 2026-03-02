@@ -1,0 +1,9 @@
+include "Torappu_DefaultCheckInData.fbs";
+
+table dict_2_System_String_Torappu_DefaultCheckInData_ {
+	dict_key:string;
+	dict_value:Torappu_DefaultCheckInData;
+}
+
+
+root_type dict_2_System_String_Torappu_DefaultCheckInData_;

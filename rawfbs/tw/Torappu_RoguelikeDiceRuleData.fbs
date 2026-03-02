@@ -2,7 +2,7 @@ include "Torappu_DiceResultClass.fbs";
 include "Torappu_DiceResultShowType.fbs";
 
 table Torappu_RoguelikeDiceRuleData {
-	dicePointMax:int32;
+	dicePointMax:int;
 	diceResultClass:Torappu_DiceResultClass;
 	diceGroupId:string;
 	diceEventId:string;

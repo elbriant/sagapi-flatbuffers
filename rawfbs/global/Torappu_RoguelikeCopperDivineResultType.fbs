@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCopperDivineResultType : int32 {
+enum Torappu_RoguelikeCopperDivineResultType : int {
 	NONE = 0,
 	GOOD = 1,
 	NORMAL = 2,

@@ -5,9 +5,9 @@ table Torappu_CrossAppShareMission {
 	shareMissionId:string;
 	missionType:Torappu_CrossAppShareMissionType;
 	relateActivityId:string;
-	startTime:int64;
-	endTime:int64;
-	limitCount:int32;
+	startTime:long;
+	endTime:long;
+	limitCount:int;
 	condTemplate:string;
 	condParam:[string];
 	rewardsList:[Torappu_MissionDisplayRewards];

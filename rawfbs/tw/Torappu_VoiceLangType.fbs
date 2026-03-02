@@ -1,5 +1,5 @@
 
-enum Torappu_VoiceLangType : int32 {
+enum Torappu_VoiceLangType : int {
 	NONE = 0,
 	JP = 1,
 	CN_MANDARIN = 2,

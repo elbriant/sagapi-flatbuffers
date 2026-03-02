@@ -1,9 +1,9 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActMultiV3WeeklyPhotoRewardData {
-	order:int32;
+	order:int;
 	titleDesc:string;
-	unlockTime:int64;
+	unlockTime:long;
 	rewards:[Torappu_ItemBundle];
 }
 

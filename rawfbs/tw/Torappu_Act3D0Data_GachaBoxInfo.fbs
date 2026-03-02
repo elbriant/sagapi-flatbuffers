@@ -6,7 +6,7 @@ table Torappu_Act3D0Data_GachaBoxInfo {
 	boxType:Torappu_Act3D0Data_GachaBoxType;
 	keyGoodId:string;
 	tokenId:Torappu_ItemBundle;
-	tokenNumOnce:int32;
+	tokenNumOnce:int;
 	unlockImg:string;
 	nextGachaBoxInfoId:string;
 }

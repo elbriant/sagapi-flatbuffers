@@ -2,10 +2,10 @@
 table Torappu_RL02DevelopmentLine {
 	fromNode:string;
 	toNode:string;
-	fromNodeP:int32;
-	fromNodeR:int32;
-	toNodeP:int32;
-	toNodeR:int32;
+	fromNodeP:int;
+	fromNodeR:int;
+	toNodeP:int;
+	toNodeR:int;
 	enrollId:string;
 }
 

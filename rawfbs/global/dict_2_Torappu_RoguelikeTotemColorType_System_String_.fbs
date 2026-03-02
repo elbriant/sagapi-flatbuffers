@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeTotemColorType.fbs";
+
+table dict_2_Torappu_RoguelikeTotemColorType_System_String_ {
+	dict_key:Torappu_RoguelikeTotemColorType;
+	dict_value:string;
+}
+
+
+root_type dict_2_Torappu_RoguelikeTotemColorType_System_String_;

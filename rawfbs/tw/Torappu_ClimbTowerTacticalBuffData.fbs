@@ -6,7 +6,7 @@ table Torappu_ClimbTowerTacticalBuffData {
 	desc:string;
 	profession:Torappu_ProfessionCategory;
 	isDefaultActive:bool;
-	sortId:int32;
+	sortId:int;
 	buffType:Torappu_ClimbTowerTaticalBuffType;
 }
 

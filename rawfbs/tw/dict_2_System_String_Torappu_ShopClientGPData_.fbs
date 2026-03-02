@@ -1,0 +1,9 @@
+include "Torappu_ShopClientGPData.fbs";
+
+table dict_2_System_String_Torappu_ShopClientGPData_ {
+	dict_key:string;
+	dict_value:Torappu_ShopClientGPData;
+}
+
+
+root_type dict_2_System_String_Torappu_ShopClientGPData_;

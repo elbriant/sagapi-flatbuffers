@@ -1,6 +1,6 @@
 
 table Torappu_MailArchiveConstData {
-	funcOpenTs:int64;
+	funcOpenTs:long;
 }
 
 

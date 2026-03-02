@@ -1,0 +1,8 @@
+
+table dict_2_System_Int32_System_Int32_ {
+	dict_key:int;
+	dict_value:int;
+}
+
+
+root_type dict_2_System_Int32_System_Int32_;

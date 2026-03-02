@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2ArchiveAchievementData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2ArchiveAchievementData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2ArchiveAchievementData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2ArchiveAchievementData_;

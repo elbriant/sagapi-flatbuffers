@@ -4,7 +4,7 @@ table Torappu_RoguelikeGameFailEndingData {
 	name:string;
 	desc:string;
 	iconId:string;
-	priority:int32;
+	priority:int;
 }
 
 

@@ -17,10 +17,10 @@ table Torappu_RL02EndingText {
 	summaryHiddenNotPassedDesc:string;
 	summaryKnightPassedDesc:string;
 	summaryKnightNotPassedDesc:string;
-	summaryGoldThreshold:int32;
+	summaryGoldThreshold:int;
 	summaryGoldHighDesc:string;
 	summaryGoldLowDesc:string;
-	summaryPracticeThreshold:int32;
+	summaryPracticeThreshold:int;
 	summaryPracticeHighDesc:string;
 	summaryPracticeLowDesc:string;
 }

@@ -1,9 +1,9 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActMultiV3StarRewardData {
-	starNum:int32;
+	starNum:int;
 	rewards:[Torappu_ItemBundle];
-	dailyMissionPoint:int32;
+	dailyMissionPoint:int;
 }
 
 

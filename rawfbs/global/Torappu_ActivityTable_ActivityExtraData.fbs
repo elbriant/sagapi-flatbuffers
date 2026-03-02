@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActMainlineBpExtraData.fbs";
+include "dict_2_System_String_Torappu_ActMainlineBpExtraData_.fbs";
 
 table Torappu_ActivityTable_ActivityExtraData {
-	typeMainlineBpData:[dict__System_String_Torappu_ActMainlineBpExtraData];
+	typeMainlineBpData:[dict_2_System_String_Torappu_ActMainlineBpExtraData_];
 }
 
 

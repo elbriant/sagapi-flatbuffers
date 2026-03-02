@@ -1,8 +1,8 @@
-include "dict__System_String_System_Int64.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 
 table Torappu_TimelyDropTimeInfo {
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 	stagePic:string;
 	dropPicId:string;
 	stageUnlock:string;
@@ -11,7 +11,7 @@ table Torappu_TimelyDropTimeInfo {
 	timelyGroupId:string;
 	weeklyPicId:string;
 	isReplace:bool;
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
 }
 
 

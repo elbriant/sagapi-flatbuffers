@@ -1,0 +1,9 @@
+include "Torappu_FireworkData_PlateData.fbs";
+
+table dict_2_System_String_Torappu_FireworkData_PlateData_ {
+	dict_key:string;
+	dict_value:Torappu_FireworkData_PlateData;
+}
+
+
+root_type dict_2_System_String_Torappu_FireworkData_PlateData_;

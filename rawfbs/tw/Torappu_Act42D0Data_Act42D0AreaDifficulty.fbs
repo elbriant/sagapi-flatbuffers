@@ -1,5 +1,5 @@
 
-enum Torappu_Act42D0Data_Act42D0AreaDifficulty : int32 {
+enum Torappu_Act42D0Data_Act42D0AreaDifficulty : int {
 	NONE = 0,
 	NORMAL = 1,
 	HARD = 2

@@ -1,8 +1,8 @@
 
 table Torappu_BuildingData_MusicSingleData {
 	bgmId:string;
-	bgmSortId:int32;
-	bgmStartTime:int64;
+	bgmSortId:int;
+	bgmStartTime:long;
 	bgmName:string;
 	gameMusicId:string;
 	obtainApproach:string;

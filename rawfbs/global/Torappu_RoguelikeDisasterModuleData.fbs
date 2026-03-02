@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_RoguelikeDisasterData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeDisasterData_.fbs";
 
 table Torappu_RoguelikeDisasterModuleData {
-	disasterData:[dict__System_String_Torappu_RoguelikeDisasterData];
+	disasterData:[dict_2_System_String_Torappu_RoguelikeDisasterData_];
 }
 
 

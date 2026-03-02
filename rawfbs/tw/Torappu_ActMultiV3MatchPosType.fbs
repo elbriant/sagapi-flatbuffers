@@ -1,5 +1,5 @@
 
-enum Torappu_ActMultiV3MatchPosType : int32 {
+enum Torappu_ActMultiV3MatchPosType : int {
 	NORMAL = 0,
 	COACH = 1,
 	STUDENT = 2

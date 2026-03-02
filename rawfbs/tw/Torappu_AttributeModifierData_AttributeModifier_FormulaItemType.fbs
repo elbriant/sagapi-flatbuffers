@@ -1,5 +1,5 @@
 
-enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int32 {
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int {
 	ADDITION = 0,
 	MULTIPLIER = 1,
 	FINAL_ADDITION = 2,

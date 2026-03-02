@@ -1,6 +1,7 @@
 include "Torappu_LevelData_Difficulty.fbs";
 include "Torappu_ProfessionCategory.fbs";
 include "Torappu_BuildableType.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_LegacyInLevelRuneData {
 	difficultyMask:Torappu_LevelData_Difficulty;

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveChaosItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveChaosItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveChaosItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveChaosItemData_;

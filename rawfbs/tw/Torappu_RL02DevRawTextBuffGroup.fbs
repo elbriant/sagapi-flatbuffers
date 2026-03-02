@@ -4,7 +4,7 @@ table Torappu_RL02DevRawTextBuffGroup {
 	useLevelMark:bool;
 	groupIconId:string;
 	useUpBreak:bool;
-	sortId:int32;
+	sortId:int;
 }
 
 

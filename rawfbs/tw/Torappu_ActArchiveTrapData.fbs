@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveTrapItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveTrapItemData_.fbs";
 
 table Torappu_ActArchiveTrapData {
-	trap:[dict__System_String_Torappu_ActArchiveTrapItemData];
+	trap:[dict_2_System_String_Torappu_ActArchiveTrapItemData_];
 }
 
 

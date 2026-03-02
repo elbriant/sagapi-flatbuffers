@@ -2,7 +2,7 @@
 table Torappu_SandboxV2EventEffectData {
 	eventEffectId:string;
 	buffId:string;
-	duration:int32;
+	duration:int;
 	desc:string;
 }
 

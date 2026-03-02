@@ -2,8 +2,8 @@
 table Torappu_SiracusaData_OperaCommentInfoData {
 	commentId:string;
 	referenceOperaId:string;
-	columnIndex:int32;
-	columnSortId:int32;
+	columnIndex:int;
+	columnSortId:int;
 	commentTitle:string;
 	score:string;
 	commentContent:string;

@@ -1,0 +1,9 @@
+include "Torappu_Act3D0Data_InfinitePoolPercent.fbs";
+
+table dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_ {
+	dict_key:string;
+	dict_value:Torappu_Act3D0Data_InfinitePoolPercent;
+}
+
+
+root_type dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_;

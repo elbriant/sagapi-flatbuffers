@@ -3,8 +3,8 @@ include "Torappu_ItemType.fbs";
 table Torappu_ReturnV2ItemData {
 	id:string;
 	type:Torappu_ItemType;
-	count:int32;
-	sortId:int32;
+	count:int;
+	sortId:int;
 }
 
 

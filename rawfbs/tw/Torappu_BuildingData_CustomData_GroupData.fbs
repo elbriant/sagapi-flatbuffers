@@ -1,11 +1,11 @@
 
 table Torappu_BuildingData_CustomData_GroupData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	themeId:string;
-	comfort:int32;
-	count:int32;
+	comfort:int;
+	count:int;
 	furniture:[string];
 }
 

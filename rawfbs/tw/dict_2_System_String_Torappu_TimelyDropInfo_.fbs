@@ -1,0 +1,9 @@
+include "Torappu_TimelyDropInfo.fbs";
+
+table dict_2_System_String_Torappu_TimelyDropInfo_ {
+	dict_key:string;
+	dict_value:Torappu_TimelyDropInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_TimelyDropInfo_;

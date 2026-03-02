@@ -1,8 +1,8 @@
 
 table Torappu_BuildingData_ShopPhase {
-	counterNum:int32;
+	counterNum:int;
 	speed:float;
-	moneyCapacity:int32;
+	moneyCapacity:int;
 }
 
 

@@ -1,6 +1,6 @@
 include "Torappu_ProfessionCategory.fbs";
 include "Torappu_IllustNPCResType.fbs";
-include "dict__System_String_Torappu_NPCUnlock.fbs";
+include "dict_2_System_String_Torappu_NPCUnlock_.fbs";
 
 table Torappu_NPCData {
 	npcId:string;
@@ -16,7 +16,7 @@ table Torappu_NPCData {
 	teamId:string;
 	resType:Torappu_IllustNPCResType;
 	npcShowAudioInfoFlag:bool;
-	unlockDict:[dict__System_String_Torappu_NPCUnlock];
+	unlockDict:[dict_2_System_String_Torappu_NPCUnlock_];
 }
 
 

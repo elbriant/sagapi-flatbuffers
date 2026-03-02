@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_LayoutData_RoomSlot.fbs";
+
+table dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_LayoutData_RoomSlot;
+}
+
+
+root_type dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_;

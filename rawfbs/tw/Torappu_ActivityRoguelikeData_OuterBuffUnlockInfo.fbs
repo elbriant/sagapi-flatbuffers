@@ -1,14 +1,14 @@
 include "Torappu_ItemType.fbs";
 
 table Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo {
-	buffLevel:int32;
+	buffLevel:int;
 	name:string;
 	iconId:string;
 	description:string;
 	usage:string;
 	itemId:string;
 	itemType:Torappu_ItemType;
-	cost:int32;
+	cost:int;
 }
 
 

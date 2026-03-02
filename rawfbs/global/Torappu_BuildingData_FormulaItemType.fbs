@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_FormulaItemType : int32 {
+enum Torappu_BuildingData_FormulaItemType : int {
 	NONE = 0,
 	F_EVOLVE = 1,
 	F_BUILDING = 2,

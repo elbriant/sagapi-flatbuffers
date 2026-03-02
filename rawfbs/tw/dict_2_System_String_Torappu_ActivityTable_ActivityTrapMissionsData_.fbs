@@ -1,0 +1,9 @@
+include "Torappu_ActivityTable_ActivityTrapMissionsData.fbs";
+
+table dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityTable_ActivityTrapMissionsData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_;

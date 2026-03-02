@@ -1,14 +1,14 @@
 include "Torappu_Act3D0Data_GoodType.fbs";
 include "Torappu_ItemBundle.fbs";
-include "dict__System_String_Torappu_ItemBundle.fbs";
+include "dict_2_System_String_Torappu_ItemBundle_.fbs";
 
 table Torappu_Act3D0Data_MileStoneInfo {
 	mileStoneId:string;
-	orderId:int32;
+	orderId:int;
 	mileStoneType:Torappu_Act3D0Data_GoodType;
 	normalItem:Torappu_ItemBundle;
-	specialItemDict:[dict__System_String_Torappu_ItemBundle];
-	tokenNum:int32;
+	specialItemDict:[dict_2_System_String_Torappu_ItemBundle_];
+	tokenNum:int;
 }
 
 

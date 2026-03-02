@@ -1,7 +1,7 @@
 include "Torappu_FavorDataFrames.fbs";
 
 table Torappu_FavorTable {
-	maxFavor:int32;
+	maxFavor:int;
 	favorFrames:Torappu_FavorDataFrames;
 }
 

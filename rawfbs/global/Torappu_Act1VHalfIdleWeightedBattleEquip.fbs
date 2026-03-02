@@ -2,7 +2,7 @@
 table Torappu_Act1VHalfIdleWeightedBattleEquip {
 	weight:float;
 	equipId:string;
-	level:int32;
+	level:int;
 	alias:string;
 }
 

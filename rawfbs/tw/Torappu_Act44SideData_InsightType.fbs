@@ -1,5 +1,5 @@
 
-enum Torappu_Act44SideData_InsightType : int32 {
+enum Torappu_Act44SideData_InsightType : int {
 	PATIENCE = 0,
 	ATTENTION = 1,
 	TRUST = 2

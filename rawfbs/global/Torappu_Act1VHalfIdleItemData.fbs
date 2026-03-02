@@ -5,7 +5,7 @@ table Torappu_Act1VHalfIdleItemData {
 	itemId:string;
 	itemType:Torappu_Act1VHalfIdleItemType;
 	itemName:string;
-	sortId:int32;
+	sortId:int;
 	iconId:string;
 	funcDesc:string;
 	flavorDesc:string;

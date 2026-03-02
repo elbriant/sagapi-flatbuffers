@@ -5,8 +5,8 @@ table Torappu_Act25SideData_ArchiveMapInfoData {
 	type:Torappu_Act25SideData_Act25SideArchiveItemType;
 	numberId:string;
 	areaId:string;
-	sortId:int32;
-	position:int32;
+	sortId:int;
+	position:int;
 	hasDot:bool;
 }
 

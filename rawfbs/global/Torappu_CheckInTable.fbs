@@ -1,9 +1,9 @@
-include "dict__System_String_Torappu_MonthlySignInGroupData.fbs";
-include "dict__System_String_list___1_Torappu_MonthlyDailyBonusGroup.fbs";
+include "dict_2_System_String_Torappu_MonthlySignInGroupData_.fbs";
+include "dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__.fbs";
 
 table Torappu_CheckInTable {
-	groups:[dict__System_String_Torappu_MonthlySignInGroupData];
-	monthlySubItem:[dict__System_String_list___1_Torappu_MonthlyDailyBonusGroup];
+	groups:[dict_2_System_String_Torappu_MonthlySignInGroupData_];
+	monthlySubItem:[dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__];
 	currentMonthlySubId:string;
 }
 

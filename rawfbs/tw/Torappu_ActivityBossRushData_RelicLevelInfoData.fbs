@@ -1,8 +1,8 @@
-include "list_dict___2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_.fbs";
+include "Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_.fbs";
 
 table Torappu_ActivityBossRushData_RelicLevelInfoData {
 	relicId:string;
-	levelInfos:[list_dict___2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_];
+	levelInfos:[Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_];
 }
 
 

@@ -8,7 +8,7 @@ table Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData {
 	desc:string;
 	icon:string;
 	darkMode:bool;
-	sortId:int32;
+	sortId:int;
 	displayType:Torappu_SandboxV2BaseUnlockFuncDisplayType;
 }
 

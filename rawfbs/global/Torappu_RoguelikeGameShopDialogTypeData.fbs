@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_RoguelikeGameShopDialogGroupData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_.fbs";
 
 table Torappu_RoguelikeGameShopDialogTypeData {
-	groups:[dict__System_String_Torappu_RoguelikeGameShopDialogGroupData];
+	groups:[dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_];
 }
 
 

@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeCopperModuleConsts {
-	copperDrawMaxNum:int32;
-	copperDrawMinNum:int32;
+	copperDrawMaxNum:int;
+	copperDrawMinNum:int;
 }
 
 

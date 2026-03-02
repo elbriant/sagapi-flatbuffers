@@ -1,5 +1,5 @@
 
-enum Torappu_PlayerAvatarGroupType : int32 {
+enum Torappu_PlayerAvatarGroupType : int {
 	NONE = 0,
 	ASSISTANT = 1,
 	DEFAULT = 2,
@@ -11,7 +11,7 @@ enum Torappu_PlayerAvatarGroupType : int32 {
 table Torappu_PlayerAvatarPerData {
 	avatarId:string;
 	avatarType:Torappu_PlayerAvatarGroupType;
-	avatarIdSort:int32;
+	avatarIdSort:int;
 	avatarIdDesc:string;
 	avatarItemName:string;
 	avatarItemDesc:string;
@@ -25,13 +25,13 @@ table Torappu_PlayerAvatarPerData {
 table Torappu_PlayerAvatarGroupData {
 	avatarType:Torappu_PlayerAvatarGroupType;
 	typeName:string;
-	sortId:int32;
+	sortId:int;
 	avatarIdList:[string];
 }
 
 
 
-table dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData {
+table dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_ {
 	dict_key:Torappu_PlayerAvatarGroupType;
 	dict_value:Torappu_PlayerAvatarGroupData;
 }
@@ -41,19 +41,19 @@ table dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData {
 table Torappu_PlayerAvatarData {
 	defaultAvatarId:string;
 	avatarList:[Torappu_PlayerAvatarPerData];
-	avatarTypeData:[dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData];
+	avatarTypeData:[dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_];
 }
 
 
 
-enum Torappu_HomeMultiFormChangeRule : int32 {
+enum Torappu_HomeMultiFormChangeRule : int {
 	NONE = 0,
 	TIME = 1
 }
 
 table Torappu_HomeBackgroundMultiFormData {
 	multiFormBgId:string;
-	sortId:int32;
+	sortId:int;
 	bgMusicId:string;
 }
 
@@ -61,8 +61,8 @@ table Torappu_HomeBackgroundMultiFormData {
 
 table Torappu_HomeBackgroundSingleData {
 	bgId:string;
-	bgSortId:int32;
-	bgStartTime:int64;
+	bgSortId:int;
+	bgStartTime:long;
 	bgName:string;
 	bgDes:string;
 	bgUsage:string;
@@ -77,12 +77,12 @@ table Torappu_HomeBackgroundSingleData {
 
 table Torappu_HomeThemeMultiFormData {
 	multiFormTmId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-enum Torappu_ItemRarity : int32 {
+enum Torappu_ItemRarity : int {
 	TIER_1 = 0,
 	TIER_2 = 1,
 	TIER_3 = 2,
@@ -95,8 +95,8 @@ enum Torappu_ItemRarity : int32 {
 table Torappu_HomeThemeDisplayData {
 	id:string;
 	type:string;
-	sortId:int32;
-	startTime:int64;
+	sortId:int;
+	startTime:long;
 	tmName:string;
 	tmDes:string;
 	tmUsage:string;
@@ -114,8 +114,8 @@ table Torappu_HomeThemeDisplayData {
 
 table Torappu_HomeBackgroundLimitInfoData {
 	limitInfoId:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	invalidObtainDesc:string;
 	displayAfterEndTime:bool;
 }
@@ -129,7 +129,7 @@ table Torappu_HomeBackgroundLimitData {
 
 
 
-table dict__System_String_Torappu_HomeBackgroundLimitData {
+table dict_2_System_String_Torappu_HomeBackgroundLimitData_ {
 	dict_key:string;
 	dict_value:Torappu_HomeBackgroundLimitData;
 }
@@ -137,8 +137,8 @@ table dict__System_String_Torappu_HomeBackgroundLimitData {
 
 
 table Torappu_HomeThemeLimitInfoData {
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	invalidObtainDesc:string;
 }
 
@@ -151,7 +151,7 @@ table Torappu_HomeThemeLimitData {
 
 
 
-table dict__System_String_Torappu_HomeThemeLimitData {
+table dict_2_System_String_Torappu_HomeThemeLimitData_ {
 	dict_key:string;
 	dict_value:Torappu_HomeThemeLimitData;
 }
@@ -168,12 +168,12 @@ table Torappu_HomeMultiFormInfoData {
 
 table Torappu_HomeMultiFormTimeRuleData {
 	id:string;
-	startHour:int32;
+	startHour:int;
 }
 
 
 
-table dict__System_String_list___1_Torappu_HomeMultiFormTimeRuleData {
+table dict_2_System_String_list_1_Torappu_HomeMultiFormTimeRuleData__ {
 	dict_key:string;
 	dict_value:[Torappu_HomeMultiFormTimeRuleData];
 }
@@ -185,17 +185,17 @@ table Torappu_HomeBackgroundData {
 	defaultThemeId:string;
 	homeBgDataList:[Torappu_HomeBackgroundSingleData];
 	themeList:[Torappu_HomeThemeDisplayData];
-	backgroundLimitData:[dict__System_String_Torappu_HomeBackgroundLimitData];
-	themeLimitData:[dict__System_String_Torappu_HomeThemeLimitData];
+	backgroundLimitData:[dict_2_System_String_Torappu_HomeBackgroundLimitData_];
+	themeLimitData:[dict_2_System_String_Torappu_HomeThemeLimitData_];
 	multiFormInfoData:[Torappu_HomeMultiFormInfoData];
-	timeRuleData:[dict__System_String_list___1_Torappu_HomeMultiFormTimeRuleData];
+	timeRuleData:[dict_2_System_String_list_1_Torappu_HomeMultiFormTimeRuleData__];
 	defaultBgMusicId:string;
-	themeStartTime:int64;
+	themeStartTime:long;
 }
 
 
 
-enum Torappu_NameCardV2ModuleType : int32 {
+enum Torappu_NameCardV2ModuleType : int {
 	NONE = 0,
 	BACKGROUND = 1,
 	ILLUST = 2,
@@ -212,14 +212,14 @@ table Torappu_NameCardV2ModuleData {
 
 
 
-table dict__System_String_Torappu_NameCardV2ModuleData {
+table dict_2_System_String_Torappu_NameCardV2ModuleData_ {
 	dict_key:string;
 	dict_value:Torappu_NameCardV2ModuleData;
 }
 
 
 
-enum Torappu_NameCardV2ModuleSubType : int32 {
+enum Torappu_NameCardV2ModuleSubType : int {
 	NONE = 0,
 	SIGN = 1,
 	ASSIST = 2,
@@ -231,21 +231,21 @@ enum Torappu_NameCardV2ModuleSubType : int32 {
 table Torappu_NameCardV2RemovableModuleData {
 	id:string;
 	type:Torappu_NameCardV2ModuleType;
-	sortId:int32;
+	sortId:int;
 	subType:Torappu_NameCardV2ModuleSubType;
 	name:string;
 }
 
 
 
-table dict__System_String_Torappu_NameCardV2RemovableModuleData {
+table dict_2_System_String_Torappu_NameCardV2RemovableModuleData_ {
 	dict_key:string;
 	dict_value:Torappu_NameCardV2RemovableModuleData;
 }
 
 
 
-enum Torappu_NameCardV2SkinType : int32 {
+enum Torappu_NameCardV2SkinType : int {
 	NONE = 0,
 	MAINLINE = 1,
 	ACTIVITY = 2
@@ -253,8 +253,8 @@ enum Torappu_NameCardV2SkinType : int32 {
 
 table Torappu_NameCardV2TimeLimitInfo {
 	id:string;
-	availStartTime:int64;
-	availEndTime:int64;
+	availStartTime:long;
+	availEndTime:long;
 }
 
 
@@ -263,20 +263,20 @@ table Torappu_NameCardV2SkinData {
 	id:string;
 	name:string;
 	type:Torappu_NameCardV2SkinType;
-	sortId:int32;
+	sortId:int;
 	isSpTheme:bool;
 	defaultShowDetail:bool;
 	themeName:string;
 	themeEnName:string;
-	skinStartTime:int64;
+	skinStartTime:long;
 	skinDesc:string;
 	usageDesc:string;
 	skinApproach:string;
-	unlockConditionCnt:int32;
+	unlockConditionCnt:int;
 	unlockDescList:[string];
 	fixedModuleList:[string];
 	rarity:Torappu_ItemRarity;
-	skinTmplCnt:int32;
+	skinTmplCnt:int;
 	canChangeTmpl:bool;
 	isTimeLimit:bool;
 	timeLimitInfoList:[Torappu_NameCardV2TimeLimitInfo];
@@ -284,7 +284,7 @@ table Torappu_NameCardV2SkinData {
 
 
 
-table dict__System_String_Torappu_NameCardV2SkinData {
+table dict_2_System_String_Torappu_NameCardV2SkinData_ {
 	dict_key:string;
 	dict_value:Torappu_NameCardV2SkinData;
 }
@@ -294,27 +294,27 @@ table dict__System_String_Torappu_NameCardV2SkinData {
 table Torappu_NameCardV2Consts {
 	defaultNameCardSkinId:string;
 	canUidHide:bool;
-	removableModuleMaxCount:int32;
+	removableModuleMaxCount:int;
 }
 
 
 
 table Torappu_NameCardV2Data {
-	fixedModuleData:[dict__System_String_Torappu_NameCardV2ModuleData];
-	removableModuleData:[dict__System_String_Torappu_NameCardV2RemovableModuleData];
-	skinData:[dict__System_String_Torappu_NameCardV2SkinData];
+	fixedModuleData:[dict_2_System_String_Torappu_NameCardV2ModuleData_];
+	removableModuleData:[dict_2_System_String_Torappu_NameCardV2RemovableModuleData_];
+	skinData:[dict_2_System_String_Torappu_NameCardV2SkinData_];
 	consts:Torappu_NameCardV2Consts;
 }
 
 
 
-enum Torappu_MailArchiveItemType : int32 {
+enum Torappu_MailArchiveItemType : int {
 	NORMAL = 0,
 	BIRTHDAY = 1,
 	OPEN_SERVER = 2
 }
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -406,7 +406,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -415,10 +415,10 @@ table Torappu_ItemBundle {
 table Torappu_MailArchiveItemData {
 	id:string;
 	type:Torappu_MailArchiveItemType;
-	sortId:int32;
-	displayReceiveTs:int64;
-	year:int32;
-	dateDelta:int32;
+	sortId:int;
+	displayReceiveTs:long;
+	year:int;
+	dateDelta:int;
 	senderId:string;
 	title:string;
 	content:string;
@@ -427,7 +427,7 @@ table Torappu_MailArchiveItemData {
 
 
 
-table dict__System_String_Torappu_MailArchiveItemData {
+table dict_2_System_String_Torappu_MailArchiveItemData_ {
 	dict_key:string;
 	dict_value:Torappu_MailArchiveItemData;
 }
@@ -435,13 +435,13 @@ table dict__System_String_Torappu_MailArchiveItemData {
 
 
 table Torappu_MailArchiveConstData {
-	funcOpenTs:int64;
+	funcOpenTs:long;
 }
 
 
 
 table Torappu_MailArchiveData {
-	mailArchiveInfoDict:[dict__System_String_Torappu_MailArchiveItemData];
+	mailArchiveInfoDict:[dict_2_System_String_Torappu_MailArchiveItemData_];
 	constData:Torappu_MailArchiveConstData;
 }
 
@@ -455,7 +455,7 @@ table Torappu_MailSenderSingleInfo {
 
 
 
-table dict__System_String_Torappu_MailSenderSingleInfo {
+table dict_2_System_String_Torappu_MailSenderSingleInfo_ {
 	dict_key:string;
 	dict_value:Torappu_MailSenderSingleInfo;
 }
@@ -463,12 +463,12 @@ table dict__System_String_Torappu_MailSenderSingleInfo {
 
 
 table Torappu_MailSenderData {
-	senderDict:[dict__System_String_Torappu_MailSenderSingleInfo];
+	senderDict:[dict_2_System_String_Torappu_MailSenderSingleInfo_];
 }
 
 
 
-enum Torappu_EmojiSceneType : int32 {
+enum Torappu_EmojiSceneType : int {
 	NONE = 0,
 	ACTMULTIV3_ROOM = 1,
 	ACTMULTIV3_PICK = 2,
@@ -479,21 +479,21 @@ enum Torappu_EmojiSceneType : int32 {
 table Torappu_EmoticonData_EmojiData {
 	id:string;
 	type:Torappu_EmojiSceneType;
-	sortId:int32;
+	sortId:int;
 	picId:string;
 	desc:string;
 }
 
 
 
-table dict__System_String_Torappu_EmoticonData_EmojiData {
+table dict_2_System_String_Torappu_EmoticonData_EmojiData_ {
 	dict_key:string;
 	dict_value:Torappu_EmoticonData_EmojiData;
 }
 
 
 
-table dict__System_String_list___1_System_String {
+table dict_2_System_String_list_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
@@ -501,8 +501,8 @@ table dict__System_String_list___1_System_String {
 
 
 table Torappu_EmoticonData {
-	emojiDataDict:[dict__System_String_Torappu_EmoticonData_EmojiData];
-	emoticonThemeDataDict:[dict__System_String_list___1_System_String];
+	emojiDataDict:[dict_2_System_String_Torappu_EmoticonData_EmojiData_];
+	emoticonThemeDataDict:[dict_2_System_String_list_1_System_String__];
 }
 
 
@@ -511,23 +511,23 @@ table Torappu_StoryVariantData {
 	plotTaskId:string;
 	spStoryId:string;
 	storyId:string;
-	priority:int32;
-	startTime:int64;
-	endTime:int64;
+	priority:int;
+	startTime:long;
+	endTime:long;
 	template:string;
 	param:[string];
 }
 
 
 
-table dict__System_String_Torappu_StoryVariantData {
+table dict_2_System_String_Torappu_StoryVariantData_ {
 	dict_key:string;
 	dict_value:Torappu_StoryVariantData;
 }
 
 
 
-enum Torappu_UIGuideTarget : int32 {
+enum Torappu_UIGuideTarget : int {
 	NONE = 0,
 	BUILDING_CONTROL = 1,
 	BUILDING_DORM = 2,
@@ -578,7 +578,7 @@ enum Torappu_UIGuideTarget : int32 {
 
 table Torappu_GuidebookConfigData {
 	configId:string;
-	sortId:int32;
+	sortId:int;
 	pageIdList:[string];
 }
 
@@ -593,7 +593,7 @@ table Torappu_GuidebookGroupData {
 
 
 
-table dict__System_String_Torappu_GuidebookGroupData {
+table dict_2_System_String_Torappu_GuidebookGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_GuidebookGroupData;
 }
@@ -607,8 +607,8 @@ table Torappu_DisplayMetaData {
 	mailArchiveData:Torappu_MailArchiveData;
 	mailSenderData:Torappu_MailSenderData;
 	emoticonData:Torappu_EmoticonData;
-	storyVariantData:[dict__System_String_Torappu_StoryVariantData];
-	guidebookGroupDatas:[dict__System_String_Torappu_GuidebookGroupData];
+	storyVariantData:[dict_2_System_String_Torappu_StoryVariantData_];
+	guidebookGroupDatas:[dict_2_System_String_Torappu_GuidebookGroupData_];
 }
 
 

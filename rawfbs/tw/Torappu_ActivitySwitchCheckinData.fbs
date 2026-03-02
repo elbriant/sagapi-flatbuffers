@@ -1,15 +1,15 @@
 include "Torappu_ActivitySwitchCheckinConstData.fbs";
-include "dict__System_String_Torappu_ItemBundleA_.fbs";
-include "dict__System_String_System_Int64.fbs";
-include "dict__System_String_System_String.fbs";
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_Torappu_ItemBundleA__.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
+include "dict_2_System_String_System_String_.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_ActivitySwitchCheckinData {
 	constData:Torappu_ActivitySwitchCheckinConstData;
-	rewards:[dict__System_String_Torappu_ItemBundleA_];
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
-	rewardsTitle:[dict__System_String_System_String];
-	sortIdDict:[dict__System_String_System_Int32];
+	rewards:[dict_2_System_String_Torappu_ItemBundleA__];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
+	rewardsTitle:[dict_2_System_String_System_String_];
+	sortIdDict:[dict_2_System_String_System_Int32_];
 }
 
 

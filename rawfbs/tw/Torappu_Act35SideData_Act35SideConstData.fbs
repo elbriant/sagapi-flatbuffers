@@ -2,20 +2,20 @@ include "Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo.fbs";
 
 table Torappu_Act35SideData_Act35SideConstData {
 	campaignStageId:string;
-	campaignEnemyCnt:int32;
+	campaignEnemyCnt:int;
 	milestoneGrandRewardInfoList:[Torappu_Act35SideData_Act35SideMileStoneGrandRewardInfo];
 	unlockLevelId:string;
 	birdSpineLowRate:float;
 	birdSpineHighRate:float;
-	cardMaxLevel:int32;
-	maxSlotCnt:int32;
-	cardRefreshNum:int32;
-	initSlotCnt:int32;
+	cardMaxLevel:int;
+	maxSlotCnt:int;
+	cardRefreshNum:int;
+	initSlotCnt:int;
 	bonusMaterialId:string;
 	introRoundIdList:[string];
 	challengeUnlockText:string;
 	slotUnlockText:string;
-	estimateRatio:int32;
+	estimateRatio:int;
 	carvingUnlockToastText:string;
 }
 

@@ -1,5 +1,5 @@
 
-enum Torappu_BuffData_StatusResistable : uint8 {
+enum Torappu_BuffData_StatusResistable : ubyte {
 	NO = 0,
 	YES = 1,
 	AUTOMATIC = 2

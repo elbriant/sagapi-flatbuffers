@@ -1,5 +1,5 @@
 
-enum Torappu_EmojiSceneType : int32 {
+enum Torappu_EmojiSceneType : int {
 	NONE = 0,
 	ACTMULTIV3_ROOM = 1,
 	ACTMULTIV3_PICK = 2,

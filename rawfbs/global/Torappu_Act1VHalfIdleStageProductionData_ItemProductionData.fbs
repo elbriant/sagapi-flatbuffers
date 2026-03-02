@@ -1,9 +1,9 @@
 
 table Torappu_Act1VHalfIdleStageProductionData_ItemProductionData {
 	itemId:string;
-	efficiencyMax:int32;
+	efficiencyMax:int;
 	isFixed:bool;
-	maxDropValue:int32;
+	maxDropValue:int;
 }
 
 

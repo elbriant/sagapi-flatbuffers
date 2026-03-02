@@ -1,14 +1,14 @@
-include "dict__System_String_list___1_System_String.fbs";
-include "dict__System_String_dict__System_String_Torappu_SpCharMissionData.fbs";
-include "dict__System_String_System_Int64.fbs";
-include "dict__System_String_Torappu_CharMasterBasicData.fbs";
+include "dict_2_System_String_list_1_System_String__.fbs";
+include "dict_2_System_String_dict_2_System_String_Torappu_SpCharMissionData__.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
+include "dict_2_System_String_Torappu_CharMasterBasicData_.fbs";
 
 table Torappu_CharMetaTable {
-	spCharGroups:[dict__System_String_list___1_System_String];
-	spCharMissions:[dict__System_String_dict__System_String_Torappu_SpCharMissionData];
-	spCharVoucherSkinTime:[dict__System_String_System_Int64];
-	charIdMasterListMap:[dict__System_String_list___1_System_String];
-	charMasterDataMap:[dict__System_String_Torappu_CharMasterBasicData];
+	spCharGroups:[dict_2_System_String_list_1_System_String__];
+	spCharMissions:[dict_2_System_String_dict_2_System_String_Torappu_SpCharMissionData__];
+	spCharVoucherSkinTime:[dict_2_System_String_System_Int64_];
+	charIdMasterListMap:[dict_2_System_String_list_1_System_String__];
+	charMasterDataMap:[dict_2_System_String_Torappu_CharMasterBasicData_];
 }
 
 

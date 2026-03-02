@@ -1,0 +1,9 @@
+include "Torappu_MissionDailyRewardConf.fbs";
+
+table dict_2_System_String_Torappu_MissionDailyRewardConf_ {
+	dict_key:string;
+	dict_value:Torappu_MissionDailyRewardConf;
+}
+
+
+root_type dict_2_System_String_Torappu_MissionDailyRewardConf_;

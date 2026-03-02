@@ -1,7 +1,7 @@
 
 table Torappu_Act36SideData_Act36SideConstData {
 	rewardFailed:string;
-	rewardReceiveNumber:int32;
+	rewardReceiveNumber:int;
 }
 
 

@@ -3,7 +3,7 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_CharacterData_MainSkill_SpecializeLevelData {
 	unlockCond:Torappu_CharacterData_UnlockCondition;
-	lvlUpTime:int32;
+	lvlUpTime:int;
 	levelUpCost:[Torappu_ItemBundle];
 }
 

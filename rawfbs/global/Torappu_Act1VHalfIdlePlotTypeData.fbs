@@ -1,10 +1,10 @@
 include "Torappu_Act1VHalfIdlePlotType.fbs";
-include "dict__System_String_list___1_System_Int32.fbs";
+include "dict_2_System_String_list_1_System_Int32__.fbs";
 
 table Torappu_Act1VHalfIdlePlotTypeData {
 	plotType:Torappu_Act1VHalfIdlePlotType;
 	typeName:string;
-	plotSquadLimit:[dict__System_String_list___1_System_Int32];
+	plotSquadLimit:[dict_2_System_String_list_1_System_Int32__];
 }
 
 

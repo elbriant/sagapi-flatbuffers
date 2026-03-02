@@ -1,6 +1,6 @@
 
 table Torappu_ActMultiV3ConstData_PingCond {
-	cond:int32;
+	cond:int;
 	txt:string;
 }
 

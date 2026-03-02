@@ -3,16 +3,16 @@ include "Torappu_Act9D0Data_ActivityNewsLine.fbs";
 
 table Torappu_Act9D0Data_ActivityNewsInfo {
 	newsId:string;
-	newsSortId:int32;
+	newsSortId:int;
 	styleInfo:Torappu_Act9D0Data_ActivityNewsStyleInfo;
 	preposedStage:string;
 	titlePic:string;
 	newsTitle:string;
-	newsInfShow:int32;
+	newsInfShow:int;
 	newsFrom:string;
 	newsText:string;
-	newsParam1:int32;
-	newsParam2:int32;
+	newsParam1:int;
+	newsParam2:int;
 	newsParam3:float;
 	newsLines:[Torappu_Act9D0Data_ActivityNewsLine];
 }

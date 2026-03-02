@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveCopperLuckyLevelData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveCopperLuckyLevelData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_;

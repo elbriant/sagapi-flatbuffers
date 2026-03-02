@@ -1,5 +1,5 @@
 
-enum Torappu_Act12SideData_RecycleAnimationState : int32 {
+enum Torappu_Act12SideData_RecycleAnimationState : int {
 	NONE = 0,
 	NORMAL = 1,
 	SMILE = 2

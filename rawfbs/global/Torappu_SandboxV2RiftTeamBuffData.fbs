@@ -2,7 +2,7 @@
 table Torappu_SandboxV2RiftTeamBuffData {
 	teamId:string;
 	teamName:string;
-	buffLevel:int32;
+	buffLevel:int;
 	buffDesc:string;
 	teamSmallIconId:string;
 	teamBigIconId:string;

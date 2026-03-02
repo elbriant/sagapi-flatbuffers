@@ -1,13 +1,13 @@
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_System_String_.fbs";
 
 table Torappu_Act29SideData_Act29SideFormData {
 	formId:string;
 	fragIdList:[string];
 	formDesc:string;
-	productIdDict:[dict__System_String_System_String];
+	productIdDict:[dict_2_System_String_System_String_];
 	withoutOrcheProductId:string;
 	groupId:string;
-	formSortId:int32;
+	formSortId:int;
 }
 
 

@@ -1,7 +1,7 @@
 
 table Torappu_SandboxV2AlchemyMaterialData {
 	itemId:string;
-	count:int32;
+	count:int;
 }
 
 

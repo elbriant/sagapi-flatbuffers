@@ -13,8 +13,8 @@ table Torappu_ActArcadeData_ArcadeConstData {
 	zoneEntryEndText:string;
 	zoneEntryEndToast:string;
 	rankUnlockNextStage:string;
-	stageScoreDisplayLimit:int32;
-	zoneUltiScoreDisplayLimit:int32;
+	stageScoreDisplayLimit:int;
+	zoneUltiScoreDisplayLimit:int;
 	enemyHudScore:[string];
 	trapNotBuildableInRest:[string];
 }

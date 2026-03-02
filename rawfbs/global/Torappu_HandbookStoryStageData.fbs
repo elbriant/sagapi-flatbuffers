@@ -12,7 +12,7 @@ table Torappu_HandbookStoryStageData {
 	description:string;
 	unlockParam:[Torappu_HandbookUnlockParam];
 	rewardItem:[Torappu_ItemBundle];
-	stageGetTime:int64;
+	stageGetTime:long;
 }
 
 

@@ -2,8 +2,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_MonthlyDailyBonusGroup {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	items:[Torappu_ItemBundle];
 	imgId:string;
 	backId:string;

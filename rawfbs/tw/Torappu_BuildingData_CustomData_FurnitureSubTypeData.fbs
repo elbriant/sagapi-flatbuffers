@@ -5,9 +5,9 @@ table Torappu_BuildingData_CustomData_FurnitureSubTypeData {
 	subType:Torappu_BuildingData_FurnitureSubType;
 	name:string;
 	type:Torappu_BuildingData_FurnitureType;
-	sortId:int32;
-	countLimit:int32;
-	enableRoomType:int32;
+	sortId:int;
+	countLimit:int;
+	enableRoomType:int;
 }
 
 

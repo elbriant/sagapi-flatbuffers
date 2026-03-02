@@ -7,8 +7,8 @@ include "Torappu_StorylineCollectData.fbs";
 table Torappu_StorylineStorySetData {
 	storySetId:string;
 	storySetType:Torappu_StorylineStorySetType;
-	sortByYear:int32;
-	sortWithinYear:int32;
+	sortByYear:int;
+	sortWithinYear:int;
 	kvImageId:string;
 	titleImageId:string;
 	haveVideoToPlay:bool;

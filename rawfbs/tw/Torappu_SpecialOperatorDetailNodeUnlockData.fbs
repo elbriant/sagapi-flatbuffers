@@ -7,12 +7,12 @@ table Torappu_SpecialOperatorDetailNodeUnlockData {
 	nodeType:Torappu_SpecialOperatorDetailNodeType;
 	isInGameMechanics:bool;
 	unlockEvolvePhase:Torappu_EvolvePhase;
-	unlockLevel:int32;
+	unlockLevel:int;
 	unlockTaskId:string;
 	frontNodeId:string;
 	ifAutoUnlock:bool;
 	conditionViewType:Torappu_SpecialOperatorConditionViewType;
-	topoOrder:int32;
+	topoOrder:int;
 }
 
 

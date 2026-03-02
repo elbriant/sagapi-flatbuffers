@@ -1,7 +1,7 @@
 include "Torappu_WeeklyType.fbs";
 
 table Torappu_WeeklyZoneData {
-	daysOfWeek:[int32];
+	daysOfWeek:[int];
 	type:Torappu_WeeklyType;
 }
 

@@ -2,7 +2,7 @@
 table Torappu_ActMultiV3PhotoSlotData {
 	slotPosX:float;
 	slotPosY:float;
-	slotRotZ:int32;
+	slotRotZ:int;
 	slotScale:float;
 	slotAnimName:string;
 }

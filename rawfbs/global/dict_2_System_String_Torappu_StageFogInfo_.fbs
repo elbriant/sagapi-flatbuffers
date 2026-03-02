@@ -1,0 +1,9 @@
+include "Torappu_StageFogInfo.fbs";
+
+table dict_2_System_String_Torappu_StageFogInfo_ {
+	dict_key:string;
+	dict_value:Torappu_StageFogInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_StageFogInfo_;

@@ -1,5 +1,5 @@
 
-enum Torappu_HalfIdleTrapBuildableType : int32 {
+enum Torappu_HalfIdleTrapBuildableType : int {
 	NONE = 0,
 	HIGHLAND = 1,
 	LOWLAND = 2,

@@ -1,5 +1,5 @@
 
-enum Torappu_CharmRarity : int32 {
+enum Torappu_CharmRarity : int {
 	NONE = 0,
 	LOW = 1,
 	MEDIUM = 2,

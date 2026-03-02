@@ -2,7 +2,7 @@
 table Torappu_ActivityMainlineBuffData_MissionGroupData {
 	id:string;
 	bindBanner:string;
-	sortId:int32;
+	sortId:int;
 	zoneId:string;
 	missionIdList:[string];
 }

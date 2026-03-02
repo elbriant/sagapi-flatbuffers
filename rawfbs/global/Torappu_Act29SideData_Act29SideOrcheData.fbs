@@ -5,7 +5,7 @@ table Torappu_Act29SideData_Act29SideOrcheData {
 	name:string;
 	desc:string;
 	icon:string;
-	sortId:int32;
+	sortId:int;
 	orcheType:Torappu_Act29SideData_Act29SideOrcheType;
 }
 

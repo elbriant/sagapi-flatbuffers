@@ -1,0 +1,9 @@
+include "Torappu_Act20SideData_ResidentCartData.fbs";
+
+table dict_2_System_String_Torappu_Act20SideData_ResidentCartData_ {
+	dict_key:string;
+	dict_value:Torappu_Act20SideData_ResidentCartData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act20SideData_ResidentCartData_;

@@ -1,8 +1,8 @@
 
 table Torappu_RoguelikeTopicUpdate {
 	updateId:string;
-	topicUpdateTime:int64;
-	topicEndTime:int64;
+	topicUpdateTime:long;
+	topicEndTime:long;
 }
 
 

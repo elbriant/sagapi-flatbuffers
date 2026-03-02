@@ -1,8 +1,8 @@
 
 table Torappu_GachaTag {
-	tagId:int32;
+	tagId:int;
 	tagName:string;
-	tagGroup:int32;
+	tagGroup:int;
 }
 
 

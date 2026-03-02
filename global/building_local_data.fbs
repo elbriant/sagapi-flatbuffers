@@ -1,14 +1,14 @@
 
 table Torappu_GridPosition {
-	row:int32;
-	col:int32;
+	row:int;
+	col:int;
 }
 
 
 
 table Torappu_BuildingData_ObstaclePoint {
 	offset:Torappu_GridPosition;
-	edgeWalkableMask:uint8;
+	edgeWalkableMask:ubyte;
 }
 
 
@@ -20,14 +20,14 @@ table Torappu_BuildingData_ObstacleData {
 
 
 
-table dict__System_String_Torappu_BuildingData_ObstacleData {
+table dict_2_System_String_Torappu_BuildingData_ObstacleData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_ObstacleData;
 }
 
 
 
-enum Torappu_BuildingData_LODLEVEL : int32 {
+enum Torappu_BuildingData_LODLEVEL : int {
 	HIGHEST = 0,
 	HIGH = 1,
 	LOW = 2,
@@ -35,7 +35,7 @@ enum Torappu_BuildingData_LODLEVEL : int32 {
 	COUNT = 4
 }
 
-table dict__Torappu_BuildingData_LODLEVEL_list___1_System_String {
+table dict_2_Torappu_BuildingData_LODLEVEL_list_1_System_String__ {
 	dict_key:Torappu_BuildingData_LODLEVEL;
 	dict_value:[string];
 }
@@ -43,13 +43,13 @@ table dict__Torappu_BuildingData_LODLEVEL_list___1_System_String {
 
 
 table Torappu_BuildingData_FurnitureLODConfig {
-	showedObjNames:[dict__Torappu_BuildingData_LODLEVEL_list___1_System_String];
+	showedObjNames:[dict_2_Torappu_BuildingData_LODLEVEL_list_1_System_String__];
 	isOverWrite:bool;
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_FurnitureLODConfig {
+table dict_2_System_String_Torappu_BuildingData_FurnitureLODConfig_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_FurnitureLODConfig;
 }
@@ -57,9 +57,9 @@ table dict__System_String_Torappu_BuildingData_FurnitureLODConfig {
 
 
 table Torappu_BuildingData_BuildingLocalData {
-	furnitureObstacleData:[dict__System_String_Torappu_BuildingData_ObstacleData];
-	roomObstacleData:[dict__System_String_Torappu_BuildingData_ObstacleData];
-	furnitureLODConfig:[dict__System_String_Torappu_BuildingData_FurnitureLODConfig];
+	furnitureObstacleData:[dict_2_System_String_Torappu_BuildingData_ObstacleData_];
+	roomObstacleData:[dict_2_System_String_Torappu_BuildingData_ObstacleData_];
+	furnitureLODConfig:[dict_2_System_String_Torappu_BuildingData_FurnitureLODConfig_];
 }
 
 

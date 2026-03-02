@@ -1,5 +1,5 @@
 
-enum Torappu_AttributeType : int32 {
+enum Torappu_AttributeType : int {
 	MAX_HP = 0,
 	ATK = 1,
 	DEF = 2,

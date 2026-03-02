@@ -1,0 +1,9 @@
+include "Torappu_Act1VHalfIdleDiagramData_PointPosData.fbs";
+
+table dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_PointPosData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_;

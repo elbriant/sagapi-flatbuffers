@@ -2,10 +2,10 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActMultiV3MilestoneData {
 	id:string;
-	level:int32;
-	needPointCnt:int32;
+	level:int;
+	needPointCnt:int;
 	rewardItem:Torappu_ItemBundle;
-	availTime:int64;
+	availTime:long;
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_ItemClassifyType : int32 {
+enum Torappu_ItemClassifyType : int {
 	NONE = 0,
 	CONSUME = 1,
 	NORMAL = 2,

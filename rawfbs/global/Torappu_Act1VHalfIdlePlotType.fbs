@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VHalfIdlePlotType : int32 {
+enum Torappu_Act1VHalfIdlePlotType : int {
 	NONE = 0,
 	LANDSCAPE = 1,
 	ROAD = 2,

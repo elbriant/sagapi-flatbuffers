@@ -1,0 +1,9 @@
+include "Torappu_ActivityRoguelikeData.fbs";
+
+table dict_2_System_String_Torappu_ActivityRoguelikeData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityRoguelikeData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityRoguelikeData_;

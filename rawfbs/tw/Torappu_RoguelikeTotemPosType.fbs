@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeTotemPosType : int32 {
+enum Torappu_RoguelikeTotemPosType : int {
 	LOCATION = 0,
 	EFFECT = 1
 }

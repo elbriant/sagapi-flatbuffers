@@ -1,5 +1,5 @@
 include "Torappu_OpenServerScheduleItem.fbs";
-include "dict__System_String_Torappu_OpenServerData.fbs";
+include "dict_2_System_String_Torappu_OpenServerData_.fbs";
 include "Torappu_OpenServerConst.fbs";
 include "Torappu_ReturnData.fbs";
 include "Torappu_ReturnV2Data.fbs";
@@ -8,7 +8,7 @@ include "Torappu_LongTermCheckInData.fbs";
 
 table Torappu_OpenServerSchedule {
 	schedule:[Torappu_OpenServerScheduleItem];
-	dataMap:[dict__System_String_Torappu_OpenServerData];
+	dataMap:[dict_2_System_String_Torappu_OpenServerData_];
 	constant:Torappu_OpenServerConst;
 	playerReturn:Torappu_ReturnData;
 	playerReturnV2:Torappu_ReturnV2Data;

@@ -1,34 +1,34 @@
 include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData {
-	chessSoldPrice:int32;
-	shopRefreshPrice:int32;
-	bonusRound:int32;
-	maxDeckCnt:int32;
-	maxChessCnt:int32;
-	deltaShopUpgradePrice:int32;
-	shieldToDmgScale:int32;
-	spellCntLimit:int32;
-	costPlayerHpLimit:int32;
+	chessSoldPrice:int;
+	shopRefreshPrice:int;
+	bonusRound:int;
+	maxDeckCnt:int;
+	maxChessCnt:int;
+	deltaShopUpgradePrice:int;
+	shieldToDmgScale:int;
+	spellCntLimit:int;
+	costPlayerHpLimit:int;
 	rewardEnemyGroupKey:string;
 	rewardEnemyEffectId:string;
 	selfDefenseDamageTip:string;
 	selfCharDamageTip:string;
 	selfDamageTip:string;
 	selfSpecialDamageTip:string;
-	additionalAwardCount1:int32;
-	additionalAwardCount2:int32;
+	additionalAwardCount1:int;
+	additionalAwardCount2:int;
 	normalAwardTxt:string;
 	additionalAwardTxt:string;
 	milestoneId:string;
 	boxChangeTxt:string;
-	startCd:int32;
-	borrowCount:int32;
-	maxBorrowListCnt:int32;
-	dailyMissionParam:int32;
+	startCd:int;
+	borrowCount:int;
+	maxBorrowListCnt:int;
+	dailyMissionParam:int;
 	dailyMissionRewardId:string;
 	dailyMissionRewardType:string;
-	dailyMissionRewardCount:int32;
+	dailyMissionRewardCount:int;
 	dailyMissionName:string;
 	dailyMissionDesc:string;
 	dailyMissionRule:string;
@@ -39,12 +39,12 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData {
 	rewardSkinText:string;
 	rewardAvatarId:string;
 	rewardAvatarText:string;
-	forceFocusEnemyTurns:[int32];
-	tutorialPhase1Round:int32;
-	tutorialPhase2Round:int32;
-	tutorialPhase3Round:int32;
-	tutorialPhase1ShopLevel:int32;
-	tutorialPhase2ShopLevel:int32;
+	forceFocusEnemyTurns:[int];
+	tutorialPhase1Round:int;
+	tutorialPhase2Round:int;
+	tutorialPhase3Round:int;
+	tutorialPhase1ShopLevel:int;
+	tutorialPhase2ShopLevel:int;
 }
 
 

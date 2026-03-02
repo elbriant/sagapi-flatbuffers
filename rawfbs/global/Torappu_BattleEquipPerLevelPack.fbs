@@ -1,11 +1,12 @@
 include "Torappu_BattleUniEquipData.fbs";
-include "dict__System_String_Torappu_Blackboard.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
+include "dict_2_System_String_Torappu_Blackboard_.fbs";
 
 table Torappu_BattleEquipPerLevelPack {
-	equipLevel:int32;
+	equipLevel:int;
 	parts:[Torappu_BattleUniEquipData];
 	attributeBlackboard:[Torappu_Blackboard_DataPair];
-	tokenAttributeBlackboard:[dict__System_String_Torappu_Blackboard];
+	tokenAttributeBlackboard:[dict_2_System_String_Torappu_Blackboard_];
 }
 
 

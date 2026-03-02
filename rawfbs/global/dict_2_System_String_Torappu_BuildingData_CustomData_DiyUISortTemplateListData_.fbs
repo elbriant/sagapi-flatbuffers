@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_CustomData_DiyUISortTemplateListData.fbs";
+
+table dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_CustomData_DiyUISortTemplateListData;
+}
+
+
+root_type dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData_;

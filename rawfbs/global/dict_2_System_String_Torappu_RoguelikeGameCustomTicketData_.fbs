@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameCustomTicketData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameCustomTicketData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameCustomTicketData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameCustomTicketData_;

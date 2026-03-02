@@ -1,8 +1,8 @@
 
 table Torappu_BuildingData_HirePhase {
 	economizeRate:float;
-	resSpeed:int32;
-	refreshTimes:int32;
+	resSpeed:int;
+	refreshTimes:int;
 }
 
 

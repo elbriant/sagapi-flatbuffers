@@ -1,7 +1,7 @@
 include "Torappu_UniEquipTrack.fbs";
 
 table Torappu_UniEquipTimeInfo {
-	timeStamp:int64;
+	timeStamp:long;
 	trackList:[Torappu_UniEquipTrack];
 }
 

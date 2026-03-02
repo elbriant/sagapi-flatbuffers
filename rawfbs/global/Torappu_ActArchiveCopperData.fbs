@@ -1,13 +1,13 @@
-include "dict__System_String_Torappu_ActArchiveCopperItemData.fbs";
-include "dict__System_String_Torappu_ActArchiveCopperTypeData.fbs";
-include "dict__System_String_Torappu_ActArchiveCopperGildData.fbs";
-include "dict__System_String_Torappu_ActArchiveCopperLuckyLevelData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveCopperItemData_.fbs";
+include "dict_2_System_String_Torappu_ActArchiveCopperTypeData_.fbs";
+include "dict_2_System_String_Torappu_ActArchiveCopperGildData_.fbs";
+include "dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_.fbs";
 
 table Torappu_ActArchiveCopperData {
-	coppers:[dict__System_String_Torappu_ActArchiveCopperItemData];
-	copperTypes:[dict__System_String_Torappu_ActArchiveCopperTypeData];
-	gilds:[dict__System_String_Torappu_ActArchiveCopperGildData];
-	luckyLevels:[dict__System_String_Torappu_ActArchiveCopperLuckyLevelData];
+	coppers:[dict_2_System_String_Torappu_ActArchiveCopperItemData_];
+	copperTypes:[dict_2_System_String_Torappu_ActArchiveCopperTypeData_];
+	gilds:[dict_2_System_String_Torappu_ActArchiveCopperGildData_];
+	luckyLevels:[dict_2_System_String_Torappu_ActArchiveCopperLuckyLevelData_];
 }
 
 

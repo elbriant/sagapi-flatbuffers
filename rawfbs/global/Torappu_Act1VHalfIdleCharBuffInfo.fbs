@@ -2,8 +2,8 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act1VHalfIdleCharBuffInfo {
 	id:string;
-	level:int32;
-	charCount:int32;
+	level:int;
+	charCount:int;
 	desc:string;
 	runeData:Torappu_RuneTable_PackedRuneData;
 }

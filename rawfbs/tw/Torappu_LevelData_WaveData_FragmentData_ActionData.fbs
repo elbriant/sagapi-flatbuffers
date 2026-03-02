@@ -6,10 +6,10 @@ table Torappu_LevelData_WaveData_FragmentData_ActionData {
 	actionType:Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType;
 	managedByScheduler:bool;
 	key:string;
-	count:int32;
+	count:int;
 	preDelay:float;
 	interval:float;
-	routeIndex:int32;
+	routeIndex:int;
 	blockFragment:bool;
 	autoPreviewRoute:bool;
 	autoDisplayEnemyInfo:bool;
@@ -19,7 +19,7 @@ table Torappu_LevelData_WaveData_FragmentData_ActionData {
 	randomSpawnGroupPackKey:string;
 	randomType:Torappu_LevelData_WaveData_FragmentData_ActionData_RandomType;
 	refreshType:Torappu_LevelData_WaveData_FragmentData_ActionData_RefreshType;
-	weight:int32;
+	weight:int;
 	dontBlockWave:bool;
 	forceBlockWaveInBranch:bool;
 }

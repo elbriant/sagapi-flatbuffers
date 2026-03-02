@@ -2,8 +2,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act35SideData_Act35SideMileStoneData {
 	mileStoneId:string;
-	mileStoneLvl:int32;
-	needPointCnt:int32;
+	mileStoneLvl:int;
+	needPointCnt:int;
 	rewardItem:Torappu_ItemBundle;
 }
 

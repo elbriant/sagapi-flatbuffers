@@ -1,0 +1,9 @@
+include "dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool_.fbs";
+
+table dict_2_System_String_dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool__ {
+	dict_key:string;
+	dict_value:[dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool_];
+}
+
+
+root_type dict_2_System_String_dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool__;

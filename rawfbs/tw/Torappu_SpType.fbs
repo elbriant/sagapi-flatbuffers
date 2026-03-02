@@ -1,5 +1,5 @@
 
-enum Torappu_SpType : int32 {
+enum Torappu_SpType : int {
 	NONE = 0,
 	INCREASE_WITH_TIME = 1,
 	INCREASE_WHEN_ATTACK = 2,

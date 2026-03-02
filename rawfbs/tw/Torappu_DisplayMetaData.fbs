@@ -4,8 +4,8 @@ include "Torappu_NameCardV2Data.fbs";
 include "Torappu_MailArchiveData.fbs";
 include "Torappu_MailSenderData.fbs";
 include "Torappu_EmoticonData.fbs";
-include "dict__System_String_Torappu_StoryVariantData.fbs";
-include "dict__System_String_Torappu_GuidebookGroupData.fbs";
+include "dict_2_System_String_Torappu_StoryVariantData_.fbs";
+include "dict_2_System_String_Torappu_GuidebookGroupData_.fbs";
 
 table Torappu_DisplayMetaData {
 	playerAvatarData:Torappu_PlayerAvatarData;
@@ -14,8 +14,8 @@ table Torappu_DisplayMetaData {
 	mailArchiveData:Torappu_MailArchiveData;
 	mailSenderData:Torappu_MailSenderData;
 	emoticonData:Torappu_EmoticonData;
-	storyVariantData:[dict__System_String_Torappu_StoryVariantData];
-	guidebookGroupDatas:[dict__System_String_Torappu_GuidebookGroupData];
+	storyVariantData:[dict_2_System_String_Torappu_StoryVariantData_];
+	guidebookGroupDatas:[dict_2_System_String_Torappu_GuidebookGroupData_];
 }
 
 

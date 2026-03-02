@@ -1,5 +1,5 @@
 
-enum Torappu_Act3D0Data_GoodType : int32 {
+enum Torappu_Act3D0Data_GoodType : int {
 	NORMAL = 0,
 	SPECIAL = 1
 }

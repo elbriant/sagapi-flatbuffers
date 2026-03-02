@@ -6,9 +6,9 @@ table Torappu_ActMultiV3MapTypeData {
 	mode:Torappu_ActMultiV3MapModeType;
 	difficulty:Torappu_ActMultiV3MapDiffType;
 	isDefaultSelectInQuickMatch:bool;
-	squadMax:int32;
+	squadMax:int;
 	matchUnlockModeId:string;
-	matchUnlockParam:int32;
+	matchUnlockParam:int;
 	stageIdInModeList:[string];
 	unlockHint:string;
 }

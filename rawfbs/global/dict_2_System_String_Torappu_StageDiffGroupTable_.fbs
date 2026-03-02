@@ -1,0 +1,9 @@
+include "Torappu_StageDiffGroupTable.fbs";
+
+table dict_2_System_String_Torappu_StageDiffGroupTable_ {
+	dict_key:string;
+	dict_value:Torappu_StageDiffGroupTable;
+}
+
+
+root_type dict_2_System_String_Torappu_StageDiffGroupTable_;

@@ -7,7 +7,7 @@ include "Torappu_BuildingData_WorkshopExtraWeightItem.fbs";
 
 table Torappu_BuildingData_CustomData_FurnitureData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	iconId:string;
 	interactType:Torappu_BuildingData_FurnitureInteract;
@@ -18,24 +18,24 @@ table Torappu_BuildingData_CustomData_FurnitureData {
 	category:Torappu_BuildingData_FurnitureCategory;
 	validOnRotate:bool;
 	enableRotate:bool;
-	rarity:int32;
+	rarity:int;
 	themeId:string;
 	groupId:string;
-	width:int32;
-	depth:int32;
-	height:int32;
-	comfort:int32;
+	width:int;
+	depth:int;
+	height:int;
+	comfort:int;
 	usage:string;
 	description:string;
 	obtainApproach:string;
 	processedProductId:string;
-	processedProductCount:int32;
-	processedByProductPercentage:int32;
+	processedProductCount:int;
+	processedByProductPercentage:int;
 	processedByProductGroup:[Torappu_BuildingData_WorkshopExtraWeightItem];
 	canBeDestroy:bool;
-	isOnly:int32;
-	enableRoomType:int32;
-	quantity:int32;
+	isOnly:int;
+	enableRoomType:int;
+	quantity:int;
 }
 
 

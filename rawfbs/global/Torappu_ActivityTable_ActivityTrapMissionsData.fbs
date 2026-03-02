@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActivityTable_TrapMissionData.fbs";
+include "dict_2_System_String_Torappu_ActivityTable_TrapMissionData_.fbs";
 
 table Torappu_ActivityTable_ActivityTrapMissionsData {
-	trapMissions:[dict__System_String_Torappu_ActivityTable_TrapMissionData];
+	trapMissions:[dict_2_System_String_Torappu_ActivityTable_TrapMissionData_];
 }
 
 

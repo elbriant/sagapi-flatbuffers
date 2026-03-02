@@ -2,7 +2,7 @@
 table Torappu_RoguelikeWrathData {
 	id:string;
 	group:string;
-	level:int32;
+	level:int;
 	name:string;
 	levelName:string;
 	functionDesc:string;

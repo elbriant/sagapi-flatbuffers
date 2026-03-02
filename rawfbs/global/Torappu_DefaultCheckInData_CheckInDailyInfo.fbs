@@ -2,10 +2,10 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_DefaultCheckInData_CheckInDailyInfo {
 	itemList:[Torappu_ItemBundle];
-	order:int32;
-	color:int32;
-	keyItem:int32;
-	showItemOrder:int32;
+	order:int;
+	color:int;
+	keyItem:int;
+	showItemOrder:int;
 	isDynItem:bool;
 }
 

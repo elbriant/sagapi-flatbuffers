@@ -2,10 +2,10 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActivityEnemyDuelMilestoneItemData {
 	milestoneId:string;
-	orderId:int32;
-	tokenNum:int32;
+	orderId:int;
+	tokenNum:int;
 	reward:Torappu_ItemBundle;
-	availTime:int64;
+	availTime:long;
 }
 
 

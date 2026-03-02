@@ -1,5 +1,5 @@
 
-enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int32 {
+enum Torappu_LevelData_WaveData_FragmentData_ActionData_ActionType : int {
 	SPAWN = 0,
 	PREVIEW_CURSOR = 1,
 	STORY = 2,

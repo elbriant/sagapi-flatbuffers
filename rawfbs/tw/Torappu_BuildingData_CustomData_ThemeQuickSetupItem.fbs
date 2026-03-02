@@ -1,9 +1,9 @@
 
 table Torappu_BuildingData_CustomData_ThemeQuickSetupItem {
 	furnitureId:string;
-	pos0:int32;
-	pos1:int32;
-	dir:int32;
+	pos0:int;
+	pos1:int;
+	dir:int;
 }
 
 

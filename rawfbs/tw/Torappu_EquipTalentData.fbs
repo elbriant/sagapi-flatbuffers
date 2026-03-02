@@ -1,8 +1,9 @@
 include "Torappu_CharacterData_UnlockCondition.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_EquipTalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	prefabKey:string;
 	name:string;
 	description:string;
@@ -12,7 +13,7 @@ table Torappu_EquipTalentData {
 	isHideTalent:bool;
 	displayRangeId:bool;
 	upgradeDescription:string;
-	talentIndex:int32;
+	talentIndex:int;
 }
 
 

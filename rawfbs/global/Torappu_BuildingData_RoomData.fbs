@@ -9,7 +9,7 @@ table Torappu_BuildingData_RoomData {
 	description:string;
 	defaultPrefabId:string;
 	canLevelDown:bool;
-	maxCount:int32;
+	maxCount:int;
 	category:Torappu_BuildingData_RoomCategory;
 	size:Torappu_GridPosition;
 	phases:[Torappu_BuildingData_RoomData_PhaseData];

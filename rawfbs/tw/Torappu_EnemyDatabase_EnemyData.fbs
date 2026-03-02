@@ -7,6 +7,7 @@ include "Torappu_Undefinable_1_System_Int32_.fbs";
 include "Torappu_Undefinable_1_Torappu_EnemyLevelType_.fbs";
 include "Torappu_Undefinable_1_System_Single_.fbs";
 include "Torappu_Undefinable_1_System_Boolean_.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
 include "Torappu_LevelData_EnemyData_ESkillData.fbs";
 include "Torappu_LevelData_EnemyData_ESpData.fbs";
 

@@ -1,10 +1,10 @@
 include "Torappu_MiniActTrialData_RuleData.fbs";
-include "dict__System_String_Torappu_MiniActTrialData_MiniActTrialSingleData.fbs";
+include "dict_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData_.fbs";
 
 table Torappu_MiniActTrialData {
-	preShowDays:int32;
+	preShowDays:int;
 	ruleDataList:[Torappu_MiniActTrialData_RuleData];
-	miniActTrialDataMap:[dict__System_String_Torappu_MiniActTrialData_MiniActTrialSingleData];
+	miniActTrialDataMap:[dict_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData_];
 }
 
 

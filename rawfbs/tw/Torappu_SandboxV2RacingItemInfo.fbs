@@ -1,3 +1,4 @@
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_SandboxV2RacingItemInfo {
 	racerItemId:string;

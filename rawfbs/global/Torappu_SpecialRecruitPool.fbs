@@ -5,10 +5,10 @@ table Torappu_SpecialRecruitPool {
 	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
-	tagId:int32;
-	order:int32;
-	startDateTime:int64;
-	endDateTime:int64;
+	tagId:int;
+	order:int;
+	startDateTime:long;
+	endDateTime:long;
 	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
 }
 

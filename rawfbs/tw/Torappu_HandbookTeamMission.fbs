@@ -2,11 +2,11 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_HandbookTeamMission {
 	id:string;
-	sort:int32;
+	sort:int;
 	powerId:string;
 	powerName:string;
 	item:Torappu_ItemBundle;
-	favorPoint:int32;
+	favorPoint:int;
 }
 
 

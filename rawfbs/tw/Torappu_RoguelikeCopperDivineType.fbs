@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCopperDivineType : int32 {
+enum Torappu_RoguelikeCopperDivineType : int {
 	NONE = 0,
 	DIVINE = 1,
 	EVENT = 2

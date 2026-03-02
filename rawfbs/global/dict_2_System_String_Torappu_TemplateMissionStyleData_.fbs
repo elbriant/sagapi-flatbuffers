@@ -1,0 +1,9 @@
+include "Torappu_TemplateMissionStyleData.fbs";
+
+table dict_2_System_String_Torappu_TemplateMissionStyleData_ {
+	dict_key:string;
+	dict_value:Torappu_TemplateMissionStyleData;
+}
+
+
+root_type dict_2_System_String_Torappu_TemplateMissionStyleData_;

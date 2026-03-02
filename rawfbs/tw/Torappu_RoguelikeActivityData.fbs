@@ -1,8 +1,8 @@
-include "dict__System_String_Torappu_RoguelikeActivityBasicData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeActivityBasicData_.fbs";
 include "Torappu_RoguelikeActivityTable.fbs";
 
 table Torappu_RoguelikeActivityData {
-	basicDatas:[dict__System_String_Torappu_RoguelikeActivityBasicData];
+	basicDatas:[dict_2_System_String_Torappu_RoguelikeActivityBasicData_];
 	activityTable:Torappu_RoguelikeActivityTable;
 }
 

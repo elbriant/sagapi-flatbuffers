@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeSkyZoneNodeType : int32 {
+enum Torappu_RoguelikeSkyZoneNodeType : int {
 	NONE = 0,
 	ORIGIN = 1,
 	BATTLE = 2,

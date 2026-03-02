@@ -1,5 +1,5 @@
 
-enum Torappu_RL03DevelopmentNodeType : int32 {
+enum Torappu_RL03DevelopmentNodeType : int {
 	NONE = 0,
 	NORMAL = 1,
 	KEY = 2,

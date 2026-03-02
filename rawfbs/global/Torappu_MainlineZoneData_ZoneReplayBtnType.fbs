@@ -1,5 +1,5 @@
 
-enum Torappu_MainlineZoneData_ZoneReplayBtnType : int32 {
+enum Torappu_MainlineZoneData_ZoneReplayBtnType : int {
 	NONE = 0,
 	RECAP = 1,
 	REPLAY = 2

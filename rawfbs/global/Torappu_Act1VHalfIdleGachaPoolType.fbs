@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VHalfIdleGachaPoolType : int32 {
+enum Torappu_Act1VHalfIdleGachaPoolType : int {
 	NONE = 0,
 	GACHA_NORMAL = 1,
 	GACHA_NEWPLAYER = 2,

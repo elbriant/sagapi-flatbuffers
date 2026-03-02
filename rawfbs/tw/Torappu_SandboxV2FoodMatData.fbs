@@ -7,9 +7,9 @@ table Torappu_SandboxV2FoodMatData {
 	type:Torappu_SandboxV2FoodMatType;
 	attribute:Torappu_SandboxV2FoodAttribute;
 	variantType:Torappu_SandboxV2FoodVariantType;
-	bonusDuration:int32;
+	bonusDuration:int;
 	buffDesc:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

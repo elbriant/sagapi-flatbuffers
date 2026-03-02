@@ -1,11 +1,11 @@
-include "dict__System_String_Torappu_SandboxPermBasicData.fbs";
+include "dict_2_System_String_Torappu_SandboxPermBasicData_.fbs";
 include "Torappu_SandboxPermDetailData.fbs";
-include "dict__System_String_Torappu_SandboxPermItemData.fbs";
+include "dict_2_System_String_Torappu_SandboxPermItemData_.fbs";
 
 table Torappu_SandboxPermTable {
-	basicInfo:[dict__System_String_Torappu_SandboxPermBasicData];
+	basicInfo:[dict_2_System_String_Torappu_SandboxPermBasicData_];
 	detail:Torappu_SandboxPermDetailData;
-	itemData:[dict__System_String_Torappu_SandboxPermItemData];
+	itemData:[dict_2_System_String_Torappu_SandboxPermItemData_];
 }
 
 

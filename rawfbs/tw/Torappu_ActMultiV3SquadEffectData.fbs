@@ -4,13 +4,13 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 table Torappu_ActMultiV3SquadEffectData {
 	id:string;
 	iconId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	themeColor:string;
 	buffDesc:string;
 	debuffDesc:string;
 	token:Torappu_ActMultiV3SquadEffectData_Token;
-	unlockKeyNum:int32;
+	unlockKeyNum:int;
 	runeData:Torappu_RuneTable_PackedRuneData;
 }
 

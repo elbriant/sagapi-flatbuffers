@@ -1,5 +1,5 @@
 
-enum Torappu_UniEquipTarget : int32 {
+enum Torappu_UniEquipTarget : int {
 	NONE = 0,
 	TRAIT = 1,
 	TRAIT_DATA_ONLY = 2,
@@ -9,7 +9,7 @@ enum Torappu_UniEquipTarget : int32 {
 	OVERWRITE_BATTLE_DATA = 6
 }
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -19,14 +19,22 @@ enum Torappu_EvolvePhase : int32 {
 
 table Torappu_CharacterData_UnlockCondition {
 	phase:Torappu_EvolvePhase;
-	level:int32;
+	level:int;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
 
 table Torappu_TalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	prefabKey:string;
 	name:string;
 	description:string;
@@ -40,7 +48,7 @@ table Torappu_TalentData {
 
 table Torappu_EquipTalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	prefabKey:string;
 	name:string;
 	description:string;
@@ -50,7 +58,7 @@ table Torappu_EquipTalentData {
 	isHideTalent:bool;
 	displayRangeId:bool;
 	upgradeDescription:string;
-	talentIndex:int32;
+	talentIndex:int;
 }
 
 
@@ -64,7 +72,7 @@ table Torappu_CharacterData_EquipTalentDataBundle {
 
 table Torappu_CharacterData_EquipTraitData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
+	requiredPotentialRank:int;
 	blackboard:[Torappu_Blackboard_DataPair];
 	overrideDescripton:string;
 	prefabKey:string;
@@ -92,7 +100,7 @@ table Torappu_BattleUniEquipData {
 
 
 
-table dict__System_String_Torappu_Blackboard {
+table dict_2_System_String_Torappu_Blackboard_ {
 	dict_key:string;
 	dict_value:[Torappu_Blackboard_DataPair];
 }
@@ -100,10 +108,10 @@ table dict__System_String_Torappu_Blackboard {
 
 
 table Torappu_BattleEquipPerLevelPack {
-	equipLevel:int32;
+	equipLevel:int;
 	parts:[Torappu_BattleUniEquipData];
 	attributeBlackboard:[Torappu_Blackboard_DataPair];
-	tokenAttributeBlackboard:[dict__System_String_Torappu_Blackboard];
+	tokenAttributeBlackboard:[dict_2_System_String_Torappu_Blackboard_];
 }
 
 

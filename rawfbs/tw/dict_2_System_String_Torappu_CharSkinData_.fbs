@@ -1,0 +1,9 @@
+include "Torappu_CharSkinData.fbs";
+
+table dict_2_System_String_Torappu_CharSkinData_ {
+	dict_key:string;
+	dict_value:Torappu_CharSkinData;
+}
+
+
+root_type dict_2_System_String_Torappu_CharSkinData_;

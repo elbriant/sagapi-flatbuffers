@@ -1,7 +1,7 @@
 
 table Torappu_Act29SideData_Act29SideFragData {
 	fragId:string;
-	sortId:int32;
+	sortId:int;
 	fragName:string;
 	fragIcon:string;
 	fragStoreIcon:string;

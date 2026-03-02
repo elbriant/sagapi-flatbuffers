@@ -1,5 +1,5 @@
 
-enum Torappu_CartComponents_CartAccessoryPos : int32 {
+enum Torappu_CartComponents_CartAccessoryPos : int {
 	NONE = 0,
 	ROOF = 1,
 	HEADSTOCK = 2,

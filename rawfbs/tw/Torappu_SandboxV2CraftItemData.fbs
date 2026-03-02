@@ -1,18 +1,18 @@
 include "Torappu_SandboxV2CraftItemType.fbs";
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_SandboxV2CraftItemData {
 	itemId:string;
 	type:Torappu_SandboxV2CraftItemType;
 	buildingUnlockDesc:string;
-	materialItems:[dict__System_String_System_Int32];
-	upgradeItems:[dict__System_String_System_Int32];
-	outputRatio:int32;
-	withdrawRatio:int32;
-	repairCost:int32;
+	materialItems:[dict_2_System_String_System_Int32_];
+	upgradeItems:[dict_2_System_String_System_Int32_];
+	outputRatio:int;
+	withdrawRatio:int;
+	repairCost:int;
 	isHidden:bool;
 	craftGroupId:string;
-	recipeLevel:int32;
+	recipeLevel:int;
 }
 
 

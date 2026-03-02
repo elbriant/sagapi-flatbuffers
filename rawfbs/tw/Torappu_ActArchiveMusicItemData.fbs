@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveMusicItemData {
 	musicId:string;
-	musicSortId:int32;
+	musicSortId:int;
 }
 
 

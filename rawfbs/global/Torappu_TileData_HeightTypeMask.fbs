@@ -1,5 +1,5 @@
 
-enum Torappu_TileData_HeightTypeMask : int32 {
+enum Torappu_TileData_HeightTypeMask : int {
 	NONE = 0,
 	LOWLAND = 1,
 	HIGHLAND = 2,

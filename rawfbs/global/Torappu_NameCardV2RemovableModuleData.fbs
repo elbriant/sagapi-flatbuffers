@@ -4,7 +4,7 @@ include "Torappu_NameCardV2ModuleSubType.fbs";
 table Torappu_NameCardV2RemovableModuleData {
 	id:string;
 	type:Torappu_NameCardV2ModuleType;
-	sortId:int32;
+	sortId:int;
 	subType:Torappu_NameCardV2ModuleSubType;
 	name:string;
 }

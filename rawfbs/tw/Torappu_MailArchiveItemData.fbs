@@ -4,10 +4,10 @@ include "Torappu_ItemBundle.fbs";
 table Torappu_MailArchiveItemData {
 	id:string;
 	type:Torappu_MailArchiveItemType;
-	sortId:int32;
-	displayReceiveTs:int64;
-	year:int32;
-	dateDelta:int32;
+	sortId:int;
+	displayReceiveTs:long;
+	year:int;
+	dateDelta:int;
 	senderId:string;
 	title:string;
 	content:string;

@@ -3,11 +3,11 @@ include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData.
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData {
 	chessId:string;
 	isGolden:bool;
-	purchasePrice:int32;
+	purchasePrice:int;
 	status:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData;
 	upgradeChessId:string;
-	upgradeNum:int32;
-	damage:int32;
+	upgradeNum:int;
+	damage:int;
 }
 
 

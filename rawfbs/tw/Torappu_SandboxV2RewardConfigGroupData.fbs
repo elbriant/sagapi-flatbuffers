@@ -1,14 +1,14 @@
-include "dict__System_String_Torappu_SandboxV2RewardData.fbs";
-include "dict__System_String_Torappu_SandboxV2RewardCommonConfig.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RewardData_.fbs";
+include "dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_.fbs";
 
 table Torappu_SandboxV2RewardConfigGroupData {
-	stageMapPreviewRewardDict:[dict__System_String_Torappu_SandboxV2RewardData];
-	stageDetailPreviewRewardDict:[dict__System_String_Torappu_SandboxV2RewardData];
-	trapRewardDict:[dict__System_String_Torappu_SandboxV2RewardCommonConfig];
-	enemyRewardDict:[dict__System_String_Torappu_SandboxV2RewardCommonConfig];
-	unitPreviewRewardDict:[dict__System_String_Torappu_SandboxV2RewardData];
-	stageRewardDict:[dict__System_String_Torappu_SandboxV2RewardData];
-	rushPreviewRewardDict:[dict__System_String_Torappu_SandboxV2RewardData];
+	stageMapPreviewRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardData_];
+	stageDetailPreviewRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardData_];
+	trapRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_];
+	enemyRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_];
+	unitPreviewRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardData_];
+	stageRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardData_];
+	rushPreviewRewardDict:[dict_2_System_String_Torappu_SandboxV2RewardData_];
 }
 
 

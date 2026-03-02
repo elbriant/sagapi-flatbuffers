@@ -2,7 +2,7 @@ include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RL02DifficultyExt {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int32;
+	grade:int;
 	buffDesc:[string];
 }
 

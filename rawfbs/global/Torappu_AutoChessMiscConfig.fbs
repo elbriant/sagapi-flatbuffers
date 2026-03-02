@@ -1,21 +1,21 @@
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_System_String_.fbs";
 include "Torappu_BuffData.fbs";
-include "dict__System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting.fbs";
+include "dict_2_System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting_.fbs";
 
 table Torappu_AutoChessMiscConfig {
-	idleEffectMap:[dict__System_String_System_String];
-	defaultAnimMap:[dict__System_String_System_String];
+	idleEffectMap:[dict_2_System_String_System_String_];
+	defaultAnimMap:[dict_2_System_String_System_String_];
 	enemyPreviewBuff:Torappu_BuffData;
 	frozenEffectId:string;
 	goldenEffectId:string;
 	mlyssWtrmanTransformBuff:string;
-	tutorialBuy2ndCharShopCnt:int32;
-	tutorialBuy3rdCharShopCnt:int32;
-	tutorialBuy2ndCharOwnedCnt:int32;
-	tutorialBuy3rdCharOwnedCnt:int32;
-	tutorialBuy2ndequipShopCnt:int32;
-	tutorialBuy2ndequipOwnedCnt:int32;
-	sceneEffectMap:[dict__System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting];
+	tutorialBuy2ndCharShopCnt:int;
+	tutorialBuy3rdCharShopCnt:int;
+	tutorialBuy2ndCharOwnedCnt:int;
+	tutorialBuy3rdCharOwnedCnt:int;
+	tutorialBuy2ndequipShopCnt:int;
+	tutorialBuy2ndequipOwnedCnt:int;
+	sceneEffectMap:[dict_2_System_String_Torappu_AutoChessMiscConfig_SceneEffectSetting_];
 }
 
 

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameRecruitGrpData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameRecruitGrpData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameRecruitGrpData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameRecruitGrpData_;

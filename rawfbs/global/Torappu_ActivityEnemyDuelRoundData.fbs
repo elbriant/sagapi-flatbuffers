@@ -2,15 +2,15 @@
 table Torappu_ActivityEnemyDuelRoundData {
 	roundId:string;
 	modeId:string;
-	round:int32;
+	round:int;
 	enemyPredefined:bool;
-	roundScore:int32;
+	roundScore:int;
 	enemyScore:float;
 	enemyScoreRandom:float;
-	enemySideMinLeft:int32;
-	enemySideMaxLeft:int32;
-	enemySideMinRight:int32;
-	enemySideMaxRight:int32;
+	enemySideMinLeft:int;
+	enemySideMaxLeft:int;
+	enemySideMinRight:int;
+	enemySideMaxRight:int;
 	enemyPoolLeft:string;
 	enemyPoolRight:string;
 	canSkip:bool;

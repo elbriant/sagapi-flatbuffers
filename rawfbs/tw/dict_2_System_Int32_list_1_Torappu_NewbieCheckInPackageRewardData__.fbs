@@ -1,0 +1,9 @@
+include "Torappu_NewbieCheckInPackageRewardData.fbs";
+
+table dict_2_System_Int32_list_1_Torappu_NewbieCheckInPackageRewardData__ {
+	dict_key:int;
+	dict_value:[Torappu_NewbieCheckInPackageRewardData];
+}
+
+
+root_type dict_2_System_Int32_list_1_Torappu_NewbieCheckInPackageRewardData__;

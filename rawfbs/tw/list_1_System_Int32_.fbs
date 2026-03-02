@@ -1,0 +1,7 @@
+
+table list_1_System_Int32_ {
+	arr_values:[int];
+}
+
+
+root_type list_1_System_Int32_;

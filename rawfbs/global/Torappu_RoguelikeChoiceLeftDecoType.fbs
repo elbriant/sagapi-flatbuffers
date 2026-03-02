@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
+enum Torappu_RoguelikeChoiceLeftDecoType : int {
 	NONE = 0,
 	TASK = 1,
 	TASK_REWARD = 2,

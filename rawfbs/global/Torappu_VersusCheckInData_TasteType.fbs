@@ -1,5 +1,5 @@
 
-enum Torappu_VersusCheckInData_TasteType : int32 {
+enum Torappu_VersusCheckInData_TasteType : int {
 	DRAW = 0,
 	SWEET = 1,
 	SALT = 2

@@ -1,7 +1,7 @@
 include "Torappu_ShopRecommendData.fbs";
 
 table Torappu_ShopRecommendGroup {
-	recommendGroup:[int32];
+	recommendGroup:[int];
 	dataList:[Torappu_ShopRecommendData];
 }
 

@@ -6,8 +6,8 @@ include "Torappu_BattleVoiceData.fbs";
 include "Torappu_Audio_Middleware_Data_MusicData.fbs";
 include "Torappu_Audio_Middleware_Data_DuckingData.fbs";
 include "Torappu_Audio_Middleware_Data_FadeStyleData.fbs";
-include "dict__System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData.fbs";
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_.fbs";
+include "dict_2_System_String_System_String_.fbs";
 
 table Torappu_Audio_Middleware_Data_TorappuAudioData {
 	bgmBanks:[Torappu_Audio_Middleware_Data_BGMBank];
@@ -18,8 +18,8 @@ table Torappu_Audio_Middleware_Data_TorappuAudioData {
 	musics:[Torappu_Audio_Middleware_Data_MusicData];
 	duckings:[Torappu_Audio_Middleware_Data_DuckingData];
 	fadeStyles:[Torappu_Audio_Middleware_Data_FadeStyleData];
-	soundFxVoiceLang:[dict__System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData];
-	bankAlias:[dict__System_String_System_String];
+	soundFxVoiceLang:[dict_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_];
+	bankAlias:[dict_2_System_String_System_String_];
 }
 
 

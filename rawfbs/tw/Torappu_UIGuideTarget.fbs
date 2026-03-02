@@ -1,5 +1,5 @@
 
-enum Torappu_UIGuideTarget : int32 {
+enum Torappu_UIGuideTarget : int {
 	NONE = 0,
 	BUILDING_CONTROL = 1,
 	BUILDING_DORM = 2,

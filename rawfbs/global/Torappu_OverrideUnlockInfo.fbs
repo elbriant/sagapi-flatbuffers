@@ -1,10 +1,10 @@
-include "dict__System_String_list___1_Torappu_StageData_ConditionDesc.fbs";
+include "dict_2_System_String_list_1_Torappu_StageData_ConditionDesc__.fbs";
 
 table Torappu_OverrideUnlockInfo {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
-	unlockDict:[dict__System_String_list___1_Torappu_StageData_ConditionDesc];
+	startTime:long;
+	endTime:long;
+	unlockDict:[dict_2_System_String_list_1_Torappu_StageData_ConditionDesc__];
 }
 
 

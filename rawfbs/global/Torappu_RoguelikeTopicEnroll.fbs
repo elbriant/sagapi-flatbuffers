@@ -2,9 +2,9 @@ include "Torappu_RoguelikeEnrollType.fbs";
 
 table Torappu_RoguelikeTopicEnroll {
 	enrollId:string;
-	enrollTime:int64;
+	enrollTime:long;
 	enrollType:Torappu_RoguelikeEnrollType;
-	enrollNoticeEndTime:int64;
+	enrollNoticeEndTime:long;
 }
 
 

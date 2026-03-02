@@ -1,5 +1,5 @@
 
-enum Torappu_ShopUnlockType : int32 {
+enum Torappu_ShopUnlockType : int {
 	ALWAYS_UNLOCK = 0,
 	SKIN_UNLOCK = 1,
 	FURN_UNLOCK = 2,

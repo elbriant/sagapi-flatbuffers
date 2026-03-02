@@ -1,10 +1,10 @@
 include "Torappu_PlayerAvatarPerData.fbs";
-include "dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData.fbs";
+include "dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_.fbs";
 
 table Torappu_PlayerAvatarData {
 	defaultAvatarId:string;
 	avatarList:[Torappu_PlayerAvatarPerData];
-	avatarTypeData:[dict__Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData];
+	avatarTypeData:[dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_];
 }
 
 

@@ -1,0 +1,9 @@
+include "Torappu_ActivityTable_HomeActivityConfig.fbs";
+
+table dict_2_System_String_Torappu_ActivityTable_HomeActivityConfig_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityTable_HomeActivityConfig;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityTable_HomeActivityConfig_;

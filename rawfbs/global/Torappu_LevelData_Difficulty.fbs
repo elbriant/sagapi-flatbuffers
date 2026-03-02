@@ -1,5 +1,5 @@
 
-enum Torappu_LevelData_Difficulty : int32 {
+enum Torappu_LevelData_Difficulty : int {
 	NONE = 0,
 	NORMAL = 1,
 	FOUR_STAR = 2,

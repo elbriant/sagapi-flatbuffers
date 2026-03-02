@@ -1,14 +1,14 @@
 
 table Torappu_ReturnConst {
-	startTime:int64;
-	systemTab_time:int32;
-	afkDays:int32;
-	unlockLv:int32;
+	startTime:long;
+	systemTab_time:int;
+	afkDays:int;
+	unlockLv:int;
 	unlockLevel:string;
 	juniorClear:bool;
 	ifvisitor:bool;
-	permMission_time:int32;
-	needPoints:int32;
+	permMission_time:int;
+	needPoints:int;
 	defaultIntro:string;
 	pointId:string;
 }

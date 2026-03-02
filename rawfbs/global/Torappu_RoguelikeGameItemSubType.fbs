@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeGameItemSubType : int32 {
+enum Torappu_RoguelikeGameItemSubType : int {
 	NONE = 0,
 	CURSE = 1,
 	TEMP_TICKET = 2,

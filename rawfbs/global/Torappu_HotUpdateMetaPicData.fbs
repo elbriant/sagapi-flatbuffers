@@ -2,10 +2,10 @@ include "Torappu_HotUpdateMetaPicData_PicType.fbs";
 
 table Torappu_HotUpdateMetaPicData {
 	picId:string;
-	groupId:int32;
-	sortId:int32;
-	startTime:int64;
-	endTime:int64;
+	groupId:int;
+	sortId:int;
+	startTime:long;
+	endTime:long;
 	textList:[string];
 	picType:Torappu_HotUpdateMetaPicData_PicType;
 	logoId:string;

@@ -1,5 +1,5 @@
 
-enum Torappu_Act25SideData_Act25SideArchiveItemType : int32 {
+enum Torappu_Act25SideData_Act25SideArchiveItemType : int {
 	PIC = 0,
 	STORY = 1,
 	BATTLE_PERFORMANCE = 2,

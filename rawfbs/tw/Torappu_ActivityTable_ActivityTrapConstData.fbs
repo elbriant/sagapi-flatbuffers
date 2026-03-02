@@ -1,7 +1,7 @@
 
 table Torappu_ActivityTable_ActivityTrapConstData {
 	stageUnlockTrapDesc:string;
-	trapMaximum:int32;
+	trapMaximum:int;
 	stageCanNotUseTrap:[string];
 }
 

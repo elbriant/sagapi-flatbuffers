@@ -6,7 +6,7 @@ table Torappu_ActArchiveCopperItemData {
 	displayCopperId:string;
 	archiveType:Torappu_ActArchiveCopperType;
 	copperType:Torappu_RoguelikeCopperType;
-	sortId:int32;
+	sortId:int;
 	enrollId:string;
 	coppersInGroup:[string];
 }

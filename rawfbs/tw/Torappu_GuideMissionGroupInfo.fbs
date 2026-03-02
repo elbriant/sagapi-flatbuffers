@@ -1,7 +1,7 @@
 
 table Torappu_GuideMissionGroupInfo {
 	groupId:string;
-	sortId:int32;
+	sortId:int;
 	shortName:string;
 	unlockDesc:string;
 }

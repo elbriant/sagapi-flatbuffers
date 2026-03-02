@@ -1,0 +1,9 @@
+include "Torappu_Audio_Middleware_Data_Bank.fbs";
+
+table dict_2_System_String_list_1_Torappu_Audio_Middleware_Data_Bank__ {
+	dict_key:string;
+	dict_value:[Torappu_Audio_Middleware_Data_Bank];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_Audio_Middleware_Data_Bank__;

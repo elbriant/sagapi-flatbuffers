@@ -3,7 +3,7 @@ include "Torappu_RL03DevDifficultyNodePairInfo.fbs";
 table Torappu_RL03DevDifficultyNodeInfo {
 	buffId:string;
 	nodeMap:[Torappu_RL03DevDifficultyNodePairInfo];
-	enableGrade:int32;
+	enableGrade:int;
 }
 
 

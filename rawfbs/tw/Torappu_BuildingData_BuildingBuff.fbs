@@ -6,14 +6,14 @@ table Torappu_BuildingData_BuildingBuff {
 	buffName:string;
 	buffIcon:string;
 	skillIcon:string;
-	sortId:int32;
+	sortId:int;
 	buffColor:string;
 	textColor:string;
 	buffCategory:Torappu_BuildingData_BuffCategory;
 	roomType:Torappu_BuildingData_RoomType;
 	description:string;
-	efficiency:int32;
-	targetGroupSortId:int32;
+	efficiency:int;
+	targetGroupSortId:int;
 	targets:[string];
 }
 

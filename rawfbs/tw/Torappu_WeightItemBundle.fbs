@@ -5,8 +5,8 @@ table Torappu_WeightItemBundle {
 	id:string;
 	type:Torappu_ItemType;
 	dropType:Torappu_StageDropType;
-	count:int32;
-	weight:int32;
+	count:int;
+	weight:int;
 }
 
 

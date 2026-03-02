@@ -2,7 +2,7 @@
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData {
 	factionId:string;
 	factionName:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

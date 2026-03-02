@@ -1,0 +1,9 @@
+include "Torappu_TrainingCampStageData.fbs";
+
+table dict_2_System_String_Torappu_TrainingCampStageData_ {
+	dict_key:string;
+	dict_value:Torappu_TrainingCampStageData;
+}
+
+
+root_type dict_2_System_String_Torappu_TrainingCampStageData_;

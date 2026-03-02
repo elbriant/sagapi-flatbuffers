@@ -1,6 +1,6 @@
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData {
-	shopLevel:int32;
+	shopLevel:int;
 	levelTagBgColor:string;
 	isLevelCharChessEmpty:bool;
 	isLevelTrapChessEmpty:bool;

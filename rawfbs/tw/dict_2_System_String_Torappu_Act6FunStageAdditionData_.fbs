@@ -1,0 +1,9 @@
+include "Torappu_Act6FunStageAdditionData.fbs";
+
+table dict_2_System_String_Torappu_Act6FunStageAdditionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act6FunStageAdditionData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act6FunStageAdditionData_;

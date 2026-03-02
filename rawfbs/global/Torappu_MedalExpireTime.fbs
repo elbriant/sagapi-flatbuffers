@@ -1,8 +1,8 @@
 include "Torappu_MedalExpireType.fbs";
 
 table Torappu_MedalExpireTime {
-	start:int64;
-	end:int64;
+	start:long;
+	end:long;
 	type:Torappu_MedalExpireType;
 }
 

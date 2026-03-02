@@ -1,0 +1,9 @@
+include "Torappu_SandboxPermBasicData.fbs";
+
+table dict_2_System_String_Torappu_SandboxPermBasicData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxPermBasicData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxPermBasicData_;

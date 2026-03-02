@@ -1,7 +1,7 @@
 
 table Torappu_GachaData_NormalGachaTkt {
 	itemId:string;
-	endTime:int64;
+	endTime:long;
 	gachaPoolId:string;
 	isTen:bool;
 }

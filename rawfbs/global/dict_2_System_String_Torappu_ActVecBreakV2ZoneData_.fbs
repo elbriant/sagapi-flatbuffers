@@ -1,0 +1,9 @@
+include "Torappu_ActVecBreakV2ZoneData.fbs";
+
+table dict_2_System_String_Torappu_ActVecBreakV2ZoneData_ {
+	dict_key:string;
+	dict_value:Torappu_ActVecBreakV2ZoneData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActVecBreakV2ZoneData_;

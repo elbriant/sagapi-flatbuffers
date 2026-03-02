@@ -1,11 +1,11 @@
 
 table Torappu_CampaignConstTable {
 	systemPreposedStage:string;
-	rotateStartTime:int64;
+	rotateStartTime:long;
 	rotatePreposedStage:string;
 	zoneUnlockStage:string;
 	firstRotateRegion:string;
-	sweepStartTime:int64;
+	sweepStartTime:long;
 }
 
 

@@ -1,8 +1,8 @@
-include "list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_.fbs";
+include "Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_.fbs";
 
 table Torappu_BuildingData_RoomUnlockCond {
 	id:string;
-	number:[list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
+	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
 }
 
 

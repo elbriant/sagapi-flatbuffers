@@ -1,11 +1,11 @@
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData {
 	bandId:string;
-	sortId:int32;
+	sortId:int;
 	bandName:string;
 	bandIconId:string;
 	bandDesc:string;
-	totalHp:int32;
+	totalHp:int;
 	initialEffectId:string;
 	charId:string;
 	charName:string;

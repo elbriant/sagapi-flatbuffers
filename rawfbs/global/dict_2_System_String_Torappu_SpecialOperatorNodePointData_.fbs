@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorNodePointData.fbs";
+
+table dict_2_System_String_Torappu_SpecialOperatorNodePointData_ {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorNodePointData;
+}
+
+
+root_type dict_2_System_String_Torappu_SpecialOperatorNodePointData_;

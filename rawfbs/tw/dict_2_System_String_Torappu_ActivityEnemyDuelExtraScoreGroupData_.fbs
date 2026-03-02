@@ -1,0 +1,9 @@
+include "Torappu_ActivityEnemyDuelExtraScoreGroupData.fbs";
+
+table dict_2_System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityEnemyDuelExtraScoreGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData_;

@@ -3,7 +3,7 @@ include "Torappu_ShopCreditUnlockItem.fbs";
 table Torappu_ShopCreditUnlockGroup {
 	id:string;
 	index:string;
-	startDateTime:int64;
+	startDateTime:long;
 	charDict:[Torappu_ShopCreditUnlockItem];
 }
 

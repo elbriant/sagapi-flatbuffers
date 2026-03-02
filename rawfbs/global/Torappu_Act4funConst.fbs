@@ -1,8 +1,8 @@
 
 table Torappu_Act4funConst {
-	liveMatAmtLowerLimit:int32;
-	liveTurnUpperLimit:int32;
-	superChatCountDownNum:int32;
+	liveMatAmtLowerLimit:int;
+	liveTurnUpperLimit:int;
+	superChatCountDownNum:int;
 	badEndingPerformEffectTitle:string;
 	performEffectTitle:string;
 	defaultPerformPicId:string;
@@ -12,8 +12,8 @@ table Torappu_Act4funConst {
 	runPerformGroup:string;
 	liveMatDefaultUserIcon:string;
 	liveMatAttributeIcon:string;
-	liveMatAttribIconDiffNum:int32;
-	liveValueAbsLimit:int32;
+	liveMatAttribIconDiffNum:int;
+	liveValueAbsLimit:int;
 	cmtAppearTimeLowerLimit:float;
 	cmtAppearTimeUpperLimit:float;
 	subtitleIntervalTime:float;

@@ -1,5 +1,5 @@
 
-enum Torappu_MiniActTrialData_RuleType : int32 {
+enum Torappu_MiniActTrialData_RuleType : int {
 	NONE = 0,
 	TITLE = 1,
 	CONTENT = 2

@@ -1,8 +1,8 @@
 
 table Torappu_ActArchiveRelicItemData {
 	relicId:string;
-	relicSortId:int32;
-	relicGroupId:int32;
+	relicSortId:int;
+	relicGroupId:int;
 	orderId:string;
 	isSpRelic:bool;
 	enrollId:string;

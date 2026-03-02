@@ -5,9 +5,9 @@ table Torappu_ActMultiV3MapModeData {
 	name:string;
 	iconId:string;
 	color:string;
-	quickMatchSortId:int32;
-	stageOverviewSortId:int32;
-	unlockTs:int64;
+	quickMatchSortId:int;
+	stageOverviewSortId:int;
+	unlockTs:long;
 	unlockPageTitle:string;
 	unlockPageDesc:string;
 }

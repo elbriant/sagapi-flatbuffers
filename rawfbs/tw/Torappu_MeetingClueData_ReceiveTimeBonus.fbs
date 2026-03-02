@@ -1,7 +1,7 @@
 
 table Torappu_MeetingClueData_ReceiveTimeBonus {
-	receiveTimes:int32;
-	receiveBonus:int32;
+	receiveTimes:int;
+	receiveBonus:int;
 }
 
 

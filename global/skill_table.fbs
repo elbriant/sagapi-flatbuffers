@@ -1,16 +1,16 @@
 
-enum Torappu_SkillType : int32 {
+enum Torappu_SkillType : int {
 	PASSIVE = 0,
 	MANUAL = 1,
 	AUTO = 2
 }
 
-enum Torappu_SkillDurationType : int32 {
+enum Torappu_SkillDurationType : int {
 	NONE = 0,
 	AMMO = 1
 }
 
-enum Torappu_SpType : int32 {
+enum Torappu_SpType : int {
 	NONE = 0,
 	INCREASE_WITH_TIME = 1,
 	INCREASE_WHEN_ATTACK = 2,
@@ -19,7 +19,7 @@ enum Torappu_SpType : int32 {
 	ALL = 7
 }
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -115,34 +115,34 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
 
 
 table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
+	currentCryptoKey:int;
+	hiddenValue:int;
 	inited:bool;
-	fakeValue:int32;
+	fakeValue:int;
 	fakeValueActive:bool;
 }
 
 
 
 table CodeStage_AntiCheat_Common_ACTkByte4 {
-	b1:uint8;
-	b2:uint8;
-	b3:uint8;
-	b4:uint8;
+	b1:ubyte;
+	b2:ubyte;
+	b3:ubyte;
+	b4:ubyte;
 }
 
 
 
 table CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
+	currentCryptoKey:int;
+	hiddenValue:int;
 	hiddenValueOldByte4:CodeStage_AntiCheat_Common_ACTkByte4;
 	inited:bool;
 	fakeValue:float;
@@ -158,6 +158,14 @@ table Torappu_SpData {
 	spCost:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
 	initSp:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
 	increment:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 

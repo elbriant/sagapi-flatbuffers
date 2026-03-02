@@ -14,7 +14,7 @@ table Torappu_ItemData {
 	iconId:string;
 	overrideBkg:string;
 	stackIconId:string;
-	sortId:int32;
+	sortId:int;
 	usage:string;
 	obtainApproach:string;
 	hideInItemGet:bool;

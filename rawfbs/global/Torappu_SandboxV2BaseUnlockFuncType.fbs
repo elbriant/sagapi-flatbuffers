@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2BaseUnlockFuncType : int32 {
+enum Torappu_SandboxV2BaseUnlockFuncType : int {
 	NONE = 0,
 	HOME_PUTPOST = 1,
 	HOME_PORTABLE = 2,

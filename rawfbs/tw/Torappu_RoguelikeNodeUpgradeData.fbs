@@ -4,7 +4,7 @@ include "Torappu_RoguelikeTempNodeUpgradeItemData.fbs";
 
 table Torappu_RoguelikeNodeUpgradeData {
 	nodeType:Torappu_RoguelikeEventType;
-	sortId:int32;
+	sortId:int;
 	permItemList:[Torappu_RoguelikePermNodeUpgradeItemData];
 	tempItemList:[Torappu_RoguelikeTempNodeUpgradeItemData];
 }

@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VHalfIdleEquipType : int32 {
+enum Torappu_Act1VHalfIdleEquipType : int {
 	WEAPON = 0,
 	ARMOR = 1,
 	ACCESSORY = 2,

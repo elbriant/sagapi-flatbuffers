@@ -1,8 +1,8 @@
 
 table Torappu_BuildingData_MeetingPhase {
-	friendSlotInc:int32;
-	maxVisitorNum:int32;
-	gatheringSpeed:int32;
+	friendSlotInc:int;
+	maxVisitorNum:int;
+	gatheringSpeed:int;
 }
 
 

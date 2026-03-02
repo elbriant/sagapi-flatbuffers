@@ -1,5 +1,5 @@
 
-enum Torappu_Battle_Cooperate_EndTileType : int32 {
+enum Torappu_Battle_Cooperate_EndTileType : int {
 	NONE = 0,
 	MY_SIDE = 1,
 	MATE_SIDE = 2,

@@ -5,17 +5,17 @@ table Torappu_Act44SideData_Act44SideConstData {
 	informantUnlockStageId:string;
 	informantItemId:string;
 	informantItemType:Torappu_ItemType;
-	informantItemCount:int32;
+	informantItemCount:int;
 	milestoneItemId:string;
-	attentionMax:int32;
-	trustMax:int32;
-	attentionMin:int32;
-	trustMin:int32;
-	patienceRCRoundNum:int32;
-	beginnerPatienceRCRoundNum:int32;
+	attentionMax:int;
+	trustMax:int;
+	attentionMin:int;
+	trustMin:int;
+	patienceRCRoundNum:int;
+	beginnerPatienceRCRoundNum:int;
 	specialCustomerListId:[string];
 	milestoneRewardList:[Torappu_Act44SideData_Act44SideMilestoneSpecialRewardInfo];
-	forCountBigSuccess:int32;
+	forCountBigSuccess:int;
 	outerOpenUnlock:string;
 	customerTagFormat:string;
 }

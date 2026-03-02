@@ -1,0 +1,9 @@
+include "Torappu_Act27SideData_Act27SideShopData.fbs";
+
+table dict_2_System_String_Torappu_Act27SideData_Act27SideShopData_ {
+	dict_key:string;
+	dict_value:Torappu_Act27SideData_Act27SideShopData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act27SideData_Act27SideShopData_;

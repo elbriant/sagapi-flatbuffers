@@ -3,7 +3,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 table Torappu_ClimbTowerSubCardData {
 	id:string;
 	mainCardId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	desc:string;
 	runeData:Torappu_RuneTable_PackedRuneData;

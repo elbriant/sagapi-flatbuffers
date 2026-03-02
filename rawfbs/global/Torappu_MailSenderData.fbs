@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_MailSenderSingleInfo.fbs";
+include "dict_2_System_String_Torappu_MailSenderSingleInfo_.fbs";
 
 table Torappu_MailSenderData {
-	senderDict:[dict__System_String_Torappu_MailSenderSingleInfo];
+	senderDict:[dict_2_System_String_Torappu_MailSenderSingleInfo_];
 }
 
 

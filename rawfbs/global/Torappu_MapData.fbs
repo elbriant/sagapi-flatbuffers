@@ -1,7 +1,7 @@
 table hg__internal__MapData {
-	row_size:int32;
-	column_size:int32;
-	matrix_data:[int16];
+	row_size:int;
+	column_size:int;
+	matrix_data:[short];
 }
 
 include "Torappu_TileData.fbs";

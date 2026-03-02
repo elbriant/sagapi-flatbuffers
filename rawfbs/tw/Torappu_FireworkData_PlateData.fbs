@@ -3,10 +3,10 @@ include "Torappu_FireworkData_PlateContent.fbs";
 
 table Torappu_FireworkData_PlateData {
 	plateId:string;
-	sortId:int32;
+	sortId:int;
 	directionType:Torappu_FireworkData_FireworkDirectionType;
 	unlockLevel:string;
-	plateRank:int32;
+	plateRank:int;
 	plateContents:[Torappu_FireworkData_PlateContent];
 	isCraft:bool;
 }

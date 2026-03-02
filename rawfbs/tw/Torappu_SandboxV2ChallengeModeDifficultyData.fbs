@@ -1,6 +1,6 @@
 
 table Torappu_SandboxV2ChallengeModeDifficultyData {
-	challengeDay:int32;
+	challengeDay:int;
 	diffDesc:string;
 }
 

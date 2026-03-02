@@ -1,5 +1,5 @@
 
-enum Torappu_SpecialOperatorTargetType : int32 {
+enum Torappu_SpecialOperatorTargetType : int {
 	NONE = 0,
 	ROGUE = 1
 }

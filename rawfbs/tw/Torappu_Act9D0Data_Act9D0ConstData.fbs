@@ -1,6 +1,6 @@
 
 table Torappu_Act9D0Data_Act9D0ConstData {
-	campaignEnemyCnt:int32;
+	campaignEnemyCnt:int;
 	campaignStageId:string;
 }
 

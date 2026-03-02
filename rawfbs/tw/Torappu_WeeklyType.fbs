@@ -1,5 +1,5 @@
 
-enum Torappu_WeeklyType : int32 {
+enum Torappu_WeeklyType : int {
 	NONE = 0,
 	MATERIAL = 1,
 	SPECIAL = 2,

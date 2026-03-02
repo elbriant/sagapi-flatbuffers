@@ -1,6 +1,6 @@
 
 table System_Int32A_ {
-	arr_values:[int32];
+	arr_values:[int];
 }
 
 

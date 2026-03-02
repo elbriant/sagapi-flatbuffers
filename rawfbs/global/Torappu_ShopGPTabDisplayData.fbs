@@ -4,13 +4,13 @@ table Torappu_ShopGPTabDisplayData {
 	tabId:string;
 	tabName:string;
 	tabType:Torappu_ShopGPTabType;
-	recomDisplayNum:int32;
+	recomDisplayNum:int;
 	tabPicId:string;
 	tabPicOnColor:string;
 	tabPicOffColor:string;
-	sortId:int32;
-	tabStartTime:int64;
-	tabEndTime:int64;
+	sortId:int;
+	tabStartTime:long;
+	tabEndTime:long;
 	markerPicId:string;
 }
 

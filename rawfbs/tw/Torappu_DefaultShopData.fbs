@@ -2,9 +2,9 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_DefaultShopData {
 	goodId:string;
-	slotId:int32;
-	price:int32;
-	availCount:int32;
+	slotId:int;
+	price:int;
+	availCount:int;
 	overrideName:string;
 	item:Torappu_ItemBundle;
 }

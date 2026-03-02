@@ -1,5 +1,5 @@
 
-enum Torappu_ChaosEffectRank : int32 {
+enum Torappu_ChaosEffectRank : int {
 	CHAOS_EFFECT_0 = 0,
 	CHAOS_EFFECT_1 = 1,
 	CHAOS_EFFECT_2 = 2

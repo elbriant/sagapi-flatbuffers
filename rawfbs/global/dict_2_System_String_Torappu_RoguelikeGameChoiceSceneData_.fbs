@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameChoiceSceneData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameChoiceSceneData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameChoiceSceneData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameChoiceSceneData_;

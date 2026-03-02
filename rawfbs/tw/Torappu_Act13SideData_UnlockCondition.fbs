@@ -1,5 +1,5 @@
 
-enum Torappu_Act13SideData_UnlockCondition : int32 {
+enum Torappu_Act13SideData_UnlockCondition : int {
 	NONE = 0,
 	PRESTIGE = 1,
 	STAGE = 2

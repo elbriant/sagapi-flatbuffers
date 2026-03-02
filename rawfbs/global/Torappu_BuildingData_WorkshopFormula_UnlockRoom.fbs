@@ -2,8 +2,8 @@ include "Torappu_BuildingData_RoomType.fbs";
 
 table Torappu_BuildingData_WorkshopFormula_UnlockRoom {
 	roomId:Torappu_BuildingData_RoomType;
-	roomLevel:int32;
-	roomCount:int32;
+	roomLevel:int;
+	roomCount:int;
 }
 
 

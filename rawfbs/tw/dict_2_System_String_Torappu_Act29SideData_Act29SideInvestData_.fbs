@@ -1,0 +1,9 @@
+include "Torappu_Act29SideData_Act29SideInvestData.fbs";
+
+table dict_2_System_String_Torappu_Act29SideData_Act29SideInvestData_ {
+	dict_key:string;
+	dict_value:Torappu_Act29SideData_Act29SideInvestData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act29SideData_Act29SideInvestData_;

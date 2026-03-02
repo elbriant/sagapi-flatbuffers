@@ -2,10 +2,10 @@ include "Torappu_ActMultiV3IdentityType.fbs";
 
 table Torappu_ActMultiV3IdentityData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	picId:string;
 	type:Torappu_ActMultiV3IdentityType;
-	maxNum:int32;
+	maxNum:int;
 	color:string;
 }
 

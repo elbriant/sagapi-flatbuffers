@@ -2,8 +2,8 @@ include "Torappu_Act24SideData_MeldingItemRarityType.fbs";
 
 table Torappu_Act24SideData_MeldingItemData {
 	meldingId:string;
-	sortId:int32;
-	meldingPrice:int32;
+	sortId:int;
+	meldingPrice:int;
 	rarity:Torappu_Act24SideData_MeldingItemRarityType;
 }
 

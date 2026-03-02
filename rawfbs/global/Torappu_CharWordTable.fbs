@@ -1,33 +1,33 @@
-include "dict__System_String_Torappu_CharWordData.fbs";
-include "dict__System_String_Torappu_CharExtraWordData.fbs";
-include "dict__System_String_Torappu_VoiceLangData.fbs";
+include "dict_2_System_String_Torappu_CharWordData_.fbs";
+include "dict_2_System_String_Torappu_CharExtraWordData_.fbs";
+include "dict_2_System_String_Torappu_VoiceLangData_.fbs";
 include "Torappu_VoiceLangType.fbs";
-include "dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData.fbs";
-include "dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData.fbs";
-include "dict__System_String_Torappu_VoiceLangType.fbs";
-include "dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData.fbs";
+include "dict_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData_.fbs";
+include "dict_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData_.fbs";
+include "dict_2_System_String_Torappu_VoiceLangType_.fbs";
+include "dict_2_Torappu_VoiceLangType_list_1_Torappu_NewVoiceTimeData__.fbs";
 include "Torappu_VoiceLangGroupType.fbs";
 include "Torappu_CharWordShowType.fbs";
-include "dict__System_String_Torappu_FestivalVoiceData.fbs";
-include "dict__System_String_Torappu_FestivalVoiceWeightData.fbs";
-include "dict__System_String_Torappu_ExtraVoiceConfigData.fbs";
+include "dict_2_System_String_Torappu_FestivalVoiceData_.fbs";
+include "dict_2_System_String_Torappu_FestivalVoiceWeightData_.fbs";
+include "dict_2_System_String_Torappu_ExtraVoiceConfigData_.fbs";
 
 table Torappu_CharWordTable {
-	charWords:[dict__System_String_Torappu_CharWordData];
-	charExtraWords:[dict__System_String_Torappu_CharExtraWordData];
-	voiceLangDict:[dict__System_String_Torappu_VoiceLangData];
+	charWords:[dict_2_System_String_Torappu_CharWordData_];
+	charExtraWords:[dict_2_System_String_Torappu_CharExtraWordData_];
+	voiceLangDict:[dict_2_System_String_Torappu_VoiceLangData_];
 	defaultLangType:Torappu_VoiceLangType;
 	newTagList:[string];
-	voiceLangTypeDict:[dict__Torappu_VoiceLangType_Torappu_VoiceLangTypeData];
-	voiceLangGroupTypeDict:[dict__Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData];
-	charDefaultTypeDict:[dict__System_String_Torappu_VoiceLangType];
-	startTimeWithTypeDict:[dict__Torappu_VoiceLangType_list___1_Torappu_NewVoiceTimeData];
+	voiceLangTypeDict:[dict_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData_];
+	voiceLangGroupTypeDict:[dict_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData_];
+	charDefaultTypeDict:[dict_2_System_String_Torappu_VoiceLangType_];
+	startTimeWithTypeDict:[dict_2_Torappu_VoiceLangType_list_1_Torappu_NewVoiceTimeData__];
 	displayGroupTypeList:[Torappu_VoiceLangGroupType];
 	displayTypeList:[Torappu_VoiceLangType];
 	playVoiceRange:Torappu_CharWordShowType;
-	fesVoiceData:[dict__System_String_Torappu_FestivalVoiceData];
-	fesVoiceWeight:[dict__System_String_Torappu_FestivalVoiceWeightData];
-	extraVoiceConfigData:[dict__System_String_Torappu_ExtraVoiceConfigData];
+	fesVoiceData:[dict_2_System_String_Torappu_FestivalVoiceData_];
+	fesVoiceWeight:[dict_2_System_String_Torappu_FestivalVoiceWeightData_];
+	extraVoiceConfigData:[dict_2_System_String_Torappu_ExtraVoiceConfigData_];
 }
 
 

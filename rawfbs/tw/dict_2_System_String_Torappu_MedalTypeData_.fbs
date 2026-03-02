@@ -1,0 +1,9 @@
+include "Torappu_MedalTypeData.fbs";
+
+table dict_2_System_String_Torappu_MedalTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_MedalTypeData;
+}
+
+
+root_type dict_2_System_String_Torappu_MedalTypeData_;

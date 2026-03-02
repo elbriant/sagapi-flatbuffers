@@ -1,5 +1,5 @@
 
-table list_dict___2_System_String_System_String_ {
+table Torappu_ListDict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -7,20 +7,20 @@ table list_dict___2_System_String_System_String_ {
 
 
 table Torappu_StageValidInfo {
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-table dict__System_String_Torappu_StageValidInfo {
+table dict_2_System_String_Torappu_StageValidInfo_ {
 	dict_key:string;
 	dict_value:Torappu_StageValidInfo;
 }
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -116,13 +116,13 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
 
 
-enum Torappu_StageDropType : int32 {
+enum Torappu_StageDropType : int {
 	NONE = 0,
 	ONCE = 1,
 	NORMAL = 2,
@@ -142,8 +142,8 @@ table Torappu_WeightItemBundle {
 	id:string;
 	type:Torappu_ItemType;
 	dropType:Torappu_StageDropType;
-	count:int32;
-	weight:int32;
+	count:int;
+	weight:int;
 }
 
 
@@ -162,7 +162,7 @@ table Torappu_StageData_DisplayRewards {
 
 
 
-enum Torappu_OccPer : int32 {
+enum Torappu_OccPer : int {
 	ALWAYS = 0,
 	ALMOST = 1,
 	USUAL = 2,
@@ -195,30 +195,30 @@ table Torappu_StageData_StageDropInfo {
 table Torappu_RetroStageOverrideInfo {
 	dropInfo:Torappu_StageData_StageDropInfo;
 	zoneId:string;
-	apCost:int32;
-	apFailReturn:int32;
-	expGain:int32;
-	goldGain:int32;
-	passFavor:int32;
-	completeFavor:int32;
+	apCost:int;
+	apFailReturn:int;
+	expGain:int;
+	goldGain:int;
+	passFavor:int;
+	completeFavor:int;
 	canMultipleBattle:bool;
 }
 
 
 
-table dict__System_String_Torappu_RetroStageOverrideInfo {
+table dict_2_System_String_Torappu_RetroStageOverrideInfo_ {
 	dict_key:string;
 	dict_value:Torappu_RetroStageOverrideInfo;
 }
 
 
 
-enum Torappu_RetroType : int32 {
+enum Torappu_RetroType : int {
 	SIDESTORY = 0,
 	BRANCHLINE = 1
 }
 
-enum Torappu_ActivityType : int32 {
+enum Torappu_ActivityType : int {
 	DEFAULT = 0,
 	MISSION_ONLY = 1,
 	CHECKIN_ONLY = 2,
@@ -286,9 +286,9 @@ table Torappu_RetroActData {
 	retroId:string;
 	type:Torappu_RetroType;
 	linkedActId:[string];
-	startTime:int64;
-	trailStartTime:int64;
-	index:int32;
+	startTime:long;
+	trailStartTime:long;
+	index:int;
 	name:string;
 	haveTrail:bool;
 	customActId:string;
@@ -297,7 +297,7 @@ table Torappu_RetroActData {
 
 
 
-table dict__System_String_Torappu_RetroActData {
+table dict_2_System_String_Torappu_RetroActData_ {
 	dict_key:string;
 	dict_value:Torappu_RetroActData;
 }
@@ -306,7 +306,7 @@ table dict__System_String_Torappu_RetroActData {
 
 table Torappu_RetroTrailRewardItem {
 	trailRewardId:string;
-	starCount:int32;
+	starCount:int;
 	rewardItem:Torappu_ItemBundle;
 }
 
@@ -314,7 +314,7 @@ table Torappu_RetroTrailRewardItem {
 
 table Torappu_RetroTrailData {
 	retroId:string;
-	trailStartTime:int64;
+	trailStartTime:long;
 	trailRewardList:[Torappu_RetroTrailRewardItem];
 	stageList:[string];
 	relatedChar:string;
@@ -325,14 +325,14 @@ table Torappu_RetroTrailData {
 
 
 
-table dict__System_String_Torappu_RetroTrailData {
+table dict_2_System_String_Torappu_RetroTrailData_ {
 	dict_key:string;
 	dict_value:Torappu_RetroTrailData;
 }
 
 
 
-enum Torappu_StageType : int32 {
+enum Torappu_StageType : int {
 	MAIN = 0,
 	DAILY = 1,
 	TRAINING = 2,
@@ -346,7 +346,7 @@ enum Torappu_StageType : int32 {
 	ENUM = 10
 }
 
-enum Torappu_LevelData_Difficulty : int32 {
+enum Torappu_LevelData_Difficulty : int {
 	NONE = 0,
 	NORMAL = 1,
 	FOUR_STAR = 2,
@@ -355,12 +355,12 @@ enum Torappu_LevelData_Difficulty : int32 {
 	ALL = 15
 }
 
-enum Torappu_StageData_PerformanceStageFlag : int32 {
+enum Torappu_StageData_PerformanceStageFlag : int {
 	NORMAL_STAGE = 0,
 	PERFORMANCE_STAGE = 1
 }
 
-enum Torappu_StageDiffGroup : int32 {
+enum Torappu_StageDiffGroup : int {
 	NONE = 0,
 	EASY = 1,
 	NORMAL = 2,
@@ -368,7 +368,7 @@ enum Torappu_StageDiffGroup : int32 {
 	ALL = 7
 }
 
-enum Torappu_PlayerBattleRank : int32 {
+enum Torappu_PlayerBattleRank : int {
 	FAIL = 1,
 	PASS = 2,
 	COMPLETE = 3,
@@ -382,7 +382,7 @@ table Torappu_StageData_ConditionDesc {
 
 
 
-enum Torappu_AppearanceStyle : int32 {
+enum Torappu_AppearanceStyle : int {
 	MAIN_NORMAL = 0,
 	MAIN_PREDEFINED = 1,
 	SUB = 2,
@@ -393,20 +393,20 @@ enum Torappu_AppearanceStyle : int32 {
 }
 
 table Torappu_StageData_ExtraConditionDesc {
-	index:int32;
+	index:int;
 	template:string;
 	unlockParam:[string];
 }
 
 
 
-enum Torappu_StageData_SpecialStageUnlockProgressType : int32 {
+enum Torappu_StageData_SpecialStageUnlockProgressType : int {
 	ONCE = 0,
 	PROGRESS = 1
 }
 
-table dict__System_Int32_System_String {
-	dict_key:int32;
+table dict_2_System_Int32_System_String_ {
+	dict_key:int;
 	dict_value:string;
 }
 
@@ -414,7 +414,7 @@ table dict__System_Int32_System_String {
 
 table Torappu_StageData_SpecialProgressInfo {
 	progressType:Torappu_StageData_SpecialStageUnlockProgressType;
-	descList:[dict__System_Int32_System_String];
+	descList:[dict_2_System_Int32_System_String_];
 }
 
 
@@ -449,24 +449,24 @@ table Torappu_StageData {
 	loadingPicId:string;
 	canPractice:bool;
 	canBattleReplay:bool;
-	apCost:int32;
-	apFailReturn:int32;
-	maxSlot:int32;
+	apCost:int;
+	apFailReturn:int;
+	maxSlot:int;
 	etItemId:string;
-	etCost:int32;
-	etFailReturn:int32;
+	etCost:int;
+	etFailReturn:int;
 	etButtonStyle:string;
-	apProtectTimes:int32;
-	diamondOnceDrop:int32;
-	practiceTicketCost:int32;
-	dailyStageDifficulty:int32;
-	expGain:int32;
-	goldGain:int32;
-	loseExpGain:int32;
-	loseGoldGain:int32;
-	passFavor:int32;
-	completeFavor:int32;
-	slProgress:int32;
+	apProtectTimes:int;
+	diamondOnceDrop:int;
+	practiceTicketCost:int;
+	dailyStageDifficulty:int;
+	expGain:int;
+	goldGain:int;
+	loseExpGain:int;
+	loseGoldGain:int;
+	passFavor:int;
+	completeFavor:int;
+	slProgress:int;
 	displayMainItem:string;
 	hilightMark:bool;
 	bossMark:bool;
@@ -495,7 +495,7 @@ table Torappu_StageData {
 
 
 
-table dict__System_String_Torappu_StageData {
+table dict_2_System_String_Torappu_StageData_ {
 	dict_key:string;
 	dict_value:Torappu_StageData;
 }
@@ -520,14 +520,14 @@ table Torappu_Act17sideData_PlaceData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_PlaceData {
+table dict_2_System_String_Torappu_Act17sideData_PlaceData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_PlaceData;
 }
 
 
 
-enum Torappu_Act17sideData_NodeType : int32 {
+enum Torappu_Act17sideData_NodeType : int {
 	LANDMARK = 0,
 	STORY = 1,
 	BATTLE = 2,
@@ -538,7 +538,7 @@ enum Torappu_Act17sideData_NodeType : int32 {
 	CHOICE = 7
 }
 
-enum Torappu_Act17sideData_TrackPointType : int32 {
+enum Torappu_Act17sideData_TrackPointType : int {
 	NONE = 0,
 	MAIN = 1,
 	SUB = 2
@@ -547,7 +547,7 @@ enum Torappu_Act17sideData_TrackPointType : int32 {
 table Torappu_Act17sideData_NodeInfoData {
 	nodeId:string;
 	nodeType:Torappu_Act17sideData_NodeType;
-	sortId:int32;
+	sortId:int;
 	placeId:string;
 	isPointPlace:bool;
 	chapterId:string;
@@ -558,7 +558,7 @@ table Torappu_Act17sideData_NodeInfoData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_NodeInfoData {
+table dict_2_System_String_Torappu_Act17sideData_NodeInfoData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_NodeInfoData;
 }
@@ -576,7 +576,7 @@ table Torappu_Act17sideData_LandmarkNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_LandmarkNodeData {
+table dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_LandmarkNodeData;
 }
@@ -595,7 +595,7 @@ table Torappu_Act17sideData_StoryNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_StoryNodeData {
+table dict_2_System_String_Torappu_Act17sideData_StoryNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_StoryNodeData;
 }
@@ -609,14 +609,14 @@ table Torappu_Act17sideData_BattleNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_BattleNodeData {
+table dict_2_System_String_Torappu_Act17sideData_BattleNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_BattleNodeData;
 }
 
 
 
-enum Torappu_Act17sideData_TreasureType : int32 {
+enum Torappu_Act17sideData_TreasureType : int {
 	SMALL = 0,
 	SPECIAL = 1
 }
@@ -637,7 +637,7 @@ table Torappu_Act17sideData_TreasureNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_TreasureNodeData {
+table dict_2_System_String_Torappu_Act17sideData_TreasureNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_TreasureNodeData;
 }
@@ -652,7 +652,7 @@ table Torappu_Act17sideData_EventNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_EventNodeData {
+table dict_2_System_String_Torappu_Act17sideData_EventNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_EventNodeData;
 }
@@ -673,7 +673,7 @@ table Torappu_Act17sideData_TechNodeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_TechNodeData {
+table dict_2_System_String_Torappu_Act17sideData_TechNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_TechNodeData;
 }
@@ -699,13 +699,13 @@ table Torappu_Act17sideData_ChoiceNodeData {
 	choiceName:string;
 	choiceDesList:[string];
 	cancelDes:string;
-	choiceNum:int32;
+	choiceNum:int;
 	optionList:[Torappu_Act17sideData_ChoiceNodeOptionData];
 }
 
 
 
-table dict__System_String_Torappu_Act17sideData_ChoiceNodeData {
+table dict_2_System_String_Torappu_Act17sideData_ChoiceNodeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_ChoiceNodeData;
 }
@@ -722,14 +722,14 @@ table Torappu_Act17sideData_EventData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_EventData {
+table dict_2_System_String_Torappu_Act17sideData_EventData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_EventData;
 }
 
 
 
-enum Torappu_ActArchiveType : int32 {
+enum Torappu_ActArchiveType : int {
 	NONE = 0,
 	TIMELINE = 1,
 	MUSIC = 2,
@@ -760,13 +760,13 @@ enum Torappu_ActArchiveType : int32 {
 	WRATH = 27
 }
 
-enum Torappu_Act17sideData_ArchiveItemUnlockCondition : int32 {
+enum Torappu_Act17sideData_ArchiveItemUnlockCondition : int {
 	NONE = 0,
 	STAGE = 1,
 	NODE = 2
 }
 
-enum Torappu_Act17sideData_ArchiveItemStageUnlockParam : int32 {
+enum Torappu_Act17sideData_ArchiveItemStageUnlockParam : int {
 	NONE = 0,
 	PLAYED = 1,
 	PASS = 2,
@@ -784,7 +784,7 @@ table Torappu_Act17sideData_ArchiveItemUnlockData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData {
+table dict_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_ArchiveItemUnlockData;
 }
@@ -793,7 +793,7 @@ table dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData {
 
 table Torappu_Act17sideData_TechTreeData {
 	techTreeId:string;
-	sortId:int32;
+	sortId:int;
 	techTreeName:string;
 	defaultBranchId:string;
 	lockDes:string;
@@ -801,14 +801,14 @@ table Torappu_Act17sideData_TechTreeData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_TechTreeData {
+table dict_2_System_String_Torappu_Act17sideData_TechTreeData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_TechTreeData;
 }
 
 
 
-enum Torappu_ProfessionCategory : int32 {
+enum Torappu_ProfessionCategory : int {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -822,21 +822,21 @@ enum Torappu_ProfessionCategory : int32 {
 	PIONEER = 512
 }
 
-enum Torappu_BuildableType : int32 {
+enum Torappu_BuildableType : int {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_PlayerSideMask : uint8 {
+enum Torappu_PlayerSideMask : ubyte {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,
 	NONE = 255
 }
 
-enum Torappu_Battle_SideType : int32 {
+enum Torappu_Battle_SideType : int {
 	NONE = 0,
 	ALLY = 1,
 	ENEMY = 2,
@@ -845,7 +845,7 @@ enum Torappu_Battle_SideType : int32 {
 	ALL = 7
 }
 
-enum Torappu_TileData_HeightTypeMask : int32 {
+enum Torappu_TileData_HeightTypeMask : int {
 	NONE = 0,
 	LOWLAND = 1,
 	HIGHLAND = 2,
@@ -870,6 +870,14 @@ table Torappu_RuneData_Selector {
 	subProfessionExcludeFilter:[string];
 	mapTagFilter:[string];
 	heightTypeMask:Torappu_TileData_HeightTypeMask;
+}
+
+
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
@@ -903,14 +911,14 @@ table Torappu_Act17sideData_TechTreeBranchData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_TechTreeBranchData {
+table dict_2_System_String_Torappu_Act17sideData_TechTreeBranchData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_TechTreeBranchData;
 }
 
 
 
-enum Torappu_Act17sideData_ChapterIconType : int32 {
+enum Torappu_Act17sideData_ChapterIconType : int {
 	NORMAL = 0,
 	EX = 1,
 	HARD = 2
@@ -926,7 +934,7 @@ table Torappu_Act17sideData_MainlineChapterData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_MainlineChapterData {
+table dict_2_System_String_Torappu_Act17sideData_MainlineChapterData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_MainlineChapterData;
 }
@@ -936,7 +944,7 @@ table dict__System_String_Torappu_Act17sideData_MainlineChapterData {
 table Torappu_Act17sideData_MainlineData {
 	mainlineId:string;
 	nodeId:string;
-	sortId:int32;
+	sortId:int;
 	missionSort:string;
 	zoneId:string;
 	mainlineDes:string;
@@ -945,7 +953,7 @@ table Torappu_Act17sideData_MainlineData {
 
 
 
-table dict__System_String_Torappu_Act17sideData_MainlineData {
+table dict_2_System_String_Torappu_Act17sideData_MainlineData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData_MainlineData;
 }
@@ -967,35 +975,35 @@ table Torappu_Act17sideData_ConstData {
 
 
 table Torappu_Act17sideData {
-	placeDataMap:[dict__System_String_Torappu_Act17sideData_PlaceData];
-	nodeInfoDataMap:[dict__System_String_Torappu_Act17sideData_NodeInfoData];
-	landmarkNodeDataMap:[dict__System_String_Torappu_Act17sideData_LandmarkNodeData];
-	storyNodeDataMap:[dict__System_String_Torappu_Act17sideData_StoryNodeData];
-	battleNodeDataMap:[dict__System_String_Torappu_Act17sideData_BattleNodeData];
-	treasureNodeDataMap:[dict__System_String_Torappu_Act17sideData_TreasureNodeData];
-	eventNodeDataMap:[dict__System_String_Torappu_Act17sideData_EventNodeData];
-	techNodeDataMap:[dict__System_String_Torappu_Act17sideData_TechNodeData];
-	choiceNodeDataMap:[dict__System_String_Torappu_Act17sideData_ChoiceNodeData];
-	eventDataMap:[dict__System_String_Torappu_Act17sideData_EventData];
-	archiveItemUnlockDataMap:[dict__System_String_Torappu_Act17sideData_ArchiveItemUnlockData];
-	techTreeDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeData];
-	techTreeBranchDataMap:[dict__System_String_Torappu_Act17sideData_TechTreeBranchData];
-	mainlineChapterDataMap:[dict__System_String_Torappu_Act17sideData_MainlineChapterData];
-	mainlineDataMap:[dict__System_String_Torappu_Act17sideData_MainlineData];
+	placeDataMap:[dict_2_System_String_Torappu_Act17sideData_PlaceData_];
+	nodeInfoDataMap:[dict_2_System_String_Torappu_Act17sideData_NodeInfoData_];
+	landmarkNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_];
+	storyNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_StoryNodeData_];
+	battleNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_BattleNodeData_];
+	treasureNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_TreasureNodeData_];
+	eventNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_EventNodeData_];
+	techNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_TechNodeData_];
+	choiceNodeDataMap:[dict_2_System_String_Torappu_Act17sideData_ChoiceNodeData_];
+	eventDataMap:[dict_2_System_String_Torappu_Act17sideData_EventData_];
+	archiveItemUnlockDataMap:[dict_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData_];
+	techTreeDataMap:[dict_2_System_String_Torappu_Act17sideData_TechTreeData_];
+	techTreeBranchDataMap:[dict_2_System_String_Torappu_Act17sideData_TechTreeBranchData_];
+	mainlineChapterDataMap:[dict_2_System_String_Torappu_Act17sideData_MainlineChapterData_];
+	mainlineDataMap:[dict_2_System_String_Torappu_Act17sideData_MainlineData_];
 	zoneDataList:[Torappu_Act17sideData_ZoneData];
 	constData:Torappu_Act17sideData_ConstData;
 }
 
 
 
-table dict__System_String_Torappu_Act17sideData {
+table dict_2_System_String_Torappu_Act17sideData_ {
 	dict_key:string;
 	dict_value:Torappu_Act17sideData;
 }
 
 
 
-enum Torappu_Act25SideData_Act25sideTechType : int32 {
+enum Torappu_Act25SideData_Act25sideTechType : int {
 	TECH_1 = 0,
 	TECH_2 = 1,
 	TECH_3 = 2,
@@ -1005,7 +1013,7 @@ enum Torappu_Act25SideData_Act25sideTechType : int32 {
 
 table Torappu_Act25SideData_BattlePerformanceData {
 	itemId:string;
-	sortId:int32;
+	sortId:int;
 	itemName:string;
 	itemIcon:string;
 	itemDesc:string;
@@ -1015,7 +1023,7 @@ table Torappu_Act25SideData_BattlePerformanceData {
 
 
 
-table dict__System_String_Torappu_Act25SideData_BattlePerformanceData {
+table dict_2_System_String_Torappu_Act25SideData_BattlePerformanceData_ {
 	dict_key:string;
 	dict_value:Torappu_Act25SideData_BattlePerformanceData;
 }
@@ -1023,19 +1031,19 @@ table dict__System_String_Torappu_Act25SideData_BattlePerformanceData {
 
 
 table Torappu_ActivityCustomData_Act25sideCustomData {
-	battlePerformanceData:[dict__System_String_Torappu_Act25SideData_BattlePerformanceData];
+	battlePerformanceData:[dict_2_System_String_Torappu_Act25SideData_BattlePerformanceData_];
 }
 
 
 
-table dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData {
+table dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_ {
 	dict_key:string;
 	dict_value:Torappu_ActivityCustomData_Act25sideCustomData;
 }
 
 
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -1048,7 +1056,7 @@ table Torappu_Act20SideData_ResidentCartData {
 
 
 
-table dict__System_String_Torappu_Act20SideData_ResidentCartData {
+table dict_2_System_String_Torappu_Act20SideData_ResidentCartData_ {
 	dict_key:string;
 	dict_value:Torappu_Act20SideData_ResidentCartData;
 }
@@ -1056,13 +1064,13 @@ table dict__System_String_Torappu_Act20SideData_ResidentCartData {
 
 
 table Torappu_Act20SideData {
-	zoneAdditionDataMap:[dict__System_String_System_String];
-	residentCartDatas:[dict__System_String_Torappu_Act20SideData_ResidentCartData];
+	zoneAdditionDataMap:[dict_2_System_String_System_String_];
+	residentCartDatas:[dict_2_System_String_Torappu_Act20SideData_ResidentCartData_];
 }
 
 
 
-table dict__System_String_Torappu_Act20SideData {
+table dict_2_System_String_Torappu_Act20SideData_ {
 	dict_key:string;
 	dict_value:Torappu_Act20SideData;
 }
@@ -1078,7 +1086,7 @@ table Torappu_Act21SideData_ZoneAddtionData {
 
 
 
-table dict__System_String_Torappu_Act21SideData_ZoneAddtionData {
+table dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_ {
 	dict_key:string;
 	dict_value:Torappu_Act21SideData_ZoneAddtionData;
 }
@@ -1092,13 +1100,13 @@ table Torappu_Act21SideData_ConstData {
 
 
 table Torappu_Act21SideData {
-	zoneAdditionDataMap:[dict__System_String_Torappu_Act21SideData_ZoneAddtionData];
+	zoneAdditionDataMap:[dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_];
 	constData:Torappu_Act21SideData_ConstData;
 }
 
 
 
-table dict__System_String_Torappu_Act21SideData {
+table dict_2_System_String_Torappu_Act21SideData_ {
 	dict_key:string;
 	dict_value:Torappu_Act21SideData;
 }
@@ -1106,36 +1114,36 @@ table dict__System_String_Torappu_Act21SideData {
 
 
 table Torappu_ActivityCustomData {
-	typeAct17sideData:[dict__System_String_Torappu_Act17sideData];
-	typeAct25sideData:[dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData];
-	typeAct20sideData:[dict__System_String_Torappu_Act20SideData];
-	typeAct21sideData:[dict__System_String_Torappu_Act21SideData];
+	typeAct17sideData:[dict_2_System_String_Torappu_Act17sideData_];
+	typeAct25sideData:[dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_];
+	typeAct20sideData:[dict_2_System_String_Torappu_Act20SideData_];
+	typeAct21sideData:[dict_2_System_String_Torappu_Act21SideData_];
 }
 
 
 
-table dict__System_Int32_System_Int32 {
-	dict_key:int32;
-	dict_value:int32;
+table dict_2_System_Int32_System_Int32_ {
+	dict_key:int;
+	dict_value:int;
 }
 
 
 
 table Torappu_RetroStageTable {
-	zoneToRetro:[list_dict___2_System_String_System_String_];
-	stageValidInfo:[dict__System_String_Torappu_StageValidInfo];
-	stages:[dict__System_String_Torappu_RetroStageOverrideInfo];
-	retroActList:[dict__System_String_Torappu_RetroActData];
-	retroTrailList:[dict__System_String_Torappu_RetroTrailData];
-	stageList:[dict__System_String_Torappu_StageData];
+	zoneToRetro:[Torappu_ListDict_2_System_String_System_String_];
+	stageValidInfo:[dict_2_System_String_Torappu_StageValidInfo_];
+	stages:[dict_2_System_String_Torappu_RetroStageOverrideInfo_];
+	retroActList:[dict_2_System_String_Torappu_RetroActData_];
+	retroTrailList:[dict_2_System_String_Torappu_RetroTrailData_];
+	stageList:[dict_2_System_String_Torappu_StageData_];
 	ruleData:Torappu_RetroTrailRuleData;
 	customData:Torappu_ActivityCustomData;
-	initRetroCoin:int32;
-	retroCoinPerWeek:int32;
-	retroCoinMaxOfLevels:[dict__System_Int32_System_Int32];
-	retroUnlockCost:int32;
+	initRetroCoin:int;
+	retroCoinPerWeek:int;
+	retroCoinMaxOfLevels:[dict_2_System_Int32_System_Int32_];
+	retroUnlockCost:int;
 	retroDetail:string;
-	retroPreShowTime:int64;
+	retroPreShowTime:long;
 }
 
 

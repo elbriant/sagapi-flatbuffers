@@ -1,5 +1,5 @@
 
-enum Torappu_ClimbTowerTowerType : int32 {
+enum Torappu_ClimbTowerTowerType : int {
 	TRAINING = 0,
 	NORMAL = 1
 }

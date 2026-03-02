@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveFragmentItemData {
 	fragmentId:string;
-	sortId:int32;
+	sortId:int;
 	enrollConditionId:string;
 }
 

@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeChoiceDisplayType : int32 {
+enum Torappu_RoguelikeChoiceDisplayType : int {
 	NONE = 0,
 	NORMAL = 1,
 	ITEM = 2,

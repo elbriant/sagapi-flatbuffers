@@ -1,8 +1,8 @@
 
 table Torappu_HandbookTeamData {
 	powerId:string;
-	orderNum:int32;
-	powerLevel:int32;
+	orderNum:int;
+	powerLevel:int;
 	powerName:string;
 	powerCode:string;
 	color:string;

@@ -1,9 +1,9 @@
-include "dict__System_String_Torappu_RoguelikeArchiveUnlockCondDesc.fbs";
-include "dict__System_String_Torappu_RoguelikeArchiveEnroll.fbs";
+include "dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeArchiveEnroll_.fbs";
 
 table Torappu_RoguelikeArchiveUnlockCondData {
-	unlockCondDesc:[dict__System_String_Torappu_RoguelikeArchiveUnlockCondDesc];
-	enroll:[dict__System_String_Torappu_RoguelikeArchiveEnroll];
+	unlockCondDesc:[dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_];
+	enroll:[dict_2_System_String_Torappu_RoguelikeArchiveEnroll_];
 }
 
 

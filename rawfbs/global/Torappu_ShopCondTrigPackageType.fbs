@@ -1,5 +1,5 @@
 
-enum Torappu_ShopCondTrigPackageType : int32 {
+enum Torappu_ShopCondTrigPackageType : int {
 	NONE = 0,
 	RETURN_PROGRESS = 1,
 	RETURN_ONCE = 2,

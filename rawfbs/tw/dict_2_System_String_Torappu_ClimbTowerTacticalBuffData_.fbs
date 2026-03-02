@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerTacticalBuffData.fbs";
+
+table dict_2_System_String_Torappu_ClimbTowerTacticalBuffData_ {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerTacticalBuffData;
+}
+
+
+root_type dict_2_System_String_Torappu_ClimbTowerTacticalBuffData_;

@@ -1,5 +1,5 @@
 
-enum Torappu_Act24SideData_MeldingItemRarityType : int32 {
+enum Torappu_Act24SideData_MeldingItemRarityType : int {
 	NONE = 0,
 	RARITY_1 = 1,
 	RARITY_2 = 2,

@@ -1,0 +1,9 @@
+include "Torappu_StageValidInfo.fbs";
+
+table dict_2_System_String_Torappu_StageValidInfo_ {
+	dict_key:string;
+	dict_value:Torappu_StageValidInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_StageValidInfo_;

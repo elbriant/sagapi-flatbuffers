@@ -1,5 +1,5 @@
 
-enum Torappu_Audio_Middleware_Data_AudioFadeType : int32 {
+enum Torappu_Audio_Middleware_Data_AudioFadeType : int {
 	LINEAR = 0,
 	CONCAVE = 1
 }

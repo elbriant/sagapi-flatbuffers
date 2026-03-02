@@ -4,11 +4,11 @@ include "Torappu_SandboxV2ItemTrapTag.fbs";
 table Torappu_SandboxV2ItemTrapData {
 	itemId:string;
 	trapId:string;
-	trapPhase:int32;
-	trapLevel:int32;
-	skillIndex:int32;
-	skillLevel:int32;
-	buildingLevel:int32;
+	trapPhase:int;
+	trapLevel:int;
+	skillIndex:int;
+	skillLevel:int;
+	buildingLevel:int;
 	updatedItemId:string;
 	minLevelItemId:string;
 	baseItemName:string;

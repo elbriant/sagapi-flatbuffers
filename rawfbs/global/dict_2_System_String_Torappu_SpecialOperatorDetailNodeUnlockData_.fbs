@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorDetailNodeUnlockData.fbs";
+
+table dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_ {
+	dict_key:string;
+	dict_value:Torappu_SpecialOperatorDetailNodeUnlockData;
+}
+
+
+root_type dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_;

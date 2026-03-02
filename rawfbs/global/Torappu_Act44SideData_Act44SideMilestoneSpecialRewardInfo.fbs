@@ -1,7 +1,7 @@
 
 table Torappu_Act44SideData_Act44SideMilestoneSpecialRewardInfo {
 	itemName:string;
-	point:int32;
+	point:int;
 }
 
 

@@ -1,7 +1,7 @@
 
 table Torappu_SharedCharData_SharedCharSkillData {
 	skillId:string;
-	specializeLevel:int32;
+	specializeLevel:int;
 }
 
 

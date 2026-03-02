@@ -4,7 +4,7 @@ include "Torappu_ItemBundle.fbs";
 table Torappu_CharacterData_PhaseData {
 	characterPrefabKey:string;
 	rangeId:string;
-	maxLevel:int32;
+	maxLevel:int;
 	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
 	evolveCost:[Torappu_ItemBundle];
 }

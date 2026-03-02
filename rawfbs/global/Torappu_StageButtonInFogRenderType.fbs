@@ -1,5 +1,5 @@
 
-enum Torappu_StageButtonInFogRenderType : int32 {
+enum Torappu_StageButtonInFogRenderType : int {
 	HIDE = 0,
 	SHOW_WITH_FOG_SIX_STAR = 1
 }

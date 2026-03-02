@@ -1,7 +1,7 @@
 include "Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType.fbs";
 
 table Torappu_RoguelikeVisionModuleData_VisionChoiceConfig {
-	value:int32;
+	value:int;
 	type:Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType;
 }
 

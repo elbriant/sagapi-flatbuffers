@@ -1,9 +1,9 @@
-include "dict__System_String_Torappu_AutoChessMiscConfig.fbs";
+include "dict_2_System_String_Torappu_AutoChessMiscConfig_.fbs";
 
 table Torappu_BattleMiscConfigs {
-	palsyLimitedStackCnt:int32;
+	palsyLimitedStackCnt:int;
 	palsyOverflowEffect:string;
-	autoChessMiscConfigs:[dict__System_String_Torappu_AutoChessMiscConfig];
+	autoChessMiscConfigs:[dict_2_System_String_Torappu_AutoChessMiscConfig_];
 }
 
 

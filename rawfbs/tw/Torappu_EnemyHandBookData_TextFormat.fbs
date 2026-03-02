@@ -1,5 +1,5 @@
 
-enum Torappu_EnemyHandBookData_TextFormat : int32 {
+enum Torappu_EnemyHandBookData_TextFormat : int {
 	NORMAL = 0,
 	TITLE = 1,
 	SILENCE = 2

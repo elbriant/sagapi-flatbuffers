@@ -1,7 +1,7 @@
 
 table Torappu_SiracusaData_ConstData {
-	operaDailyNum:int32;
-	operaAllUnlockTime:int64;
+	operaDailyNum:int;
+	operaAllUnlockTime:long;
 	defaultFocusArea:string;
 }
 

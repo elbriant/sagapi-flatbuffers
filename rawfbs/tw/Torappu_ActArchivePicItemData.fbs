@@ -1,7 +1,7 @@
 
 table Torappu_ActArchivePicItemData {
 	picId:string;
-	picSortId:int32;
+	picSortId:int;
 }
 
 

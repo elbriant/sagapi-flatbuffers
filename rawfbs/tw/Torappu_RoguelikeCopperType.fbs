@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCopperType : int32 {
+enum Torappu_RoguelikeCopperType : int {
 	NONE = 0,
 	BLANK = 1,
 	FIGHT = 2,

@@ -1,16 +1,16 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act25SideData_ConstData {
-	getDailyCount:int32;
+	getDailyCount:int;
 	costName:string;
 	costDesc:string;
-	costLimit:int32;
-	rewardLimit:int32;
+	costLimit:int;
+	rewardLimit:int;
 	researchUnlockText:string;
 	harvestReward:Torappu_ItemBundle;
-	costCount:int32;
-	costCountLimit:int32;
-	basicProgress:int32;
+	costCount:int;
+	costCountLimit:int;
+	basicProgress:int;
 	harvestDesc:string;
 }
 

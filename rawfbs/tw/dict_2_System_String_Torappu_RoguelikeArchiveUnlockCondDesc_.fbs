@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeArchiveUnlockCondDesc.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeArchiveUnlockCondDesc;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_;

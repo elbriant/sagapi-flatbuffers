@@ -1,5 +1,5 @@
 
-enum Torappu_LifeType : uint8 {
+enum Torappu_LifeType : ubyte {
 	IMMEDIATELY = 0,
 	LIMITED = 1,
 	INFINITY = 2,

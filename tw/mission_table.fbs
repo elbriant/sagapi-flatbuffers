@@ -1,5 +1,5 @@
 
-enum Torappu_MissionType : int32 {
+enum Torappu_MissionType : int {
 	UNKNOWN = 0,
 	MAIN = 1,
 	DAILY = 2,
@@ -14,13 +14,13 @@ enum Torappu_MissionType : int32 {
 	SPECIAL_OPERATOR_WEEKLY = 11
 }
 
-enum Torappu_MissionItemBgType : int32 {
+enum Torappu_MissionItemBgType : int {
 	COMMON = 0,
 	Equipment = 1,
 	Char = 2
 }
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -113,14 +113,14 @@ enum Torappu_ItemType : int32 {
 table Torappu_MissionDisplayRewards {
 	type:Torappu_ItemType;
 	id:string;
-	count:int32;
+	count:int;
 }
 
 
 
 table Torappu_MissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	description:string;
 	type:Torappu_MissionType;
 	itemBgType:Torappu_MissionItemBgType;
@@ -132,17 +132,17 @@ table Torappu_MissionData {
 	unlockParam:[string];
 	missionGroup:string;
 	toPage:string;
-	periodicalPoint:int32;
+	periodicalPoint:int;
 	rewards:[Torappu_MissionDisplayRewards];
 	backImagePath:string;
 	foldId:string;
 	haveSubMissionToUnlock:bool;
-	countEndTs:int64;
+	countEndTs:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionData {
+table dict_2_System_String_Torappu_MissionData_ {
 	dict_key:string;
 	dict_value:Torappu_MissionData;
 }
@@ -154,16 +154,16 @@ table Torappu_MissionGroup {
 	title:string;
 	type:Torappu_MissionType;
 	preMissionGroup:string;
-	period:[int32];
+	period:[int];
 	rewards:[Torappu_MissionDisplayRewards];
 	missionIds:[string];
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionGroup {
+table dict_2_System_String_Torappu_MissionGroup_ {
 	dict_key:string;
 	dict_value:Torappu_MissionGroup;
 }
@@ -173,15 +173,15 @@ table dict__System_String_Torappu_MissionGroup {
 table Torappu_MissionDailyRewardConf {
 	groupId:string;
 	id:string;
-	periodicalPointCost:int32;
+	periodicalPointCost:int;
 	type:Torappu_MissionType;
-	sortIndex:int32;
+	sortIndex:int;
 	rewards:[Torappu_MissionDisplayRewards];
 }
 
 
 
-table dict__System_String_Torappu_MissionDailyRewardConf {
+table dict_2_System_String_Torappu_MissionDailyRewardConf_ {
 	dict_key:string;
 	dict_value:Torappu_MissionDailyRewardConf;
 }
@@ -191,17 +191,17 @@ table dict__System_String_Torappu_MissionDailyRewardConf {
 table Torappu_MissionWeeklyRewardConf {
 	groupId:string;
 	id:string;
-	periodicalPointCost:int32;
+	periodicalPointCost:int;
 	type:Torappu_MissionType;
-	sortIndex:int32;
+	sortIndex:int;
 	rewards:[Torappu_MissionDisplayRewards];
-	beginTime:int64;
-	endTime:int64;
+	beginTime:long;
+	endTime:long;
 }
 
 
 
-table dict__System_String_Torappu_MissionWeeklyRewardConf {
+table dict_2_System_String_Torappu_MissionWeeklyRewardConf_ {
 	dict_key:string;
 	dict_value:Torappu_MissionWeeklyRewardConf;
 }
@@ -211,13 +211,13 @@ table dict__System_String_Torappu_MissionWeeklyRewardConf {
 table Torappu_SOCharMissionGroup {
 	groupId:string;
 	missionIds:[string];
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 }
 
 
 
-table dict__System_String_Torappu_SOCharMissionGroup {
+table dict_2_System_String_Torappu_SOCharMissionGroup_ {
 	dict_key:string;
 	dict_value:Torappu_SOCharMissionGroup;
 }
@@ -227,21 +227,21 @@ table dict__System_String_Torappu_SOCharMissionGroup {
 table Torappu_DailyMissionGroupInfo_periodInfo {
 	missionGroupId:string;
 	rewardGroupId:string;
-	period:[int32];
+	period:[int];
 }
 
 
 
 table Torappu_DailyMissionGroupInfo {
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	tagState:string;
 	periodList:[Torappu_DailyMissionGroupInfo_periodInfo];
 }
 
 
 
-table dict__System_String_Torappu_DailyMissionGroupInfo {
+table dict_2_System_String_Torappu_DailyMissionGroupInfo_ {
 	dict_key:string;
 	dict_value:Torappu_DailyMissionGroupInfo;
 }
@@ -250,12 +250,12 @@ table dict__System_String_Torappu_DailyMissionGroupInfo {
 
 table Torappu_MainlineMissionEndImageData {
 	imageId:string;
-	priority:int32;
+	priority:int;
 }
 
 
 
-enum Torappu_CrossAppShareMissionType : int32 {
+enum Torappu_CrossAppShareMissionType : int {
 	NORMAL = 0,
 	ACTIVITY = 1
 }
@@ -264,9 +264,9 @@ table Torappu_CrossAppShareMission {
 	shareMissionId:string;
 	missionType:Torappu_CrossAppShareMissionType;
 	relateActivityId:string;
-	startTime:int64;
-	endTime:int64;
-	limitCount:int32;
+	startTime:long;
+	endTime:long;
+	limitCount:int;
 	condTemplate:string;
 	condParam:[string];
 	rewardsList:[Torappu_MissionDisplayRewards];
@@ -274,7 +274,7 @@ table Torappu_CrossAppShareMission {
 
 
 
-table dict__System_String_Torappu_CrossAppShareMission {
+table dict_2_System_String_Torappu_CrossAppShareMission_ {
 	dict_key:string;
 	dict_value:Torappu_CrossAppShareMission;
 }
@@ -289,14 +289,14 @@ table Torappu_CrossAppShareMissionConst {
 
 table Torappu_GuideMissionGroupInfo {
 	groupId:string;
-	sortId:int32;
+	sortId:int;
 	shortName:string;
 	unlockDesc:string;
 }
 
 
 
-table dict__System_String_Torappu_GuideMissionGroupInfo {
+table dict_2_System_String_Torappu_GuideMissionGroupInfo_ {
 	dict_key:string;
 	dict_value:Torappu_GuideMissionGroupInfo;
 }
@@ -304,17 +304,17 @@ table dict__System_String_Torappu_GuideMissionGroupInfo {
 
 
 table Torappu_MissionTable {
-	missions:[dict__System_String_Torappu_MissionData];
-	missionGroups:[dict__System_String_Torappu_MissionGroup];
-	periodicalRewards:[dict__System_String_Torappu_MissionDailyRewardConf];
-	weeklyRewards:[dict__System_String_Torappu_MissionWeeklyRewardConf];
-	soCharMissionGroupInfo:[dict__System_String_Torappu_SOCharMissionGroup];
-	dailyMissionGroupInfo:[dict__System_String_Torappu_DailyMissionGroupInfo];
+	missions:[dict_2_System_String_Torappu_MissionData_];
+	missionGroups:[dict_2_System_String_Torappu_MissionGroup_];
+	periodicalRewards:[dict_2_System_String_Torappu_MissionDailyRewardConf_];
+	weeklyRewards:[dict_2_System_String_Torappu_MissionWeeklyRewardConf_];
+	soCharMissionGroupInfo:[dict_2_System_String_Torappu_SOCharMissionGroup_];
+	dailyMissionGroupInfo:[dict_2_System_String_Torappu_DailyMissionGroupInfo_];
 	dailyMissionPeriodInfo:[Torappu_DailyMissionGroupInfo];
 	mainlineMissionEndImageDataList:[Torappu_MainlineMissionEndImageData];
-	crossAppShareMissions:[dict__System_String_Torappu_CrossAppShareMission];
+	crossAppShareMissions:[dict_2_System_String_Torappu_CrossAppShareMission_];
 	crossAppShareMissionConst:Torappu_CrossAppShareMissionConst;
-	guideMissionGroupInfo:[dict__System_String_Torappu_GuideMissionGroupInfo];
+	guideMissionGroupInfo:[dict_2_System_String_Torappu_GuideMissionGroupInfo_];
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_Act29SideData_Act29SideOrcheType : int32 {
+enum Torappu_Act29SideData_Act29SideOrcheType : int {
 	ORCHE_1 = 0,
 	ORCHE_2 = 1,
 	ORCHE_3 = 2,

@@ -1,0 +1,9 @@
+include "dict_2_System_Int32_Torappu_ActivityBossRushData_BossRushDropInfo_.fbs";
+
+table dict_2_System_String_dict_2_System_Int32_Torappu_ActivityBossRushData_BossRushDropInfo__ {
+	dict_key:string;
+	dict_value:[dict_2_System_Int32_Torappu_ActivityBossRushData_BossRushDropInfo_];
+}
+
+
+root_type dict_2_System_String_dict_2_System_Int32_Torappu_ActivityBossRushData_BossRushDropInfo__;

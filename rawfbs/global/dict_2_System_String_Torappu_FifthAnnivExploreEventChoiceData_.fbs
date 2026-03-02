@@ -1,0 +1,9 @@
+include "Torappu_FifthAnnivExploreEventChoiceData.fbs";
+
+table dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_ {
+	dict_key:string;
+	dict_value:Torappu_FifthAnnivExploreEventChoiceData;
+}
+
+
+root_type dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_;

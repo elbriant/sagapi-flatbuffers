@@ -1,7 +1,7 @@
 
 table Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData {
 	plotId:string;
-	plotCount:int32;
+	plotCount:int;
 }
 
 

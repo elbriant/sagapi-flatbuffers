@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeGameVariationType : int32 {
+enum Torappu_RoguelikeGameVariationType : int {
 	NONE = 0,
 	MAP = 1,
 	RES = 2,

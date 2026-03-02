@@ -5,8 +5,8 @@ include "Torappu_ItemRarity.fbs";
 table Torappu_HomeThemeDisplayData {
 	id:string;
 	type:string;
-	sortId:int32;
-	startTime:int64;
+	sortId:int;
+	startTime:long;
 	tmName:string;
 	tmDes:string;
 	tmUsage:string;

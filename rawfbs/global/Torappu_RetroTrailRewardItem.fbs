@@ -2,7 +2,7 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_RetroTrailRewardItem {
 	trailRewardId:string;
-	starCount:int32;
+	starCount:int;
 	rewardItem:Torappu_ItemBundle;
 }
 

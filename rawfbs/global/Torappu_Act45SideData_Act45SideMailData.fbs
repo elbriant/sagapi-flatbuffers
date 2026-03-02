@@ -2,12 +2,12 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act45SideData_Act45SideMailData {
 	mailId:string;
-	sortId:int32;
+	sortId:int;
 	charName:string;
 	picId:string;
 	mailTitle:string;
 	mailContent:string;
-	sendTime:int64;
+	sendTime:long;
 	rewards:[Torappu_ItemBundle];
 }
 

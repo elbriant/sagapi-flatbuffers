@@ -3,11 +3,11 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act13SideData_PrestigeData {
 	rank:Torappu_Act13SideData_PrestigeRank;
-	threshold:int32;
+	threshold:int;
 	reward:Torappu_ItemBundle;
-	newsCount:int32;
-	archiveCount:int32;
-	avgCount:int32;
+	newsCount:int;
+	archiveCount:int;
+	avgCount:int;
 }
 
 

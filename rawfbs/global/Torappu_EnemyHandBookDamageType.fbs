@@ -1,5 +1,5 @@
 
-enum Torappu_EnemyHandBookDamageType : int32 {
+enum Torappu_EnemyHandBookDamageType : int {
 	PHYSIC = 0,
 	MAGIC = 1,
 	HEAL = 2,

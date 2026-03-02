@@ -1,10 +1,10 @@
 include "Torappu_ActivityCollectionData_CollectionInfo.fbs";
-include "dict__System_String_System_Int64.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 include "Torappu_ActivityCollectionData_Consts.fbs";
 
 table Torappu_ActivityCollectionData {
 	collections:[Torappu_ActivityCollectionData_CollectionInfo];
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
 	consts:Torappu_ActivityCollectionData_Consts;
 }
 

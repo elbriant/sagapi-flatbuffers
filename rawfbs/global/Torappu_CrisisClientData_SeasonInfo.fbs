@@ -2,13 +2,13 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_CrisisClientData_SeasonInfo {
 	seasonId:string;
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 	name:string;
 	crisisRuneCoinUnlockItem:Torappu_ItemBundle;
 	permBgm:string;
 	medalGroupId:string;
-	bgmHardPoint:int32;
+	bgmHardPoint:int;
 	permBgmHard:string;
 }
 

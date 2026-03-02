@@ -1,7 +1,7 @@
 
 table Torappu_Act29SideData_Act29SideConstData {
 	majorInvestUnlockItemName:string;
-	wrongTipsTriggerTime:int32;
+	wrongTipsTriggerTime:int;
 	majorInvestCompleteImgId:string;
 	majorInvestUnknownAvatarId:string;
 	majorInvestDetailDesc1:string;

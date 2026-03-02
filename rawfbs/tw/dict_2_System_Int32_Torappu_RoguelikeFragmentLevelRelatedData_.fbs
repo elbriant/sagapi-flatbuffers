@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeFragmentLevelRelatedData.fbs";
+
+table dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_ {
+	dict_key:int;
+	dict_value:Torappu_RoguelikeFragmentLevelRelatedData;
+}
+
+
+root_type dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_;

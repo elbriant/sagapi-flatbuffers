@@ -3,7 +3,7 @@ include "Torappu_ActVecBreakV2BossData.fbs";
 
 table Torappu_ActVecBreakV2OffenseStageData {
 	stageId:string;
-	level:int32;
+	level:int;
 	levelLayout:string;
 	storyDesc:string;
 	particleType:Torappu_ActVecBreakV2ParticleType;

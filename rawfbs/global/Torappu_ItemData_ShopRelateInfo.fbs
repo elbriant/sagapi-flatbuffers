@@ -2,8 +2,8 @@ include "Torappu_ItemDropShopType.fbs";
 
 table Torappu_ItemData_ShopRelateInfo {
 	shopType:Torappu_ItemDropShopType;
-	shopGroup:int32;
-	startTs:int64;
+	shopGroup:int;
+	startTs:long;
 }
 
 

@@ -1,0 +1,9 @@
+include "Torappu_ShopGPTabDisplayData.fbs";
+
+table dict_2_System_String_Torappu_ShopGPTabDisplayData_ {
+	dict_key:string;
+	dict_value:Torappu_ShopGPTabDisplayData;
+}
+
+
+root_type dict_2_System_String_Torappu_ShopGPTabDisplayData_;

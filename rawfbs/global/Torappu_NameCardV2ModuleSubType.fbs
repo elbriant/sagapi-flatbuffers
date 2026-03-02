@@ -1,5 +1,5 @@
 
-enum Torappu_NameCardV2ModuleSubType : int32 {
+enum Torappu_NameCardV2ModuleSubType : int {
 	NONE = 0,
 	SIGN = 1,
 	ASSIST = 2,

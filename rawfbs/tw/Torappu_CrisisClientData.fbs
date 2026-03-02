@@ -3,10 +3,10 @@ include "Torappu_CrisisClientData_SeasonInfo.fbs";
 table Torappu_CrisisClientData {
 	seasonInfo:[Torappu_CrisisClientData_SeasonInfo];
 	meta:string;
-	unlockCoinLv3:int32;
-	hardPointPerm:int32;
-	hardPointTemp:int32;
-	voiceGrade:int32;
+	unlockCoinLv3:int;
+	hardPointPerm:int;
+	hardPointTemp:int;
+	voiceGrade:int;
 	crisisRuneCoinUnlockItemTitle:string;
 	crisisRuneCoinUnlockItemDesc:string;
 }

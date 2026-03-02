@@ -1,0 +1,9 @@
+include "Torappu_Act1VWeightedResItemBundle.fbs";
+
+table dict_2_System_String_list_1_Torappu_Act1VWeightedResItemBundle__ {
+	dict_key:string;
+	dict_value:[Torappu_Act1VWeightedResItemBundle];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_Act1VWeightedResItemBundle__;

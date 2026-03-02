@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2CraftGroupData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2CraftGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2CraftGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2CraftGroupData_;

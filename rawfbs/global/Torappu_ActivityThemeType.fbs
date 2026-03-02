@@ -1,5 +1,5 @@
 
-enum Torappu_ActivityThemeType : int32 {
+enum Torappu_ActivityThemeType : int {
 	NONE = 0,
 	ACTIVITY = 1,
 	CRISIS = 2,

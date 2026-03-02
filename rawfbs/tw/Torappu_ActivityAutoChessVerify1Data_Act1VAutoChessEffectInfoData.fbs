@@ -5,7 +5,7 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData {
 	effectId:string;
 	effectType:Torappu_Act1VAutoChessEffectType;
 	effectCounterType:Torappu_Act1VAutoChessEffectCounterType;
-	continuedRound:int32;
+	continuedRound:int;
 	effectName:string;
 	effectDesc:string;
 	effectDecoIconId:string;

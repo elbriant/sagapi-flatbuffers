@@ -3,11 +3,11 @@ table Torappu_RoguelikeFragmentModuleConsts {
 	weightStatusSafeDesc:string;
 	weightStatusLimitDesc:string;
 	weightStatusOverweightDesc:string;
-	charWeightSlot:int32;
-	limitWeightThresholdValue:int32;
-	overWeightThresholdValue:int32;
-	maxAlchemyField:int32;
-	maxAlchemyCount:int32;
+	charWeightSlot:int;
+	limitWeightThresholdValue:int;
+	overWeightThresholdValue:int;
+	maxAlchemyField:int;
+	maxAlchemyCount:int;
 	fragmentBagWeightLimitTips:string;
 	fragmentBagWeightOverWeightTips:string;
 	weightUpgradeToastFormat:string;

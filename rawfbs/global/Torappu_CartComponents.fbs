@@ -1,22 +1,22 @@
 include "Torappu_CartComponents_CartAccessoryType.fbs";
 include "Torappu_CartComponents_CartAccessoryPos.fbs";
-include "list_dict___2_Torappu_CartComponents_CartAccessoryPos_list___1_System_String__.fbs";
+include "Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_list_1_System_String__.fbs";
 
 table Torappu_CartComponents {
 	compId:string;
-	sortId:int32;
+	sortId:int;
 	type:Torappu_CartComponents_CartAccessoryType;
 	posList:[Torappu_CartComponents_CartAccessoryPos];
-	posIdDict:[list_dict___2_Torappu_CartComponents_CartAccessoryPos_list___1_System_String__];
+	posIdDict:[Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_list_1_System_String__];
 	name:string;
 	icon:string;
-	showScores:int32;
+	showScores:int;
 	itemUsage:string;
 	itemDesc:string;
 	itemObtain:string;
-	rarity:int32;
+	rarity:int;
 	detailDesc:string;
-	price:int32;
+	price:int;
 	specialObtain:string;
 	obtainInRandom:bool;
 	additiveColor:string;

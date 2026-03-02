@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeCommonDevelopmentNodeType : int32 {
+enum Torappu_RoguelikeCommonDevelopmentNodeType : int {
 	NONE = 0,
 	NORMAL = 1,
 	KEY = 2,

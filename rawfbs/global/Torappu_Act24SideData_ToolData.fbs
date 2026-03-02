@@ -2,7 +2,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act24SideData_ToolData {
 	toolId:string;
-	sortId:int32;
+	sortId:int;
 	toolName:string;
 	toolDesc:string;
 	toolIcon1:string;

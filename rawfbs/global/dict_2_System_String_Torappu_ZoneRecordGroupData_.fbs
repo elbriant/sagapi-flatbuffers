@@ -1,0 +1,9 @@
+include "Torappu_ZoneRecordGroupData.fbs";
+
+table dict_2_System_String_Torappu_ZoneRecordGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ZoneRecordGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_ZoneRecordGroupData_;

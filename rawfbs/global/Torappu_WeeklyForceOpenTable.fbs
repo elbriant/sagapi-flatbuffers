@@ -1,8 +1,8 @@
 
 table Torappu_WeeklyForceOpenTable {
 	id:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	forceOpenList:[string];
 }
 

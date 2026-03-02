@@ -1,10 +1,10 @@
-include "dict__System_Int32_Torappu_RoguelikeVisionData.fbs";
-include "dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig.fbs";
+include "dict_2_System_Int32_Torappu_RoguelikeVisionData_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_.fbs";
 include "Torappu_RoguelikeVisionModuleConsts.fbs";
 
 table Torappu_RoguelikeVisionModuleData {
-	visionDatas:[dict__System_Int32_Torappu_RoguelikeVisionData];
-	visionChoices:[dict__System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig];
+	visionDatas:[dict_2_System_Int32_Torappu_RoguelikeVisionData_];
+	visionChoices:[dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_];
 	moduleConsts:Torappu_RoguelikeVisionModuleConsts;
 }
 

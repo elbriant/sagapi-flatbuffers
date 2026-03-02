@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_OperaCommentInfoData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_OperaCommentInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_OperaCommentInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_OperaCommentInfoData_;

@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeChaosPredefineLevelInfo.fbs";
+
+table dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo_ {
+	dict_key:int;
+	dict_value:Torappu_RoguelikeChaosPredefineLevelInfo;
+}
+
+
+root_type dict_2_System_Int32_Torappu_RoguelikeChaosPredefineLevelInfo_;

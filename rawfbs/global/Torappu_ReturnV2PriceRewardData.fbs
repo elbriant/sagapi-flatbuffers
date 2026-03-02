@@ -2,8 +2,8 @@ include "Torappu_ReturnV2ItemData.fbs";
 
 table Torappu_ReturnV2PriceRewardData {
 	contentId:string;
-	sortId:int32;
-	pointRequire:int32;
+	sortId:int;
+	pointRequire:int;
 	desc:string;
 	iconId:string;
 	topIconId:string;

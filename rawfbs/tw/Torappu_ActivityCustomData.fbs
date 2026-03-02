@@ -1,13 +1,13 @@
-include "dict__System_String_Torappu_Act17sideData.fbs";
-include "dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData.fbs";
-include "dict__System_String_Torappu_Act20SideData.fbs";
-include "dict__System_String_Torappu_Act21SideData.fbs";
+include "dict_2_System_String_Torappu_Act17sideData_.fbs";
+include "dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_.fbs";
+include "dict_2_System_String_Torappu_Act20SideData_.fbs";
+include "dict_2_System_String_Torappu_Act21SideData_.fbs";
 
 table Torappu_ActivityCustomData {
-	typeAct17sideData:[dict__System_String_Torappu_Act17sideData];
-	typeAct25sideData:[dict__System_String_Torappu_ActivityCustomData_Act25sideCustomData];
-	typeAct20sideData:[dict__System_String_Torappu_Act20SideData];
-	typeAct21sideData:[dict__System_String_Torappu_Act21SideData];
+	typeAct17sideData:[dict_2_System_String_Torappu_Act17sideData_];
+	typeAct25sideData:[dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_];
+	typeAct20sideData:[dict_2_System_String_Torappu_Act20SideData_];
+	typeAct21sideData:[dict_2_System_String_Torappu_Act21SideData_];
 }
 
 

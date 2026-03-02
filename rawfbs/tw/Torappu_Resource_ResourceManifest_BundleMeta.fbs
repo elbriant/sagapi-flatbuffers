@@ -1,9 +1,9 @@
 
 table Torappu_Resource_ResourceManifest_BundleMeta {
 	name:string;
-	props:int32;
-	sccIndex:int32;
-	allDependencies:[int32];
+	props:int;
+	sccIndex:int;
+	allDependencies:[int];
 }
 
 

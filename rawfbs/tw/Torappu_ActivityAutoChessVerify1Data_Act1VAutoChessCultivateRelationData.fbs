@@ -1,13 +1,13 @@
 include "Torappu_EvolvePhase.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCultivateRelationData {
-	cultivateNum:int32;
+	cultivateNum:int;
 	effectId:string;
 	evolvePhase:Torappu_EvolvePhase;
-	charLevel:int32;
-	atkPer:int32;
-	defPer:int32;
-	hpPer:int32;
+	charLevel:int;
+	atkPer:int;
+	defPer:int;
+	hpPer:int;
 }
 
 

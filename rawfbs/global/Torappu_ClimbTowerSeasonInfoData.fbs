@@ -2,9 +2,9 @@
 table Torappu_ClimbTowerSeasonInfoData {
 	id:string;
 	name:string;
-	seasonNum:int32;
-	startTs:int64;
-	endTs:int64;
+	seasonNum:int;
+	startTs:long;
+	endTs:long;
 	towers:[string];
 	seasonCards:[string];
 	replicatedTowers:[string];

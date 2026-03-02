@@ -3,9 +3,9 @@ include "Torappu_EvolvePhase.fbs";
 table Torappu_Act1VHalfIdleCharEvolveData_EvolveData {
 	evolvePhase:Torappu_EvolvePhase;
 	itemId:string;
-	itemCount:int32;
+	itemCount:int;
 	rebateItemId:string;
-	rebateItemCount:int32;
+	rebateItemCount:int;
 }
 
 

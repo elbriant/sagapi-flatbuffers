@@ -1,8 +1,8 @@
-include "dict__System_String_Torappu_ActivityTable_TemplateTrapData.fbs";
+include "dict_2_System_String_Torappu_ActivityTable_TemplateTrapData_.fbs";
 include "Torappu_ActivityTable_ActivityTrapConstData.fbs";
 
 table Torappu_ActivityTable_ActivityTrapsData {
-	templateTraps:[dict__System_String_Torappu_ActivityTable_TemplateTrapData];
+	templateTraps:[dict_2_System_String_Torappu_ActivityTable_TemplateTrapData_];
 	trapConstData:Torappu_ActivityTable_ActivityTrapConstData;
 }
 

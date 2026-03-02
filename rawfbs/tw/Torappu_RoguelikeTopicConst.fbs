@@ -1,17 +1,17 @@
-include "dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar.fbs";
+include "dict_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar_.fbs";
 
 table Torappu_RoguelikeTopicConst {
-	milestoneTokenRatio:int32;
+	milestoneTokenRatio:int;
 	outerBuffTokenRatio:float;
-	relicTokenRatio:int32;
+	relicTokenRatio:int;
 	rogueSystemUnlockStage:string;
-	ordiModeReOpenCoolDown:int32;
-	monthModeReOpenCoolDown:int32;
-	monthlyTaskUncompletedTime:int32;
-	monthlyTaskManualRefreshLimit:int32;
-	monthlyTeamUncompletedTime:int32;
-	bpPurchaseSystemUnlockTime:int64;
-	predefinedChars:[dict__System_String_Torappu_RoguelikeTopicConst_PredefinedChar];
+	ordiModeReOpenCoolDown:int;
+	monthModeReOpenCoolDown:int;
+	monthlyTaskUncompletedTime:int;
+	monthlyTaskManualRefreshLimit:int;
+	monthlyTeamUncompletedTime:int;
+	bpPurchaseSystemUnlockTime:long;
+	predefinedChars:[dict_2_System_String_Torappu_RoguelikeTopicConst_PredefinedChar_];
 }
 
 

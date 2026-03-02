@@ -1,7 +1,7 @@
-include "dict__System_String_Torappu_ActArchiveChaosItemData.fbs";
+include "dict_2_System_String_Torappu_ActArchiveChaosItemData_.fbs";
 
 table Torappu_ActArchiveChaosData {
-	chaos:[dict__System_String_Torappu_ActArchiveChaosItemData];
+	chaos:[dict_2_System_String_Torappu_ActArchiveChaosItemData_];
 }
 
 

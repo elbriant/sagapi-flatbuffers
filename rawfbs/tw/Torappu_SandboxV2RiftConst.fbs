@@ -1,7 +1,7 @@
 include "Torappu_SandboxV2SeasonType.fbs";
 
 table Torappu_SandboxV2RiftConst {
-	refreshRate:int32;
+	refreshRate:int;
 	randomDungeonId:string;
 	huntDungeonId:string;
 	subTargetRewardId:string;
@@ -16,8 +16,8 @@ table Torappu_SandboxV2RiftConst {
 	noTeamSmallIconId:string;
 	noTeamBigIconId:string;
 	messengerEnemyId:string;
-	riftRushEnemyGroupLimit:int32;
-	riftRushSpawnCd:int32;
+	riftRushEnemyGroupLimit:int;
+	riftRushSpawnCd:int;
 }
 
 

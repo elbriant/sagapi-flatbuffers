@@ -1,0 +1,9 @@
+include "Torappu_CommonFavorUpInfo.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_ {
+	dict_key:string;
+	dict_value:Torappu_CommonFavorUpInfo;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_;

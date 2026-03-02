@@ -1,5 +1,5 @@
 include "Torappu_EnemyLevelType.fbs";
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 include "Torappu_EnemyHandBookData_Abilty.fbs";
 include "Torappu_EnemyHandBookDamageType.fbs";
 
@@ -7,14 +7,14 @@ table Torappu_EnemyHandBookData {
 	enemyId:string;
 	enemyIndex:string;
 	enemyTags:[string];
-	sortId:int32;
+	sortId:int;
 	name:string;
 	enemyLevel:Torappu_EnemyLevelType;
 	description:string;
 	attackType:string;
 	ability:string;
 	isInvalidKilled:bool;
-	overrideKillCntInfos:[dict__System_String_System_Int32];
+	overrideKillCntInfos:[dict_2_System_String_System_Int32_];
 	hideInHandbook:bool;
 	hideInStage:bool;
 	abilityList:[Torappu_EnemyHandBookData_Abilty];

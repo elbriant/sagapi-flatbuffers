@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeTopicDevTokenDisplayForm : int32 {
+enum Torappu_RoguelikeTopicDevTokenDisplayForm : int {
 	ABSOLUTE_VAL = 0,
 	PERCENTAGE = 1
 }

@@ -2,8 +2,8 @@ include "Torappu_ActivityMainlineBuffData_PeriodData_StepData.fbs";
 
 table Torappu_ActivityMainlineBuffData_PeriodData {
 	id:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	favorUpCharDesc:string;
 	favorUpImgName:string;
 	newChapterImgName:string;

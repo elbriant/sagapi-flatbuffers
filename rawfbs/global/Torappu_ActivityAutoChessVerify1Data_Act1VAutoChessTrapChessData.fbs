@@ -4,11 +4,11 @@ include "Torappu_Act1VAutoChessTrapChessType.fbs";
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData {
 	chessId:string;
 	isGolden:bool;
-	purchasePrice:int32;
+	purchasePrice:int;
 	status:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData;
 	upgradeChessId:string;
-	upgradeNum:int32;
-	trapDuration:int32;
+	upgradeNum:int;
+	trapDuration:int;
 	effectId:string;
 	giveGroupId:string;
 	itemType:Torappu_Act1VAutoChessTrapChessType;

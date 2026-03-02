@@ -1,5 +1,5 @@
 
-enum Torappu_PlayerBattleRank : int32 {
+enum Torappu_PlayerBattleRank : int {
 	FAIL = 1,
 	PASS = 2,
 	COMPLETE = 3,

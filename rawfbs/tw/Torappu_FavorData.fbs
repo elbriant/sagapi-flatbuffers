@@ -1,8 +1,8 @@
 
 table Torappu_FavorData {
-	favorPoint:int32;
-	percent:int32;
-	battlePhase:int32;
+	favorPoint:int;
+	percent:int;
+	battlePhase:int;
 }
 
 

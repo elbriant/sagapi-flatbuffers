@@ -1,4 +1,4 @@
-include "dict__Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo.fbs";
+include "dict_2_Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo_.fbs";
 
 table Torappu_Act4funLiveMatInfoData {
 	liveMatId:string;
@@ -8,7 +8,7 @@ table Torappu_Act4funLiveMatInfoData {
 	tagTxt:string;
 	emojiIcon:string;
 	selectedPerformId:string;
-	effectInfos:[dict__Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo];
+	effectInfos:[dict_2_Torappu_Act4funStageAttributeType_Torappu_Act4funLiveMatEffectInfo_];
 }
 
 

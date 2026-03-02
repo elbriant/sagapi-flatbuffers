@@ -1,5 +1,5 @@
 
-enum Torappu_Act1VHalfIdleBattleItemType : int32 {
+enum Torappu_Act1VHalfIdleBattleItemType : int {
 	EQUIP = 0,
 	TRAP = 1
 }

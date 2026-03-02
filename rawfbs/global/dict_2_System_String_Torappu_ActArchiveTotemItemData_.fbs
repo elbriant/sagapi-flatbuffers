@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveTotemItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveTotemItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveTotemItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveTotemItemData_;

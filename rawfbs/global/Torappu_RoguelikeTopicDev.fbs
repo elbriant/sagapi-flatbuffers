@@ -3,11 +3,11 @@ include "Torappu_RoguelikeTopicDisplayItem.fbs";
 
 table Torappu_RoguelikeTopicDev {
 	buffId:string;
-	sortId:int32;
+	sortId:int;
 	nodeType:Torappu_RoguelikeTopicDevNodeType;
 	nextNodeId:[string];
 	frontNodeId:[string];
-	tokenCost:int32;
+	tokenCost:int;
 	buffName:string;
 	buffIconId:string;
 	buffTypeName:string;

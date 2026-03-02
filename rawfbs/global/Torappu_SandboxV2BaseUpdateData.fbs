@@ -1,17 +1,17 @@
 include "Torappu_SandboxV2BaseUpdateCondition.fbs";
-include "dict__System_String_System_Int32.fbs";
+include "dict_2_System_String_System_Int32_.fbs";
 include "Torappu_SandboxV2BaseFunctionPreviewData.fbs";
 
 table Torappu_SandboxV2BaseUpdateData {
 	baseLevelId:string;
-	baseLevel:int32;
+	baseLevel:int;
 	conditions:[Torappu_SandboxV2BaseUpdateCondition];
-	items:[dict__System_String_System_Int32];
+	items:[dict_2_System_String_System_Int32_];
 	previewDatas:[Torappu_SandboxV2BaseFunctionPreviewData];
 	scoreFactor:string;
-	portableRepairCost:int32;
-	entryCount:int32;
-	repairCost:int32;
+	portableRepairCost:int;
+	entryCount:int;
+	repairCost:int;
 }
 
 

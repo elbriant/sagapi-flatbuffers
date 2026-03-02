@@ -1,0 +1,9 @@
+include "Torappu_Act13SideData_DailyMissionRewardGroupData.fbs";
+
+table dict_2_System_String_Torappu_Act13SideData_DailyMissionRewardGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_Act13SideData_DailyMissionRewardGroupData;
+}
+
+
+root_type dict_2_System_String_Torappu_Act13SideData_DailyMissionRewardGroupData_;

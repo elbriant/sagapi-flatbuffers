@@ -1,0 +1,9 @@
+include "Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_.fbs";
+
+table dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__ {
+	dict_key:string;
+	dict_value:[Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_];
+}
+
+
+root_type dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__;

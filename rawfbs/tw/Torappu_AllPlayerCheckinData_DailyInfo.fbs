@@ -2,9 +2,9 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_AllPlayerCheckinData_DailyInfo {
 	itemList:[Torappu_ItemBundle];
-	order:int32;
+	order:int;
 	keyItem:bool;
-	showItemOrder:int32;
+	showItemOrder:int;
 }
 
 

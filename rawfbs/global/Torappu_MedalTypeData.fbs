@@ -2,7 +2,7 @@ include "Torappu_MedalGroupData.fbs";
 
 table Torappu_MedalTypeData {
 	medalGroupId:string;
-	sortId:int32;
+	sortId:int;
 	medalName:string;
 	groupData:[Torappu_MedalGroupData];
 }

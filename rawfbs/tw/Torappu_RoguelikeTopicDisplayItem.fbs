@@ -2,10 +2,10 @@ include "Torappu_RoguelikeTopicDevTokenDisplayForm.fbs";
 
 table Torappu_RoguelikeTopicDisplayItem {
 	displayType:string;
-	displayNum:int32;
+	displayNum:int;
 	displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm;
 	tokenDesc:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

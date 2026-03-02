@@ -5,7 +5,7 @@ table Torappu_Act1VHalfIdleGachaPoolData {
 	poolId:string;
 	itemId:string;
 	poolType:Torappu_Act1VHalfIdleGachaPoolType;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	charData:[string];
 	consumeData:[Torappu_Act1VHalfIdleGachaPoolData_ConsumeData];

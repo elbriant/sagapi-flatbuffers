@@ -1,5 +1,5 @@
 
-enum Torappu_ActMultiV3BlockDirType : int32 {
+enum Torappu_ActMultiV3BlockDirType : int {
 	NONE = 0,
 	UP = 1,
 	RIGHT = 2,

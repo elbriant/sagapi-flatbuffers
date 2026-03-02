@@ -1,12 +1,12 @@
-include "dict__System_String_Torappu_RoguelikeCopperData.fbs";
-include "dict__System_String_Torappu_RoguelikeCopperDivineData.fbs";
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_Torappu_RoguelikeCopperData_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeCopperDivineData_.fbs";
+include "dict_2_System_String_System_String_.fbs";
 include "Torappu_RoguelikeCopperModuleConsts.fbs";
 
 table Torappu_RoguelikeCopperModuleData {
-	copperData:[dict__System_String_Torappu_RoguelikeCopperData];
-	copperDivineData:[dict__System_String_Torappu_RoguelikeCopperDivineData];
-	changeCopperMap:[dict__System_String_System_String];
+	copperData:[dict_2_System_String_Torappu_RoguelikeCopperData_];
+	copperDivineData:[dict_2_System_String_Torappu_RoguelikeCopperDivineData_];
+	changeCopperMap:[dict_2_System_String_System_String_];
 	moduleConsts:Torappu_RoguelikeCopperModuleConsts;
 }
 

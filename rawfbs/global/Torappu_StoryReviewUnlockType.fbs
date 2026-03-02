@@ -1,5 +1,5 @@
 
-enum Torappu_StoryReviewUnlockType : int32 {
+enum Torappu_StoryReviewUnlockType : int {
 	STAGE_CLEAR = 0,
 	USE_ITEM = 1,
 	BY_START_TIME = 2,

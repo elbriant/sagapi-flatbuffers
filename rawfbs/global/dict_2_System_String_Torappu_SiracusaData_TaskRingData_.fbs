@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_TaskRingData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_TaskRingData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_TaskRingData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_TaskRingData_;

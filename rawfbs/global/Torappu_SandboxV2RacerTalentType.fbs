@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2RacerTalentType : int32 {
+enum Torappu_SandboxV2RacerTalentType : int {
 	BORN = 0,
 	LEARNED = 1
 }

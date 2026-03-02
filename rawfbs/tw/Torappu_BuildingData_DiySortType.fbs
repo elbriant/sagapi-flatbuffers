@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_DiySortType : int32 {
+enum Torappu_BuildingData_DiySortType : int {
 	NONE = 0,
 	THEME = 1,
 	FURNITURE = 2,

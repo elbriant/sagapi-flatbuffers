@@ -1,9 +1,9 @@
 
 table Torappu_FifthAnnivExploreConst {
-	prevRecordNum:int32;
-	maxBoard:int32;
-	valueMin:int32;
-	valueMax:int32;
+	prevRecordNum:int;
+	maxBoard:int;
+	valueMin:int;
+	valueMax:int;
 	targetStuckDesc:string;
 	stageStuckDesc:string;
 	missionName:string;

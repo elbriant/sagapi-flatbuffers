@@ -1,0 +1,9 @@
+include "Torappu_RoguelikePredefinedStyleData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikePredefinedStyleData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikePredefinedStyleData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikePredefinedStyleData_;

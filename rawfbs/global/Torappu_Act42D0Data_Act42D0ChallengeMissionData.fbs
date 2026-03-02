@@ -1,10 +1,10 @@
 
 table Torappu_Act42D0Data_Act42D0ChallengeMissionData {
 	missionId:string;
-	sortId:int32;
+	sortId:int;
 	stageId:string;
 	missionDesc:string;
-	milestoneCount:int32;
+	milestoneCount:int;
 }
 
 

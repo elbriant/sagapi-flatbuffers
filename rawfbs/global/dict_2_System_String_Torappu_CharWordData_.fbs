@@ -1,0 +1,9 @@
+include "Torappu_CharWordData.fbs";
+
+table dict_2_System_String_Torappu_CharWordData_ {
+	dict_key:string;
+	dict_value:Torappu_CharWordData;
+}
+
+
+root_type dict_2_System_String_Torappu_CharWordData_;

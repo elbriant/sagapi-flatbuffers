@@ -1,21 +1,21 @@
 include "Torappu_Act5D1Data_RuneStageData.fbs";
 include "Torappu_Act5D1Data_RuneRecurrentStateData.fbs";
-include "dict__System_String_list___1_Torappu_Act5D1Data_RuneUnlockData.fbs";
+include "dict_2_System_String_list_1_Torappu_Act5D1Data_RuneUnlockData__.fbs";
 include "Torappu_Act5D1Data_RuneReleaseData.fbs";
 include "Torappu_MissionData.fbs";
 include "Torappu_MissionGroup.fbs";
-include "dict__System_String_System_Boolean.fbs";
+include "dict_2_System_String_System_Boolean_.fbs";
 include "Torappu_Act5D1Data_ShopData.fbs";
 include "Torappu_RuneTable_RuneStageExtraData.fbs";
 
 table Torappu_Act5D1Data {
 	stageCommonData:[Torappu_Act5D1Data_RuneStageData];
 	runeStageData:[Torappu_Act5D1Data_RuneRecurrentStateData];
-	runeUnlockDict:[dict__System_String_list___1_Torappu_Act5D1Data_RuneUnlockData];
+	runeUnlockDict:[dict_2_System_String_list_1_Torappu_Act5D1Data_RuneUnlockData__];
 	runeReleaseData:[Torappu_Act5D1Data_RuneReleaseData];
 	missionData:[Torappu_MissionData];
 	missionGroup:[Torappu_MissionGroup];
-	useBenefitMissionDict:[dict__System_String_System_Boolean];
+	useBenefitMissionDict:[dict_2_System_String_System_Boolean_];
 	shopData:Torappu_Act5D1Data_ShopData;
 	coinItemId:string;
 	ptItemId:string;

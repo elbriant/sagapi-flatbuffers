@@ -1,0 +1,9 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table dict_2_System_String_Torappu_RuneTable_PackedRuneData_ {
+	dict_key:string;
+	dict_value:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type dict_2_System_String_Torappu_RuneTable_PackedRuneData_;

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveResData_AvgArchiveResItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveResData_AvgArchiveResItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData_;

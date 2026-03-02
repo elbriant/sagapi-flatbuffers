@@ -1,5 +1,5 @@
 
-enum Torappu_SharedConsts_Direction : int32 {
+enum Torappu_SharedConsts_Direction : int {
 	UP = 0,
 	RIGHT = 1,
 	DOWN = 2,

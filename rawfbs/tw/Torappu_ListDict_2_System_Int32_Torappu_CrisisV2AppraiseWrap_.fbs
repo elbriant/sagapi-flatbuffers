@@ -1,0 +1,9 @@
+include "Torappu_CrisisV2AppraiseWrap.fbs";
+
+table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
+	dict_key:int;
+	dict_value:Torappu_CrisisV2AppraiseWrap;
+}
+
+
+root_type Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_;

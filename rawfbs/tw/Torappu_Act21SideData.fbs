@@ -1,8 +1,8 @@
-include "dict__System_String_Torappu_Act21SideData_ZoneAddtionData.fbs";
+include "dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_.fbs";
 include "Torappu_Act21SideData_ConstData.fbs";
 
 table Torappu_Act21SideData {
-	zoneAdditionDataMap:[dict__System_String_Torappu_Act21SideData_ZoneAddtionData];
+	zoneAdditionDataMap:[dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_];
 	constData:Torappu_Act21SideData_ConstData;
 }
 

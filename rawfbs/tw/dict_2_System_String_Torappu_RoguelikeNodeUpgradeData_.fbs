@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeNodeUpgradeData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeNodeUpgradeData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_;

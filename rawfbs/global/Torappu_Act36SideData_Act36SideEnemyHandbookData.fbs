@@ -2,7 +2,7 @@
 table Torappu_Act36SideData_Act36SideEnemyHandbookData {
 	enemyHandbookId:string;
 	spriteId:string;
-	sortId:int32;
+	sortId:int;
 	foodTypeId:string;
 	foodAmountId:string;
 }

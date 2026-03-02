@@ -1,0 +1,9 @@
+include "Torappu_ActMultiV3TargetMissionData.fbs";
+
+table dict_2_System_String_Torappu_ActMultiV3TargetMissionData_ {
+	dict_key:string;
+	dict_value:Torappu_ActMultiV3TargetMissionData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActMultiV3TargetMissionData_;

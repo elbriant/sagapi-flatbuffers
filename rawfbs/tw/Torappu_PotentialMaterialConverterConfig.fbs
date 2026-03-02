@@ -1,7 +1,7 @@
-include "dict__System_Int32_Torappu_ItemBundle.fbs";
+include "dict_2_System_Int32_Torappu_ItemBundle_.fbs";
 
 table Torappu_PotentialMaterialConverterConfig {
-	items:[dict__System_Int32_Torappu_ItemBundle];
+	items:[dict_2_System_Int32_Torappu_ItemBundle_];
 }
 
 

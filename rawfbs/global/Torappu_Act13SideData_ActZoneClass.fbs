@@ -1,5 +1,5 @@
 
-enum Torappu_Act13SideData_ActZoneClass : int32 {
+enum Torappu_Act13SideData_ActZoneClass : int {
 	NONE = 0,
 	NORMAL = 1,
 	HIGHLEVEL = 2,

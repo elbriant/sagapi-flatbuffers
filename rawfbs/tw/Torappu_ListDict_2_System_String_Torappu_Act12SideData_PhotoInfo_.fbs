@@ -1,0 +1,9 @@
+include "Torappu_Act12SideData_PhotoInfo.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act12SideData_PhotoInfo;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_;

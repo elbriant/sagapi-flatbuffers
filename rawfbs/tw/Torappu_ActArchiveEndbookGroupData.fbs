@@ -3,7 +3,7 @@ include "Torappu_ActArchiveEndbookItemData.fbs";
 table Torappu_ActArchiveEndbookGroupData {
 	endId:string;
 	endingId:string;
-	sortId:int32;
+	sortId:int;
 	title:string;
 	cgId:string;
 	backBlurId:string;

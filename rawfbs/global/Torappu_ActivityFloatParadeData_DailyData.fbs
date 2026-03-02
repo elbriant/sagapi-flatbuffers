@@ -1,7 +1,7 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActivityFloatParadeData_DailyData {
-	dayIndex:int32;
+	dayIndex:int;
 	dateName:string;
 	placeName:string;
 	placeEnName:string;

@@ -1,5 +1,5 @@
 
-enum Torappu_PlayerSideMask : uint8 {
+enum Torappu_PlayerSideMask : ubyte {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,

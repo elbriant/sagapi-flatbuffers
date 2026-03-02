@@ -1,5 +1,5 @@
 
-enum Torappu_DataUnlockType : int32 {
+enum Torappu_DataUnlockType : int {
 	DIRECT = 0,
 	AWAKE = 1,
 	FAVOR = 2,

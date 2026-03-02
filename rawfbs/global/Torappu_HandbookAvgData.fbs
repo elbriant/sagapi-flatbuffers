@@ -2,7 +2,7 @@
 table Torappu_HandbookAvgData {
 	storyId:string;
 	storySetId:string;
-	storySort:int32;
+	storySort:int;
 	storyCanShow:bool;
 	storyIntro:string;
 	storyInfo:string;

@@ -3,13 +3,13 @@ include "Torappu_MissionDisplayRewards.fbs";
 table Torappu_ReturnDailyTaskData {
 	groupId:string;
 	id:string;
-	groupSortId:int32;
-	taskSortId:int32;
+	groupSortId:int;
+	taskSortId:int;
 	template:string;
 	param:[string];
 	desc:string;
 	rewards:[Torappu_MissionDisplayRewards];
-	playPoint:int32;
+	playPoint:int;
 }
 
 

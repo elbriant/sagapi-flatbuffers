@@ -1,0 +1,9 @@
+include "Torappu_ActivityTable_BasicData.fbs";
+
+table dict_2_System_String_Torappu_ActivityTable_BasicData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityTable_BasicData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActivityTable_BasicData_;

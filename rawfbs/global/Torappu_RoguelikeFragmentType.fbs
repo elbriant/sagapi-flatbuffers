@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeFragmentType : int32 {
+enum Torappu_RoguelikeFragmentType : int {
 	NONE = 0,
 	INSPIRATION = 1,
 	WISH = 2,

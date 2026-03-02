@@ -1,7 +1,7 @@
 
 table Torappu_Act27SideData_Act27SideShopData {
 	shopId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	iconId:string;
 }

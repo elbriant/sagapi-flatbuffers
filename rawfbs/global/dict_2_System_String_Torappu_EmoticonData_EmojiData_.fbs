@@ -1,0 +1,9 @@
+include "Torappu_EmoticonData_EmojiData.fbs";
+
+table dict_2_System_String_Torappu_EmoticonData_EmojiData_ {
+	dict_key:string;
+	dict_value:Torappu_EmoticonData_EmojiData;
+}
+
+
+root_type dict_2_System_String_Torappu_EmoticonData_EmojiData_;

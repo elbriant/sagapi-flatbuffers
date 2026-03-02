@@ -3,8 +3,8 @@ include "Torappu_StageUnlockParam.fbs";
 include "Torappu_CharUnlockParam.fbs";
 
 table Torappu_CommonAvailCheck {
-	startTs:int64;
-	endTs:int64;
+	startTs:long;
+	endTs:long;
 	type:Torappu_CommonUnlockType;
 	rate:float;
 	stageUnlockParam:Torappu_StageUnlockParam;

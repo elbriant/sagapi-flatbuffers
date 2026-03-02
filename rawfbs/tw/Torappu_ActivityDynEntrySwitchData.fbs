@@ -1,8 +1,8 @@
-include "list_dict___2_System_String_Torappu_DynEntrySwitchInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_.fbs";
 
 table Torappu_ActivityDynEntrySwitchData {
-	entrySwitchInfo:[list_dict___2_System_String_Torappu_DynEntrySwitchInfo_];
-	randomEntrySwitchInfo:[list_dict___2_System_String_Torappu_DynEntrySwitchInfo_];
+	entrySwitchInfo:[Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_];
+	randomEntrySwitchInfo:[Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_];
 }
 
 

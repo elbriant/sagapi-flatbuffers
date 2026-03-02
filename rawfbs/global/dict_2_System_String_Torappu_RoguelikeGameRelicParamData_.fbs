@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeGameRelicParamData.fbs";
+
+table dict_2_System_String_Torappu_RoguelikeGameRelicParamData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeGameRelicParamData;
+}
+
+
+root_type dict_2_System_String_Torappu_RoguelikeGameRelicParamData_;

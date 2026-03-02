@@ -1,11 +1,11 @@
 
 table Torappu_ActivityInterlockData_FinalStageProgressData {
 	stageId:string;
-	killCnt:int32;
-	apCost:int32;
-	favor:int32;
-	exp:int32;
-	gold:int32;
+	killCnt:int;
+	apCost:int;
+	favor:int;
+	exp:int;
+	gold:int;
 }
 
 

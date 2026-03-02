@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2QuestLineBadgeType : int32 {
+enum Torappu_SandboxV2QuestLineBadgeType : int {
 	NONE = 0,
 	SIDE = 1,
 	GUIDE = 2,

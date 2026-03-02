@@ -2,8 +2,8 @@
 table Torappu_SpecialOperatorDetailSkillNodeData {
 	nodeId:string;
 	skillKey:string;
-	skillLevel:int32;
-	skillSpLevel:int32;
+	skillLevel:int;
+	skillSpLevel:int;
 }
 
 

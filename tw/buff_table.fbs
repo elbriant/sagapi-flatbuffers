@@ -1,5 +1,5 @@
 
-enum Torappu_AbnormalFlag : int32 {
+enum Torappu_AbnormalFlag : int {
 	STUNNED = 0,
 	SP_RECOVER_STOPPED = 1,
 	TARGET_FREE = 2,
@@ -45,13 +45,13 @@ enum Torappu_AbnormalFlag : int32 {
 	E_NUM = 42
 }
 
-enum Torappu_AbnormalCombo : int32 {
+enum Torappu_AbnormalCombo : int {
 	SLEEPING = 0,
 	SHELTERING = 1,
 	E_NUM = 2
 }
 
-enum Torappu_AttributeType : int32 {
+enum Torappu_AttributeType : int {
 	MAX_HP = 0,
 	ATK = 1,
 	DEF = 2,
@@ -91,7 +91,7 @@ enum Torappu_AttributeType : int32 {
 	E_NUM = 36
 }
 
-enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int32 {
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int {
 	ADDITION = 0,
 	MULTIPLIER = 1,
 	FINAL_ADDITION = 2,
@@ -119,13 +119,13 @@ table Torappu_AttributeModifierData {
 
 
 
-enum Torappu_BuffData_StatusResistable : uint8 {
+enum Torappu_BuffData_StatusResistable : ubyte {
 	NO = 0,
 	YES = 1,
 	AUTOMATIC = 2
 }
 
-enum Torappu_BuffData_OverrideType : int32 {
+enum Torappu_BuffData_OverrideType : int {
 	DEFAULT = 0,
 	STACK = 1,
 	UNIQUE = 2,
@@ -133,7 +133,7 @@ enum Torappu_BuffData_OverrideType : int32 {
 	EXTEND_TIME = 4
 }
 
-enum Torappu_BuffData_OnEventPriority : int32 {
+enum Torappu_BuffData_OnEventPriority : int {
 	HIGHER_PRIORITY = 2000,
 	HIGH_PRIORITY = 1000,
 	DEFAULT = 0,
@@ -142,7 +142,7 @@ enum Torappu_BuffData_OnEventPriority : int32 {
 	LOWEST_PRIORITY = -3000
 }
 
-enum Torappu_LifeType : uint8 {
+enum Torappu_LifeType : ubyte {
 	IMMEDIATELY = 0,
 	LIMITED = 1,
 	INFINITY = 2,
@@ -172,10 +172,10 @@ table Torappu_BuffData {
 	disableOverride:bool;
 	overrideKey:string;
 	overrideType:Torappu_BuffData_OverrideType;
-	maxStackCnt:int32;
+	maxStackCnt:int;
 	refreshRemainingTimeWhenStackMax:bool;
 	clearAllStackCntWhenTimeUp:bool;
-	maxValidStackCnt:int32;
+	maxValidStackCnt:int;
 	independentCharacterSource:bool;
 	overrideEffectKey:string;
 	overrideOnEventPriority:bool;
@@ -186,11 +186,11 @@ table Torappu_BuffData {
 	durationKey:string;
 	lifeTime:float;
 	triggerLifeType:Torappu_LifeType;
-	triggerCnt:int32;
+	triggerCnt:int;
 	triggerInterval:float;
 	waitFirstTriggerInterval:bool;
 	firstTriggerInterval:float;
-	priority:int32;
+	priority:int;
 	priorityBBKeys:[string];
 	stripBlackboardParamsWithBuffKey:bool;
 	blackboard:[Torappu_Blackboard_DataPair];

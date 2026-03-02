@@ -5,13 +5,13 @@ include "Torappu_BuildingData_WorkshopFormula_UnlockRoom.fbs";
 include "Torappu_BuildingData_WorkshopFormula_UnlockStage.fbs";
 
 table Torappu_BuildingData_WorkshopFormula {
-	sortId:int32;
+	sortId:int;
 	formulaId:string;
-	rarity:int32;
+	rarity:int;
 	itemId:string;
-	count:int32;
-	goldCost:int64;
-	apCost:int64;
+	count:int;
+	goldCost:long;
+	apCost:long;
 	formulaType:Torappu_BuildingData_FormulaItemType;
 	buffType:string;
 	extraOutcomeRate:float;

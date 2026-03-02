@@ -1,0 +1,9 @@
+include "Torappu_ActVecBreakV2StageRewardData.fbs";
+
+table dict_2_System_String_Torappu_ActVecBreakV2StageRewardData_ {
+	dict_key:string;
+	dict_value:Torappu_ActVecBreakV2StageRewardData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActVecBreakV2StageRewardData_;

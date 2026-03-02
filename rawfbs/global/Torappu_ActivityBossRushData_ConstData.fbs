@@ -1,6 +1,6 @@
 
 table Torappu_ActivityBossRushData_ConstData {
-	maxProvidedCharNum:int32;
+	maxProvidedCharNum:int;
 	textMilestoneItemLevelDesc:string;
 	milestonePointId:string;
 	relicUpgradeItemId:string;

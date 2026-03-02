@@ -1,5 +1,5 @@
 
-enum Torappu_CharWordVoiceType : int32 {
+enum Torappu_CharWordVoiceType : int {
 	ONLY_TEXT = 0,
 	HAVE_CV = 1,
 	ENUM = 2

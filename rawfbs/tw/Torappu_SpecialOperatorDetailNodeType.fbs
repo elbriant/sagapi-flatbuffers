@@ -1,5 +1,5 @@
 
-enum Torappu_SpecialOperatorDetailNodeType : int32 {
+enum Torappu_SpecialOperatorDetailNodeType : int {
 	NONE = 0,
 	EVOLVE = 1,
 	SKILL = 2,

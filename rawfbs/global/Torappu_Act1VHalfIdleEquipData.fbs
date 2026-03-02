@@ -6,7 +6,7 @@ table Torappu_Act1VHalfIdleEquipData {
 	alias:string;
 	iconId:string;
 	name:string;
-	level:int32;
+	level:int;
 	equipType:Torappu_Act1VHalfIdleEquipType;
 	runeData:Torappu_RuneTable_PackedRuneData;
 }

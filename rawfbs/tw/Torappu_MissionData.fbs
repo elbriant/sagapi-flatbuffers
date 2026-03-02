@@ -4,7 +4,7 @@ include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_MissionData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	description:string;
 	type:Torappu_MissionType;
 	itemBgType:Torappu_MissionItemBgType;
@@ -16,12 +16,12 @@ table Torappu_MissionData {
 	unlockParam:[string];
 	missionGroup:string;
 	toPage:string;
-	periodicalPoint:int32;
+	periodicalPoint:int;
 	rewards:[Torappu_MissionDisplayRewards];
 	backImagePath:string;
 	foldId:string;
 	haveSubMissionToUnlock:bool;
-	countEndTs:int64;
+	countEndTs:long;
 }
 
 

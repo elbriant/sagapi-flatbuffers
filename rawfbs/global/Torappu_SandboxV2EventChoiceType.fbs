@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2EventChoiceType : int32 {
+enum Torappu_SandboxV2EventChoiceType : int {
 	NONE = 0,
 	NEXT = 1,
 	LEAVE = 2,

@@ -1,5 +1,5 @@
 
-enum Torappu_CustomTicketType : int32 {
+enum Torappu_CustomTicketType : int {
 	NONE = 0,
 	PURIFY = 1,
 	GET_CANDLE = 2

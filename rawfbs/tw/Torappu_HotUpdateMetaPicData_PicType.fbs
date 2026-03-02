@@ -1,5 +1,5 @@
 
-enum Torappu_HotUpdateMetaPicData_PicType : int32 {
+enum Torappu_HotUpdateMetaPicData_PicType : int {
 	NONE = 0,
 	SKIN = 1
 }

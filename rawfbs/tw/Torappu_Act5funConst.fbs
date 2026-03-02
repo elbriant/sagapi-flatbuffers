@@ -2,14 +2,14 @@
 table Torappu_Act5funConst {
 	storyStageId:string;
 	betStageId:string;
-	storyRoundnumber:int32;
-	betRoundnumber:int32;
-	initialFundStory:int32;
-	initialFundBet:int32;
-	minFundDrop:int32;
-	maxFund:int64;
+	storyRoundnumber:int;
+	betRoundnumber:int;
+	initialFundStory:int;
+	initialFundBet:int;
+	minFundDrop:int;
+	maxFund:long;
 	selectTime:float;
-	npcCountInRound:int32;
+	npcCountInRound:int;
 	selectDescription:string;
 	selectLeftDescription:string;
 	selectRightDescription:string;

@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData {
 	seed:string;
-	sortId:int32;
+	sortId:int;
 	desc:string;
 }
 

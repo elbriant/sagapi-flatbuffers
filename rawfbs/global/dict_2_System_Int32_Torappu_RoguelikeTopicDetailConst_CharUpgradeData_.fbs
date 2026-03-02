@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeTopicDetailConst_CharUpgradeData.fbs";
+
+table dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_ {
+	dict_key:int;
+	dict_value:Torappu_RoguelikeTopicDetailConst_CharUpgradeData;
+}
+
+
+root_type dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_;

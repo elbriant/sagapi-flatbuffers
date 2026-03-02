@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeChaosPredefineLevelInfo {
-	chaosLevelBeginNum:int32;
-	chaosLevelEndNum:int32;
+	chaosLevelBeginNum:int;
+	chaosLevelEndNum:int;
 }
 
 

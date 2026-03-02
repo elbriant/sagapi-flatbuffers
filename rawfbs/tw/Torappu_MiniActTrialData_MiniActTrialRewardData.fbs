@@ -2,9 +2,9 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_MiniActTrialData_MiniActTrialRewardData {
 	trialRewardId:string;
-	orderId:int32;
+	orderId:int;
 	actId:string;
-	targetStoryCount:int32;
+	targetStoryCount:int;
 	item:Torappu_ItemBundle;
 }
 

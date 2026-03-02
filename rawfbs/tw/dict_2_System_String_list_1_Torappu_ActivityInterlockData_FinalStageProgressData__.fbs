@@ -1,0 +1,9 @@
+include "Torappu_ActivityInterlockData_FinalStageProgressData.fbs";
+
+table dict_2_System_String_list_1_Torappu_ActivityInterlockData_FinalStageProgressData__ {
+	dict_key:string;
+	dict_value:[Torappu_ActivityInterlockData_FinalStageProgressData];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_ActivityInterlockData_FinalStageProgressData__;

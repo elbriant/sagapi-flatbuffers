@@ -1,7 +1,7 @@
 
 table Torappu_ActivityBossRushData_RelicData {
 	relicId:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	icon:string;
 	relicTaskId:string;

@@ -1,5 +1,5 @@
 
-enum Torappu_MotionMode : int32 {
+enum Torappu_MotionMode : int {
 	WALK = 0,
 	FLY = 1,
 	E_NUM = 2

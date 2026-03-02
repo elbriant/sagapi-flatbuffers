@@ -1,14 +1,14 @@
-include "dict__System_Int32_list___1_Torappu_NewbieCheckInPackageRewardData.fbs";
+include "dict_2_System_Int32_list_1_Torappu_NewbieCheckInPackageRewardData__.fbs";
 
 table Torappu_NewbieCheckInPackageData {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	bindGPGoodId:string;
-	checkInDuration:int32;
-	totalCheckInDay:int32;
+	checkInDuration:int;
+	totalCheckInDay:int;
 	iconId:string;
-	checkInRewardDict:[dict__System_Int32_list___1_Torappu_NewbieCheckInPackageRewardData];
+	checkInRewardDict:[dict_2_System_Int32_list_1_Torappu_NewbieCheckInPackageRewardData__];
 }
 
 

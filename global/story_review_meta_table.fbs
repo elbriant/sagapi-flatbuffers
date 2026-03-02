@@ -1,5 +1,5 @@
 
-enum Torappu_MiniActTrialData_RuleType : int32 {
+enum Torappu_MiniActTrialData_RuleType : int {
 	NONE = 0,
 	TITLE = 1,
 	CONTENT = 2
@@ -12,7 +12,7 @@ table Torappu_MiniActTrialData_RuleData {
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -108,7 +108,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -116,9 +116,9 @@ table Torappu_ItemBundle {
 
 table Torappu_MiniActTrialData_MiniActTrialRewardData {
 	trialRewardId:string;
-	orderId:int32;
+	orderId:int;
 	actId:string;
-	targetStoryCount:int32;
+	targetStoryCount:int;
 	item:Torappu_ItemBundle;
 }
 
@@ -126,14 +126,14 @@ table Torappu_MiniActTrialData_MiniActTrialRewardData {
 
 table Torappu_MiniActTrialData_MiniActTrialSingleData {
 	actId:string;
-	rewardStartTime:int64;
+	rewardStartTime:long;
 	themeColor:string;
 	rewardList:[Torappu_MiniActTrialData_MiniActTrialRewardData];
 }
 
 
 
-table dict__System_String_Torappu_MiniActTrialData_MiniActTrialSingleData {
+table dict_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData_ {
 	dict_key:string;
 	dict_value:Torappu_MiniActTrialData_MiniActTrialSingleData;
 }
@@ -141,14 +141,14 @@ table dict__System_String_Torappu_MiniActTrialData_MiniActTrialSingleData {
 
 
 table Torappu_MiniActTrialData {
-	preShowDays:int32;
+	preShowDays:int;
 	ruleDataList:[Torappu_MiniActTrialData_RuleData];
-	miniActTrialDataMap:[dict__System_String_Torappu_MiniActTrialData_MiniActTrialSingleData];
+	miniActTrialDataMap:[dict_2_System_String_Torappu_MiniActTrialData_MiniActTrialSingleData_];
 }
 
 
 
-enum Torappu_ActArchivePicType : int32 {
+enum Torappu_ActArchivePicType : int {
 	IMAGE = 0,
 	BACKGROUND = 1,
 	ENDING_IMAGE = 2,
@@ -167,7 +167,7 @@ table Torappu_ActArchiveResData_PicArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_PicArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_PicArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_PicArchiveResItemData;
 }
@@ -182,7 +182,7 @@ table Torappu_ActArchiveResData_AudioArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_AudioArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_AudioArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_AudioArchiveResItemData;
 }
@@ -201,7 +201,7 @@ table Torappu_ActArchiveResData_AvgArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_AvgArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_AvgArchiveResItemData;
 }
@@ -219,7 +219,7 @@ table Torappu_ActArchiveResData_StoryArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_StoryArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_StoryArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_StoryArchiveResItemData;
 }
@@ -236,7 +236,7 @@ table Torappu_ActArchiveResData_NewsFormatData {
 
 
 
-enum Torappu_ActArchiveResData_ArchiveNewsLineType : int32 {
+enum Torappu_ActArchiveResData_ArchiveNewsLineType : int {
 	TextContent = 0,
 	ImageContent = 1
 }
@@ -255,15 +255,15 @@ table Torappu_ActArchiveResData_NewsArchiveResItemData {
 	newsFormat:Torappu_ActArchiveResData_NewsFormatData;
 	newsText:string;
 	newsAuthor:string;
-	paramP0:int32;
-	paramK:int32;
+	paramP0:int;
+	paramK:int;
 	paramR:float;
 	newsLines:[Torappu_ActArchiveResData_ActivityNewsLine];
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_NewsArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_NewsArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_NewsArchiveResItemData;
 }
@@ -280,7 +280,7 @@ table Torappu_ActArchiveResData_LandmarkArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_LandmarkArchiveResItemData;
 }
@@ -294,7 +294,7 @@ table Torappu_ActArchiveResData_LogArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_LogArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_LogArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_LogArchiveResItemData;
 }
@@ -310,7 +310,7 @@ table Torappu_ActArchiveResData_ChallengeBookArchiveResItemData {
 
 
 
-table dict__System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData {
+table dict_2_System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveResData_ChallengeBookArchiveResItemData;
 }
@@ -318,21 +318,21 @@ table dict__System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemD
 
 
 table Torappu_ActArchiveResData {
-	pics:[dict__System_String_Torappu_ActArchiveResData_PicArchiveResItemData];
-	audios:[dict__System_String_Torappu_ActArchiveResData_AudioArchiveResItemData];
-	avgs:[dict__System_String_Torappu_ActArchiveResData_AvgArchiveResItemData];
-	stories:[dict__System_String_Torappu_ActArchiveResData_StoryArchiveResItemData];
-	news:[dict__System_String_Torappu_ActArchiveResData_NewsArchiveResItemData];
-	landmarks:[dict__System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData];
-	logs:[dict__System_String_Torappu_ActArchiveResData_LogArchiveResItemData];
-	challengeBooks:[dict__System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData];
+	pics:[dict_2_System_String_Torappu_ActArchiveResData_PicArchiveResItemData_];
+	audios:[dict_2_System_String_Torappu_ActArchiveResData_AudioArchiveResItemData_];
+	avgs:[dict_2_System_String_Torappu_ActArchiveResData_AvgArchiveResItemData_];
+	stories:[dict_2_System_String_Torappu_ActArchiveResData_StoryArchiveResItemData_];
+	news:[dict_2_System_String_Torappu_ActArchiveResData_NewsArchiveResItemData_];
+	landmarks:[dict_2_System_String_Torappu_ActArchiveResData_LandmarkArchiveResItemData_];
+	logs:[dict_2_System_String_Torappu_ActArchiveResData_LogArchiveResItemData_];
+	challengeBooks:[dict_2_System_String_Torappu_ActArchiveResData_ChallengeBookArchiveResItemData_];
 }
 
 
 
 table Torappu_ActArchiveTimelineItemData {
 	timelineId:string;
-	timelineSortId:int32;
+	timelineSortId:int;
 	timelineTitle:string;
 	timelineDes:string;
 	picIdList:[string];
@@ -352,12 +352,12 @@ table Torappu_ActArchiveTimelineData {
 
 table Torappu_ActArchiveMusicItemData {
 	musicId:string;
-	musicSortId:int32;
+	musicSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveMusicItemData {
+table dict_2_System_String_Torappu_ActArchiveMusicItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveMusicItemData;
 }
@@ -365,19 +365,19 @@ table dict__System_String_Torappu_ActArchiveMusicItemData {
 
 
 table Torappu_ActArchiveMusicData {
-	musics:[dict__System_String_Torappu_ActArchiveMusicItemData];
+	musics:[dict_2_System_String_Torappu_ActArchiveMusicItemData_];
 }
 
 
 
 table Torappu_ActArchivePicItemData {
 	picId:string;
-	picSortId:int32;
+	picSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchivePicItemData {
+table dict_2_System_String_Torappu_ActArchivePicItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchivePicItemData;
 }
@@ -385,19 +385,19 @@ table dict__System_String_Torappu_ActArchivePicItemData {
 
 
 table Torappu_ActArchivePicData {
-	pics:[dict__System_String_Torappu_ActArchivePicItemData];
+	pics:[dict_2_System_String_Torappu_ActArchivePicItemData_];
 }
 
 
 
 table Torappu_ActArchiveStoryItemData {
 	storyId:string;
-	storySortId:int32;
+	storySortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveStoryItemData {
+table dict_2_System_String_Torappu_ActArchiveStoryItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveStoryItemData;
 }
@@ -405,19 +405,19 @@ table dict__System_String_Torappu_ActArchiveStoryItemData {
 
 
 table Torappu_ActArchiveStoryData {
-	stories:[dict__System_String_Torappu_ActArchiveStoryItemData];
+	stories:[dict_2_System_String_Torappu_ActArchiveStoryItemData_];
 }
 
 
 
 table Torappu_ActArchiveAvgItemData {
 	avgId:string;
-	avgSortId:int32;
+	avgSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveAvgItemData {
+table dict_2_System_String_Torappu_ActArchiveAvgItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveAvgItemData;
 }
@@ -425,19 +425,19 @@ table dict__System_String_Torappu_ActArchiveAvgItemData {
 
 
 table Torappu_ActArchiveAvgData {
-	avgs:[dict__System_String_Torappu_ActArchiveAvgItemData];
+	avgs:[dict_2_System_String_Torappu_ActArchiveAvgItemData_];
 }
 
 
 
 table Torappu_ActArchiveNewsItemData {
 	newsId:string;
-	newsSortId:int32;
+	newsSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveNewsItemData {
+table dict_2_System_String_Torappu_ActArchiveNewsItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveNewsItemData;
 }
@@ -445,26 +445,26 @@ table dict__System_String_Torappu_ActArchiveNewsItemData {
 
 
 table Torappu_ActArchiveNewsData {
-	news:[dict__System_String_Torappu_ActArchiveNewsItemData];
+	news:[dict_2_System_String_Torappu_ActArchiveNewsItemData_];
 }
 
 
 
 table Torappu_ActArchiveLandmarkItemData {
 	landmarkId:string;
-	landmarkSortId:int32;
+	landmarkSortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveLandmarkItemData {
+table dict_2_System_String_Torappu_ActArchiveLandmarkItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveLandmarkItemData;
 }
 
 
 
-enum Torappu_Act17sideData_ChapterIconType : int32 {
+enum Torappu_Act17sideData_ChapterIconType : int {
 	NORMAL = 0,
 	EX = 1,
 	HARD = 2
@@ -480,7 +480,7 @@ table Torappu_ActArchiveChapterLogData {
 
 
 
-table dict__System_String_Torappu_ActArchiveChapterLogData {
+table dict_2_System_String_Torappu_ActArchiveChapterLogData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveChapterLogData;
 }
@@ -489,12 +489,12 @@ table dict__System_String_Torappu_ActArchiveChapterLogData {
 
 table Torappu_ActArchiveChallengeBookItemData {
 	storyId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveChallengeBookItemData {
+table dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveChallengeBookItemData;
 }
@@ -502,7 +502,7 @@ table dict__System_String_Torappu_ActArchiveChallengeBookItemData {
 
 
 table Torappu_ActArchiveChallengeBookData {
-	stories:[dict__System_String_Torappu_ActArchiveChallengeBookItemData];
+	stories:[dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_];
 }
 
 
@@ -514,14 +514,14 @@ table Torappu_ActArchiveComponentData {
 	story:Torappu_ActArchiveStoryData;
 	avg:Torappu_ActArchiveAvgData;
 	news:Torappu_ActArchiveNewsData;
-	landmark:[dict__System_String_Torappu_ActArchiveLandmarkItemData];
-	log:[dict__System_String_Torappu_ActArchiveChapterLogData];
+	landmark:[dict_2_System_String_Torappu_ActArchiveLandmarkItemData_];
+	log:[dict_2_System_String_Torappu_ActArchiveChapterLogData_];
 	challengeBook:Torappu_ActArchiveChallengeBookData;
 }
 
 
 
-table dict__System_String_Torappu_ActArchiveComponentData {
+table dict_2_System_String_Torappu_ActArchiveComponentData_ {
 	dict_key:string;
 	dict_value:Torappu_ActArchiveComponentData;
 }
@@ -529,7 +529,7 @@ table dict__System_String_Torappu_ActArchiveComponentData {
 
 
 table Torappu_ActArchiveComponentTable {
-	components:[dict__System_String_Torappu_ActArchiveComponentData];
+	components:[dict_2_System_String_Torappu_ActArchiveComponentData_];
 }
 
 
@@ -537,19 +537,19 @@ table Torappu_ActArchiveComponentTable {
 table Torappu_TrainingCampStageData {
 	stageId:string;
 	stageIconId:string;
-	sortId:int32;
+	sortId:int;
 	levelId:string;
 	code:string;
 	name:string;
 	loadingPicId:string;
 	description:string;
 	endCharId:string;
-	updateTs:int64;
+	updateTs:long;
 }
 
 
 
-table dict__System_String_Torappu_TrainingCampStageData {
+table dict_2_System_String_Torappu_TrainingCampStageData_ {
 	dict_key:string;
 	dict_value:Torappu_TrainingCampStageData;
 }
@@ -557,7 +557,7 @@ table dict__System_String_Torappu_TrainingCampStageData {
 
 
 table Torappu_NewTrainingCampStageData {
-	updateTs:int64;
+	updateTs:long;
 	stages:[string];
 }
 
@@ -572,7 +572,7 @@ table Torappu_TrainingCampConsts {
 
 
 table Torappu_TrainingCampData {
-	stageData:[dict__System_String_Torappu_TrainingCampStageData];
+	stageData:[dict_2_System_String_Torappu_TrainingCampStageData_];
 	newTrainingCampStages:[Torappu_NewTrainingCampStageData];
 	consts:Torappu_TrainingCampConsts;
 }

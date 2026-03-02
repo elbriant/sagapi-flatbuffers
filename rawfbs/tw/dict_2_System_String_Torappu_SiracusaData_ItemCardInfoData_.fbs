@@ -1,0 +1,9 @@
+include "Torappu_SiracusaData_ItemCardInfoData.fbs";
+
+table dict_2_System_String_Torappu_SiracusaData_ItemCardInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_SiracusaData_ItemCardInfoData;
+}
+
+
+root_type dict_2_System_String_Torappu_SiracusaData_ItemCardInfoData_;

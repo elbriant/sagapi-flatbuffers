@@ -1,5 +1,5 @@
 
-enum Torappu_MedalExpireType : int32 {
+enum Torappu_MedalExpireType : int {
 	NONE = 0,
 	INIT = 1,
 	TEMP = 2,

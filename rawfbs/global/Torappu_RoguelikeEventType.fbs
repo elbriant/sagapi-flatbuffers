@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeEventType : int32 {
+enum Torappu_RoguelikeEventType : int {
 	NONE = 0,
 	BATTLE_NORMAL = 1,
 	BATTLE_ELITE = 2,

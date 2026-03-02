@@ -2,8 +2,8 @@ include "Torappu_BuildingData_LayoutData_StoreyData_Type.fbs";
 
 table Torappu_BuildingData_LayoutData_StoreyData {
 	id:string;
-	yOffset:int32;
-	unlockControlLevel:int32;
+	yOffset:int;
+	unlockControlLevel:int;
 	type:Torappu_BuildingData_LayoutData_StoreyData_Type;
 }
 

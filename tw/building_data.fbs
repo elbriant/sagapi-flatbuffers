@@ -1,12 +1,12 @@
 
-table list_dict___2_System_String_System_Int32_ {
+table Torappu_ListDict_2_System_String_System_Int32_ {
 	dict_key:string;
-	dict_value:int32;
+	dict_value:int;
 }
 
 
 
-enum Torappu_BuildingData_RoomType : int32 {
+enum Torappu_BuildingData_RoomType : int {
 	NONE = 0,
 	CONTROL = 1,
 	POWER = 2,
@@ -27,14 +27,14 @@ enum Torappu_BuildingData_RoomType : int32 {
 
 table Torappu_BuildingData_RoomUnlockCond_CondItem {
 	type:Torappu_BuildingData_RoomType;
-	level:int32;
-	count:int32;
+	level:int;
+	count:int;
 }
 
 
 
-table list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_ {
-	dict_key:int32;
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_ {
+	dict_key:int;
 	dict_value:Torappu_BuildingData_RoomUnlockCond_CondItem;
 }
 
@@ -42,19 +42,19 @@ table list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_ {
 
 table Torappu_BuildingData_RoomUnlockCond {
 	id:string;
-	number:[list_dict___2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
+	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_RoomUnlockCond {
+table dict_2_System_String_Torappu_BuildingData_RoomUnlockCond_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_RoomUnlockCond;
 }
 
 
 
-enum Torappu_BuildingData_RoomCategory : int32 {
+enum Torappu_BuildingData_RoomCategory : int {
 	NONE = 0,
 	FUNCTION = 1,
 	OUTPUT = 2,
@@ -69,13 +69,13 @@ enum Torappu_BuildingData_RoomCategory : int32 {
 }
 
 table Torappu_GridPosition {
-	row:int32;
-	col:int32;
+	row:int;
+	col:int;
 }
 
 
 
-enum Torappu_ItemType : int32 {
+enum Torappu_ItemType : int {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -167,7 +167,7 @@ enum Torappu_ItemType : int32 {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int32;
+	count:int;
 	type:Torappu_ItemType;
 }
 
@@ -175,8 +175,8 @@ table Torappu_ItemBundle {
 
 table Torappu_BuildingData_RoomData_BuildCost {
 	items:[Torappu_ItemBundle];
-	time:int64;
-	labor:int32;
+	time:long;
+	labor:int;
 }
 
 
@@ -186,9 +186,9 @@ table Torappu_BuildingData_RoomData_PhaseData {
 	overridePrefabId:string;
 	unlockCondId:string;
 	buildCost:Torappu_BuildingData_RoomData_BuildCost;
-	electricity:int32;
-	maxStationedNum:int32;
-	manpowerCost:int64;
+	electricity:int;
+	maxStationedNum:int;
+	manpowerCost:long;
 }
 
 
@@ -199,7 +199,7 @@ table Torappu_BuildingData_RoomData {
 	description:string;
 	defaultPrefabId:string;
 	canLevelDown:bool;
-	maxCount:int32;
+	maxCount:int;
 	category:Torappu_BuildingData_RoomCategory;
 	size:Torappu_GridPosition;
 	phases:[Torappu_BuildingData_RoomData_PhaseData];
@@ -207,7 +207,7 @@ table Torappu_BuildingData_RoomData {
 
 
 
-table dict__System_String_Torappu_BuildingData_RoomData {
+table dict_2_System_String_Torappu_BuildingData_RoomData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_RoomData;
 }
@@ -217,8 +217,8 @@ table dict__System_String_Torappu_BuildingData_RoomData {
 table Torappu_BuildingData_LayoutData_RoomSlot {
 	id:string;
 	cleanCostId:string;
-	costLabor:int32;
-	provideLabor:int32;
+	costLabor:int;
+	provideLabor:int;
 	size:Torappu_GridPosition;
 	offset:Torappu_GridPosition;
 	category:Torappu_BuildingData_RoomCategory;
@@ -227,7 +227,7 @@ table Torappu_BuildingData_LayoutData_RoomSlot {
 
 
 
-table dict__System_String_Torappu_BuildingData_LayoutData_RoomSlot {
+table dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_LayoutData_RoomSlot;
 }
@@ -240,8 +240,8 @@ table Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost {
 
 
 
-table list_dict___2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_ {
-	dict_key:int32;
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_ {
+	dict_key:int;
 	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost;
 }
 
@@ -249,33 +249,33 @@ table list_dict___2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_C
 
 table Torappu_BuildingData_LayoutData_SlotCleanCost {
 	id:string;
-	number:[list_dict___2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_];
+	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_LayoutData_SlotCleanCost {
+table dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost;
 }
 
 
 
-enum Torappu_BuildingData_LayoutData_StoreyData_Type : int32 {
+enum Torappu_BuildingData_LayoutData_StoreyData_Type : int {
 	UPGROUND = 0,
 	DOWNGROUND = 1
 }
 
 table Torappu_BuildingData_LayoutData_StoreyData {
 	id:string;
-	yOffset:int32;
-	unlockControlLevel:int32;
+	yOffset:int;
+	unlockControlLevel:int;
 	type:Torappu_BuildingData_LayoutData_StoreyData_Type;
 }
 
 
 
-table list_dict___2_System_String_Torappu_BuildingData_LayoutData_StoreyData_ {
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_LayoutData_StoreyData;
 }
@@ -284,14 +284,14 @@ table list_dict___2_System_String_Torappu_BuildingData_LayoutData_StoreyData_ {
 
 table Torappu_BuildingData_LayoutData {
 	id:string;
-	slots:[dict__System_String_Torappu_BuildingData_LayoutData_RoomSlot];
-	cleanCosts:[dict__System_String_Torappu_BuildingData_LayoutData_SlotCleanCost];
-	storeys:[list_dict___2_System_String_Torappu_BuildingData_LayoutData_StoreyData_];
+	slots:[dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_];
+	cleanCosts:[dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_];
+	storeys:[Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_LayoutData {
+table dict_2_System_String_Torappu_BuildingData_LayoutData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_LayoutData;
 }
@@ -309,7 +309,7 @@ table Torappu_BuildingData_PrefabInfo {
 
 
 
-table dict__System_String_Torappu_BuildingData_PrefabInfo {
+table dict_2_System_String_Torappu_BuildingData_PrefabInfo_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_PrefabInfo;
 }
@@ -323,14 +323,14 @@ table Torappu_BuildingData_ControlRoomPhase {
 
 table Torappu_BuildingData_ControlRoomBean {
 	phases:[Torappu_BuildingData_ControlRoomPhase];
-	basicCostBuff:int32;
+	basicCostBuff:int;
 }
 
 
 
 table Torappu_BuildingData_ManufactPhase {
 	speed:float;
-	outputCapacity:int32;
+	outputCapacity:int;
 }
 
 
@@ -343,9 +343,9 @@ table Torappu_BuildingData_ManufactRoomBean {
 
 
 table Torappu_BuildingData_ShopPhase {
-	counterNum:int32;
+	counterNum:int;
 	speed:float;
-	moneyCapacity:int32;
+	moneyCapacity:int;
 }
 
 
@@ -358,8 +358,8 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase_ {
 
 table Torappu_BuildingData_HirePhase {
 	economizeRate:float;
-	resSpeed:int32;
-	refreshTimes:int32;
+	resSpeed:int;
+	refreshTimes:int;
 }
 
 
@@ -372,8 +372,8 @@ table Torappu_BuildingData_HireRoomBean {
 
 
 table Torappu_BuildingData_DormPhase {
-	manpowerRecover:int32;
-	decorationLimit:int32;
+	manpowerRecover:int;
+	decorationLimit:int;
 }
 
 
@@ -385,7 +385,7 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_DormPhase_ {
 
 
 table Torappu_BuildingData_PrivatePhase {
-	decorationLimit:int32;
+	decorationLimit:int;
 }
 
 
@@ -397,9 +397,9 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_PrivatePhase_ {
 
 
 table Torappu_BuildingData_MeetingPhase {
-	friendSlotInc:int32;
-	maxVisitorNum:int32;
-	gatheringSpeed:int32;
+	friendSlotInc:int;
+	maxVisitorNum:int;
+	gatheringSpeed:int;
 }
 
 
@@ -413,8 +413,8 @@ table Torappu_BuildingData_MeetingRoomBean {
 
 table Torappu_BuildingData_TradingPhase {
 	orderSpeed:float;
-	orderLimit:int32;
-	orderRarity:int32;
+	orderLimit:int;
+	orderRarity:int;
 }
 
 
@@ -439,7 +439,7 @@ table Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase_ {
 
 
 table Torappu_BuildingData_TrainingPhase {
-	specSkillLvlLimit:int32;
+	specSkillLvlLimit:int;
 }
 
 
@@ -463,7 +463,7 @@ table Torappu_BuildingData_PowerRoomBean {
 
 
 
-enum Torappu_EvolvePhase : int32 {
+enum Torappu_EvolvePhase : int {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -473,7 +473,7 @@ enum Torappu_EvolvePhase : int32 {
 
 table Torappu_CharacterData_UnlockCondition {
 	phase:Torappu_EvolvePhase;
-	level:int32;
+	level:int;
 }
 
 
@@ -493,20 +493,20 @@ table Torappu_BuildingData_BuildingBuffCharSlot {
 
 table Torappu_BuildingData_BuildingCharacter {
 	charId:string;
-	maxManpower:int64;
+	maxManpower:long;
 	buffChar:[Torappu_BuildingData_BuildingBuffCharSlot];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_BuildingCharacter {
+table dict_2_System_String_Torappu_BuildingData_BuildingCharacter_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_BuildingCharacter;
 }
 
 
 
-enum Torappu_BuildingData_BuffCategory : int32 {
+enum Torappu_BuildingData_BuffCategory : int {
 	NONE = 0,
 	FUNCTION = 1,
 	OUTPUT = 2,
@@ -518,41 +518,41 @@ table Torappu_BuildingData_BuildingBuff {
 	buffName:string;
 	buffIcon:string;
 	skillIcon:string;
-	sortId:int32;
+	sortId:int;
 	buffColor:string;
 	textColor:string;
 	buffCategory:Torappu_BuildingData_BuffCategory;
 	roomType:Torappu_BuildingData_RoomType;
 	description:string;
-	efficiency:int32;
-	targetGroupSortId:int32;
+	efficiency:int;
+	targetGroupSortId:int;
 	targets:[string];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_BuildingBuff {
+table dict_2_System_String_Torappu_BuildingData_BuildingBuff_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_BuildingBuff;
 }
 
 
 
-table dict__System_String_list___1_System_String {
+table dict_2_System_String_list_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
 
 
 
-enum Torappu_BuildingData_FurnitureInteract : int32 {
+enum Torappu_BuildingData_FurnitureInteract : int {
 	NONE = 0,
 	ANIMATOR = 1,
 	MUSIC = 2,
 	FUNCTION = 3
 }
 
-enum Torappu_BuildingData_FurnitureType : int32 {
+enum Torappu_BuildingData_FurnitureType : int {
 	FLOOR = 0,
 	CARPET = 1,
 	SEATING = 2,
@@ -569,7 +569,7 @@ enum Torappu_BuildingData_FurnitureType : int32 {
 	INTERACT = 13
 }
 
-enum Torappu_BuildingData_FurnitureSubType : int32 {
+enum Torappu_BuildingData_FurnitureSubType : int {
 	NONE = 0,
 	CHAIR = 1,
 	SOFA = 2,
@@ -613,7 +613,7 @@ enum Torappu_BuildingData_FurnitureSubType : int32 {
 	MUSIC = 40
 }
 
-enum Torappu_BuildingData_FurnitureLocation : int32 {
+enum Torappu_BuildingData_FurnitureLocation : int {
 	NONE = 0,
 	WALL = 1,
 	FLOOR = 2,
@@ -623,23 +623,23 @@ enum Torappu_BuildingData_FurnitureLocation : int32 {
 	CEILINGDECAL = 6
 }
 
-enum Torappu_BuildingData_FurnitureCategory : int32 {
+enum Torappu_BuildingData_FurnitureCategory : int {
 	FURNITURE = 0,
 	WALL = 1,
 	FLOOR = 2
 }
 
 table Torappu_BuildingData_WorkshopExtraWeightItem {
-	weight:int32;
+	weight:int;
 	itemId:string;
-	itemCount:int32;
+	itemCount:int;
 }
 
 
 
 table Torappu_BuildingData_CustomData_FurnitureData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	iconId:string;
 	interactType:Torappu_BuildingData_FurnitureInteract;
@@ -650,29 +650,29 @@ table Torappu_BuildingData_CustomData_FurnitureData {
 	category:Torappu_BuildingData_FurnitureCategory;
 	validOnRotate:bool;
 	enableRotate:bool;
-	rarity:int32;
+	rarity:int;
 	themeId:string;
 	groupId:string;
-	width:int32;
-	depth:int32;
-	height:int32;
-	comfort:int32;
+	width:int;
+	depth:int;
+	height:int;
+	comfort:int;
 	usage:string;
 	description:string;
 	obtainApproach:string;
 	processedProductId:string;
-	processedProductCount:int32;
-	processedByProductPercentage:int32;
+	processedProductCount:int;
+	processedByProductPercentage:int;
 	processedByProductGroup:[Torappu_BuildingData_WorkshopExtraWeightItem];
 	canBeDestroy:bool;
-	isOnly:int32;
-	enableRoomType:int32;
-	quantity:int32;
+	isOnly:int;
+	enableRoomType:int;
+	quantity:int;
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_CustomData_FurnitureData {
+table dict_2_System_String_Torappu_BuildingData_CustomData_FurnitureData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_CustomData_FurnitureData;
 }
@@ -681,17 +681,17 @@ table dict__System_String_Torappu_BuildingData_CustomData_FurnitureData {
 
 table Torappu_BuildingData_CustomData_ThemeQuickSetupItem {
 	furnitureId:string;
-	pos0:int32;
-	pos1:int32;
-	dir:int32;
+	pos0:int;
+	pos1:int;
+	dir:int;
 }
 
 
 
 table Torappu_BuildingData_CustomData_ThemeData {
 	id:string;
-	enableRoomType:int32;
-	sortId:int32;
+	enableRoomType:int;
+	sortId:int;
 	name:string;
 	themeType:string;
 	desc:string;
@@ -702,7 +702,7 @@ table Torappu_BuildingData_CustomData_ThemeData {
 
 
 
-table list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_CustomData_ThemeData;
 }
@@ -711,17 +711,17 @@ table list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
 
 table Torappu_BuildingData_CustomData_GroupData {
 	id:string;
-	sortId:int32;
+	sortId:int;
 	name:string;
 	themeId:string;
-	comfort:int32;
-	count:int32;
+	comfort:int;
+	count:int;
 	furniture:[string];
 }
 
 
 
-table list_dict___2_System_String_Torappu_BuildingData_CustomData_GroupData_ {
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_CustomData_GroupData;
 }
@@ -731,12 +731,12 @@ table list_dict___2_System_String_Torappu_BuildingData_CustomData_GroupData_ {
 table Torappu_BuildingData_CustomData_FurnitureTypeData {
 	type:Torappu_BuildingData_FurnitureType;
 	name:string;
-	enableRoomType:int32;
+	enableRoomType:int;
 }
 
 
 
-table list_dict___2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_ {
+table Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_ {
 	dict_key:Torappu_BuildingData_FurnitureType;
 	dict_value:Torappu_BuildingData_CustomData_FurnitureTypeData;
 }
@@ -747,14 +747,14 @@ table Torappu_BuildingData_CustomData_FurnitureSubTypeData {
 	subType:Torappu_BuildingData_FurnitureSubType;
 	name:string;
 	type:Torappu_BuildingData_FurnitureType;
-	sortId:int32;
-	countLimit:int32;
-	enableRoomType:int32;
+	sortId:int;
+	countLimit:int;
+	enableRoomType:int;
 }
 
 
 
-table list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_ {
+table Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_ {
 	dict_key:Torappu_BuildingData_FurnitureSubType;
 	dict_value:Torappu_BuildingData_CustomData_FurnitureSubTypeData;
 }
@@ -763,14 +763,14 @@ table list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_C
 
 table Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem {
 	furnitureId:string;
-	xOffset:int32;
-	yOffset:int32;
+	xOffset:int;
+	yOffset:int;
 	defaultPrefabId:string;
 }
 
 
 
-table list_dict___2_System_String_list___1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__ {
+table Torappu_ListDict_2_System_String_list_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__ {
 	dict_key:string;
 	dict_value:[Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem];
 }
@@ -783,14 +783,14 @@ table Torappu_BuildingData_CustomData_InteractItem {
 
 
 
-table dict__System_String_list___1_Torappu_BuildingData_CustomData_InteractItem {
+table dict_2_System_String_list_1_Torappu_BuildingData_CustomData_InteractItem__ {
 	dict_key:string;
 	dict_value:[Torappu_BuildingData_CustomData_InteractItem];
 }
 
 
 
-enum Torappu_BuildingData_DiySortType : int32 {
+enum Torappu_BuildingData_DiySortType : int {
 	NONE = 0,
 	THEME = 1,
 	FURNITURE = 2,
@@ -804,7 +804,7 @@ enum Torappu_BuildingData_DiySortType : int32 {
 	MEETING_RECENT_FURNITURE = 10
 }
 
-enum Torappu_BuildingData_DiyUISortOrder : int32 {
+enum Torappu_BuildingData_DiyUISortOrder : int {
 	DESC = 0,
 	ASC = 1
 }
@@ -821,41 +821,41 @@ table Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplat
 table Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
 	diySortType:Torappu_BuildingData_DiySortType;
 	expandState:string;
-	defaultTemplateIndex:int32;
+	defaultTemplateIndex:int;
 	defaultTemplateOrder:Torappu_BuildingData_DiyUISortOrder;
 	templates:[Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+table dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_CustomData_DiyUISortTemplateListData;
 }
 
 
 
-table dict__Torappu_BuildingData_DiySortType_dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+table dict_2_Torappu_BuildingData_DiySortType_dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData__ {
 	dict_key:Torappu_BuildingData_DiySortType;
-	dict_value:[dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData];
+	dict_value:[dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData_];
 }
 
 
 
 table Torappu_BuildingData_CustomData {
-	furnitures:[dict__System_String_Torappu_BuildingData_CustomData_FurnitureData];
-	themes:[list_dict___2_System_String_Torappu_BuildingData_CustomData_ThemeData_];
-	groups:[list_dict___2_System_String_Torappu_BuildingData_CustomData_GroupData_];
-	types:[list_dict___2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_];
-	subTypes:[list_dict___2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_];
-	defaultFurnitures:[list_dict___2_System_String_list___1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__];
-	interactGroups:[dict__System_String_list___1_Torappu_BuildingData_CustomData_InteractItem];
-	diyUISortTemplates:[dict__Torappu_BuildingData_DiySortType_dict__System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData];
+	furnitures:[dict_2_System_String_Torappu_BuildingData_CustomData_FurnitureData_];
+	themes:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData_];
+	groups:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData_];
+	types:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_];
+	subTypes:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_];
+	defaultFurnitures:[Torappu_ListDict_2_System_String_list_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__];
+	interactGroups:[dict_2_System_String_list_1_Torappu_BuildingData_CustomData_InteractItem__];
+	diyUISortTemplates:[dict_2_Torappu_BuildingData_DiySortType_dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData__];
 }
 
 
 
-enum Torappu_BuildingData_FormulaItemType : int32 {
+enum Torappu_BuildingData_FormulaItemType : int {
 	NONE = 0,
 	F_EVOLVE = 1,
 	F_BUILDING = 2,
@@ -869,15 +869,15 @@ enum Torappu_BuildingData_FormulaItemType : int32 {
 
 table Torappu_BuildingData_ManufactFormula_UnlockRoom {
 	roomId:Torappu_BuildingData_RoomType;
-	roomLevel:int32;
-	roomCount:int32;
+	roomLevel:int;
+	roomCount:int;
 }
 
 
 
 table Torappu_BuildingData_ManufactFormula_UnlockStage {
 	stageId:string;
-	rank:int32;
+	rank:int;
 }
 
 
@@ -885,9 +885,9 @@ table Torappu_BuildingData_ManufactFormula_UnlockStage {
 table Torappu_BuildingData_ManufactFormula {
 	formulaId:string;
 	itemId:string;
-	count:int32;
-	weight:int32;
-	costPoint:int64;
+	count:int;
+	weight:int;
+	costPoint:long;
 	formulaType:Torappu_BuildingData_FormulaItemType;
 	buffType:string;
 	costs:[Torappu_ItemBundle];
@@ -897,7 +897,7 @@ table Torappu_BuildingData_ManufactFormula {
 
 
 
-table dict__System_String_Torappu_BuildingData_ManufactFormula {
+table dict_2_System_String_Torappu_BuildingData_ManufactFormula_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_ManufactFormula;
 }
@@ -906,7 +906,7 @@ table dict__System_String_Torappu_BuildingData_ManufactFormula {
 
 table Torappu_BuildingData_ShopFormula_UnlockRoom {
 	roomId:Torappu_BuildingData_RoomType;
-	roomLevel:int32;
+	roomLevel:int;
 }
 
 
@@ -915,14 +915,14 @@ table Torappu_BuildingData_ShopFormula {
 	formulaId:string;
 	itemId:string;
 	formulaType:Torappu_BuildingData_FormulaItemType;
-	costPoint:int64;
+	costPoint:long;
 	gainItem:Torappu_ItemBundle;
 	requireRooms:[Torappu_BuildingData_ShopFormula_UnlockRoom];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_ShopFormula {
+table dict_2_System_String_Torappu_BuildingData_ShopFormula_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_ShopFormula;
 }
@@ -931,27 +931,27 @@ table dict__System_String_Torappu_BuildingData_ShopFormula {
 
 table Torappu_BuildingData_WorkshopFormula_UnlockRoom {
 	roomId:Torappu_BuildingData_RoomType;
-	roomLevel:int32;
-	roomCount:int32;
+	roomLevel:int;
+	roomCount:int;
 }
 
 
 
 table Torappu_BuildingData_WorkshopFormula_UnlockStage {
 	stageId:string;
-	rank:int32;
+	rank:int;
 }
 
 
 
 table Torappu_BuildingData_WorkshopFormula {
-	sortId:int32;
+	sortId:int;
 	formulaId:string;
-	rarity:int32;
+	rarity:int;
 	itemId:string;
-	count:int32;
-	goldCost:int64;
-	apCost:int64;
+	count:int;
+	goldCost:long;
+	apCost:long;
 	formulaType:Torappu_BuildingData_FormulaItemType;
 	buffType:string;
 	extraOutcomeRate:float;
@@ -963,7 +963,7 @@ table Torappu_BuildingData_WorkshopFormula {
 
 
 
-table dict__System_String_Torappu_BuildingData_WorkshopFormula {
+table dict_2_System_String_Torappu_BuildingData_WorkshopFormula_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_WorkshopFormula;
 }
@@ -971,34 +971,34 @@ table dict__System_String_Torappu_BuildingData_WorkshopFormula {
 
 
 table Torappu_BuildingData_CreditFormula_ValueModel {
-	basic:int32;
-	addition:int32;
+	basic:int;
+	addition:int;
 }
 
 
 
-table list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_ {
-	dict_key:int32;
+table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_ {
+	dict_key:int;
 	dict_value:Torappu_BuildingData_CreditFormula_ValueModel;
 }
 
 
 
 table Torappu_BuildingData_CreditFormula {
-	initiative:[list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
-	passive:[list_dict___2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+	initiative:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+	passive:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
 }
 
 
 
-table dict__System_String_System_Int32 {
+table dict_2_System_String_System_Int32_ {
 	dict_key:string;
-	dict_value:int32;
+	dict_value:int;
 }
 
 
 
-enum Torappu_ItemRarity : int32 {
+enum Torappu_ItemRarity : int {
 	TIER_1 = 0,
 	TIER_2 = 1,
 	TIER_3 = 2,
@@ -1010,7 +1010,7 @@ enum Torappu_ItemRarity : int32 {
 
 table Torappu_BuildingData_WorkshopRarityInfo {
 	name:string;
-	order:int32;
+	order:int;
 	rarityList:[Torappu_ItemRarity];
 	color:string;
 }
@@ -1020,14 +1020,14 @@ table Torappu_BuildingData_WorkshopRarityInfo {
 table Torappu_BuildingData_SlotPrequeData {
 	roomType:Torappu_BuildingData_RoomType;
 	name:string;
-	typeSortId:int32;
+	typeSortId:int;
 	isPreque:bool;
-	prequeNum:int32;
+	prequeNum:int;
 }
 
 
 
-table list_dict___2_System_String_Torappu_BuildingData_SlotPrequeData_ {
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_SlotPrequeData;
 }
@@ -1041,14 +1041,14 @@ table Torappu_BuildingData_DormitoryPrequeData {
 
 
 
-table list_dict___2_System_String_Torappu_BuildingData_DormitoryPrequeData_ {
+table Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_DormitoryPrequeData;
 }
 
 
 
-table dict__System_String_System_String {
+table dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
@@ -1067,13 +1067,13 @@ table Torappu_BuildingData_StationManageConstData {
 	cantUseNoPerson:string;
 	cantUseWorking:string;
 	queueCleared:string;
-	updateTime:int64;
-	dormLockUpdateTime:int64;
+	updateTime:long;
+	dormLockUpdateTime:long;
 }
 
 
 
-enum Torappu_BuildingData_CharStationFilterType : int32 {
+enum Torappu_BuildingData_CharStationFilterType : int {
 	All = 0,
 	DormLock = 1,
 	NotStationed = 2
@@ -1086,8 +1086,8 @@ table Torappu_BuildingData_StationManageFilterInfo {
 
 
 
-table dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo {
-	dict_key:int32;
+table dict_2_System_Int32_Torappu_BuildingData_StationManageFilterInfo_ {
+	dict_key:int;
 	dict_value:Torappu_BuildingData_StationManageFilterInfo;
 }
 
@@ -1095,8 +1095,8 @@ table dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo {
 
 table Torappu_BuildingData_MusicSingleData {
 	bgmId:string;
-	bgmSortId:int32;
-	bgmStartTime:int64;
+	bgmSortId:int;
+	bgmStartTime:long;
 	bgmName:string;
 	gameMusicId:string;
 	obtainApproach:string;
@@ -1107,7 +1107,7 @@ table Torappu_BuildingData_MusicSingleData {
 
 
 
-table dict__System_String_Torappu_BuildingData_MusicSingleData {
+table dict_2_System_String_Torappu_BuildingData_MusicSingleData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_MusicSingleData;
 }
@@ -1116,19 +1116,19 @@ table dict__System_String_Torappu_BuildingData_MusicSingleData {
 
 table Torappu_BuildingData_MusicData {
 	defaultMusic:string;
-	musicDatas:[dict__System_String_Torappu_BuildingData_MusicSingleData];
+	musicDatas:[dict_2_System_String_Torappu_BuildingData_MusicSingleData_];
 }
 
 
 
 table Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo {
 	targets:[string];
-	sortId:int32;
+	sortId:int;
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo {
+table dict_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo;
 }
@@ -1137,13 +1137,13 @@ table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buff
 
 table Torappu_BuildingData_BuildingRoomTypeBuffSortData {
 	hasEfficiencySort:bool;
-	defaultGroupSortId:int32;
-	efficiencyTargetDict:[dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo];
+	defaultGroupSortId:int;
+	efficiencyTargetDict:[dict_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo_];
 }
 
 
 
-table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData {
+table dict_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_ {
 	dict_key:string;
 	dict_value:Torappu_BuildingData_BuildingRoomTypeBuffSortData;
 }
@@ -1153,52 +1153,52 @@ table dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData {
 table Torappu_BuildingData {
 	controlSlotId:string;
 	meetingSlotId:string;
-	initMaxLabor:int32;
-	laborRecoverTime:int32;
-	manufactInputCapacity:int32;
-	shopCounterCapacity:int32;
-	comfortLimit:int32;
-	creditInitiativeLimit:int32;
-	creditPassiveLimit:int32;
-	creditComfortFactor:int32;
-	creditGuaranteed:int32;
-	creditCeiling:int32;
+	initMaxLabor:int;
+	laborRecoverTime:int;
+	manufactInputCapacity:int;
+	shopCounterCapacity:int;
+	comfortLimit:int;
+	creditInitiativeLimit:int;
+	creditPassiveLimit:int;
+	creditComfortFactor:int;
+	creditGuaranteed:int;
+	creditCeiling:int;
 	manufactUnlockTips:string;
 	shopUnlockTips:string;
 	manufactStationBuff:float;
-	comfortManpowerRecoverFactor:int32;
-	manpowerDisplayFactor:int32;
-	shopOutputRatio:[list_dict___2_System_String_System_Int32_];
-	shopStackRatio:[list_dict___2_System_String_System_Int32_];
-	basicFavorPerDay:int32;
-	humanResourceLimit:int32;
-	tiredApThreshold:int64;
-	processedCountRatio:int32;
-	tradingStrategyUnlockLevel:int32;
-	tradingReduceTimeUnit:int32;
-	tradingLaborCostUnit:int32;
-	manufactReduceTimeUnit:int32;
-	manufactLaborCostUnit:int32;
-	laborAssistUnlockLevel:int32;
-	apToLaborUnlockLevel:int32;
-	apToLaborRatio:int32;
-	socialResourceLimit:int32;
-	socialSlotNum:int32;
-	furniDuplicationLimit:int32;
-	assistFavorReport:int64;
-	manufactManpowerCostByNum:[int32];
-	tradingManpowerCostByNum:[int32];
-	trainingBonusMax:int32;
-	betaRemoveTime:int64;
+	comfortManpowerRecoverFactor:int;
+	manpowerDisplayFactor:int;
+	shopOutputRatio:[Torappu_ListDict_2_System_String_System_Int32_];
+	shopStackRatio:[Torappu_ListDict_2_System_String_System_Int32_];
+	basicFavorPerDay:int;
+	humanResourceLimit:int;
+	tiredApThreshold:long;
+	processedCountRatio:int;
+	tradingStrategyUnlockLevel:int;
+	tradingReduceTimeUnit:int;
+	tradingLaborCostUnit:int;
+	manufactReduceTimeUnit:int;
+	manufactLaborCostUnit:int;
+	laborAssistUnlockLevel:int;
+	apToLaborUnlockLevel:int;
+	apToLaborRatio:int;
+	socialResourceLimit:int;
+	socialSlotNum:int;
+	furniDuplicationLimit:int;
+	assistFavorReport:long;
+	manufactManpowerCostByNum:[int];
+	tradingManpowerCostByNum:[int];
+	trainingBonusMax:int;
+	betaRemoveTime:long;
 	furniHighlightTime:float;
 	canNotVisitToast:string;
-	musicPlayerOpenTime:int64;
+	musicPlayerOpenTime:long;
 	roomsWithoutRemoveStaff:[string];
-	privateFavorLevelThresholds:[int32];
-	roomUnlockConds:[dict__System_String_Torappu_BuildingData_RoomUnlockCond];
-	rooms:[dict__System_String_Torappu_BuildingData_RoomData];
-	layouts:[dict__System_String_Torappu_BuildingData_LayoutData];
-	prefabs:[dict__System_String_Torappu_BuildingData_PrefabInfo];
+	privateFavorLevelThresholds:[int];
+	roomUnlockConds:[dict_2_System_String_Torappu_BuildingData_RoomUnlockCond_];
+	rooms:[dict_2_System_String_Torappu_BuildingData_RoomData_];
+	layouts:[dict_2_System_String_Torappu_BuildingData_LayoutData_];
+	prefabs:[dict_2_System_String_Torappu_BuildingData_PrefabInfo_];
 	controlData:Torappu_BuildingData_ControlRoomBean;
 	manufactData:Torappu_BuildingData_ManufactRoomBean;
 	shopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_ShopPhase_;
@@ -1210,28 +1210,28 @@ table Torappu_BuildingData {
 	workshopData:Torappu_BuildingData_RoomBean_1_Torappu_BuildingData_WorkshopPhase_;
 	trainingData:Torappu_BuildingData_TrainingBean;
 	powerData:Torappu_BuildingData_PowerRoomBean;
-	chars:[dict__System_String_Torappu_BuildingData_BuildingCharacter];
-	buffs:[dict__System_String_Torappu_BuildingData_BuildingBuff];
-	workshopBonus:[dict__System_String_list___1_System_String];
+	chars:[dict_2_System_String_Torappu_BuildingData_BuildingCharacter_];
+	buffs:[dict_2_System_String_Torappu_BuildingData_BuildingBuff_];
+	workshopBonus:[dict_2_System_String_list_1_System_String__];
 	customData:Torappu_BuildingData_CustomData;
-	manufactFormulas:[dict__System_String_Torappu_BuildingData_ManufactFormula];
-	shopFormulas:[dict__System_String_Torappu_BuildingData_ShopFormula];
-	workshopFormulas:[dict__System_String_Torappu_BuildingData_WorkshopFormula];
+	manufactFormulas:[dict_2_System_String_Torappu_BuildingData_ManufactFormula_];
+	shopFormulas:[dict_2_System_String_Torappu_BuildingData_ShopFormula_];
+	workshopFormulas:[dict_2_System_String_Torappu_BuildingData_WorkshopFormula_];
 	creditFormula:Torappu_BuildingData_CreditFormula;
-	goldItems:[dict__System_String_System_Int32];
-	assistantUnlock:[int32];
+	goldItems:[dict_2_System_String_System_Int32_];
+	assistantUnlock:[int];
 	workshopRarities:[Torappu_BuildingData_WorkshopRarityInfo];
-	todoItemSortPriorityDict:[dict__System_String_System_Int32];
-	slotPrequeDatas:[list_dict___2_System_String_Torappu_BuildingData_SlotPrequeData_];
-	dormitoryPrequeDatas:[list_dict___2_System_String_Torappu_BuildingData_DormitoryPrequeData_];
-	workshopTargetDesDict:[dict__System_String_System_String];
-	tradingOrderDesDict:[dict__System_String_System_String];
+	todoItemSortPriorityDict:[dict_2_System_String_System_Int32_];
+	slotPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_];
+	dormitoryPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_];
+	workshopTargetDesDict:[dict_2_System_String_System_String_];
+	tradingOrderDesDict:[dict_2_System_String_System_String_];
 	stationManageConstData:Torappu_BuildingData_StationManageConstData;
-	stationManageFilterInfos:[dict__System_Int32_Torappu_BuildingData_StationManageFilterInfo];
+	stationManageFilterInfos:[dict_2_System_Int32_Torappu_BuildingData_StationManageFilterInfo_];
 	musicData:Torappu_BuildingData_MusicData;
 	emojis:[string];
-	categoryNames:[dict__System_String_System_String];
-	buffSortData:[dict__System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData];
+	categoryNames:[dict_2_System_String_System_String_];
+	buffSortData:[dict_2_System_String_Torappu_BuildingData_BuildingRoomTypeBuffSortData_];
 }
 
 

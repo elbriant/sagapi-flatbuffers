@@ -1,7 +1,7 @@
-include "dict__System_String_System_String.fbs";
+include "dict_2_System_String_System_String_.fbs";
 
 table Torappu_LanguageData {
-	strings:[dict__System_String_System_String];
+	strings:[dict_2_System_String_System_String_];
 }
 
 

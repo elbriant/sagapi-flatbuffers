@@ -1,0 +1,9 @@
+include "Torappu_Act5D1Data_RuneUnlockData.fbs";
+
+table dict_2_System_String_list_1_Torappu_Act5D1Data_RuneUnlockData__ {
+	dict_key:string;
+	dict_value:[Torappu_Act5D1Data_RuneUnlockData];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_Act5D1Data_RuneUnlockData__;

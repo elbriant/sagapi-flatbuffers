@@ -1,19 +1,19 @@
-include "dict__System_String_Torappu_SpecialOperatorPointPosData.fbs";
-include "dict__System_String_Torappu_SpecialOperatorNodePointData.fbs";
-include "dict__System_String_Torappu_SpecialOperatorElitePointData.fbs";
-include "dict__System_String_Torappu_SpecialOperatorLevelPointData.fbs";
-include "dict__System_String_Torappu_SpecialOperatorLinePosData.fbs";
-include "dict__System_String_Torappu_SpecialOperatorLineRelationData.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorPointPosData_.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorNodePointData_.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorElitePointData_.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorLevelPointData_.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorLinePosData_.fbs";
+include "dict_2_System_String_Torappu_SpecialOperatorLineRelationData_.fbs";
 
 table Torappu_SpecialOperatorDiagramData {
 	width:float;
 	height:float;
-	pointPosDataMap:[dict__System_String_Torappu_SpecialOperatorPointPosData];
-	nodePointDataMap:[dict__System_String_Torappu_SpecialOperatorNodePointData];
-	elitePointDataMap:[dict__System_String_Torappu_SpecialOperatorElitePointData];
-	levelPointDataMap:[dict__System_String_Torappu_SpecialOperatorLevelPointData];
-	linePosDataMap:[dict__System_String_Torappu_SpecialOperatorLinePosData];
-	lineRelationDataMap:[dict__System_String_Torappu_SpecialOperatorLineRelationData];
+	pointPosDataMap:[dict_2_System_String_Torappu_SpecialOperatorPointPosData_];
+	nodePointDataMap:[dict_2_System_String_Torappu_SpecialOperatorNodePointData_];
+	elitePointDataMap:[dict_2_System_String_Torappu_SpecialOperatorElitePointData_];
+	levelPointDataMap:[dict_2_System_String_Torappu_SpecialOperatorLevelPointData_];
+	linePosDataMap:[dict_2_System_String_Torappu_SpecialOperatorLinePosData_];
+	lineRelationDataMap:[dict_2_System_String_Torappu_SpecialOperatorLineRelationData_];
 }
 
 

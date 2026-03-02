@@ -6,7 +6,7 @@ table Torappu_Act5D1Data_RuneUnlockData {
 	runeName:string;
 	bgPic:string;
 	runeDesc:string;
-	sortId:int32;
+	sortId:int;
 	iconId:string;
 }
 

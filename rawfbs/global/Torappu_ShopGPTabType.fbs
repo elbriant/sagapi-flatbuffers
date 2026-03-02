@@ -1,5 +1,5 @@
 
-enum Torappu_ShopGPTabType : int32 {
+enum Torappu_ShopGPTabType : int {
 	DEFAULT_ALL = 0,
 	MONTH_CARD = 1,
 	PERM = 2,

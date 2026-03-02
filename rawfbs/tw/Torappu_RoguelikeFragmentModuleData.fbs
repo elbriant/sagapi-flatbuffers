@@ -1,19 +1,19 @@
-include "dict__System_String_Torappu_RoguelikeFragmentData.fbs";
-include "dict__System_String_Torappu_RoguelikeFragmentTypeData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeFragmentData_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeFragmentTypeData_.fbs";
 include "Torappu_RoguelikeFragmentModuleConsts.fbs";
-include "dict__System_String_Torappu_RoguelikeFragmentBuffData.fbs";
-include "list_dict___2_System_String_Torappu_RoguelikeAlchemyData_.fbs";
-include "dict__System_String_Torappu_RoguelikeAlchemyFormulationData.fbs";
-include "dict__System_Int32_Torappu_RoguelikeFragmentLevelRelatedData.fbs";
+include "dict_2_System_String_Torappu_RoguelikeFragmentBuffData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_.fbs";
+include "dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_.fbs";
+include "dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_.fbs";
 
 table Torappu_RoguelikeFragmentModuleData {
-	fragmentData:[dict__System_String_Torappu_RoguelikeFragmentData];
-	fragmentTypeData:[dict__System_String_Torappu_RoguelikeFragmentTypeData];
+	fragmentData:[dict_2_System_String_Torappu_RoguelikeFragmentData_];
+	fragmentTypeData:[dict_2_System_String_Torappu_RoguelikeFragmentTypeData_];
 	moduleConsts:Torappu_RoguelikeFragmentModuleConsts;
-	fragmentBuffData:[dict__System_String_Torappu_RoguelikeFragmentBuffData];
-	alchemyData:[list_dict___2_System_String_Torappu_RoguelikeAlchemyData_];
-	alchemyFormulaData:[dict__System_String_Torappu_RoguelikeAlchemyFormulationData];
-	fragmentLevelData:[dict__System_Int32_Torappu_RoguelikeFragmentLevelRelatedData];
+	fragmentBuffData:[dict_2_System_String_Torappu_RoguelikeFragmentBuffData_];
+	alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
+	alchemyFormulaData:[dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_];
+	fragmentLevelData:[dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_];
 }
 
 

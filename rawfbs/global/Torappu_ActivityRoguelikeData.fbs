@@ -1,20 +1,20 @@
-include "list_dict___2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_.fbs";
-include "dict__System_String_System_Int64.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_.fbs";
+include "dict_2_System_String_System_Int64_.fbs";
 include "Torappu_ItemBundle.fbs";
 include "Torappu_ActivityRoguelikeData_MileStoneItemInfo.fbs";
 include "Torappu_ActivityTable_CustomUnlockCond.fbs";
 
 table Torappu_ActivityRoguelikeData {
-	outBuffInfos:[list_dict___2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_];
-	apSupplyOutOfDateDict:[dict__System_String_System_Int64];
+	outBuffInfos:[Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_];
+	apSupplyOutOfDateDict:[dict_2_System_String_System_Int64_];
 	outerBuffToken:string;
 	shopToken:string;
-	relicUnlockTime:int64;
+	relicUnlockTime:long;
 	milestoneTokenRatio:float;
 	outerBuffTokenRatio:float;
 	relicTokenRatio:float;
 	relicOuterBuffTokenRatio:float;
-	reOpenCoolDown:int32;
+	reOpenCoolDown:int;
 	tokenItem:Torappu_ItemBundle;
 	charStoneId:string;
 	milestone:[Torappu_ActivityRoguelikeData_MileStoneItemInfo];

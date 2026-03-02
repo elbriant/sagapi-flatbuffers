@@ -1,5 +1,5 @@
 
-enum Torappu_PlayerAvatarGroupType : int32 {
+enum Torappu_PlayerAvatarGroupType : int {
 	NONE = 0,
 	ASSISTANT = 1,
 	DEFAULT = 2,

@@ -3,7 +3,7 @@ table Torappu_RoguelikeDisasterData {
 	id:string;
 	iconId:string;
 	toastIconId:string;
-	level:int32;
+	level:int;
 	name:string;
 	levelName:string;
 	type:string;

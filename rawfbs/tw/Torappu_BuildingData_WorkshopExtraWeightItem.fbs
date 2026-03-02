@@ -1,8 +1,8 @@
 
 table Torappu_BuildingData_WorkshopExtraWeightItem {
-	weight:int32;
+	weight:int;
 	itemId:string;
-	itemCount:int32;
+	itemCount:int;
 }
 
 

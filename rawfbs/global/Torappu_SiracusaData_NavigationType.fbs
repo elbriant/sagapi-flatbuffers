@@ -1,5 +1,5 @@
 
-enum Torappu_SiracusaData_NavigationType : int32 {
+enum Torappu_SiracusaData_NavigationType : int {
 	NONE = 0,
 	AVG = 1,
 	LEVEL = 2,

@@ -1,0 +1,8 @@
+
+table Torappu_ListDict_2_System_String_list_1_System_Int64__ {
+	dict_key:string;
+	dict_value:[long];
+}
+
+
+root_type Torappu_ListDict_2_System_String_list_1_System_Int64__;

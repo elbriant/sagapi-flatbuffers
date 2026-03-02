@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2LogisticsCharData.fbs";
+
+table dict_2_System_Int32_list_1_Torappu_SandboxV2LogisticsCharData__ {
+	dict_key:int;
+	dict_value:[Torappu_SandboxV2LogisticsCharData];
+}
+
+
+root_type dict_2_System_Int32_list_1_Torappu_SandboxV2LogisticsCharData__;

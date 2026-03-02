@@ -5,7 +5,7 @@ table Torappu_ActMultiV3SailBoatBlockPoolData {
 	blockId:string;
 	startDirType:Torappu_ActMultiV3BlockDirType;
 	endDirType:Torappu_ActMultiV3BlockDirType;
-	weight:int32;
+	weight:int;
 }
 
 

@@ -1,11 +1,11 @@
 
 table Torappu_NewbeeGachaPoolClientData {
 	gachaPoolId:string;
-	gachaIndex:int32;
+	gachaIndex:int;
 	gachaPoolName:string;
 	gachaPoolDetail:string;
-	gachaPrice:int32;
-	gachaTimes:int32;
+	gachaPrice:int;
+	gachaTimes:int;
 	gachaOffset:string;
 }
 

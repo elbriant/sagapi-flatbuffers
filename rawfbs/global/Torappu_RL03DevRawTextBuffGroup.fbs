@@ -3,7 +3,7 @@ table Torappu_RL03DevRawTextBuffGroup {
 	nodeIdList:[string];
 	useLevelMark:bool;
 	groupIconId:string;
-	sortId:int32;
+	sortId:int;
 }
 
 

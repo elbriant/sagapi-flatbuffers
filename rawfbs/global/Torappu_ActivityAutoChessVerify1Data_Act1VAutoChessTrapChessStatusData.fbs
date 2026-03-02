@@ -2,9 +2,9 @@ include "Torappu_EvolvePhase.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData {
 	evolvePhase:Torappu_EvolvePhase;
-	trapLevel:int32;
-	skillIndex:int32;
-	skillLevel:int32;
+	trapLevel:int;
+	skillIndex:int;
+	skillLevel:int;
 }
 
 

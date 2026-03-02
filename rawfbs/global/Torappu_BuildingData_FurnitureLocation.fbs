@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_FurnitureLocation : int32 {
+enum Torappu_BuildingData_FurnitureLocation : int {
 	NONE = 0,
 	WALL = 1,
 	FLOOR = 2,

@@ -1,7 +1,7 @@
-include "dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards.fbs";
+include "dict_2_System_String_list_1_Torappu_StageData_DisplayDetailRewards__.fbs";
 
 table Torappu_ActivityStageRewardData {
-	stageRewardsDict:[dict__System_String_list___1_Torappu_StageData_DisplayDetailRewards];
+	stageRewardsDict:[dict_2_System_String_list_1_Torappu_StageData_DisplayDetailRewards__];
 }
 
 

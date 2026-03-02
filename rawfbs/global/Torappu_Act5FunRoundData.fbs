@@ -3,12 +3,12 @@ table Torappu_Act5FunRoundData {
 	roundId:string;
 	stageId:string;
 	enemyPredefined:bool;
-	round:int32;
+	round:int;
 	enemyPoint:float;
 	enemyScoreRandom:float;
-	minType:int32;
-	maxType:int32;
-	choiceCount:int32;
+	minType:int;
+	maxType:int;
+	choiceCount:int;
 	choiceId1:string;
 	choiceId2:string;
 	choiceId3:string;

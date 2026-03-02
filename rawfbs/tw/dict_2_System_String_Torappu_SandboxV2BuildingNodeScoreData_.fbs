@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2BuildingNodeScoreData.fbs";
+
+table dict_2_System_String_Torappu_SandboxV2BuildingNodeScoreData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2BuildingNodeScoreData;
+}
+
+
+root_type dict_2_System_String_Torappu_SandboxV2BuildingNodeScoreData_;

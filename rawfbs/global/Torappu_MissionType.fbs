@@ -1,5 +1,5 @@
 
-enum Torappu_MissionType : int32 {
+enum Torappu_MissionType : int {
 	UNKNOWN = 0,
 	MAIN = 1,
 	DAILY = 2,

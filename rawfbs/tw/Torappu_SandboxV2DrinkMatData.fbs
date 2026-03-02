@@ -3,7 +3,7 @@ include "Torappu_SandboxPermItemType.fbs";
 table Torappu_SandboxV2DrinkMatData {
 	id:string;
 	type:Torappu_SandboxPermItemType;
-	count:int32;
+	count:int;
 }
 
 

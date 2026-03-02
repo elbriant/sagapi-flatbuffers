@@ -2,12 +2,12 @@ include "Torappu_RoguelikeGameEndingData_LevelIcon.fbs";
 
 table Torappu_RoguelikeGameEndingData {
 	id:string;
-	familyId:int32;
+	familyId:int;
 	name:string;
 	desc:string;
 	bgId:string;
 	icons:[Torappu_RoguelikeGameEndingData_LevelIcon];
-	priority:int32;
+	priority:int;
 	changeEndingDesc:string;
 	bossIconId:string;
 }

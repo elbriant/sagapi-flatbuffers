@@ -1,0 +1,9 @@
+include "Torappu_CrossDayTrackTypeData.fbs";
+
+table dict_2_System_String_Torappu_CrossDayTrackTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_CrossDayTrackTypeData;
+}
+
+
+root_type dict_2_System_String_Torappu_CrossDayTrackTypeData_;

@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveTrapItemData.fbs";
+
+table dict_2_System_String_Torappu_ActArchiveTrapItemData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArchiveTrapItemData;
+}
+
+
+root_type dict_2_System_String_Torappu_ActArchiveTrapItemData_;

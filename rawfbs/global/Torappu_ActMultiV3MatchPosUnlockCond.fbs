@@ -2,8 +2,8 @@ include "Torappu_ActMultiV3MapDiffType.fbs";
 
 table Torappu_ActMultiV3MatchPosUnlockCond {
 	diff:Torappu_ActMultiV3MapDiffType;
-	completeMapCount:int32;
-	requireMapStar:int32;
+	completeMapCount:int;
+	requireMapStar:int;
 	unlockHint:string;
 }
 

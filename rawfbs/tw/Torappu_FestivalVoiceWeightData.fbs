@@ -3,7 +3,7 @@ include "Torappu_CharWordShowType.fbs";
 table Torappu_FestivalVoiceWeightData {
 	showType:Torappu_CharWordShowType;
 	weight:float;
-	priority:int32;
+	priority:int;
 }
 
 

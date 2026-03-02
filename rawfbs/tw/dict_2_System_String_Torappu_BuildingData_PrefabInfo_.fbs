@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_PrefabInfo.fbs";
+
+table dict_2_System_String_Torappu_BuildingData_PrefabInfo_ {
+	dict_key:string;
+	dict_value:Torappu_BuildingData_PrefabInfo;
+}
+
+
+root_type dict_2_System_String_Torappu_BuildingData_PrefabInfo_;

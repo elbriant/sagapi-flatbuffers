@@ -3,7 +3,7 @@ include "Torappu_SandboxV2WeatherType.fbs";
 table Torappu_SandboxV2WeatherData {
 	weatherId:string;
 	name:string;
-	weatherLevel:int32;
+	weatherLevel:int;
 	weatherType:Torappu_SandboxV2WeatherType;
 	weatherTypeName:string;
 	weatherIconId:string;

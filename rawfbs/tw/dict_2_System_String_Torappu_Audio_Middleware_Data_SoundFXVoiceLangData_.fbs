@@ -1,0 +1,9 @@
+include "Torappu_Audio_Middleware_Data_SoundFXVoiceLangData.fbs";
+
+table dict_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_ {
+	dict_key:string;
+	dict_value:Torappu_Audio_Middleware_Data_SoundFXVoiceLangData;
+}
+
+
+root_type dict_2_System_String_Torappu_Audio_Middleware_Data_SoundFXVoiceLangData_;

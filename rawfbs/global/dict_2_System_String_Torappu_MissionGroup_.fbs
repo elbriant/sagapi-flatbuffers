@@ -1,0 +1,9 @@
+include "Torappu_MissionGroup.fbs";
+
+table dict_2_System_String_Torappu_MissionGroup_ {
+	dict_key:string;
+	dict_value:Torappu_MissionGroup;
+}
+
+
+root_type dict_2_System_String_Torappu_MissionGroup_;

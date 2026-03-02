@@ -1,0 +1,10 @@
+include "Torappu_SandboxV2EnemyRushType.fbs";
+include "Torappu_SandboxV2BattleRushEnemyGroupConfig.fbs";
+
+table dict_2_Torappu_SandboxV2EnemyRushType_list_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__ {
+	dict_key:Torappu_SandboxV2EnemyRushType;
+	dict_value:[Torappu_SandboxV2BattleRushEnemyGroupConfig];
+}
+
+
+root_type dict_2_Torappu_SandboxV2EnemyRushType_list_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__;

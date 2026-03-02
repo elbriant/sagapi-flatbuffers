@@ -2,8 +2,8 @@
 table Torappu_CartData_CartConstData {
 	carItemUnlockStageId:string;
 	carItemUnlockDesc:string;
-	spLevelUnlockItemCnt:int32;
-	mileStoneBaseInterval:int32;
+	spLevelUnlockItemCnt:int;
+	mileStoneBaseInterval:int;
 	spStageIds:[string];
 	carFrameDefaultColor:string;
 }

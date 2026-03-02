@@ -2,8 +2,8 @@ include "Torappu_ReturnV2ItemData.fbs";
 
 table Torappu_ReturnV2OnceRewardData {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
+	startTime:long;
+	endTime:long;
 	rewardList:[Torappu_ReturnV2ItemData];
 }
 

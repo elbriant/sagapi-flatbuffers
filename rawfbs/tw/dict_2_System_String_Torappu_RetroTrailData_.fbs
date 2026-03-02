@@ -1,0 +1,9 @@
+include "Torappu_RetroTrailData.fbs";
+
+table dict_2_System_String_Torappu_RetroTrailData_ {
+	dict_key:string;
+	dict_value:Torappu_RetroTrailData;
+}
+
+
+root_type dict_2_System_String_Torappu_RetroTrailData_;

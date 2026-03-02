@@ -3,7 +3,7 @@ table Torappu_DefaultCheckInData_DynCheckInDailyInfo {
 	questionDesc:string;
 	preOption:string;
 	optionList:[string];
-	showDay:int32;
+	showDay:int;
 	spOrderIconId:string;
 	spOrderDesc:string;
 	spOrderCompleteDesc:string;

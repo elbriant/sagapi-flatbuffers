@@ -1,3 +1,4 @@
+include "Torappu_Blackboard_DataPair.fbs";
 include "Torappu_ProfessionCategory.fbs";
 include "Torappu_PlayerSideMask.fbs";
 

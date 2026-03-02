@@ -1,0 +1,9 @@
+include "Torappu_Act24SideData_MeldingGachaBoxGoodData.fbs";
+
+table dict_2_System_String_list_1_Torappu_Act24SideData_MeldingGachaBoxGoodData__ {
+	dict_key:string;
+	dict_value:[Torappu_Act24SideData_MeldingGachaBoxGoodData];
+}
+
+
+root_type dict_2_System_String_list_1_Torappu_Act24SideData_MeldingGachaBoxGoodData__;
