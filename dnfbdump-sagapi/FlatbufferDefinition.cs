@@ -1,16 +1,24 @@
-using System.Text;
+﻿using System.Text;
 using dnlib.DotNet;
 
 namespace DNFBDmp
 {
 	public class FlatbufferDefinition
 	{
+		// Name of class sanitized, used as filename
 		public string name;
+		// Signature associated with this Flatbuffer
 		public TypeSig type;
+		// A list of dependencies
 		public HashSet<FlatbufferDefinition> dependencies;
+		// Is it already done ? (either processed or we are currently doing it)
 		public bool isDone;
+		// Should this be referenced as a array ? (for dicts & arrays)
 		public bool isArray;
+		// Is this a root type ? (for classes, not for enums)
 		public bool isRootType;
+
+		// Data within the file definition
 		public string? data;
 
 		public static Dictionary<string, FlatbufferDefinition> convTypes = new Dictionary<string, FlatbufferDefinition>();
@@ -22,7 +30,6 @@ namespace DNFBDmp
 			string fullName = type.FullName;
 			string name = Utils.cleanupClassName(fullName);
 			FlatbufferDefinition? fbDef;
-
 			if (convTypes.TryGetValue(fullName, out fbDef))
 			{
 				if (fbDef.name != name)
@@ -43,6 +50,7 @@ namespace DNFBDmp
 		{
 			this.name = name;
 			this.type = type;
+
 			this.dependencies = new HashSet<FlatbufferDefinition>();
 			this.data = null;
 			this.isDone = false;
@@ -58,37 +66,46 @@ namespace DNFBDmp
 
 		public string? getType()
 		{
-			if (!this.isDone) return null;
-			if (this.isArray) return $"[{this.name}]";
+			if (!this.isDone)
+				return null;
+			if (this.isArray)
+				return $"[{this.name}]";
 			return this.name;
 		}
 
-		public string getFile() { return this.name + ".fbs"; }
+		public string getFile()
+		{
+			return this.name + ".fbs";
+		}
 
 		public bool writeToFile(string? path = null)
 		{
-			if (!this.isDone || this.data == null) return false;
+			if (!this.isDone || this.data == null)
+				return false;
+
 			string outFile = getFile();
-			if (path != null) outFile = Path.Combine(path, outFile);
+			if (path != null)
+				outFile = Path.Combine(path, outFile);
+
 			File.WriteAllText(outFile, this.data);
+
 			return true;
 		}
 
 		private static string? getPrimitiveType(IType type)
 		{
-			// Modified to use same types as MooncellWiki
 			switch (type.FullName)
 			{
 				case "System.Boolean": return "bool";
-				case "System.Char": return "uint16"; // not used
-				case "System.SByte": return "int8"; // not used
-				case "System.Byte": return "ubyte";
-				case "System.Int16": return "short";
-				case "System.UInt16": return "uint16"; // not used
-				case "System.Int32": return "int";
-				case "System.UInt32": return "uint32"; // not used
-				case "System.Int64": return "long";
-				case "System.UInt64": return "uint64"; // not used
+				case "System.Char": return "uint16";
+				case "System.SByte": return "int8";
+				case "System.Byte": return "uint8";
+				case "System.Int16": return "int16";
+				case "System.UInt16": return "uint16";
+				case "System.Int32": return "int32";
+				case "System.UInt32": return "uint32";
+				case "System.Int64": return "int64";
+				case "System.UInt64": return "uint64";
 				case "System.Single": return "float";
 				case "System.Double": return "double";
 				case "System.String": return "string";
@@ -113,12 +130,13 @@ namespace DNFBDmp
 			return null;
 		}
 
-		// Change out the generic type parameter with the real TypeSig if needed		
+		// Change out the generic type parameter with the real TypeSig if needed
 		private static TypeSig handleGenericSig(TypeSig sig, IList<TypeSig>? genericArgs)
 		{
 			if (sig.IsGenericTypeParameter)
 			{
-				if (genericArgs == null) throw new Exception("Generic parameters null with generic argument");
+				if (genericArgs == null)
+					throw new Exception("Generic parameters null with generic argument");
 				GenericVar genericVar = sig.ToGenericVar();
 				sig = genericArgs[(int)genericVar.Number];
 			}
@@ -149,25 +167,32 @@ namespace DNFBDmp
 			}
 
 			string? prim = getPrimitiveType(sig);
-			if (prim != null) return prim;
+			if (prim != null)
+				return prim;
 
+			// Returns null if we're not an array, the type otherwise
 			TypeSig? sigArray = getArraySig(sig);
 			if (sigArray != null)
 			{
 				prim = getPrimitiveType(sigArray);
-				if (prim != null) return $"[{prim}]";
+				if (prim != null)
+					return $"[{prim}]";
 
 				sigArray = handleGenericSig(sigArray, genericArgs);
 				FlatbufferDefinition arrayFbDef = FlatbufferDefinition.convert(sigArray, resolver);
-				if (arrayFbDef == null) return null;
+				if (arrayFbDef == null)
+					return null;
 
 				this.dependencies.Add(arrayFbDef);
 				return $"[{arrayFbDef.getType()}]";
 			}
 
 			sig = handleGenericSig(sig, genericArgs);
+
+			// If we're here that means this is probably a normal class, handle it
 			FlatbufferDefinition fbDef = FlatbufferDefinition.convert(sig, resolver);
-			if (fbDef == null) return null;
+			if (fbDef == null)
+				return null;
 
 			this.dependencies.Add(fbDef);
 			return fbDef.getType();
@@ -178,21 +203,28 @@ namespace DNFBDmp
 			foreach (CustomAttribute ca in field.CustomAttributes)
 			{
 				string fullName = ca.TypeFullName;
-				if (fullName.StartsWith("Newtonsoft.Json.JsonIgnoreAttribute")) return true;
+				if (fullName.StartsWith("Newtonsoft.Json.JsonIgnoreAttribute"))
+					return true;
 			}
 			return false;
 		}
 
+		// Handles classes with custom serialisation
 		private bool handleCustomFBS(TypeSig sig, IList<TypeSig>? genericArgs, TypeResolver resolver, FBSBuilder builder)
 		{
 			if (sig.FullName.StartsWith("System.Collections.Generic.Dictionary") || sig.FullName.StartsWith("Torappu.ListDict"))
 			{
-				if (genericArgs == null || genericArgs.Count != 2) throw new Exception("Bad dict generic args");
+				Console.WriteLine("Is custom dict");
+
+				if (genericArgs == null || genericArgs.Count != 2)
+					throw new Exception("Bad dict generic args");
 
 				string? keyType = getType(genericArgs[0], resolver);
 				string? valueType = getType(genericArgs[1], resolver);
 
-				if (keyType == null || valueType == null) throw new Exception("Couldn't get key or value type for dict");
+				if (keyType == null || valueType == null)
+					throw new Exception("Couldn't get key or value type for dict");
+
 				builder.beginTable(this.name);
 				builder.addTableField("dict_key", keyType);
 				builder.addTableField("dict_value", valueType);
@@ -202,6 +234,8 @@ namespace DNFBDmp
 			}
 			else if (sig.FullName.StartsWith("Newtonsoft.Json.Linq.JObject"))
 			{
+				Console.WriteLine("Is custom JObject");
+
 				builder.beginTable(this.name);
 				builder.addTableField("jobj_bson", "string");
 				builder.endTable();
@@ -210,13 +244,17 @@ namespace DNFBDmp
 			{
 				return false;
 			}
+
 			return true;
 		}
 
 		public bool build(TypeResolver resolver)
 		{
-			if (this.data != null) return false;
+			if (this.data != null)
+				return false;
 			this.isDone = true;
+
+			Console.WriteLine($"Building - {this.name} ({this.type.FullName})");
 
 			// Contains includes
 			StringBuilder header = new StringBuilder();
@@ -235,15 +273,20 @@ namespace DNFBDmp
 			if (arraySig == null && sig.IsGenericInstanceType)
 			{
 				GenericInstSig genericSig = sig.ToGenericInstSig();
+				Console.WriteLine($"Is generic {genericSig.GenericType.FullName}");
 				genericArgs = genericSig.GenericArguments;
 				sig = genericSig.GenericType;
 			}
 
 			if (arraySig != null)
 			{
+				Console.WriteLine("Is array");
 				// Nested single dim array
+
 				string? type = getType(arraySig, resolver);
-				if (type == null) throw new Exception("Can't find array type");
+				if (type == null)
+					throw new Exception("Can't find array type");
+
 				fbBuilder.beginTable(this.name);
 				fbBuilder.addTableArrayField("arr_values", type);
 				fbBuilder.endTable();
@@ -251,7 +294,7 @@ namespace DNFBDmp
 			else if (handleCustomFBS(sig, genericArgs, resolver, fbBuilder))
 			{
 				// Schemas with custom serializing functions
-				// handled custom FBS
+				Console.WriteLine("Was custom FBS");
 			}
 			else if (sig.IsArray)
 			{
@@ -266,16 +309,18 @@ namespace DNFBDmp
 				// Get the TypeDef
 				ITypeDefOrRef classSig = sig.ToTypeDefOrRef();
 				TypeDef? def = resolver.Find(classSig);
-				if (def == null) throw new Exception($"Couldn't find class ? {classSig.FullName}");
+				if (def == null)
+					throw new Exception($"Couldn't find class ? {classSig.FullName}");
 
 				if (def.IsEnum)
 				{
 					// Enum
 					TypeSig enumSig = def.GetEnumUnderlyingType();
-					if (!enumSig.IsPrimitive) throw new Exception("Enum of non primitve type");
+					if (!enumSig.IsPrimitive)
+						throw new Exception("Enum of non primitve type");
 
 					string? primType = getPrimitiveType(enumSig);
-					if (primType == null || !(primType.StartsWith("int") || primType.StartsWith("uint") || primType == "ubyte"))
+					if (primType == null || !(primType.StartsWith("int") || primType.StartsWith("uint") || primType.StartsWith("ubyte")))
 						throw new Exception($"Invalid primitive type for enum: {primType}");
 
 					fbBuilder.beginEnum(this.name, primType);
@@ -285,14 +330,18 @@ namespace DNFBDmp
 					for (int i = 1; i < nbFields; i++)
 					{
 						FieldDef field = def.Fields[i];
-						if (!field.HasConstant) throw new Exception("Enum's field without a value");
+						if (!field.HasConstant)
+							throw new Exception("Enum's field without a value");
+
 						fbBuilder.addEnumValue(field.Name, field.Constant.Value);
-						if (Convert.ToInt32(field.Constant.Value) == 0) hasZero = true;
+						if (Convert.ToInt32(field.Constant.Value) == 0)
+							hasZero = true;
 					}
 					// Hack to fix enums not working when no zero is defined...
 					// We can't know what the default value of the flatbuffer is
 					// So just signal we got the default value
-					if (!hasZero) fbBuilder.addEnumValue("ENUM_DEFAULT_VALUE", 0);
+					if (!hasZero)
+						fbBuilder.addEnumValue("ENUM_DEFAULT_VALUE", 0);
 					fbBuilder.endEnum();
 					this.isRootType = false;
 				}
@@ -394,13 +443,12 @@ namespace DNFBDmp
 							Console.WriteLine($"[ERROR] No se pudo procesar el campo '{field.Name}' en '{def.FullName}': {ex.Message}");
 						}
 					}
-					// -------------------------------------------------------------
-
 					fbBuilder.endTable();
 				}
 			}
 			else
 			{
+				// We don't know, should not happen in the first place
 				throw new Exception("Unhandled type");
 			}
 
@@ -408,9 +456,14 @@ namespace DNFBDmp
 			foreach (FlatbufferDefinition fb in this.dependencies)
 				header.AppendLine($"include \"{fb.getFile()}\";");
 
+			Console.WriteLine($"Done - {this.name} ({this.type.FullName})");
+
 			// Put together everything to make the FBS file
-			this.data = header.ToString() + "\n" + fbBuilder.build();
-			if (this.isRootType) this.data += $"\nroot_type {this.name};";
+			this.data = header.ToString() + "\n"
+						+ fbBuilder.build();
+
+			if (this.isRootType)
+				this.data += $"\nroot_type {this.name};";
 
 			// append hg_internal
 			if (this.data.Contains("hg__internal__MapData"))
