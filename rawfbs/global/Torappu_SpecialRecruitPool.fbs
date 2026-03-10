@@ -1,14 +1,12 @@
-include "Torappu_BasedRecruitPool_RecruitConstants.fbs";
 include "Torappu_SpecialRecruitPool_SpecialRecruitCostData.fbs";
 
 table Torappu_SpecialRecruitPool {
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
-	tagId:int;
-	order:int;
-	startDateTime:long;
-	endDateTime:long;
+	tagId:int32;
+	order:int32;
+	startDateTime:int64;
+	endDateTime:int64;
 	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
 }
 

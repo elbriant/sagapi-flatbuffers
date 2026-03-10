@@ -1,7 +1,7 @@
-include "dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_.fbs";
+include "Dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_.fbs";
 
 table Torappu_RoguelikePredefinedExpStyleConfigData {
-	paramDict:[dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_];
+	paramDict:[Dict_2_Torappu_RoguelikeExpStyleConfigParam_System_String_];
 }
 
 

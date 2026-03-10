@@ -1,5 +1,5 @@
 
-enum Torappu_VoucherDisplayType : int {
+enum Torappu_VoucherDisplayType : int32 {
 	NONE = 0,
 	DIVIDE = 1
 }

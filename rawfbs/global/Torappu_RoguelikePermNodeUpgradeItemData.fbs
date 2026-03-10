@@ -3,9 +3,9 @@ include "Torappu_RoguelikeEventType.fbs";
 table Torappu_RoguelikePermNodeUpgradeItemData {
 	upgradeId:string;
 	nodeType:Torappu_RoguelikeEventType;
-	nodeLevel:int;
+	nodeLevel:int32;
 	costItemId:string;
-	costItemCount:int;
+	costItemCount:int32;
 	desc:string;
 	nodeName:string;
 }

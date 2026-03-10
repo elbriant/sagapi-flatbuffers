@@ -3,7 +3,7 @@ include "Torappu_ActMultiV3MatchPosUnlockCond.fbs";
 
 table Torappu_ActMultiV3MatchPosData {
 	matchPos:Torappu_ActMultiV3MatchPosType;
-	sortId:int;
+	sortId:int32;
 	name:string;
 	desc:string;
 	posToast:string;

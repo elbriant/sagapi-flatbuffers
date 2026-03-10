@@ -1,6 +1,6 @@
 
 table Torappu_LongTermCheckInConstData {
-	startTs:long;
+	startTs:int64;
 	detailTitle:string;
 	detailDesc:string;
 }

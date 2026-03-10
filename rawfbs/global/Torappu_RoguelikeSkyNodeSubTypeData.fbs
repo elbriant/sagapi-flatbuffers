@@ -2,7 +2,7 @@ include "Torappu_RoguelikeSkyZoneNodeType.fbs";
 
 table Torappu_RoguelikeSkyNodeSubTypeData {
 	evtType:Torappu_RoguelikeSkyZoneNodeType;
-	subTypeId:int;
+	subTypeId:int32;
 	desc:string;
 }
 

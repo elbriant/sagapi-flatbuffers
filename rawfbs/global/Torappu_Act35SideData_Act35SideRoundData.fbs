@@ -1,13 +1,13 @@
-include "dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_Act35SideData_Act35SideRoundData {
 	roundId:string;
 	challengeId:string;
-	round:int;
-	roundPassRating:int;
+	round:int32;
+	roundPassRating:int32;
 	isMaterialRandom:bool;
-	fixedMaterialList:[dict_2_System_String_System_Int32_];
-	passRoundCoin:int;
+	fixedMaterialList:[Dict_2_System_String_System_Int32_];
+	passRoundCoin:int32;
 }
 
 

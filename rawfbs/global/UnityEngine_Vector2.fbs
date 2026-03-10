@@ -1,5 +1,7 @@
 
 table UnityEngine_Vector2 {
+	x:float;
+	y:float;
 }
 
 

@@ -1,10 +1,10 @@
-include "dict_2_System_String_Torappu_CrossDayTrackData_.fbs";
+include "Dict_2_System_String_Torappu_CrossDayTrackData_.fbs";
 
 table Torappu_CrossDayTrackTypeData {
 	type:string;
-	startTs:long;
-	expireTs:long;
-	dataDict:[dict_2_System_String_Torappu_CrossDayTrackData_];
+	startTs:int64;
+	expireTs:int64;
+	dataDict:[Dict_2_System_String_Torappu_CrossDayTrackData_];
 }
 
 

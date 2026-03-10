@@ -2,7 +2,7 @@
 table Torappu_RoguelikeGameTreasureData {
 	treasureId:string;
 	groupId:string;
-	subIndex:int;
+	subIndex:int32;
 	name:string;
 	usage:string;
 }

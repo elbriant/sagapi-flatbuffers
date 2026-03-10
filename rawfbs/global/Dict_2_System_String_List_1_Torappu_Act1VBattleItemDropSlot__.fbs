@@ -1,0 +1,9 @@
+include "Torappu_Act1VBattleItemDropSlot.fbs";
+
+table Dict_2_System_String_List_1_Torappu_Act1VBattleItemDropSlot__ {
+	dict_key:string;
+	dict_value:[Torappu_Act1VBattleItemDropSlot];
+}
+
+
+root_type Dict_2_System_String_List_1_Torappu_Act1VBattleItemDropSlot__;

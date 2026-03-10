@@ -1,13 +1,13 @@
-include "dict_2_System_String_Torappu_RoguelikeCommonDevelopment_.fbs";
-include "dict_2_System_String_Torappu_RoguelikeTopicDevToken_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeCommonDevelopment_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeTopicDevToken_.fbs";
 include "Torappu_RoguelikeCommonDevRawTextBuffGroup.fbs";
-include "dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_.fbs";
 
 table Torappu_RoguelikeCommonDevelopmentData {
-	developments:[dict_2_System_String_Torappu_RoguelikeCommonDevelopment_];
-	developmentsTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
+	developments:[Dict_2_System_String_Torappu_RoguelikeCommonDevelopment_];
+	developmentsTokens:[Dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	developmentRawTextGroup:[Torappu_RoguelikeCommonDevRawTextBuffGroup];
-	developmentsDifficultyNodeInfos:[dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_];
+	developmentsDifficultyNodeInfos:[Dict_2_System_String_Torappu_RoguelikeCommonDevDifficultyNodeInfo_];
 }
 
 

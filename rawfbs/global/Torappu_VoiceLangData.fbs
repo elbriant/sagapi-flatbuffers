@@ -1,9 +1,9 @@
-include "dict_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData_.fbs";
+include "Dict_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData_.fbs";
 
 table Torappu_VoiceLangData {
 	wordkeys:[string];
 	charId:string;
-	voiceLangInfoDataDict:[dict_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData_];
+	voiceLangInfoDataDict:[Dict_2_Torappu_VoiceLangType_Torappu_VoiceLangInfoData_];
 }
 
 

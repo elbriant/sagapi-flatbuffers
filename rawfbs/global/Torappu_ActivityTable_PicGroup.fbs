@@ -1,7 +1,7 @@
 include "Torappu_CommonAvailCheck.fbs";
 
 table Torappu_ActivityTable_PicGroup {
-	sortIndex:int;
+	sortIndex:int32;
 	picId:string;
 	availCheck:Torappu_CommonAvailCheck;
 }

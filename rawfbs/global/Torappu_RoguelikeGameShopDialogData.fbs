@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_.fbs";
 
 table Torappu_RoguelikeGameShopDialogData {
-	types:[dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_];
+	types:[Dict_2_System_String_Torappu_RoguelikeGameShopDialogTypeData_];
 }
 
 

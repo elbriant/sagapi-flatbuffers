@@ -1,5 +1,5 @@
 
-enum Torappu_NpcStrategy : int {
+enum Torappu_NpcStrategy : int32 {
 	DEFAULT = 0,
 	CHOOSE_WIN = 1,
 	CHOOSE_ODD = 2,

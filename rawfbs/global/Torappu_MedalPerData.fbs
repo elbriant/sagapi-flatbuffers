@@ -6,7 +6,7 @@ table Torappu_MedalPerData {
 	medalId:string;
 	medalName:string;
 	medalType:string;
-	slotId:int;
+	slotId:int32;
 	preMedalIdList:[string];
 	rarity:Torappu_MedalRarity;
 	template:string;
@@ -15,7 +15,7 @@ table Torappu_MedalPerData {
 	description:string;
 	advancedMedal:string;
 	originMedal:string;
-	displayTime:long;
+	displayTime:int64;
 	expireTimes:[Torappu_MedalExpireTime];
 	medalRewardGroup:[Torappu_MedalRewardGroupData];
 	isHidden:bool;

@@ -2,7 +2,7 @@ include "Torappu_ItemType.fbs";
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 

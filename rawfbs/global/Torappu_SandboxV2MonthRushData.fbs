@@ -2,10 +2,10 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_SandboxV2MonthRushData {
 	monthlyRushId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 	isLast:bool;
-	sortId:int;
+	sortId:int32;
 	rushGroupKey:string;
 	monthlyRushName:string;
 	monthlyRushDes:string;

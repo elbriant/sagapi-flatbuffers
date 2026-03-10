@@ -5,9 +5,9 @@ table Torappu_SandboxPermBasicData {
 	topicId:string;
 	topicTemplate:Torappu_SandboxPermTemplateType;
 	topicName:string;
-	topicStartTime:long;
-	fullStoredTime:long;
-	sortId:int;
+	topicStartTime:int64;
+	fullStoredTime:int64;
+	sortId:int32;
 	priceItemId:string;
 	templateShopId:string;
 	homeEntryDisplayData:[Torappu_SandboxPermBasicData_HomeEntryDisplayData];

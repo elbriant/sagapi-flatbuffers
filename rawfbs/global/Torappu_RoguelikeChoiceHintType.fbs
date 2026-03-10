@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeChoiceHintType : int {
+enum Torappu_RoguelikeChoiceHintType : int32 {
 	NONE = 0,
 	ITEM = 1,
 	CANDLED_CHAR = 2,

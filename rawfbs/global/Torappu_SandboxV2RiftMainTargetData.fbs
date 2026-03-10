@@ -5,7 +5,7 @@ table Torappu_SandboxV2RiftMainTargetData {
 	title:string;
 	desc:string;
 	storyDesc:string;
-	targetDayCount:int;
+	targetDayCount:int32;
 	targetType:Torappu_SandboxV2RiftMainTargetType;
 	questIconId:string;
 	questIconName:string;

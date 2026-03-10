@@ -3,8 +3,8 @@ include "Torappu_Act42D0Data_Act42D0ChallengeMissionData.fbs";
 table Torappu_Act42D0Data_Act42D0ChallengeInfoData {
 	stageId:string;
 	stageDesc:string;
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 	levelId:string;
 	code:string;
 	name:string;

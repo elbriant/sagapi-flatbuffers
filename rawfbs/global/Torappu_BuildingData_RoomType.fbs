@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_RoomType : int {
+enum Torappu_BuildingData_RoomType : int32 {
 	NONE = 0,
 	CONTROL = 1,
 	POWER = 2,

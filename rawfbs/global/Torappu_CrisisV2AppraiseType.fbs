@@ -1,5 +1,5 @@
 
-enum Torappu_CrisisV2AppraiseType : int {
+enum Torappu_CrisisV2AppraiseType : int32 {
 	RANK_D = 0,
 	RANK_C = 1,
 	RANK_B = 2,

@@ -1,14 +1,14 @@
 
 table Torappu_Act12SideData_ConstData {
-	recycleRewardThreshold:int;
+	recycleRewardThreshold:int32;
 	charmRepoUnlockStageId:string;
-	recycleLowThreshold:int;
-	recycleMediumThreshold:int;
-	recycleHighThreshold:int;
+	recycleLowThreshold:int32;
+	recycleMediumThreshold:int32;
+	recycleHighThreshold:int32;
 	autoGetCharmId:string;
 	fogStageId:string;
 	fogUnlockStageId:string;
-	fogUnlockTs:long;
+	fogUnlockTs:int64;
 	fogUnlockDesc:string;
 }
 

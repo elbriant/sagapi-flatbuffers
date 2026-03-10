@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveTimelineItemData {
 	timelineId:string;
-	timelineSortId:int;
+	timelineSortId:int32;
 	timelineTitle:string;
 	timelineDes:string;
 	picIdList:[string];

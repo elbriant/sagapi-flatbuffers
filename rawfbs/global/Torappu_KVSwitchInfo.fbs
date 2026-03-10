@@ -1,7 +1,7 @@
 
 table Torappu_KVSwitchInfo {
 	isDefault:bool;
-	displayTime:long;
+	displayTime:int64;
 	zoneId:string;
 }
 

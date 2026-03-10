@@ -1,9 +1,9 @@
-include "dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_FifthAnnivExploreTargetData {
 	id:string;
 	linkStageId:string;
-	targetValues:[dict_2_System_String_System_Int32_];
+	targetValues:[Dict_2_System_String_System_Int32_];
 	requireEventId:string;
 	lockedLevelId:string;
 	isEnd:bool;

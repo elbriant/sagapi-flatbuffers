@@ -1,0 +1,9 @@
+include "Torappu_ActivityMainlineBuffData_MissionGroupData.fbs";
+
+table ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityMainlineBuffData_MissionGroupData;
+}
+
+
+root_type ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_;

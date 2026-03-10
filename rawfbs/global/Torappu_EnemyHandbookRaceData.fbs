@@ -2,7 +2,7 @@
 table Torappu_EnemyHandbookRaceData {
 	id:string;
 	raceName:string;
-	sortId:int;
+	sortId:int32;
 }
 
 

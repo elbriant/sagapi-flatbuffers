@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeEnrollType : int {
+enum Torappu_RoguelikeEnrollType : int32 {
 	DLC = 0,
 	REVIEW = 1
 }

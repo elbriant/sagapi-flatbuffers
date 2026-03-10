@@ -3,7 +3,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_CharmItemData {
 	id:string;
-	sort:int;
+	sort:int32;
 	name:string;
 	icon:string;
 	itemUsage:string;
@@ -11,7 +11,7 @@ table Torappu_CharmItemData {
 	itemObtainApproach:string;
 	rarity:Torappu_CharmRarity;
 	desc:string;
-	price:int;
+	price:int32;
 	specialObtainApproach:string;
 	charmType:string;
 	obtainInRandom:bool;

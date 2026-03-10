@@ -4,7 +4,7 @@ table Torappu_Act13SideData_LongTermMissionData {
 	groupId:string;
 	principalId:string;
 	finishedDesc:string;
-	sectionSortId:int;
+	sectionSortId:int32;
 	haveStageBtn:bool;
 	jumpStageId:string;
 }

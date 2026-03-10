@@ -1,5 +1,5 @@
 
-enum Torappu_GachaRuleType : int {
+enum Torappu_GachaRuleType : int32 {
 	NORMAL = 0,
 	LIMITED = 1,
 	LINKAGE = 2,
@@ -21,15 +21,15 @@ table Newtonsoft_Json_Linq_JObject {
 
 table Torappu_GachaPoolClientData {
 	gachaPoolId:string;
-	gachaIndex:int;
-	openTime:long;
-	endTime:long;
+	gachaIndex:int32;
+	openTime:int64;
+	endTime:int64;
 	gachaPoolName:string;
 	gachaPoolSummary:string;
 	gachaPoolDetail:string;
 	guaranteeName:string;
-	guarantee5Avail:int;
-	guarantee5Count:int;
+	guarantee5Avail:int32;
+	guarantee5Count:int32;
 	LMTGSID:string;
 	CDPrimColor:string;
 	CDSecColor:string;
@@ -45,31 +45,17 @@ table Torappu_GachaPoolClientData {
 
 table Torappu_NewbeeGachaPoolClientData {
 	gachaPoolId:string;
-	gachaIndex:int;
+	gachaIndex:int32;
 	gachaPoolName:string;
 	gachaPoolDetail:string;
-	gachaPrice:int;
-	gachaTimes:int;
+	gachaPrice:int32;
+	gachaTimes:int32;
 	gachaOffset:string;
 }
 
 
 
-table dict_2_System_Int32_System_Int32_ {
-	dict_key:int;
-	dict_value:int;
-}
-
-
-
-table Torappu_BasedRecruitPool_RecruitConstants {
-	tagPriceList:[dict_2_System_Int32_System_Int32_];
-	maxRecruitTime:int;
-}
-
-
-
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -165,94 +151,92 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
 
 
 table Torappu_SpecialRecruitPool_SpecialRecruitCostData {
-	timeLength:int;
-	recruitPrice:int;
+	timeLength:int32;
+	recruitPrice:int32;
 	itemCosts:[Torappu_ItemBundle];
 }
 
 
 
 table Torappu_SpecialRecruitPool {
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
-	tagId:int;
-	order:int;
-	startDateTime:long;
-	endDateTime:long;
+	tagId:int32;
+	order:int32;
+	startDateTime:int64;
+	endDateTime:int64;
 	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
 }
 
 
 
 table Torappu_GachaTag {
-	tagId:int;
+	tagId:int32;
 	tagName:string;
-	tagGroup:int;
+	tagGroup:int32;
 }
 
 
 
 table Torappu_RecruitPool_RecruitTime {
-	timeLength:int;
-	recruitPrice:int;
+	timeLength:int32;
+	recruitPrice:int32;
 }
 
 
 
 table Torappu_RecruitPool {
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
 }
 
 
 
-table dict_2_System_Int32_Torappu_ItemBundle_ {
-	dict_key:int;
+table Dict_2_System_Int32_Torappu_ItemBundle_ {
+	dict_key:int32;
 	dict_value:Torappu_ItemBundle;
 }
 
 
 
 table Torappu_PotentialMaterialConverterConfig {
-	items:[dict_2_System_Int32_Torappu_ItemBundle_];
+	items:[Dict_2_System_Int32_Torappu_ItemBundle_];
 }
 
 
 
 table Torappu_GachaData_RecruitRange {
-	rarityStart:int;
-	rarityEnd:int;
+	rarityStart:int32;
+	rarityEnd:int32;
 }
 
 
 
-table dict_2_System_Int32_Torappu_GachaData_RecruitRange_ {
-	dict_key:int;
+table Dict_2_System_Int32_Torappu_GachaData_RecruitRange_ {
+	dict_key:int32;
 	dict_value:Torappu_GachaData_RecruitRange;
 }
 
 
 
-table dict_2_System_Int32_list_1_System_Int32__ {
-	dict_key:int;
-	dict_value:[int];
+table Dict_2_System_Int32_List_1_System_Int32__ {
+	dict_key:int32;
+	dict_value:[int32];
 }
 
 
 
 table Torappu_GachaData_CarouselData {
 	poolId:string;
-	index:int;
-	startTime:long;
-	endTime:long;
+	index:int32;
+	startTime:int64;
+	endTime:int64;
 	spriteId:string;
 }
 
@@ -260,23 +244,23 @@ table Torappu_GachaData_CarouselData {
 
 table Torappu_GachaData_FreeLimitGachaData {
 	poolId:string;
-	openTime:long;
-	endTime:long;
-	freeCount:int;
+	openTime:int64;
+	endTime:int64;
+	freeCount:int32;
 }
 
 
 
 table Torappu_GachaData_LimitTenGachaTkt {
 	itemId:string;
-	endTime:long;
+	endTime:int64;
 }
 
 
 
 table Torappu_GachaData_LinkageTenGachaTkt {
 	itemId:string;
-	endTime:long;
+	endTime:int64;
 	gachaPoolId:string;
 }
 
@@ -284,7 +268,7 @@ table Torappu_GachaData_LinkageTenGachaTkt {
 
 table Torappu_GachaData_NormalGachaTkt {
 	itemId:string;
-	endTime:long;
+	endTime:int64;
 	gachaPoolId:string;
 	isTen:bool;
 }
@@ -298,22 +282,22 @@ table Torappu_GachaData_FesGachaPoolRelateItem {
 
 
 
-table dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_ {
+table Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_ {
 	dict_key:string;
 	dict_value:Torappu_GachaData_FesGachaPoolRelateItem;
 }
 
 
 
-table dict_2_System_String_System_String_ {
+table Dict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
 
 
 
-table dict_2_System_Int32_System_Single_ {
-	dict_key:int;
+table Dict_2_System_Int32_System_Single_ {
+	dict_key:int32;
 	dict_value:float;
 }
 
@@ -327,8 +311,8 @@ table Torappu_GachaData {
 	recruitPool:Torappu_RecruitPool;
 	potentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
 	classicPotentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
-	recruitRarityTable:[dict_2_System_Int32_Torappu_GachaData_RecruitRange_];
-	specialTagRarityTable:[dict_2_System_Int32_list_1_System_Int32__];
+	recruitRarityTable:[Dict_2_System_Int32_Torappu_GachaData_RecruitRange_];
+	specialTagRarityTable:[Dict_2_System_Int32_List_1_System_Int32__];
 	recruitDetail:string;
 	showGachaLogEntry:bool;
 	carousel:[Torappu_GachaData_CarouselData];
@@ -336,9 +320,9 @@ table Torappu_GachaData {
 	limitTenGachaItem:[Torappu_GachaData_LimitTenGachaTkt];
 	linkageTenGachaItem:[Torappu_GachaData_LinkageTenGachaTkt];
 	normalGachaItem:[Torappu_GachaData_NormalGachaTkt];
-	fesGachaPoolRelateItem:[dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_];
-	dicRecruit6StarHint:[dict_2_System_String_System_String_];
-	specialGachaPercentDict:[dict_2_System_Int32_System_Single_];
+	fesGachaPoolRelateItem:[Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_];
+	dicRecruit6StarHint:[Dict_2_System_String_System_String_];
+	specialGachaPercentDict:[Dict_2_System_Int32_System_Single_];
 }
 
 

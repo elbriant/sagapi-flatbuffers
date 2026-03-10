@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2EnemyRushType : int {
+enum Torappu_SandboxV2EnemyRushType : int32 {
 	NORMAL = 0,
 	ELITE = 1,
 	BOSS = 2,

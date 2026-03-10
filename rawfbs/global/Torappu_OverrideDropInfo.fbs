@@ -1,11 +1,11 @@
-include "dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
+include "Dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
 
 table Torappu_OverrideDropInfo {
 	itemId:string;
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 	zoneRange:string;
-	times:int;
+	times:int32;
 	name:string;
 	egName:string;
 	desc1:string;
@@ -13,7 +13,7 @@ table Torappu_OverrideDropInfo {
 	desc3:string;
 	dropTag:string;
 	dropTypeDesc:string;
-	dropInfo:[dict_2_System_String_Torappu_StageData_StageDropInfo_];
+	dropInfo:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
 }
 
 

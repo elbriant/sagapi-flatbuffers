@@ -3,13 +3,13 @@ table Torappu_Act35SideData_Act35SideChallengeData {
 	challengeId:string;
 	challengeName:string;
 	challengeDesc:string;
-	sortId:int;
+	sortId:int32;
 	challengePicId:string;
 	challengeIconId:string;
-	openTime:long;
+	openTime:int64;
 	preposedChallengeId:string;
-	passRound:int;
-	passRoundScore:int;
+	passRound:int32;
+	passRoundScore:int32;
 	roundIdList:[string];
 }
 

@@ -1,7 +1,7 @@
 
 table Torappu_ActMultiV3ReportData {
 	id:string;
-	sortId:int;
+	sortId:int32;
 	txt:string;
 	desc:string;
 }

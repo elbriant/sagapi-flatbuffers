@@ -13,10 +13,10 @@ table Torappu_Act29SideData_Act29SideProductGroupData {
 	groupStoreIconId:string;
 	groupTypeBasePic:string;
 	groupTypeEyeIcon:string;
-	groupSortId:int;
+	groupSortId:int32;
 	formList:[string];
 	sheetId:string;
-	sheetNum:int;
+	sheetNum:int32;
 	sheetRotateSpd:float;
 	productType:Torappu_Act29SideData_Act29SideProductType;
 	productDescColor:string;

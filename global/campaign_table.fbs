@@ -1,5 +1,5 @@
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -95,28 +95,28 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
 
 
 table Torappu_CampaignData_BreakRewardLadder {
-	killCnt:int;
-	breakFeeAdd:int;
+	killCnt:int32;
+	breakFeeAdd:int32;
 	rewards:[Torappu_ItemBundle];
 }
 
 
 
-enum Torappu_CampaignStageType : int {
+enum Torappu_CampaignStageType : int32 {
 	NONE = 0,
 	PERMANENT = 1,
 	ROTATE = 2,
 	TRAINING = 3
 }
 
-enum Torappu_StageDropType : int {
+enum Torappu_StageDropType : int32 {
 	NONE = 0,
 	ONCE = 1,
 	NORMAL = 2,
@@ -136,8 +136,8 @@ table Torappu_WeightItemBundle {
 	id:string;
 	type:Torappu_ItemType;
 	dropType:Torappu_StageDropType;
-	count:int;
-	weight:int;
+	count:int32;
+	weight:int32;
 }
 
 
@@ -148,7 +148,7 @@ table Torappu_WeightItemBundleA_ {
 
 
 
-enum Torappu_OccPer : int {
+enum Torappu_OccPer : int32 {
 	ALWAYS = 0,
 	ALMOST = 1,
 	USUAL = 2,
@@ -159,9 +159,6 @@ enum Torappu_OccPer : int {
 }
 
 table Torappu_StageData_DisplayDetailRewards {
-	type:Torappu_ItemType;
-	id:string;
-	dropType:Torappu_StageDropType;
 	occPercent:Torappu_OccPer;
 }
 
@@ -176,19 +173,19 @@ table Torappu_CampaignData_CampaignDropInfo {
 
 
 table Torappu_CampaignData_DropLadder {
-	killCnt:int;
+	killCnt:int32;
 	dropInfo:Torappu_CampaignData_CampaignDropInfo;
 }
 
 
 
 table Torappu_CampaignData_GainLadder {
-	killCnt:int;
-	apFailReturn:int;
-	favor:int;
-	expGain:int;
-	goldGain:int;
-	displayDiamondShdNum:int;
+	killCnt:int32;
+	apFailReturn:int32;
+	favor:int32;
+	expGain:int32;
+	goldGain:int32;
+	displayDiamondShdNum:int32;
 }
 
 
@@ -210,7 +207,7 @@ table Torappu_CampaignData_DropGainInfo {
 
 
 
-table dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_ {
+table Dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_ {
 	dict_key:Torappu_CampaignStageType;
 	dict_value:Torappu_CampaignData_DropGainInfo;
 }
@@ -219,15 +216,15 @@ table dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_ {
 
 table Torappu_CampaignData {
 	stageId:string;
-	isSmallScale:int;
+	isSmallScale:int32;
 	breakLadders:[Torappu_CampaignData_BreakRewardLadder];
 	isCustomized:bool;
-	dropGains:[dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_];
+	dropGains:[Dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_];
 }
 
 
 
-table dict_2_System_String_Torappu_CampaignData_ {
+table Dict_2_System_String_Torappu_CampaignData_ {
 	dict_key:string;
 	dict_value:Torappu_CampaignData;
 }
@@ -237,13 +234,13 @@ table dict_2_System_String_Torappu_CampaignData_ {
 table Torappu_CampaignGroupData {
 	groupId:string;
 	activeCamps:[string];
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 
 
-table dict_2_System_String_Torappu_CampaignGroupData_ {
+table Dict_2_System_String_Torappu_CampaignGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_CampaignGroupData;
 }
@@ -252,12 +249,12 @@ table dict_2_System_String_Torappu_CampaignGroupData_ {
 
 table Torappu_CampaignRegionData {
 	id:string;
-	isUnknwon:int;
+	isUnknwon:int32;
 }
 
 
 
-table dict_2_System_String_Torappu_CampaignRegionData_ {
+table Dict_2_System_String_Torappu_CampaignRegionData_ {
 	dict_key:string;
 	dict_value:Torappu_CampaignRegionData;
 }
@@ -273,7 +270,7 @@ table Torappu_CampaignZoneData {
 
 
 
-table dict_2_System_String_Torappu_CampaignZoneData_ {
+table Dict_2_System_String_Torappu_CampaignZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_CampaignZoneData;
 }
@@ -282,35 +279,35 @@ table dict_2_System_String_Torappu_CampaignZoneData_ {
 
 table Torappu_CampaignMissionData {
 	id:string;
-	sortId:int;
+	sortId:int32;
 	param:[string];
 	description:string;
-	breakFeeAdd:int;
+	breakFeeAdd:int32;
 }
 
 
 
-table dict_2_System_String_Torappu_CampaignMissionData_ {
+table Dict_2_System_String_Torappu_CampaignMissionData_ {
 	dict_key:string;
 	dict_value:Torappu_CampaignMissionData;
 }
 
 
 
-table dict_2_System_String_System_Int32_ {
+table Dict_2_System_String_System_Int32_ {
 	dict_key:string;
-	dict_value:int;
+	dict_value:int32;
 }
 
 
 
 table Torappu_CampaignConstTable {
 	systemPreposedStage:string;
-	rotateStartTime:long;
+	rotateStartTime:int64;
 	rotatePreposedStage:string;
 	zoneUnlockStage:string;
 	firstRotateRegion:string;
-	sweepStartTime:long;
+	sweepStartTime:int64;
 }
 
 
@@ -320,9 +317,9 @@ table Torappu_CampaignRotateOpenTimeData {
 	stageId:string;
 	mapId:string;
 	unknownRegions:[string];
-	duration:int;
-	startTs:long;
-	endTs:long;
+	duration:int32;
+	startTs:int64;
+	endTs:int64;
 }
 
 
@@ -330,27 +327,27 @@ table Torappu_CampaignRotateOpenTimeData {
 table Torappu_CampaignTrainingOpenTimeData {
 	groupId:string;
 	stages:[string];
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 
 
 table Torappu_CampaignTrainingAllOpenTimeData {
 	groupId:string;
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 
 
 table Torappu_CampaignTable {
-	campaigns:[dict_2_System_String_Torappu_CampaignData_];
-	campaignGroups:[dict_2_System_String_Torappu_CampaignGroupData_];
-	campaignRegions:[dict_2_System_String_Torappu_CampaignRegionData_];
-	campaignZones:[dict_2_System_String_Torappu_CampaignZoneData_];
-	campaignMissions:[dict_2_System_String_Torappu_CampaignMissionData_];
-	stageIndexInZoneMap:[dict_2_System_String_System_Int32_];
+	campaigns:[Dict_2_System_String_Torappu_CampaignData_];
+	campaignGroups:[Dict_2_System_String_Torappu_CampaignGroupData_];
+	campaignRegions:[Dict_2_System_String_Torappu_CampaignRegionData_];
+	campaignZones:[Dict_2_System_String_Torappu_CampaignZoneData_];
+	campaignMissions:[Dict_2_System_String_Torappu_CampaignMissionData_];
+	stageIndexInZoneMap:[Dict_2_System_String_System_Int32_];
 	campaignConstTable:Torappu_CampaignConstTable;
 	campaignRotateStageOpenTimes:[Torappu_CampaignRotateOpenTimeData];
 	campaignTrainingStageOpenTimes:[Torappu_CampaignTrainingOpenTimeData];

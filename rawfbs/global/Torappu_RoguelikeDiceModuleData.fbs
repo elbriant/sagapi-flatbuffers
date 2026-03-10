@@ -1,14 +1,14 @@
-include "dict_2_System_String_Torappu_RoguelikeDiceData_.fbs";
-include "dict_2_System_String_Torappu_RoguelikeDiceRuleData_.fbs";
-include "dict_2_System_String_System_String_.fbs";
-include "dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeDiceData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeDiceRuleData_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_.fbs";
 include "Torappu_RoguelikeDicePredefineData.fbs";
 
 table Torappu_RoguelikeDiceModuleData {
-	dice:[dict_2_System_String_Torappu_RoguelikeDiceData_];
-	diceEvents:[dict_2_System_String_Torappu_RoguelikeDiceRuleData_];
-	diceChoices:[dict_2_System_String_System_String_];
-	diceRuleGroups:[dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_];
+	dice:[Dict_2_System_String_Torappu_RoguelikeDiceData_];
+	diceEvents:[Dict_2_System_String_Torappu_RoguelikeDiceRuleData_];
+	diceChoices:[Dict_2_System_String_System_String_];
+	diceRuleGroups:[Dict_2_System_String_Torappu_RoguelikeDiceRuleGroupData_];
 	dicePredefines:[Torappu_RoguelikeDicePredefineData];
 }
 

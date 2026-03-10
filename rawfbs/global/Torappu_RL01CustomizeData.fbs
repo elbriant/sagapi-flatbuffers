@@ -1,11 +1,11 @@
-include "dict_2_System_String_Torappu_RoguelikeTopicDev_.fbs";
-include "dict_2_System_String_Torappu_RoguelikeTopicDevToken_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeTopicDev_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeTopicDevToken_.fbs";
 include "Torappu_RL01EndingText.fbs";
 include "Torappu_RL01DifficultyExt.fbs";
 
 table Torappu_RL01CustomizeData {
-	developments:[dict_2_System_String_Torappu_RoguelikeTopicDev_];
-	developmentTokens:[dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
+	developments:[Dict_2_System_String_Torappu_RoguelikeTopicDev_];
+	developmentTokens:[Dict_2_System_String_Torappu_RoguelikeTopicDevToken_];
 	endingText:Torappu_RL01EndingText;
 	difficulties:[Torappu_RL01DifficultyExt];
 }

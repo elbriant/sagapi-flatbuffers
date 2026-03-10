@@ -1,11 +1,11 @@
 
-enum Torappu_RecommendItemTagTips : int {
+enum Torappu_RecommendItemTagTips : int32 {
 	ONSALE = 0,
 	DEADLINE = 1,
 	NONE = 2
 }
 
-enum Torappu_ShopRouteTarget : int {
+enum Torappu_ShopRouteTarget : int32 {
 	RECOMMENDSHOP = 0,
 	CASHSHOP = 1,
 	GIFTPACKAGE = 2,
@@ -24,7 +24,7 @@ enum Torappu_ShopRouteTarget : int {
 
 table Torappu_ShopRecommendData {
 	imgId:string;
-	slotIndex:int;
+	slotIndex:int32;
 	cmd:Torappu_ShopRouteTarget;
 	param1:string;
 	param2:string;
@@ -34,7 +34,7 @@ table Torappu_ShopRecommendData {
 
 
 table Torappu_ShopRecommendGroup {
-	recommendGroup:[int];
+	recommendGroup:[int32];
 	dataList:[Torappu_ShopRecommendData];
 }
 
@@ -47,7 +47,7 @@ table Torappu_ShopKeeperWord {
 
 
 
-enum Torappu_ShopRecommendTemplateType : int {
+enum Torappu_ShopRecommendTemplateType : int32 {
 	DEFAULT = 0,
 	NORSKIN = 1,
 	RETURNSKIN = 2,
@@ -56,22 +56,22 @@ enum Torappu_ShopRecommendTemplateType : int {
 }
 
 table Torappu_ShopRecommendTemplateNormalGiftParam {
-	showStartTs:long;
-	showEndTs:long;
+	showStartTs:int64;
+	showEndTs:int64;
 	goodId:string;
 	giftPackageName:string;
-	price:int;
+	price:int32;
 	logoId:string;
 	color:string;
 	haveMark:bool;
-	availCount:int;
+	availCount:int32;
 }
 
 
 
 table Torappu_ShopRecommendTemplateNormalSkinParam {
-	showStartTs:long;
-	showEndTs:long;
+	showStartTs:int64;
+	showEndTs:int64;
 	skinIds:[string];
 	skinGroupName:string;
 	brandIconId:string;
@@ -83,12 +83,12 @@ table Torappu_ShopRecommendTemplateNormalSkinParam {
 
 
 table Torappu_ShopRecommendTemplateNormalFurnParam {
-	showStartTs:long;
-	showEndTs:long;
+	showStartTs:int64;
+	showEndTs:int64;
 	furnPackId:string;
 	isNew:bool;
 	isPackSell:bool;
-	count:int;
+	count:int32;
 	colorBack:string;
 	colorText:string;
 	actId:string;
@@ -97,8 +97,8 @@ table Torappu_ShopRecommendTemplateNormalFurnParam {
 
 
 table Torappu_ShopRecommendTemplateReturnSkinParam {
-	showStartTs:long;
-	showEndTs:long;
+	showStartTs:int64;
+	showEndTs:int64;
 }
 
 
@@ -117,9 +117,9 @@ table Torappu_ShopRecommendItem {
 	displayType:string;
 	tagName:string;
 	itemTag:Torappu_RecommendItemTagTips;
-	orderNum:int;
-	startDatetime:long;
-	endDatetime:long;
+	orderNum:int32;
+	startDatetime:int64;
+	endDatetime:int64;
 	groupList:[Torappu_ShopRecommendGroup];
 	tagWord:Torappu_ShopKeeperWord;
 	templateType:Torappu_ShopRecommendTemplateType;
@@ -129,8 +129,8 @@ table Torappu_ShopRecommendItem {
 
 
 table Torappu_ShopCreditUnlockItem {
-	sortId:int;
-	unlockNum:int;
+	sortId:int32;
+	unlockNum:int32;
 	charId:string;
 }
 
@@ -139,13 +139,13 @@ table Torappu_ShopCreditUnlockItem {
 table Torappu_ShopCreditUnlockGroup {
 	id:string;
 	index:string;
-	startDateTime:long;
+	startDateTime:int64;
 	charDict:[Torappu_ShopCreditUnlockItem];
 }
 
 
 
-table dict_2_System_String_Torappu_ShopCreditUnlockGroup_ {
+table Dict_2_System_String_Torappu_ShopCreditUnlockGroup_ {
 	dict_key:string;
 	dict_value:Torappu_ShopCreditUnlockGroup;
 }
@@ -161,8 +161,8 @@ table Torappu_ShopClientData_ShopKeeperData {
 
 table Torappu_ShopCarouselData_Item {
 	spriteId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 	cmd:Torappu_ShopRouteTarget;
 	param1:string;
 	skinId:string;
@@ -184,21 +184,21 @@ table Torappu_ChooseShopRelation {
 
 
 
-enum Torappu_ShopUnlockType : int {
+enum Torappu_ShopUnlockType : int32 {
 	ALWAYS_UNLOCK = 0,
 	SKIN_UNLOCK = 1,
 	FURN_UNLOCK = 2,
 	BOTH_SKIN_FURN = 3
 }
 
-table dict_2_System_String_Torappu_ShopUnlockType_ {
+table Dict_2_System_String_Torappu_ShopUnlockType_ {
 	dict_key:string;
 	dict_value:Torappu_ShopUnlockType;
 }
 
 
 
-enum Torappu_ShopCondTrigPackageType : int {
+enum Torappu_ShopCondTrigPackageType : int32 {
 	NONE = 0,
 	RETURN_PROGRESS = 1,
 	RETURN_ONCE = 2,
@@ -213,14 +213,14 @@ table Torappu_ShopClientGPData {
 
 
 
-table dict_2_System_String_Torappu_ShopClientGPData_ {
+table Dict_2_System_String_Torappu_ShopClientGPData_ {
 	dict_key:string;
 	dict_value:Torappu_ShopClientGPData;
 }
 
 
 
-enum Torappu_ShopGPTabType : int {
+enum Torappu_ShopGPTabType : int32 {
 	DEFAULT_ALL = 0,
 	MONTH_CARD = 1,
 	PERM = 2,
@@ -234,19 +234,19 @@ table Torappu_ShopGPTabDisplayData {
 	tabId:string;
 	tabName:string;
 	tabType:Torappu_ShopGPTabType;
-	recomDisplayNum:int;
+	recomDisplayNum:int32;
 	tabPicId:string;
 	tabPicOnColor:string;
 	tabPicOffColor:string;
-	sortId:int;
-	tabStartTime:long;
-	tabEndTime:long;
+	sortId:int32;
+	tabStartTime:int64;
+	tabEndTime:int64;
 	markerPicId:string;
 }
 
 
 
-table dict_2_System_String_Torappu_ShopGPTabDisplayData_ {
+table Dict_2_System_String_Torappu_ShopGPTabDisplayData_ {
 	dict_key:string;
 	dict_value:Torappu_ShopGPTabDisplayData;
 }
@@ -259,8 +259,8 @@ table Torappu_LMTGSShopSchedule {
 	iconColor:string;
 	iconBackColor:string;
 	storeTextColor:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 }
 
 
@@ -275,15 +275,15 @@ table Torappu_LMTGSShopOverlaySchedule {
 
 table Torappu_ShopClientData {
 	recommendList:[Torappu_ShopRecommendItem];
-	creditUnlockGroup:[dict_2_System_String_Torappu_ShopCreditUnlockGroup_];
+	creditUnlockGroup:[Dict_2_System_String_Torappu_ShopCreditUnlockGroup_];
 	shopKeeperData:Torappu_ShopClientData_ShopKeeperData;
 	carousels:[Torappu_ShopCarouselData];
 	chooseShopRelations:[Torappu_ChooseShopRelation];
-	shopUnlockDict:[dict_2_System_String_Torappu_ShopUnlockType_];
+	shopUnlockDict:[Dict_2_System_String_Torappu_ShopUnlockType_];
 	extraQCShopRule:[string];
 	repQCShopRule:[string];
-	shopGPDataDict:[dict_2_System_String_Torappu_ShopClientGPData_];
-	tabDisplayData:[dict_2_System_String_Torappu_ShopGPTabDisplayData_];
+	shopGPDataDict:[Dict_2_System_String_Torappu_ShopClientGPData_];
+	tabDisplayData:[Dict_2_System_String_Torappu_ShopGPTabDisplayData_];
 	shopMonthlySubGoodId:string;
 	limitedShopSchedule:[Torappu_LMTGSShopSchedule];
 	overlaySchedule:[Torappu_LMTGSShopOverlaySchedule];

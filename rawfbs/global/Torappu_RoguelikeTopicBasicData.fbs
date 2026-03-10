@@ -5,12 +5,12 @@ include "Torappu_RoguelikeTopicConfig.fbs";
 table Torappu_RoguelikeTopicBasicData {
 	id:string;
 	name:string;
-	startTime:long;
-	disappearTimeOnMainScreen:long;
-	sort:int;
+	startTime:int64;
+	disappearTimeOnMainScreen:int64;
+	sort:int32;
 	showMedalId:string;
 	medalGroupId:string;
-	fullStoredTime:long;
+	fullStoredTime:int64;
 	lineText:string;
 	homeEntryDisplayData:[Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData];
 	moduleTypes:[Torappu_RoguelikeModuleType];

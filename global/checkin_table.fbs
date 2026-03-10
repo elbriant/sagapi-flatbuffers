@@ -1,5 +1,5 @@
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -96,7 +96,7 @@ enum Torappu_ItemType : int {
 table Torappu_MonthlySignInData {
 	itemId:string;
 	itemType:Torappu_ItemType;
-	count:int;
+	count:int32;
 }
 
 
@@ -105,14 +105,14 @@ table Torappu_MonthlySignInGroupData {
 	groupId:string;
 	title:string;
 	description:string;
-	signStartTime:long;
-	signEndTime:long;
+	signStartTime:int64;
+	signEndTime:int64;
 	items:[Torappu_MonthlySignInData];
 }
 
 
 
-table dict_2_System_String_Torappu_MonthlySignInGroupData_ {
+table Dict_2_System_String_Torappu_MonthlySignInGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_MonthlySignInGroupData;
 }
@@ -121,7 +121,7 @@ table dict_2_System_String_Torappu_MonthlySignInGroupData_ {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
@@ -129,8 +129,8 @@ table Torappu_ItemBundle {
 
 table Torappu_MonthlyDailyBonusGroup {
 	groupId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 	items:[Torappu_ItemBundle];
 	imgId:string;
 	backId:string;
@@ -138,7 +138,7 @@ table Torappu_MonthlyDailyBonusGroup {
 
 
 
-table dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__ {
+table Dict_2_System_String_List_1_Torappu_MonthlyDailyBonusGroup__ {
 	dict_key:string;
 	dict_value:[Torappu_MonthlyDailyBonusGroup];
 }
@@ -146,8 +146,8 @@ table dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__ {
 
 
 table Torappu_CheckInTable {
-	groups:[dict_2_System_String_Torappu_MonthlySignInGroupData_];
-	monthlySubItem:[dict_2_System_String_list_1_Torappu_MonthlyDailyBonusGroup__];
+	groups:[Dict_2_System_String_Torappu_MonthlySignInGroupData_];
+	monthlySubItem:[Dict_2_System_String_List_1_Torappu_MonthlyDailyBonusGroup__];
 	currentMonthlySubId:string;
 }
 

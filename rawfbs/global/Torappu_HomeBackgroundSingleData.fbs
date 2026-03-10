@@ -3,8 +3,8 @@ include "Torappu_HomeBackgroundMultiFormData.fbs";
 
 table Torappu_HomeBackgroundSingleData {
 	bgId:string;
-	bgSortId:int;
-	bgStartTime:long;
+	bgSortId:int32;
+	bgStartTime:int64;
 	bgName:string;
 	bgDes:string;
 	bgUsage:string;

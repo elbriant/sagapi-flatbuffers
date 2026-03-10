@@ -1,9 +1,9 @@
 
 table Torappu_CharPatchData_PatchDetailInfo {
 	patchId:string;
-	sortId:int;
+	sortId:int32;
 	infoParam:string;
-	transSortId:int;
+	transSortId:int32;
 }
 
 

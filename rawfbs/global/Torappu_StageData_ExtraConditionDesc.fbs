@@ -1,6 +1,6 @@
 
 table Torappu_StageData_ExtraConditionDesc {
-	index:int;
+	index:int32;
 	template:string;
 	unlockParam:[string];
 }

@@ -1,7 +1,7 @@
 include "Torappu_EnemyDatabase_EnemyData.fbs";
 
 table Torappu_EnemyDatabase_EnemyLevel {
-	level:int;
+	level:int32;
 	enemyData:Torappu_EnemyDatabase_EnemyData;
 }
 

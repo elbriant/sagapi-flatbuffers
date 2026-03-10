@@ -1,21 +1,21 @@
 include "Torappu_HomeBackgroundSingleData.fbs";
 include "Torappu_HomeThemeDisplayData.fbs";
-include "dict_2_System_String_Torappu_HomeBackgroundLimitData_.fbs";
-include "dict_2_System_String_Torappu_HomeThemeLimitData_.fbs";
+include "Dict_2_System_String_Torappu_HomeBackgroundLimitData_.fbs";
+include "Dict_2_System_String_Torappu_HomeThemeLimitData_.fbs";
 include "Torappu_HomeMultiFormInfoData.fbs";
-include "dict_2_System_String_list_1_Torappu_HomeMultiFormTimeRuleData__.fbs";
+include "Dict_2_System_String_List_1_Torappu_HomeMultiFormTimeRuleData__.fbs";
 
 table Torappu_HomeBackgroundData {
 	defaultBackgroundId:string;
 	defaultThemeId:string;
 	homeBgDataList:[Torappu_HomeBackgroundSingleData];
 	themeList:[Torappu_HomeThemeDisplayData];
-	backgroundLimitData:[dict_2_System_String_Torappu_HomeBackgroundLimitData_];
-	themeLimitData:[dict_2_System_String_Torappu_HomeThemeLimitData_];
+	backgroundLimitData:[Dict_2_System_String_Torappu_HomeBackgroundLimitData_];
+	themeLimitData:[Dict_2_System_String_Torappu_HomeThemeLimitData_];
 	multiFormInfoData:[Torappu_HomeMultiFormInfoData];
-	timeRuleData:[dict_2_System_String_list_1_Torappu_HomeMultiFormTimeRuleData__];
+	timeRuleData:[Dict_2_System_String_List_1_Torappu_HomeMultiFormTimeRuleData__];
 	defaultBgMusicId:string;
-	themeStartTime:long;
+	themeStartTime:int64;
 }
 
 

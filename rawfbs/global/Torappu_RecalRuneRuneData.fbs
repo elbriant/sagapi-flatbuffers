@@ -2,8 +2,8 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_RecalRuneRuneData {
 	runeId:string;
-	score:int;
-	sortId:int;
+	score:int32;
+	sortId:int32;
 	essential:bool;
 	exclusiveGroupId:string;
 	runeIcon:string;

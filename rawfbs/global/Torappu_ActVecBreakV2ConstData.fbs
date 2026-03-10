@@ -13,7 +13,7 @@ table Torappu_ActVecBreakV2ConstData {
 	defenseRetreatSingleText:string;
 	defenseRetreatMultipleText:string;
 	defenseReplaceText:string;
-	defenseEquipBuffLimit:int;
+	defenseEquipBuffLimit:int32;
 	displayMedalId:string;
 	defenseAddBuffToast:string;
 	defenseRemoveBuffToast:string;

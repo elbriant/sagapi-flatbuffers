@@ -1,8 +1,8 @@
-include "dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_.fbs";
 
 table Torappu_RoguelikeRollNodeData {
 	zoneId:string;
-	groups:[dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_];
+	groups:[Dict_2_System_String_Torappu_RoguelikeRollNodeGroupData_];
 }
 
 

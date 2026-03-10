@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeGameChoiceType : int {
+enum Torappu_RoguelikeGameChoiceType : int32 {
 	NONE = 0,
 	LEAVE = 1,
 	NEXT = 2,

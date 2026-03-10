@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeEndingDetailText_Type : int {
+enum Torappu_RoguelikeEndingDetailText_Type : int32 {
 	SHOW_CHOICE = 0,
 	SHOW_RELIC = 1,
 	SHOW_CAPSULE = 2,

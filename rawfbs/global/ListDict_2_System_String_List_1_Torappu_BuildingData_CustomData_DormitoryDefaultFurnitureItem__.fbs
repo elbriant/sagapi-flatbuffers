@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem.fbs";
+
+table ListDict_2_System_String_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__ {
+	dict_key:string;
+	dict_value:[Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem];
+}
+
+
+root_type ListDict_2_System_String_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__;

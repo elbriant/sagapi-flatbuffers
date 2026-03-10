@@ -1,5 +1,5 @@
 
-enum Torappu_ActivityType : int {
+enum Torappu_ActivityType : int32 {
 	DEFAULT = 0,
 	MISSION_ONLY = 1,
 	CHECKIN_ONLY = 2,

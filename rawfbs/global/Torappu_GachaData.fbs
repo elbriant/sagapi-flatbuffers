@@ -4,16 +4,16 @@ include "Torappu_SpecialRecruitPool.fbs";
 include "Torappu_GachaTag.fbs";
 include "Torappu_RecruitPool.fbs";
 include "Torappu_PotentialMaterialConverterConfig.fbs";
-include "dict_2_System_Int32_Torappu_GachaData_RecruitRange_.fbs";
-include "dict_2_System_Int32_list_1_System_Int32__.fbs";
+include "Dict_2_System_Int32_Torappu_GachaData_RecruitRange_.fbs";
+include "Dict_2_System_Int32_List_1_System_Int32__.fbs";
 include "Torappu_GachaData_CarouselData.fbs";
 include "Torappu_GachaData_FreeLimitGachaData.fbs";
 include "Torappu_GachaData_LimitTenGachaTkt.fbs";
 include "Torappu_GachaData_LinkageTenGachaTkt.fbs";
 include "Torappu_GachaData_NormalGachaTkt.fbs";
-include "dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_.fbs";
-include "dict_2_System_String_System_String_.fbs";
-include "dict_2_System_Int32_System_Single_.fbs";
+include "Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_Int32_System_Single_.fbs";
 
 table Torappu_GachaData {
 	gachaPoolClient:[Torappu_GachaPoolClientData];
@@ -23,8 +23,8 @@ table Torappu_GachaData {
 	recruitPool:Torappu_RecruitPool;
 	potentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
 	classicPotentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
-	recruitRarityTable:[dict_2_System_Int32_Torappu_GachaData_RecruitRange_];
-	specialTagRarityTable:[dict_2_System_Int32_list_1_System_Int32__];
+	recruitRarityTable:[Dict_2_System_Int32_Torappu_GachaData_RecruitRange_];
+	specialTagRarityTable:[Dict_2_System_Int32_List_1_System_Int32__];
 	recruitDetail:string;
 	showGachaLogEntry:bool;
 	carousel:[Torappu_GachaData_CarouselData];
@@ -32,9 +32,9 @@ table Torappu_GachaData {
 	limitTenGachaItem:[Torappu_GachaData_LimitTenGachaTkt];
 	linkageTenGachaItem:[Torappu_GachaData_LinkageTenGachaTkt];
 	normalGachaItem:[Torappu_GachaData_NormalGachaTkt];
-	fesGachaPoolRelateItem:[dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_];
-	dicRecruit6StarHint:[dict_2_System_String_System_String_];
-	specialGachaPercentDict:[dict_2_System_Int32_System_Single_];
+	fesGachaPoolRelateItem:[Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_];
+	dicRecruit6StarHint:[Dict_2_System_String_System_String_];
+	specialGachaPercentDict:[Dict_2_System_Int32_System_Single_];
 }
 
 

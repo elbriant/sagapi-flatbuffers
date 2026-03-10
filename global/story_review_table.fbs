@@ -1,19 +1,19 @@
 
-enum Torappu_StoryReviewEntryType : int {
+enum Torappu_StoryReviewEntryType : int32 {
 	NONE = 0,
 	ACTIVITY = 1,
 	MINI_ACTIVITY = 2,
 	MAINLINE = 3
 }
 
-enum Torappu_StoryReviewType : int {
+enum Torappu_StoryReviewType : int32 {
 	NONE = 0,
 	ACTIVITY_STORY = 1,
 	MINI_STORY = 2,
 	MAIN_STORY = 3
 }
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -109,20 +109,20 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
 
 
-enum Torappu_StoryReviewUnlockType : int {
+enum Torappu_StoryReviewUnlockType : int32 {
 	STAGE_CLEAR = 0,
 	USE_ITEM = 1,
 	BY_START_TIME = 2,
 	NOTHING = 3
 }
 
-enum Torappu_PlayerStageState : int {
+enum Torappu_PlayerStageState : int32 {
 	UNLOCKED = 0,
 	PLAYED = 1,
 	PASS = 2,
@@ -141,21 +141,21 @@ table Torappu_StoryReviewInfoClientData {
 	storyReviewType:Torappu_StoryReviewType;
 	storyId:string;
 	storyGroup:string;
-	storySort:int;
+	storySort:int32;
 	storyDependence:string;
-	storyCanShow:int;
+	storyCanShow:int32;
 	storyCode:string;
 	storyName:string;
 	storyPic:string;
 	storyInfo:string;
-	storyCanEnter:int;
+	storyCanEnter:int32;
 	storyTxt:string;
 	avgTag:string;
 	unLockType:Torappu_StoryReviewUnlockType;
 	costItemType:Torappu_ItemType;
 	costItemId:string;
-	costItemCount:int;
-	stageCount:int;
+	costItemCount:int32;
+	stageCount:int32;
 	requiredStages:[Torappu_StoryData_Condition_StageCondition];
 }
 
@@ -166,16 +166,16 @@ table Torappu_StoryReviewGroupClientData {
 	name:string;
 	entryType:Torappu_StoryReviewEntryType;
 	actType:Torappu_StoryReviewType;
-	startTime:long;
-	endTime:long;
-	startShowTime:long;
-	endShowTime:long;
-	remakeStartTime:long;
-	remakeEndTime:long;
+	startTime:int64;
+	endTime:int64;
+	startShowTime:int64;
+	endShowTime:int64;
+	remakeStartTime:int64;
+	remakeEndTime:int64;
 	storyEntryPicId:string;
 	storyPicId:string;
 	storyMainColor:string;
-	customType:int;
+	customType:int32;
 	storyCompleteMedalId:string;
 	rewards:[Torappu_ItemBundle];
 	infoUnlockDatas:[Torappu_StoryReviewInfoClientData];

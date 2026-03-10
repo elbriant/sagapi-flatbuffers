@@ -2,7 +2,7 @@ include "Torappu_RetroTrailRewardItem.fbs";
 
 table Torappu_RetroTrailData {
 	retroId:string;
-	trailStartTime:long;
+	trailStartTime:int64;
 	trailRewardList:[Torappu_RetroTrailRewardItem];
 	stageList:[string];
 	relatedChar:string;

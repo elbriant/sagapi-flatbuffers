@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_.fbs";
 
 table Torappu_RoguelikeActivityTable {
-	seedModeDict:[dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_];
+	seedModeDict:[Dict_2_System_String_Torappu_RoguelikeActivitySeedModeData_];
 }
 
 

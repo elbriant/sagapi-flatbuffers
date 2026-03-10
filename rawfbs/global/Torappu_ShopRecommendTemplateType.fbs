@@ -1,5 +1,5 @@
 
-enum Torappu_ShopRecommendTemplateType : int {
+enum Torappu_ShopRecommendTemplateType : int32 {
 	DEFAULT = 0,
 	NORSKIN = 1,
 	RETURNSKIN = 2,

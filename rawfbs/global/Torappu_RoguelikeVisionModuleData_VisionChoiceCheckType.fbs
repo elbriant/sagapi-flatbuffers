@@ -1,5 +1,5 @@
 
-enum Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType : int {
+enum Torappu_RoguelikeVisionModuleData_VisionChoiceCheckType : int32 {
 	LOWER = 0,
 	UPPER = 1
 }

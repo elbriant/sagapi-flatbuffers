@@ -1,9 +1,9 @@
-include "dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_.fbs";
+include "Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_.fbs";
 
 table Torappu_Act1VHalfIdleStageProductionData {
 	stageId:string;
 	fixedProduction:[string];
-	productionData:[dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_];
+	productionData:[Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_];
 }
 
 

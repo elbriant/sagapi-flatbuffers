@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveRelicItemData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveRelicItemData_.fbs";
 
 table Torappu_ActArchiveRelicData {
-	relic:[dict_2_System_String_Torappu_ActArchiveRelicItemData_];
+	relic:[Dict_2_System_String_Torappu_ActArchiveRelicItemData_];
 }
 
 

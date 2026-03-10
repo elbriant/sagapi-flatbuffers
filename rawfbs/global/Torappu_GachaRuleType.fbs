@@ -1,5 +1,5 @@
 
-enum Torappu_GachaRuleType : int {
+enum Torappu_GachaRuleType : int32 {
 	NORMAL = 0,
 	LIMITED = 1,
 	LINKAGE = 2,

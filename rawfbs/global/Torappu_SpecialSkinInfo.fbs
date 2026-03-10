@@ -1,8 +1,8 @@
 
 table Torappu_SpecialSkinInfo {
 	skinId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 }
 
 

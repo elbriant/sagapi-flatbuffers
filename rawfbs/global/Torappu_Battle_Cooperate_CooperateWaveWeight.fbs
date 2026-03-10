@@ -1,7 +1,7 @@
 
 table Torappu_Battle_Cooperate_CooperateWaveWeight {
-	wave:int;
-	weight:int;
+	wave:int32;
+	weight:int32;
 }
 
 

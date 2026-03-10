@@ -1,5 +1,5 @@
 
-table dict_2_System_String_list_1_System_String__ {
+table Dict_2_System_String_List_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
@@ -7,10 +7,10 @@ table dict_2_System_String_list_1_System_String__ {
 
 
 table Torappu_Battle_LevelScriptDataMap {
-	levelScriptDataCharacterDict:[dict_2_System_String_list_1_System_String__];
-	levelScriptDataEnemyDict:[dict_2_System_String_list_1_System_String__];
-	levelScriptDataLevelDict:[dict_2_System_String_list_1_System_String__];
-	levelScriptDataGameModeDict:[dict_2_System_String_list_1_System_String__];
+	levelScriptDataCharacterDict:[Dict_2_System_String_List_1_System_String__];
+	levelScriptDataEnemyDict:[Dict_2_System_String_List_1_System_String__];
+	levelScriptDataLevelDict:[Dict_2_System_String_List_1_System_String__];
+	levelScriptDataGameModeDict:[Dict_2_System_String_List_1_System_String__];
 	levelScriptDataMiscList:[string];
 }
 

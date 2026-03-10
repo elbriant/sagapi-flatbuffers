@@ -1,5 +1,5 @@
 
-enum Torappu_SandboxV2FoodMatType : int {
+enum Torappu_SandboxV2FoodMatType : int32 {
 	MAIN = 0,
 	SUB = 1
 }

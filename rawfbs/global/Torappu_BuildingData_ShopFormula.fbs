@@ -6,7 +6,7 @@ table Torappu_BuildingData_ShopFormula {
 	formulaId:string;
 	itemId:string;
 	formulaType:Torappu_BuildingData_FormulaItemType;
-	costPoint:long;
+	costPoint:int64;
 	gainItem:Torappu_ItemBundle;
 	requireRooms:[Torappu_BuildingData_ShopFormula_UnlockRoom];
 }

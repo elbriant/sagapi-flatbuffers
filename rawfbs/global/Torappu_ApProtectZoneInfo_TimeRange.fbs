@@ -1,7 +1,7 @@
 
 table Torappu_ApProtectZoneInfo_TimeRange {
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 

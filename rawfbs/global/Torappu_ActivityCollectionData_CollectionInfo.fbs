@@ -1,15 +1,15 @@
 include "Torappu_ItemType.fbs";
 
 table Torappu_ActivityCollectionData_CollectionInfo {
-	id:int;
+	id:int32;
 	itemType:Torappu_ItemType;
 	itemId:string;
-	itemCnt:int;
+	itemCnt:int32;
 	pointId:string;
-	pointCnt:int;
+	pointCnt:int32;
 	isBonus:bool;
 	pngName:string;
-	pngSort:int;
+	pngSort:int32;
 	isShow:bool;
 	showInList:bool;
 	showIconBG:bool;

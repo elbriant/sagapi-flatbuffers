@@ -1,7 +1,7 @@
 
 table Torappu_ShopRecommendTemplateReturnSkinParam {
-	showStartTs:long;
-	showEndTs:long;
+	showStartTs:int64;
+	showEndTs:int64;
 }
 
 

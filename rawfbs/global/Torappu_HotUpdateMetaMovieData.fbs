@@ -2,8 +2,8 @@
 table Torappu_HotUpdateMetaMovieData {
 	videoId:string;
 	videoPath:string;
-	endTime:long;
-	sortId:int;
+	endTime:int64;
+	sortId:int32;
 }
 
 

@@ -2,8 +2,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_ReturnV2DailySupplyData {
 	groupId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 	rewardList:[Torappu_ItemBundle];
 }
 

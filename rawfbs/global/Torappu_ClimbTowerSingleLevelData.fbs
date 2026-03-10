@@ -5,7 +5,7 @@ table Torappu_ClimbTowerSingleLevelData {
 	id:string;
 	levelId:string;
 	towerId:string;
-	layerNum:int;
+	layerNum:int32;
 	code:string;
 	name:string;
 	desc:string;

@@ -4,8 +4,8 @@ table Torappu_MonthlySignInGroupData {
 	groupId:string;
 	title:string;
 	description:string;
-	signStartTime:long;
-	signEndTime:long;
+	signStartTime:int64;
+	signEndTime:int64;
 	items:[Torappu_MonthlySignInData];
 }
 

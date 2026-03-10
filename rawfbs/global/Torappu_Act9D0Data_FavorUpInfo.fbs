@@ -1,8 +1,8 @@
 
 table Torappu_Act9D0Data_FavorUpInfo {
 	charId:string;
-	displayStartTime:long;
-	displayEndTime:long;
+	displayStartTime:int64;
+	displayEndTime:int64;
 }
 
 

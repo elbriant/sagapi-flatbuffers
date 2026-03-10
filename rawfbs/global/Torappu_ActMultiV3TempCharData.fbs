@@ -2,12 +2,12 @@ include "Torappu_EvolvePhase.fbs";
 
 table Torappu_ActMultiV3TempCharData {
 	charId:string;
-	level:int;
+	level:int32;
 	evolvePhase:Torappu_EvolvePhase;
-	mainSkillLevel:int;
-	specializeLevel:int;
-	potentialRank:int;
-	favorPoint:int;
+	mainSkillLevel:int32;
+	specializeLevel:int32;
+	potentialRank:int32;
+	favorPoint:int32;
 	skinId:string;
 }
 

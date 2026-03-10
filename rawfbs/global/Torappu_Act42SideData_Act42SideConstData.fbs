@@ -1,8 +1,8 @@
 
 table Torappu_Act42SideData_Act42SideConstData {
 	coffeeName:string;
-	dailyCoffee:int;
-	coffeeLimit:int;
+	dailyCoffee:int32;
+	coffeeLimit:int32;
 	coffeeContent:string;
 	minGunTaskDisplay:string;
 	unlockStageId:string;

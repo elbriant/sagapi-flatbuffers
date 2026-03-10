@@ -1,6 +1,6 @@
 
 table Torappu_RoguelikeFragmentLevelRelatedData {
-	weightUp:int;
+	weightUp:int32;
 }
 
 

@@ -1,0 +1,8 @@
+
+table ListDict_2_System_String_System_Int32_ {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+root_type ListDict_2_System_String_System_Int32_;

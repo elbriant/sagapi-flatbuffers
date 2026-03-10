@@ -2,8 +2,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act6FunAchievementRewardData {
 	reward:Torappu_ItemBundle;
-	sortId:int;
-	achievementCount:int;
+	sortId:int32;
+	achievementCount:int32;
 }
 
 

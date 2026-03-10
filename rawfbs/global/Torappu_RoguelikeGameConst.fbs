@@ -1,6 +1,6 @@
 include "Torappu_RoguelikeBankRewardCountType.fbs";
 include "Torappu_RoguelikeEventType.fbs";
-include "dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_.fbs";
+include "Dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_.fbs";
 
 table Torappu_RoguelikeGameConst {
 	initSceneName:string;
@@ -11,10 +11,10 @@ table Torappu_RoguelikeGameConst {
 	squadCapacityItemId:string;
 	expItemId:string;
 	initialBandShowGradeFlag:bool;
-	bankMaxGold:int;
+	bankMaxGold:int32;
 	bankCostId:string;
-	bankDrawCount:int;
-	bankDrawLimit:int;
+	bankDrawCount:int32;
+	bankDrawLimit:int32;
 	bankRewardCountType:Torappu_RoguelikeBankRewardCountType;
 	spZoneShopBgmSignal:string;
 	mimicEnemyIds:[string];
@@ -27,24 +27,24 @@ table Torappu_RoguelikeGameConst {
 	shieldItemId:string;
 	keyItemId:string;
 	divinationKitItemId:string;
-	chestKeyCnt:int;
+	chestKeyCnt:int32;
 	chestKeyItemId:string;
 	keyColorId:string;
 	onceNodeTypeList:[Torappu_RoguelikeEventType];
 	vertNodeCostDialogUseItemIconType:bool;
-	gpScoreRatio:int;
+	gpScoreRatio:int32;
 	overflowUsageSquadBuff:string;
 	specialTrapId:string;
 	trapRewardRelicId:string;
 	unlockRouteItemId:string;
-	unlockRouteItemCount:int;
+	unlockRouteItemCount:int32;
 	hideBattleNodeName:string;
 	hideBattleNodeDescription:string;
 	hideNonBattleNodeName:string;
 	hideNonBattleNodeDescription:string;
 	charSelectExpeditionConflictToast:string;
 	charSelectNoUpgradeConflictToast:string;
-	itemDropTagDict:[dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_];
+	itemDropTagDict:[Dict_2_Torappu_RoguelikeRewardExDropTagSrcType_System_String_];
 	shopRefreshCostId:string;
 	expeditionLeaveToastFormat:string;
 	expeditionReturnDescCureUpgrade:string;
@@ -66,7 +66,7 @@ table Torappu_RoguelikeGameConst {
 	charSelectCandleConflictToast:string;
 	charSelectGuidedConflictToast:string;
 	charSelectNonGuidedConflictToast:string;
-	gainBuffDiffGrade:int;
+	gainBuffDiffGrade:int32;
 	dsPredictTips:string;
 	dsBuffActiveTips:string;
 	totemDesc:string;
@@ -89,8 +89,8 @@ table Torappu_RoguelikeGameConst {
 	gotCharsCandleBuffToast:string;
 	stashedRecruitNodeDescription:string;
 	stashedRecruitEmptyNodeDescription:string;
-	recruitStashMaxNum:int;
-	recruitStashMinNum:int;
+	recruitStashMaxNum:int32;
+	recruitStashMinNum:int32;
 	hasTopicCharSelectMenuButton:bool;
 }
 

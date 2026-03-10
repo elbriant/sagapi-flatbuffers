@@ -20,10 +20,10 @@ table Torappu_BuffData {
 	disableOverride:bool;
 	overrideKey:string;
 	overrideType:Torappu_BuffData_OverrideType;
-	maxStackCnt:int;
+	maxStackCnt:int32;
 	refreshRemainingTimeWhenStackMax:bool;
 	clearAllStackCntWhenTimeUp:bool;
-	maxValidStackCnt:int;
+	maxValidStackCnt:int32;
 	independentCharacterSource:bool;
 	overrideEffectKey:string;
 	overrideOnEventPriority:bool;
@@ -34,11 +34,11 @@ table Torappu_BuffData {
 	durationKey:string;
 	lifeTime:float;
 	triggerLifeType:Torappu_LifeType;
-	triggerCnt:int;
+	triggerCnt:int32;
 	triggerInterval:float;
 	waitFirstTriggerInterval:bool;
 	firstTriggerInterval:float;
-	priority:int;
+	priority:int32;
 	priorityBBKeys:[string];
 	stripBlackboardParamsWithBuffKey:bool;
 	blackboard:[Torappu_Blackboard_DataPair];

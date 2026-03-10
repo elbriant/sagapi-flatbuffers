@@ -1,9 +1,9 @@
 include "Torappu_RarityRank.fbs";
-include "dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_.fbs";
+include "Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_.fbs";
 
 table Torappu_Act1VHalfIdleCharEvolveData {
 	rarity:Torappu_RarityRank;
-	professionEvolveData:[dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_];
+	professionEvolveData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_];
 }
 
 

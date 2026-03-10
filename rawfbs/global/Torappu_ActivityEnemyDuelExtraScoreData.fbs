@@ -1,8 +1,8 @@
 
 table Torappu_ActivityEnemyDuelExtraScoreData {
-	rankMin:int;
-	rankMax:int;
-	tokenNum:int;
+	rankMin:int32;
+	rankMax:int32;
+	tokenNum:int32;
 }
 
 

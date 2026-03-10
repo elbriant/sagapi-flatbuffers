@@ -1,7 +1,7 @@
 
 table Torappu_GachaData_RecruitRange {
-	rarityStart:int;
-	rarityEnd:int;
+	rarityStart:int32;
+	rarityEnd:int32;
 }
 
 

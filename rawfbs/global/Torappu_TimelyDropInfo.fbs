@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
+include "Dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
 
 table Torappu_TimelyDropInfo {
-	dropInfo:[dict_2_System_String_Torappu_StageData_StageDropInfo_];
+	dropInfo:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
 }
 
 

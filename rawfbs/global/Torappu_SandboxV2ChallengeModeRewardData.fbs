@@ -2,8 +2,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_SandboxV2ChallengeModeRewardData {
 	rewardId:string;
-	sortId:int;
-	rewardDay:int;
+	sortId:int32;
+	rewardDay:int32;
 	rewardItemList:[Torappu_ItemBundle];
 }
 

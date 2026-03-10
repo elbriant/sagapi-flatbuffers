@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_RoomCategory : int {
+enum Torappu_BuildingData_RoomCategory : int32 {
 	NONE = 0,
 	FUNCTION = 1,
 	OUTPUT = 2,

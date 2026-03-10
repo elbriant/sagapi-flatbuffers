@@ -1,7 +1,7 @@
 
 table Torappu_ActArchiveWrathItemData {
 	wrathId:string;
-	sortId:int;
+	sortId:int32;
 	picTitleId:string;
 	picSmallInactiveId:string;
 	picSmallActiveId:string;

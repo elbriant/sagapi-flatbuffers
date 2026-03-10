@@ -1,5 +1,5 @@
 
-enum Torappu_ItemRarity : int {
+enum Torappu_ItemRarity : int32 {
 	TIER_1 = 0,
 	TIER_2 = 1,
 	TIER_3 = 2,

@@ -1,7 +1,7 @@
 
 table Torappu_RoguelikeChaosData {
 	chaosId:string;
-	level:int;
+	level:int32;
 	nextChaosId:string;
 	prevChaosId:string;
 	iconId:string;
@@ -9,7 +9,7 @@ table Torappu_RoguelikeChaosData {
 	functionDesc:string;
 	desc:string;
 	sound:string;
-	sortId:int;
+	sortId:int32;
 }
 
 

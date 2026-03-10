@@ -1,9 +1,9 @@
 
 table Torappu_RoguelikeVisionData {
-	sightNum:int;
-	level:int;
+	sightNum:int32;
+	level:int32;
 	canForesee:bool;
-	dividedDis:int;
+	dividedDis:int32;
 	status:string;
 	clr:string;
 	desc1:string;

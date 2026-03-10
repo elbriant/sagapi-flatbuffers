@@ -7,21 +7,21 @@ table Torappu_StoryReviewInfoClientData {
 	storyReviewType:Torappu_StoryReviewType;
 	storyId:string;
 	storyGroup:string;
-	storySort:int;
+	storySort:int32;
 	storyDependence:string;
-	storyCanShow:int;
+	storyCanShow:int32;
 	storyCode:string;
 	storyName:string;
 	storyPic:string;
 	storyInfo:string;
-	storyCanEnter:int;
+	storyCanEnter:int32;
 	storyTxt:string;
 	avgTag:string;
 	unLockType:Torappu_StoryReviewUnlockType;
 	costItemType:Torappu_ItemType;
 	costItemId:string;
-	costItemCount:int;
-	stageCount:int;
+	costItemCount:int32;
+	stageCount:int32;
 	requiredStages:[Torappu_StoryData_Condition_StageCondition];
 }
 

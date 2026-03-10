@@ -4,9 +4,9 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData {
 	itemId:string;
 	goldenItemId:string;
 	hideInChessShop:bool;
-	itemLevel:int;
-	iconLevel:int;
-	shopLevelSortId:int;
+	itemLevel:int32;
+	iconLevel:int32;
+	shopLevelSortId:int32;
 	itemType:Torappu_Act1VAutoChessTrapChessType;
 	trapId:string;
 }

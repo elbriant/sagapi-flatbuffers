@@ -1,5 +1,5 @@
 
-enum Torappu_EvolvePhase : int {
+enum Torappu_EvolvePhase : int32 {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
 	PHASE_2 = 2,
@@ -7,14 +7,14 @@ enum Torappu_EvolvePhase : int {
 	E_NUM = 4
 }
 
-table dict_2_System_String_System_Int32_ {
+table Dict_2_System_String_System_Int32_ {
 	dict_key:string;
-	dict_value:int;
+	dict_value:int32;
 }
 
 
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -110,20 +110,20 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
 
 
-table dict_2_System_Int32_list_1_Torappu_ItemBundle__ {
-	dict_key:int;
+table Dict_2_System_Int32_List_1_Torappu_ItemBundle__ {
+	dict_key:int32;
 	dict_value:[Torappu_ItemBundle];
 }
 
 
 
-enum Torappu_UniEquipType : int {
+enum Torappu_UniEquipType : int32 {
 	INITIAL = 0,
 	ADVANCED = 1
 }
@@ -141,15 +141,15 @@ table Torappu_UniEquipData {
 	unlockEvolvePhase:Torappu_EvolvePhase;
 	charId:string;
 	tmplId:string;
-	showLevel:int;
-	unlockLevel:int;
+	showLevel:int32;
+	unlockLevel:int32;
 	missionList:[string];
-	unlockFavors:[dict_2_System_String_System_Int32_];
-	itemCost:[dict_2_System_Int32_list_1_Torappu_ItemBundle__];
+	unlockFavors:[Dict_2_System_String_System_Int32_];
+	itemCost:[Dict_2_System_Int32_List_1_Torappu_ItemBundle__];
 	type:Torappu_UniEquipType;
-	uniEquipGetTime:long;
-	uniEquipShowEnd:long;
-	charEquipOrder:int;
+	uniEquipGetTime:int64;
+	uniEquipShowEnd:int64;
+	charEquipOrder:int32;
 	hasUnlockMission:bool;
 	isSpecialEquip:bool;
 	specialEquipDesc:string;
@@ -159,7 +159,7 @@ table Torappu_UniEquipData {
 
 
 
-table dict_2_System_String_Torappu_UniEquipData_ {
+table Dict_2_System_String_Torappu_UniEquipData_ {
 	dict_key:string;
 	dict_value:Torappu_UniEquipData;
 }
@@ -171,14 +171,14 @@ table Torappu_UniEquipMissionData {
 	desc:string;
 	paramList:[string];
 	uniEquipMissionId:string;
-	uniEquipMissionSort:int;
+	uniEquipMissionSort:int32;
 	uniEquipId:string;
 	jumpStageId:string;
 }
 
 
 
-table dict_2_System_String_Torappu_UniEquipMissionData_ {
+table Dict_2_System_String_Torappu_UniEquipMissionData_ {
 	dict_key:string;
 	dict_value:Torappu_UniEquipMissionData;
 }
@@ -188,19 +188,19 @@ table dict_2_System_String_Torappu_UniEquipMissionData_ {
 table Torappu_SubProfessionData {
 	subProfessionId:string;
 	subProfessionName:string;
-	subProfessionCatagory:int;
+	subProfessionCatagory:int32;
 }
 
 
 
-table dict_2_System_String_Torappu_SubProfessionData_ {
+table Dict_2_System_String_Torappu_SubProfessionData_ {
 	dict_key:string;
 	dict_value:Torappu_SubProfessionData;
 }
 
 
 
-table dict_2_System_String_list_1_System_String__ {
+table Dict_2_System_String_List_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
@@ -209,7 +209,7 @@ table dict_2_System_String_list_1_System_String__ {
 
 table Torappu_UniEquipTypeInfo {
 	uniEquipTypeName:string;
-	sortId:int;
+	sortId:int32;
 	isSpecial:bool;
 	isInitial:bool;
 }
@@ -220,24 +220,24 @@ table Torappu_UniEquipTrack {
 	charId:string;
 	equipId:string;
 	type:Torappu_UniEquipType;
-	archiveShowTimeEnd:long;
+	archiveShowTimeEnd:int64;
 }
 
 
 
 table Torappu_UniEquipTimeInfo {
-	timeStamp:long;
+	timeStamp:int64;
 	trackList:[Torappu_UniEquipTrack];
 }
 
 
 
 table Torappu_UniEquipTable {
-	equipDict:[dict_2_System_String_Torappu_UniEquipData_];
-	missionList:[dict_2_System_String_Torappu_UniEquipMissionData_];
-	subProfDict:[dict_2_System_String_Torappu_SubProfessionData_];
-	subProfToProfDict:[dict_2_System_String_System_Int32_];
-	charEquip:[dict_2_System_String_list_1_System_String__];
+	equipDict:[Dict_2_System_String_Torappu_UniEquipData_];
+	missionList:[Dict_2_System_String_Torappu_UniEquipMissionData_];
+	subProfDict:[Dict_2_System_String_Torappu_SubProfessionData_];
+	subProfToProfDict:[Dict_2_System_String_System_Int32_];
+	charEquip:[Dict_2_System_String_List_1_System_String__];
 	equipTypeInfos:[Torappu_UniEquipTypeInfo];
 	equipTrackDict:[Torappu_UniEquipTimeInfo];
 }

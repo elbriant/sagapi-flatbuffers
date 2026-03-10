@@ -4,7 +4,7 @@ include "Torappu_RoguelikeTopicDifficultyWarningType.fbs";
 
 table Torappu_RoguelikeTopicDifficulty {
 	modeDifficulty:Torappu_RoguelikeTopicMode;
-	grade:int;
+	grade:int32;
 	name:string;
 	nameImage:string;
 	subName:string;
@@ -18,11 +18,11 @@ table Torappu_RoguelikeTopicDifficulty {
 	failTitle:string;
 	failImageId:string;
 	failForceDesc:string;
-	sortId:int;
-	equivalentGrade:int;
+	sortId:int32;
+	equivalentGrade:int32;
 	color:string;
-	bpValue:int;
-	bossValue:int;
+	bpValue:int32;
+	bossValue:int32;
 	addDesc:string;
 	warningType:Torappu_RoguelikeTopicDifficultyWarningType;
 	unlockText:string;

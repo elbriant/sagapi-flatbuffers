@@ -1,7 +1,7 @@
 
 table Torappu_Act5FunSettleRatingData {
-	minRating:int;
-	maxRating:int;
+	minRating:int32;
+	maxRating:int32;
 	ratingDesc:string;
 }
 

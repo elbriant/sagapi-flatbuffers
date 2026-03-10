@@ -5,7 +5,7 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessSkillTriggerData {
 	profession:Torappu_ProfessionCategory;
 	subProfessionId:string;
 	charId:string;
-	skillIndex:int;
+	skillIndex:int32;
 	skillTriggerType:Torappu_AutoChessSkillTriggerType;
 }
 

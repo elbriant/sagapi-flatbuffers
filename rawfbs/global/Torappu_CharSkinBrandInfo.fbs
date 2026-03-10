@@ -8,8 +8,8 @@ table Torappu_CharSkinBrandInfo {
 	brandName:string;
 	brandCapitalName:string;
 	description:string;
-	publishTime:long;
-	sortId:int;
+	publishTime:int64;
+	sortId:int32;
 }
 
 

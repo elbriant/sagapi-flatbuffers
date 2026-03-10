@@ -1,0 +1,9 @@
+include "Dict_2_System_String_System_String_.fbs";
+
+table Dict_2_System_Int32_Dict_2_System_String_System_String__ {
+	dict_key:int32;
+	dict_value:[Dict_2_System_String_System_String_];
+}
+
+
+root_type Dict_2_System_Int32_Dict_2_System_String_System_String__;

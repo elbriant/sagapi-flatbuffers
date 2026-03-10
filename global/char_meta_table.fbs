@@ -1,17 +1,17 @@
 
-table dict_2_System_String_list_1_System_String__ {
+table Dict_2_System_String_List_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
 
 
 
-enum Torappu_SpCharMissionCondType : int {
+enum Torappu_SpCharMissionCondType : int32 {
 	NONE = 0,
 	EVOLVE_PHASE = 1
 }
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -107,7 +107,7 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
@@ -116,7 +116,7 @@ table Torappu_ItemBundle {
 table Torappu_SpCharMissionData {
 	charId:string;
 	missionId:string;
-	sortId:int;
+	sortId:int32;
 	condType:Torappu_SpCharMissionCondType;
 	param:[string];
 	rewards:[Torappu_ItemBundle];
@@ -124,35 +124,35 @@ table Torappu_SpCharMissionData {
 
 
 
-table dict_2_System_String_Torappu_SpCharMissionData_ {
+table Dict_2_System_String_Torappu_SpCharMissionData_ {
 	dict_key:string;
 	dict_value:Torappu_SpCharMissionData;
 }
 
 
 
-table dict_2_System_String_dict_2_System_String_Torappu_SpCharMissionData__ {
+table Dict_2_System_String_Dict_2_System_String_Torappu_SpCharMissionData__ {
 	dict_key:string;
-	dict_value:[dict_2_System_String_Torappu_SpCharMissionData_];
+	dict_value:[Dict_2_System_String_Torappu_SpCharMissionData_];
 }
 
 
 
-table dict_2_System_String_System_Int64_ {
+table Dict_2_System_String_System_Int64_ {
 	dict_key:string;
-	dict_value:long;
+	dict_value:int64;
 }
 
 
 
-enum Torappu_CharMasterType : int {
+enum Torappu_CharMasterType : int32 {
 	NONE = 0,
 	SYSTEM = 1,
 	BATTLE = 2
 }
 
 table Torappu_CharMasterLevelData {
-	level:int;
+	level:int32;
 	name:string;
 	description:string;
 	conditionDesc:string;
@@ -163,14 +163,14 @@ table Torappu_CharMasterLevelData {
 table Torappu_CharMasterBasicData {
 	charId:string;
 	masterId:string;
-	sortId:int;
+	sortId:int32;
 	masterType:Torappu_CharMasterType;
 	levelList:[Torappu_CharMasterLevelData];
 }
 
 
 
-table dict_2_System_String_Torappu_CharMasterBasicData_ {
+table Dict_2_System_String_Torappu_CharMasterBasicData_ {
 	dict_key:string;
 	dict_value:Torappu_CharMasterBasicData;
 }
@@ -178,11 +178,11 @@ table dict_2_System_String_Torappu_CharMasterBasicData_ {
 
 
 table Torappu_CharMetaTable {
-	spCharGroups:[dict_2_System_String_list_1_System_String__];
-	spCharMissions:[dict_2_System_String_dict_2_System_String_Torappu_SpCharMissionData__];
-	spCharVoucherSkinTime:[dict_2_System_String_System_Int64_];
-	charIdMasterListMap:[dict_2_System_String_list_1_System_String__];
-	charMasterDataMap:[dict_2_System_String_Torappu_CharMasterBasicData_];
+	spCharGroups:[Dict_2_System_String_List_1_System_String__];
+	spCharMissions:[Dict_2_System_String_Dict_2_System_String_Torappu_SpCharMissionData__];
+	spCharVoucherSkinTime:[Dict_2_System_String_System_Int64_];
+	charIdMasterListMap:[Dict_2_System_String_List_1_System_String__];
+	charMasterDataMap:[Dict_2_System_String_Torappu_CharMasterBasicData_];
 }
 
 

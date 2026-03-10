@@ -1,0 +1,9 @@
+include "Torappu_WeeklyForceOpenTable.fbs";
+
+table ListDict_2_System_String_Torappu_WeeklyForceOpenTable_ {
+	dict_key:string;
+	dict_value:Torappu_WeeklyForceOpenTable;
+}
+
+
+root_type ListDict_2_System_String_Torappu_WeeklyForceOpenTable_;

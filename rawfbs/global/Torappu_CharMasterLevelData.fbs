@@ -1,6 +1,6 @@
 
 table Torappu_CharMasterLevelData {
-	level:int;
+	level:int32;
 	name:string;
 	description:string;
 	conditionDesc:string;

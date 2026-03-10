@@ -1,7 +1,7 @@
 
 table Torappu_GridPosition {
-	row:int;
-	col:int;
+	row:int32;
+	col:int32;
 }
 
 

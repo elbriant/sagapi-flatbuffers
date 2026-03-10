@@ -1,10 +1,10 @@
 
 table Torappu_RoguelikeTopicMilestoneUpdateData {
-	updateTime:long;
-	endTime:long;
-	maxBpLevel:int;
-	maxBpCount:int;
-	maxDisplayBpCount:int;
+	updateTime:int64;
+	endTime:int64;
+	maxBpLevel:int32;
+	maxBpCount:int32;
+	maxDisplayBpCount:int32;
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_Act4funStageAttributeType : int {
+enum Torappu_Act4funStageAttributeType : int32 {
 	POS = 0,
 	NEG = 1
 }

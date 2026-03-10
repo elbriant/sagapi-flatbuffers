@@ -7,7 +7,7 @@ table Torappu_ActivityBossRushData_BossRushTeamData {
 	teamBuffName:string;
 	teamBuffDes:string;
 	teamBuffId:string;
-	maxCharNum:int;
+	maxCharNum:int32;
 	runeData:Torappu_RuneTable_PackedRuneData;
 }
 

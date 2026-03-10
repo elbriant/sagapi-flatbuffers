@@ -2,8 +2,8 @@
 table Torappu_CrisisV2SeasonInfo {
 	seasonId:string;
 	name:string;
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 	medalGroupId:string;
 	medalId:string;
 	themeColor1:string;
@@ -16,14 +16,14 @@ table Torappu_CrisisV2SeasonInfo {
 
 
 
-table dict_2_System_String_Torappu_CrisisV2SeasonInfo_ {
+table Dict_2_System_String_Torappu_CrisisV2SeasonInfo_ {
 	dict_key:string;
 	dict_value:Torappu_CrisisV2SeasonInfo;
 }
 
 
 
-enum Torappu_CrisisV2AppraiseType : int {
+enum Torappu_CrisisV2AppraiseType : int32 {
 	RANK_D = 0,
 	RANK_C = 1,
 	RANK_B = 2,
@@ -39,29 +39,29 @@ table Torappu_CrisisV2AppraiseWrap {
 
 
 
-table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
-	dict_key:int;
+table ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
+	dict_key:int32;
 	dict_value:Torappu_CrisisV2AppraiseWrap;
 }
 
 
 
 table Torappu_CrisisV2ConstData {
-	sysStartTime:long;
-	blackScoreThreshold:int;
-	redScoreThreshold:int;
-	detailBkgRedThreshold:int;
-	voiceGrade:int;
-	seasonButtonUnlockInfo:long;
+	sysStartTime:int64;
+	blackScoreThreshold:int32;
+	redScoreThreshold:int32;
+	detailBkgRedThreshold:int32;
+	voiceGrade:int32;
+	seasonButtonUnlockInfo:int64;
 	shopCoinId:string;
-	hardBgmSwitchScore:int;
+	hardBgmSwitchScore:int32;
 	stageId:string;
 	hideTodoWhenStageFinish:bool;
 }
 
 
 
-enum Torappu_ProfessionCategory : int {
+enum Torappu_ProfessionCategory : int32 {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -75,21 +75,21 @@ enum Torappu_ProfessionCategory : int {
 	PIONEER = 512
 }
 
-enum Torappu_BuildableType : int {
+enum Torappu_BuildableType : int32 {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_PlayerSideMask : ubyte {
+enum Torappu_PlayerSideMask : uint8 {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,
 	NONE = 255
 }
 
-enum Torappu_Battle_SideType : int {
+enum Torappu_Battle_SideType : int32 {
 	NONE = 0,
 	ALLY = 1,
 	ENEMY = 2,
@@ -98,7 +98,7 @@ enum Torappu_Battle_SideType : int {
 	ALL = 7
 }
 
-enum Torappu_TileData_HeightTypeMask : int {
+enum Torappu_TileData_HeightTypeMask : int32 {
 	NONE = 0,
 	LOWLAND = 1,
 	HIGHLAND = 2,
@@ -127,10 +127,7 @@ table Torappu_RuneData_Selector {
 
 
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
+table Torappu_Blackboard {
 }
 
 
@@ -138,19 +135,19 @@ table Torappu_Blackboard_DataPair {
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
-	blackboard:[Torappu_Blackboard_DataPair];
+	blackboard:Torappu_Blackboard;
 }
 
 
 
-table dict_2_System_String_list_1_Torappu_RuneData__ {
+table Dict_2_System_String_List_1_Torappu_RuneData__ {
 	dict_key:string;
 	dict_value:[Torappu_RuneData];
 }
 
 
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -246,7 +243,7 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
@@ -264,8 +261,8 @@ table Torappu_RuneTable_PackedRuneData {
 
 table Torappu_RecalRuneRuneData {
 	runeId:string;
-	score:int;
-	sortId:int;
+	score:int32;
+	sortId:int32;
 	essential:bool;
 	exclusiveGroupId:string;
 	runeIcon:string;
@@ -274,7 +271,7 @@ table Torappu_RecalRuneRuneData {
 
 
 
-table dict_2_System_String_Torappu_RecalRuneRuneData_ {
+table Dict_2_System_String_Torappu_RecalRuneRuneData_ {
 	dict_key:string;
 	dict_value:Torappu_RecalRuneRuneData;
 }
@@ -286,9 +283,9 @@ table Torappu_RecalRuneStageData {
 	levelId:string;
 	juniorMedalId:string;
 	seniorMedalId:string;
-	juniorMedalScore:int;
-	seniorMedalScore:int;
-	runes:[dict_2_System_String_Torappu_RecalRuneRuneData_];
+	juniorMedalScore:int32;
+	seniorMedalScore:int32;
+	runes:[Dict_2_System_String_Torappu_RecalRuneRuneData_];
 	sourceName:string;
 	sourceType:string;
 	useName:bool;
@@ -303,7 +300,7 @@ table Torappu_RecalRuneStageData {
 
 
 
-table dict_2_System_String_Torappu_RecalRuneStageData_ {
+table Dict_2_System_String_Torappu_RecalRuneStageData_ {
 	dict_key:string;
 	dict_value:Torappu_RecalRuneStageData;
 }
@@ -312,20 +309,20 @@ table dict_2_System_String_Torappu_RecalRuneStageData_ {
 
 table Torappu_RecalRuneSeasonData {
 	seasonId:string;
-	sortId:int;
-	startTs:long;
+	sortId:int32;
+	startTs:int64;
 	seasonCode:string;
 	juniorReward:Torappu_ItemBundle;
 	seniorReward:Torappu_ItemBundle;
 	seniorRewardHint:string;
 	mainMedalId:string;
 	picId:string;
-	stages:[dict_2_System_String_Torappu_RecalRuneStageData_];
+	stages:[Dict_2_System_String_Torappu_RecalRuneStageData_];
 }
 
 
 
-table dict_2_System_String_Torappu_RecalRuneSeasonData_ {
+table Dict_2_System_String_Torappu_RecalRuneSeasonData_ {
 	dict_key:string;
 	dict_value:Torappu_RecalRuneSeasonData;
 }
@@ -333,26 +330,26 @@ table dict_2_System_String_Torappu_RecalRuneSeasonData_ {
 
 
 table Torappu_RecalRuneConstData {
-	stageCountPerSeason:int;
-	juniorRewardMedalCount:int;
-	seniorRewardMedalCount:int;
+	stageCountPerSeason:int32;
+	juniorRewardMedalCount:int32;
+	seniorRewardMedalCount:int32;
 	unlockLevelIds:[string];
 }
 
 
 
 table Torappu_RecalRuneSharedData {
-	seasons:[dict_2_System_String_Torappu_RecalRuneSeasonData_];
+	seasons:[Dict_2_System_String_Torappu_RecalRuneSeasonData_];
 	constData:Torappu_RecalRuneConstData;
 }
 
 
 
 table Torappu_CrisisV2SharedData {
-	seasonInfoDataMap:[dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
-	scoreLevelToAppraiseDataMap:[Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
+	seasonInfoDataMap:[Dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
+	scoreLevelToAppraiseDataMap:[ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
 	constData:Torappu_CrisisV2ConstData;
-	battleCommentRuneData:[dict_2_System_String_list_1_Torappu_RuneData__];
+	battleCommentRuneData:[Dict_2_System_String_List_1_Torappu_RuneData__];
 	recalRuneData:Torappu_RecalRuneSharedData;
 }
 

@@ -5,16 +5,16 @@ include "Torappu_Act24SideData_MeldingGoodGachaType.fbs";
 table Torappu_Act24SideData_MeldingGachaBoxGoodData {
 	goodId:string;
 	gachaBoxId:string;
-	orderId:int;
+	orderId:int32;
 	itemId:string;
 	itemType:Torappu_ItemType;
 	displayType:Torappu_Act24SideData_MeldingGoodDisplayType;
-	perCount:int;
-	totalCount:int;
+	perCount:int32;
+	totalCount:int32;
 	gachaType:Torappu_Act24SideData_MeldingGoodGachaType;
-	weight:int;
-	gachaOrderId:int;
-	gachaNum:int;
+	weight:int32;
+	gachaOrderId:int32;
+	gachaNum:int32;
 }
 
 

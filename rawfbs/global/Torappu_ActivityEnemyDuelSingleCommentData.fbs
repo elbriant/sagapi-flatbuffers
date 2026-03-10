@@ -1,7 +1,7 @@
 
 table Torappu_ActivityEnemyDuelSingleCommentData {
 	commentId:string;
-	priority:int;
+	priority:int32;
 	template:string;
 	param:[string];
 	commentText:string;

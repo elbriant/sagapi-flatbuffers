@@ -1,8 +1,8 @@
 
 table Torappu_SpecialOperatorDetailTalentNodeData {
 	nodeId:string;
-	talentIndex:int;
-	updateCount:int;
+	talentIndex:int32;
+	updateCount:int32;
 }
 
 

@@ -3,7 +3,7 @@ table Torappu_ChapterData {
 	chapterId:string;
 	chapterName:string;
 	chapterName2:string;
-	chapterIndex:int;
+	chapterIndex:int32;
 	preposedChapterId:string;
 	startZoneId:string;
 	endZoneId:string;

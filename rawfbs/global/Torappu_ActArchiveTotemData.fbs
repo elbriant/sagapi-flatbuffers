@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveTotemItemData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveTotemItemData_.fbs";
 
 table Torappu_ActArchiveTotemData {
-	totem:[dict_2_System_String_Torappu_ActArchiveTotemItemData_];
+	totem:[Dict_2_System_String_Torappu_ActArchiveTotemItemData_];
 }
 
 

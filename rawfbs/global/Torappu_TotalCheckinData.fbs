@@ -1,9 +1,9 @@
 include "Torappu_OpenServerItemData.fbs";
 
 table Torappu_TotalCheckinData {
-	order:int;
+	order:int32;
 	item:Torappu_OpenServerItemData;
-	colorId:int;
+	colorId:int32;
 }
 
 

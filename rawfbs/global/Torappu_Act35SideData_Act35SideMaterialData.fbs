@@ -1,10 +1,10 @@
 
 table Torappu_Act35SideData_Act35SideMaterialData {
 	materialId:string;
-	sortId:int;
+	sortId:int32;
 	materialIcon:string;
 	materialName:string;
-	materialRating:int;
+	materialRating:int32;
 }
 
 

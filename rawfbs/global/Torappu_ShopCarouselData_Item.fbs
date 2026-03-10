@@ -2,8 +2,8 @@ include "Torappu_ShopRouteTarget.fbs";
 
 table Torappu_ShopCarouselData_Item {
 	spriteId:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 	cmd:Torappu_ShopRouteTarget;
 	param1:string;
 	skinId:string;

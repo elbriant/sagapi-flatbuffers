@@ -1,5 +1,5 @@
 
-enum Torappu_ReturnV2JumpType : int {
+enum Torappu_ReturnV2JumpType : int32 {
 	NONE = 0,
 	ZONE_GROUP = 1,
 	ROGUE = 2,

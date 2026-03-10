@@ -1,10 +1,10 @@
-include "dict_2_System_String_list_1_Torappu_Audio_Middleware_Data_Bank__.fbs";
-include "dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_String_List_1_Torappu_Audio_Middleware_Data_Bank__.fbs";
+include "Dict_2_System_String_System_String_.fbs";
 include "Torappu_Audio_Middleware_Data_Bank.fbs";
 
 table Torappu_Audio_Middleware_TorappuAudioMiddleware {
-	m_banks:[dict_2_System_String_list_1_Torappu_Audio_Middleware_Data_Bank__];
-	m_bankAlias:[dict_2_System_String_System_String_];
+	m_banks:[Dict_2_System_String_List_1_Torappu_Audio_Middleware_Data_Bank__];
+	m_bankAlias:[Dict_2_System_String_System_String_];
 	m_bankList:[Torappu_Audio_Middleware_Data_Bank];
 }
 

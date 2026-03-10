@@ -1,7 +1,7 @@
 include "Torappu_CampaignData_CampaignDropInfo.fbs";
 
 table Torappu_CampaignData_DropLadder {
-	killCnt:int;
+	killCnt:int32;
 	dropInfo:Torappu_CampaignData_CampaignDropInfo;
 }
 

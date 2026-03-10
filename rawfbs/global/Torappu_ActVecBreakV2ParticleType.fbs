@@ -1,5 +1,5 @@
 
-enum Torappu_ActVecBreakV2ParticleType : int {
+enum Torappu_ActVecBreakV2ParticleType : int32 {
 	NONE = 0,
 	HARD = 1
 }

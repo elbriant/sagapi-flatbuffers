@@ -3,8 +3,8 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_SixStarMilestoneItemData {
 	id:string;
-	sortId:int;
-	nodePoint:int;
+	sortId:int32;
+	nodePoint:int32;
 	rewardType:Torappu_SixStarMilestoneRewardType;
 	unlockStageFog:string;
 	unlockStageId:string;

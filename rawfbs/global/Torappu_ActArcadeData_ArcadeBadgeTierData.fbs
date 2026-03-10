@@ -2,7 +2,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_ActArcadeData_ArcadeBadgeTierData {
 	badgeTierId:string;
-	sortId:int;
+	sortId:int32;
 	badgeTierIconId:string;
 	badgeTierShareIconId:string;
 	badgeTierEffectId:string;

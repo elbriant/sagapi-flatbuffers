@@ -1,5 +1,5 @@
 
-enum Torappu_ActArcadeData_Rank : int {
+enum Torappu_ActArcadeData_Rank : int32 {
 	B = 0,
 	A = 1,
 	S = 2,

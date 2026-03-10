@@ -1,5 +1,5 @@
 
-enum Torappu_MailArchiveItemType : int {
+enum Torappu_MailArchiveItemType : int32 {
 	NORMAL = 0,
 	BIRTHDAY = 1,
 	OPEN_SERVER = 2

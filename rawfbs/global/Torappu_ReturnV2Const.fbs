@@ -1,9 +1,9 @@
 
 table Torappu_ReturnV2Const {
-	startTime:long;
-	unlockLv:int;
+	startTime:int64;
+	unlockLv:int32;
 	unlockStage:string;
-	permMissionTime:int;
+	permMissionTime:int32;
 	pointId:string;
 	returnPriceDesc:string;
 	dailySupplyDesc:string;

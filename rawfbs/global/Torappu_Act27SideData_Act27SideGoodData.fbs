@@ -5,8 +5,8 @@ table Torappu_Act27SideData_Act27SideGoodData {
 	typeDesc:string;
 	iconId:string;
 	launchIconId:string;
-	purchasePrice:[int];
-	sellingPriceList:[int];
+	purchasePrice:[int32];
+	sellingPriceList:[int32];
 	sellShopList:[string];
 	isPermanent:bool;
 }

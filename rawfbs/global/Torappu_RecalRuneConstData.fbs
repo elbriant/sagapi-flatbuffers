@@ -1,8 +1,8 @@
 
 table Torappu_RecalRuneConstData {
-	stageCountPerSeason:int;
-	juniorRewardMedalCount:int;
-	seniorRewardMedalCount:int;
+	stageCountPerSeason:int32;
+	juniorRewardMedalCount:int32;
+	seniorRewardMedalCount:int32;
 	unlockLevelIds:[string];
 }
 

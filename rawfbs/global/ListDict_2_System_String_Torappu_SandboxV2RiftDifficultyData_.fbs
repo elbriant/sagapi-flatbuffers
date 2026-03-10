@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2RiftDifficultyData.fbs";
+
+table ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_ {
+	dict_key:string;
+	dict_value:Torappu_SandboxV2RiftDifficultyData;
+}
+
+
+root_type ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_;

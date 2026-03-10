@@ -3,7 +3,7 @@ include "Torappu_ItemBundle.fbs";
 table Torappu_ActivitySwitchCheckinMainRewardShowData {
 	mainRewardPicId:string;
 	mainRewardName:string;
-	mainRewardCount:int;
+	mainRewardCount:int32;
 	hasTip:bool;
 	tipItemBundle:Torappu_ItemBundle;
 }

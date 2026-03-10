@@ -1,5 +1,5 @@
 
-enum Torappu_ProfessionID : int {
+enum Torappu_ProfessionID : int32 {
 	WARRIOR = 0,
 	SNIPER = 1,
 	TANK = 2,

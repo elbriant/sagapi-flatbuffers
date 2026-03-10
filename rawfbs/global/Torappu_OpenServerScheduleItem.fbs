@@ -2,8 +2,8 @@
 table Torappu_OpenServerScheduleItem {
 	id:string;
 	versionId:string;
-	startTs:int;
-	endTs:int;
+	startTs:int32;
+	endTs:int32;
 	totalCheckinDescption:string;
 	chainLoginDescription:string;
 	charImg:string;

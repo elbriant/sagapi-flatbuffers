@@ -1,12 +1,12 @@
 
-enum Torappu_CharmRarity : int {
+enum Torappu_CharmRarity : int32 {
 	NONE = 0,
 	LOW = 1,
 	MEDIUM = 2,
 	HIGH = 3
 }
 
-enum Torappu_ProfessionCategory : int {
+enum Torappu_ProfessionCategory : int32 {
 	NONE = 0,
 	WARRIOR = 1,
 	SNIPER = 2,
@@ -20,21 +20,21 @@ enum Torappu_ProfessionCategory : int {
 	PIONEER = 512
 }
 
-enum Torappu_BuildableType : int {
+enum Torappu_BuildableType : int32 {
 	NONE = 0,
 	MELEE = 1,
 	RANGED = 2,
 	ALL = 3
 }
 
-enum Torappu_PlayerSideMask : ubyte {
+enum Torappu_PlayerSideMask : uint8 {
 	ALL = 0,
 	SIDE_A = 2,
 	SIDE_B = 4,
 	NONE = 255
 }
 
-enum Torappu_Battle_SideType : int {
+enum Torappu_Battle_SideType : int32 {
 	NONE = 0,
 	ALLY = 1,
 	ENEMY = 2,
@@ -43,7 +43,7 @@ enum Torappu_Battle_SideType : int {
 	ALL = 7
 }
 
-enum Torappu_TileData_HeightTypeMask : int {
+enum Torappu_TileData_HeightTypeMask : int32 {
 	NONE = 0,
 	LOWLAND = 1,
 	HIGHLAND = 2,
@@ -72,10 +72,7 @@ table Torappu_RuneData_Selector {
 
 
 
-table Torappu_Blackboard_DataPair {
-	key:string;
-	value:float;
-	valueStr:string;
+table Torappu_Blackboard {
 }
 
 
@@ -83,7 +80,7 @@ table Torappu_Blackboard_DataPair {
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
-	blackboard:[Torappu_Blackboard_DataPair];
+	blackboard:Torappu_Blackboard;
 }
 
 
@@ -100,7 +97,7 @@ table Torappu_RuneTable_PackedRuneData {
 
 table Torappu_CharmItemData {
 	id:string;
-	sort:int;
+	sort:int32;
 	name:string;
 	icon:string;
 	itemUsage:string;
@@ -108,7 +105,7 @@ table Torappu_CharmItemData {
 	itemObtainApproach:string;
 	rarity:Torappu_CharmRarity;
 	desc:string;
-	price:int;
+	price:int32;
 	specialObtainApproach:string;
 	charmType:string;
 	obtainInRandom:bool;

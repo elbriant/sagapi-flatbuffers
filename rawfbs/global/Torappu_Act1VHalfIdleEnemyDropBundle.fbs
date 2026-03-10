@@ -1,7 +1,7 @@
 
 table Torappu_Act1VHalfIdleEnemyDropBundle {
-	exp:int;
-	mileStoneCnt:int;
+	exp:int32;
+	mileStoneCnt:int32;
 	battleItemDropPool:string;
 	resourceItemDropPool:string;
 }

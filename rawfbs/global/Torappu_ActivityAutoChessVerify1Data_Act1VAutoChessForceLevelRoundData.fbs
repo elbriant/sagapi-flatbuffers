@@ -1,8 +1,8 @@
-include "dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_.fbs";
+include "Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData {
-	round:int;
-	roundData:[dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_];
+	round:int32;
+	roundData:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_];
 }
 
 

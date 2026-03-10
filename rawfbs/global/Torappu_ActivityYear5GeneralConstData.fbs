@@ -1,6 +1,6 @@
 
 table Torappu_ActivityYear5GeneralConstData {
-	rewPoint:int;
+	rewPoint:int32;
 	rewMainDesc:string;
 	rewApDesc:string;
 	rewEndDesc:string;

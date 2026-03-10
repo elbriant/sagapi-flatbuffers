@@ -9,7 +9,7 @@ table Torappu_RoguelikeGameRecruitTicketData {
 	rarity:Torappu_RarityRankMask;
 	professionList:[Torappu_ProfessionID];
 	rarityList:[Torappu_RarityRank];
-	extraEliteNum:int;
+	extraEliteNum:int32;
 	extraFreeRarity:[Torappu_RarityRank];
 	extraCharIds:[string];
 }

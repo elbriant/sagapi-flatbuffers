@@ -4,7 +4,7 @@ table Torappu_UniEquipMissionData {
 	desc:string;
 	paramList:[string];
 	uniEquipMissionId:string;
-	uniEquipMissionSort:int;
+	uniEquipMissionSort:int32;
 	uniEquipId:string;
 	jumpStageId:string;
 }

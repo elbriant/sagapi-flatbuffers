@@ -2,7 +2,7 @@ include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act25SideData_AreaInfoData {
 	areaId:string;
-	sortId:int;
+	sortId:int32;
 	areaIcon:string;
 	areaName:string;
 	unlockText:string;

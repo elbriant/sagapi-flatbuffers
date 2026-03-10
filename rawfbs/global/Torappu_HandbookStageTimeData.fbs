@@ -1,6 +1,6 @@
 
 table Torappu_HandbookStageTimeData {
-	timestamp:long;
+	timestamp:int64;
 	charSet:[string];
 }
 

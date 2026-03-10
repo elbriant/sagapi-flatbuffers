@@ -2,7 +2,7 @@
 table Torappu_SpecialOperatorDetailUniEquipNodeData {
 	nodeId:string;
 	uniEquipId:string;
-	equipLevel:int;
+	equipLevel:int32;
 }
 
 

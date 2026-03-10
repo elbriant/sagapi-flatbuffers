@@ -1,11 +1,11 @@
 include "Torappu_EnemyHandbookLevelInfoData.fbs";
-include "dict_2_System_String_Torappu_EnemyHandBookData_.fbs";
-include "dict_2_System_String_Torappu_EnemyHandbookRaceData_.fbs";
+include "Dict_2_System_String_Torappu_EnemyHandBookData_.fbs";
+include "Dict_2_System_String_Torappu_EnemyHandbookRaceData_.fbs";
 
 table Torappu_EnemyHandBookDataGroup {
 	levelInfoList:[Torappu_EnemyHandbookLevelInfoData];
-	enemyData:[dict_2_System_String_Torappu_EnemyHandBookData_];
-	raceData:[dict_2_System_String_Torappu_EnemyHandbookRaceData_];
+	enemyData:[Dict_2_System_String_Torappu_EnemyHandBookData_];
+	raceData:[Dict_2_System_String_Torappu_EnemyHandbookRaceData_];
 }
 
 

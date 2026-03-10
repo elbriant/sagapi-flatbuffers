@@ -1,6 +1,6 @@
 
 table Torappu_RoguelikeVisionModuleConsts {
-	maxVision:int;
+	maxVision:int32;
 	totemBottomDescription:string;
 	chestBottomDescription:string;
 	goodsBottomDescription:string;

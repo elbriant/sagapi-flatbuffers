@@ -4,11 +4,11 @@ table Torappu_RoguelikeTopicMonthMission {
 	id:string;
 	taskName:string;
 	taskClass:Torappu_RoguelikeGameMonthTaskClass;
-	innerClassWeight:int;
+	innerClassWeight:int32;
 	template:string;
 	paramList:[string];
 	desc:string;
-	tokenRewardNum:int;
+	tokenRewardNum:int32;
 }
 
 

@@ -20,21 +20,21 @@ table Torappu_EnemyHandbookLevelInfoData {
 
 
 
-enum Torappu_EnemyLevelType : int {
+enum Torappu_EnemyLevelType : int32 {
 	NORMAL = 0,
 	ELITE = 1,
 	BOSS = 2,
 	E_NUM = 3
 }
 
-table dict_2_System_String_System_Int32_ {
+table Dict_2_System_String_System_Int32_ {
 	dict_key:string;
-	dict_value:int;
+	dict_value:int32;
 }
 
 
 
-enum Torappu_EnemyHandBookData_TextFormat : int {
+enum Torappu_EnemyHandBookData_TextFormat : int32 {
 	NORMAL = 0,
 	TITLE = 1,
 	SILENCE = 2
@@ -47,7 +47,7 @@ table Torappu_EnemyHandBookData_Abilty {
 
 
 
-enum Torappu_EnemyHandBookDamageType : int {
+enum Torappu_EnemyHandBookDamageType : int32 {
 	PHYSIC = 0,
 	MAGIC = 1,
 	HEAL = 2,
@@ -58,14 +58,14 @@ table Torappu_EnemyHandBookData {
 	enemyId:string;
 	enemyIndex:string;
 	enemyTags:[string];
-	sortId:int;
+	sortId:int32;
 	name:string;
 	enemyLevel:Torappu_EnemyLevelType;
 	description:string;
 	attackType:string;
 	ability:string;
 	isInvalidKilled:bool;
-	overrideKillCntInfos:[dict_2_System_String_System_Int32_];
+	overrideKillCntInfos:[Dict_2_System_String_System_Int32_];
 	hideInHandbook:bool;
 	hideInStage:bool;
 	abilityList:[Torappu_EnemyHandBookData_Abilty];
@@ -76,7 +76,7 @@ table Torappu_EnemyHandBookData {
 
 
 
-table dict_2_System_String_Torappu_EnemyHandBookData_ {
+table Dict_2_System_String_Torappu_EnemyHandBookData_ {
 	dict_key:string;
 	dict_value:Torappu_EnemyHandBookData;
 }
@@ -86,12 +86,12 @@ table dict_2_System_String_Torappu_EnemyHandBookData_ {
 table Torappu_EnemyHandbookRaceData {
 	id:string;
 	raceName:string;
-	sortId:int;
+	sortId:int32;
 }
 
 
 
-table dict_2_System_String_Torappu_EnemyHandbookRaceData_ {
+table Dict_2_System_String_Torappu_EnemyHandbookRaceData_ {
 	dict_key:string;
 	dict_value:Torappu_EnemyHandbookRaceData;
 }
@@ -100,8 +100,8 @@ table dict_2_System_String_Torappu_EnemyHandbookRaceData_ {
 
 table Torappu_EnemyHandBookDataGroup {
 	levelInfoList:[Torappu_EnemyHandbookLevelInfoData];
-	enemyData:[dict_2_System_String_Torappu_EnemyHandBookData_];
-	raceData:[dict_2_System_String_Torappu_EnemyHandbookRaceData_];
+	enemyData:[Dict_2_System_String_Torappu_EnemyHandBookData_];
+	raceData:[Dict_2_System_String_Torappu_EnemyHandbookRaceData_];
 }
 
 

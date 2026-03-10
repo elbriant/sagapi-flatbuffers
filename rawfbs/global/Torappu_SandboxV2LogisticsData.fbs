@@ -6,7 +6,7 @@ table Torappu_SandboxV2LogisticsData {
 	noBuffDesc:string;
 	iconId:string;
 	profession:Torappu_ProfessionCategory;
-	sortId:int;
+	sortId:int32;
 	levelParams:[string];
 }
 

@@ -10,8 +10,8 @@ table Torappu_RoguelikeGameStageData {
 	loadingPicId:string;
 	description:string;
 	eliteDesc:string;
-	isBoss:int;
-	isElite:int;
+	isBoss:int32;
+	isElite:int32;
 	difficulty:Torappu_LevelData_Difficulty;
 	capsulePool:string;
 	capsuleProb:float;

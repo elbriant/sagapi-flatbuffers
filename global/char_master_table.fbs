@@ -1,12 +1,12 @@
 
-enum Torappu_CharMasterType : int {
+enum Torappu_CharMasterType : int32 {
 	NONE = 0,
 	SYSTEM = 1,
 	BATTLE = 2
 }
 
 table Torappu_CharMasterLevelData {
-	level:int;
+	level:int32;
 	name:string;
 	description:string;
 	conditionDesc:string;
@@ -17,7 +17,7 @@ table Torappu_CharMasterLevelData {
 table Torappu_CharMasterBasicData {
 	charId:string;
 	masterId:string;
-	sortId:int;
+	sortId:int32;
 	masterType:Torappu_CharMasterType;
 	levelList:[Torappu_CharMasterLevelData];
 }

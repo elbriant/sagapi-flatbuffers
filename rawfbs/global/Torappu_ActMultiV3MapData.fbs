@@ -2,7 +2,7 @@
 table Torappu_ActMultiV3MapData {
 	stageId:string;
 	modeId:string;
-	sortId:int;
+	sortId:int32;
 	missionIdList:[string];
 	displayEnemyIdList:[string];
 	previewIconId:string;

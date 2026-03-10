@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveEndbookGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveEndbookGroupData_.fbs";
 
 table Torappu_ActArchiveEndbookData {
-	endbook:[dict_2_System_String_Torappu_ActArchiveEndbookGroupData_];
+	endbook:[Dict_2_System_String_Torappu_ActArchiveEndbookGroupData_];
 }
 
 

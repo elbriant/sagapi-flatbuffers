@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActMainSSZoneAdditionData_.fbs";
+include "Dict_2_System_String_Torappu_ActMainSSZoneAdditionData_.fbs";
 
 table Torappu_ActMainSSData {
-	zoneAdditionDataMap:[dict_2_System_String_Torappu_ActMainSSZoneAdditionData_];
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_ActMainSSZoneAdditionData_];
 }
 
 

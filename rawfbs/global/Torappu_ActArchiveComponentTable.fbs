@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveComponentData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveComponentData_.fbs";
 
 table Torappu_ActArchiveComponentTable {
-	components:[dict_2_System_String_Torappu_ActArchiveComponentData_];
+	components:[Dict_2_System_String_Torappu_ActArchiveComponentData_];
 }
 
 

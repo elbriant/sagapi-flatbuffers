@@ -1,8 +1,8 @@
 include "Torappu_LipSync_BakedData_BakedFrameJson.fbs";
 
 table Torappu_LipSync_BakedData_BakedDataJson {
-	duration:int;
-	frequency:int;
+	duration:int32;
+	frequency:int32;
 	frames:[Torappu_LipSync_BakedData_BakedFrameJson];
 }
 

@@ -1,0 +1,9 @@
+include "Torappu_AprilFoolScoreData.fbs";
+
+table Dict_2_System_String_List_1_Torappu_AprilFoolScoreData__ {
+	dict_key:string;
+	dict_value:[Torappu_AprilFoolScoreData];
+}
+
+
+root_type Dict_2_System_String_List_1_Torappu_AprilFoolScoreData__;

@@ -1,5 +1,5 @@
 
-enum Torappu_MotionMask : int {
+enum Torappu_MotionMask : int32 {
 	NONE = 0,
 	WALK_ONLY = 1,
 	FLY_ONLY = 2,

@@ -1,21 +1,21 @@
-include "dict_2_System_String_Torappu_FifthAnnivExploreGroupData_.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreStageData_.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreTargetData_.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreEventData_.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreGroupData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreStageData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreTargetData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreEventData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_.fbs";
 include "Torappu_FifthAnnivExploreConst.fbs";
-include "dict_2_System_String_Torappu_FifthAnnivExploreMissionData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreMissionData_.fbs";
 
 table Torappu_FifthAnnivExploreData {
-	exploreGroupData:[dict_2_System_String_Torappu_FifthAnnivExploreGroupData_];
-	exploreStageData:[dict_2_System_String_Torappu_FifthAnnivExploreStageData_];
-	exploreTargetData:[dict_2_System_String_Torappu_FifthAnnivExploreTargetData_];
-	exploreEventData:[dict_2_System_String_Torappu_FifthAnnivExploreEventData_];
-	exploreChoiceData:[dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_];
-	broadcastData:[dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_];
+	exploreGroupData:[Dict_2_System_String_Torappu_FifthAnnivExploreGroupData_];
+	exploreStageData:[Dict_2_System_String_Torappu_FifthAnnivExploreStageData_];
+	exploreTargetData:[Dict_2_System_String_Torappu_FifthAnnivExploreTargetData_];
+	exploreEventData:[Dict_2_System_String_Torappu_FifthAnnivExploreEventData_];
+	exploreChoiceData:[Dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_];
+	broadcastData:[Dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_];
 	exploreConst:Torappu_FifthAnnivExploreConst;
-	missionData:[dict_2_System_String_Torappu_FifthAnnivExploreMissionData_];
+	missionData:[Dict_2_System_String_Torappu_FifthAnnivExploreMissionData_];
 }
 
 

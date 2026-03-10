@@ -1,8 +1,8 @@
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act5D1Data_ProgessGoodItem {
-	order:int;
-	price:int;
+	order:int32;
+	price:int32;
 	displayName:string;
 	item:Torappu_ItemBundle;
 }

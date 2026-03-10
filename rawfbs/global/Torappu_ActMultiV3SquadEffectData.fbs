@@ -4,7 +4,7 @@ include "Torappu_RuneTable_PackedRuneData.fbs";
 table Torappu_ActMultiV3SquadEffectData {
 	id:string;
 	iconId:string;
-	sortId:int;
+	sortId:int32;
 	name:string;
 	themeColor:string;
 	buffDesc:string;

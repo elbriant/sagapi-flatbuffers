@@ -8,8 +8,8 @@ table Torappu_Act1VHalfIdlePlotData {
 	plotType:Torappu_Act1VHalfIdlePlotType;
 	trapId:string;
 	initUnlock:bool;
-	rarity:int;
-	sortId:int;
+	rarity:int32;
+	sortId:int32;
 	isBasePlot:bool;
 	iconId:string;
 	funcDesc:string;

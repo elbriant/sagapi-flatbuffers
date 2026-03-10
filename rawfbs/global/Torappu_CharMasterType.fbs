@@ -1,5 +1,5 @@
 
-enum Torappu_CharMasterType : int {
+enum Torappu_CharMasterType : int32 {
 	NONE = 0,
 	SYSTEM = 1,
 	BATTLE = 2

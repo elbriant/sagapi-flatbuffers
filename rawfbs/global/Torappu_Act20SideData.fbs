@@ -1,9 +1,9 @@
-include "dict_2_System_String_System_String_.fbs";
-include "dict_2_System_String_Torappu_Act20SideData_ResidentCartData_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_String_Torappu_Act20SideData_ResidentCartData_.fbs";
 
 table Torappu_Act20SideData {
-	zoneAdditionDataMap:[dict_2_System_String_System_String_];
-	residentCartDatas:[dict_2_System_String_Torappu_Act20SideData_ResidentCartData_];
+	zoneAdditionDataMap:[Dict_2_System_String_System_String_];
+	residentCartDatas:[Dict_2_System_String_Torappu_Act20SideData_ResidentCartData_];
 }
 
 

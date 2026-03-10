@@ -1,5 +1,5 @@
 
-enum Torappu_BuildingData_BuffCategory : int {
+enum Torappu_BuildingData_BuffCategory : int32 {
 	NONE = 0,
 	FUNCTION = 1,
 	OUTPUT = 2,

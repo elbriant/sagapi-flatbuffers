@@ -5,8 +5,8 @@ table Torappu_LMTGSShopSchedule {
 	iconColor:string;
 	iconBackColor:string;
 	storeTextColor:string;
-	startTime:long;
-	endTime:long;
+	startTime:int64;
+	endTime:int64;
 }
 
 

@@ -2,7 +2,7 @@
 table Torappu_Act3D0Data_ClueInfo {
 	itemId:string;
 	campId:string;
-	orderId:int;
+	orderId:int32;
 	imageId:string;
 }
 

@@ -4,7 +4,7 @@ include "Torappu_HalfIdleTrapBuildableType.fbs";
 table Torappu_Act1VHalfIdleTrapMeta {
 	trapType:Torappu_Act1VHalfIdlePlotType;
 	buildType:Torappu_HalfIdleTrapBuildableType;
-	skillIndex:int;
+	skillIndex:int32;
 	dropWeight:float;
 	defaultPlotId:string;
 }

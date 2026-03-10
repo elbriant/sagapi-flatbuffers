@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchivePicItemData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchivePicItemData_.fbs";
 
 table Torappu_ActArchivePicData {
-	pics:[dict_2_System_String_Torappu_ActArchivePicItemData_];
+	pics:[Dict_2_System_String_Torappu_ActArchivePicItemData_];
 }
 
 

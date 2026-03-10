@@ -1,11 +1,11 @@
 include "UnityEngine_Vector2.fbs";
-include "list_1_System_Int32_.fbs";
+include "List_1_System_Int32_.fbs";
 
 table Torappu_SandboxV2MapZoneData {
 	zoneId:string;
 	center:UnityEngine_Vector2;
 	vertices:[UnityEngine_Vector2];
-	triangles:[list_1_System_Int32_];
+	triangles:[List_1_System_Int32_];
 	hasBorder:bool;
 }
 

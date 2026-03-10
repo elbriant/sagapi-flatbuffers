@@ -2,8 +2,8 @@
 table Torappu_Act24SideData_ConstData {
 	stageUnlockToolDesc:string;
 	mealLackMoney:string;
-	mealDayTimesLimit:int;
-	toolMaximum:int;
+	mealDayTimesLimit:int32;
+	toolMaximum:int32;
 	stageCanNotUseToTool:[string];
 	gachaDefaultProb:float;
 	gachaExtraProb:float;

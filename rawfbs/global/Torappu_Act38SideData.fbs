@@ -1,15 +1,15 @@
-include "dict_2_System_String_Torappu_Act38SideData_Act38SideZoneAdditionData_.fbs";
-include "dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act38SideData_Act38SideZoneAdditionData_.fbs";
+include "Dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleInfo_.fbs";
 include "Torappu_Act38SideData_Act38SideNpcDialogData.fbs";
 include "Torappu_Act38SideData_ConstData.fbs";
-include "dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData_.fbs";
+include "Dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData_.fbs";
 
 table Torappu_Act38SideData {
-	zoneAdditionDataMap:[dict_2_System_String_Torappu_Act38SideData_Act38SideZoneAdditionData_];
-	puzzleInfoMap:[dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleInfo_];
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act38SideData_Act38SideZoneAdditionData_];
+	puzzleInfoMap:[Dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleInfo_];
 	npcDialogList:[Torappu_Act38SideData_Act38SideNpcDialogData];
 	constData:Torappu_Act38SideData_ConstData;
-	puzzleGroupFocusDataMap:[dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData_];
+	puzzleGroupFocusDataMap:[Dict_2_System_String_Torappu_Act38SideData_Act38SidePuzzleGroupFocusData_];
 }
 
 

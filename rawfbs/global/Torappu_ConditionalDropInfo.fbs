@@ -2,7 +2,7 @@
 table Torappu_ConditionalDropInfo {
 	template:string;
 	param:[string];
-	countLimit:int;
+	countLimit:int32;
 }
 
 

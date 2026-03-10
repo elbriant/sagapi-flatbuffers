@@ -1,8 +1,8 @@
-include "dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_Act4funValueEffectInfoData {
 	valueEffectId:string;
-	effectParams:[dict_2_System_String_System_Int32_];
+	effectParams:[Dict_2_System_String_System_Int32_];
 }
 
 

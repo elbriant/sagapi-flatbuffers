@@ -1,14 +1,14 @@
-include "dict_2_System_Int32_list_1_Torappu_ReturnV2ItemData__.fbs";
+include "Dict_2_System_Int32_List_1_Torappu_ReturnV2ItemData__.fbs";
 
 table Torappu_ReturnV2PackageCheckInRewardData {
 	groupId:string;
-	startTime:long;
-	endTime:long;
-	getTime:int;
+	startTime:int64;
+	endTime:int64;
+	getTime:int32;
 	bindGPGoodId:string;
-	totalCheckInDay:int;
+	totalCheckInDay:int32;
 	iconId:string;
-	rewardDict:[dict_2_System_Int32_list_1_Torappu_ReturnV2ItemData__];
+	rewardDict:[Dict_2_System_Int32_List_1_Torappu_ReturnV2ItemData__];
 }
 
 

@@ -2,8 +2,8 @@
 table Torappu_ActVecBreakV2DefenseBasicData {
 	stageId:string;
 	groupId:string;
-	sortId:int;
-	startTs:long;
+	sortId:int32;
+	startTs:int64;
 }
 
 

@@ -1,7 +1,7 @@
 
 table Torappu_Act27SideData_Act27SideDynEntrySwitchData {
 	entryId:string;
-	startHour:int;
+	startHour:int32;
 	signalId:string;
 }
 

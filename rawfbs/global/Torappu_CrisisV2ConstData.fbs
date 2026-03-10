@@ -1,13 +1,13 @@
 
 table Torappu_CrisisV2ConstData {
-	sysStartTime:long;
-	blackScoreThreshold:int;
-	redScoreThreshold:int;
-	detailBkgRedThreshold:int;
-	voiceGrade:int;
-	seasonButtonUnlockInfo:long;
+	sysStartTime:int64;
+	blackScoreThreshold:int32;
+	redScoreThreshold:int32;
+	detailBkgRedThreshold:int32;
+	voiceGrade:int32;
+	seasonButtonUnlockInfo:int64;
 	shopCoinId:string;
-	hardBgmSwitchScore:int;
+	hardBgmSwitchScore:int32;
 	stageId:string;
 	hideTodoWhenStageFinish:bool;
 }

@@ -1,5 +1,5 @@
 
-enum Torappu_ZoneType : int {
+enum Torappu_ZoneType : int32 {
 	NONE = 0,
 	MAINLINE = 1,
 	WEEKLY = 2,
@@ -17,7 +17,7 @@ enum Torappu_ZoneType : int {
 
 table Torappu_ZoneData {
 	zoneID:string;
-	zoneIndex:int;
+	zoneIndex:int32;
 	type:Torappu_ZoneType;
 	zoneNameFirst:string;
 	zoneNameSecond:string;
@@ -36,14 +36,14 @@ table Torappu_ZoneData {
 
 
 
-table dict_2_System_String_Torappu_ZoneData_ {
+table Dict_2_System_String_Torappu_ZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_ZoneData;
 }
 
 
 
-enum Torappu_WeeklyType : int {
+enum Torappu_WeeklyType : int32 {
 	NONE = 0,
 	MATERIAL = 1,
 	SPECIAL = 2,
@@ -51,13 +51,13 @@ enum Torappu_WeeklyType : int {
 }
 
 table Torappu_WeeklyZoneData {
-	daysOfWeek:[int];
+	daysOfWeek:[int32];
 	type:Torappu_WeeklyType;
 }
 
 
 
-table Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_ {
+table ListDict_2_System_String_Torappu_WeeklyZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_WeeklyZoneData;
 }
@@ -65,26 +65,26 @@ table Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_ {
 
 
 table Torappu_ZoneValidInfo {
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 
 
-table dict_2_System_String_Torappu_ZoneValidInfo_ {
+table Dict_2_System_String_Torappu_ZoneValidInfo_ {
 	dict_key:string;
 	dict_value:Torappu_ZoneValidInfo;
 }
 
 
 
-enum Torappu_MainlineZoneData_ZoneReplayBtnType : int {
+enum Torappu_MainlineZoneData_ZoneReplayBtnType : int32 {
 	NONE = 0,
 	RECAP = 1,
 	REPLAY = 2
 }
 
-enum Torappu_StageDiffGroup : int {
+enum Torappu_StageDiffGroup : int32 {
 	NONE = 0,
 	EASY = 1,
 	NORMAL = 2,
@@ -96,7 +96,7 @@ table Torappu_MainlineZoneData {
 	zoneId:string;
 	chapterId:string;
 	preposedZoneId:string;
-	zoneIndex:int;
+	zoneIndex:int32;
 	startStageId:string;
 	endStageId:string;
 	gameMusicId:string;
@@ -105,20 +105,20 @@ table Torappu_MainlineZoneData {
 	buttonName:string;
 	buttonStyle:Torappu_MainlineZoneData_ZoneReplayBtnType;
 	spoilAlert:bool;
-	zoneOpenTime:long;
+	zoneOpenTime:int64;
 	diffGroup:[Torappu_StageDiffGroup];
 }
 
 
 
-table dict_2_System_String_Torappu_MainlineZoneData_ {
+table Dict_2_System_String_Torappu_MainlineZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_MainlineZoneData;
 }
 
 
 
-enum Torappu_RecordRewardStageDiff : int {
+enum Torappu_RecordRewardStageDiff : int32 {
 	NONE = 0,
 	EASY = 1,
 	NORMAL = 2,
@@ -127,7 +127,7 @@ enum Torappu_RecordRewardStageDiff : int {
 	HARD = 5
 }
 
-enum Torappu_ItemType : int {
+enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
 	CARD_EXP = 2,
@@ -223,7 +223,7 @@ enum Torappu_ItemType : int {
 
 table Torappu_ItemBundle {
 	id:string;
-	count:int;
+	count:int32;
 	type:Torappu_ItemType;
 }
 
@@ -274,14 +274,14 @@ table Torappu_ZoneRecordGroupData {
 
 
 
-table dict_2_System_String_Torappu_ZoneRecordGroupData_ {
+table Dict_2_System_String_Torappu_ZoneRecordGroupData_ {
 	dict_key:string;
 	dict_value:Torappu_ZoneRecordGroupData;
 }
 
 
 
-table dict_2_System_String_list_1_System_String__ {
+table Dict_2_System_String_List_1_System_String__ {
 	dict_key:string;
 	dict_value:[string];
 }
@@ -297,7 +297,7 @@ table Torappu_ZoneRecordMissionData {
 
 
 
-table dict_2_System_String_Torappu_ZoneRecordMissionData_ {
+table Dict_2_System_String_Torappu_ZoneRecordMissionData_ {
 	dict_key:string;
 	dict_value:Torappu_ZoneRecordMissionData;
 }
@@ -305,18 +305,18 @@ table dict_2_System_String_Torappu_ZoneRecordMissionData_ {
 
 
 table Torappu_ZoneMetaData {
-	ZoneRecordMissionData:[dict_2_System_String_Torappu_ZoneRecordMissionData_];
+	ZoneRecordMissionData:[Dict_2_System_String_Torappu_ZoneRecordMissionData_];
 }
 
 
 
 table Torappu_ZoneTable {
-	zones:[dict_2_System_String_Torappu_ZoneData_];
-	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
-	zoneValidInfo:[dict_2_System_String_Torappu_ZoneValidInfo_];
-	mainlineAdditionInfo:[dict_2_System_String_Torappu_MainlineZoneData_];
-	zoneRecordGroupedData:[dict_2_System_String_Torappu_ZoneRecordGroupData_];
-	zoneRecordRewardData:[dict_2_System_String_list_1_System_String__];
+	zones:[Dict_2_System_String_Torappu_ZoneData_];
+	weeklyAdditionInfo:[ListDict_2_System_String_Torappu_WeeklyZoneData_];
+	zoneValidInfo:[Dict_2_System_String_Torappu_ZoneValidInfo_];
+	mainlineAdditionInfo:[Dict_2_System_String_Torappu_MainlineZoneData_];
+	zoneRecordGroupedData:[Dict_2_System_String_Torappu_ZoneRecordGroupData_];
+	zoneRecordRewardData:[Dict_2_System_String_List_1_System_String__];
 	mainlineZoneIdList:[string];
 	zoneMetaData:Torappu_ZoneMetaData;
 }

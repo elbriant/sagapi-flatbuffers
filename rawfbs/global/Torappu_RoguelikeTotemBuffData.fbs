@@ -14,10 +14,10 @@ table Torappu_RoguelikeTotemBuffData {
 	bgIconId:string;
 	isManual:bool;
 	linkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
-	distanceMin:int;
-	distanceMax:int;
+	distanceMin:int32;
+	distanceMax:int32;
 	vertPassable:bool;
-	expandLength:int;
+	expandLength:int32;
 	onlyForVert:bool;
 	portalLinkedNodeTypeData:Torappu_RoguelikeTotemLinkedNodeTypeData;
 }

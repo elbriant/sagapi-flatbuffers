@@ -1,13 +1,13 @@
-include "dict_2_System_String_Torappu_RecalRuneRuneData_.fbs";
+include "Dict_2_System_String_Torappu_RecalRuneRuneData_.fbs";
 
 table Torappu_RecalRuneStageData {
 	stageId:string;
 	levelId:string;
 	juniorMedalId:string;
 	seniorMedalId:string;
-	juniorMedalScore:int;
-	seniorMedalScore:int;
-	runes:[dict_2_System_String_Torappu_RecalRuneRuneData_];
+	juniorMedalScore:int32;
+	seniorMedalScore:int32;
+	runes:[Dict_2_System_String_Torappu_RecalRuneRuneData_];
 	sourceName:string;
 	sourceType:string;
 	useName:bool;

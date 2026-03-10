@@ -1,11 +1,11 @@
 include "Torappu_BattleFunctionDisableMask.fbs";
-include "Torappu_Blackboard_DataPair.fbs";
+include "Torappu_Blackboard.fbs";
 
 table Torappu_LevelData_Options {
-	characterLimit:int;
-	maxLifePoint:int;
-	initialCost:int;
-	maxCost:int;
+	characterLimit:int32;
+	maxLifePoint:int32;
+	initialCost:int32;
+	maxCost:int32;
 	costIncreaseTime:float;
 	moveMultiplier:float;
 	steeringEnabled:bool;
@@ -15,7 +15,7 @@ table Torappu_LevelData_Options {
 	displayRestTime:bool;
 	maxPlayTime:float;
 	functionDisableMask:Torappu_BattleFunctionDisableMask;
-	configBlackBoard:[Torappu_Blackboard_DataPair];
+	configBlackBoard:Torappu_Blackboard;
 }
 
 

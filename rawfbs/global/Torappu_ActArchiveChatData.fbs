@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveChatGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveChatGroupData_.fbs";
 
 table Torappu_ActArchiveChatData {
-	chat:[dict_2_System_String_Torappu_ActArchiveChatGroupData_];
+	chat:[Dict_2_System_String_Torappu_ActArchiveChatGroupData_];
 }
 
 

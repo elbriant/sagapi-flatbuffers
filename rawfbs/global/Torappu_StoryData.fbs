@@ -10,7 +10,7 @@ table Torappu_StoryData {
 	videoResource:bool;
 	trigger:Torappu_StoryData_Trigger;
 	condition:Torappu_StoryData_Condition;
-	setProgress:int;
+	setProgress:int32;
 	setFlags:[string];
 	completedRewards:[Torappu_ItemBundle];
 }

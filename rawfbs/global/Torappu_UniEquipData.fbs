@@ -1,6 +1,6 @@
 include "Torappu_EvolvePhase.fbs";
-include "dict_2_System_String_System_Int32_.fbs";
-include "dict_2_System_Int32_list_1_Torappu_ItemBundle__.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_Int32_List_1_Torappu_ItemBundle__.fbs";
 include "Torappu_UniEquipType.fbs";
 
 table Torappu_UniEquipData {
@@ -16,15 +16,15 @@ table Torappu_UniEquipData {
 	unlockEvolvePhase:Torappu_EvolvePhase;
 	charId:string;
 	tmplId:string;
-	showLevel:int;
-	unlockLevel:int;
+	showLevel:int32;
+	unlockLevel:int32;
 	missionList:[string];
-	unlockFavors:[dict_2_System_String_System_Int32_];
-	itemCost:[dict_2_System_Int32_list_1_Torappu_ItemBundle__];
+	unlockFavors:[Dict_2_System_String_System_Int32_];
+	itemCost:[Dict_2_System_Int32_List_1_Torappu_ItemBundle__];
 	type:Torappu_UniEquipType;
-	uniEquipGetTime:long;
-	uniEquipShowEnd:long;
-	charEquipOrder:int;
+	uniEquipGetTime:int64;
+	uniEquipShowEnd:int64;
+	charEquipOrder:int32;
 	hasUnlockMission:bool;
 	isSpecialEquip:bool;
 	specialEquipDesc:string;

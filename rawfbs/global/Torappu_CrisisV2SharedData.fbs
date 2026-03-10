@@ -1,14 +1,14 @@
-include "dict_2_System_String_Torappu_CrisisV2SeasonInfo_.fbs";
-include "Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_.fbs";
+include "Dict_2_System_String_Torappu_CrisisV2SeasonInfo_.fbs";
+include "ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_.fbs";
 include "Torappu_CrisisV2ConstData.fbs";
-include "dict_2_System_String_list_1_Torappu_RuneData__.fbs";
+include "Dict_2_System_String_List_1_Torappu_RuneData__.fbs";
 include "Torappu_RecalRuneSharedData.fbs";
 
 table Torappu_CrisisV2SharedData {
-	seasonInfoDataMap:[dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
-	scoreLevelToAppraiseDataMap:[Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
+	seasonInfoDataMap:[Dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
+	scoreLevelToAppraiseDataMap:[ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
 	constData:Torappu_CrisisV2ConstData;
-	battleCommentRuneData:[dict_2_System_String_list_1_Torappu_RuneData__];
+	battleCommentRuneData:[Dict_2_System_String_List_1_Torappu_RuneData__];
 	recalRuneData:Torappu_RecalRuneSharedData;
 }
 

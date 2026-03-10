@@ -3,8 +3,8 @@ include "Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData.fbs";
 
 table Torappu_ClimbTowerSingleTowerData {
 	id:string;
-	sortId:int;
-	stageNum:int;
+	sortId:int32;
+	stageNum:int32;
 	name:string;
 	subName:string;
 	desc:string;

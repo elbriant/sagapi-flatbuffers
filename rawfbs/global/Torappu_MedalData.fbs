@@ -1,9 +1,9 @@
 include "Torappu_MedalPerData.fbs";
-include "dict_2_System_String_Torappu_MedalTypeData_.fbs";
+include "Dict_2_System_String_Torappu_MedalTypeData_.fbs";
 
 table Torappu_MedalData {
 	medalList:[Torappu_MedalPerData];
-	medalTypeData:[dict_2_System_String_Torappu_MedalTypeData_];
+	medalTypeData:[Dict_2_System_String_Torappu_MedalTypeData_];
 }
 
 

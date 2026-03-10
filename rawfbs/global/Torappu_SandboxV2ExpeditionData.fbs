@@ -5,13 +5,13 @@ table Torappu_SandboxV2ExpeditionData {
 	expeditionId:string;
 	desc:string;
 	effectDesc:string;
-	costAction:int;
-	costDrink:int;
-	charCnt:int;
+	costAction:int32;
+	costDrink:int32;
+	charCnt:int32;
 	profession:Torappu_ProfessionCategory;
 	professions:[Torappu_ProfessionID];
-	minEliteRank:int;
-	duration:int;
+	minEliteRank:int32;
+	duration:int32;
 }
 
 

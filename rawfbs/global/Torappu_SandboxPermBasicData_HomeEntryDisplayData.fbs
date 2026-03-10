@@ -2,8 +2,8 @@
 table Torappu_SandboxPermBasicData_HomeEntryDisplayData {
 	displayId:string;
 	topicId:string;
-	startTs:long;
-	endTs:long;
+	startTs:int64;
+	endTs:int64;
 }
 
 

@@ -1,5 +1,5 @@
 
-enum Torappu_EnemyLevelType : int {
+enum Torappu_EnemyLevelType : int32 {
 	NORMAL = 0,
 	ELITE = 1,
 	BOSS = 2,

@@ -1,8 +1,8 @@
 
 table Torappu_ActArchiveBuffItemData {
 	buffId:string;
-	buffGroupIndex:int;
-	innerSortId:int;
+	buffGroupIndex:int32;
+	innerSortId:int32;
 	name:string;
 	iconId:string;
 	usage:string;

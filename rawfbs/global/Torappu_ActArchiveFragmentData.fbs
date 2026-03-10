@@ -1,7 +1,7 @@
-include "dict_2_System_String_Torappu_ActArchiveFragmentItemData_.fbs";
+include "Dict_2_System_String_Torappu_ActArchiveFragmentItemData_.fbs";
 
 table Torappu_ActArchiveFragmentData {
-	fragment:[dict_2_System_String_Torappu_ActArchiveFragmentItemData_];
+	fragment:[Dict_2_System_String_Torappu_ActArchiveFragmentItemData_];
 }
 
 
