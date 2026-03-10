@@ -1,6 +1,12 @@
+include "Torappu_Audio_Middleware_TorappuAudioMiddleware.fbs";
+include "Torappu_Audio_Middleware_AudioAtom.fbs";
 include "Torappu_Audio_Middleware_Data_Bank.fbs";
 
 table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 	m_targetBank:Torappu_Audio_Middleware_Data_Bank;
 	targetBank:string;
 	ctrlStop:bool;

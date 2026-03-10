@@ -50,8 +50,6 @@ table Dict_2_System_String_Torappu_SandboxV2NodeData_ {
 
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 
@@ -985,7 +983,10 @@ table Torappu_RuneData_Selector {
 
 
 
-table Torappu_Blackboard {
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
@@ -993,7 +994,7 @@ table Torappu_Blackboard {
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -1029,7 +1030,7 @@ table Torappu_LegacyInLevelRuneData {
 	key:string;
 	professionMask:Torappu_ProfessionCategory;
 	buildableMask:Torappu_BuildableType;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -1554,7 +1555,7 @@ table Torappu_SandboxV2RiftDifficultyData {
 
 
 
-table ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_ {
+table Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_ {
 	dict_key:string;
 	dict_value:Torappu_SandboxV2RiftDifficultyData;
 }
@@ -1940,7 +1941,7 @@ table Torappu_SandboxV2RacingItemInfo {
 	racerItemId:string;
 	name:string;
 	iconId:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -2117,7 +2118,7 @@ table Torappu_SandboxV2Data {
 	riftGlobalEffectData:[Dict_2_System_String_Torappu_SandboxV2RiftGlobalEffectData_];
 	fixedRiftData:[Dict_2_System_String_Torappu_SandboxV2FixedRiftData_];
 	riftTeamBuffData:[Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__];
-	riftDifficultyData:[ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_];
+	riftDifficultyData:[Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_];
 	riftRewardDisplayData:[Dict_2_System_String_List_1_System_String__];
 	enemyReplaceData:[Dict_2_System_String_Dict_2_System_String_System_String__];
 	archiveQuestData:[Dict_2_System_String_Torappu_SandboxV2ArchiveQuestData_];

@@ -1,4 +1,4 @@
-include "Torappu_Blackboard.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_LevelData_EnemyData_ESkillData {
 	prefabKey:string;
@@ -6,7 +6,7 @@ table Torappu_LevelData_EnemyData_ESkillData {
 	cooldown:float;
 	initCooldown:float;
 	spCost:int32;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 

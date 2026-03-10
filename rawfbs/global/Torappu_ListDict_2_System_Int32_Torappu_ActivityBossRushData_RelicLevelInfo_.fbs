@@ -1,7 +1,7 @@
 include "Torappu_ActivityBossRushData_RelicLevelInfo.fbs";
 
 table Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_ {
-	dict_key:int;
+	dict_key:int32;
 	dict_value:Torappu_ActivityBossRushData_RelicLevelInfo;
 }
 

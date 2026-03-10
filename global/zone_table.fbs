@@ -57,7 +57,7 @@ table Torappu_WeeklyZoneData {
 
 
 
-table ListDict_2_System_String_Torappu_WeeklyZoneData_ {
+table Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_ {
 	dict_key:string;
 	dict_value:Torappu_WeeklyZoneData;
 }
@@ -312,7 +312,7 @@ table Torappu_ZoneMetaData {
 
 table Torappu_ZoneTable {
 	zones:[Dict_2_System_String_Torappu_ZoneData_];
-	weeklyAdditionInfo:[ListDict_2_System_String_Torappu_WeeklyZoneData_];
+	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
 	zoneValidInfo:[Dict_2_System_String_Torappu_ZoneValidInfo_];
 	mainlineAdditionInfo:[Dict_2_System_String_Torappu_MainlineZoneData_];
 	zoneRecordGroupedData:[Dict_2_System_String_Torappu_ZoneRecordGroupData_];

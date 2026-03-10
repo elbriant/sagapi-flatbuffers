@@ -4,7 +4,7 @@ include "Torappu_Audio_Middleware_AudioAtom.fbs";
 table Torappu_Audio_Middleware_Data_Bank {
 	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
 	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	<bankName>k__BackingField:string;
+	bankName:string;
 	name:string;
 }
 

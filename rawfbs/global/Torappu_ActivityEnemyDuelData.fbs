@@ -7,7 +7,7 @@ include "Dict_2_System_String_Torappu_ActivityEnemyDuelNpcSelectorGroupData_.fbs
 include "Dict_2_System_String_Torappu_ActivityEnemyDuelEnemyData_.fbs";
 include "Dict_2_System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData_.fbs";
 include "Torappu_ActivityEnemyDuelAnnounceData.fbs";
-include "Dict_2_System_String_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__.fbs";
+include "Dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__.fbs";
 include "Torappu_ActivityEnemyDuelConstData.fbs";
 include "Torappu_ActivityEnemyDuelConstToastData.fbs";
 include "Torappu_ActivityEnemyDuelTipsData.fbs";
@@ -23,7 +23,7 @@ table Torappu_ActivityEnemyDuelData {
 	extraScoreData:[Dict_2_System_String_Torappu_ActivityEnemyDuelExtraScoreGroupData_];
 	basicScores:[int32];
 	announceData:[Torappu_ActivityEnemyDuelAnnounceData];
-	commentData:[Dict_2_System_String_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__];
+	commentData:[Dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__];
 	constData:Torappu_ActivityEnemyDuelConstData;
 	constToastData:Torappu_ActivityEnemyDuelConstToastData;
 	tipsData:[Torappu_ActivityEnemyDuelTipsData];

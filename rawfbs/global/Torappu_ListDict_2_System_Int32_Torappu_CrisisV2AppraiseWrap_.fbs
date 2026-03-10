@@ -1,7 +1,7 @@
 include "Torappu_CrisisV2AppraiseWrap.fbs";
 
 table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
-	dict_key:int;
+	dict_key:int32;
 	dict_value:Torappu_CrisisV2AppraiseWrap;
 }
 

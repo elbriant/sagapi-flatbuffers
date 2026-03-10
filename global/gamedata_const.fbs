@@ -121,7 +121,7 @@ table Torappu_ItemBundle {
 
 
 
-table ListDict_2_System_Int32_System_Int32_ {
+table Torappu_ListDict_2_System_Int32_System_Int32_ {
 	dict_key:int32;
 	dict_value:int32;
 }
@@ -236,7 +236,7 @@ table Torappu_GameDataConsts {
 	legacyItemList:[Torappu_ItemBundle];
 	useAssistSocialPt:int32;
 	useAssistSocialPtMaxCount:int32;
-	assistBeUsedSocialPt:[ListDict_2_System_Int32_System_Int32_];
+	assistBeUsedSocialPt:[Torappu_ListDict_2_System_Int32_System_Int32_];
 	pushForces:[float];
 	pushForceZeroIndex:int32;
 	normalGachaUnlockPrice:[int32];

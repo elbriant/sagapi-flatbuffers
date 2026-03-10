@@ -229,6 +229,8 @@ enum Torappu_NameCardV2ModuleSubType : int32 {
 }
 
 table Torappu_NameCardV2RemovableModuleData {
+	id:string;
+	type:Torappu_NameCardV2ModuleType;
 	sortId:int32;
 	subType:Torappu_NameCardV2ModuleSubType;
 	name:string;

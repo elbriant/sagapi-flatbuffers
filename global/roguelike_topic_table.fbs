@@ -1248,14 +1248,17 @@ table Dict_2_System_String_Torappu_RoguelikeGameStashableTicketData_ {
 
 
 
-table Torappu_Blackboard {
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
 
 table Torappu_RoguelikeBuff {
 	key:string;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -2683,7 +2686,7 @@ table Torappu_RoguelikeAlchemyData {
 
 
 
-table ListDict_2_System_String_Torappu_RoguelikeAlchemyData_ {
+table Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_ {
 	dict_key:string;
 	dict_value:Torappu_RoguelikeAlchemyData;
 }
@@ -2724,7 +2727,7 @@ table Torappu_RoguelikeFragmentModuleData {
 	fragmentTypeData:[Dict_2_System_String_Torappu_RoguelikeFragmentTypeData_];
 	moduleConsts:Torappu_RoguelikeFragmentModuleConsts;
 	fragmentBuffData:[Dict_2_System_String_Torappu_RoguelikeFragmentBuffData_];
-	alchemyData:[ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
+	alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
 	alchemyFormulaData:[Dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_];
 	fragmentLevelData:[Dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_];
 }

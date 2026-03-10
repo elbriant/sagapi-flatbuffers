@@ -1,6 +1,8 @@
+include "Torappu_BasedRecruitPool_RecruitConstants.fbs";
 include "Torappu_SpecialRecruitPool_SpecialRecruitCostData.fbs";
 
 table Torappu_SpecialRecruitPool {
+	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
 	tagId:int32;

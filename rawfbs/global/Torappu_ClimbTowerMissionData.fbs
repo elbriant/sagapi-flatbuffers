@@ -1,5 +1,27 @@
+include "Torappu_MissionType.fbs";
+include "Torappu_MissionItemBgType.fbs";
+include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_ClimbTowerMissionData {
+	id:string;
+	sortId:int32;
+	description:string;
+	type:Torappu_MissionType;
+	itemBgType:Torappu_MissionItemBgType;
+	preMissionIds:[string];
+	template:string;
+	templateType:string;
+	param:[string];
+	unlockCondition:string;
+	unlockParam:[string];
+	missionGroup:string;
+	toPage:string;
+	periodicalPoint:int32;
+	rewards:[Torappu_MissionDisplayRewards];
+	backImagePath:string;
+	foldId:string;
+	haveSubMissionToUnlock:bool;
+	countEndTs:int64;
 	bindGodCardId:string;
 	bindTowerId:string;
 }

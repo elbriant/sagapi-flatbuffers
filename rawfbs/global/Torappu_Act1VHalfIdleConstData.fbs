@@ -1,6 +1,6 @@
 include "Torappu_Act1VHalfIdleEnemyPreloadMeta.fbs";
 include "Torappu_Act1VHalfIdleConstData_ProfessionDesc.fbs";
-include "ListDict_2_System_String_System_Int32_.fbs";
+include "Torappu_ListDict_2_System_String_System_Int32_.fbs";
 include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act1VHalfIdleConstData {
@@ -32,7 +32,7 @@ table Torappu_Act1VHalfIdleConstData {
 	enemyCapacityIdWhiteList:[string];
 	unlockStageId:string;
 	professionDesc:[Torappu_Act1VHalfIdleConstData_ProfessionDesc];
-	productMaxEfficiencyDict:[ListDict_2_System_String_System_Int32_];
+	productMaxEfficiencyDict:[Torappu_ListDict_2_System_String_System_Int32_];
 	efficiencyDurationMax:int32;
 	produceCd:int32;
 	harvestHintThresholdTime:int32;

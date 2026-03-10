@@ -1,10 +1,15 @@
-include "System_Int16A__.fbs";
+table hg__internal__MapData {
+	row_size:int;
+	column_size:int;
+	matrix_data:[short];
+}
+
 include "Torappu_TileData.fbs";
 include "Torappu_MapData_Edge.fbs";
 include "Torappu_MapEffectData.fbs";
 
 table Torappu_MapData {
-	map:System_Int16A__;
+	map:hg__internal__MapData;
 	tiles:[Torappu_TileData];
 	blockEdges:[Torappu_MapData_Edge];
 	tags:[string];

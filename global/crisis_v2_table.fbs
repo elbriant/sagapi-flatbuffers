@@ -39,7 +39,7 @@ table Torappu_CrisisV2AppraiseWrap {
 
 
 
-table ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
+table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
 	dict_key:int32;
 	dict_value:Torappu_CrisisV2AppraiseWrap;
 }
@@ -127,7 +127,10 @@ table Torappu_RuneData_Selector {
 
 
 
-table Torappu_Blackboard {
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
@@ -135,7 +138,7 @@ table Torappu_Blackboard {
 table Torappu_RuneData {
 	key:string;
 	selector:Torappu_RuneData_Selector;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 
@@ -347,7 +350,7 @@ table Torappu_RecalRuneSharedData {
 
 table Torappu_CrisisV2SharedData {
 	seasonInfoDataMap:[Dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
-	scoreLevelToAppraiseDataMap:[ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
+	scoreLevelToAppraiseDataMap:[Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
 	constData:Torappu_CrisisV2ConstData;
 	battleCommentRuneData:[Dict_2_System_String_List_1_Torappu_RuneData__];
 	recalRuneData:Torappu_RecalRuneSharedData;

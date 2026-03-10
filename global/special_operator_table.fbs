@@ -173,8 +173,6 @@ table Dict_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData_ {
 
 
 table UnityEngine_Vector2 {
-	x:float;
-	y:float;
 }
 
 

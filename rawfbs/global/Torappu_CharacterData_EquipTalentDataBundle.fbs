@@ -1,6 +1,8 @@
+include "Torappu_TalentData.fbs";
 include "Torappu_EquipTalentData.fbs";
 
 table Torappu_CharacterData_EquipTalentDataBundle {
+	candidates:[Torappu_TalentData];
 	candidates:[Torappu_EquipTalentData];
 }
 

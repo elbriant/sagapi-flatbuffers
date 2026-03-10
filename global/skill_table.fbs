@@ -162,7 +162,10 @@ table Torappu_SpData {
 
 
 
-table Torappu_Blackboard {
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 
@@ -176,7 +179,7 @@ table Torappu_SkillDataBundle_LevelData {
 	spData:Torappu_SpData;
 	prefabId:string;
 	duration:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	blackboard:Torappu_Blackboard;
+	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 

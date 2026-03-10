@@ -73,30 +73,30 @@ table Dict_2_System_String_Torappu_CharSkinData_ {
 
 
 
-table ListDict_2_System_Int32_System_String_ {
+table Torappu_ListDict_2_System_Int32_System_String_ {
 	dict_key:int32;
 	dict_value:string;
 }
 
 
 
-table Dict_2_System_String_ListDict_2_System_Int32_System_String__ {
+table Dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__ {
 	dict_key:string;
-	dict_value:[ListDict_2_System_Int32_System_String_];
+	dict_value:[Torappu_ListDict_2_System_Int32_System_String_];
 }
 
 
 
-table ListDict_2_System_String_System_String_ {
+table Torappu_ListDict_2_System_String_System_String_ {
 	dict_key:string;
 	dict_value:string;
 }
 
 
 
-table Dict_2_System_String_ListDict_2_System_String_System_String__ {
+table Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__ {
 	dict_key:string;
-	dict_value:[ListDict_2_System_String_System_String_];
+	dict_value:[Torappu_ListDict_2_System_String_System_String_];
 }
 
 
@@ -168,8 +168,8 @@ table Dict_2_System_String_System_String_ {
 
 table Torappu_SkinTable {
 	charSkins:[Dict_2_System_String_Torappu_CharSkinData_];
-	buildinEvolveMap:[Dict_2_System_String_ListDict_2_System_Int32_System_String__];
-	buildinPatchMap:[Dict_2_System_String_ListDict_2_System_String_System_String__];
+	buildinEvolveMap:[Dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__];
+	buildinPatchMap:[Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__];
 	brandList:[Dict_2_System_String_Torappu_CharSkinBrandInfo_];
 	specialSkinInfoList:[Torappu_SpecialSkinInfo];
 	spDynSkins:[Dict_2_System_String_Torappu_SpDynIllustInfo_];
