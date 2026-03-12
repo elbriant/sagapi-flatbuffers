@@ -73,30 +73,21 @@ table Dict_2_System_String_Torappu_CharSkinData_ {
 
 
 
-table Torappu_ListDict_2_System_Int32_System_String_ {
-	dict_key:int32;
-	dict_value:string;
+table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
 }
 
 
 
 table Dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__ {
 	dict_key:string;
-	dict_value:[Torappu_ListDict_2_System_Int32_System_String_];
-}
-
-
-
-table Torappu_ListDict_2_System_String_System_String_ {
-	dict_key:string;
-	dict_value:string;
+	dict_value:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 
 
 table Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__ {
 	dict_key:string;
-	dict_value:[Torappu_ListDict_2_System_String_System_String_];
+	dict_value:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 
@@ -178,4 +169,13 @@ table Torappu_SkinTable {
 
 
 
-root_type Torappu_SkinTable;
+table dict__string__Torappu_SkinTable {
+  dict_key: string(key);
+  dict_value: Torappu_SkinTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_SkinTable {
+  dict_array: [dict__string__Torappu_SkinTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_SkinTable;

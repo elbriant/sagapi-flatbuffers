@@ -1,8 +1,8 @@
-include "Torappu_ListDict_2_System_String_System_String_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 
 table Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__ {
 	dict_key:string;
-	dict_value:[Torappu_ListDict_2_System_String_System_String_];
+	dict_value:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 

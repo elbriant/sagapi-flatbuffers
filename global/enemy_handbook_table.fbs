@@ -106,4 +106,13 @@ table Torappu_EnemyHandBookDataGroup {
 
 
 
-root_type Torappu_EnemyHandBookDataGroup;
+table dict__string__Torappu_EnemyHandBookDataGroup {
+  dict_key: string(key);
+  dict_value: Torappu_EnemyHandBookDataGroup;
+}
+
+table Torappu_SimpleKVTable_Torappu_EnemyHandBookDataGroup {
+  dict_array: [dict__string__Torappu_EnemyHandBookDataGroup];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_EnemyHandBookDataGroup;

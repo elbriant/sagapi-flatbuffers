@@ -1,4 +1,4 @@
-include "Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo_.fbs";
 include "Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo_.fbs";
 include "Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_.fbs";
@@ -7,11 +7,9 @@ include "Dict_2_System_String_Torappu_Act3D0Data_ClueInfo_.fbs";
 include "Torappu_Act3D0Data_MileStoneInfo.fbs";
 include "Torappu_Act3D0Data_GachaBoxInfo.fbs";
 include "Dict_2_System_String_Torappu_Act3D0Data_CampInfo_.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_.fbs";
 
 table Torappu_Act3D0Data {
-	campBasicInfo:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_];
+	campBasicInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	limitedPoolList:[Dict_2_System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo_];
 	infinitePoolList:[Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo_];
 	infinitePercent:[Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_];
@@ -23,8 +21,8 @@ table Torappu_Act3D0Data {
 	etTokenId:string;
 	gachaBoxInfo:[Torappu_Act3D0Data_GachaBoxInfo];
 	campInfo:[Dict_2_System_String_Torappu_Act3D0Data_CampInfo_];
-	zoneDesc:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_];
-	favorUpList:[Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_];
+	zoneDesc:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 

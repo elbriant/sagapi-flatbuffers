@@ -49,7 +49,7 @@ include "Dict_2_System_String_Torappu_SandboxV2RiftMainTargetData_.fbs";
 include "Dict_2_System_String_Torappu_SandboxV2RiftGlobalEffectData_.fbs";
 include "Dict_2_System_String_Torappu_SandboxV2FixedRiftData_.fbs";
 include "Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_List_1_System_String__.fbs";
 include "Dict_2_System_String_Dict_2_System_String_System_String__.fbs";
 include "Dict_2_System_String_Torappu_SandboxV2ArchiveQuestData_.fbs";
@@ -121,7 +121,7 @@ table Torappu_SandboxV2Data {
 	riftGlobalEffectData:[Dict_2_System_String_Torappu_SandboxV2RiftGlobalEffectData_];
 	fixedRiftData:[Dict_2_System_String_Torappu_SandboxV2FixedRiftData_];
 	riftTeamBuffData:[Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__];
-	riftDifficultyData:[Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_];
+	riftDifficultyData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	riftRewardDisplayData:[Dict_2_System_String_List_1_System_String__];
 	enemyReplaceData:[Dict_2_System_String_Dict_2_System_String_System_String__];
 	archiveQuestData:[Dict_2_System_String_Torappu_SandboxV2ArchiveQuestData_];

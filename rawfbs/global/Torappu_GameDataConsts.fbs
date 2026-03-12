@@ -2,7 +2,7 @@ include "System_Int32A_.fbs";
 include "Dict_2_System_String_System_String_.fbs";
 include "Torappu_GameDataConsts_CharAssistRefreshTimeState.fbs";
 include "Torappu_ItemBundle.fbs";
-include "Torappu_ListDict_2_System_Int32_System_Int32_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_Torappu_TermDescriptionData_.fbs";
 include "Dict_2_System_String_Torappu_SubProfessionAttackType_.fbs";
 include "Torappu_GameDataConsts_FeverGameData.fbs";
@@ -79,7 +79,7 @@ table Torappu_GameDataConsts {
 	legacyItemList:[Torappu_ItemBundle];
 	useAssistSocialPt:int32;
 	useAssistSocialPtMaxCount:int32;
-	assistBeUsedSocialPt:[Torappu_ListDict_2_System_Int32_System_Int32_];
+	assistBeUsedSocialPt:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	pushForces:[float];
 	pushForceZeroIndex:int32;
 	normalGachaUnlockPrice:[int32];

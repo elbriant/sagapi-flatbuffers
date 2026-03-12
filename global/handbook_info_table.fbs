@@ -323,4 +323,13 @@ table Torappu_HandbookInfoTable {
 
 
 
-root_type Torappu_HandbookInfoTable;
+table dict__string__Torappu_HandbookInfoTable {
+  dict_key: string(key);
+  dict_value: Torappu_HandbookInfoTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_HandbookInfoTable {
+  dict_array: [dict__string__Torappu_HandbookInfoTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_HandbookInfoTable;

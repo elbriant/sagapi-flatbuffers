@@ -1,7 +1,5 @@
 
-table Torappu_ListDict_2_System_String_System_String_ {
-	dict_key:string;
-	dict_value:string;
+table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
 }
 
 
@@ -1130,7 +1128,7 @@ table Dict_2_System_Int32_System_Int32_ {
 
 
 table Torappu_RetroStageTable {
-	zoneToRetro:[Torappu_ListDict_2_System_String_System_String_];
+	zoneToRetro:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	stageValidInfo:[Dict_2_System_String_Torappu_StageValidInfo_];
 	stages:[Dict_2_System_String_Torappu_RetroStageOverrideInfo_];
 	retroActList:[Dict_2_System_String_Torappu_RetroActData_];
@@ -1148,4 +1146,13 @@ table Torappu_RetroStageTable {
 
 
 
-root_type Torappu_RetroStageTable;
+table dict__string__Torappu_RetroStageTable {
+  dict_key: string(key);
+  dict_value: Torappu_RetroStageTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_RetroStageTable {
+  dict_array: [dict__string__Torappu_RetroStageTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_RetroStageTable;

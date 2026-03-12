@@ -1,5 +1,5 @@
 include "Torappu_StorylineType.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 
 table Torappu_StorylineData {
 	storylineId:string;
@@ -11,7 +11,7 @@ table Torappu_StorylineData {
 	backgroundId:string;
 	hasVideoToPlay:bool;
 	startTs:int64;
-	locations:[Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_];
+	locations:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 

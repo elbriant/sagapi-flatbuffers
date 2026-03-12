@@ -1,12 +1,11 @@
-include "Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Torappu_ActivityMainlineBuffData_PeriodData.fbs";
-include "Torappu_ListDict_2_System_String_System_Int64_.fbs";
 include "Torappu_ActivityMainlineBuffData_ConstData.fbs";
 
 table Torappu_ActivityMainlineBuffData {
-	missionGroupList:[Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_];
+	missionGroupList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	periodDataList:[Torappu_ActivityMainlineBuffData_PeriodData];
-	apSupplyOutOfDateDict:[Torappu_ListDict_2_System_String_System_Int64_];
+	apSupplyOutOfDateDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	constData:Torappu_ActivityMainlineBuffData_ConstData;
 }
 

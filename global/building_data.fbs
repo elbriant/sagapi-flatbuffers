@@ -1,7 +1,19 @@
 
-table Torappu_ListDict_2_System_String_System_Int32_ {
+table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+}
+
+
+
+table Torappu_BuildingData_RoomUnlockCond {
+	id:string;
+	number:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+}
+
+
+
+table Dict_2_System_String_Torappu_BuildingData_RoomUnlockCond_ {
 	dict_key:string;
-	dict_value:int32;
+	dict_value:Torappu_BuildingData_RoomUnlockCond;
 }
 
 
@@ -24,35 +36,6 @@ enum Torappu_BuildingData_RoomType : int32 {
 	FUNCTIONAL = 3710,
 	ALL = 8191
 }
-
-table Torappu_BuildingData_RoomUnlockCond_CondItem {
-	type:Torappu_BuildingData_RoomType;
-	level:int32;
-	count:int32;
-}
-
-
-
-table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_ {
-	dict_key:int32;
-	dict_value:Torappu_BuildingData_RoomUnlockCond_CondItem;
-}
-
-
-
-table Torappu_BuildingData_RoomUnlockCond {
-	id:string;
-	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_RoomUnlockCond_CondItem_];
-}
-
-
-
-table Dict_2_System_String_Torappu_BuildingData_RoomUnlockCond_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_RoomUnlockCond;
-}
-
-
 
 enum Torappu_BuildingData_RoomCategory : int32 {
 	NONE = 0,
@@ -238,22 +221,9 @@ table Dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_ {
 
 
 
-table Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost {
-	items:[Torappu_ItemBundle];
-}
-
-
-
-table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_ {
-	dict_key:int32;
-	dict_value:Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost;
-}
-
-
-
 table Torappu_BuildingData_LayoutData_SlotCleanCost {
 	id:string;
-	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_];
+	number:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 
@@ -265,32 +235,11 @@ table Dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_ {
 
 
 
-enum Torappu_BuildingData_LayoutData_StoreyData_Type : int32 {
-	UPGROUND = 0,
-	DOWNGROUND = 1
-}
-
-table Torappu_BuildingData_LayoutData_StoreyData {
-	id:string;
-	yOffset:int32;
-	unlockControlLevel:int32;
-	type:Torappu_BuildingData_LayoutData_StoreyData_Type;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_LayoutData_StoreyData;
-}
-
-
-
 table Torappu_BuildingData_LayoutData {
 	id:string;
 	slots:[Dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_];
 	cleanCosts:[Dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_];
-	storeys:[Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_];
+	storeys:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 
@@ -683,104 +632,6 @@ table Dict_2_System_String_Torappu_BuildingData_CustomData_FurnitureData_ {
 
 
 
-table Torappu_BuildingData_CustomData_ThemeQuickSetupItem {
-	furnitureId:string;
-	pos0:int32;
-	pos1:int32;
-	dir:int32;
-}
-
-
-
-table Torappu_BuildingData_CustomData_ThemeData {
-	id:string;
-	enableRoomType:int32;
-	sortId:int32;
-	name:string;
-	themeType:string;
-	desc:string;
-	quickSetup:[Torappu_BuildingData_CustomData_ThemeQuickSetupItem];
-	groups:[string];
-	furnitures:[string];
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_CustomData_ThemeData;
-}
-
-
-
-table Torappu_BuildingData_CustomData_GroupData {
-	id:string;
-	sortId:int32;
-	name:string;
-	themeId:string;
-	comfort:int32;
-	count:int32;
-	furniture:[string];
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_CustomData_GroupData;
-}
-
-
-
-table Torappu_BuildingData_CustomData_FurnitureTypeData {
-	type:Torappu_BuildingData_FurnitureType;
-	name:string;
-	enableRoomType:int32;
-}
-
-
-
-table Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_ {
-	dict_key:Torappu_BuildingData_FurnitureType;
-	dict_value:Torappu_BuildingData_CustomData_FurnitureTypeData;
-}
-
-
-
-table Torappu_BuildingData_CustomData_FurnitureSubTypeData {
-	subType:Torappu_BuildingData_FurnitureSubType;
-	name:string;
-	type:Torappu_BuildingData_FurnitureType;
-	sortId:int32;
-	countLimit:int32;
-	enableRoomType:int32;
-}
-
-
-
-table Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_ {
-	dict_key:Torappu_BuildingData_FurnitureSubType;
-	dict_value:Torappu_BuildingData_CustomData_FurnitureSubTypeData;
-}
-
-
-
-table Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem {
-	furnitureId:string;
-	xOffset:int32;
-	yOffset:int32;
-	defaultPrefabId:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__ {
-	dict_key:string;
-	dict_value:[Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem];
-}
-
-
-
 table Torappu_BuildingData_CustomData_InteractItem {
 	skinId:string;
 }
@@ -848,11 +699,11 @@ table Dict_2_Torappu_BuildingData_DiySortType_Dict_2_System_String_Torappu_Build
 
 table Torappu_BuildingData_CustomData {
 	furnitures:[Dict_2_System_String_Torappu_BuildingData_CustomData_FurnitureData_];
-	themes:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_ThemeData_];
-	groups:[Torappu_ListDict_2_System_String_Torappu_BuildingData_CustomData_GroupData_];
-	types:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureType_Torappu_BuildingData_CustomData_FurnitureTypeData_];
-	subTypes:[Torappu_ListDict_2_Torappu_BuildingData_FurnitureSubType_Torappu_BuildingData_CustomData_FurnitureSubTypeData_];
-	defaultFurnitures:[Torappu_ListDict_2_System_String_List_1_Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem__];
+	themes:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	groups:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	types:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	subTypes:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	defaultFurnitures:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	interactGroups:[Dict_2_System_String_List_1_Torappu_BuildingData_CustomData_InteractItem__];
 	diyUISortTemplates:[Dict_2_Torappu_BuildingData_DiySortType_Dict_2_System_String_Torappu_BuildingData_CustomData_DiyUISortTemplateListData__];
 }
@@ -974,23 +825,9 @@ table Dict_2_System_String_Torappu_BuildingData_WorkshopFormula_ {
 
 
 
-table Torappu_BuildingData_CreditFormula_ValueModel {
-	basic:int32;
-	addition:int32;
-}
-
-
-
-table Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_ {
-	dict_key:int32;
-	dict_value:Torappu_BuildingData_CreditFormula_ValueModel;
-}
-
-
-
 table Torappu_BuildingData_CreditFormula {
-	initiative:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
-	passive:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+	initiative:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	passive:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 
@@ -1017,37 +854,6 @@ table Torappu_BuildingData_WorkshopRarityInfo {
 	order:int32;
 	rarityList:[Torappu_ItemRarity];
 	color:string;
-}
-
-
-
-table Torappu_BuildingData_SlotPrequeData {
-	roomType:Torappu_BuildingData_RoomType;
-	name:string;
-	typeSortId:int32;
-	isPreque:bool;
-	prequeNum:int32;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_SlotPrequeData;
-}
-
-
-
-table Torappu_BuildingData_DormitoryPrequeData {
-	roomType:Torappu_BuildingData_RoomType;
-	name:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_ {
-	dict_key:string;
-	dict_value:Torappu_BuildingData_DormitoryPrequeData;
 }
 
 
@@ -1172,8 +978,8 @@ table Torappu_BuildingData {
 	manufactStationBuff:float;
 	comfortManpowerRecoverFactor:int32;
 	manpowerDisplayFactor:int32;
-	shopOutputRatio:[Torappu_ListDict_2_System_String_System_Int32_];
-	shopStackRatio:[Torappu_ListDict_2_System_String_System_Int32_];
+	shopOutputRatio:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	shopStackRatio:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	basicFavorPerDay:int32;
 	humanResourceLimit:int32;
 	tiredApThreshold:int64;
@@ -1226,8 +1032,8 @@ table Torappu_BuildingData {
 	assistantUnlock:[int32];
 	workshopRarities:[Torappu_BuildingData_WorkshopRarityInfo];
 	todoItemSortPriorityDict:[Dict_2_System_String_System_Int32_];
-	slotPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_];
-	dormitoryPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_];
+	slotPrequeDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	dormitoryPrequeDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	workshopTargetDesDict:[Dict_2_System_String_System_String_];
 	tradingOrderDesDict:[Dict_2_System_String_System_String_];
 	stationManageConstData:Torappu_BuildingData_StationManageConstData;
@@ -1240,4 +1046,13 @@ table Torappu_BuildingData {
 
 
 
-root_type Torappu_BuildingData;
+table dict__string__Torappu_BuildingData {
+  dict_key: string(key);
+  dict_value: Torappu_BuildingData;
+}
+
+table Torappu_SimpleKVTable_Torappu_BuildingData {
+  dict_array: [dict__string__Torappu_BuildingData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_BuildingData;

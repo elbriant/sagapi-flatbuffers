@@ -2666,29 +2666,7 @@ table Dict_2_System_String_Torappu_RoguelikeFragmentBuffData_ {
 
 
 
-enum Torappu_AlchemyPoolRarityType : int32 {
-	NONE = -1,
-	NORMAL = 0,
-	RARE = 1,
-	SUPER_RARE = 2
-}
-
-table Torappu_RoguelikeAlchemyData {
-	fragmentTypeList:[Torappu_RoguelikeFragmentType];
-	fragmentSquareSum:int32;
-	poolRarity:Torappu_AlchemyPoolRarityType;
-	relicProp:float;
-	shieldProp:float;
-	populationProp:float;
-	overrideConditionBandIds:[string];
-	overrideRecipeId:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_ {
-	dict_key:string;
-	dict_value:Torappu_RoguelikeAlchemyData;
+table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
 }
 
 
@@ -2727,7 +2705,7 @@ table Torappu_RoguelikeFragmentModuleData {
 	fragmentTypeData:[Dict_2_System_String_Torappu_RoguelikeFragmentTypeData_];
 	moduleConsts:Torappu_RoguelikeFragmentModuleConsts;
 	fragmentBuffData:[Dict_2_System_String_Torappu_RoguelikeFragmentBuffData_];
-	alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
+	alchemyData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	alchemyFormulaData:[Dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_];
 	fragmentLevelData:[Dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_];
 }
@@ -3671,4 +3649,13 @@ table Torappu_RoguelikeTopicTable {
 
 
 
-root_type Torappu_RoguelikeTopicTable;
+table dict__string__Torappu_RoguelikeTopicTable {
+  dict_key: string(key);
+  dict_value: Torappu_RoguelikeTopicTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_RoguelikeTopicTable {
+  dict_array: [dict__string__Torappu_RoguelikeTopicTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_RoguelikeTopicTable;

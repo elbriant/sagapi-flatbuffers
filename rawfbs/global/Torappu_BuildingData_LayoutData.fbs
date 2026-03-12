@@ -1,12 +1,12 @@
 include "Dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_.fbs";
 include "Dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 
 table Torappu_BuildingData_LayoutData {
 	id:string;
 	slots:[Dict_2_System_String_Torappu_BuildingData_LayoutData_RoomSlot_];
 	cleanCosts:[Dict_2_System_String_Torappu_BuildingData_LayoutData_SlotCleanCost_];
-	storeys:[Torappu_ListDict_2_System_String_Torappu_BuildingData_LayoutData_StoreyData_];
+	storeys:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 

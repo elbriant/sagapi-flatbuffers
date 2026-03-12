@@ -153,4 +153,13 @@ table Torappu_CheckInTable {
 
 
 
-root_type Torappu_CheckInTable;
+table dict__string__Torappu_CheckInTable {
+  dict_key: string(key);
+  dict_value: Torappu_CheckInTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_CheckInTable {
+  dict_array: [dict__string__Torappu_CheckInTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_CheckInTable;

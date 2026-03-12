@@ -12,4 +12,13 @@ table Torappu_HandbookTeamData {
 
 
 
-root_type Torappu_HandbookTeamData;
+table dict__string__Torappu_HandbookTeamData {
+  dict_key: string(key);
+  dict_value: Torappu_HandbookTeamData;
+}
+
+table Torappu_SimpleKVTable_Torappu_HandbookTeamData {
+  dict_array: [dict__string__Torappu_HandbookTeamData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_HandbookTeamData;

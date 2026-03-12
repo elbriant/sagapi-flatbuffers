@@ -1,16 +1,15 @@
 include "Torappu_Act12SideData_ConstData.fbs";
 include "Torappu_Act12SideData_ZoneAdditionData.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_Act12SideData_MissionDescInfo_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Torappu_Act12SideData_MileStoneInfo.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_.fbs";
 include "Dict_2_Torappu_Act12SideData_RecycleDialogType_List_1_Torappu_Act12SideData_RecycleDialogData__.fbs";
 
 table Torappu_Act12SideData {
 	constData:Torappu_Act12SideData_ConstData;
 	zoneAdditionDataList:[Torappu_Act12SideData_ZoneAdditionData];
-	missionDescList:[Torappu_ListDict_2_System_String_Torappu_Act12SideData_MissionDescInfo_];
+	missionDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	mileStoneInfoList:[Torappu_Act12SideData_MileStoneInfo];
-	photoList:[Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_];
+	photoList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	recycleDialogDict:[Dict_2_Torappu_Act12SideData_RecycleDialogType_List_1_Torappu_Act12SideData_RecycleDialogData__];
 }
 

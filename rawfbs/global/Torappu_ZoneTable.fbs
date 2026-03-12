@@ -1,5 +1,5 @@
 include "Dict_2_System_String_Torappu_ZoneData_.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_Torappu_ZoneValidInfo_.fbs";
 include "Dict_2_System_String_Torappu_MainlineZoneData_.fbs";
 include "Dict_2_System_String_Torappu_ZoneRecordGroupData_.fbs";
@@ -8,7 +8,7 @@ include "Torappu_ZoneMetaData.fbs";
 
 table Torappu_ZoneTable {
 	zones:[Dict_2_System_String_Torappu_ZoneData_];
-	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
+	weeklyAdditionInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	zoneValidInfo:[Dict_2_System_String_Torappu_ZoneValidInfo_];
 	mainlineAdditionInfo:[Dict_2_System_String_Torappu_MainlineZoneData_];
 	zoneRecordGroupedData:[Dict_2_System_String_Torappu_ZoneRecordGroupData_];

@@ -128,4 +128,13 @@ table Torappu_CrisisClientData {
 
 
 
-root_type Torappu_CrisisClientData;
+table dict__string__Torappu_CrisisClientData {
+  dict_key: string(key);
+  dict_value: Torappu_CrisisClientData;
+}
+
+table Torappu_SimpleKVTable_Torappu_CrisisClientData {
+  dict_array: [dict__string__Torappu_CrisisClientData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_CrisisClientData;

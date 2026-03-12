@@ -1,7 +1,7 @@
-include "Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 
 table Torappu_ActivityKVSwitchData {
-	kvSwitchInfo:[Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_];
+	kvSwitchInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 }
 
 

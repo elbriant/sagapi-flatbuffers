@@ -1545,19 +1545,7 @@ table Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__ {
 
 
 
-table Torappu_SandboxV2RiftDifficultyData {
-	id:string;
-	riftId:string;
-	desc:string;
-	difficultyLevel:int32;
-	rewardGroupId:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_ {
-	dict_key:string;
-	dict_value:Torappu_SandboxV2RiftDifficultyData;
+table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
 }
 
 
@@ -2118,7 +2106,7 @@ table Torappu_SandboxV2Data {
 	riftGlobalEffectData:[Dict_2_System_String_Torappu_SandboxV2RiftGlobalEffectData_];
 	fixedRiftData:[Dict_2_System_String_Torappu_SandboxV2FixedRiftData_];
 	riftTeamBuffData:[Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__];
-	riftDifficultyData:[Torappu_ListDict_2_System_String_Torappu_SandboxV2RiftDifficultyData_];
+	riftDifficultyData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	riftRewardDisplayData:[Dict_2_System_String_List_1_System_String__];
 	enemyReplaceData:[Dict_2_System_String_Dict_2_System_String_System_String__];
 	archiveQuestData:[Dict_2_System_String_Torappu_SandboxV2ArchiveQuestData_];
@@ -2180,4 +2168,13 @@ table Torappu_SandboxPermTable {
 
 
 
-root_type Torappu_SandboxPermTable;
+table dict__string__Torappu_SandboxPermTable {
+  dict_key: string(key);
+  dict_value: Torappu_SandboxPermTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_SandboxPermTable {
+  dict_array: [dict__string__Torappu_SandboxPermTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_SandboxPermTable;

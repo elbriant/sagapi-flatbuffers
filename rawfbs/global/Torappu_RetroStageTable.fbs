@@ -1,4 +1,4 @@
-include "Torappu_ListDict_2_System_String_System_String_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_Torappu_StageValidInfo_.fbs";
 include "Dict_2_System_String_Torappu_RetroStageOverrideInfo_.fbs";
 include "Dict_2_System_String_Torappu_RetroActData_.fbs";
@@ -9,7 +9,7 @@ include "Torappu_ActivityCustomData.fbs";
 include "Dict_2_System_Int32_System_Int32_.fbs";
 
 table Torappu_RetroStageTable {
-	zoneToRetro:[Torappu_ListDict_2_System_String_System_String_];
+	zoneToRetro:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	stageValidInfo:[Dict_2_System_String_Torappu_StageValidInfo_];
 	stages:[Dict_2_System_String_Torappu_RetroStageOverrideInfo_];
 	retroActList:[Dict_2_System_String_Torappu_RetroActData_];

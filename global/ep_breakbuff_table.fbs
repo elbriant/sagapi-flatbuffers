@@ -6,4 +6,13 @@ table Torappu_EPBreakBuffData {
 
 
 
-root_type Torappu_EPBreakBuffData;
+table dict__string__Torappu_EPBreakBuffData {
+  dict_key: string(key);
+  dict_value: Torappu_EPBreakBuffData;
+}
+
+table Torappu_SimpleKVTable_Torappu_EPBreakBuffData {
+  dict_array: [dict__string__Torappu_EPBreakBuffData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_EPBreakBuffData;

@@ -585,4 +585,13 @@ table Torappu_ClimbTowerTable {
 
 
 
-root_type Torappu_ClimbTowerTable;
+table dict__string__Torappu_ClimbTowerTable {
+  dict_key: string(key);
+  dict_value: Torappu_ClimbTowerTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_ClimbTowerTable {
+  dict_array: [dict__string__Torappu_ClimbTowerTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_ClimbTowerTable;

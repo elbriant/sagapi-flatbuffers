@@ -1,14 +1,24 @@
 
-table Torappu_FavorDataFrames {
+table Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_ {
+	level:int32;
 }
 
 
 
 table Torappu_FavorTable {
 	maxFavor:int32;
-	favorFrames:Torappu_FavorDataFrames;
+	favorFrames:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
 }
 
 
 
-root_type Torappu_FavorTable;
+table dict__string__Torappu_FavorTable {
+  dict_key: string(key);
+  dict_value: Torappu_FavorTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_FavorTable {
+  dict_array: [dict__string__Torappu_FavorTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_FavorTable;

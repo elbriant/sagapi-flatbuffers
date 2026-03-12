@@ -1,11 +1,11 @@
-include "Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_System_Int64_.fbs";
 include "Torappu_ItemBundle.fbs";
 include "Torappu_ActivityRoguelikeData_MileStoneItemInfo.fbs";
 include "Torappu_ActivityTable_CustomUnlockCond.fbs";
 
 table Torappu_ActivityRoguelikeData {
-	outBuffInfos:[Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_];
+	outBuffInfos:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
 	outerBuffToken:string;
 	shopToken:string;

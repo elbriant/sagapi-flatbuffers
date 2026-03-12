@@ -1,4 +1,4 @@
-include "Torappu_ListDict_2_System_String_System_Int32_.fbs";
+include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
 include "Dict_2_System_String_Torappu_BuildingData_RoomUnlockCond_.fbs";
 include "Dict_2_System_String_Torappu_BuildingData_RoomData_.fbs";
 include "Dict_2_System_String_Torappu_BuildingData_LayoutData_.fbs";
@@ -24,8 +24,6 @@ include "Dict_2_System_String_Torappu_BuildingData_WorkshopFormula_.fbs";
 include "Torappu_BuildingData_CreditFormula.fbs";
 include "Dict_2_System_String_System_Int32_.fbs";
 include "Torappu_BuildingData_WorkshopRarityInfo.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_.fbs";
 include "Dict_2_System_String_System_String_.fbs";
 include "Torappu_BuildingData_StationManageConstData.fbs";
 include "Dict_2_System_Int32_Torappu_BuildingData_StationManageFilterInfo_.fbs";
@@ -50,8 +48,8 @@ table Torappu_BuildingData {
 	manufactStationBuff:float;
 	comfortManpowerRecoverFactor:int32;
 	manpowerDisplayFactor:int32;
-	shopOutputRatio:[Torappu_ListDict_2_System_String_System_Int32_];
-	shopStackRatio:[Torappu_ListDict_2_System_String_System_Int32_];
+	shopOutputRatio:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	shopStackRatio:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	basicFavorPerDay:int32;
 	humanResourceLimit:int32;
 	tiredApThreshold:int64;
@@ -104,8 +102,8 @@ table Torappu_BuildingData {
 	assistantUnlock:[int32];
 	workshopRarities:[Torappu_BuildingData_WorkshopRarityInfo];
 	todoItemSortPriorityDict:[Dict_2_System_String_System_Int32_];
-	slotPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_SlotPrequeData_];
-	dormitoryPrequeDatas:[Torappu_ListDict_2_System_String_Torappu_BuildingData_DormitoryPrequeData_];
+	slotPrequeDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	dormitoryPrequeDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
 	workshopTargetDesDict:[Dict_2_System_String_System_String_];
 	tradingOrderDesDict:[Dict_2_System_String_System_String_];
 	stationManageConstData:Torappu_BuildingData_StationManageConstData;

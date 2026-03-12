@@ -187,4 +187,13 @@ table Torappu_CharMetaTable {
 
 
 
-root_type Torappu_CharMetaTable;
+table dict__string__Torappu_CharMetaTable {
+  dict_key: string(key);
+  dict_value: Torappu_CharMetaTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_CharMetaTable {
+  dict_array: [dict__string__Torappu_CharMetaTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_CharMetaTable;
