@@ -245,54 +245,24 @@ table Torappu_RouteData {
 
 
 
-table CodeStage_AntiCheat_ObscuredTypes_ObscuredInt {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
-	inited:bool;
-	fakeValue:int32;
-	fakeValueActive:bool;
-}
-
-
-
-table CodeStage_AntiCheat_Common_ACTkByte4 {
-	b1:uint8;
-	b2:uint8;
-	b3:uint8;
-	b4:uint8;
-}
-
-
-
-table CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat {
-	currentCryptoKey:int32;
-	hiddenValue:int32;
-	hiddenValueOldByte4:CodeStage_AntiCheat_Common_ACTkByte4;
-	inited:bool;
-	fakeValue:float;
-	fakeValueActive:bool;
-}
-
-
-
 table Torappu_AttributesData {
-	maxHp:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	atk:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	def:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	magicResistance:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	cost:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	blockCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	moveSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	attackSpeed:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	baseAttackTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	respawnTime:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	hpRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	spRecoveryPerSec:CodeStage_AntiCheat_ObscuredTypes_ObscuredFloat;
-	maxDeployCount:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	maxDeckStackCnt:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	tauntLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	massLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
-	baseForceLevel:CodeStage_AntiCheat_ObscuredTypes_ObscuredInt;
+	maxHp:int32;
+	atk:int32;
+	def:int32;
+	magicResistance:float;
+	cost:int32;
+	blockCnt:int32;
+	moveSpeed:float;
+	attackSpeed:float;
+	baseAttackTime:float;
+	respawnTime:int32;
+	hpRecoveryPerSec:float;
+	spRecoveryPerSec:float;
+	maxDeployCount:int32;
+	maxDeckStackCnt:int32;
+	tauntLevel:int32;
+	massLevel:int32;
+	baseForceLevel:int32;
 	stunImmune:bool;
 	silenceImmune:bool;
 	sleepImmune:bool;
