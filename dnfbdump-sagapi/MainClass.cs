@@ -1,6 +1,4 @@
 ﻿using System;
-using System.ComponentModel.Design;
-using System.Data.SqlTypes;
 using System.IO;
 using dnlib.DotNet;
 
@@ -43,13 +41,12 @@ namespace DNFBDmp
 			// Look for "entry points", aka non generic classes/structs 
 			foreach (MethodDef met in fbLookupType.Methods)
 			{
-				string orName = met.Name;
-				if (!orName.StartsWith("Unpack_"))
+				string name = met.Name;
+				if (!name.StartsWith("Unpack_"))
 					continue;
 
-				// Skip unpack to get real class name
-				orName = orName[7..];
-				string name = orName.Replace("_", ".");
+				// Skip "Unpack_" (7 chars)
+				name = name.Substring(7);
 
 				// We can safely ignore dicts as they are generic and we process them later on
 				if (name.StartsWith("Key.") || name.StartsWith("Value."))
@@ -60,15 +57,15 @@ namespace DNFBDmp
 				// Then if not found, progressively add levels of subclass
 				// This is not strictly necessary as i think all of the "real" entry classes
 				// are not subclasses. (by real i mean what is actually wrote to a file as a singular table)
+				string searchName = name.Replace("_", ".");
 				TypeDef? curType = null;
 				do
 				{
-					curType = resolver.Find(name, true);
+					curType = resolver.Find(searchName, true);
 					if (curType != null)
 						break;
-					name = Utils.replaceLast(name, ".", "+");
-				} while (name.IndexOf(".") >= 0);
-
+					searchName = Utils.replaceLast(searchName, ".", "+");
+				} while (searchName.IndexOf(".") >= 0);
 
 				// If we still didn't find it, that means it's probably a generic class...
 				// We can safely ignore as it will get processed when the time comes.
@@ -78,9 +75,9 @@ namespace DNFBDmp
 				// Verify the class we got actually matches what we create
 				// Just in case, report if mismatched.
 				string qualName = Utils.cleanupClassName(curType.FullName);
-				if (qualName != orName)
+				if (qualName != name)
 				{
-					Console.WriteLine($"Mismatched class calculated: Converted='{qualName}' - Original='{orName}'");
+					Console.WriteLine($"Mismatched class calculated: Converted='{qualName}' - Original='{name}'");
 					continue;
 				}
 

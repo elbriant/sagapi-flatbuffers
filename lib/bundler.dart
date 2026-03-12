@@ -63,6 +63,16 @@ final Map<String, String> tableMapping = {
   'Torappu_MainText': 'main_text',
 };
 
+// Excepciones: Tablas que sabemos que NO usan el wrapper de Diccionario.
+final Set<String> _flatTables = {
+  'prts___levels',
+  'battle_equip_table',
+  'gamedata_const',
+  'init_text',
+  'main_text',
+  'audio_data',
+};
+
 /// Bundles modular raw FBS files into single monolithic schemas.
 void bundleFbs(String inputDirPath, String outputDirPath) {
   final inputDir = Directory(inputDirPath);
@@ -95,7 +105,7 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
               }
             }
           } else if (line.startsWith('root_type')) {
-            continue;
+            continue; // Ignorar roots internos
           } else {
             if (line.contains('k__BackingField')) {
               line = line.replaceAll('<', '').replaceAll('>k__BackingField', '');
@@ -106,9 +116,24 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
       }
 
       processFile(rootFile);
-
       bundledLines.add('');
-      bundledLines.add('root_type $rootClass;');
+
+      // SimpleKVTable wrapper
+      if (!_flatTables.contains(finalName)) {
+        bundledLines.add('table dict__string__$rootClass {');
+        bundledLines.add('  dict_key: string(key);');
+        bundledLines.add('  dict_value: $rootClass;');
+        bundledLines.add('}');
+        bundledLines.add('');
+        bundledLines.add('table Torappu_SimpleKVTable_$rootClass {');
+        // Usamos dict_array para que coincida con el unwrap automático en decoder.dart
+        bundledLines.add('  dict_array: [dict__string__$rootClass];');
+        bundledLines.add('}');
+        bundledLines.add('');
+        bundledLines.add('root_type Torappu_SimpleKVTable_$rootClass;');
+      } else {
+        bundledLines.add('root_type $rootClass;');
+      }
 
       File finalFile = File(p.join(outputDir.path, '$finalName.fbs'));
       finalFile.writeAsStringSync(bundledLines.join('\n'));

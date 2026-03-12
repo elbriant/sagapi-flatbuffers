@@ -122,16 +122,28 @@ namespace DNFBDmp
 		private static TypeSig? getArraySig(TypeSig sig)
 		{
 			string fullName = sig.FullName;
-			if (sig.IsGenericInstanceType && (fullName.StartsWith("System.Collections.Generic.List") ||
-				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet")))
-			{
-				GenericInstSig genericInstSig = sig.ToGenericInstSig();
-				return genericInstSig.GenericArguments[0];
-			}
-			else if (sig.IsSZArray)
+			if (sig.IsSZArray)
 			{
 				return sig.Next;
 			}
+
+			if (sig.IsGenericInstanceType && (fullName.StartsWith("System.Collections.Generic.List") ||
+				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet")))
+			{
+				return sig.ToGenericInstSig().GenericArguments[0];
+			}
+
+			TypeDef? def = sig.ToTypeDefOrRef()?.ResolveTypeDef();
+			while (def != null && def.BaseType != null)
+			{
+				TypeSig baseSig = def.BaseType.ToTypeSig();
+				if (baseSig.IsGenericInstanceType && baseSig.FullName.StartsWith("System.Collections.Generic.List"))
+				{
+					return baseSig.ToGenericInstSig().GenericArguments[0];
+				}
+				def = def.BaseType.ResolveTypeDef();
+			}
+
 			return null;
 		}
 
