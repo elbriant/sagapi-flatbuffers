@@ -373,8 +373,8 @@ namespace DNFBDmp
 								fields.Add(new Tuple<FieldDef, IList<TypeSig>?>(f, currentGenericArgs));
 							}
 						}
-						// Insertamos al inicio para respetar el orden de memoria de FlatBuffers
-						allFields.InsertRange(0, fields);
+						// Añadimos al final. Orden Descendente: Clase actual (Hijo) -> Padre -> Abuelo
+						allFields.AddRange(fields);
 
 						// 2. Resolver los argumentos genericos de la clase padre
 						if (currentDef.BaseType != null)
