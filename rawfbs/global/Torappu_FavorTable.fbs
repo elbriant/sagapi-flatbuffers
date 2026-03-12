@@ -1,8 +1,8 @@
-include "Torappu_FavorDataFrames.fbs";
+include "Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_.fbs";
 
 table Torappu_FavorTable {
 	maxFavor:int32;
-	favorFrames:Torappu_FavorDataFrames;
+	favorFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_];
 }
 
 

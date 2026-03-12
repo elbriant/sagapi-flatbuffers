@@ -1,12 +1,22 @@
 
-table Torappu_FavorDataFrames {
+table Torappu_FavorData {
+	favorPoint:int32;
+	percent:int32;
+	battlePhase:int32;
+}
+
+
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_ {
+	level:int32;
+	data:Torappu_FavorData;
 }
 
 
 
 table Torappu_FavorTable {
 	maxFavor:int32;
-	favorFrames:Torappu_FavorDataFrames;
+	favorFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_];
 }
 
 

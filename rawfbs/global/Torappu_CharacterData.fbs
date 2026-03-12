@@ -9,7 +9,7 @@ include "Torappu_CharacterData_MainSkill.fbs";
 include "Dict_2_System_String_System_Boolean_.fbs";
 include "Torappu_CharacterData_TalentDataBundle.fbs";
 include "Torappu_CharacterData_PotentialRank.fbs";
-include "Torappu_CharacterData_AttributesDeltaKeyFrame.fbs";
+include "Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_.fbs";
 include "Torappu_CharacterData_SkillLevelCost.fbs";
 
 table Torappu_CharacterData {
@@ -47,7 +47,7 @@ table Torappu_CharacterData {
 	displayTokenDict:[Dict_2_System_String_System_Boolean_];
 	talents:[Torappu_CharacterData_TalentDataBundle];
 	potentialRanks:[Torappu_CharacterData_PotentialRank];
-	favorKeyFrames:Torappu_CharacterData_AttributesDeltaKeyFrame;
+	favorKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_];
 	allSkillLvlup:[Torappu_CharacterData_SkillLevelCost];
 }
 

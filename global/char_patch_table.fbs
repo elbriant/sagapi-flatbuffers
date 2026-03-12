@@ -97,7 +97,40 @@ table Torappu_CharacterData_TraitDataBundle {
 
 
 
-table Torappu_CharacterData_AttributesKeyFrame {
+table Torappu_AttributesData {
+	maxHp:int32;
+	atk:int32;
+	def:int32;
+	magicResistance:float;
+	cost:int32;
+	blockCnt:int32;
+	moveSpeed:float;
+	attackSpeed:float;
+	baseAttackTime:float;
+	respawnTime:int32;
+	hpRecoveryPerSec:float;
+	spRecoveryPerSec:float;
+	maxDeployCount:int32;
+	maxDeckStackCnt:int32;
+	tauntLevel:int32;
+	massLevel:int32;
+	baseForceLevel:int32;
+	stunImmune:bool;
+	silenceImmune:bool;
+	sleepImmune:bool;
+	frozenImmune:bool;
+	levitateImmune:bool;
+	disarmedCombatImmune:bool;
+	fearedImmune:bool;
+	palsyImmune:bool;
+	attractImmune:bool;
+}
+
+
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData_ {
+	level:int32;
+	data:Torappu_AttributesData;
 }
 
 
@@ -208,7 +241,7 @@ table Torappu_CharacterData_PhaseData {
 	characterPrefabKey:string;
 	rangeId:string;
 	maxLevel:int32;
-	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
+	attributesKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData_];
 	evolveCost:[Torappu_ItemBundle];
 }
 
@@ -399,7 +432,40 @@ table Torappu_CharacterData_PotentialRank {
 
 
 
-table Torappu_CharacterData_AttributesDeltaKeyFrame {
+table Torappu_AttributesDeltaData {
+	maxHp:int32;
+	atk:int32;
+	def:int32;
+	magicResistance:float;
+	cost:int32;
+	blockCnt:int32;
+	moveSpeed:float;
+	attackSpeed:float;
+	baseAttackTime:float;
+	respawnTime:int32;
+	hpRecoveryPerSec:float;
+	spRecoveryPerSec:float;
+	maxDeployCount:int32;
+	maxDeckStackCnt:int32;
+	tauntLevel:int32;
+	massLevel:int32;
+	baseForceLevel:int32;
+	stunImmune:bool;
+	silenceImmune:bool;
+	sleepImmune:bool;
+	frozenImmune:bool;
+	levitateImmune:bool;
+	disarmedCombatImmune:bool;
+	fearedImmune:bool;
+	palsyImmune:bool;
+	attractImmune:bool;
+}
+
+
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_ {
+	level:int32;
+	data:Torappu_AttributesDeltaData;
 }
 
 
@@ -446,7 +512,7 @@ table Torappu_CharacterData {
 	displayTokenDict:[Dict_2_System_String_System_Boolean_];
 	talents:[Torappu_CharacterData_TalentDataBundle];
 	potentialRanks:[Torappu_CharacterData_PotentialRank];
-	favorKeyFrames:Torappu_CharacterData_AttributesDeltaKeyFrame;
+	favorKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_];
 	allSkillLvlup:[Torappu_CharacterData_SkillLevelCost];
 }
 

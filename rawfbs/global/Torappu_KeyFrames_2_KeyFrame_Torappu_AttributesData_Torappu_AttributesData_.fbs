@@ -1,0 +1,9 @@
+include "Torappu_AttributesData.fbs";
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData_ {
+	level:int32;
+	data:Torappu_AttributesData;
+}
+
+
+root_type Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesData_Torappu_AttributesData_;
