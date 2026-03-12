@@ -96,6 +96,11 @@ namespace DNFBDmp
 		{
 			switch (type.FullName)
 			{
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredString": return "string";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredBool": return "bool";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong": return "int64";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat": return "float";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt": return "int32";
 				case "System.Boolean": return "bool";
 				case "System.Char": return "uint16";
 				case "System.SByte": return "int8";
@@ -409,6 +414,8 @@ namespace DNFBDmp
 						}
 					}
 
+					HashSet<string> processedFieldNames = new HashSet<string>();
+
 					// 3. Procesar los campos con Diagnostico Exacto
 					foreach (var tuple in allFields)
 					{
@@ -434,6 +441,14 @@ namespace DNFBDmp
 								{
 									cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
 								}
+
+								if (processedFieldNames.Contains(cleanFieldName))
+								{
+									Console.WriteLine($"[INFO] Ignorando campo duplicado (Shadowing): {cleanFieldName} en {def.FullName}");
+									continue;
+								}
+
+								processedFieldNames.Add(cleanFieldName);
 								fbBuilder.addTableField(cleanFieldName, type);
 							}
 						}
