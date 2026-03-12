@@ -3,6 +3,8 @@ include "Torappu_MissionItemBgType.fbs";
 include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_ClimbTowerMissionData {
+	bindGodCardId:string;
+	bindTowerId:string;
 	id:string;
 	sortId:int32;
 	description:string;
@@ -22,8 +24,6 @@ table Torappu_ClimbTowerMissionData {
 	foldId:string;
 	haveSubMissionToUnlock:bool;
 	countEndTs:int64;
-	bindGodCardId:string;
-	bindTowerId:string;
 }
 
 

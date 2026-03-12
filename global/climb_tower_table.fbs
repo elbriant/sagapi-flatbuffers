@@ -201,10 +201,10 @@ enum Torappu_OccPer : int32 {
 }
 
 table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
 	type:Torappu_ItemType;
 	id:string;
 	dropType:Torappu_StageDropType;
-	occPercent:Torappu_OccPer;
 }
 
 
@@ -515,6 +515,8 @@ table Torappu_MissionDisplayRewards {
 
 
 table Torappu_ClimbTowerMissionData {
+	bindGodCardId:string;
+	bindTowerId:string;
 	id:string;
 	sortId:int32;
 	description:string;
@@ -534,8 +536,6 @@ table Torappu_ClimbTowerMissionData {
 	foldId:string;
 	haveSubMissionToUnlock:bool;
 	countEndTs:int64;
-	bindGodCardId:string;
-	bindTowerId:string;
 }
 
 

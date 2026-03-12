@@ -32,6 +32,23 @@ table Torappu_Blackboard_DataPair {
 
 
 
+table Torappu_EquipTalentData {
+	displayRangeId:bool;
+	upgradeDescription:string;
+	talentIndex:int32;
+	unlockCondition:Torappu_CharacterData_UnlockCondition;
+	requiredPotentialRank:int32;
+	prefabKey:string;
+	name:string;
+	description:string;
+	rangeId:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+	tokenKey:string;
+	isHideTalent:bool;
+}
+
+
+
 table Torappu_TalentData {
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
 	requiredPotentialRank:int32;
@@ -46,38 +63,21 @@ table Torappu_TalentData {
 
 
 
-table Torappu_EquipTalentData {
-	unlockCondition:Torappu_CharacterData_UnlockCondition;
-	requiredPotentialRank:int32;
-	prefabKey:string;
-	name:string;
-	description:string;
-	rangeId:string;
-	blackboard:[Torappu_Blackboard_DataPair];
-	tokenKey:string;
-	isHideTalent:bool;
-	displayRangeId:bool;
-	upgradeDescription:string;
-	talentIndex:int32;
-}
-
-
-
 table Torappu_CharacterData_EquipTalentDataBundle {
-	candidates:[Torappu_TalentData];
 	candidates:[Torappu_EquipTalentData];
+	candidates:[Torappu_TalentData];
 }
 
 
 
 table Torappu_CharacterData_EquipTraitData {
+	additionalDescription:string;
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
 	requiredPotentialRank:int32;
 	blackboard:[Torappu_Blackboard_DataPair];
 	overrideDescripton:string;
 	prefabKey:string;
 	rangeId:string;
-	additionalDescription:string;
 }
 
 

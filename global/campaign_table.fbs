@@ -159,10 +159,10 @@ enum Torappu_OccPer : int32 {
 }
 
 table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
 	type:Torappu_ItemType;
 	id:string;
 	dropType:Torappu_StageDropType;
-	occPercent:Torappu_OccPer;
 }
 
 

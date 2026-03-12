@@ -55,20 +55,6 @@ table Torappu_NewbeeGachaPoolClientData {
 
 
 
-table Dict_2_System_Int32_System_Int32_ {
-	dict_key:int32;
-	dict_value:int32;
-}
-
-
-
-table Torappu_BasedRecruitPool_RecruitConstants {
-	tagPriceList:[Dict_2_System_Int32_System_Int32_];
-	maxRecruitTime:int32;
-}
-
-
-
 enum Torappu_ItemType : int32 {
 	NONE = 0,
 	CHAR = 1,
@@ -179,8 +165,21 @@ table Torappu_SpecialRecruitPool_SpecialRecruitCostData {
 
 
 
+table Dict_2_System_Int32_System_Int32_ {
+	dict_key:int32;
+	dict_value:int32;
+}
+
+
+
+table Torappu_BasedRecruitPool_RecruitConstants {
+	tagPriceList:[Dict_2_System_Int32_System_Int32_];
+	maxRecruitTime:int32;
+}
+
+
+
 table Torappu_SpecialRecruitPool {
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitId:string;
 	tagName:string;
 	tagId:int32;
@@ -188,6 +187,7 @@ table Torappu_SpecialRecruitPool {
 	startDateTime:int64;
 	endDateTime:int64;
 	recruitTimeTable:[Torappu_SpecialRecruitPool_SpecialRecruitCostData];
+	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 }
 
 
@@ -208,8 +208,8 @@ table Torappu_RecruitPool_RecruitTime {
 
 
 table Torappu_RecruitPool {
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
+	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 }
 
 

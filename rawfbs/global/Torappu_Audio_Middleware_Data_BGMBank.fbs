@@ -2,16 +2,16 @@ include "Torappu_Audio_Middleware_TorappuAudioMiddleware.fbs";
 include "Torappu_Audio_Middleware_AudioAtom.fbs";
 
 table Torappu_Audio_Middleware_Data_BGMBank {
-	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
-	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	bankName:string;
-	name:string;
 	intro:string;
 	loop:string;
 	volume:float;
 	crossfade:float;
 	delay:float;
 	fadeStyleId:string;
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 }
 
 

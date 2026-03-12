@@ -603,6 +603,20 @@ table Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_ {
 
 
 
+table Torappu_CharacterData_UniqueEquipPair {
+	key:string;
+	level:int32;
+}
+
+
+
+table Torappu_CharacterData_MasterInfo {
+	masterId:string;
+	level:int32;
+}
+
+
+
 enum Torappu_EvolvePhase : int32 {
 	PHASE_0 = 0,
 	PHASE_1 = 1,
@@ -621,67 +635,53 @@ table Torappu_CharacterInst_Metadata {
 
 
 
-table Torappu_CharacterData_UniqueEquipPair {
-	key:string;
-	level:int32;
-}
-
-
-
-table Torappu_CharacterData_MasterInfo {
-	masterId:string;
-	level:int32;
-}
-
-
-
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
+	position:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+	hidden:bool;
+	alias:string;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
 	inst:Torappu_CharacterInst_Metadata;
 	skillIndex:int32;
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
-	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
-	showSpIllust:bool;
-	masterInfos:[Torappu_CharacterData_MasterInfo];
-	hidden:bool;
-	alias:string;
-	position:Torappu_GridPosition;
-	direction:Torappu_SharedConsts_Direction;
 }
 
 
 
 table Torappu_LevelData_PredefinedData_PredefinedCard {
+	hidden:bool;
+	alias:string;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
 	inst:Torappu_CharacterInst_Metadata;
 	skillIndex:int32;
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
-	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
-	showSpIllust:bool;
-	masterInfos:[Torappu_CharacterData_MasterInfo];
-	hidden:bool;
-	alias:string;
 }
 
 
 
 table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
+	initialCnt:int32;
+	hidden:bool;
+	alias:string;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
 	inst:Torappu_CharacterInst_Metadata;
 	skillIndex:int32;
 	mainSkillLvl:int32;
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
-	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
-	showSpIllust:bool;
-	masterInfos:[Torappu_CharacterData_MasterInfo];
-	hidden:bool;
-	alias:string;
-	initialCnt:int32;
 }
 
 

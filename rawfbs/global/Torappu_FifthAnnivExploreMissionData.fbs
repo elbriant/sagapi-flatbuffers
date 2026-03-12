@@ -3,6 +3,7 @@ include "Torappu_MissionItemBgType.fbs";
 include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_FifthAnnivExploreMissionData {
+	progressUpLimit:int32;
 	id:string;
 	sortId:int32;
 	description:string;
@@ -22,7 +23,6 @@ table Torappu_FifthAnnivExploreMissionData {
 	foldId:string;
 	haveSubMissionToUnlock:bool;
 	countEndTs:int64;
-	progressUpLimit:int32;
 }
 
 

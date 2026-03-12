@@ -38,16 +38,16 @@ table Torappu_Audio_Middleware_TorappuAudioMiddleware {
 
 
 table Torappu_Audio_Middleware_Data_BGMBank {
-	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
-	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	bankName:string;
-	name:string;
 	intro:string;
 	loop:string;
 	volume:float;
 	crossfade:float;
 	delay:float;
 	fadeStyleId:string;
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 }
 
 
@@ -86,10 +86,6 @@ table Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX {
 
 
 table Torappu_Audio_Middleware_Data_SoundFXBank {
-	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
-	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	bankName:string;
-	name:string;
 	m_totalWeight:float;
 	mixerDesc:Torappu_Audio_MixerDesc;
 	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];
@@ -97,32 +93,36 @@ table Torappu_Audio_Middleware_Data_SoundFXBank {
 	popOldest:bool;
 	customMixerGroup:string;
 	loop:bool;
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 }
 
 
 
 table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
-	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
-	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	bankName:string;
-	name:string;
 	m_targetBank:Torappu_Audio_Middleware_Data_Bank;
 	targetBank:string;
 	ctrlStop:bool;
 	ctrlStopFadetime:float;
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 }
 
 
 
 table Torappu_Audio_Middleware_Data_SnapshotBank {
-	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
-	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
-	bankName:string;
-	name:string;
 	targetSnapshot:string;
 	hookSoundFxBank:string;
 	delay:float;
 	duration:float;
+	middleware:Torappu_Audio_Middleware_TorappuAudioMiddleware;
+	m_activeAtoms:[Torappu_Audio_Middleware_AudioAtom];
+	bankName:string;
+	name:string;
 }
 
 

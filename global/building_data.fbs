@@ -326,8 +326,8 @@ table Torappu_BuildingData_ControlRoomPhase {
 
 
 table Torappu_BuildingData_ControlRoomBean {
-	phases:[Torappu_BuildingData_ControlRoomPhase];
 	basicCostBuff:int32;
+	phases:[Torappu_BuildingData_ControlRoomPhase];
 }
 
 
@@ -340,8 +340,8 @@ table Torappu_BuildingData_ManufactPhase {
 
 
 table Torappu_BuildingData_ManufactRoomBean {
-	phases:[Torappu_BuildingData_ManufactPhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_ManufactPhase];
 }
 
 
@@ -369,8 +369,8 @@ table Torappu_BuildingData_HirePhase {
 
 
 table Torappu_BuildingData_HireRoomBean {
-	phases:[Torappu_BuildingData_HirePhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_HirePhase];
 }
 
 
@@ -409,8 +409,8 @@ table Torappu_BuildingData_MeetingPhase {
 
 
 table Torappu_BuildingData_MeetingRoomBean {
-	phases:[Torappu_BuildingData_MeetingPhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_MeetingPhase];
 }
 
 
@@ -424,8 +424,8 @@ table Torappu_BuildingData_TradingPhase {
 
 
 table Torappu_BuildingData_TradingRoomBean {
-	phases:[Torappu_BuildingData_TradingPhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_TradingPhase];
 }
 
 
@@ -449,8 +449,8 @@ table Torappu_BuildingData_TrainingPhase {
 
 
 table Torappu_BuildingData_TrainingBean {
-	phases:[Torappu_BuildingData_TrainingPhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_TrainingPhase];
 }
 
 
@@ -461,8 +461,8 @@ table Torappu_BuildingData_PowerPhase {
 
 
 table Torappu_BuildingData_PowerRoomBean {
-	phases:[Torappu_BuildingData_PowerPhase];
 	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_PowerPhase];
 }
 
 

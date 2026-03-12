@@ -2657,6 +2657,16 @@ table Dict_2_System_String_Torappu_ActivityBossRushData_BossRushStageAdditionDat
 
 
 
+enum Torappu_OccPer : int32 {
+	ALWAYS = 0,
+	ALMOST = 1,
+	USUAL = 2,
+	OFTEN = 3,
+	SOMETIMES = 4,
+	NEVER = 5,
+	DEFINITELY_BUFF = 6
+}
+
 enum Torappu_StageDropType : int32 {
 	NONE = 0,
 	ONCE = 1,
@@ -2673,22 +2683,12 @@ enum Torappu_StageDropType : int32 {
 	CONDITION_DROP = 12
 }
 
-enum Torappu_OccPer : int32 {
-	ALWAYS = 0,
-	ALMOST = 1,
-	USUAL = 2,
-	OFTEN = 3,
-	SOMETIMES = 4,
-	NEVER = 5,
-	DEFINITELY_BUFF = 6
-}
-
 table Torappu_ActivityBossRushData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
+	dropCount:int32;
 	type:Torappu_ItemType;
 	id:string;
 	dropType:Torappu_StageDropType;
-	occPercent:Torappu_OccPer;
-	dropCount:int32;
 }
 
 
@@ -3203,10 +3203,10 @@ table Torappu_StageData_DisplayRewards {
 
 
 table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
 	type:Torappu_ItemType;
 	id:string;
 	dropType:Torappu_StageDropType;
-	occPercent:Torappu_OccPer;
 }
 
 
@@ -9123,6 +9123,7 @@ table Torappu_FifthAnnivExploreConst {
 
 
 table Torappu_FifthAnnivExploreMissionData {
+	progressUpLimit:int32;
 	id:string;
 	sortId:int32;
 	description:string;
@@ -9142,7 +9143,6 @@ table Torappu_FifthAnnivExploreMissionData {
 	foldId:string;
 	haveSubMissionToUnlock:bool;
 	countEndTs:int64;
-	progressUpLimit:int32;
 }
 
 
