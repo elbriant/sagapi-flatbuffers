@@ -97,8 +97,7 @@ table Torappu_CharacterData_TraitDataBundle {
 
 
 
-table Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_ {
-	level:int32;
+table Torappu_CharacterData_AttributesKeyFrame {
 }
 
 
@@ -209,7 +208,7 @@ table Torappu_CharacterData_PhaseData {
 	characterPrefabKey:string;
 	rangeId:string;
 	maxLevel:int32;
-	attributesKeyFrames:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
 	evolveCost:[Torappu_ItemBundle];
 }
 
@@ -400,6 +399,11 @@ table Torappu_CharacterData_PotentialRank {
 
 
 
+table Torappu_CharacterData_AttributesDeltaKeyFrame {
+}
+
+
+
 table Torappu_CharacterData_SkillLevelCost {
 	unlockCond:Torappu_CharacterData_UnlockCondition;
 	lvlUpCost:[Torappu_ItemBundle];
@@ -442,7 +446,7 @@ table Torappu_CharacterData {
 	displayTokenDict:[Dict_2_System_String_System_Boolean_];
 	talents:[Torappu_CharacterData_TalentDataBundle];
 	potentialRanks:[Torappu_CharacterData_PotentialRank];
-	favorKeyFrames:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	favorKeyFrames:Torappu_CharacterData_AttributesDeltaKeyFrame;
 	allSkillLvlup:[Torappu_CharacterData_SkillLevelCost];
 }
 

@@ -1,8 +1,8 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_.fbs";
 
 table Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData {
 	buffId:string;
-	buffUnlockInfos:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	buffUnlockInfos:[Torappu_ListDict_2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_];
 }
 
 

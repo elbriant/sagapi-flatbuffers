@@ -1,8 +1,8 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_.fbs";
 
 table Torappu_BuildingData_CreditFormula {
-	initiative:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	passive:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	initiative:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
+	passive:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_CreditFormula_ValueModel_];
 }
 
 

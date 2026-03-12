@@ -1,9 +1,10 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_.fbs";
 
 table Torappu_ActivityMiniStoryData {
 	tokenItemId:string;
-	zoneDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDescList:[Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_];
 	extraDropZoneList:[string];
 }
 

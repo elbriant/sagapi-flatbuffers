@@ -1,8 +1,8 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_.fbs";
 
 table Dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__ {
 	dict_key:string;
-	dict_value:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	dict_value:[Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_];
 }
 
 

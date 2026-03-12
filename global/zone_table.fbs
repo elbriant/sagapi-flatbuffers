@@ -43,7 +43,23 @@ table Dict_2_System_String_Torappu_ZoneData_ {
 
 
 
-table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+enum Torappu_WeeklyType : int32 {
+	NONE = 0,
+	MATERIAL = 1,
+	SPECIAL = 2,
+	EVOLVE = 3
+}
+
+table Torappu_WeeklyZoneData {
+	daysOfWeek:[int32];
+	type:Torappu_WeeklyType;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_ {
+	dict_key:string;
+	dict_value:Torappu_WeeklyZoneData;
 }
 
 
@@ -296,7 +312,7 @@ table Torappu_ZoneMetaData {
 
 table Torappu_ZoneTable {
 	zones:[Dict_2_System_String_Torappu_ZoneData_];
-	weeklyAdditionInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
 	zoneValidInfo:[Dict_2_System_String_Torappu_ZoneValidInfo_];
 	mainlineAdditionInfo:[Dict_2_System_String_Torappu_MainlineZoneData_];
 	zoneRecordGroupedData:[Dict_2_System_String_Torappu_ZoneRecordGroupData_];

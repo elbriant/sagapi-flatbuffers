@@ -1,11 +1,11 @@
-include "Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_.fbs";
+include "Torappu_CharacterData_AttributesKeyFrame.fbs";
 include "Torappu_ItemBundle.fbs";
 
 table Torappu_CharacterData_PhaseData {
 	characterPrefabKey:string;
 	rangeId:string;
 	maxLevel:int32;
-	attributesKeyFrames:[Torappu_KeyFrames_2_KeyFrame_TInput_TOutput_];
+	attributesKeyFrames:Torappu_CharacterData_AttributesKeyFrame;
 	evolveCost:[Torappu_ItemBundle];
 }
 

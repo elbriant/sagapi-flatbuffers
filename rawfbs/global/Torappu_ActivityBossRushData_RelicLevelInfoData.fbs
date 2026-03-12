@@ -1,8 +1,8 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_.fbs";
 
 table Torappu_ActivityBossRushData_RelicLevelInfoData {
 	relicId:string;
-	levelInfos:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	levelInfos:[Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_];
 }
 
 

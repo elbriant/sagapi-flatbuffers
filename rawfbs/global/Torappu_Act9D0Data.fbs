@@ -1,4 +1,5 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act9D0Data_ZoneDescInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act9D0Data_FavorUpInfo_.fbs";
 include "Dict_2_System_String_Torappu_Act9D0Data_SubMissionInfo_.fbs";
 include "Dict_2_System_String_System_Int64_.fbs";
 include "Dict_2_System_String_Torappu_Act9D0Data_ActivityNewsInfo_.fbs";
@@ -8,8 +9,8 @@ include "Torappu_Act9D0Data_Act9D0ConstData.fbs";
 
 table Torappu_Act9D0Data {
 	tokenItemId:string;
-	zoneDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDescList:[Torappu_ListDict_2_System_String_Torappu_Act9D0Data_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_Act9D0Data_FavorUpInfo_];
 	subMissionInfo:[Dict_2_System_String_Torappu_Act9D0Data_SubMissionInfo_];
 	hasSubMission:bool;
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];

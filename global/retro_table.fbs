@@ -1,5 +1,7 @@
 
-table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+table Torappu_ListDict_2_System_String_System_String_ {
+	dict_key:string;
+	dict_value:string;
 }
 
 
@@ -1128,7 +1130,7 @@ table Dict_2_System_Int32_System_Int32_ {
 
 
 table Torappu_RetroStageTable {
-	zoneToRetro:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneToRetro:[Torappu_ListDict_2_System_String_System_String_];
 	stageValidInfo:[Dict_2_System_String_Torappu_StageValidInfo_];
 	stages:[Dict_2_System_String_Torappu_RetroStageOverrideInfo_];
 	retroActList:[Dict_2_System_String_Torappu_RetroActData_];

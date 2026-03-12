@@ -553,7 +553,22 @@ table Torappu_LevelData_WaveData {
 
 
 
-table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+table Torappu_LevelData_BranchData_PhaseData {
+	preDelay:float;
+	actions:[Torappu_LevelData_WaveData_FragmentData_ActionData];
+}
+
+
+
+table Torappu_LevelData_BranchData {
+	phases:[Torappu_LevelData_BranchData_PhaseData];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_ {
+	dict_key:string;
+	dict_value:Torappu_LevelData_BranchData;
 }
 
 
@@ -666,7 +681,7 @@ table Torappu_LevelData {
 	enemies:[Torappu_LevelData_EnemyData];
 	enemyDbRefs:[Torappu_LevelData_EnemyDataDbReference];
 	waves:[Torappu_LevelData_WaveData];
-	branches:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	branches:[Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_];
 	predefines:Torappu_LevelData_PredefinedData;
 	hardPredefines:Torappu_LevelData_PredefinedData;
 	excludeCharIdList:[string];

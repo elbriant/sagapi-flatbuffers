@@ -1,11 +1,12 @@
 include "Torappu_MileStoneInfo.fbs";
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act5D0Data_ZoneDescInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act5D0Data_MissionExtraInfo_.fbs";
 
 table Torappu_Act5D0Data {
 	mileStoneInfo:[Torappu_MileStoneInfo];
 	mileStoneTokenId:string;
-	zoneDesc:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	missionExtraList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDesc:[Torappu_ListDict_2_System_String_Torappu_Act5D0Data_ZoneDescInfo_];
+	missionExtraList:[Torappu_ListDict_2_System_String_Torappu_Act5D0Data_MissionExtraInfo_];
 	spReward:string;
 }
 

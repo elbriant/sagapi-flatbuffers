@@ -503,7 +503,39 @@ table Dict_2_System_Int32_Torappu_AllPlayerCheckinData_DailyInfo_ {
 
 
 
-table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+table Torappu_AllPlayerCheckinData_PublicBehaviour {
+	sortId:int32;
+	allBehaviorId:string;
+	displayOrder:int32;
+	allBehaviorDesc:string;
+	requiringValue:int32;
+	requireRepeatCompletion:bool;
+	rewardReceivedDesc:string;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_AllPlayerCheckinData_PublicBehaviour_ {
+	dict_key:string;
+	dict_value:Torappu_AllPlayerCheckinData_PublicBehaviour;
+}
+
+
+
+table Torappu_AllPlayerCheckinData_PersonalBehaviour {
+	sortId:int32;
+	personalBehaviorId:string;
+	displayOrder:int32;
+	requireRepeatCompletion:bool;
+	desc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_AllPlayerCheckinData_PersonalBehaviour_ {
+	dict_key:string;
+	dict_value:Torappu_AllPlayerCheckinData_PersonalBehaviour;
 }
 
 
@@ -518,8 +550,8 @@ table Torappu_AllPlayerCheckinData_ConstData {
 table Torappu_AllPlayerCheckinData {
 	checkInList:[Dict_2_System_Int32_Torappu_AllPlayerCheckinData_DailyInfo_];
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
-	pubBhvs:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	personalBhvs:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	pubBhvs:[Torappu_ListDict_2_System_String_Torappu_AllPlayerCheckinData_PublicBehaviour_];
+	personalBhvs:[Torappu_ListDict_2_System_String_Torappu_AllPlayerCheckinData_PersonalBehaviour_];
 	constData:Torappu_AllPlayerCheckinData_ConstData;
 }
 
@@ -604,6 +636,22 @@ table Torappu_VersusCheckInData {
 table Dict_2_System_String_Torappu_VersusCheckInData_ {
 	dict_key:string;
 	dict_value:Torappu_VersusCheckInData;
+}
+
+
+
+table Torappu_Act3D0Data_CampBasicInfo {
+	campId:string;
+	campName:string;
+	campDesc:string;
+	rewardDesc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act3D0Data_CampBasicInfo;
 }
 
 
@@ -765,8 +813,37 @@ table Dict_2_System_String_Torappu_Act3D0Data_CampInfo_ {
 
 
 
+table Torappu_Act3D0Data_ZoneDescInfo {
+	zoneId:string;
+	lockedText:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act3D0Data_ZoneDescInfo;
+}
+
+
+
+table Torappu_CommonFavorUpInfo {
+	charId:string;
+	displayStartTime:int64;
+	displayEndTime:int64;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_ {
+	dict_key:string;
+	dict_value:Torappu_CommonFavorUpInfo;
+}
+
+
+
 table Torappu_Act3D0Data {
-	campBasicInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	campBasicInfo:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_CampBasicInfo_];
 	limitedPoolList:[Dict_2_System_String_Torappu_Act3D0Data_LimitedPoolDetailInfo_];
 	infinitePoolList:[Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolDetailInfo_];
 	infinitePercent:[Dict_2_System_String_Torappu_Act3D0Data_InfinitePoolPercent_];
@@ -778,8 +855,8 @@ table Torappu_Act3D0Data {
 	etTokenId:string;
 	gachaBoxInfo:[Torappu_Act3D0Data_GachaBoxInfo];
 	campInfo:[Dict_2_System_String_Torappu_Act3D0Data_CampInfo_];
-	zoneDesc:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDesc:[Torappu_ListDict_2_System_String_Torappu_Act3D0Data_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_CommonFavorUpInfo_];
 }
 
 
@@ -867,11 +944,40 @@ table Torappu_MileStoneInfo {
 
 
 
+table Torappu_Act5D0Data_ZoneDescInfo {
+	zoneId:string;
+	lockedText:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act5D0Data_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act5D0Data_ZoneDescInfo;
+}
+
+
+
+table Torappu_Act5D0Data_MissionExtraInfo {
+	difficultLevel:int32;
+	levelDesc:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act5D0Data_MissionExtraInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act5D0Data_MissionExtraInfo;
+}
+
+
+
 table Torappu_Act5D0Data {
 	mileStoneInfo:[Torappu_MileStoneInfo];
 	mileStoneTokenId:string;
-	zoneDesc:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	missionExtraList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDesc:[Torappu_ListDict_2_System_String_Torappu_Act5D0Data_ZoneDescInfo_];
+	missionExtraList:[Torappu_ListDict_2_System_String_Torappu_Act5D0Data_MissionExtraInfo_];
 	spReward:string;
 }
 
@@ -1165,6 +1271,36 @@ table Dict_2_System_String_Torappu_ActivityCollectionData_ {
 
 
 
+table Torappu_Act9D0Data_ZoneDescInfo {
+	zoneId:string;
+	unlockText:string;
+	displayStartTime:int64;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act9D0Data_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act9D0Data_ZoneDescInfo;
+}
+
+
+
+table Torappu_Act9D0Data_FavorUpInfo {
+	charId:string;
+	displayStartTime:int64;
+	displayEndTime:int64;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act9D0Data_FavorUpInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act9D0Data_FavorUpInfo;
+}
+
+
+
 table Torappu_Act9D0Data_SubMissionInfo {
 	missionId:string;
 	missionTitle:string;
@@ -1250,8 +1386,8 @@ table Torappu_Act9D0Data_Act9D0ConstData {
 
 table Torappu_Act9D0Data {
 	tokenItemId:string;
-	zoneDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDescList:[Torappu_ListDict_2_System_String_Torappu_Act9D0Data_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_Act9D0Data_FavorUpInfo_];
 	subMissionInfo:[Dict_2_System_String_Torappu_Act9D0Data_SubMissionInfo_];
 	hasSubMission:bool;
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
@@ -1300,6 +1436,23 @@ table Torappu_Act12SideData_ZoneAdditionData {
 
 
 
+table Torappu_Act12SideData_MissionDescInfo {
+	zoneClass:Torappu_Act12SideData_ActZoneClass;
+	specialMissionDesc:string;
+	needLock:bool;
+	unlockHint:string;
+	unlockStage:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act12SideData_MissionDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act12SideData_MissionDescInfo;
+}
+
+
+
 table Torappu_Act12SideData_MileStoneInfo {
 	mileStoneId:string;
 	orderId:int32;
@@ -1307,6 +1460,23 @@ table Torappu_Act12SideData_MileStoneInfo {
 	item:Torappu_ItemBundle;
 	isPrecious:bool;
 	mileStoneStage:int32;
+}
+
+
+
+table Torappu_Act12SideData_PhotoInfo {
+	picId:string;
+	picName:string;
+	mileStoneId:string;
+	picDesc:string;
+	jumpStageId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act12SideData_PhotoInfo;
 }
 
 
@@ -1344,9 +1514,9 @@ table Dict_2_Torappu_Act12SideData_RecycleDialogType_List_1_Torappu_Act12SideDat
 table Torappu_Act12SideData {
 	constData:Torappu_Act12SideData_ConstData;
 	zoneAdditionDataList:[Torappu_Act12SideData_ZoneAdditionData];
-	missionDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	missionDescList:[Torappu_ListDict_2_System_String_Torappu_Act12SideData_MissionDescInfo_];
 	mileStoneInfoList:[Torappu_Act12SideData_MileStoneInfo];
-	photoList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	photoList:[Torappu_ListDict_2_System_String_Torappu_Act12SideData_PhotoInfo_];
 	recycleDialogDict:[Dict_2_Torappu_Act12SideData_RecycleDialogType_List_1_Torappu_Act12SideData_RecycleDialogData__];
 }
 
@@ -2152,10 +2322,39 @@ table Dict_2_System_String_Torappu_ActivitySwitchCheckinData_ {
 
 
 
+table Torappu_ActivityMiniStoryData_ZoneDescInfo {
+	zoneId:string;
+	unlockText:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityMiniStoryData_ZoneDescInfo;
+}
+
+
+
+table Torappu_ActivityMiniStoryData_FavorUpInfo {
+	charId:string;
+	displayStartTime:int64;
+	displayEndTime:int64;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityMiniStoryData_FavorUpInfo;
+}
+
+
+
 table Torappu_ActivityMiniStoryData {
 	tokenItemId:string;
-	zoneDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	favorUpList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDescList:[Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_ZoneDescInfo_];
+	favorUpList:[Torappu_ListDict_2_System_String_Torappu_ActivityMiniStoryData_FavorUpInfo_];
 	extraDropZoneList:[string];
 }
 
@@ -2164,6 +2363,40 @@ table Torappu_ActivityMiniStoryData {
 table Dict_2_System_String_Torappu_ActivityMiniStoryData_ {
 	dict_key:string;
 	dict_value:Torappu_ActivityMiniStoryData;
+}
+
+
+
+table Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo {
+	buffLevel:int32;
+	name:string;
+	iconId:string;
+	description:string;
+	usage:string;
+	itemId:string;
+	itemType:Torappu_ItemType;
+	cost:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_ {
+	dict_key:int32;
+	dict_value:Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo;
+}
+
+
+
+table Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData {
+	buffId:string;
+	buffUnlockInfos:[Torappu_ListDict_2_System_Int32_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfo_];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData;
 }
 
 
@@ -2185,7 +2418,7 @@ table Torappu_ActivityTable_CustomUnlockCond {
 
 
 table Torappu_ActivityRoguelikeData {
-	outBuffInfos:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	outBuffInfos:[Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_];
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
 	outerBuffToken:string;
 	shopToken:string;
@@ -2257,6 +2490,37 @@ table Torappu_SharedCharData_SharedCharSkillData {
 
 
 
+table Torappu_SharedCharData_CharEquipInfo {
+	locked:bool;
+	level:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_ {
+	dict_key:string;
+	dict_value:Torappu_SharedCharData_CharEquipInfo;
+}
+
+
+
+table Torappu_SharedCharData_TmplData {
+	skillIndex:int32;
+	skinId:string;
+	skills:[Torappu_SharedCharData_SharedCharSkillData];
+	selectEquip:string;
+	equips:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_ {
+	dict_key:string;
+	dict_value:Torappu_SharedCharData_TmplData;
+}
+
+
+
 table Torappu_SharedCharData {
 	charId:string;
 	potentialRank:int32;
@@ -2264,7 +2528,7 @@ table Torappu_SharedCharData {
 	m_skinId:string;
 	m_skills:[Torappu_SharedCharData_SharedCharSkillData];
 	m_selectEquip:string;
-	m_equips:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	m_equips:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_];
 	mainSkillLvl:int32;
 	evolvePhase:int32;
 	level:int32;
@@ -2272,7 +2536,7 @@ table Torappu_SharedCharData {
 	crisisRecord:[Dict_2_System_String_System_Int32_];
 	crisisV2Record:[Dict_2_System_String_System_Int32_];
 	currentTmpl:string;
-	tmpl:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	tmpl:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_];
 }
 
 
@@ -2496,9 +2760,25 @@ table Torappu_ActivityBossRushData_RelicData {
 
 
 
+table Torappu_ActivityBossRushData_RelicLevelInfo {
+	level:int32;
+	effectDesc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+	needItemCount:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_ {
+	dict_key:int32;
+	dict_value:Torappu_ActivityBossRushData_RelicLevelInfo;
+}
+
+
+
 table Torappu_ActivityBossRushData_RelicLevelInfoData {
 	relicId:string;
-	levelInfos:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	levelInfos:[Torappu_ListDict_2_System_Int32_Torappu_ActivityBossRushData_RelicLevelInfo_];
 }
 
 
@@ -2600,12 +2880,19 @@ table Dict_2_System_String_Dict_2_System_String_Torappu_ActivityFloatParadeData_
 
 
 
+table Torappu_ListDict_2_System_String_System_Single_ {
+	dict_key:string;
+	dict_value:float;
+}
+
+
+
 table Torappu_ActivityFloatParadeData_Tactic {
 	id:int32;
 	name:string;
 	packName:string;
 	briefName:string;
-	rewardVar:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	rewardVar:[Torappu_ListDict_2_System_String_System_Single_];
 }
 
 
@@ -2645,6 +2932,23 @@ table Dict_2_System_String_Torappu_ActivityFloatParadeData_ {
 
 
 
+table Torappu_ActivityMainlineBuffData_MissionGroupData {
+	id:string;
+	bindBanner:string;
+	sortId:int32;
+	zoneId:string;
+	missionIdList:[string];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityMainlineBuffData_MissionGroupData;
+}
+
+
+
 table Torappu_ActivityMainlineBuffData_PeriodData_StepData {
 	isBlock:bool;
 	favorUpDesc:string;
@@ -2668,6 +2972,13 @@ table Torappu_ActivityMainlineBuffData_PeriodData {
 
 
 
+table Torappu_ListDict_2_System_String_System_Int64_ {
+	dict_key:string;
+	dict_value:int64;
+}
+
+
+
 table Torappu_ActivityMainlineBuffData_ConstData {
 	favorUpStageRange:string;
 }
@@ -2675,9 +2986,9 @@ table Torappu_ActivityMainlineBuffData_ConstData {
 
 
 table Torappu_ActivityMainlineBuffData {
-	missionGroupList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	missionGroupList:[Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_];
 	periodDataList:[Torappu_ActivityMainlineBuffData_PeriodData];
-	apSupplyOutOfDateDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	apSupplyOutOfDateDict:[Torappu_ListDict_2_System_String_System_Int64_];
 	constData:Torappu_ActivityMainlineBuffData_ConstData;
 }
 
@@ -2686,6 +2997,49 @@ table Torappu_ActivityMainlineBuffData {
 table Dict_2_System_String_Torappu_ActivityMainlineBuffData_ {
 	dict_key:string;
 	dict_value:Torappu_ActivityMainlineBuffData;
+}
+
+
+
+table Torappu_Act24SideData_ToolData {
+	toolId:string;
+	sortId:int32;
+	toolName:string;
+	toolDesc:string;
+	toolIcon1:string;
+	toolIcon2:string;
+	toolUnlockDesc:string;
+	toolBuffId:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+	toolStageId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_ToolData;
+}
+
+
+
+table Torappu_Act24SideData_MealData {
+	mealId:string;
+	sortId:int32;
+	mealName:string;
+	mealEffectDesc:string;
+	mealDesc:string;
+	mealIcon:string;
+	mealCost:int32;
+	mealRewardAP:int32;
+	mealRewardItemInfo:Torappu_ItemBundle;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act24SideData_MealData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_MealData;
 }
 
 
@@ -2712,6 +3066,26 @@ table Torappu_Act24SideData_MeldingItemData {
 table Dict_2_System_String_Torappu_Act24SideData_MeldingItemData_ {
 	dict_key:string;
 	dict_value:Torappu_Act24SideData_MeldingItemData;
+}
+
+
+
+table Torappu_Act24SideData_MeldingGachaBoxData {
+	gachaBoxId:string;
+	gachaSortId:int32;
+	gachaIcon:string;
+	gachaBoxName:string;
+	gachaCost:int32;
+	gachaTimesLimit:int32;
+	themeColor:string;
+	remainItemBgColor:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act24SideData_MeldingGachaBoxData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_MeldingGachaBoxData;
 }
 
 
@@ -2775,6 +3149,31 @@ table Torappu_QuestStageData {
 	sortId:int32;
 	isUrgentStage:bool;
 	isDragonStage:bool;
+}
+
+
+
+enum Torappu_Act24SideData_MissionType : int32 {
+	NONE = 0,
+	HUNTING_TASK = 1,
+	COLLECTION_TASK = 2,
+	EXPLORATION_TASK = 3
+}
+
+table Torappu_Act24SideData_MissionExtraData {
+	taskTypeName:string;
+	taskTypeIcon:string;
+	taskType:Torappu_Act24SideData_MissionType;
+	taskTitle:string;
+	taskClient:string;
+	taskClientDesc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_MissionExtraData;
 }
 
 
@@ -2850,15 +3249,15 @@ table Torappu_Act24SideData_ConstData {
 
 
 table Torappu_Act24SideData {
-	toolDataList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	mealDataList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	toolDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_];
+	mealDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MealData_];
 	meldingDict:[Dict_2_System_String_Torappu_Act24SideData_MeldingItemData_];
-	meldingGachaBoxDataList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	meldingGachaBoxDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MeldingGachaBoxData_];
 	meldingGachaBoxGoodDataMap:[Dict_2_System_String_List_1_Torappu_Act24SideData_MeldingGachaBoxGoodData__];
 	mealWelcomeTxtDataMap:[Dict_2_System_String_System_String_];
 	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act24SideData_ZoneAdditionData_];
 	questStageList:[Torappu_QuestStageData];
-	missionDataList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	missionDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_];
 	meldingDropDict:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
 	stageMapPreviewDict:[Dict_2_System_String_List_1_System_String__];
 	constData:Torappu_Act24SideData_ConstData;
@@ -2885,6 +3284,21 @@ table Torappu_Act25SideData_ConstData {
 	costCountLimit:int32;
 	basicProgress:int32;
 	harvestDesc:string;
+}
+
+
+
+table Torappu_Act25SideData_ZoneDescInfo {
+	zoneId:string;
+	unlockText:string;
+	displayStartTime:int64;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act25SideData_ZoneDescInfo_ {
+	dict_key:string;
+	dict_value:Torappu_Act25SideData_ZoneDescInfo;
 }
 
 
@@ -3061,7 +3475,7 @@ table Torappu_Act25SideData_DailyFarmData {
 table Torappu_Act25SideData {
 	tokenItemId:string;
 	constData:Torappu_Act25SideData_ConstData;
-	zoneDescList:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneDescList:[Torappu_ListDict_2_System_String_Torappu_Act25SideData_ZoneDescInfo_];
 	archiveItemData:[Dict_2_System_String_Torappu_Act25SideData_ArchiveItemData_];
 	arcMapInfoData:[Dict_2_System_String_Torappu_Act25SideData_ArchiveMapInfoData_];
 	areaInfoData:[Dict_2_System_String_Torappu_Act25SideData_AreaInfoData_];
@@ -4339,6 +4753,55 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData {
 
 
 
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData {
+	bandId:string;
+	sortId:int32;
+	bandName:string;
+	bandIconId:string;
+	bandDesc:string;
+	totalHp:int32;
+	initialEffectId:string;
+	charId:string;
+	charName:string;
+	unlockDesc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData;
+}
+
+
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData {
+	modeId:string;
+	hp:int32;
+}
+
+
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData {
+	forceId:string;
+	sortId:int32;
+	forceName:string;
+	forceIconId:string;
+	forceDesc:string;
+	leaderEnemyId:string;
+	leaderName:string;
+	modeHpDatas:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData;
+}
+
+
+
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData {
 	shopLevel:int32;
 	initialUpgradePrice:int32;
@@ -4588,6 +5051,33 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData {
 
 
 
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData {
+	chessId:string;
+	goldenChessId:string;
+	isDiyChessSlot:bool;
+	chessLevel:int32;
+	shopLevelSortId:int32;
+	canBeRented:bool;
+	charId:string;
+	tmplId:string;
+	defaultSkillIndex:int32;
+	defaultUniEquipId:string;
+	backupCharId:string;
+	backupCharRepName:string;
+	backupCharSkillIndex:int32;
+	backupCharUniEquipId:string;
+	backupCharPotRank:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData;
+}
+
+
+
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData {
 	evolvePhase:Torappu_EvolvePhase;
 	charLevel:int32;
@@ -4618,6 +5108,32 @@ table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCh
 
 
 
+enum Torappu_Act1VAutoChessTrapChessType : int32 {
+	NONE = 0,
+	EQUIP = 1,
+	MAGIC = 2
+}
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData {
+	itemId:string;
+	goldenItemId:string;
+	hideInChessShop:bool;
+	itemLevel:int32;
+	iconLevel:int32;
+	shopLevelSortId:int32;
+	itemType:Torappu_Act1VAutoChessTrapChessType;
+	trapId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData;
+}
+
+
+
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData {
 	evolvePhase:Torappu_EvolvePhase;
 	trapLevel:int32;
@@ -4626,12 +5142,6 @@ table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData {
 }
 
 
-
-enum Torappu_Act1VAutoChessTrapChessType : int32 {
-	NONE = 0,
-	EQUIP = 1,
-	MAGIC = 2
-}
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData {
 	chessId:string;
@@ -4725,8 +5235,8 @@ table Torappu_ActivityAutoChessVerify1Data {
 	modeDataList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeData];
 	baseRewardDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData__];
 	mileStoneList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData];
-	bandDataListDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	forceDataListDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	bandDataListDict:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_];
+	forceDataListDict:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData_];
 	shopLevelDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData__];
 	shopLevelDisplayDataDict:[Dict_2_System_Int32_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData_];
 	skillTriggerDataList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessSkillTriggerData];
@@ -4737,10 +5247,10 @@ table Torappu_ActivityAutoChessVerify1Data {
 	diyChessSlotDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData_];
 	effectBuffInfoDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData__];
 	constData:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData;
-	charShopChessDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	charShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData_];
 	charChessDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData_];
 	chessNormalIdLookupDict:[Dict_2_System_String_System_String_];
-	trapShopChessDatas:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	trapShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData_];
 	trapChessDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData_];
 	stageDatasDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData_];
 	forceLevelDetailedDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData__];
@@ -4801,11 +5311,64 @@ table Dict_2_System_String_Torappu_ActArcadeData_ArcadeStageAdditionalData_ {
 
 
 
+enum Torappu_ActArcadeData_SubModeType : int32 {
+	IGNORE = -1,
+	MINER = 0,
+	DRAW = 1,
+	LINE = 2,
+	CAR = 3,
+	E_NUM = 4
+}
+
+table Torappu_ActArcadeData_ArcadeZoneAdditionalData {
+	zoneId:string;
+	sortId:int32;
+	zoneName:string;
+	zoneEntryPicId:string;
+	stageInfoPrefabId:string;
+	startTs:int64;
+	endTs:int64;
+	stages:[string];
+	subModeType:Torappu_ActArcadeData_SubModeType;
+	zoneDesc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArcadeData_ArcadeZoneAdditionalData;
+}
+
+
+
 enum Torappu_ActArcadeData_BadgeType : int32 {
 	COMMON = 0,
 	ZONE = 1,
 	ULTIMATE = 2
 }
+
+table Torappu_ActArcadeData_ArcadeBadgeTierData {
+	badgeTierId:string;
+	sortId:int32;
+	badgeTierIconId:string;
+	badgeTierShareIconId:string;
+	badgeTierEffectId:string;
+	title:string;
+	desc:string;
+	buffId:string;
+	unlockDesc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActArcadeData_ArcadeBadgeTierData_ {
+	dict_key:string;
+	dict_value:Torappu_ActArcadeData_ArcadeBadgeTierData;
+}
+
+
 
 table Torappu_ActArcadeData_ArcadeBadgeData {
 	badgeId:string;
@@ -4815,7 +5378,7 @@ table Torappu_ActArcadeData_ArcadeBadgeData {
 	buffRangeDesc:string;
 	hasScore:bool;
 	scoreZone:string;
-	tiers:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	tiers:[Torappu_ListDict_2_System_String_Torappu_ActArcadeData_ArcadeBadgeTierData_];
 }
 
 
@@ -4876,7 +5439,7 @@ table Torappu_ActArcadeData_ArcadeConstData {
 
 table Torappu_ActArcadeData {
 	stageAdditionDataDict:[Dict_2_System_String_Torappu_ActArcadeData_ArcadeStageAdditionalData_];
-	zoneAdditionalDataDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	zoneAdditionalDataDict:[Torappu_ListDict_2_System_String_Torappu_ActArcadeData_ArcadeZoneAdditionalData_];
 	badgeDataDict:[Dict_2_System_String_Torappu_ActArcadeData_ArcadeBadgeData_];
 	tireBadgeIdDict:[Dict_2_System_String_System_String_];
 	badgeTypeDataDict:[Dict_2_System_String_Torappu_ActArcadeData_ArcadeBadgeTypeData_];
@@ -5705,9 +6268,26 @@ table Torappu_ActivityEnemyDuelAnnounceData {
 
 
 
+table Torappu_ActivityEnemyDuelSingleCommentData {
+	commentId:string;
+	priority:int32;
+	template:string;
+	param:[string];
+	commentText:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityEnemyDuelSingleCommentData;
+}
+
+
+
 table Dict_2_System_String_Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData__ {
 	dict_key:string;
-	dict_value:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	dict_value:[Torappu_ListDict_2_System_String_Torappu_ActivityEnemyDuelSingleCommentData_];
 }
 
 
@@ -5850,6 +6430,25 @@ table Dict_2_System_String_Torappu_ActivityEnemyDuelData_ {
 
 
 
+table Torappu_Act42SideData_Act42SideTrustorData {
+	trustorId:string;
+	sortId:int32;
+	trustorName:string;
+	trustorIconSmall:string;
+	trustorIconLarge:string;
+	gunId:string;
+	taskList:[string];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act42SideData_Act42SideTrustorData_ {
+	dict_key:string;
+	dict_value:Torappu_Act42SideData_Act42SideTrustorData;
+}
+
+
+
 table Torappu_Act42SideData_Act42SideTaskData {
 	taskId:string;
 	preposedTaskId:string;
@@ -5890,6 +6489,20 @@ table Torappu_Act42SideData_Act42SideGunData {
 table Dict_2_System_String_Torappu_Act42SideData_Act42SideGunData_ {
 	dict_key:string;
 	dict_value:Torappu_Act42SideData_Act42SideGunData;
+}
+
+
+
+table Torappu_Act42SideData_Act42SideFileData {
+	contentId:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act42SideData_Act42SideFileData_ {
+	dict_key:string;
+	dict_value:Torappu_Act42SideData_Act42SideFileData;
 }
 
 
@@ -5935,10 +6548,10 @@ table Dict_2_System_String_Torappu_Act42SideData_Act42SideZoneAdditionData_ {
 
 
 table Torappu_Act42SideData {
-	trustorData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	trustorData:[Torappu_ListDict_2_System_String_Torappu_Act42SideData_Act42SideTrustorData_];
 	taskData:[Dict_2_System_String_Torappu_Act42SideData_Act42SideTaskData_];
 	gunData:[Dict_2_System_String_Torappu_Act42SideData_Act42SideGunData_];
-	fileData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	fileData:[Torappu_ListDict_2_System_String_Torappu_Act42SideData_Act42SideFileData_];
 	dailyRewardList:[Torappu_Act42SideData_Act42SideDailyRewardData];
 	constData:Torappu_Act42SideData_Act42SideConstData;
 	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act42SideData_Act42SideZoneAdditionData_];
@@ -6488,6 +7101,13 @@ table Torappu_Act1VHalfIdleConstData_ProfessionDesc {
 
 
 
+table Torappu_ListDict_2_System_String_System_Int32_ {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
 table Torappu_Act1VHalfIdleConstData {
 	incomeProductionItems:[string];
 	milestoneId:string;
@@ -6517,7 +7137,7 @@ table Torappu_Act1VHalfIdleConstData {
 	enemyCapacityIdWhiteList:[string];
 	unlockStageId:string;
 	professionDesc:[Torappu_Act1VHalfIdleConstData_ProfessionDesc];
-	productMaxEfficiencyDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	productMaxEfficiencyDict:[Torappu_ListDict_2_System_String_System_Int32_];
 	efficiencyDurationMax:int32;
 	produceCd:int32;
 	harvestHintThresholdTime:int32;
@@ -6782,6 +7402,44 @@ table Dict_2_System_String_Torappu_Act1VHalfIdleData_ {
 
 
 
+table Torappu_Act45SideData_Act45SideCharData {
+	charId:string;
+	sortId:int32;
+	charIllustId:string;
+	charCardId:string;
+	charName:string;
+	unlockStageId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData_Act45SideCharData;
+}
+
+
+
+table Torappu_Act45SideData_Act45SideMailData {
+	mailId:string;
+	sortId:int32;
+	charName:string;
+	picId:string;
+	mailTitle:string;
+	mailContent:string;
+	sendTime:int64;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData_Act45SideMailData;
+}
+
+
+
 table Torappu_Act45SideData_Act45SideConstData {
 	entryStageId:string;
 	toastCharUnlock:string;
@@ -6812,8 +7470,8 @@ table Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_ {
 
 
 table Torappu_Act45SideData {
-	charData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	mailData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	charData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_];
+	mailData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_];
 	constData:Torappu_Act45SideData_Act45SideConstData;
 	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_];
 }
@@ -6927,6 +7585,13 @@ table Dict_2_System_String_Torappu_ActMainlineBpExtraData_ {
 
 table Torappu_ActivityTable_ActivityExtraData {
 	typeMainlineBpData:[Dict_2_System_String_Torappu_ActMainlineBpExtraData_];
+}
+
+
+
+table Torappu_ListDict_2_System_String_List_1_System_Int64__ {
+	dict_key:string;
+	dict_value:[int64];
 }
 
 
@@ -7668,12 +8333,19 @@ enum Torappu_CartComponents_CartAccessoryPos : int32 {
 	CAR_OS_02 = 6
 }
 
+table Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_List_1_System_String__ {
+	dict_key:Torappu_CartComponents_CartAccessoryPos;
+	dict_value:[string];
+}
+
+
+
 table Torappu_CartComponents {
 	compId:string;
 	sortId:int32;
 	type:Torappu_CartComponents_CartAccessoryType;
 	posList:[Torappu_CartComponents_CartAccessoryPos];
-	posIdDict:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	posIdDict:[Torappu_ListDict_2_Torappu_CartComponents_CartAccessoryPos_List_1_System_String__];
 	name:string;
 	icon:string;
 	showScores:int32;
@@ -8194,8 +8866,23 @@ table Torappu_HalfIdleData {
 
 
 
+table Torappu_KVSwitchInfo {
+	isDefault:bool;
+	displayTime:int64;
+	zoneId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_ {
+	dict_key:string;
+	dict_value:Torappu_KVSwitchInfo;
+}
+
+
+
 table Torappu_ActivityKVSwitchData {
-	kvSwitchInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	kvSwitchInfo:[Torappu_ListDict_2_System_String_Torappu_KVSwitchInfo_];
 }
 
 
@@ -8207,9 +8894,25 @@ table Dict_2_System_String_Torappu_ActivityKVSwitchData_ {
 
 
 
+table Torappu_DynEntrySwitchInfo {
+	entryId:string;
+	sortId:int32;
+	stageId:string;
+	signalId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_ {
+	dict_key:string;
+	dict_value:Torappu_DynEntrySwitchInfo;
+}
+
+
+
 table Torappu_ActivityDynEntrySwitchData {
-	entrySwitchInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	randomEntrySwitchInfo:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	entrySwitchInfo:[Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_];
+	randomEntrySwitchInfo:[Torappu_ListDict_2_System_String_Torappu_DynEntrySwitchInfo_];
 }
 
 
@@ -8627,7 +9330,7 @@ table Torappu_ActivityTable {
 	activity:Torappu_ActivityTable_ActivityDetailTable;
 	extraData:Torappu_ActivityTable_ActivityExtraData;
 	activityItems:[Dict_2_System_String_List_1_System_String__];
-	syncPoints:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	syncPoints:[Torappu_ListDict_2_System_String_List_1_System_Int64__];
 	dynActs:[Dict_2_System_String_Newtonsoft_Json_Linq_JObject_];
 	stageRewardsData:[Dict_2_System_String_Torappu_ActivityStageRewardData_];
 	actThemes:[Torappu_ActivityThemeData];

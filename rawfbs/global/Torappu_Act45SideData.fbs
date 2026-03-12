@@ -1,10 +1,11 @@
-include "System_Collections_Generic_KeyValuePair_2_TKey_TValue_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_.fbs";
 include "Torappu_Act45SideData_Act45SideConstData.fbs";
 include "Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_.fbs";
 
 table Torappu_Act45SideData {
-	charData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
-	mailData:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	charData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_];
+	mailData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_];
 	constData:Torappu_Act45SideData_Act45SideConstData;
 	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_];
 }

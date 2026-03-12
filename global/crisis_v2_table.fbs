@@ -23,7 +23,25 @@ table Dict_2_System_String_Torappu_CrisisV2SeasonInfo_ {
 
 
 
-table System_Collections_Generic_KeyValuePair_2_TKey_TValue_ {
+enum Torappu_CrisisV2AppraiseType : int32 {
+	RANK_D = 0,
+	RANK_C = 1,
+	RANK_B = 2,
+	RANK_A = 3,
+	RANK_S = 4,
+	RANK_SS = 5,
+	RANK_SSS = 6
+}
+
+table Torappu_CrisisV2AppraiseWrap {
+	appraiseType:Torappu_CrisisV2AppraiseType;
+}
+
+
+
+table Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_ {
+	dict_key:int32;
+	dict_value:Torappu_CrisisV2AppraiseWrap;
 }
 
 
@@ -332,7 +350,7 @@ table Torappu_RecalRuneSharedData {
 
 table Torappu_CrisisV2SharedData {
 	seasonInfoDataMap:[Dict_2_System_String_Torappu_CrisisV2SeasonInfo_];
-	scoreLevelToAppraiseDataMap:[System_Collections_Generic_KeyValuePair_2_TKey_TValue_];
+	scoreLevelToAppraiseDataMap:[Torappu_ListDict_2_System_Int32_Torappu_CrisisV2AppraiseWrap_];
 	constData:Torappu_CrisisV2ConstData;
 	battleCommentRuneData:[Dict_2_System_String_List_1_Torappu_RuneData__];
 	recalRuneData:Torappu_RecalRuneSharedData;
