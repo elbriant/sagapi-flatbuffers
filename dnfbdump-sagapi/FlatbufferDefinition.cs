@@ -133,15 +133,57 @@ namespace DNFBDmp
 				return sig.ToGenericInstSig().GenericArguments[0];
 			}
 
-			TypeDef? def = sig.ToTypeDefOrRef()?.ResolveTypeDef();
-			while (def != null && def.BaseType != null)
+			if (fullName.Contains("Dict") || fullName.Contains("Dictionary"))
 			{
-				TypeSig baseSig = def.BaseType.ToTypeSig();
-				if (baseSig.IsGenericInstanceType && baseSig.FullName.StartsWith("System.Collections.Generic.List"))
+				return null;
+			}
+
+			TypeDef? def = sig.ToTypeDefOrRef()?.ResolveTypeDef();
+			if (def != null && def.BaseType != null)
+			{
+				TypeSig baseTypeSig = def.BaseType.ToTypeSig();
+				if (baseTypeSig.IsGenericInstanceType && baseTypeSig.FullName.StartsWith("System.Collections.Generic.List"))
 				{
-					return baseSig.ToGenericInstSig().GenericArguments[0];
+					TypeSig innerType = baseTypeSig.ToGenericInstSig().GenericArguments[0];
+
+					// If the extracted type contains uninstantiated generic variables (like TInput, TOutput),
+					// we dynamically substitute them with the real arguments from the current signature.
+					if (sig.IsGenericInstanceType)
+					{
+						GenericInstSig actualInst = sig.ToGenericInstSig();
+
+						// Case A: The inner type is directly a generic variable (e.g., List<T>)
+						if (innerType.IsGenericTypeParameter)
+						{
+							int index = (int)((GenericVar)innerType).Number;
+							if (index >= 0 && index < actualInst.GenericArguments.Count)
+								return actualInst.GenericArguments[index];
+						}
+						// Case B: The inner type is a class containing generic variables (e.g., List<KeyFrame<TInput, TOutput>>)
+						else if (innerType.IsGenericInstanceType)
+						{
+							GenericInstSig innerInst = innerType.ToGenericInstSig();
+							var newArgs = new System.Collections.Generic.List<TypeSig>();
+
+							foreach (TypeSig arg in innerInst.GenericArguments)
+							{
+								if (arg.IsGenericTypeParameter)
+								{
+									int index = (int)((GenericVar)arg).Number;
+									if (index >= 0 && index < actualInst.GenericArguments.Count)
+									{
+										newArgs.Add(actualInst.GenericArguments[index]);
+										continue;
+									}
+								}
+								newArgs.Add(arg);
+							}
+							return new GenericInstSig(innerInst.GenericType, newArgs);
+						}
+					}
+
+					return innerType;
 				}
-				def = def.BaseType.ResolveTypeDef();
 			}
 
 			return null;
