@@ -127,68 +127,71 @@ namespace DNFBDmp
 				return sig.Next;
 			}
 
+			// 1. Direct standard lists
 			if (sig.IsGenericInstanceType && (fullName.StartsWith("System.Collections.Generic.List") ||
 				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet")))
 			{
 				return sig.ToGenericInstSig().GenericArguments[0];
 			}
 
+			// 2. GUARD: Do not intercept Dictionaries
 			if (fullName.Contains("Dict") || fullName.Contains("Dictionary"))
 			{
 				return null;
 			}
 
-			TypeDef? def = sig.ToTypeDefOrRef()?.ResolveTypeDef();
-			if (def != null && def.BaseType != null)
-			{
-				TypeSig baseTypeSig = def.BaseType.ToTypeSig();
-				if (baseTypeSig.IsGenericInstanceType && baseTypeSig.FullName.StartsWith("System.Collections.Generic.List"))
-				{
-					TypeSig innerType = baseTypeSig.ToGenericInstSig().GenericArguments[0];
-
-					// If the extracted type contains uninstantiated generic variables (like TInput, TOutput),
-					// we dynamically substitute them with the real arguments from the current signature.
-					if (sig.IsGenericInstanceType)
-					{
-						GenericInstSig actualInst = sig.ToGenericInstSig();
-
-						// Case A: The inner type is directly a generic variable (e.g., List<T>)
-						if (innerType.IsGenericTypeParameter)
-						{
-							int index = (int)((GenericVar)innerType).Number;
-							if (index >= 0 && index < actualInst.GenericArguments.Count)
-								return actualInst.GenericArguments[index];
-						}
-						// Case B: The inner type is a class containing generic variables (e.g., List<KeyFrame<TInput, TOutput>>)
-						else if (innerType.IsGenericInstanceType)
-						{
-							GenericInstSig innerInst = innerType.ToGenericInstSig();
-							var newArgs = new System.Collections.Generic.List<TypeSig>();
-
-							foreach (TypeSig arg in innerInst.GenericArguments)
-							{
-								if (arg.IsGenericTypeParameter)
-								{
-									int index = (int)((GenericVar)arg).Number;
-									if (index >= 0 && index < actualInst.GenericArguments.Count)
-									{
-										newArgs.Add(actualInst.GenericArguments[index]);
-										continue;
-									}
-								}
-								newArgs.Add(arg);
-							}
-							return new GenericInstSig(innerInst.GenericType, newArgs);
-						}
-					}
-
-					return innerType;
-				}
-			}
-
-			return null;
+			// 3. Generative collection detection via recursive inheritance
+			return resolveInheritedListType(sig);
 		}
 
+		// Recursively climbs the inheritance tree while preserving generic arguments
+		private static TypeSig? resolveInheritedListType(TypeSig currentSig)
+		{
+			TypeDef? def = currentSig.ToTypeDefOrRef()?.ResolveTypeDef();
+			if (def == null || def.BaseType == null)
+				return null;
+
+			TypeSig baseSig = def.BaseType.ToTypeSig();
+
+			// If passing from one generic class to another, substitute the variables (e.g., T -> AttributesData)
+			if (baseSig.IsGenericInstanceType && currentSig.IsGenericInstanceType)
+			{
+				baseSig = substituteGenericArgs(baseSig.ToGenericInstSig(), currentSig.ToGenericInstSig());
+			}
+
+			if (baseSig.IsGenericInstanceType && baseSig.FullName.StartsWith("System.Collections.Generic.List"))
+			{
+				return baseSig.ToGenericInstSig().GenericArguments[0];
+			}
+
+			return resolveInheritedListType(baseSig);
+		}
+
+		// Dynamically replaces uninstantiated generic parameters with the actual types provided by the child class
+		private static TypeSig substituteGenericArgs(GenericInstSig target, GenericInstSig provider)
+		{
+			var newArgs = new System.Collections.Generic.List<TypeSig>();
+			foreach (TypeSig arg in target.GenericArguments)
+			{
+				if (arg is GenericVar genVar)
+				{
+					int index = (int)genVar.Number;
+					if (index >= 0 && index < provider.GenericArguments.Count)
+						newArgs.Add(provider.GenericArguments[index]);
+					else
+						newArgs.Add(arg);
+				}
+				else if (arg.IsGenericInstanceType)
+				{
+					newArgs.Add(substituteGenericArgs(arg.ToGenericInstSig(), provider));
+				}
+				else
+				{
+					newArgs.Add(arg);
+				}
+			}
+			return new GenericInstSig(target.GenericType, newArgs);
+		}
 		// Change out the generic type parameter with the real TypeSig if needed
 		private static TypeSig handleGenericSig(TypeSig sig, IList<TypeSig>? genericArgs)
 		{
