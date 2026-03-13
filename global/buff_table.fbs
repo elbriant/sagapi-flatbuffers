@@ -198,13 +198,4 @@ table Torappu_BuffData {
 
 
 
-table dict__string__Torappu_BuffData {
-  dict_key: string(key);
-  dict_value: Torappu_BuffData;
-}
-
-table Torappu_SimpleKVTable_Torappu_BuffData {
-  dict_array: [dict__string__Torappu_BuffData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_BuffData;
+root_type Torappu_BuffData;

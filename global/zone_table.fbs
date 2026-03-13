@@ -323,13 +323,4 @@ table Torappu_ZoneTable {
 
 
 
-table dict__string__Torappu_ZoneTable {
-  dict_key: string(key);
-  dict_value: Torappu_ZoneTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_ZoneTable {
-  dict_array: [dict__string__Torappu_ZoneTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_ZoneTable;
+root_type Torappu_ZoneTable;

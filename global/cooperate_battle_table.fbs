@@ -97,13 +97,4 @@ table Torappu_Battle_Cooperate_CooperateModeBattleData {
 
 
 
-table dict__string__Torappu_Battle_Cooperate_CooperateModeBattleData {
-  dict_key: string(key);
-  dict_value: Torappu_Battle_Cooperate_CooperateModeBattleData;
-}
-
-table Torappu_SimpleKVTable_Torappu_Battle_Cooperate_CooperateModeBattleData {
-  dict_array: [dict__string__Torappu_Battle_Cooperate_CooperateModeBattleData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_Battle_Cooperate_CooperateModeBattleData;
+root_type Torappu_Battle_Cooperate_CooperateModeBattleData;

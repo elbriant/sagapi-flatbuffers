@@ -244,13 +244,4 @@ table Torappu_UniEquipTable {
 
 
 
-table dict__string__Torappu_UniEquipTable {
-  dict_key: string(key);
-  dict_value: Torappu_UniEquipTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_UniEquipTable {
-  dict_array: [dict__string__Torappu_UniEquipTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_UniEquipTable;
+root_type Torappu_UniEquipTable;

@@ -966,13 +966,4 @@ table Torappu_StageTable {
 
 
 
-table dict__string__Torappu_StageTable {
-  dict_key: string(key);
-  dict_value: Torappu_StageTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_StageTable {
-  dict_array: [dict__string__Torappu_StageTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_StageTable;
+root_type Torappu_StageTable;

@@ -2102,13 +2102,4 @@ table Torappu_SandboxV2Data {
 
 
 
-table dict__string__Torappu_SandboxV2Data {
-  dict_key: string(key);
-  dict_value: Torappu_SandboxV2Data;
-}
-
-table Torappu_SimpleKVTable_Torappu_SandboxV2Data {
-  dict_array: [dict__string__Torappu_SandboxV2Data];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_SandboxV2Data;
+root_type Torappu_SandboxV2Data;

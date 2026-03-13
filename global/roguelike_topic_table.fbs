@@ -3671,13 +3671,4 @@ table Torappu_RoguelikeTopicTable {
 
 
 
-table dict__string__Torappu_RoguelikeTopicTable {
-  dict_key: string(key);
-  dict_value: Torappu_RoguelikeTopicTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_RoguelikeTopicTable {
-  dict_array: [dict__string__Torappu_RoguelikeTopicTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_RoguelikeTopicTable;
+root_type Torappu_RoguelikeTopicTable;

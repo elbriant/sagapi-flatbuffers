@@ -1148,13 +1148,4 @@ table Torappu_RetroStageTable {
 
 
 
-table dict__string__Torappu_RetroStageTable {
-  dict_key: string(key);
-  dict_value: Torappu_RetroStageTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_RetroStageTable {
-  dict_array: [dict__string__Torappu_RetroStageTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_RetroStageTable;
+root_type Torappu_RetroStageTable;

@@ -2180,13 +2180,4 @@ table Torappu_SandboxPermTable {
 
 
 
-table dict__string__Torappu_SandboxPermTable {
-  dict_key: string(key);
-  dict_value: Torappu_SandboxPermTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_SandboxPermTable {
-  dict_array: [dict__string__Torappu_SandboxPermTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_SandboxPermTable;
+root_type Torappu_SandboxPermTable;

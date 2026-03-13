@@ -291,13 +291,4 @@ table Torappu_ShopClientData {
 
 
 
-table dict__string__Torappu_ShopClientData {
-  dict_key: string(key);
-  dict_value: Torappu_ShopClientData;
-}
-
-table Torappu_SimpleKVTable_Torappu_ShopClientData {
-  dict_array: [dict__string__Torappu_ShopClientData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_ShopClientData;
+root_type Torappu_ShopClientData;

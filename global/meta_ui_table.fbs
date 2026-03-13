@@ -126,13 +126,4 @@ table Torappu_MetaUIDisplayTable {
 
 
 
-table dict__string__Torappu_MetaUIDisplayTable {
-  dict_key: string(key);
-  dict_value: Torappu_MetaUIDisplayTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_MetaUIDisplayTable {
-  dict_array: [dict__string__Torappu_MetaUIDisplayTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_MetaUIDisplayTable;
+root_type Torappu_MetaUIDisplayTable;

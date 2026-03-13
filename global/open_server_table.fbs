@@ -196,13 +196,4 @@ table Torappu_OpenServerData {
 
 
 
-table dict__string__Torappu_OpenServerData {
-  dict_key: string(key);
-  dict_value: Torappu_OpenServerData;
-}
-
-table Torappu_SimpleKVTable_Torappu_OpenServerData {
-  dict_array: [dict__string__Torappu_OpenServerData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_OpenServerData;
+root_type Torappu_OpenServerData;

@@ -21,13 +21,4 @@ table Torappu_FavorTable {
 
 
 
-table dict__string__Torappu_FavorTable {
-  dict_key: string(key);
-  dict_value: Torappu_FavorTable;
-}
-
-table Torappu_SimpleKVTable_Torappu_FavorTable {
-  dict_array: [dict__string__Torappu_FavorTable];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_FavorTable;
+root_type Torappu_FavorTable;

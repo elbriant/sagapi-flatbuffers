@@ -343,13 +343,4 @@ table Torappu_GachaData {
 
 
 
-table dict__string__Torappu_GachaData {
-  dict_key: string(key);
-  dict_value: Torappu_GachaData;
-}
-
-table Torappu_SimpleKVTable_Torappu_GachaData {
-  dict_array: [dict__string__Torappu_GachaData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_GachaData;
+root_type Torappu_GachaData;

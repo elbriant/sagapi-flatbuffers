@@ -358,13 +358,4 @@ table Torappu_CrisisV2SharedData {
 
 
 
-table dict__string__Torappu_CrisisV2SharedData {
-  dict_key: string(key);
-  dict_value: Torappu_CrisisV2SharedData;
-}
-
-table Torappu_SimpleKVTable_Torappu_CrisisV2SharedData {
-  dict_array: [dict__string__Torappu_CrisisV2SharedData];
-}
-
-root_type Torappu_SimpleKVTable_Torappu_CrisisV2SharedData;
+root_type Torappu_CrisisV2SharedData;
