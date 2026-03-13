@@ -121,4 +121,13 @@ table Torappu_BattleEquipPack {
 
 
 
-root_type Torappu_BattleEquipPack;
+table dict__string__Torappu_BattleEquipPack {
+  dict_key: string(key);
+  dict_value: Torappu_BattleEquipPack;
+}
+
+table Torappu_SimpleKVTable_Torappu_BattleEquipPack {
+  dict_array: [dict__string__Torappu_BattleEquipPack];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_BattleEquipPack;

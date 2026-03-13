@@ -218,4 +218,13 @@ table Torappu_Audio_Middleware_Data_TorappuAudioData {
 
 
 
-root_type Torappu_Audio_Middleware_Data_TorappuAudioData;
+table dict__string__Torappu_Audio_Middleware_Data_TorappuAudioData {
+  dict_key: string(key);
+  dict_value: Torappu_Audio_Middleware_Data_TorappuAudioData;
+}
+
+table Torappu_SimpleKVTable_Torappu_Audio_Middleware_Data_TorappuAudioData {
+  dict_array: [dict__string__Torappu_Audio_Middleware_Data_TorappuAudioData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_Audio_Middleware_Data_TorappuAudioData;
