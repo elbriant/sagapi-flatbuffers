@@ -63,14 +63,16 @@ final Map<String, String> tableMapping = {
   'Torappu_MainText': 'main_text',
 };
 
-// Excepciones: Tablas que sabemos que NO usan el wrapper de Diccionario.
-final Set<String> _flatTables = {
-  'prts___levels',
-  'battle_equip_table',
+// Excepciones: Tablas que sabemos que SI usan el wrapper de Diccionario.
+final Set<String> _wrappedTables = {
+  'chapter_table',
+  'char_master_table',
+  'character_table',
   'gamedata_const',
-  'init_text',
-  'main_text',
-  'audio_data',
+  'handbook_team_table',
+  'skill_table',
+  'story_review_table',
+  'story_table',
 };
 
 /// Bundles modular raw FBS files into single monolithic schemas.
@@ -119,7 +121,7 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
       bundledLines.add('');
 
       // SimpleKVTable wrapper
-      if (!_flatTables.contains(finalName)) {
+      if (_wrappedTables.contains(finalName)) {
         bundledLines.add('table dict__string__$rootClass {');
         bundledLines.add('  dict_key: string(key);');
         bundledLines.add('  dict_value: $rootClass;');
