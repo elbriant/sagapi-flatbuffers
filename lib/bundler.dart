@@ -68,11 +68,19 @@ final Set<String> _wrappedTables = {
   'chapter_table',
   'char_master_table',
   'character_table',
-  'gamedata_const',
+  'gamedata_const', // !!
   'handbook_team_table',
   'skill_table',
   'story_review_table',
   'story_table',
+  'extra_battlelog_table',
+  'audio_data',
+  'battle_equip_table',
+  'item_table',
+  'medal_table',
+  'open_server_table',
+  'replicate_table',
+  'sandbox_table,',
 };
 
 /// Bundles modular raw FBS files into single monolithic schemas.
