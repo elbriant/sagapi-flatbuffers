@@ -5,7 +5,6 @@ include "Torappu_EnemyLevelType.fbs";
 include "Torappu_Blackboard_DataPair.fbs";
 include "Torappu_LevelData_EnemyData_ESkillData.fbs";
 include "Torappu_LevelData_EnemyData_ESpData.fbs";
-include "Torappu_LevelData_EnemyData_RuntimeData.fbs";
 
 table Torappu_LevelData_EnemyData {
 	name:string;
@@ -25,7 +24,6 @@ table Torappu_LevelData_EnemyData {
 	talentBlackboard:[Torappu_Blackboard_DataPair];
 	skills:[Torappu_LevelData_EnemyData_ESkillData];
 	spData:Torappu_LevelData_EnemyData_ESpData;
-	m_runtimeData:Torappu_LevelData_EnemyData_RuntimeData;
 }
 
 

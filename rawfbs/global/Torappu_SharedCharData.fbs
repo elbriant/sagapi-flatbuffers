@@ -1,16 +1,9 @@
-include "Torappu_SharedCharData_SharedCharSkillData.fbs";
-include "Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_.fbs";
 include "Dict_2_System_String_System_Int32_.fbs";
 include "Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_.fbs";
 
 table Torappu_SharedCharData {
 	charId:string;
 	potentialRank:int32;
-	m_skillIndex:int32;
-	m_skinId:string;
-	m_skills:[Torappu_SharedCharData_SharedCharSkillData];
-	m_selectEquip:string;
-	m_equips:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_];
 	mainSkillLvl:int32;
 	evolvePhase:int32;
 	level:int32;

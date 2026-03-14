@@ -6,13 +6,6 @@ table Torappu_CharSkinData_TokenSkinInfo {
 
 
 
-table Torappu_CharSkinData_BattleSkin {
-	overwritePrefab:bool;
-	skinOrPrefabId:string;
-}
-
-
-
 enum Torappu_SkinVoiceType : int32 {
 	NONE = 0,
 	ILLUST = 1,
@@ -47,17 +40,6 @@ table Torappu_CharSkinData {
 	skinId:string;
 	charId:string;
 	tokenSkinMap:[Torappu_CharSkinData_TokenSkinInfo];
-	m_illustId:string;
-	m_spIllustId:string;
-	m_dynIllustId:string;
-	m_spDynIllustId:string;
-	m_avatarId:string;
-	m_portraitId:string;
-	m_dynPortraitId:string;
-	m_dynEntranceId:string;
-	m_buildingId:string;
-	m_battleSkin:Torappu_CharSkinData_BattleSkin;
-	m_isBuyAble:bool;
 	tmplId:string;
 	voiceId:string;
 	voiceType:Torappu_SkinVoiceType;
