@@ -33,4 +33,13 @@ table Torappu_TipTable {
 
 
 
-root_type Torappu_TipTable;
+table dict__string__Torappu_TipTable {
+  dict_key: string(key);
+  dict_value: Torappu_TipTable;
+}
+
+table Torappu_SimpleKVTable_Torappu_TipTable {
+  dict_array: [dict__string__Torappu_TipTable];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_TipTable;
