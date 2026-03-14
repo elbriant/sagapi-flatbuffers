@@ -1,6 +1,5 @@
 
 table Torappu_BuildingData_WorkshopPhase {
-	manpowerFactor:float;
 }
 
 

@@ -1,15 +1,5 @@
-include "Torappu_RoguelikeGameCharBuffType.fbs";
-include "Torappu_RoguelikeBuff.fbs";
 
 table Torappu_RoguelikeGameCharBuffData {
-	id:string;
-	buffType:Torappu_RoguelikeGameCharBuffType;
-	iconId:string;
-	outerName:string;
-	innerName:string;
-	functionDesc:string;
-	desc:string;
-	buffs:[Torappu_RoguelikeBuff];
 }
 
 

@@ -1,7 +1,5 @@
-include "Torappu_CharmItemData.fbs";
 
 table Torappu_CharmData {
-	charmList:[Torappu_CharmItemData];
 }
 
 

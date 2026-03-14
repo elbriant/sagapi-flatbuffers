@@ -1,10 +1,5 @@
-include "Torappu_ItemType.fbs";
-include "Torappu_StageDropType.fbs";
 
 table Torappu_StageData_DisplayRewards {
-	type:Torappu_ItemType;
-	id:string;
-	dropType:Torappu_StageDropType;
 }
 
 

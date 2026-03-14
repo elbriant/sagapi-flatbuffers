@@ -1,7 +1,5 @@
-include "Torappu_CharPatchData_UnlockCond_Item.fbs";
 
 table Torappu_CharPatchData_UnlockCond {
-	conds:[Torappu_CharPatchData_UnlockCond_Item];
 }
 
 

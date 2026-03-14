@@ -1,11 +1,5 @@
-include "Torappu_Audio_Middleware_Data_AudioFadeType.fbs";
 
 table Torappu_Audio_Middleware_Data_FadeStyleData {
-	styleName:string;
-	fadeinTime:float;
-	fadeoutTime:float;
-	fadeinType:Torappu_Audio_Middleware_Data_AudioFadeType;
-	fadeoutType:Torappu_Audio_Middleware_Data_AudioFadeType;
 }
 
 

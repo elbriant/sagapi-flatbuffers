@@ -1,8 +1,5 @@
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act42SideData_Act42SideDailyRewardData {
-	completedCnt:int32;
-	reward:Torappu_ItemBundle;
 }
 
 

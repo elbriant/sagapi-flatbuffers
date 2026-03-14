@@ -1,8 +1,5 @@
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_ReplicateData {
-	item:Torappu_ItemBundle;
-	replicateTokenItem:Torappu_ItemBundle;
 }
 
 

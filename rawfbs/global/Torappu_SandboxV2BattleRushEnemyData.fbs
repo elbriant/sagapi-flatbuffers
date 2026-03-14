@@ -1,9 +1,5 @@
-include "Dict_2_Torappu_SandboxV2EnemyRushType_List_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__.fbs";
-include "Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef.fbs";
 
 table Torappu_SandboxV2BattleRushEnemyData {
-	rushEnemyGroupConfigs:[Dict_2_Torappu_SandboxV2EnemyRushType_List_1_Torappu_SandboxV2BattleRushEnemyGroupConfig__];
-	rushEnemyDbRef:[Torappu_SandboxV2BattleRushEnemyData_RushEnemyDBRef];
 }
 
 

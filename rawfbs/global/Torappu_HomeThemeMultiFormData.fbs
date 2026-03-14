@@ -1,7 +1,5 @@
 
 table Torappu_HomeThemeMultiFormData {
-	multiFormTmId:string;
-	sortId:int32;
 }
 
 

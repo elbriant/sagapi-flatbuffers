@@ -1,10 +1,5 @@
-include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RoguelikeDicePredefineData {
-	modeId:Torappu_RoguelikeTopicMode;
-	modeGrade:int32;
-	predefinedId:string;
-	initialDiceCount:int32;
 }
 
 

@@ -1,7 +1,5 @@
 
 table Torappu_ActArchiveNewsItemData {
-	newsId:string;
-	newsSortId:int32;
 }
 
 

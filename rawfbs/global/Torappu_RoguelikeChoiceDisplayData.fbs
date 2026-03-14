@@ -1,14 +1,5 @@
-include "Torappu_RoguelikeChoiceDisplayType.fbs";
-include "Torappu_RoguelikeChoiceHintType.fbs";
 
 table Torappu_RoguelikeChoiceDisplayData {
-	type:Torappu_RoguelikeChoiceDisplayType;
-	costHintType:Torappu_RoguelikeChoiceHintType;
-	effectHintType:Torappu_RoguelikeChoiceHintType;
-	funcIconId:string;
-	itemId:string;
-	difficultyUpgradeRelicGroupId:string;
-	taskId:string;
 }
 
 

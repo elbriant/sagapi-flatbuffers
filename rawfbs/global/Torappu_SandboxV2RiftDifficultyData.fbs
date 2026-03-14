@@ -1,10 +1,5 @@
 
 table Torappu_SandboxV2RiftDifficultyData {
-	id:string;
-	riftId:string;
-	desc:string;
-	difficultyLevel:int32;
-	rewardGroupId:string;
 }
 
 

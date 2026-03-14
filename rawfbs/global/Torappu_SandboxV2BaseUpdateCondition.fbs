@@ -1,8 +1,5 @@
 
 table Torappu_SandboxV2BaseUpdateCondition {
-	desc:string;
-	limitCond:string;
-	param:[string];
 }
 
 

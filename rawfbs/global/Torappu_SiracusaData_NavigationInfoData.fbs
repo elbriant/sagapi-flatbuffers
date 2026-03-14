@@ -1,11 +1,5 @@
-include "Torappu_SiracusaData_NavigationType.fbs";
 
 table Torappu_SiracusaData_NavigationInfoData {
-	entryId:string;
-	navigationType:Torappu_SiracusaData_NavigationType;
-	entryIcon:string;
-	entryName:string;
-	entrySubName:string;
 }
 
 

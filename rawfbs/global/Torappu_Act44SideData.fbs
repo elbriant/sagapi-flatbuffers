@@ -1,24 +1,5 @@
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideZoneAdditionData_.fbs";
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideCustomerData_.fbs";
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideTagData_.fbs";
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideChoiceData_.fbs";
-include "Dict_2_System_String_System_String_.fbs";
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideNewsData_.fbs";
-include "Dict_2_System_String_Torappu_Act44SideData_Act44SideInsightData_.fbs";
-include "Torappu_Act44SideData_Act44SideMileStoneData.fbs";
-include "Torappu_Act44SideData_Act44SideConstData.fbs";
 
 table Torappu_Act44SideData {
-	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideZoneAdditionData_];
-	customerDataMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideCustomerData_];
-	tagDataMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideTagData_];
-	choiceDataMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideChoiceData_];
-	customerDialogMap:[Dict_2_System_String_System_String_];
-	keeperDialogMap:[Dict_2_System_String_System_String_];
-	newsDataMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideNewsData_];
-	insightDescMap:[Dict_2_System_String_Torappu_Act44SideData_Act44SideInsightData_];
-	mileStoneList:[Torappu_Act44SideData_Act44SideMileStoneData];
-	constData:Torappu_Act44SideData_Act44SideConstData;
 }
 
 

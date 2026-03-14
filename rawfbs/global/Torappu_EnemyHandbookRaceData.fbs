@@ -1,8 +1,5 @@
 
 table Torappu_EnemyHandbookRaceData {
-	id:string;
-	raceName:string;
-	sortId:int32;
 }
 
 

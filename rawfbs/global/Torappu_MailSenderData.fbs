@@ -1,7 +1,5 @@
-include "Dict_2_System_String_Torappu_MailSenderSingleInfo_.fbs";
 
 table Torappu_MailSenderData {
-	senderDict:[Dict_2_System_String_Torappu_MailSenderSingleInfo_];
 }
 
 

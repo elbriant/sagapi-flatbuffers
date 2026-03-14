@@ -1,13 +1,5 @@
-include "Torappu_SpType.fbs";
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_SpData {
-	spType:Torappu_SpType;
-	levelUpCost:[Torappu_ItemBundle];
-	maxChargeTime:int32;
-	spCost:int32;
-	initSp:int32;
-	increment:float;
 }
 
 

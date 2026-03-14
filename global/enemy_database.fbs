@@ -1,11 +1,5 @@
 
-table System_Collections_Generic_KeyValuePair_2_System_String_List_1_Torappu_EnemyDatabase_EnemyLevel__ {
-}
-
-
-
 table Torappu_EnemyDatabase {
-	enemies:[System_Collections_Generic_KeyValuePair_2_System_String_List_1_Torappu_EnemyDatabase_EnemyLevel__];
 }
 
 

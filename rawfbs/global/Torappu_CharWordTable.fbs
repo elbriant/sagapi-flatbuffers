@@ -1,33 +1,5 @@
-include "Dict_2_System_String_Torappu_CharWordData_.fbs";
-include "Dict_2_System_String_Torappu_CharExtraWordData_.fbs";
-include "Dict_2_System_String_Torappu_VoiceLangData_.fbs";
-include "Torappu_VoiceLangType.fbs";
-include "Dict_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData_.fbs";
-include "Dict_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData_.fbs";
-include "Dict_2_System_String_Torappu_VoiceLangType_.fbs";
-include "Dict_2_Torappu_VoiceLangType_List_1_Torappu_NewVoiceTimeData__.fbs";
-include "Torappu_VoiceLangGroupType.fbs";
-include "Torappu_CharWordShowType.fbs";
-include "Dict_2_System_String_Torappu_FestivalVoiceData_.fbs";
-include "Dict_2_System_String_Torappu_FestivalVoiceWeightData_.fbs";
-include "Dict_2_System_String_Torappu_ExtraVoiceConfigData_.fbs";
 
 table Torappu_CharWordTable {
-	charWords:[Dict_2_System_String_Torappu_CharWordData_];
-	charExtraWords:[Dict_2_System_String_Torappu_CharExtraWordData_];
-	voiceLangDict:[Dict_2_System_String_Torappu_VoiceLangData_];
-	defaultLangType:Torappu_VoiceLangType;
-	newTagList:[string];
-	voiceLangTypeDict:[Dict_2_Torappu_VoiceLangType_Torappu_VoiceLangTypeData_];
-	voiceLangGroupTypeDict:[Dict_2_Torappu_VoiceLangGroupType_Torappu_VoiceLangGroupData_];
-	charDefaultTypeDict:[Dict_2_System_String_Torappu_VoiceLangType_];
-	startTimeWithTypeDict:[Dict_2_Torappu_VoiceLangType_List_1_Torappu_NewVoiceTimeData__];
-	displayGroupTypeList:[Torappu_VoiceLangGroupType];
-	displayTypeList:[Torappu_VoiceLangType];
-	playVoiceRange:Torappu_CharWordShowType;
-	fesVoiceData:[Dict_2_System_String_Torappu_FestivalVoiceData_];
-	fesVoiceWeight:[Dict_2_System_String_Torappu_FestivalVoiceWeightData_];
-	extraVoiceConfigData:[Dict_2_System_String_Torappu_ExtraVoiceConfigData_];
 }
 
 

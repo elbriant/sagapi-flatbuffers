@@ -1,8 +1,5 @@
 
 table Torappu_Act4funLiveMatEffectInfo {
-	liveMatEffectId:string;
-	valueId:string;
-	performGroup:string;
 }
 
 

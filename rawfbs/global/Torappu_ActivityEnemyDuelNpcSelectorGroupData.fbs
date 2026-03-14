@@ -1,8 +1,5 @@
-include "Torappu_ActivityEnemyDuelNpcSelectorData.fbs";
 
 table Torappu_ActivityEnemyDuelNpcSelectorGroupData {
-	npcId:string;
-	data:[Torappu_ActivityEnemyDuelNpcSelectorData];
 }
 
 

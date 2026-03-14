@@ -1,8 +1,5 @@
 
 table Torappu_ActMainlineBpExtraData_ActMainlineBpExtraPeriodData {
-	periodId:string;
-	startTs:int64;
-	endTs:int64;
 }
 
 

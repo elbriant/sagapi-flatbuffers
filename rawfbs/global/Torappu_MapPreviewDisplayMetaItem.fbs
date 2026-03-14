@@ -1,11 +1,5 @@
-include "Torappu_CommonAvailCheck.fbs";
 
 table Torappu_MapPreviewDisplayMetaItem {
-	mapPreviewPicId:string;
-	availCheck:Torappu_CommonAvailCheck;
-	relateActId:string;
-	isAllStageActive:bool;
-	stageIdList:[string];
 }
 
 

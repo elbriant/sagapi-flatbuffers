@@ -1,8 +1,5 @@
-include "Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_.fbs";
 
 table Torappu_BuildingData_LayoutData_SlotCleanCost {
-	id:string;
-	number:[Torappu_ListDict_2_System_Int32_Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost_];
 }
 
 

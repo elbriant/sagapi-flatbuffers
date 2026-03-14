@@ -1,8 +1,5 @@
-include "Dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_Act1VWeightedResItemBundle {
-	weight:float;
-	resources:[Dict_2_System_String_System_Int32_];
 }
 
 

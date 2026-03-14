@@ -1,9 +1,5 @@
-include "Dict_2_System_String_Torappu_MailArchiveItemData_.fbs";
-include "Torappu_MailArchiveConstData.fbs";
 
 table Torappu_MailArchiveData {
-	mailArchiveInfoDict:[Dict_2_System_String_Torappu_MailArchiveItemData_];
-	constData:Torappu_MailArchiveConstData;
 }
 
 

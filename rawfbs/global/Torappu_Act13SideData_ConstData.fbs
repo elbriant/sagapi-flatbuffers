@@ -1,19 +1,5 @@
-include "List_1_System_Int32_.fbs";
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act13SideData_ConstData {
-	prestigeDescList:[string];
-	dailyRandomCount:[List_1_System_Int32_];
-	dailyWeightInitial:int32;
-	dailyWeightComplete:int32;
-	agendaRecover:int32;
-	agendaMax:int32;
-	agendaHint:int32;
-	missionPoolMax:int32;
-	missionBoardMax:int32;
-	itemRandomList:[Torappu_ItemBundle];
-	unlockPrestigeCond:string;
-	hotSpotShowFlag:int64;
 }
 
 

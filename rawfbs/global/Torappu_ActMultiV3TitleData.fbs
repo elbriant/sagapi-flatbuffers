@@ -1,8 +1,5 @@
 
 table Torappu_ActMultiV3TitleData {
-	order:int32;
-	titleDesc:string;
-	isBack:bool;
 }
 
 

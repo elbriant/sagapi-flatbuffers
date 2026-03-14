@@ -1,9 +1,5 @@
-include "Dict_2_System_String_Torappu_RoguelikeActivityBasicData_.fbs";
-include "Torappu_RoguelikeActivityTable.fbs";
 
 table Torappu_RoguelikeActivityData {
-	basicDatas:[Dict_2_System_String_Torappu_RoguelikeActivityBasicData_];
-	activityTable:Torappu_RoguelikeActivityTable;
 }
 
 

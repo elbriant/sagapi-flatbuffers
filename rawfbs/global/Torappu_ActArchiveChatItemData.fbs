@@ -1,9 +1,5 @@
 
 table Torappu_ActArchiveChatItemData {
-	floor:int32;
-	chatZoneId:string;
-	chatDesc:string;
-	chatStoryId:string;
 }
 
 

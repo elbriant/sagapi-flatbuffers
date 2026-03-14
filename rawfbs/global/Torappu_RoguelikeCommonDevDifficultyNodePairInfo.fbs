@@ -1,7 +1,5 @@
 
 table Torappu_RoguelikeCommonDevDifficultyNodePairInfo {
-	frontNodes:[string];
-	nextNode:string;
 }
 
 

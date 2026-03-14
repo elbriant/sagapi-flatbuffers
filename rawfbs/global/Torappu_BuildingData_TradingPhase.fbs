@@ -1,8 +1,5 @@
 
 table Torappu_BuildingData_TradingPhase {
-	orderSpeed:float;
-	orderLimit:int32;
-	orderRarity:int32;
 }
 
 

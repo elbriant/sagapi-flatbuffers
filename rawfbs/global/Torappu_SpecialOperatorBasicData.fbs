@@ -1,15 +1,5 @@
-include "Torappu_SpecialOperatorTargetType.fbs";
 
 table Torappu_SpecialOperatorBasicData {
-	soCharId:string;
-	sortId:int32;
-	targetType:Torappu_SpecialOperatorTargetType;
-	targetId:string;
-	targetTopicName:string;
-	bgId:string;
-	bgEffectId:string;
-	charEffectId:string;
-	typeIconId:string;
 }
 
 

@@ -1,8 +1,5 @@
 
 table Torappu_Act5FunBasicNpcData {
-	npcId:string;
-	avatarId:string;
-	name:string;
 }
 
 

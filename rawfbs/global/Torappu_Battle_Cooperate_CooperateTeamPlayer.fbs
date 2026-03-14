@@ -1,8 +1,5 @@
 
 table Torappu_Battle_Cooperate_CooperateTeamPlayer {
-	forward:string;
-	goalkeeper:string;
-	muscleman:string;
 }
 
 

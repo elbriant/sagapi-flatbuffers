@@ -1,8 +1,5 @@
 
 table Torappu_CharacterData_PowerData {
-	nationId:string;
-	groupId:string;
-	teamId:string;
 }
 
 

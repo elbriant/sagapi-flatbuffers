@@ -1,25 +1,5 @@
-include "Torappu_LevelData_Difficulty.fbs";
 
 table Torappu_RoguelikeGameStageData {
-	id:string;
-	linkedStageId:string;
-	levelId:string;
-	levelReplaceIds:[string];
-	code:string;
-	name:string;
-	loadingPicId:string;
-	description:string;
-	eliteDesc:string;
-	isBoss:int32;
-	isElite:int32;
-	difficulty:Torappu_LevelData_Difficulty;
-	capsulePool:string;
-	capsuleProb:float;
-	vutresProb:[double];
-	boxProb:[double];
-	specialNodeId:string;
-	redCapsulePool:string;
-	redCapsuleProb:float;
 }
 
 

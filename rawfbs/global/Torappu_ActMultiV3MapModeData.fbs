@@ -1,15 +1,5 @@
-include "Torappu_ActMultiV3MapModeType.fbs";
 
 table Torappu_ActMultiV3MapModeData {
-	modeType:Torappu_ActMultiV3MapModeType;
-	name:string;
-	iconId:string;
-	color:string;
-	quickMatchSortId:int32;
-	stageOverviewSortId:int32;
-	unlockTs:int64;
-	unlockPageTitle:string;
-	unlockPageDesc:string;
 }
 
 

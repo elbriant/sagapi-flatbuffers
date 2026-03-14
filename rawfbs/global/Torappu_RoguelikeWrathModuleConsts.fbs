@@ -1,8 +1,5 @@
 
 table Torappu_RoguelikeWrathModuleConsts {
-	getWrathTransition:string;
-	getWrathToast:string;
-	hiddenWrathType:string;
 }
 
 

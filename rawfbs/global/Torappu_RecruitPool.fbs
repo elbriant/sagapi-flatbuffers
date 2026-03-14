@@ -1,9 +1,5 @@
-include "Torappu_RecruitPool_RecruitTime.fbs";
-include "Torappu_BasedRecruitPool_RecruitConstants.fbs";
 
 table Torappu_RecruitPool {
-	recruitTimeTable:[Torappu_RecruitPool_RecruitTime];
-	recruitConstants:Torappu_BasedRecruitPool_RecruitConstants;
 }
 
 

@@ -1,7 +1,5 @@
-include "UnityEngine_Vector2.fbs";
 
 table Torappu_Act1VHalfIdleDiagramData_PointPosData {
-	pos:UnityEngine_Vector2;
 }
 
 

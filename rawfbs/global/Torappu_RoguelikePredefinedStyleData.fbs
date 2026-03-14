@@ -1,7 +1,5 @@
 
 table Torappu_RoguelikePredefinedStyleData {
-	styleId:string;
-	styleConfig:int32;
 }
 
 

@@ -1,7 +1,5 @@
 
 table Torappu_BuildingData_DormPhase {
-	manpowerRecover:int32;
-	decorationLimit:int32;
 }
 
 

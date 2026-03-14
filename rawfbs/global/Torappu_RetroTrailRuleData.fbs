@@ -1,7 +1,5 @@
 
 table Torappu_RetroTrailRuleData {
-	title:[string];
-	desc:[string];
 }
 
 

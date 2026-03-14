@@ -1,11 +1,5 @@
-include "Torappu_Act17sideData_ChapterIconType.fbs";
 
 table Torappu_ActArchiveChapterLogData {
-	chapterName:string;
-	displayId:string;
-	unlockDes:string;
-	logs:[string];
-	chapterIcon:Torappu_Act17sideData_ChapterIconType;
 }
 
 

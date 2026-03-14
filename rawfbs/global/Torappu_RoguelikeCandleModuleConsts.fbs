@@ -1,6 +1,5 @@
 
 table Torappu_RoguelikeCandleModuleConsts {
-	candleHolderBuffId:string;
 }
 
 

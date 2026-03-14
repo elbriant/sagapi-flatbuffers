@@ -1,11 +1,5 @@
-include "Torappu_EvolvePhase.fbs";
 
 table Torappu_CharacterInst_Metadata {
-	characterKey:string;
-	level:int32;
-	phase:Torappu_EvolvePhase;
-	favorBattlePhase:int32;
-	potentialRank:int32;
 }
 
 

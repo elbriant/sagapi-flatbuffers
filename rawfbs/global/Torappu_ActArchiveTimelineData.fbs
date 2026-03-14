@@ -1,7 +1,5 @@
-include "Torappu_ActArchiveTimelineItemData.fbs";
 
 table Torappu_ActArchiveTimelineData {
-	timelineList:[Torappu_ActArchiveTimelineItemData];
 }
 
 

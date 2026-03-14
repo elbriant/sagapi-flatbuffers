@@ -1,7 +1,5 @@
 
 table Torappu_Act44SideData_Act44SideZoneAdditionData {
-	zoneId:string;
-	unlockText:string;
 }
 
 

@@ -1,7 +1,5 @@
 
 table Torappu_GachaData_LimitTenGachaTkt {
-	itemId:string;
-	endTime:int64;
 }
 
 

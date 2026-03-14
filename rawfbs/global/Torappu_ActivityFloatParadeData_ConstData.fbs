@@ -1,10 +1,5 @@
 
 table Torappu_ActivityFloatParadeData_ConstData {
-	cityName:string;
-	cityNamePic:string;
-	lowStandard:float;
-	variationTitle:string;
-	ruleDesc:string;
 }
 
 

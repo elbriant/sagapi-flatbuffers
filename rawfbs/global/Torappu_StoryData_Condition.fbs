@@ -1,12 +1,5 @@
-include "Torappu_StoryData_Condition_StageCondition.fbs";
 
 table Torappu_StoryData_Condition {
-	minProgress:int32;
-	maxProgress:int32;
-	minPlayerLevel:int32;
-	requiredFlags:[string];
-	excludedFlags:[string];
-	requiredStages:[Torappu_StoryData_Condition_StageCondition];
 }
 
 

@@ -1,12 +1,5 @@
-include "Torappu_CampaignData_BreakRewardLadder.fbs";
-include "Dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_.fbs";
 
 table Torappu_CampaignData {
-	stageId:string;
-	isSmallScale:int32;
-	breakLadders:[Torappu_CampaignData_BreakRewardLadder];
-	isCustomized:bool;
-	dropGains:[Dict_2_Torappu_CampaignStageType_Torappu_CampaignData_DropGainInfo_];
 }
 
 

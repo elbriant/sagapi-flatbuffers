@@ -1,8 +1,5 @@
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_VersusCheckInData_DailyInfo {
-	rewardList:[Torappu_ItemBundle];
-	order:int32;
 }
 
 

@@ -1,8 +1,5 @@
 
 table Torappu_ActMultiV3SquadEffectData_Token {
-	name:string;
-	desc:string;
-	iconId:string;
 }
 
 

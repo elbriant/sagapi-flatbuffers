@@ -1,7 +1,5 @@
 
 table Torappu_CharacterData_MasterInfo {
-	masterId:string;
-	level:int32;
 }
 
 

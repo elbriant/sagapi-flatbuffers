@@ -1,9 +1,5 @@
-include "Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData.fbs";
-include "Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData.fbs";
 
 table Torappu_RoguelikeActivitySeedModeData {
-	officialSeedDataList:[Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData];
-	constData:Torappu_RoguelikeActivitySeedModeData_RoguelikeActivitySeedModeConstData;
 }
 
 

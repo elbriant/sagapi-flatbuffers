@@ -1,7 +1,5 @@
 
 table Torappu_Act27SideData_Act27SideMileStoneFurniRewardData {
-	furniId:string;
-	pointNum:int32;
 }
 
 

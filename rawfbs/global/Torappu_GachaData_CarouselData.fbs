@@ -1,10 +1,5 @@
 
 table Torappu_GachaData_CarouselData {
-	poolId:string;
-	index:int32;
-	startTime:int64;
-	endTime:int64;
-	spriteId:string;
 }
 
 

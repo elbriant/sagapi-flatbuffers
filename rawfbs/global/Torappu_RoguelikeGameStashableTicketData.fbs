@@ -1,7 +1,5 @@
 
 table Torappu_RoguelikeGameStashableTicketData {
-	ticketId:string;
-	stashedTicketId:string;
 }
 
 

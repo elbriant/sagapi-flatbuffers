@@ -1,15 +1,5 @@
 
 table Torappu_RoguelikeChaosData {
-	chaosId:string;
-	level:int32;
-	nextChaosId:string;
-	prevChaosId:string;
-	iconId:string;
-	name:string;
-	functionDesc:string;
-	desc:string;
-	sound:string;
-	sortId:int32;
 }
 
 

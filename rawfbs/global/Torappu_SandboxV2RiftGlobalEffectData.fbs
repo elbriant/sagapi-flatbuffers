@@ -1,7 +1,5 @@
 
 table Torappu_SandboxV2RiftGlobalEffectData {
-	id:string;
-	desc:string;
 }
 
 

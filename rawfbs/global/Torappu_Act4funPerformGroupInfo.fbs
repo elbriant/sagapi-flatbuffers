@@ -1,7 +1,5 @@
 
 table Torappu_Act4funPerformGroupInfo {
-	performGroupId:string;
-	performIds:[string];
 }
 
 

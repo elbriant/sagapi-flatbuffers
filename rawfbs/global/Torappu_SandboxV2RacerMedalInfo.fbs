@@ -1,11 +1,5 @@
 
 table Torappu_SandboxV2RacerMedalInfo {
-	medalId:string;
-	sortId:int32;
-	name:string;
-	desc:string;
-	iconId:string;
-	smallIconId:string;
 }
 
 

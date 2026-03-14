@@ -1,8 +1,5 @@
-include "Torappu_Act1VWeightedBattleItemPool.fbs";
 
 table Torappu_Act1VBattleItemDropSlot {
-	prob:float;
-	itemPools:[Torappu_Act1VWeightedBattleItemPool];
 }
 
 

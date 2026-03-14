@@ -1,7 +1,5 @@
 
 table Torappu_ActivityEnemyDuelNpcSelectorData {
-	enemyId:string;
-	score:float;
 }
 
 

@@ -1,25 +1,5 @@
-include "System_Int32A_.fbs";
-include "Torappu_SpecialOperatorDetailConstData.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailTabData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData_.fbs";
-include "Dict_2_System_String_Torappu_SpecialOperatorDiagramData_.fbs";
 
 table Torappu_SpecialOperatorDetailData {
-	specialOperatorExpMap:[System_Int32A_];
-	detailConstData:Torappu_SpecialOperatorDetailConstData;
-	tabData:[Dict_2_System_String_Torappu_SpecialOperatorDetailTabData_];
-	nodeUnlockData:[Dict_2_System_String_Torappu_SpecialOperatorDetailNodeUnlockData_];
-	evolveNodeData:[Dict_2_System_String_Torappu_SpecialOperatorDetailEvolveNodeData_];
-	skillNodeData:[Dict_2_System_String_Torappu_SpecialOperatorDetailSkillNodeData_];
-	talentNodeData:[Dict_2_System_String_Torappu_SpecialOperatorDetailTalentNodeData_];
-	masterNodeData:[Dict_2_System_String_Torappu_SpecialOperatorDetailMasterNodeData_];
-	uniEquipNodeData:[Dict_2_System_String_Torappu_SpecialOperatorDetailUniEquipNodeData_];
-	nodeDiagramMap:[Dict_2_System_String_Torappu_SpecialOperatorDiagramData_];
 }
 
 

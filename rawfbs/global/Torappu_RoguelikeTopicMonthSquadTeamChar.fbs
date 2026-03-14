@@ -1,7 +1,5 @@
 
 table Torappu_RoguelikeTopicMonthSquadTeamChar {
-	teamCharId:string;
-	teamTmplId:string;
 }
 
 

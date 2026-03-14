@@ -1,8 +1,5 @@
-include "Torappu_LevelData_WaveData_FragmentData_ActionData.fbs";
 
 table Torappu_LevelData_BranchData_PhaseData {
-	preDelay:float;
-	actions:[Torappu_LevelData_WaveData_FragmentData_ActionData];
 }
 
 

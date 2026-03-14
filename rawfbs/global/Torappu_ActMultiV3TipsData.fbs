@@ -1,8 +1,5 @@
 
 table Torappu_ActMultiV3TipsData {
-	id:string;
-	txt:string;
-	weight:int32;
 }
 
 

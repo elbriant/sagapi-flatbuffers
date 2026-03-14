@@ -1,13 +1,6 @@
 
 table Torappu_Audio_Middleware_Data_BGMBank {
-	intro:string;
-	loop:string;
-	volume:float;
-	crossfade:float;
-	delay:float;
-	fadeStyleId:string;
 	bankName:string;
-	name:string;
 }
 
 

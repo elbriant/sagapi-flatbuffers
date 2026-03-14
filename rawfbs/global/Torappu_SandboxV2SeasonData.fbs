@@ -1,11 +1,5 @@
-include "Torappu_SandboxV2SeasonType.fbs";
 
 table Torappu_SandboxV2SeasonData {
-	seasonType:Torappu_SandboxV2SeasonType;
-	name:string;
-	functionDesc:string;
-	description:string;
-	color:string;
 }
 
 

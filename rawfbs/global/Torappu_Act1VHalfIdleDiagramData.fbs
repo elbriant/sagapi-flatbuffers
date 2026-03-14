@@ -1,15 +1,5 @@
-include "Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_.fbs";
-include "Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData_.fbs";
-include "Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData_.fbs";
-include "Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData_.fbs";
 
 table Torappu_Act1VHalfIdleDiagramData {
-	width:float;
-	height:float;
-	pointPosDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_];
-	linePosDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData_];
-	lineRelationDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData_];
-	nodePointDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData_];
 }
 
 

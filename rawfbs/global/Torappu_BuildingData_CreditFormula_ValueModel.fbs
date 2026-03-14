@@ -1,7 +1,5 @@
 
 table Torappu_BuildingData_CreditFormula_ValueModel {
-	basic:int32;
-	addition:int32;
 }
 
 

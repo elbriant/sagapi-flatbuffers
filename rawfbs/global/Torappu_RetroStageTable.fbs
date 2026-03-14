@@ -1,28 +1,5 @@
-include "Torappu_ListDict_2_System_String_System_String_.fbs";
-include "Dict_2_System_String_Torappu_StageValidInfo_.fbs";
-include "Dict_2_System_String_Torappu_RetroStageOverrideInfo_.fbs";
-include "Dict_2_System_String_Torappu_RetroActData_.fbs";
-include "Dict_2_System_String_Torappu_RetroTrailData_.fbs";
-include "Dict_2_System_String_Torappu_StageData_.fbs";
-include "Torappu_RetroTrailRuleData.fbs";
-include "Torappu_ActivityCustomData.fbs";
-include "Dict_2_System_Int32_System_Int32_.fbs";
 
 table Torappu_RetroStageTable {
-	zoneToRetro:[Torappu_ListDict_2_System_String_System_String_];
-	stageValidInfo:[Dict_2_System_String_Torappu_StageValidInfo_];
-	stages:[Dict_2_System_String_Torappu_RetroStageOverrideInfo_];
-	retroActList:[Dict_2_System_String_Torappu_RetroActData_];
-	retroTrailList:[Dict_2_System_String_Torappu_RetroTrailData_];
-	stageList:[Dict_2_System_String_Torappu_StageData_];
-	ruleData:Torappu_RetroTrailRuleData;
-	customData:Torappu_ActivityCustomData;
-	initRetroCoin:int32;
-	retroCoinPerWeek:int32;
-	retroCoinMaxOfLevels:[Dict_2_System_Int32_System_Int32_];
-	retroUnlockCost:int32;
-	retroDetail:string;
-	retroPreShowTime:int64;
 }
 
 

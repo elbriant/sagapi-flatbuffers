@@ -1,8 +1,5 @@
 
 table Torappu_Act17sideData_EventNodeData {
-	nodeId:string;
-	eventId:string;
-	endEventId:string;
 }
 
 

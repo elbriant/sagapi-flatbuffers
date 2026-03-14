@@ -1,8 +1,5 @@
 
 table Torappu_ActVecBreakV2DefenseGroupData {
-	groupId:string;
-	sortId:int32;
-	orderedStageList:[string];
 }
 
 

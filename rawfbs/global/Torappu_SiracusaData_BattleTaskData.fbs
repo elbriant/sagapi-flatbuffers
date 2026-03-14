@@ -1,11 +1,5 @@
 
 table Torappu_SiracusaData_BattleTaskData {
-	taskId:string;
-	stageId:string;
-	battleTaskDesc:string;
-	targetType:string;
-	targetTemplate:string;
-	targetParamList:[string];
 }
 
 

@@ -1,8 +1,5 @@
-include "Torappu_ActArchiveResData_ArchiveNewsLineType.fbs";
 
 table Torappu_ActArchiveResData_ActivityNewsLine {
-	lineType:Torappu_ActArchiveResData_ArchiveNewsLineType;
-	content:string;
 }
 
 

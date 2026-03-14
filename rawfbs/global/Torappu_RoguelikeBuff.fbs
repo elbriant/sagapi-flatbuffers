@@ -1,8 +1,5 @@
-include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_RoguelikeBuff {
-	key:string;
-	blackboard:[Torappu_Blackboard_DataPair];
 }
 
 

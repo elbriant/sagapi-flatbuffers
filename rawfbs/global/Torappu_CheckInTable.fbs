@@ -1,10 +1,5 @@
-include "Dict_2_System_String_Torappu_MonthlySignInGroupData_.fbs";
-include "Dict_2_System_String_List_1_Torappu_MonthlyDailyBonusGroup__.fbs";
 
 table Torappu_CheckInTable {
-	groups:[Dict_2_System_String_Torappu_MonthlySignInGroupData_];
-	monthlySubItem:[Dict_2_System_String_List_1_Torappu_MonthlyDailyBonusGroup__];
-	currentMonthlySubId:string;
 }
 
 

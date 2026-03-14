@@ -1,8 +1,5 @@
 
 table Torappu_DailyMissionGroupInfo_periodInfo {
-	missionGroupId:string;
-	rewardGroupId:string;
-	period:[int32];
 }
 
 

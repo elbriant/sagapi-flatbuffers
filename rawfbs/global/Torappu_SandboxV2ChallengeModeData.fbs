@@ -1,13 +1,5 @@
-include "Torappu_SandboxV2ChallengeConst.fbs";
-include "Dict_2_System_String_Torappu_SandboxV2ChallengeModeUnlockData_.fbs";
-include "Dict_2_System_String_Torappu_SandboxV2ChallengeModeRewardData_.fbs";
-include "Torappu_SandboxV2ChallengeModeDifficultyData.fbs";
 
 table Torappu_SandboxV2ChallengeModeData {
-	challengeConst:Torappu_SandboxV2ChallengeConst;
-	challengeModeUnlockData:[Dict_2_System_String_Torappu_SandboxV2ChallengeModeUnlockData_];
-	challengeModeRewardData:[Dict_2_System_String_Torappu_SandboxV2ChallengeModeRewardData_];
-	challengeModeDifficultyData:[Torappu_SandboxV2ChallengeModeDifficultyData];
 }
 
 

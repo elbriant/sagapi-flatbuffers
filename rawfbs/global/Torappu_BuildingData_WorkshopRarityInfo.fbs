@@ -1,10 +1,5 @@
-include "Torappu_ItemRarity.fbs";
 
 table Torappu_BuildingData_WorkshopRarityInfo {
-	name:string;
-	order:int32;
-	rarityList:[Torappu_ItemRarity];
-	color:string;
 }
 
 

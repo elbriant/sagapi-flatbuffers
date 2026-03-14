@@ -1,10 +1,5 @@
 
 table Torappu_Act17sideData_EventData {
-	eventId:string;
-	eventPic:string;
-	eventSpecialPic:string;
-	eventTitle:string;
-	eventDesList:[string];
 }
 
 

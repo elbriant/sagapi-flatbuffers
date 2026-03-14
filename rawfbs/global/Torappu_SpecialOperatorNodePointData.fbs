@@ -1,6 +1,5 @@
 
 table Torappu_SpecialOperatorNodePointData {
-	nodeId:string;
 }
 
 

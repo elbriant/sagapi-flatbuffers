@@ -1,7 +1,5 @@
 
 table Torappu_RoguelikeTopicDifficulty_RuleDescReplacement {
-	enrollId:string;
-	ruleDesc:string;
 }
 
 

@@ -1,11 +1,5 @@
-include "Torappu_RarityRank.fbs";
-include "Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_.fbs";
-include "Torappu_EvolvePhase.fbs";
 
 table Torappu_Act1VHalfIdleCharMaxRankData {
-	rarity:Torappu_RarityRank;
-	maxRankData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_];
-	maxEvolvePhase:Torappu_EvolvePhase;
 }
 
 

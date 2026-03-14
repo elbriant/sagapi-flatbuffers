@@ -1,7 +1,5 @@
 
 table Torappu_CampaignRegionData {
-	id:string;
-	isUnknwon:int32;
 }
 
 

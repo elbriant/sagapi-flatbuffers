@@ -1,49 +1,5 @@
-include "Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_.fbs";
-include "Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_.fbs";
-include "Dict_2_System_Int32_System_String_.fbs";
-include "Dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_.fbs";
-include "Torappu_RoguelikeTopicMode.fbs";
 
 table Torappu_RoguelikeTopicDetailConst {
-	playerLevelTable:[Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
-	charUpgradeTable:[Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_CharUpgradeData_];
-	difficultyUpgradeRelicDescTable:[Dict_2_System_Int32_System_String_];
-	predefinedLevelTable:[Dict_2_System_String_Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData_];
-	tokenBpId:string;
-	tokenOuterBuffId:string;
-	spOperatorLockedMessage:string;
-	previewedRewardsAccordingUpdateId:string;
-	tipButtonName:string;
-	collectButtonName:string;
-	bpSystemName:string;
-	autoSetKV:string;
-	bpPurchaseActiveEnroll:string;
-	defaultExpeditionSelectDesc:string;
-	gotCharMutationBuffToast:string;
-	gotCharEvolutionBuffToast:string;
-	gotSquadBuffToast:string;
-	loseCharBuffToast:string;
-	monthTeamSystemName:string;
-	battlePassUpdateName:string;
-	monthCharCardTagName:string;
-	monthTeamDescTagName:string;
-	outerBuffCompleteText:string;
-	outerProgressTextColor:string;
-	challengeTaskTargetName:string;
-	challengeTaskConditionName:string;
-	challengeTaskRewardName:string;
-	challengeTaskModeName:string;
-	challengeTaskName:string;
-	outerBuffTokenSum:int32;
-	needAllFrontNode:bool;
-	showBlurBack:bool;
-	endingIconBorderDifficulty:int32;
-	endingIconBorderCount:int32;
-	copySeedModeInfo:string;
-	copySucceededTextHint:string;
-	historicalRecordsCount:int32;
-	historicalRecordsStartTime:int64;
-	historicalRecordsMode:Torappu_RoguelikeTopicMode;
 }
 
 

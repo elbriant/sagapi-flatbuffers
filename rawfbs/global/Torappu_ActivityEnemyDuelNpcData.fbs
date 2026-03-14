@@ -1,14 +1,5 @@
-include "Torappu_EnemyDuelBetStrategy.fbs";
 
 table Torappu_ActivityEnemyDuelNpcData {
-	npcId:string;
-	avatarId:string;
-	name:string;
-	priority:float;
-	specialStrategy:Torappu_EnemyDuelBetStrategy;
-	npcProb:float;
-	defaultEnemyScore:float;
-	allinProb:float;
 }
 
 

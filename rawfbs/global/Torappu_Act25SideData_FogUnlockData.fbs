@@ -1,8 +1,5 @@
 
 table Torappu_Act25SideData_FogUnlockData {
-	lockId:string;
-	lockedCollectionIconId:string;
-	unlockedCollectionIconId:string;
 }
 
 

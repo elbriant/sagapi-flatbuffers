@@ -1,11 +1,5 @@
 
 table Torappu_ActArchiveDisasterItemData {
-	disasterId:string;
-	sortId:int32;
-	enrollConditionId:string;
-	picSmallId:string;
-	picBigActiveId:string;
-	picBigInactiveId:string;
 }
 
 

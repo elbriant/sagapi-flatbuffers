@@ -1,8 +1,5 @@
 
 table Torappu_StorylineConstData {
-	recommendHideGuideGroupId:string;
-	tutorialSelectStorylineId:string;
-	mainlineStorylineId:string;
 }
 
 

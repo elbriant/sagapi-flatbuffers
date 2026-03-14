@@ -1,8 +1,5 @@
 
 table Torappu_RoguelikeCommonDevRawTextBuffGroup {
-	nodeIdList:[string];
-	groupIconId:string;
-	sortId:int32;
 }
 
 

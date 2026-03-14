@@ -1,10 +1,5 @@
 
 table Torappu_Act4funTokenInfoData {
-	tokenLevelId:string;
-	levelDesc:string;
-	skillDesc:string;
-	tokenLevelNum:int32;
-	levelIconId:string;
 }
 
 

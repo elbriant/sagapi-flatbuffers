@@ -1,7 +1,5 @@
 
 table Torappu_ActivityBossRushData_ZoneAdditionData {
-	unlockText:string;
-	displayStartTime:int64;
 }
 
 

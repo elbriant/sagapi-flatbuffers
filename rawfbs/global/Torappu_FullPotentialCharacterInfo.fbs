@@ -1,7 +1,5 @@
 
 table Torappu_FullPotentialCharacterInfo {
-	itemId:string;
-	ts:int64;
 }
 
 

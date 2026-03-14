@@ -1,10 +1,5 @@
 
 table Torappu_SandboxV2NodeBuffData {
-	runeId:string;
-	name:string;
-	description:string;
-	extra:string;
-	iconId:string;
 }
 
 

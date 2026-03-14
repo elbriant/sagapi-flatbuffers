@@ -1,11 +1,5 @@
 
 table Torappu_Act17sideData_ChoiceNodeOptionData {
-	canRepeat:bool;
-	eventId:string;
-	des:string;
-	unlockDes:string;
-	unlockCondType:string;
-	unlockParams:[string];
 }
 
 

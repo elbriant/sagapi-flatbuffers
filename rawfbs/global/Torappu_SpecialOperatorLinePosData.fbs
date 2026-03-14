@@ -1,8 +1,5 @@
-include "UnityEngine_Vector2.fbs";
 
 table Torappu_SpecialOperatorLinePosData {
-	startPos:UnityEngine_Vector2;
-	endPos:UnityEngine_Vector2;
 }
 
 

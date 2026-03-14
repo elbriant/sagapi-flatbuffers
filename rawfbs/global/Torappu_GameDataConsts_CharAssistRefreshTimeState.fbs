@@ -1,7 +1,5 @@
 
 table Torappu_GameDataConsts_CharAssistRefreshTimeState {
-	Hour:int32;
-	Minute:int32;
 }
 
 

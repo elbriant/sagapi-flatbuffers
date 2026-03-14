@@ -1,7 +1,5 @@
 
 table Torappu_ActArchiveResData_LogArchiveResItemData {
-	logId:string;
-	logDesc:string;
 }
 
 

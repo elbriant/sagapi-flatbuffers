@@ -1,8 +1,5 @@
 
 table Torappu_CommonFavorUpInfo {
-	charId:string;
-	displayStartTime:int64;
-	displayEndTime:int64;
 }
 
 

@@ -1,8 +1,5 @@
 
 table Torappu_HomeThemeLimitInfoData {
-	startTime:int64;
-	endTime:int64;
-	invalidObtainDesc:string;
 }
 
 

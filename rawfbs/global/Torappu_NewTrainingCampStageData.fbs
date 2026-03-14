@@ -1,7 +1,5 @@
 
 table Torappu_NewTrainingCampStageData {
-	updateTs:int64;
-	stages:[string];
 }
 
 

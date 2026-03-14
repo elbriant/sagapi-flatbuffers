@@ -1,7 +1,5 @@
 
 table Torappu_BuildingData_WorkshopFormula_UnlockStage {
-	stageId:string;
-	rank:int32;
 }
 
 

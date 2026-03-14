@@ -1,7 +1,5 @@
 
 table Torappu_BuildingData_BuildingRoomTypeBuffSortData_buffGroupInfo {
-	targets:[string];
-	sortId:int32;
 }
 
 

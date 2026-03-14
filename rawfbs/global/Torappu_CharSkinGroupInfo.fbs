@@ -1,7 +1,5 @@
 
 table Torappu_CharSkinGroupInfo {
-	skinGroupId:string;
-	publishTime:int64;
 }
 
 

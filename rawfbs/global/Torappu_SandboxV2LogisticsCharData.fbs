@@ -1,7 +1,5 @@
 
 table Torappu_SandboxV2LogisticsCharData {
-	levelUpperLimit:int32;
-	charUpperLimit:int32;
 }
 
 

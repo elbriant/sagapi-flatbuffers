@@ -1,10 +1,5 @@
 
 table Torappu_Act29SideData_Act29SideProductData {
-	id:string;
-	orcheId:string;
-	groupId:string;
-	formId:string;
-	musicId:string;
 }
 
 

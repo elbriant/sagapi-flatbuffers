@@ -1,7 +1,5 @@
-include "Torappu_ReplicateData.fbs";
 
 table Torappu_ReplicateTable {
-	replicateList:[Torappu_ReplicateData];
 }
 
 

@@ -1,7 +1,5 @@
 
 table Torappu_SiracusaData_AVGTaskData {
-	taskId:string;
-	taskAvg:string;
 }
 
 

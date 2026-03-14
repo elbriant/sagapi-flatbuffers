@@ -1,8 +1,5 @@
 
 table Torappu_SandboxV2BuildingNodeScoreData {
-	nodeId:string;
-	sortId:int32;
-	limitScore:int32;
 }
 
 

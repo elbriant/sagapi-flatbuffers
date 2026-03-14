@@ -1,8 +1,5 @@
 
 table Torappu_StageDiffGroupTable {
-	normalId:string;
-	toughId:string;
-	easyId:string;
 }
 
 

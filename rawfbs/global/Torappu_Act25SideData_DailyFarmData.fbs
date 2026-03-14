@@ -1,7 +1,5 @@
 
 table Torappu_Act25SideData_DailyFarmData {
-	transform:int32;
-	unitTime:int64;
 }
 
 

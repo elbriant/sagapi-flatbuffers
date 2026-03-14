@@ -1,8 +1,5 @@
 
 table Torappu_SandboxV2FixedRiftData {
-	riftId:string;
-	riftName:string;
-	rewardGroupId:string;
 }
 
 

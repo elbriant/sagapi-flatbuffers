@@ -1,7 +1,5 @@
-include "Torappu_RoguelikePredefinedExpStyleConfigData.fbs";
 
 table Torappu_RoguelikePredefinedConstStyleData {
-	expStyleConfig:Torappu_RoguelikePredefinedExpStyleConfigData;
 }
 
 

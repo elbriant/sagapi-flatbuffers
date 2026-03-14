@@ -1,7 +1,5 @@
 
 table Torappu_Battle_Cooperate_CooperateEndTileInfo {
-	name:string;
-	description:string;
 }
 
 

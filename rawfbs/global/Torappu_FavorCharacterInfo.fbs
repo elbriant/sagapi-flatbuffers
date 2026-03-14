@@ -1,8 +1,5 @@
 
 table Torappu_FavorCharacterInfo {
-	itemId:string;
-	charId:string;
-	favorAddAmt:int32;
 }
 
 

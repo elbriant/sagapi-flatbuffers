@@ -1,15 +1,5 @@
-include "Torappu_CharSkinData_TokenSkinInfo.fbs";
-include "Torappu_SkinVoiceType.fbs";
-include "Torappu_CharSkinData_DisplaySkin.fbs";
 
 table Torappu_CharSkinData {
-	skinId:string;
-	charId:string;
-	tokenSkinMap:[Torappu_CharSkinData_TokenSkinInfo];
-	tmplId:string;
-	voiceId:string;
-	voiceType:Torappu_SkinVoiceType;
-	displaySkin:Torappu_CharSkinData_DisplaySkin;
 }
 
 

@@ -1,6 +1,5 @@
 
 table Torappu_SandboxV2NodeData {
-	minDistance:float;
 }
 
 

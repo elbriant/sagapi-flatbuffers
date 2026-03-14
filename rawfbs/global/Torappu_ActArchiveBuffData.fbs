@@ -1,7 +1,5 @@
-include "Dict_2_System_String_Torappu_ActArchiveBuffItemData_.fbs";
 
 table Torappu_ActArchiveBuffData {
-	buff:[Dict_2_System_String_Torappu_ActArchiveBuffItemData_];
 }
 
 

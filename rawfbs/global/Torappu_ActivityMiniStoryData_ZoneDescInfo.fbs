@@ -1,7 +1,5 @@
 
 table Torappu_ActivityMiniStoryData_ZoneDescInfo {
-	zoneId:string;
-	unlockText:string;
 }
 
 

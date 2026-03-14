@@ -1,7 +1,5 @@
 
 table Torappu_ShopKeeperWord {
-	id:string;
-	text:string;
 }
 
 

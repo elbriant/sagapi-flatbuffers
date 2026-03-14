@@ -1,8 +1,5 @@
 
 table Torappu_ActArchiveCopperGildData {
-	gildTypeId:string;
-	gildName:string;
-	gildDesc:string;
 }
 
 

@@ -1,9 +1,5 @@
-include "Torappu_RarityRank.fbs";
-include "Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData.fbs";
 
 table Torappu_Act1VHalfIdleCharSkillRankData {
-	rarity:Torappu_RarityRank;
-	skillRankData:[Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData];
 }
 
 

@@ -1,7 +1,5 @@
 
 table Torappu_SandboxV2FloatIconData {
-	picId:string;
-	picName:string;
 }
 
 

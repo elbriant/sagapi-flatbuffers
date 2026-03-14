@@ -1,10 +1,5 @@
 
 table Torappu_Act12SideData_PhotoInfo {
-	picId:string;
-	picName:string;
-	mileStoneId:string;
-	picDesc:string;
-	jumpStageId:string;
 }
 
 

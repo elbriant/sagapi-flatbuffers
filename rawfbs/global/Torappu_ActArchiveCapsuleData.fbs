@@ -1,7 +1,5 @@
-include "Dict_2_System_String_Torappu_ActArchiveCapsuleItemData_.fbs";
 
 table Torappu_ActArchiveCapsuleData {
-	capsule:[Dict_2_System_String_Torappu_ActArchiveCapsuleItemData_];
 }
 
 

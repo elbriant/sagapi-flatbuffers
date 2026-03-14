@@ -1,8 +1,5 @@
-include "Torappu_ActArchiveType.fbs";
 
 table Torappu_RoguelikeArchiveEnroll {
-	archiveType:Torappu_ActArchiveType;
-	enrollId:string;
 }
 
 

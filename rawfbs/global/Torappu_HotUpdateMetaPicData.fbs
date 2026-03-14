@@ -1,15 +1,5 @@
-include "Torappu_HotUpdateMetaPicData_PicType.fbs";
 
 table Torappu_HotUpdateMetaPicData {
-	picId:string;
-	groupId:int32;
-	sortId:int32;
-	startTime:int64;
-	endTime:int64;
-	textList:[string];
-	picType:Torappu_HotUpdateMetaPicData_PicType;
-	logoId:string;
-	color:string;
 }
 
 

@@ -1,9 +1,5 @@
-include "Dict_2_System_String_System_String_.fbs";
-include "Dict_2_System_String_Torappu_Act20SideData_ResidentCartData_.fbs";
 
 table Torappu_Act20SideData {
-	zoneAdditionDataMap:[Dict_2_System_String_System_String_];
-	residentCartDatas:[Dict_2_System_String_Torappu_Act20SideData_ResidentCartData_];
 }
 
 

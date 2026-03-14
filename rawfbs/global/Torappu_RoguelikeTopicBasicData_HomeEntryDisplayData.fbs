@@ -1,9 +1,5 @@
 
 table Torappu_RoguelikeTopicBasicData_HomeEntryDisplayData {
-	topicId:string;
-	displayId:string;
-	startTs:int64;
-	endTs:int64;
 }
 
 

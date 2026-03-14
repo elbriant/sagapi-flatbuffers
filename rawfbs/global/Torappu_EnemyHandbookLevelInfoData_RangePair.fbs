@@ -1,7 +1,5 @@
 
 table Torappu_EnemyHandbookLevelInfoData_RangePair {
-	min:float;
-	max:float;
 }
 
 

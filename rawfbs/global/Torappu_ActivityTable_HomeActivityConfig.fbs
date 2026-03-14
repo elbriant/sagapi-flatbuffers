@@ -1,10 +1,5 @@
 
 table Torappu_ActivityTable_HomeActivityConfig {
-	actId:string;
-	isPopupAfterCheckin:bool;
-	showTopBarMenu:bool;
-	actTopBarColor:string;
-	actTopBarText:string;
 }
 
 

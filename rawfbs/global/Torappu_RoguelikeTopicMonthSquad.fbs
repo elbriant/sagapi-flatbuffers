@@ -1,24 +1,5 @@
-include "Torappu_RoguelikeTopicMonthSquadTeamChar.fbs";
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_RoguelikeTopicMonthSquad {
-	id:string;
-	teamName:string;
-	teamSubName:string;
-	teamFlavorDesc:string;
-	teamDes:string;
-	teamColor:string;
-	teamMonth:string;
-	teamYear:string;
-	teamIndex:string;
-	teamChars:[Torappu_RoguelikeTopicMonthSquadTeamChar];
-	zoneId:string;
-	chatId:string;
-	tokenRewardNum:int32;
-	items:[Torappu_ItemBundle];
-	startTime:int64;
-	endTime:int64;
-	taskDes:string;
 }
 
 

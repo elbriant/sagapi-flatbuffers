@@ -1,14 +1,5 @@
-include "Torappu_CommonAvailCheck.fbs";
 
 table Torappu_BattleFinishDisplayMetaItem {
-	battleFinishDisplayKey:string;
-	isAllStageActive:bool;
-	stageIdList:[string];
-	availCheck:Torappu_CommonAvailCheck;
-	relateActId:string;
-	overrideStageName:string;
-	signal:string;
-	overrideCharWord:string;
 }
 
 

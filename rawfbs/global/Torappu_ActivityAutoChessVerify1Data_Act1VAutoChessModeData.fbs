@@ -1,16 +1,5 @@
-include "Torappu_Act1VAutoChessModeType.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeData {
-	modeId:string;
-	sortId:int32;
-	name:string;
-	desc:string;
-	preposedMode:string;
-	unlockText:string;
-	effectDescList:[string];
-	loadingPicId:string;
-	code:string;
-	modeType:Torappu_Act1VAutoChessModeType;
 }
 
 

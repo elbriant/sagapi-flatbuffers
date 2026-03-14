@@ -1,13 +1,5 @@
-include "Dict_2_System_String_System_String_.fbs";
 
 table Torappu_Act29SideData_Act29SideFormData {
-	formId:string;
-	fragIdList:[string];
-	formDesc:string;
-	productIdDict:[Dict_2_System_String_System_String_];
-	withoutOrcheProductId:string;
-	groupId:string;
-	formSortId:int32;
 }
 
 

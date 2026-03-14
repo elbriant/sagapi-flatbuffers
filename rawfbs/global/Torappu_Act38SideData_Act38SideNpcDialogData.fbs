@@ -1,9 +1,5 @@
-include "Torappu_Act38SideData_NpcDialogType.fbs";
 
 table Torappu_Act38SideData_Act38SideNpcDialogData {
-	desc:string;
-	dialogType:Torappu_Act38SideData_NpcDialogType;
-	emoSpineName:string;
 }
 
 

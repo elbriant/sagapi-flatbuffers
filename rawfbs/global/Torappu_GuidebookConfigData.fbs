@@ -1,8 +1,5 @@
 
 table Torappu_GuidebookConfigData {
-	configId:string;
-	sortId:int32;
-	pageIdList:[string];
 }
 
 

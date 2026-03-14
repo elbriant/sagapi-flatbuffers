@@ -1,8 +1,5 @@
 
 table Torappu_StorylineCollectData {
-	name:string;
-	desc:string;
-	backgroundId:string;
 }
 
 

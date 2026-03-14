@@ -1,7 +1,5 @@
 
 table Torappu_Act17sideData_BattleNodeData {
-	nodeId:string;
-	stageId:string;
 }
 
 

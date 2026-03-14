@@ -1,8 +1,5 @@
 
 table Torappu_SiracusaData_StoryBriefInfoData {
-	storyId:string;
-	stageId:string;
-	storyInfo:string;
 }
 
 

@@ -1,9 +1,5 @@
-include "Torappu_TipData_Category.fbs";
 
 table Torappu_TipData {
-	tip:string;
-	weight:float;
-	category:Torappu_TipData_Category;
 }
 
 

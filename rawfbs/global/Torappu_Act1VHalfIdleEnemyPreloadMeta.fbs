@@ -1,7 +1,5 @@
 
 table Torappu_Act1VHalfIdleEnemyPreloadMeta {
-	enemyId:string;
-	level:int32;
 }
 
 

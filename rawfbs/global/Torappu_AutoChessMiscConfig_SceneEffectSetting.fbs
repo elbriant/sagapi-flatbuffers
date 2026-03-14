@@ -1,6 +1,5 @@
 
 table Torappu_AutoChessMiscConfig_SceneEffectSetting {
-	effectId:string;
 }
 
 

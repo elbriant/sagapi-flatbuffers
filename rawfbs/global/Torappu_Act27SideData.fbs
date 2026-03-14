@@ -1,21 +1,5 @@
-include "Dict_2_System_String_Torappu_Act27SideData_Act27SideGoodData_.fbs";
-include "Torappu_Act27SideData_Act27SideMileStoneData.fbs";
-include "Torappu_Act27SideData_Act27SideGoodLaunchData.fbs";
-include "Dict_2_System_String_Torappu_Act27SideData_Act27SideShopData_.fbs";
-include "Torappu_Act27SideData_Act27SideInquireData.fbs";
-include "Torappu_Act27SideData_Act27SideDynEntrySwitchData.fbs";
-include "Dict_2_System_String_Torappu_Act27SideData_Act27sideZoneAdditionData_.fbs";
-include "Torappu_Act27SideData_Act27SideConstData.fbs";
 
 table Torappu_Act27SideData {
-	goodDataMap:[Dict_2_System_String_Torappu_Act27SideData_Act27SideGoodData_];
-	mileStoneList:[Torappu_Act27SideData_Act27SideMileStoneData];
-	goodLaunchDataList:[Torappu_Act27SideData_Act27SideGoodLaunchData];
-	shopDataMap:[Dict_2_System_String_Torappu_Act27SideData_Act27SideShopData_];
-	inquireDataList:[Torappu_Act27SideData_Act27SideInquireData];
-	dynEntrySwitchData:[Torappu_Act27SideData_Act27SideDynEntrySwitchData];
-	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act27SideData_Act27sideZoneAdditionData_];
-	constData:Torappu_Act27SideData_Act27SideConstData;
 }
 
 

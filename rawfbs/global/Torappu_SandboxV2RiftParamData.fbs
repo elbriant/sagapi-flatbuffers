@@ -1,9 +1,5 @@
 
 table Torappu_SandboxV2RiftParamData {
-	id:string;
-	desc:string;
-	iconId:string;
-	bkColor:string;
 }
 
 

@@ -1,28 +1,5 @@
-include "Torappu_ShopRecommendItem.fbs";
-include "Dict_2_System_String_Torappu_ShopCreditUnlockGroup_.fbs";
-include "Torappu_ShopClientData_ShopKeeperData.fbs";
-include "Torappu_ShopCarouselData.fbs";
-include "Torappu_ChooseShopRelation.fbs";
-include "Dict_2_System_String_Torappu_ShopUnlockType_.fbs";
-include "Dict_2_System_String_Torappu_ShopClientGPData_.fbs";
-include "Dict_2_System_String_Torappu_ShopGPTabDisplayData_.fbs";
-include "Torappu_LMTGSShopSchedule.fbs";
-include "Torappu_LMTGSShopOverlaySchedule.fbs";
 
 table Torappu_ShopClientData {
-	recommendList:[Torappu_ShopRecommendItem];
-	creditUnlockGroup:[Dict_2_System_String_Torappu_ShopCreditUnlockGroup_];
-	shopKeeperData:Torappu_ShopClientData_ShopKeeperData;
-	carousels:[Torappu_ShopCarouselData];
-	chooseShopRelations:[Torappu_ChooseShopRelation];
-	shopUnlockDict:[Dict_2_System_String_Torappu_ShopUnlockType_];
-	extraQCShopRule:[string];
-	repQCShopRule:[string];
-	shopGPDataDict:[Dict_2_System_String_Torappu_ShopClientGPData_];
-	tabDisplayData:[Dict_2_System_String_Torappu_ShopGPTabDisplayData_];
-	shopMonthlySubGoodId:string;
-	limitedShopSchedule:[Torappu_LMTGSShopSchedule];
-	overlaySchedule:[Torappu_LMTGSShopOverlaySchedule];
 }
 
 

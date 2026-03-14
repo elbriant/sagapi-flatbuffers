@@ -1,10 +1,5 @@
 
 table Torappu_Act4funEndingInfo {
-	endingId:string;
-	endingAvg:string;
-	endingDesc:string;
-	stageId:string;
-	isGoodEnding:bool;
 }
 
 

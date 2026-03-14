@@ -1,12 +1,5 @@
 
 table Torappu_ActArchiveResData_AvgArchiveResItemData {
-	id:string;
-	desc:string;
-	breifPath:string;
-	contentPath:string;
-	imagePath:string;
-	rawBrief:string;
-	titleIconPath:string;
 }
 
 

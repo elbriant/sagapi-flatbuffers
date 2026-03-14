@@ -1,8 +1,5 @@
 
 table Torappu_RoguelikeSkyModuleConsts {
-	skyApItemId:string;
-	skyMaxColumns:int32;
-	skySacrificeChoiceDynamicKey:string;
 }
 
 

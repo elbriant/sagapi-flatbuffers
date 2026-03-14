@@ -1,9 +1,5 @@
 
 table Torappu_UniEquipTypeInfo {
-	uniEquipTypeName:string;
-	sortId:int32;
-	isSpecial:bool;
-	isInitial:bool;
 }
 
 

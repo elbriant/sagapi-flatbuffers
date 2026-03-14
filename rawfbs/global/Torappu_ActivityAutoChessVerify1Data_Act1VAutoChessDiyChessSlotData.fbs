@@ -1,7 +1,5 @@
-include "Torappu_RarityRank.fbs";
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData {
-	charRarity:Torappu_RarityRank;
 }
 
 

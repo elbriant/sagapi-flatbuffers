@@ -1,8 +1,5 @@
-include "Torappu_ProfessionCategory.fbs";
 
 table Torappu_Act1VHalfIdleConstData_ProfessionDesc {
-	profession:Torappu_ProfessionCategory;
-	desc:string;
 }
 
 

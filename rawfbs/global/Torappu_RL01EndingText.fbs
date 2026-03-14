@@ -18,8 +18,6 @@ table Torappu_RL01EndingText {
 	summaryCompleteEnding:string;
 	summaryEachZone:string;
 	summaryMeetSpZone:string;
-	summaryVariation:string;
-	summaryFusion:string;
 	summaryPerfectBattle:string;
 	summaryMeetBattle:string;
 	summaryMeetEvent:string;
@@ -34,7 +32,6 @@ table Torappu_RL01EndingText {
 	summaryGet:string;
 	summaryRelic:string;
 	summarySafeHouse:string;
-	summaryCapsule:string;
 	summaryFailEnd:string;
 	summaryStockRecruitTicket:string;
 	summaryDuelWin:string;

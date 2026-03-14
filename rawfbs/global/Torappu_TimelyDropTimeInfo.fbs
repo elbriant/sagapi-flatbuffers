@@ -1,17 +1,5 @@
-include "Dict_2_System_String_System_Int64_.fbs";
 
 table Torappu_TimelyDropTimeInfo {
-	startTs:int64;
-	endTs:int64;
-	stagePic:string;
-	dropPicId:string;
-	stageUnlock:string;
-	entranceDownPicId:string;
-	entranceUpPicId:string;
-	timelyGroupId:string;
-	weeklyPicId:string;
-	isReplace:bool;
-	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
 }
 
 

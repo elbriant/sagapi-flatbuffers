@@ -1,10 +1,5 @@
-include "Torappu_ActivityTable_ActHiddenAreaPreposeStageData.fbs";
 
 table Torappu_ActivityTable_ActivityHiddenAreaData {
-	name:string;
-	desc:string;
-	preposedStage:[Torappu_ActivityTable_ActHiddenAreaPreposeStageData];
-	preposedTime:int64;
 }
 
 

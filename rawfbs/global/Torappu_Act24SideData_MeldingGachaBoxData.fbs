@@ -1,13 +1,5 @@
 
 table Torappu_Act24SideData_MeldingGachaBoxData {
-	gachaBoxId:string;
-	gachaSortId:int32;
-	gachaIcon:string;
-	gachaBoxName:string;
-	gachaCost:int32;
-	gachaTimesLimit:int32;
-	themeColor:string;
-	remainItemBgColor:string;
 }
 
 

@@ -1,8 +1,5 @@
-include "Torappu_ItemBundle.fbs";
 
 table Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData {
-	levelNum:int32;
-	rewards:[Torappu_ItemBundle];
 }
 
 

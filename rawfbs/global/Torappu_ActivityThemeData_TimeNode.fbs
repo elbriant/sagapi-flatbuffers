@@ -1,7 +1,5 @@
 
 table Torappu_ActivityThemeData_TimeNode {
-	title:string;
-	ts:int64;
 }
 
 

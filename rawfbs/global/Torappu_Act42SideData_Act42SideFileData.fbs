@@ -1,7 +1,5 @@
 
 table Torappu_Act42SideData_Act42SideFileData {
-	contentId:string;
-	sortId:int32;
 }
 
 

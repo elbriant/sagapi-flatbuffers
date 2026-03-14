@@ -1,54 +1,5 @@
-include "Torappu_SpecialOperatorTargetType.fbs";
-include "Torappu_CharacterData_PowerData.fbs";
-include "Torappu_BuildableType.fbs";
-include "Torappu_RarityRank.fbs";
-include "Torappu_ProfessionCategory.fbs";
-include "Torappu_CharacterData_TraitDataBundle.fbs";
-include "Torappu_CharacterData_PhaseData.fbs";
-include "Torappu_CharacterData_MainSkill.fbs";
-include "Dict_2_System_String_System_Boolean_.fbs";
-include "Torappu_CharacterData_TalentDataBundle.fbs";
-include "Torappu_CharacterData_PotentialRank.fbs";
-include "Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_.fbs";
-include "Torappu_CharacterData_SkillLevelCost.fbs";
 
 table Torappu_CharacterData {
-	name:string;
-	description:string;
-	sortIndex:int32;
-	spTargetType:Torappu_SpecialOperatorTargetType;
-	spTargetId:string;
-	canUseGeneralPotentialItem:bool;
-	canUseActivityPotentialItem:bool;
-	potentialItemId:string;
-	activityPotentialItemId:string;
-	classicPotentialItemId:string;
-	nationId:string;
-	groupId:string;
-	teamId:string;
-	mainPower:Torappu_CharacterData_PowerData;
-	subPower:[Torappu_CharacterData_PowerData];
-	displayNumber:string;
-	appellation:string;
-	position:Torappu_BuildableType;
-	tagList:[string];
-	itemUsage:string;
-	itemDesc:string;
-	itemObtainApproach:string;
-	isNotObtainable:bool;
-	isSpChar:bool;
-	maxPotentialLevel:int32;
-	rarity:Torappu_RarityRank;
-	profession:Torappu_ProfessionCategory;
-	subProfessionId:string;
-	trait:Torappu_CharacterData_TraitDataBundle;
-	phases:[Torappu_CharacterData_PhaseData];
-	skills:[Torappu_CharacterData_MainSkill];
-	displayTokenDict:[Dict_2_System_String_System_Boolean_];
-	talents:[Torappu_CharacterData_TalentDataBundle];
-	potentialRanks:[Torappu_CharacterData_PotentialRank];
-	favorKeyFrames:[Torappu_KeyFrames_2_KeyFrame_Torappu_AttributesDeltaData_Torappu_AttributesData_];
-	allSkillLvlup:[Torappu_CharacterData_SkillLevelCost];
 }
 
 

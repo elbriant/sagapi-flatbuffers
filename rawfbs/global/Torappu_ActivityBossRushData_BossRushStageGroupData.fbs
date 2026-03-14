@@ -1,15 +1,5 @@
-include "Dict_2_Torappu_ActivityBossRushData_BossRushStageType_System_String_.fbs";
-include "List_1_System_String_.fbs";
 
 table Torappu_ActivityBossRushData_BossRushStageGroupData {
-	stageGroupId:string;
-	sortId:int32;
-	stageGroupName:string;
-	stageIdMap:[Dict_2_Torappu_ActivityBossRushData_BossRushStageType_System_String_];
-	waveBossInfo:[List_1_System_String_];
-	normalStageCount:int32;
-	isHardStageGroup:bool;
-	unlockCondtion:string;
 }
 
 

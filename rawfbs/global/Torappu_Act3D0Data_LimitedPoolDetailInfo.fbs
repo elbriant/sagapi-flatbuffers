@@ -1,8 +1,5 @@
-include "Torappu_Act3D0Data_LimitedPoolDetailInfo_PoolItemInfo.fbs";
 
 table Torappu_Act3D0Data_LimitedPoolDetailInfo {
-	poolId:string;
-	poolItemInfo:[Torappu_Act3D0Data_LimitedPoolDetailInfo_PoolItemInfo];
 }
 
 
