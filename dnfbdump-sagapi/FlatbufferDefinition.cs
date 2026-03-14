@@ -432,11 +432,42 @@ namespace DNFBDmp
 						{
 							if (!f.IsStatic && !f.IsNotSerialized && !hasJsonIgnore(f))
 							{
-								bool isBackingField = f.Name.Contains("k__BackingField");
-								if (!isBackingField)
+								bool isExposed = f.IsPublic;
+
+								// 1. JsonProperty || SerializeField
+								if (!isExposed)
 								{
-									continue;
+									foreach (CustomAttribute ca in f.CustomAttributes)
+									{
+										if (ca.TypeFullName.Contains("JsonProperty") || ca.TypeFullName.Contains("SerializeField"))
+										{
+											isExposed = true;
+											break;
+										}
+									}
 								}
+
+								// just to re check
+								if (!isExposed)
+								{
+									string cleanName = f.Name.Replace("<", "").Replace(">k__BackingField", "");
+									if (cleanName.StartsWith("m_")) cleanName = cleanName.Substring(2); // Quitamos prefijo interno de Unity
+
+									foreach (PropertyDef prop in currentDef.Properties)
+									{
+										if (string.Equals(prop.Name, cleanName, StringComparison.OrdinalIgnoreCase))
+										{
+											isExposed = true;
+											break;
+										}
+									}
+								}
+
+								if (!isExposed)
+								{
+									continue; // trash
+								}
+
 								fields.Add(new Tuple<FieldDef, IList<TypeSig>?>(f, currentGenericArgs));
 							}
 						}
