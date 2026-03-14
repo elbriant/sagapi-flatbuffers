@@ -433,7 +433,7 @@ namespace DNFBDmp
 							if (!f.IsStatic && !f.IsNotSerialized && !hasJsonIgnore(f))
 							{
 								bool isBackingField = f.Name.Contains("k__BackingField");
-								if (!f.IsPublic && !isBackingField)
+								if (!isBackingField)
 								{
 									continue;
 								}
