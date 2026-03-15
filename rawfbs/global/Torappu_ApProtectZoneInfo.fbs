@@ -1,5 +1,8 @@
+include "Torappu_ApProtectZoneInfo_TimeRange.fbs";
 
 table Torappu_ApProtectZoneInfo {
+	zoneId:string;
+	timeRanges:[Torappu_ApProtectZoneInfo_TimeRange];
 }
 
 

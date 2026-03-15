@@ -1,5 +1,6 @@
 
 table Torappu_ActivityMainlineBuffData_ConstData {
+	favorUpStageRange:string;
 }
 
 

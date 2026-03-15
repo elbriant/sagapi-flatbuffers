@@ -1,5 +1,12 @@
 
 table Torappu_Act42SideData_Act42SideGunData {
+	gunId:string;
+	gunName:string;
+	trustorName:string;
+	gunContent:string;
+	gunSmallIcon:string;
+	gunWhiteIcon:string;
+	gunColorIcon:string;
 }
 
 

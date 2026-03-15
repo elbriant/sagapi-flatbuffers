@@ -1,5 +1,11 @@
+include "Torappu_LevelData_WaveData_FragmentData.fbs";
 
 table Torappu_LevelData_WaveData {
+	preDelay:float;
+	postDelay:float;
+	maxTimeWaitingForNextWave:float;
+	fragments:[Torappu_LevelData_WaveData_FragmentData];
+	advancedWaveTag:string;
 }
 
 

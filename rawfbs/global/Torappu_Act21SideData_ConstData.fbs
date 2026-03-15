@@ -1,5 +1,6 @@
 
 table Torappu_Act21SideData_ConstData {
+	lineConnectZone:string;
 }
 
 

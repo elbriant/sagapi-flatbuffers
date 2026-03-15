@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveDisasterItemData_.fbs";
 
 table Torappu_ActArchiveDisasterData {
+	disasters:[Dict_2_System_String_Torappu_ActArchiveDisasterItemData_];
 }
 
 

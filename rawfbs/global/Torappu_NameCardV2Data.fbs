@@ -1,5 +1,13 @@
+include "Dict_2_System_String_Torappu_NameCardV2ModuleData_.fbs";
+include "Dict_2_System_String_Torappu_NameCardV2RemovableModuleData_.fbs";
+include "Dict_2_System_String_Torappu_NameCardV2SkinData_.fbs";
+include "Torappu_NameCardV2Consts.fbs";
 
 table Torappu_NameCardV2Data {
+	fixedModuleData:[Dict_2_System_String_Torappu_NameCardV2ModuleData_];
+	removableModuleData:[Dict_2_System_String_Torappu_NameCardV2RemovableModuleData_];
+	skinData:[Dict_2_System_String_Torappu_NameCardV2SkinData_];
+	consts:Torappu_NameCardV2Consts;
 }
 
 

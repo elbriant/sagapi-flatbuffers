@@ -1,5 +1,15 @@
 
 table Torappu_ActivityYear5GeneralConstData {
+	rewPoint:int32;
+	rewMainDesc:string;
+	rewApDesc:string;
+	rewEndDesc:string;
+	actPrimaryDesc:string;
+	actEntryDesc:string;
+	actSecondaryDesc:string;
+	actRewardDesc:string;
+	missionArchiveTopicId:string;
+	missionArchiveUnlockDesc:string;
 }
 
 

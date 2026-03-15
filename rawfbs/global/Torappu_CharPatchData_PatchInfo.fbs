@@ -1,5 +1,7 @@
 
 table Torappu_CharPatchData_PatchInfo {
+	tmplIds:[string];
+	defaultPatch:string;
 }
 
 

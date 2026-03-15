@@ -1,5 +1,13 @@
+include "Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_.fbs";
+include "Torappu_ActivityMainlineBuffData_PeriodData.fbs";
+include "Torappu_ListDict_2_System_String_System_Int64_.fbs";
+include "Torappu_ActivityMainlineBuffData_ConstData.fbs";
 
 table Torappu_ActivityMainlineBuffData {
+	missionGroupList:[Torappu_ListDict_2_System_String_Torappu_ActivityMainlineBuffData_MissionGroupData_];
+	periodDataList:[Torappu_ActivityMainlineBuffData_PeriodData];
+	apSupplyOutOfDateDict:[Torappu_ListDict_2_System_String_System_Int64_];
+	constData:Torappu_ActivityMainlineBuffData_ConstData;
 }
 
 

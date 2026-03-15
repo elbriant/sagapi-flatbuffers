@@ -1,5 +1,12 @@
+include "Torappu_RoguelikeCommonDevDifficultyNodePairInfo.fbs";
 
 table Torappu_RoguelikeCommonDevDifficultyNodeInfo {
+	buffId:string;
+	nodeMap:[Torappu_RoguelikeCommonDevDifficultyNodePairInfo];
+	enableGrade:int32;
+	enableDesc:string;
+	lightId:string;
+	decoId:string;
 }
 
 

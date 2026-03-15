@@ -1,5 +1,12 @@
+include "Torappu_SharedCharData_SharedCharSkillData.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_.fbs";
 
 table Torappu_SharedCharData_TmplData {
+	skillIndex:int32;
+	skinId:string;
+	skills:[Torappu_SharedCharData_SharedCharSkillData];
+	selectEquip:string;
+	equips:[Torappu_ListDict_2_System_String_Torappu_SharedCharData_CharEquipInfo_];
 }
 
 

@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActivityTable_TrapMissionData_.fbs";
 
 table Torappu_ActivityTable_ActivityTrapMissionsData {
+	trapMissions:[Dict_2_System_String_Torappu_ActivityTable_TrapMissionData_];
 }
 
 

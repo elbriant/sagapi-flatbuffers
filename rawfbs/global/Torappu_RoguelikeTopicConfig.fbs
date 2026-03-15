@@ -1,5 +1,11 @@
+include "Torappu_RoguelikeMonthChatTrigType.fbs";
 
 table Torappu_RoguelikeTopicConfig {
+	loadCharCardPlugin:bool;
+	webBusType:string;
+	monthChatTrigType:Torappu_RoguelikeMonthChatTrigType;
+	loadRewardHpDecoPlugin:bool;
+	loadRewardExtraInfoPlugin:bool;
 }
 
 

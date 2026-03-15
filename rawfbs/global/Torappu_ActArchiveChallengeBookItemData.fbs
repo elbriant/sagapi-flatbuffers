@@ -1,5 +1,7 @@
 
 table Torappu_ActArchiveChallengeBookItemData {
+	storyId:string;
+	sortId:int32;
 }
 
 

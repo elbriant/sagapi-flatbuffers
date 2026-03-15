@@ -1,5 +1,9 @@
+include "Torappu_ItemType.fbs";
 
 table Torappu_MonthlySignInData {
+	itemId:string;
+	itemType:Torappu_ItemType;
+	count:int32;
 }
 
 

@@ -1,5 +1,10 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActivityBossRushData_BossRushMileStoneData {
+	mileStoneId:string;
+	mileStoneLvl:int32;
+	needPointCnt:int32;
+	rewardItem:Torappu_ItemBundle;
 }
 
 

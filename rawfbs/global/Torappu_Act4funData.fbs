@@ -1,5 +1,34 @@
+include "Dict_2_System_String_Torappu_Act4funPerformGroupInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act4funPerformInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act4funLiveMatInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act4funSpLiveMatInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act4funValueEffectInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act4funLiveValueInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act4funSuperChatInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act4funCmtGroupInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act4funEndingInfo_.fbs";
+include "Dict_2_System_String_Torappu_Act4funTokenInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act4funMissionData_.fbs";
+include "Torappu_Act4funConst.fbs";
+include "Dict_2_System_String_Torappu_Act4funStageExtraData_.fbs";
 
 table Torappu_Act4funData {
+	performGroupInfoDict:[Dict_2_System_String_Torappu_Act4funPerformGroupInfo_];
+	performInfoDict:[Dict_2_System_String_Torappu_Act4funPerformInfo_];
+	normalMatDict:[Dict_2_System_String_Torappu_Act4funLiveMatInfoData_];
+	spMatDict:[Dict_2_System_String_Torappu_Act4funSpLiveMatInfoData_];
+	valueEffectInfoDict:[Dict_2_System_String_Torappu_Act4funValueEffectInfoData_];
+	liveValueInfoDict:[Dict_2_System_String_Torappu_Act4funLiveValueInfoData_];
+	superChatInfoDict:[Dict_2_System_String_Torappu_Act4funSuperChatInfo_];
+	cmtGroupInfoDict:[Dict_2_System_String_Torappu_Act4funCmtGroupInfo_];
+	cmtUsers:[string];
+	endingDict:[Dict_2_System_String_Torappu_Act4funEndingInfo_];
+	tokenLevelInfos:[Dict_2_System_String_Torappu_Act4funTokenInfoData_];
+	missionDatas:[Dict_2_System_String_Torappu_Act4funMissionData_];
+	constant:Torappu_Act4funConst;
+	stageExtraDatas:[Dict_2_System_String_Torappu_Act4funStageExtraData_];
+	randomMsgText:[string];
+	randomUserIconId:[string];
 }
 
 

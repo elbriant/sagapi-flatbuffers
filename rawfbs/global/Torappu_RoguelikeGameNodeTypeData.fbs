@@ -1,5 +1,7 @@
 
 table Torappu_RoguelikeGameNodeTypeData {
+	name:string;
+	description:string;
 }
 
 

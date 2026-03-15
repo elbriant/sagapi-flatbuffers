@@ -1,5 +1,9 @@
 
 table Torappu_Resource_ResourceManifest_AssetToBundleMeta {
+	assetName:string;
+	bundleIndex:int32;
+	name:string;
+	path:string;
 }
 
 

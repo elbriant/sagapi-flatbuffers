@@ -1,5 +1,8 @@
 
 table Torappu_Audio_Middleware_Data_MusicData {
+	id:string;
+	name:string;
+	bank:string;
 }
 
 

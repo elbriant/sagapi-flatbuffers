@@ -1,5 +1,7 @@
+include "Torappu_OverrideGameMode.fbs";
 
 table Torappu_ActCustomStageData {
+	overrideGameMode:Torappu_OverrideGameMode;
 }
 
 

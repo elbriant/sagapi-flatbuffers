@@ -1,5 +1,11 @@
+include "Torappu_ActivityTable_ActivityHiddenStageUnlockConditionData.fbs";
 
 table Torappu_ActivityTable_ActivityHiddenStageData {
+	stageId:string;
+	encodedName:string;
+	showStageId:string;
+	rewardDiamond:bool;
+	missions:[Torappu_ActivityTable_ActivityHiddenStageUnlockConditionData];
 }
 
 

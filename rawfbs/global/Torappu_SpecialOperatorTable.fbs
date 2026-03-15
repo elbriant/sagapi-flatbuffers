@@ -1,5 +1,17 @@
+include "Dict_2_System_String_Torappu_SpecialOperatorBasicData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorDetailData_.fbs";
+include "Torappu_SpecialOperatorModeData.fbs";
+include "Dict_2_System_String_Torappu_MissionData_.fbs";
+include "Dict_2_System_String_Torappu_MissionGroup_.fbs";
+include "Torappu_SpecialOperatorConstData.fbs";
 
 table Torappu_SpecialOperatorTable {
+	operatorBasicData:[Dict_2_System_String_Torappu_SpecialOperatorBasicData_];
+	operatorDetailData:[Dict_2_System_String_Torappu_SpecialOperatorDetailData_];
+	modeData:[Torappu_SpecialOperatorModeData];
+	nodeUnlockMissionData:[Dict_2_System_String_Torappu_MissionData_];
+	nodeUnlockMissionGroup:[Dict_2_System_String_Torappu_MissionGroup_];
+	constData:Torappu_SpecialOperatorConstData;
 }
 
 

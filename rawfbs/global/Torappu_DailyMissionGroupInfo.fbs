@@ -1,5 +1,10 @@
+include "Torappu_DailyMissionGroupInfo_periodInfo.fbs";
 
 table Torappu_DailyMissionGroupInfo {
+	startTime:int64;
+	endTime:int64;
+	tagState:string;
+	periodList:[Torappu_DailyMissionGroupInfo_periodInfo];
 }
 
 

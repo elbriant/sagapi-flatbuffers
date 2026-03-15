@@ -1,5 +1,6 @@
 
 table Torappu_SandboxV2CraftGroupData {
+	items:[string];
 }
 
 

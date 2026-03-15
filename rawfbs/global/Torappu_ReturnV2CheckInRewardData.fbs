@@ -1,5 +1,10 @@
+include "Torappu_ReturnV2CheckInRewardItemData.fbs";
 
 table Torappu_ReturnV2CheckInRewardData {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	rewardList:[Torappu_ReturnV2CheckInRewardItemData];
 }
 
 

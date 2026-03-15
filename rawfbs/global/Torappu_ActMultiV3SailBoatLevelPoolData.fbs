@@ -1,5 +1,9 @@
 
 table Torappu_ActMultiV3SailBoatLevelPoolData {
+	stageId:string;
+	startBlockPool:string;
+	midBlockPool:string;
+	endBlockPool:string;
 }
 
 

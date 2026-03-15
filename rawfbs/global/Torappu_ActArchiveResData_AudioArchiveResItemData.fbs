@@ -1,5 +1,8 @@
 
 table Torappu_ActArchiveResData_AudioArchiveResItemData {
+	id:string;
+	desc:string;
+	name:string;
 }
 
 

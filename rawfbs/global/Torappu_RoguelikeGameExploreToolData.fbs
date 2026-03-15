@@ -1,5 +1,8 @@
 
 table Torappu_RoguelikeGameExploreToolData {
+	itemId:string;
+	trapId:string;
+	trapDesc:string;
 }
 
 

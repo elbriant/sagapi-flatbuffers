@@ -1,5 +1,7 @@
 
 table Torappu_ChooseShopRelation {
+	goodId:string;
+	optionList:[string];
 }
 
 

@@ -1,5 +1,13 @@
 
 table Torappu_Act4funLiveValueInfoData {
+	liveValueId:string;
+	name:string;
+	stageId:string;
+	iconId:string;
+	highEndingId:string;
+	lowEndingId:string;
+	increaseToastTxt:string;
+	decreaseToastTxt:string;
 }
 
 

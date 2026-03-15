@@ -1,5 +1,12 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act12SideData_MileStoneInfo {
+	mileStoneId:string;
+	orderId:int32;
+	tokenNum:int32;
+	item:Torappu_ItemBundle;
+	isPrecious:bool;
+	mileStoneStage:int32;
 }
 
 

@@ -1,5 +1,11 @@
+include "Torappu_RoguelikeCommonDevelopmentData.fbs";
+include "Torappu_RL04DifficultyExt.fbs";
+include "Torappu_RL04EndingText.fbs";
 
 table Torappu_RL04CustomizeData {
+	commonDevelopment:Torappu_RoguelikeCommonDevelopmentData;
+	difficulties:[Torappu_RL04DifficultyExt];
+	endingText:Torappu_RL04EndingText;
 }
 
 

@@ -1,5 +1,11 @@
+include "Torappu_Act35SideData_DialogueNameBgType.fbs";
 
 table Torappu_Act35SideData_Act35SideDialogueData {
+	sortId:int32;
+	iconId:string;
+	name:string;
+	content:string;
+	bgType:Torappu_Act35SideData_DialogueNameBgType;
 }
 
 

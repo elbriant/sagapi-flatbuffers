@@ -1,5 +1,9 @@
+include "Dict_2_System_String_Torappu_EmoticonData_EmojiData_.fbs";
+include "Dict_2_System_String_List_1_System_String__.fbs";
 
 table Torappu_EmoticonData {
+	emojiDataDict:[Dict_2_System_String_Torappu_EmoticonData_EmojiData_];
+	emoticonThemeDataDict:[Dict_2_System_String_List_1_System_String__];
 }
 
 

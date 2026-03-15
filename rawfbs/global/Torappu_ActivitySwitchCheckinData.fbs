@@ -1,5 +1,15 @@
+include "Torappu_ActivitySwitchCheckinConstData.fbs";
+include "Dict_2_System_String_Torappu_ItemBundleA__.fbs";
+include "Dict_2_System_String_Torappu_ActivitySwitchCheckinRewardShowData_.fbs";
+include "Dict_2_System_String_System_Int64_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
 
 table Torappu_ActivitySwitchCheckinData {
+	constData:Torappu_ActivitySwitchCheckinConstData;
+	rewards:[Dict_2_System_String_Torappu_ItemBundleA__];
+	rewardShowDatas:[Dict_2_System_String_Torappu_ActivitySwitchCheckinRewardShowData_];
+	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
+	sortIdDict:[Dict_2_System_String_System_Int32_];
 }
 
 

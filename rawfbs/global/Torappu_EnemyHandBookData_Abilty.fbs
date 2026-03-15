@@ -1,5 +1,8 @@
+include "Torappu_EnemyHandBookData_TextFormat.fbs";
 
 table Torappu_EnemyHandBookData_Abilty {
+	text:string;
+	textFormat:Torappu_EnemyHandBookData_TextFormat;
 }
 
 

@@ -1,5 +1,8 @@
 
 table Torappu_ConditionalDropInfo {
+	template:string;
+	param:[string];
+	countLimit:int32;
 }
 
 

@@ -1,5 +1,22 @@
+include "Dict_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo_.fbs";
+include "Torappu_Battle_Cooperate_CooperateAheadGoalData.fbs";
+include "Dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_.fbs";
+include "Dict_2_System_Int32_List_1_Torappu_Battle_Cooperate_CooperateWaveWeight__.fbs";
+include "Torappu_Battle_Cooperate_CooperateTeamWeight.fbs";
+include "Dict_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
 
 table Torappu_Battle_Cooperate_CooperateModeBattleData {
+	costTransferred:int32;
+	getMaxMsgCntInOneUpdate:int32;
+	endTileInfo:[Dict_2_Torappu_Battle_Cooperate_EndTileType_Torappu_Battle_Cooperate_CooperateEndTileInfo_];
+	footballAheadGoalCntFactor:[Torappu_Battle_Cooperate_CooperateAheadGoalData];
+	footballHardTypeFactor:int32;
+	footballLastRoundResultFactor:[Dict_2_Torappu_Battle_Cooperate_LASTROUNDRESULT_System_Int32_];
+	footballLevelOfWaveFactor:[Dict_2_System_Int32_List_1_Torappu_Battle_Cooperate_CooperateWaveWeight__];
+	footballTeamWeights:[Torappu_Battle_Cooperate_CooperateTeamWeight];
+	footballTeamPlayers:[Dict_2_System_String_Torappu_Battle_Cooperate_CooperateTeamPlayer_];
+	footballPlayersName:[Dict_2_System_String_System_String_];
 }
 
 

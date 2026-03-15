@@ -1,5 +1,11 @@
+include "Torappu_ActMultiV3BlockDirType.fbs";
 
 table Torappu_ActMultiV3SailBoatBlockPoolData {
+	blockPool:string;
+	blockId:string;
+	startDirType:Torappu_ActMultiV3BlockDirType;
+	endDirType:Torappu_ActMultiV3BlockDirType;
+	weight:int32;
 }
 
 

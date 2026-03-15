@@ -1,5 +1,12 @@
+include "Torappu_AttributeType.fbs";
+include "Torappu_AttributeModifierData_AttributeModifier_FormulaItemType.fbs";
 
 table Torappu_AttributeModifierData_AttributeModifier {
+	attributeType:Torappu_AttributeType;
+	formulaItem:Torappu_AttributeModifierData_AttributeModifier_FormulaItemType;
+	value:float;
+	loadFromBlackboard:bool;
+	fetchBaseValueFromSourceEntity:bool;
 }
 
 

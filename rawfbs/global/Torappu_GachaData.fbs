@@ -1,5 +1,40 @@
+include "Torappu_GachaPoolClientData.fbs";
+include "Torappu_NewbeeGachaPoolClientData.fbs";
+include "Torappu_SpecialRecruitPool.fbs";
+include "Torappu_GachaTag.fbs";
+include "Torappu_RecruitPool.fbs";
+include "Torappu_PotentialMaterialConverterConfig.fbs";
+include "Dict_2_System_Int32_Torappu_GachaData_RecruitRange_.fbs";
+include "Dict_2_System_Int32_List_1_System_Int32__.fbs";
+include "Torappu_GachaData_CarouselData.fbs";
+include "Torappu_GachaData_FreeLimitGachaData.fbs";
+include "Torappu_GachaData_LimitTenGachaTkt.fbs";
+include "Torappu_GachaData_LinkageTenGachaTkt.fbs";
+include "Torappu_GachaData_NormalGachaTkt.fbs";
+include "Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_Int32_System_Single_.fbs";
 
 table Torappu_GachaData {
+	gachaPoolClient:[Torappu_GachaPoolClientData];
+	newbeeGachaPoolClient:[Torappu_NewbeeGachaPoolClientData];
+	specialRecruitPool:[Torappu_SpecialRecruitPool];
+	gachaTags:[Torappu_GachaTag];
+	recruitPool:Torappu_RecruitPool;
+	potentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
+	classicPotentialMaterialConverter:Torappu_PotentialMaterialConverterConfig;
+	recruitRarityTable:[Dict_2_System_Int32_Torappu_GachaData_RecruitRange_];
+	specialTagRarityTable:[Dict_2_System_Int32_List_1_System_Int32__];
+	recruitDetail:string;
+	showGachaLogEntry:bool;
+	carousel:[Torappu_GachaData_CarouselData];
+	freeGacha:[Torappu_GachaData_FreeLimitGachaData];
+	limitTenGachaItem:[Torappu_GachaData_LimitTenGachaTkt];
+	linkageTenGachaItem:[Torappu_GachaData_LinkageTenGachaTkt];
+	normalGachaItem:[Torappu_GachaData_NormalGachaTkt];
+	fesGachaPoolRelateItem:[Dict_2_System_String_Torappu_GachaData_FesGachaPoolRelateItem_];
+	dicRecruit6StarHint:[Dict_2_System_String_System_String_];
+	specialGachaPercentDict:[Dict_2_System_Int32_System_Single_];
 }
 
 

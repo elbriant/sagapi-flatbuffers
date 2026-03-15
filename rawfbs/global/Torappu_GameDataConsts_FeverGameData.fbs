@@ -1,5 +1,7 @@
 
 table Torappu_GameDataConsts_FeverGameData {
+	feverDuration:float;
+	feverNeed:float;
 }
 
 

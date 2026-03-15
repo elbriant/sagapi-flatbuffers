@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveWrathItemData_.fbs";
 
 table Torappu_ActArchiveWrathData {
+	wraths:[Dict_2_System_String_Torappu_ActArchiveWrathItemData_];
 }
 
 

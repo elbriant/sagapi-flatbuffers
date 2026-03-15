@@ -1,5 +1,15 @@
 
 table Torappu_FifthAnnivExploreStageData {
+	id:string;
+	name:string;
+	desc:string;
+	nextStageId:string;
+	eventCount:int32;
+	prevNodeCount:int32;
+	stageNum:int32;
+	stageEventNum:int32;
+	stageDisplayNum:string;
+	stageFailureDescription:string;
 }
 
 

@@ -1,5 +1,7 @@
 
 table Torappu_Act1VHalfIdleDiagramData_LineRelationData {
+	startPointList:[string];
+	endPointList:[string];
 }
 
 

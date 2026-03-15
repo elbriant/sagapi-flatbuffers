@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveTrapItemData_.fbs";
 
 table Torappu_ActArchiveTrapData {
+	trap:[Dict_2_System_String_Torappu_ActArchiveTrapItemData_];
 }
 
 

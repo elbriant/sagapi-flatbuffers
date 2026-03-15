@@ -1,5 +1,12 @@
+include "Torappu_GridPosition.fbs";
 
 table Torappu_BuildingData_PrefabInfo {
+	id:string;
+	blueprintRoomOverrideId:string;
+	size:Torappu_GridPosition;
+	floorGridSize:Torappu_GridPosition;
+	backWallGridSize:Torappu_GridPosition;
+	obstacleId:string;
 }
 
 

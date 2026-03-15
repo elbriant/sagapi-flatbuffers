@@ -1,5 +1,6 @@
 
 table Torappu_BuildingData_PrivatePhase {
+	decorationLimit:int32;
 }
 
 

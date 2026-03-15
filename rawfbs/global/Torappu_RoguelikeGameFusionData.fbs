@@ -1,5 +1,11 @@
+include "Torappu_RoguelikeGameVariationType.fbs";
 
 table Torappu_RoguelikeGameFusionData {
+	id:string;
+	type:Torappu_RoguelikeGameVariationType;
+	name:string;
+	functionDesc:string;
+	desc:string;
 }
 
 

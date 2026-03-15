@@ -1,5 +1,12 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_ActivityFloatParadeData_RewardPool {
+	grpId:string;
+	id:string;
+	type:string;
+	name:string;
+	desc:string;
+	reward:Torappu_ItemBundle;
 }
 
 

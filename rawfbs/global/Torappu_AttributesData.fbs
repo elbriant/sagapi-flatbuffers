@@ -1,5 +1,31 @@
 
 table Torappu_AttributesData {
+	maxHp:int32;
+	atk:int32;
+	def:int32;
+	magicResistance:float;
+	cost:int32;
+	blockCnt:int32;
+	moveSpeed:float;
+	attackSpeed:float;
+	baseAttackTime:float;
+	respawnTime:int32;
+	hpRecoveryPerSec:float;
+	spRecoveryPerSec:float;
+	maxDeployCount:int32;
+	maxDeckStackCnt:int32;
+	tauntLevel:int32;
+	massLevel:int32;
+	baseForceLevel:int32;
+	stunImmune:bool;
+	silenceImmune:bool;
+	sleepImmune:bool;
+	frozenImmune:bool;
+	levitateImmune:bool;
+	disarmedCombatImmune:bool;
+	fearedImmune:bool;
+	palsyImmune:bool;
+	attractImmune:bool;
 }
 
 

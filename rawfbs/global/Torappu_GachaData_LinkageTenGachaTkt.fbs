@@ -1,5 +1,8 @@
 
 table Torappu_GachaData_LinkageTenGachaTkt {
+	itemId:string;
+	endTime:int64;
+	gachaPoolId:string;
 }
 
 

@@ -1,5 +1,11 @@
+include "Torappu_RuneData.fbs";
 
 table Torappu_RuneTable_PackedRuneData {
+	id:string;
+	points:float;
+	mutexGroupKey:string;
+	description:string;
+	runes:[Torappu_RuneData];
 }
 
 

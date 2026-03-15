@@ -1,5 +1,7 @@
+include "Torappu_ActMainlineBpExtraData_ActMainlineBpExtraPeriodData.fbs";
 
 table Torappu_ActMainlineBpExtraData {
+	periodDataList:[Torappu_ActMainlineBpExtraData_ActMainlineBpExtraPeriodData];
 }
 
 

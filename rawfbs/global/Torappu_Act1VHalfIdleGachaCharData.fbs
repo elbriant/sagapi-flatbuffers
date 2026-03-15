@@ -1,5 +1,7 @@
 
 table Torappu_Act1VHalfIdleGachaCharData {
+	charId:string;
+	isLinkageChar:bool;
 }
 
 

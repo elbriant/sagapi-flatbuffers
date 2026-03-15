@@ -1,5 +1,6 @@
 
 table Torappu_Act1VHalfIdleDiagramData_NodePointData {
+	nodeId:string;
 }
 
 

@@ -1,5 +1,9 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_MedalRewardGroupData {
+	groupId:string;
+	slotId:int32;
+	itemList:[Torappu_ItemBundle];
 }
 
 

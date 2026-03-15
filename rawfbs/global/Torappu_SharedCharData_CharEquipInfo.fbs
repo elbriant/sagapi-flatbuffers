@@ -1,5 +1,7 @@
 
 table Torappu_SharedCharData_CharEquipInfo {
+	locked:bool;
+	level:int32;
 }
 
 

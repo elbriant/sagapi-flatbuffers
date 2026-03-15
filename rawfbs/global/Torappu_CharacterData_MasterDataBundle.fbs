@@ -1,5 +1,7 @@
+include "Torappu_CharacterData_MasterData.fbs";
 
 table Torappu_CharacterData_MasterDataBundle {
+	candidates:[Torappu_CharacterData_MasterData];
 }
 
 

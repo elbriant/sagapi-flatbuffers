@@ -1,5 +1,11 @@
+include "Torappu_RoguelikeTopicDevTokenDisplayForm.fbs";
 
 table Torappu_RoguelikeTopicDisplayItem {
+	displayType:string;
+	displayNum:int32;
+	displayForm:Torappu_RoguelikeTopicDevTokenDisplayForm;
+	tokenDesc:string;
+	sortId:int32;
 }
 
 

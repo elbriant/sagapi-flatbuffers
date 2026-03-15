@@ -1,5 +1,7 @@
 
 table Torappu_Act4funStageExtraData {
+	description:string;
+	valueIconId:string;
 }
 
 

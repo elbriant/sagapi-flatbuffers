@@ -1,5 +1,10 @@
 
 table Torappu_Audio_Middleware_Data_DuckingData {
+	bank:string;
+	volume:float;
+	fadeTime:float;
+	delay:float;
+	fadeStyleId:string;
 }
 
 

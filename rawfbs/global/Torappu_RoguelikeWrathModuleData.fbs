@@ -1,5 +1,9 @@
+include "Dict_2_System_String_Torappu_RoguelikeWrathData_.fbs";
+include "Torappu_RoguelikeWrathModuleConsts.fbs";
 
 table Torappu_RoguelikeWrathModuleData {
+	wrathData:[Dict_2_System_String_Torappu_RoguelikeWrathData_];
+	moduleConsts:Torappu_RoguelikeWrathModuleConsts;
 }
 
 

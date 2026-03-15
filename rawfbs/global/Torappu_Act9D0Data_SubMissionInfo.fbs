@@ -1,5 +1,9 @@
 
 table Torappu_Act9D0Data_SubMissionInfo {
+	missionId:string;
+	missionTitle:string;
+	sortId:int32;
+	missionIndex:string;
 }
 
 

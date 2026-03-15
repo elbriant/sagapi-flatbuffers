@@ -1,5 +1,7 @@
 
 table Torappu_RoguelikeEndingRelicDetailText {
+	relicId:string;
+	summaryEventText:string;
 }
 
 

@@ -1,5 +1,10 @@
 
 table Torappu_DefaultZoneData {
+	zoneId:string;
+	zoneIndex:string;
+	zoneName:string;
+	zoneDesc:string;
+	itemDropList:[string];
 }
 
 

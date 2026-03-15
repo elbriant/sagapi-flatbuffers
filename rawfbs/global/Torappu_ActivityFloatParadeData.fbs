@@ -1,5 +1,15 @@
+include "Torappu_ActivityFloatParadeData_ConstData.fbs";
+include "Torappu_ActivityFloatParadeData_DailyData.fbs";
+include "Dict_2_System_String_Dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool__.fbs";
+include "Torappu_ActivityFloatParadeData_Tactic.fbs";
+include "Dict_2_System_String_Torappu_ActivityFloatParadeData_GroupData_.fbs";
 
 table Torappu_ActivityFloatParadeData {
+	constData:Torappu_ActivityFloatParadeData_ConstData;
+	dailyDataDic:[Torappu_ActivityFloatParadeData_DailyData];
+	rewardPools:[Dict_2_System_String_Dict_2_System_String_Torappu_ActivityFloatParadeData_RewardPool__];
+	tacticList:[Torappu_ActivityFloatParadeData_Tactic];
+	groupInfos:[Dict_2_System_String_Torappu_ActivityFloatParadeData_GroupData_];
 }
 
 

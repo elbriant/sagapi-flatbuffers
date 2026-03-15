@@ -1,5 +1,9 @@
+include "Torappu_SandboxV2ArchiveQuestType.fbs";
 
 table Torappu_SandboxV2ArchiveQuestTypeData {
+	type:Torappu_SandboxV2ArchiveQuestType;
+	name:string;
+	iconId:string;
 }
 
 

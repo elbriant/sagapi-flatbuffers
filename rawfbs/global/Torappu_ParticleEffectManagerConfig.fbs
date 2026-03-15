@@ -1,5 +1,8 @@
 
 table Torappu_ParticleEffectManagerConfig {
+	forceUseLowDetailFx:bool;
+	effectPositionThreshold:float;
+	effectPositionMaxCount:int32;
 }
 
 

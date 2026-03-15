@@ -1,5 +1,10 @@
 
 table Torappu_ActMultiV3TargetMissionData {
+	id:string;
+	sortId:int32;
+	title:string;
+	battleDesc:string;
+	description:string;
 }
 
 

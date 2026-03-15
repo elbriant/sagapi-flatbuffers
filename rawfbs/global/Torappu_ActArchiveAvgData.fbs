@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveAvgItemData_.fbs";
 
 table Torappu_ActArchiveAvgData {
+	avgs:[Dict_2_System_String_Torappu_ActArchiveAvgItemData_];
 }
 
 

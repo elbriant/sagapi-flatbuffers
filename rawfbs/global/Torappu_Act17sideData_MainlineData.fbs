@@ -1,5 +1,12 @@
 
 table Torappu_Act17sideData_MainlineData {
+	mainlineId:string;
+	nodeId:string;
+	sortId:int32;
+	missionSort:string;
+	zoneId:string;
+	mainlineDes:string;
+	focusNodeId:string;
 }
 
 

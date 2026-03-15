@@ -1,5 +1,10 @@
 
 table Torappu_Act6FunConst {
+	defaultStage:string;
+	achievementMaxNumber:int32;
+	specialNumber:int32;
+	characterTipToast:string;
+	functionToastList:[string];
 }
 
 

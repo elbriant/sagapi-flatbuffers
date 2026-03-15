@@ -1,5 +1,7 @@
 
 table Torappu_EPBreakBuffData {
+	elementBreakDuration:float;
+	elementBuffs:[string];
 }
 
 

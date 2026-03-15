@@ -1,5 +1,12 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act17sideData_TechTreeBranchData {
+	techTreeBranchId:string;
+	techTreeId:string;
+	techTreeBranchName:string;
+	techTreeBranchIcon:string;
+	techTreeBranchDesc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
 }
 
 

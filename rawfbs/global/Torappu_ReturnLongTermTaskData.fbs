@@ -1,5 +1,13 @@
+include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_ReturnLongTermTaskData {
+	id:string;
+	sortId:int32;
+	template:string;
+	param:[string];
+	desc:string;
+	rewards:[Torappu_MissionDisplayRewards];
+	playPoint:int32;
 }
 
 

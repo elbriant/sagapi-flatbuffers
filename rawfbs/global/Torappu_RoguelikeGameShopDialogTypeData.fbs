@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_.fbs";
 
 table Torappu_RoguelikeGameShopDialogTypeData {
+	groups:[Dict_2_System_String_Torappu_RoguelikeGameShopDialogGroupData_];
 }
 
 

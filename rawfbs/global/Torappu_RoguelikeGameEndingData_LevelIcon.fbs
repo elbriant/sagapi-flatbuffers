@@ -1,5 +1,7 @@
 
 table Torappu_RoguelikeGameEndingData_LevelIcon {
+	level:int32;
+	iconId:string;
 }
 
 

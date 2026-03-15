@@ -1,5 +1,15 @@
+include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_ReturnDailyTaskData {
+	groupId:string;
+	id:string;
+	groupSortId:int32;
+	taskSortId:int32;
+	template:string;
+	param:[string];
+	desc:string;
+	rewards:[Torappu_MissionDisplayRewards];
+	playPoint:int32;
 }
 
 

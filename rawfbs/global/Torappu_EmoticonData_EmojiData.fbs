@@ -1,5 +1,11 @@
+include "Torappu_EmojiSceneType.fbs";
 
 table Torappu_EmoticonData_EmojiData {
+	id:string;
+	type:Torappu_EmojiSceneType;
+	sortId:int32;
+	picId:string;
+	desc:string;
 }
 
 

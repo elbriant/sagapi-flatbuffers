@@ -1,5 +1,10 @@
+include "Torappu_SixStarStageCompatibleDropType.fbs";
 
 table Torappu_SixStarLinkedStageCompatibleInfo {
+	stageId:string;
+	apCost:int32;
+	apFailReturn:int32;
+	dropType:Torappu_SixStarStageCompatibleDropType;
 }
 
 

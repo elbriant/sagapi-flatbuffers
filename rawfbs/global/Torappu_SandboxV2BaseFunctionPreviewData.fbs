@@ -1,5 +1,9 @@
+include "Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData.fbs";
 
 table Torappu_SandboxV2BaseFunctionPreviewData {
+	previewId:string;
+	previewValue:int32;
+	detailData:Torappu_SandboxV2BaseUpdateFunctionPreviewDetailData;
 }
 
 

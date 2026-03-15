@@ -1,5 +1,9 @@
 
 table Torappu_SpDynIllustInfo {
+	skinId:string;
+	spDynIllustId:string;
+	spDynIllustSkinTag:string;
+	spIllustId:string;
 }
 
 

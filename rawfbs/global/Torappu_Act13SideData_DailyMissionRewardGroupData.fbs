@@ -1,5 +1,8 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act13SideData_DailyMissionRewardGroupData {
+	groupId:string;
+	rewards:[Torappu_ItemBundle];
 }
 
 

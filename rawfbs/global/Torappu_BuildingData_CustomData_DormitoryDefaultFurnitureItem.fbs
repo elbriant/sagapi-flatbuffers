@@ -1,5 +1,9 @@
 
 table Torappu_BuildingData_CustomData_DormitoryDefaultFurnitureItem {
+	furnitureId:string;
+	xOffset:int32;
+	yOffset:int32;
+	defaultPrefabId:string;
 }
 
 

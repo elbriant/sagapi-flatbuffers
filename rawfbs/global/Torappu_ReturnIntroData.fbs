@@ -1,5 +1,8 @@
 
 table Torappu_ReturnIntroData {
+	sort:int32;
+	pubTime:int64;
+	image:string;
 }
 
 

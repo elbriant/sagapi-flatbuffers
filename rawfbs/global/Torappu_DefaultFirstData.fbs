@@ -1,5 +1,9 @@
+include "Torappu_DefaultZoneData.fbs";
+include "Torappu_DefaultShopData.fbs";
 
 table Torappu_DefaultFirstData {
+	zoneList:[Torappu_DefaultZoneData];
+	shopList:[Torappu_DefaultShopData];
 }
 
 

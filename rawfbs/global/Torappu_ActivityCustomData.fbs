@@ -1,5 +1,13 @@
+include "Dict_2_System_String_Torappu_Act17sideData_.fbs";
+include "Dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_.fbs";
+include "Dict_2_System_String_Torappu_Act20SideData_.fbs";
+include "Dict_2_System_String_Torappu_Act21SideData_.fbs";
 
 table Torappu_ActivityCustomData {
+	typeAct17sideData:[Dict_2_System_String_Torappu_Act17sideData_];
+	typeAct25sideData:[Dict_2_System_String_Torappu_ActivityCustomData_Act25sideCustomData_];
+	typeAct20sideData:[Dict_2_System_String_Torappu_Act20SideData_];
+	typeAct21sideData:[Dict_2_System_String_Torappu_Act21SideData_];
 }
 
 

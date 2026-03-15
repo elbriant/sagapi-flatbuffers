@@ -1,5 +1,7 @@
 
 table Torappu_RuneStageGroupData_RuneStageInst {
+	stageId:string;
+	activePackedRuneIds:[string];
 }
 
 

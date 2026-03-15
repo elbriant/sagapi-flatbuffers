@@ -1,5 +1,11 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act4funMissionData {
+	missionId:string;
+	sortId:string;
+	missionDes:string;
+	rewardIconIds:[string];
+	rewards:[Torappu_ItemBundle];
 }
 
 

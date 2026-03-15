@@ -1,5 +1,8 @@
+include "Torappu_PlayerBattleRank.fbs";
 
 table Torappu_StageData_ConditionDesc {
+	stageId:string;
+	completeState:Torappu_PlayerBattleRank;
 }
 
 

@@ -1,5 +1,8 @@
+include "Torappu_ShopKeeperWord.fbs";
 
 table Torappu_ShopClientData_ShopKeeperData {
+	welcomeWords:[Torappu_ShopKeeperWord];
+	clickWords:[Torappu_ShopKeeperWord];
 }
 
 

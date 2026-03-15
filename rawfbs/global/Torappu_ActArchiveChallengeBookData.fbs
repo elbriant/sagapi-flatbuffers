@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_.fbs";
 
 table Torappu_ActArchiveChallengeBookData {
+	stories:[Dict_2_System_String_Torappu_ActArchiveChallengeBookItemData_];
 }
 
 

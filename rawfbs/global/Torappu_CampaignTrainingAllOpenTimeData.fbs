@@ -1,5 +1,8 @@
 
 table Torappu_CampaignTrainingAllOpenTimeData {
+	groupId:string;
+	startTs:int64;
+	endTs:int64;
 }
 
 

@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveNewsItemData_.fbs";
 
 table Torappu_ActArchiveNewsData {
+	news:[Dict_2_System_String_Torappu_ActArchiveNewsItemData_];
 }
 
 

@@ -1,5 +1,8 @@
 
 table Torappu_Act17sideData_ZoneData {
+	zoneId:string;
+	unlockPlaceId:string;
+	unlockText:string;
 }
 
 

@@ -1,5 +1,12 @@
+include "Torappu_OccPer.fbs";
+include "Torappu_ItemType.fbs";
+include "Torappu_StageDropType.fbs";
 
 table Torappu_StageData_DisplayDetailRewards {
+	occPercent:Torappu_OccPer;
+	type:Torappu_ItemType;
+	id:string;
+	dropType:Torappu_StageDropType;
 }
 
 

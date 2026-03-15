@@ -1,5 +1,7 @@
+include "Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_.fbs";
 
 table Torappu_RoguelikeTopicDetailConst_PredefinedPlayerLevelData {
+	levels:[Dict_2_System_Int32_Torappu_RoguelikeTopicDetailConst_PlayerLevelData_];
 }
 
 

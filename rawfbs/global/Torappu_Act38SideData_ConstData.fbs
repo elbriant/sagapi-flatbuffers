@@ -1,5 +1,10 @@
 
 table Torappu_Act38SideData_ConstData {
+	npcIdleSpineName:string;
+	puzzleMapAnimGroupId:string;
+	puzzleCrossDayTrackId:string;
+	puzzleListText:string;
+	puzzleRewardNum:int32;
 }
 
 

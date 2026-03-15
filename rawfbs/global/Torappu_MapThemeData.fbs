@@ -1,5 +1,11 @@
 
 table Torappu_MapThemeData {
+	themeId:string;
+	unitColor:string;
+	buildableColor:string;
+	themeType:string;
+	trapTintColor:string;
+	emissionColor:string;
 }
 
 

@@ -1,5 +1,10 @@
 
 table Torappu_ActArchiveResData_LandmarkArchiveResItemData {
+	landmarkId:string;
+	landmarkName:string;
+	landmarkPic:string;
+	landmarkDesc:string;
+	landmarkEngName:string;
 }
 
 

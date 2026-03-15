@@ -1,5 +1,8 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_RecordRewardServerData {
+	stageId:string;
+	rewards:[Torappu_ItemBundle];
 }
 
 

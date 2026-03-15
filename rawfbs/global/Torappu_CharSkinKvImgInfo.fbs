@@ -1,5 +1,7 @@
 
 table Torappu_CharSkinKvImgInfo {
+	kvImgId:string;
+	linkedSkinGroupId:string;
 }
 
 

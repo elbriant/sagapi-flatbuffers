@@ -1,5 +1,9 @@
 
 table Torappu_AprilFoolConst {
+	battleFinishLoseDes:string;
+	killEnemyDes:string;
+	killBossDes:string;
+	totalTime:string;
 }
 
 

@@ -1,5 +1,10 @@
 
 table Torappu_AllPlayerCheckinData_PersonalBehaviour {
+	sortId:int32;
+	personalBehaviorId:string;
+	displayOrder:int32;
+	requireRepeatCompletion:bool;
+	desc:string;
 }
 
 

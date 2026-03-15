@@ -1,5 +1,10 @@
 
 table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData {
+	shopLevel:int32;
+	levelTagBgColor:string;
+	isLevelCharChessEmpty:bool;
+	isLevelTrapChessEmpty:bool;
+	charChessDiySlotIdList:[string];
 }
 
 

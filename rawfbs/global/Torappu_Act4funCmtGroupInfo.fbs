@@ -1,5 +1,8 @@
+include "Torappu_Act4funCmtInfo.fbs";
 
 table Torappu_Act4funCmtGroupInfo {
+	cmtGroupId:string;
+	cmtList:[Torappu_Act4funCmtInfo];
 }
 
 

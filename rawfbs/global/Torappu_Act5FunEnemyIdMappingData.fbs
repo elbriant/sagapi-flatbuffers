@@ -1,5 +1,7 @@
 
 table Torappu_Act5FunEnemyIdMappingData {
+	enemyId:string;
+	originalEnemyId:string;
 }
 
 

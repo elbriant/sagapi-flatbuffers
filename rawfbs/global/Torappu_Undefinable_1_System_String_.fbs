@@ -1,5 +1,7 @@
 
 table Torappu_Undefinable_1_System_String_ {
+	m_defined:bool;
+	m_value:string;
 }
 
 

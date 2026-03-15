@@ -1,5 +1,9 @@
 
 table Torappu_SandboxV2ArchiveQuestZoneData {
+	zoneId:string;
+	zoneName:string;
+	zoneBgPicId:string;
+	zoneNameIdEn:string;
 }
 
 

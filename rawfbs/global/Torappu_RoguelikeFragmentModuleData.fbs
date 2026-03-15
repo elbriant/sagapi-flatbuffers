@@ -1,5 +1,19 @@
+include "Dict_2_System_String_Torappu_RoguelikeFragmentData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeFragmentTypeData_.fbs";
+include "Torappu_RoguelikeFragmentModuleConsts.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeFragmentBuffData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_.fbs";
+include "Dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_.fbs";
 
 table Torappu_RoguelikeFragmentModuleData {
+	fragmentData:[Dict_2_System_String_Torappu_RoguelikeFragmentData_];
+	fragmentTypeData:[Dict_2_System_String_Torappu_RoguelikeFragmentTypeData_];
+	moduleConsts:Torappu_RoguelikeFragmentModuleConsts;
+	fragmentBuffData:[Dict_2_System_String_Torappu_RoguelikeFragmentBuffData_];
+	alchemyData:[Torappu_ListDict_2_System_String_Torappu_RoguelikeAlchemyData_];
+	alchemyFormulaData:[Dict_2_System_String_Torappu_RoguelikeAlchemyFormulationData_];
+	fragmentLevelData:[Dict_2_System_Int32_Torappu_RoguelikeFragmentLevelRelatedData_];
 }
 
 

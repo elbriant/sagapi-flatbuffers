@@ -1,5 +1,14 @@
+include "Torappu_MedalExpireTime.fbs";
 
 table Torappu_MedalGroupData {
+	groupId:string;
+	groupName:string;
+	groupDesc:string;
+	medalId:[string];
+	sortId:int32;
+	groupBackColor:string;
+	groupGetTime:int64;
+	sharedExpireTimes:[Torappu_MedalExpireTime];
 }
 
 

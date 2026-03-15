@@ -1,5 +1,24 @@
+include "Torappu_GridPosition.fbs";
+include "Torappu_SharedConsts_Direction.fbs";
+include "Torappu_CharacterData_UniqueEquipPair.fbs";
+include "Torappu_CharacterData_MasterInfo.fbs";
+include "Torappu_CharacterInst_Metadata.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
 
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
+	position:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+	hidden:bool;
+	alias:string;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
+	inst:Torappu_CharacterInst_Metadata;
+	skillIndex:int32;
+	mainSkillLvl:int32;
+	skinId:string;
+	tmplId:string;
+	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
 }
 
 

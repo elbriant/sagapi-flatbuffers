@@ -1,5 +1,8 @@
 
 table Torappu_ApSupplyFeature {
+	id:string;
+	ap:int32;
+	hasTs:bool;
 }
 
 

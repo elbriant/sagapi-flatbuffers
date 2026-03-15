@@ -1,5 +1,9 @@
 
 table Torappu_Act24SideData_ZoneAdditionData {
+	zoneId:string;
+	zoneIcon:string;
+	unlockText:string;
+	displayTime:string;
 }
 
 

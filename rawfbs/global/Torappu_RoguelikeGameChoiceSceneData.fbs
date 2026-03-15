@@ -1,5 +1,12 @@
 
 table Torappu_RoguelikeGameChoiceSceneData {
+	id:string;
+	title:string;
+	description:string;
+	background:string;
+	titleIcon:string;
+	subTypeId:int32;
+	useHiddenMusic:bool;
 }
 
 

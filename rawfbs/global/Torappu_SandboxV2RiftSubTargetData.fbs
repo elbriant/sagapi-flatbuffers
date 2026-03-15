@@ -1,5 +1,8 @@
 
 table Torappu_SandboxV2RiftSubTargetData {
+	id:string;
+	name:string;
+	desc:string;
 }
 
 

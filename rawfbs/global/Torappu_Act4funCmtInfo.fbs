@@ -1,5 +1,8 @@
 
 table Torappu_Act4funCmtInfo {
+	iconId:string;
+	name:string;
+	cmtTxt:string;
 }
 
 

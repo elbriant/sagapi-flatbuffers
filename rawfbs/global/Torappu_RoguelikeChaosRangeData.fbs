@@ -1,5 +1,8 @@
+include "Torappu_ChaosEffectRank.fbs";
 
 table Torappu_RoguelikeChaosRangeData {
+	chaosMax:int32;
+	chaosDungeonEffect:Torappu_ChaosEffectRank;
 }
 
 

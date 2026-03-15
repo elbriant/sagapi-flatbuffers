@@ -1,5 +1,7 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_BuildingData_LayoutData_SlotCleanCost_CountCost {
+	items:[Torappu_ItemBundle];
 }
 
 

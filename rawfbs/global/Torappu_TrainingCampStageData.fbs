@@ -1,5 +1,15 @@
 
 table Torappu_TrainingCampStageData {
+	stageId:string;
+	stageIconId:string;
+	sortId:int32;
+	levelId:string;
+	code:string;
+	name:string;
+	loadingPicId:string;
+	description:string;
+	endCharId:string;
+	updateTs:int64;
 }
 
 

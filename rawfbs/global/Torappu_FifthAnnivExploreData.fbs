@@ -1,5 +1,21 @@
+include "Dict_2_System_String_Torappu_FifthAnnivExploreGroupData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreStageData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreTargetData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreEventData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_.fbs";
+include "Torappu_FifthAnnivExploreConst.fbs";
+include "Dict_2_System_String_Torappu_FifthAnnivExploreMissionData_.fbs";
 
 table Torappu_FifthAnnivExploreData {
+	exploreGroupData:[Dict_2_System_String_Torappu_FifthAnnivExploreGroupData_];
+	exploreStageData:[Dict_2_System_String_Torappu_FifthAnnivExploreStageData_];
+	exploreTargetData:[Dict_2_System_String_Torappu_FifthAnnivExploreTargetData_];
+	exploreEventData:[Dict_2_System_String_Torappu_FifthAnnivExploreEventData_];
+	exploreChoiceData:[Dict_2_System_String_Torappu_FifthAnnivExploreEventChoiceData_];
+	broadcastData:[Dict_2_System_String_Torappu_FifthAnnivExploreBroadcastData_];
+	exploreConst:Torappu_FifthAnnivExploreConst;
+	missionData:[Dict_2_System_String_Torappu_FifthAnnivExploreMissionData_];
 }
 
 

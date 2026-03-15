@@ -1,5 +1,7 @@
 
 table Torappu_LipSync_BakedData_BakedFrameJson {
+	v:int32;
+	m:int32;
 }
 
 

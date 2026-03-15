@@ -1,5 +1,9 @@
 
 table Torappu_Act29SideData_Act29SideInvestResultData {
+	resultId:string;
+	resultTitle:string;
+	resultDesc1:string;
+	resultDesc2:string;
 }
 
 

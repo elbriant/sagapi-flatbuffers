@@ -1,5 +1,9 @@
 
 table Torappu_ActArchiveChaosItemData {
+	id:string;
+	isHidden:bool;
+	enrollId:string;
+	sortId:int32;
 }
 
 

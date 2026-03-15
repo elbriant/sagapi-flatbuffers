@@ -1,8 +1,15 @@
 include "Torappu_Audio_MixerDesc.fbs";
+include "Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX.fbs";
 
 table Torappu_Audio_Middleware_Data_SoundFXBank {
 	mixerDesc:Torappu_Audio_MixerDesc;
+	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];
+	maxSoundAllowed:int32;
+	popOldest:bool;
+	customMixerGroup:string;
+	loop:bool;
 	bankName:string;
+	name:string;
 }
 
 

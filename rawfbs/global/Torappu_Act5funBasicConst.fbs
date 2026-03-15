@@ -1,5 +1,11 @@
 
 table Torappu_Act5funBasicConst {
+	storyStageId:string;
+	betStageId:string;
+	storyRoundNumber:int32;
+	betRoundNumber:int32;
+	minFundDrop:int32;
+	maxFund:int32;
 }
 
 

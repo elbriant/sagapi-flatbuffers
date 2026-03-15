@@ -1,5 +1,10 @@
+include "Torappu_RoguelikeTopicBankRewardType.fbs";
 
 table Torappu_RoguelikeTopicBankReward {
+	rewardId:string;
+	unlockGoldCnt:int32;
+	rewardType:Torappu_RoguelikeTopicBankRewardType;
+	desc:string;
 }
 
 

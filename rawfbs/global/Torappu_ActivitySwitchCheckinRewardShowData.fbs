@@ -1,5 +1,11 @@
+include "Torappu_ActivitySwitchCheckinRewardItemShowData.fbs";
+include "Torappu_ActivitySwitchCheckinMainRewardShowData.fbs";
 
 table Torappu_ActivitySwitchCheckinRewardShowData {
+	checkinId:string;
+	rewardsTitle:string;
+	rewardShowItemDatas:[Torappu_ActivitySwitchCheckinRewardItemShowData];
+	mainRewardShowData:Torappu_ActivitySwitchCheckinMainRewardShowData;
 }
 
 

@@ -1,5 +1,7 @@
+include "Torappu_EvolvePhase.fbs";
 
 table Torappu_SpecialOperatorElitePointData {
+	evolvePhase:Torappu_EvolvePhase;
 }
 
 

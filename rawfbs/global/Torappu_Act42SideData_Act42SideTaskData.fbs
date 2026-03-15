@@ -1,5 +1,19 @@
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_Act42SideData_Act42SideTaskData {
+	taskId:string;
+	preposedTaskId:string;
+	trustorId:string;
+	trustorName:string;
+	sortId:int32;
+	taskName:string;
+	taskContent:string;
+	afterTaskContent:string;
+	beforeTaskItemIcon:string;
+	afterTaskItemIcon:string;
+	stageId:string;
+	taskDesc:string;
+	rewards:[Torappu_ItemBundle];
 }
 
 

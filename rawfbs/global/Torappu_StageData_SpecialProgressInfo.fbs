@@ -1,5 +1,9 @@
+include "Torappu_StageData_SpecialStageUnlockProgressType.fbs";
+include "Dict_2_System_Int32_System_String_.fbs";
 
 table Torappu_StageData_SpecialProgressInfo {
+	progressType:Torappu_StageData_SpecialStageUnlockProgressType;
+	descList:[Dict_2_System_Int32_System_String_];
 }
 
 

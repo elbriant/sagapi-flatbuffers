@@ -1,5 +1,8 @@
+include "Torappu_SandboxPermItemType.fbs";
 
 table Torappu_SandboxV2RewardItemConfigData {
+	rewardItem:string;
+	rewardType:Torappu_SandboxPermItemType;
 }
 
 

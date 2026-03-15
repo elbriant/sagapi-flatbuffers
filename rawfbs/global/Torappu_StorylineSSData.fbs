@@ -1,5 +1,14 @@
 
 table Torappu_StorylineSSData {
+	name:string;
+	desc:string;
+	backgroundId:string;
+	tags:[string];
+	reopenActivityId:string;
+	retroActivityId:string;
+	isRecommended:bool;
+	recommendHideStageId:string;
+	overrideStageList:[string];
 }
 
 

@@ -1,5 +1,8 @@
 
 table Torappu_Act5D0Data_MissionExtraInfo {
+	difficultLevel:int32;
+	levelDesc:string;
+	sortId:int32;
 }
 
 

@@ -1,5 +1,7 @@
+include "Torappu_ExtraBattleLogDataKey.fbs";
 
 table Torappu_ExtraBattleLogData {
+	data:[Torappu_ExtraBattleLogDataKey];
 }
 
 

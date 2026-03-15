@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_.fbs";
 
 table Torappu_RoguelikeNodeUpgradeModuleData {
+	nodeUpgradeDataMap:[Dict_2_System_String_Torappu_RoguelikeNodeUpgradeData_];
 }
 
 

@@ -1,5 +1,12 @@
+include "Torappu_SiracusaData_TaskType.fbs";
 
 table Torappu_SiracusaData_TaskBasicInfoData {
+	taskId:string;
+	taskRingId:string;
+	sortIndex:int32;
+	placeId:string;
+	npcId:string;
+	taskType:Torappu_SiracusaData_TaskType;
 }
 
 

@@ -1,5 +1,7 @@
+include "Dict_2_System_String_Torappu_ActArchiveChaosItemData_.fbs";
 
 table Torappu_ActArchiveChaosData {
+	chaos:[Dict_2_System_String_Torappu_ActArchiveChaosItemData_];
 }
 
 

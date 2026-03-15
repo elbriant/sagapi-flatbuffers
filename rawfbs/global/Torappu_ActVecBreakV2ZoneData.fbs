@@ -1,5 +1,7 @@
 
 table Torappu_ActVecBreakV2ZoneData {
+	zoneId:string;
+	stageLockHint:string;
 }
 
 

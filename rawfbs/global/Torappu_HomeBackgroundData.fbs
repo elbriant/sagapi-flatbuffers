@@ -1,5 +1,21 @@
+include "Torappu_HomeBackgroundSingleData.fbs";
+include "Torappu_HomeThemeDisplayData.fbs";
+include "Dict_2_System_String_Torappu_HomeBackgroundLimitData_.fbs";
+include "Dict_2_System_String_Torappu_HomeThemeLimitData_.fbs";
+include "Torappu_HomeMultiFormInfoData.fbs";
+include "Dict_2_System_String_List_1_Torappu_HomeMultiFormTimeRuleData__.fbs";
 
 table Torappu_HomeBackgroundData {
+	defaultBackgroundId:string;
+	defaultThemeId:string;
+	homeBgDataList:[Torappu_HomeBackgroundSingleData];
+	themeList:[Torappu_HomeThemeDisplayData];
+	backgroundLimitData:[Dict_2_System_String_Torappu_HomeBackgroundLimitData_];
+	themeLimitData:[Dict_2_System_String_Torappu_HomeThemeLimitData_];
+	multiFormInfoData:[Torappu_HomeMultiFormInfoData];
+	timeRuleData:[Dict_2_System_String_List_1_Torappu_HomeMultiFormTimeRuleData__];
+	defaultBgMusicId:string;
+	themeStartTime:int64;
 }
 
 

@@ -1,5 +1,7 @@
 
 table Torappu_RoguelikeDifficultyUpgradeRelicData {
+	relicId:string;
+	equivalentGrade:int32;
 }
 
 

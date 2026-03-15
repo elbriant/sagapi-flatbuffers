@@ -1,5 +1,7 @@
 
 table Torappu_SandboxV2ArchiveMusicUnlockData {
+	musicId:string;
+	unlockCondDesc:string;
 }
 
 

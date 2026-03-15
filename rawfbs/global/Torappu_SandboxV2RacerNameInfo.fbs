@@ -1,5 +1,9 @@
+include "Torappu_SandboxV2RacerNameType.fbs";
 
 table Torappu_SandboxV2RacerNameInfo {
+	nameId:string;
+	nameType:Torappu_SandboxV2RacerNameType;
+	nameDesc:string;
 }
 
 

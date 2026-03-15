@@ -1,5 +1,9 @@
+include "Dict_2_System_String_Torappu_Act5D1Data_ShopGood_.fbs";
+include "Dict_2_System_String_List_1_Torappu_Act5D1Data_ProgessGoodItem__.fbs";
 
 table Torappu_Act5D1Data_ShopData {
+	shopGoods:[Dict_2_System_String_Torappu_Act5D1Data_ShopGood_];
+	progressGoods:[Dict_2_System_String_List_1_Torappu_Act5D1Data_ProgessGoodItem__];
 }
 
 

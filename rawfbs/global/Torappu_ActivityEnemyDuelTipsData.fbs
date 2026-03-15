@@ -1,5 +1,9 @@
 
 table Torappu_ActivityEnemyDuelTipsData {
+	id:string;
+	txt:string;
+	weight:int32;
+	modeIds:[string];
 }
 
 

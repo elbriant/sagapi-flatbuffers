@@ -1,5 +1,11 @@
+include "Torappu_MissionType.fbs";
+include "Torappu_MissionDisplayRewards.fbs";
 
 table Torappu_ActivityTable_TrapMissionData {
+	id:string;
+	description:string;
+	type:Torappu_MissionType;
+	rewards:[Torappu_MissionDisplayRewards];
 }
 
 

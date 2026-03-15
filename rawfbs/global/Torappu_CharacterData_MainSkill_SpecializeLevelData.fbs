@@ -1,5 +1,10 @@
+include "Torappu_CharacterData_UnlockCondition.fbs";
+include "Torappu_ItemBundle.fbs";
 
 table Torappu_CharacterData_MainSkill_SpecializeLevelData {
+	unlockCond:Torappu_CharacterData_UnlockCondition;
+	lvlUpTime:int32;
+	levelUpCost:[Torappu_ItemBundle];
 }
 
 

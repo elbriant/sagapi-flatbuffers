@@ -1,5 +1,19 @@
+include "Dict_2_System_String_Torappu_CharSkinData_.fbs";
+include "Dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__.fbs";
+include "Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__.fbs";
+include "Dict_2_System_String_Torappu_CharSkinBrandInfo_.fbs";
+include "Torappu_SpecialSkinInfo.fbs";
+include "Dict_2_System_String_Torappu_SpDynIllustInfo_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
 
 table Torappu_SkinTable {
+	charSkins:[Dict_2_System_String_Torappu_CharSkinData_];
+	buildinEvolveMap:[Dict_2_System_String_Torappu_ListDict_2_System_Int32_System_String__];
+	buildinPatchMap:[Dict_2_System_String_Torappu_ListDict_2_System_String_System_String__];
+	brandList:[Dict_2_System_String_Torappu_CharSkinBrandInfo_];
+	specialSkinInfoList:[Torappu_SpecialSkinInfo];
+	spDynSkins:[Dict_2_System_String_Torappu_SpDynIllustInfo_];
+	spDynIllustSkinTagsMap:[Dict_2_System_String_System_String_];
 }
 
 

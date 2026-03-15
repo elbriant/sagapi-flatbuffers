@@ -1,5 +1,8 @@
 
 table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
 }
 
 

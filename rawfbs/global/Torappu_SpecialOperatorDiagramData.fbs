@@ -1,5 +1,19 @@
+include "Dict_2_System_String_Torappu_SpecialOperatorPointPosData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorNodePointData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorElitePointData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorLevelPointData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorLinePosData_.fbs";
+include "Dict_2_System_String_Torappu_SpecialOperatorLineRelationData_.fbs";
 
 table Torappu_SpecialOperatorDiagramData {
+	width:float;
+	height:float;
+	pointPosDataMap:[Dict_2_System_String_Torappu_SpecialOperatorPointPosData_];
+	nodePointDataMap:[Dict_2_System_String_Torappu_SpecialOperatorNodePointData_];
+	elitePointDataMap:[Dict_2_System_String_Torappu_SpecialOperatorElitePointData_];
+	levelPointDataMap:[Dict_2_System_String_Torappu_SpecialOperatorLevelPointData_];
+	linePosDataMap:[Dict_2_System_String_Torappu_SpecialOperatorLinePosData_];
+	lineRelationDataMap:[Dict_2_System_String_Torappu_SpecialOperatorLineRelationData_];
 }
 
 

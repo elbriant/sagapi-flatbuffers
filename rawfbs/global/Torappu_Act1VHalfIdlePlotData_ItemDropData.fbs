@@ -1,5 +1,7 @@
 
 table Torappu_Act1VHalfIdlePlotData_ItemDropData {
+	itemId:string;
+	itemDropDesc:string;
 }
 
 

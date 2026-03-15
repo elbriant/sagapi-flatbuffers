@@ -1,5 +1,10 @@
 
 table Torappu_RoguelikeTotemSubBuffData {
+	subBuffId:string;
+	name:string;
+	desc:string;
+	combinedDesc:string;
+	info:string;
 }
 
 

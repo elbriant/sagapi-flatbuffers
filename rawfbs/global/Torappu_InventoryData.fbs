@@ -1,5 +1,30 @@
+include "Dict_2_System_String_Torappu_ItemData_.fbs";
+include "Dict_2_System_String_Torappu_ExpItemFeature_.fbs";
+include "Dict_2_System_Int32_Dict_2_System_String_System_String__.fbs";
+include "Dict_2_System_String_Torappu_ApSupplyFeature_.fbs";
+include "Dict_2_System_String_Torappu_CharVoucherItemFeature_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_String_Torappu_UniCollectionInfo_.fbs";
+include "Dict_2_System_String_Torappu_ItemPackInfo_.fbs";
+include "Dict_2_System_String_Torappu_FullPotentialCharacterInfo_.fbs";
+include "Dict_2_System_String_Torappu_ActivityPotentialCharacterInfo_.fbs";
+include "Dict_2_System_String_Torappu_FavorCharacterInfo_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
 
 table Torappu_InventoryData {
+	items:[Dict_2_System_String_Torappu_ItemData_];
+	expItems:[Dict_2_System_String_Torappu_ExpItemFeature_];
+	potentialItems:[Dict_2_System_Int32_Dict_2_System_String_System_String__];
+	apSupplies:[Dict_2_System_String_Torappu_ApSupplyFeature_];
+	charVoucherItems:[Dict_2_System_String_Torappu_CharVoucherItemFeature_];
+	uniqueInfo:[Dict_2_System_String_System_Int32_];
+	itemTimeLimit:[Dict_2_System_String_System_Int32_];
+	uniCollectionInfo:[Dict_2_System_String_Torappu_UniCollectionInfo_];
+	itemPackInfos:[Dict_2_System_String_Torappu_ItemPackInfo_];
+	fullPotentialCharacters:[Dict_2_System_String_Torappu_FullPotentialCharacterInfo_];
+	activityPotentialCharacters:[Dict_2_System_String_Torappu_ActivityPotentialCharacterInfo_];
+	favorCharacters:[Dict_2_System_String_Torappu_FavorCharacterInfo_];
+	itemShopNameDict:[Dict_2_System_String_System_String_];
 }
 
 

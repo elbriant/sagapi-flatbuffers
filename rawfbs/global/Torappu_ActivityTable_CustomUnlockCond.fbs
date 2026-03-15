@@ -1,5 +1,7 @@
 
 table Torappu_ActivityTable_CustomUnlockCond {
+	actId:string;
+	stageId:string;
 }
 
 

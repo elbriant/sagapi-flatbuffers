@@ -1,5 +1,8 @@
 
 table Torappu_Act9D0Data_ZoneDescInfo {
+	zoneId:string;
+	unlockText:string;
+	displayStartTime:int64;
 }
 
 

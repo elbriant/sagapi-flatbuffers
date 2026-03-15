@@ -1,5 +1,10 @@
+include "Torappu_ActMultiV3MapModeType.fbs";
 
 table Torappu_ActMultiV3SquadInfoData {
+	id:string;
+	sortId:int32;
+	name:string;
+	modeType:Torappu_ActMultiV3MapModeType;
 }
 
 

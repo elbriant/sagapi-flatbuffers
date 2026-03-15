@@ -1,5 +1,9 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_.fbs";
 
 table Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData {
+	profession:Torappu_ProfessionCategory;
+	evolveData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_];
 }
 
 

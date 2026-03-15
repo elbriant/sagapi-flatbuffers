@@ -1,5 +1,7 @@
 
 table Torappu_SandboxV2BuildingItemData {
+	itemId:string;
+	itemRarity:int32;
 }
 
 

@@ -1,5 +1,10 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
 
 table Torappu_Act1VHalfIdleTechTreeData_Effect {
+	desc:string;
+	title:string;
+	iconId:string;
+	runeDatas:[Torappu_RuneTable_PackedRuneData];
 }
 
 

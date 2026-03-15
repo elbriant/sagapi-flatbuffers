@@ -1,5 +1,13 @@
+include "Dict_2_System_String_Torappu_RoguelikeCopperData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeCopperDivineData_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Torappu_RoguelikeCopperModuleConsts.fbs";
 
 table Torappu_RoguelikeCopperModuleData {
+	copperData:[Dict_2_System_String_Torappu_RoguelikeCopperData_];
+	copperDivineData:[Dict_2_System_String_Torappu_RoguelikeCopperDivineData_];
+	changeCopperMap:[Dict_2_System_String_System_String_];
+	moduleConsts:Torappu_RoguelikeCopperModuleConsts;
 }
 
 

@@ -1,5 +1,7 @@
+include "Torappu_RoguelikeDifficultyUpgradeRelicData.fbs";
 
 table Torappu_RoguelikeDifficultyUpgradeRelicGroupData {
+	relicData:[Torappu_RoguelikeDifficultyUpgradeRelicData];
 }
 
 

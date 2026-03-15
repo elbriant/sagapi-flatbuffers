@@ -1,5 +1,9 @@
 
 table Torappu_Act25SideData_KeyData {
+	keyId:string;
+	keyName:string;
+	keyIcon:string;
+	toastText:string;
 }
 
 

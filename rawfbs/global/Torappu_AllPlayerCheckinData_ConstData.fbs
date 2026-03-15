@@ -1,5 +1,7 @@
 
 table Torappu_AllPlayerCheckinData_ConstData {
+	characterName:string;
+	skinName:string;
 }
 
 

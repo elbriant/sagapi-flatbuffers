@@ -1,5 +1,12 @@
+include "Torappu_NameCardV2ModuleSubType.fbs";
+include "Torappu_NameCardV2ModuleType.fbs";
 
 table Torappu_NameCardV2RemovableModuleData {
+	sortId:int32;
+	subType:Torappu_NameCardV2ModuleSubType;
+	name:string;
+	id:string;
+	type:Torappu_NameCardV2ModuleType;
 }
 
 

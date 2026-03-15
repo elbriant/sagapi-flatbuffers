@@ -1,5 +1,6 @@
 
 table Torappu_BuildingData_CustomData_InteractItem {
+	skinId:string;
 }
 
 

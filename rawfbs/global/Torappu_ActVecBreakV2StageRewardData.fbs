@@ -1,5 +1,10 @@
+include "Torappu_ActVecBreakV2StageRewardData_LimitedRewardData.fbs";
 
 table Torappu_ActVecBreakV2StageRewardData {
+	stageId:string;
+	completeRewardCnt:int32;
+	normalRewardCnt:int32;
+	limitReward:Torappu_ActVecBreakV2StageRewardData_LimitedRewardData;
 }
 
 

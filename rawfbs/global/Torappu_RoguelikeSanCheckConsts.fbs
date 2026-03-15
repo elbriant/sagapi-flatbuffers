@@ -1,5 +1,6 @@
 
 table Torappu_RoguelikeSanCheckConsts {
+	sanDecreaseToast:string;
 }
 
 

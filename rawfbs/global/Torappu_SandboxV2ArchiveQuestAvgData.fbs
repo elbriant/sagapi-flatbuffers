@@ -1,5 +1,7 @@
 
 table Torappu_SandboxV2ArchiveQuestAvgData {
+	avgId:string;
+	avgName:string;
 }
 
 

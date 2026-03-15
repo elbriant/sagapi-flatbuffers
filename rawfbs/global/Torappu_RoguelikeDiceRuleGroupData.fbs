@@ -1,5 +1,7 @@
 
 table Torappu_RoguelikeDiceRuleGroupData {
+	ruleGroupId:string;
+	minGoodNum:int32;
 }
 
 
