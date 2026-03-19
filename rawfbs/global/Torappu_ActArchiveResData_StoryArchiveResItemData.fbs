@@ -1,0 +1,12 @@
+
+table Torappu_ActArchiveResData_StoryArchiveResItemData {
+	id:string;
+	desc:string;
+	date:string;
+	pic:string;
+	text:string;
+	titlePic:string;
+}
+
+
+root_type Torappu_ActArchiveResData_StoryArchiveResItemData;

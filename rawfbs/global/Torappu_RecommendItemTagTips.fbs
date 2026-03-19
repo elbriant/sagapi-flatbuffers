@@ -1,0 +1,6 @@
+
+enum Torappu_RecommendItemTagTips : int32 {
+	ONSALE = 0,
+	DEADLINE = 1,
+	NONE = 2
+}

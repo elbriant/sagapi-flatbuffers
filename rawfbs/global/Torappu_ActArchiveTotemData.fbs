@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_ActArchiveTotemItemData_.fbs";
+
+table Torappu_ActArchiveTotemData {
+	totem:[Dict_2_System_String_Torappu_ActArchiveTotemItemData_];
+}
+
+
+root_type Torappu_ActArchiveTotemData;

@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData {
+	seed:string;
+	sortId:int32;
+	desc:string;
+}
+
+
+root_type Torappu_RoguelikeActivitySeedModeData_RoguelikeActivityOfficialSeedData;

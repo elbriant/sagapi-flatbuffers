@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeEndingRelicDetailText {
+	relicId:string;
+	summaryEventText:string;
+}
+
+
+root_type Torappu_RoguelikeEndingRelicDetailText;

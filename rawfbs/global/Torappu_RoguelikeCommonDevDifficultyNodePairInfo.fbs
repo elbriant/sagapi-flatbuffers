@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeCommonDevDifficultyNodePairInfo {
+	frontNodes:[string];
+	nextNode:string;
+}
+
+
+root_type Torappu_RoguelikeCommonDevDifficultyNodePairInfo;

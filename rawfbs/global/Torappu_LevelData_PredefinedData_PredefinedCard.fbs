@@ -1,0 +1,21 @@
+include "Torappu_CharacterData_UniqueEquipPair.fbs";
+include "Torappu_CharacterData_MasterInfo.fbs";
+include "Torappu_CharacterInst_Metadata.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_LevelData_PredefinedData_PredefinedCard {
+	hidden:bool;
+	alias:string;
+	uniEquipIds:[Torappu_CharacterData_UniqueEquipPair];
+	showSpIllust:bool;
+	masterInfos:[Torappu_CharacterData_MasterInfo];
+	inst:Torappu_CharacterInst_Metadata;
+	skillIndex:int32;
+	mainSkillLvl:int32;
+	skinId:string;
+	tmplId:string;
+	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_LevelData_PredefinedData_PredefinedCard;

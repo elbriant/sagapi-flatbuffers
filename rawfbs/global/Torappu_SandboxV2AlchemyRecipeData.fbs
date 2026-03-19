@@ -1,0 +1,13 @@
+include "Torappu_SandboxV2AlchemyMaterialData.fbs";
+
+table Torappu_SandboxV2AlchemyRecipeData {
+	recipeId:string;
+	materials:[Torappu_SandboxV2AlchemyMaterialData];
+	itemId:string;
+	onceAlchemyRatio:int32;
+	recipeLevel:int32;
+	unlockDesc:string;
+}
+
+
+root_type Torappu_SandboxV2AlchemyRecipeData;

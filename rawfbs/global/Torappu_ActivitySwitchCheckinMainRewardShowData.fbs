@@ -1,0 +1,12 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivitySwitchCheckinMainRewardShowData {
+	mainRewardPicId:string;
+	mainRewardName:string;
+	mainRewardCount:int32;
+	hasTip:bool;
+	tipItemBundle:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_ActivitySwitchCheckinMainRewardShowData;

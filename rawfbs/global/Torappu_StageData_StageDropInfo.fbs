@@ -1,0 +1,16 @@
+include "Torappu_ItemBundle.fbs";
+include "Torappu_WeightItemBundleA_.fbs";
+include "Torappu_StageData_DisplayRewards.fbs";
+include "Torappu_StageData_DisplayDetailRewards.fbs";
+
+table Torappu_StageData_StageDropInfo {
+	firstPassRewards:[Torappu_ItemBundle];
+	firstCompleteRewards:[Torappu_ItemBundle];
+	passRewards:[Torappu_WeightItemBundleA_];
+	completeRewards:[Torappu_WeightItemBundleA_];
+	displayRewards:[Torappu_StageData_DisplayRewards];
+	displayDetailRewards:[Torappu_StageData_DisplayDetailRewards];
+}
+
+
+root_type Torappu_StageData_StageDropInfo;

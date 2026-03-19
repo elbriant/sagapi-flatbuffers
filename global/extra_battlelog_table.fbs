@@ -1,0 +1,32 @@
+
+table Torappu_ExtraBattleLogDataKey {
+	description:string;
+	sourceId:string;
+	sourceMode:string;
+	enemyId:string;
+	enemyApplyWay:string;
+	projectileName:string;
+	abilityName:string;
+	enemyLevelType:string;
+	enemyTag:[string];
+	logAlias:string;
+}
+
+
+
+table Torappu_ExtraBattleLogData {
+	data:[Torappu_ExtraBattleLogDataKey];
+}
+
+
+
+table dict__string__Torappu_ExtraBattleLogData {
+  dict_key: string(key);
+  dict_value: Torappu_ExtraBattleLogData;
+}
+
+table Torappu_SimpleKVTable_Torappu_ExtraBattleLogData {
+  dict_array: [dict__string__Torappu_ExtraBattleLogData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_ExtraBattleLogData;

@@ -1,0 +1,8 @@
+
+table Torappu_Act29SideData_Act29SideZoneAdditionData {
+	zoneId:string;
+	unlockText:string;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideZoneAdditionData;

@@ -1,0 +1,8 @@
+
+table Torappu_GameDataConsts_FeverGameData {
+	feverDuration:float;
+	feverNeed:float;
+}
+
+
+root_type Torappu_GameDataConsts_FeverGameData;

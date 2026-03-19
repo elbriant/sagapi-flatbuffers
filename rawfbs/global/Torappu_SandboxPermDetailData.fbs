@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_SandboxV2Data_.fbs";
+
+table Torappu_SandboxPermDetailData {
+	sandboxV2TemplateData:[Dict_2_System_String_Torappu_SandboxV2Data_];
+}
+
+
+root_type Torappu_SandboxPermDetailData;

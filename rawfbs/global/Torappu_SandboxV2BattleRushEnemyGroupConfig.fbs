@@ -1,0 +1,10 @@
+include "Torappu_SandboxV2BattleRushEnemyConfig.fbs";
+
+table Torappu_SandboxV2BattleRushEnemyGroupConfig {
+	enemyGroupKey:string;
+	enemy:[Torappu_SandboxV2BattleRushEnemyConfig];
+	dynamicEnemy:[string];
+}
+
+
+root_type Torappu_SandboxV2BattleRushEnemyGroupConfig;

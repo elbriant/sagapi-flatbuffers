@@ -1,0 +1,10 @@
+
+table Torappu_GuideMissionGroupInfo {
+	groupId:string;
+	sortId:int32;
+	shortName:string;
+	unlockDesc:string;
+}
+
+
+root_type Torappu_GuideMissionGroupInfo;

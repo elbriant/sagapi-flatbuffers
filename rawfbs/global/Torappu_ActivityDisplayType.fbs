@@ -1,0 +1,7 @@
+
+enum Torappu_ActivityDisplayType : int32 {
+	NONE = 0,
+	SIDESTORY = 1,
+	BRANCHLINE = 2,
+	MINISTORY = 3
+}

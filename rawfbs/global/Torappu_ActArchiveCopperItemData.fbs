@@ -1,0 +1,15 @@
+include "Torappu_ActArchiveCopperType.fbs";
+include "Torappu_RoguelikeCopperType.fbs";
+
+table Torappu_ActArchiveCopperItemData {
+	id:string;
+	displayCopperId:string;
+	archiveType:Torappu_ActArchiveCopperType;
+	copperType:Torappu_RoguelikeCopperType;
+	sortId:int32;
+	enrollId:string;
+	coppersInGroup:[string];
+}
+
+
+root_type Torappu_ActArchiveCopperItemData;

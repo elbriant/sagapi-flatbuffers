@@ -1,0 +1,18 @@
+
+table Torappu_RoguelikeGameZoneData {
+	id:string;
+	name:string;
+	clockPerformance:string;
+	displayTime:string;
+	description:string;
+	buffDescription:string;
+	endingDescription:string;
+	backgroundId:string;
+	zoneIconId:string;
+	isHiddenZone:bool;
+	bgmSignal:string;
+	bgmSignalWithLowSan:string;
+}
+
+
+root_type Torappu_RoguelikeGameZoneData;

@@ -1,0 +1,13 @@
+include "Torappu_CharacterData_MainSkill_SpecializeLevelData.fbs";
+include "Torappu_CharacterData_UnlockCondition.fbs";
+
+table Torappu_CharacterData_MainSkill {
+	skillId:string;
+	overridePrefabKey:string;
+	overrideTokenKey:string;
+	specializeLevelUpData:[Torappu_CharacterData_MainSkill_SpecializeLevelData];
+	initialUnlockCond:Torappu_CharacterData_UnlockCondition;
+}
+
+
+root_type Torappu_CharacterData_MainSkill;

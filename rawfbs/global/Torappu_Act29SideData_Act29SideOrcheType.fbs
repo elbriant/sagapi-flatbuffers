@@ -1,0 +1,7 @@
+
+enum Torappu_Act29SideData_Act29SideOrcheType : int32 {
+	ORCHE_1 = 0,
+	ORCHE_2 = 1,
+	ORCHE_3 = 2,
+	ENUM = 3
+}

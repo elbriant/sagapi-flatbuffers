@@ -1,0 +1,40 @@
+include "Dict_2_System_String_Torappu_Act17sideData_PlaceData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_NodeInfoData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_StoryNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_BattleNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_TreasureNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_EventNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_TechNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_ChoiceNodeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_EventData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_TechTreeData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_TechTreeBranchData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_MainlineChapterData_.fbs";
+include "Dict_2_System_String_Torappu_Act17sideData_MainlineData_.fbs";
+include "Torappu_Act17sideData_ZoneData.fbs";
+include "Torappu_Act17sideData_ConstData.fbs";
+
+table Torappu_Act17sideData {
+	placeDataMap:[Dict_2_System_String_Torappu_Act17sideData_PlaceData_];
+	nodeInfoDataMap:[Dict_2_System_String_Torappu_Act17sideData_NodeInfoData_];
+	landmarkNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_LandmarkNodeData_];
+	storyNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_StoryNodeData_];
+	battleNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_BattleNodeData_];
+	treasureNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_TreasureNodeData_];
+	eventNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_EventNodeData_];
+	techNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_TechNodeData_];
+	choiceNodeDataMap:[Dict_2_System_String_Torappu_Act17sideData_ChoiceNodeData_];
+	eventDataMap:[Dict_2_System_String_Torappu_Act17sideData_EventData_];
+	archiveItemUnlockDataMap:[Dict_2_System_String_Torappu_Act17sideData_ArchiveItemUnlockData_];
+	techTreeDataMap:[Dict_2_System_String_Torappu_Act17sideData_TechTreeData_];
+	techTreeBranchDataMap:[Dict_2_System_String_Torappu_Act17sideData_TechTreeBranchData_];
+	mainlineChapterDataMap:[Dict_2_System_String_Torappu_Act17sideData_MainlineChapterData_];
+	mainlineDataMap:[Dict_2_System_String_Torappu_Act17sideData_MainlineData_];
+	zoneDataList:[Torappu_Act17sideData_ZoneData];
+	constData:Torappu_Act17sideData_ConstData;
+}
+
+
+root_type Torappu_Act17sideData;

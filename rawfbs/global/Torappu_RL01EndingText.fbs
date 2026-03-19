@@ -1,0 +1,9 @@
+
+table Torappu_RL01EndingText {
+	summaryVariation:string;
+	summaryFusion:string;
+	summaryCapsule:string;
+}
+
+
+root_type Torappu_RL01EndingText;

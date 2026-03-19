@@ -1,0 +1,10 @@
+include "Torappu_Act1VHalfIdlePlotCombineType.fbs";
+include "Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData.fbs";
+
+table Torappu_Act1VHalfIdlePlotData_PlotCombineData {
+	combineType:Torappu_Act1VHalfIdlePlotCombineType;
+	plots:[Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData];
+}
+
+
+root_type Torappu_Act1VHalfIdlePlotData_PlotCombineData;

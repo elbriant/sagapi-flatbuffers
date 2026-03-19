@@ -1,0 +1,30 @@
+include "Torappu_ActivityType.fbs";
+include "Torappu_ActivityDisplayType.fbs";
+include "Torappu_ActivityCompleteType.fbs";
+include "Torappu_ActivityTable_PicGroup.fbs";
+
+table Torappu_ActivityTable_BasicData {
+	id:string;
+	type:Torappu_ActivityType;
+	displayType:Torappu_ActivityDisplayType;
+	name:string;
+	startTime:int64;
+	endTime:int64;
+	rewardEndTime:int64;
+	displayOnHome:bool;
+	hasStage:bool;
+	templateShopId:string;
+	medalGroupId:string;
+	ungroupedMedalIds:[string];
+	isReplicate:bool;
+	needFixedSync:bool;
+	trapDomainId:string;
+	recType:Torappu_ActivityCompleteType;
+	isPageEntry:bool;
+	isMagnify:bool;
+	picGroup:[Torappu_ActivityTable_PicGroup];
+	usePicGroup:bool;
+}
+
+
+root_type Torappu_ActivityTable_BasicData;

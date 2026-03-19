@@ -1,0 +1,14 @@
+
+table Torappu_Act42D0Data_Act42D0ConstData {
+	milestoneId:string;
+	strifeName:string;
+	strifeDesc:string;
+	unlockDesc:string;
+	rewardDesc:string;
+	traumaDesc:string;
+	milestoneAreaName:string;
+	traumaName:string;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0ConstData;

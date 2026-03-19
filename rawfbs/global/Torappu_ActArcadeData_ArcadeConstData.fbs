@@ -1,0 +1,23 @@
+
+table Torappu_ActArcadeData_ArcadeConstData {
+	milestoneName:string;
+	milestoneNameEN:string;
+	milestoneItemId:string;
+	rewardHomeThemeId:string;
+	rewardHomeThemeText:string;
+	rewardAvatarId:string;
+	rewardAvatarText:string;
+	badgeCollectionName:string;
+	collectionEntryRelatedBadge:string;
+	zoneEntryUnlockToast:string;
+	zoneEntryEndText:string;
+	zoneEntryEndToast:string;
+	rankUnlockNextStage:string;
+	stageScoreDisplayLimit:int32;
+	zoneUltiScoreDisplayLimit:int32;
+	enemyHudScore:[string];
+	trapNotBuildableInRest:[string];
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeConstData;

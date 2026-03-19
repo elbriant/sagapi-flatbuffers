@@ -1,0 +1,14 @@
+include "Torappu_RecordRewardInfo.fbs";
+
+table Torappu_ZoneRecordData {
+	recordId:string;
+	zoneId:string;
+	recordTitleName:string;
+	preRecordId:string;
+	nodeTitle1:string;
+	nodeTitle2:string;
+	rewards:[Torappu_RecordRewardInfo];
+}
+
+
+root_type Torappu_ZoneRecordData;

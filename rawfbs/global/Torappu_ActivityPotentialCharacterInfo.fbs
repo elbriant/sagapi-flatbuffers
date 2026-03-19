@@ -1,0 +1,7 @@
+
+table Torappu_ActivityPotentialCharacterInfo {
+	charId:string;
+}
+
+
+root_type Torappu_ActivityPotentialCharacterInfo;

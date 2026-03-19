@@ -1,0 +1,9 @@
+include "Torappu_LevelData_WaveData_FragmentData_ActionData.fbs";
+
+table Torappu_LevelData_WaveData_FragmentData {
+	preDelay:float;
+	actions:[Torappu_LevelData_WaveData_FragmentData_ActionData];
+}
+
+
+root_type Torappu_LevelData_WaveData_FragmentData;

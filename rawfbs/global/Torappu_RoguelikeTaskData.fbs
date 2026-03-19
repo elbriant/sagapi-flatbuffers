@@ -1,0 +1,12 @@
+include "Torappu_RoguelikeTaskRarity.fbs";
+
+table Torappu_RoguelikeTaskData {
+	taskId:string;
+	taskName:string;
+	taskDesc:string;
+	rewardSceneId:string;
+	taskRarity:Torappu_RoguelikeTaskRarity;
+}
+
+
+root_type Torappu_RoguelikeTaskData;

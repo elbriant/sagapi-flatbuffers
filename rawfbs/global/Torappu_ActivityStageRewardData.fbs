@@ -1,0 +1,8 @@
+include "Dict_2_System_String_List_1_Torappu_StageData_DisplayDetailRewards__.fbs";
+
+table Torappu_ActivityStageRewardData {
+	stageRewardsDict:[Dict_2_System_String_List_1_Torappu_StageData_DisplayDetailRewards__];
+}
+
+
+root_type Torappu_ActivityStageRewardData;

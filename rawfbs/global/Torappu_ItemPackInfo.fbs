@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ItemPackInfo {
+	packId:string;
+	content:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ItemPackInfo;

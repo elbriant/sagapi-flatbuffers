@@ -1,0 +1,10 @@
+include "Torappu_ShopCondTrigPackageType.fbs";
+
+table Torappu_ShopClientGPData {
+	goodId:string;
+	displayName:string;
+	condTrigPackageType:Torappu_ShopCondTrigPackageType;
+}
+
+
+root_type Torappu_ShopClientGPData;

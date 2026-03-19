@@ -1,0 +1,15 @@
+
+table Torappu_RoguelikeVisionData {
+	sightNum:int32;
+	level:int32;
+	canForesee:bool;
+	dividedDis:int32;
+	status:string;
+	clr:string;
+	desc1:string;
+	desc2:string;
+	icon:string;
+}
+
+
+root_type Torappu_RoguelikeVisionData;

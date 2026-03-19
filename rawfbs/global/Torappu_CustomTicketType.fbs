@@ -1,0 +1,6 @@
+
+enum Torappu_CustomTicketType : int32 {
+	NONE = 0,
+	PURIFY = 1,
+	GET_CANDLE = 2
+}

@@ -1,0 +1,9 @@
+
+table Torappu_Act5FunNpcSelectorData {
+	npcId:string;
+	enemyId:string;
+	score:float;
+}
+
+
+root_type Torappu_Act5FunNpcSelectorData;

@@ -1,0 +1,7 @@
+
+table Torappu_SpecialOperatorDetailConstData {
+	nextRoundBuffToast:string;
+}
+
+
+root_type Torappu_SpecialOperatorDetailConstData;

@@ -1,0 +1,12 @@
+
+table Torappu_CampaignData_GainLadder {
+	killCnt:int32;
+	apFailReturn:int32;
+	favor:int32;
+	expGain:int32;
+	goldGain:int32;
+	displayDiamondShdNum:int32;
+}
+
+
+root_type Torappu_CampaignData_GainLadder;

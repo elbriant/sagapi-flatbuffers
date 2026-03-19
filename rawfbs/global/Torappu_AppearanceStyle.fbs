@@ -1,0 +1,10 @@
+
+enum Torappu_AppearanceStyle : int32 {
+	MAIN_NORMAL = 0,
+	MAIN_PREDEFINED = 1,
+	SUB = 2,
+	TRAINING = 3,
+	HIGH_DIFFICULTY = 4,
+	MIST_OPS = 5,
+	SPECIAL_STORY = 6
+}

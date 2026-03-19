@@ -1,0 +1,8 @@
+include "Torappu_CrisisV2AppraiseType.fbs";
+
+table Torappu_CrisisV2AppraiseWrap {
+	appraiseType:Torappu_CrisisV2AppraiseType;
+}
+
+
+root_type Torappu_CrisisV2AppraiseWrap;

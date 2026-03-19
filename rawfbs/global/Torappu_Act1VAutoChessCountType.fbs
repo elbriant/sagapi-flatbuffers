@@ -1,0 +1,10 @@
+
+enum Torappu_Act1VAutoChessCountType : int32 {
+	NONE = 0,
+	BATTLE_LAYER = 1,
+	COUNTING = 2,
+	PROFESSIONS = 3,
+	GROUPS = 4,
+	LEVEL = 5,
+	PURCHASE = 6
+}

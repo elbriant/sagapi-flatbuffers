@@ -1,0 +1,20 @@
+include "Torappu_FogType.fbs";
+include "Torappu_StageButtonInFogRenderType.fbs";
+include "Torappu_ItemType.fbs";
+
+table Torappu_StageFogInfo {
+	lockId:string;
+	fogType:Torappu_FogType;
+	stageButtonInFogRenderType:Torappu_StageButtonInFogRenderType;
+	stageId:string;
+	lockName:string;
+	lockDesc:string;
+	unlockItemId:string;
+	unlockItemType:Torappu_ItemType;
+	unlockItemNum:int32;
+	preposedStageId:string;
+	preposedLockId:string;
+}
+
+
+root_type Torappu_StageFogInfo;

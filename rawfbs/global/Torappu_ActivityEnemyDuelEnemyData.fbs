@@ -1,0 +1,8 @@
+
+table Torappu_ActivityEnemyDuelEnemyData {
+	enemyId:string;
+	originalEnemyId:string;
+}
+
+
+root_type Torappu_ActivityEnemyDuelEnemyData;

@@ -1,0 +1,9 @@
+include "Torappu_EnemyDatabase_EnemyData.fbs";
+
+table Torappu_EnemyDatabase_EnemyLevel {
+	level:int32;
+	enemyData:Torappu_EnemyDatabase_EnemyData;
+}
+
+
+root_type Torappu_EnemyDatabase_EnemyLevel;

@@ -1,0 +1,13 @@
+
+table Torappu_SandboxV2StageData {
+	stageId:string;
+	levelId:string;
+	code:string;
+	name:string;
+	description:string;
+	actionCost:int32;
+	actionCostEnemyRush:int32;
+}
+
+
+root_type Torappu_SandboxV2StageData;

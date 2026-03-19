@@ -1,0 +1,9 @@
+
+table Torappu_ActArchiveResData_AudioArchiveResItemData {
+	id:string;
+	desc:string;
+	name:string;
+}
+
+
+root_type Torappu_ActArchiveResData_AudioArchiveResItemData;

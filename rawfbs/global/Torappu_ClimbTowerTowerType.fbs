@@ -1,0 +1,5 @@
+
+enum Torappu_ClimbTowerTowerType : int32 {
+	TRAINING = 0,
+	NORMAL = 1
+}

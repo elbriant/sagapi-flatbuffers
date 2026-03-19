@@ -1,0 +1,10 @@
+
+table Torappu_WorldViewTip {
+	title:string;
+	description:string;
+	backgroundPicId:string;
+	weight:float;
+}
+
+
+root_type Torappu_WorldViewTip;

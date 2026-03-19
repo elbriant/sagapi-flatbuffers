@@ -1,0 +1,28 @@
+
+table Torappu_Resource_ResourceManifest_BundleMeta {
+	name:string;
+	props:int32;
+	sccIndex:int32;
+	allDependencies:[int32];
+}
+
+
+
+table Torappu_Resource_ResourceManifest_AssetToBundleMeta {
+	assetName:string;
+	bundleIndex:int32;
+	name:string;
+	path:string;
+}
+
+
+
+table Torappu_Resource_ResourceManifest {
+	rawCount:int32;
+	bundles:[Torappu_Resource_ResourceManifest_BundleMeta];
+	assetToBundleList:[Torappu_Resource_ResourceManifest_AssetToBundleMeta];
+}
+
+
+
+root_type Torappu_Resource_ResourceManifest;

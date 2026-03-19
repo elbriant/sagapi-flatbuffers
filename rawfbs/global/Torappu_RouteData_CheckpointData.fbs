@@ -1,0 +1,15 @@
+include "Torappu_CheckpointType.fbs";
+include "Torappu_GridPosition.fbs";
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_RouteData_CheckpointData {
+	type:Torappu_CheckpointType;
+	time:float;
+	position:Torappu_GridPosition;
+	reachOffset:UnityEngine_Vector2;
+	randomizeReachOffset:bool;
+	reachDistance:float;
+}
+
+
+root_type Torappu_RouteData_CheckpointData;

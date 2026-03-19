@@ -1,0 +1,20 @@
+include "Dict_2_System_String_Torappu_SandboxV2RacerBasicInfo_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2RacerTalentInfo_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2RacerNameInfo_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2RacerMedalInfo_.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2RacingItemInfo_.fbs";
+include "Torappu_SandboxV2RacingConstData.fbs";
+
+table Torappu_SandboxV2RacingData {
+	racerBasicInfo:[Dict_2_System_String_Torappu_SandboxV2RacerBasicInfo_];
+	racerTalentInfo:[Dict_2_System_String_Torappu_SandboxV2RacerTalentInfo_];
+	racerNameInfo:[Dict_2_System_String_Torappu_SandboxV2RacerNameInfo_];
+	racerMedalInfo:[Dict_2_System_String_Torappu_SandboxV2RacerMedalInfo_];
+	enemyItemMap:[Dict_2_System_String_System_String_];
+	racingItemInfo:[Dict_2_System_String_Torappu_SandboxV2RacingItemInfo_];
+	constData:Torappu_SandboxV2RacingConstData;
+}
+
+
+root_type Torappu_SandboxV2RacingData;

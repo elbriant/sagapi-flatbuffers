@@ -1,0 +1,15 @@
+include "Torappu_ReturnV2JumpType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ReturnV2MissionItemData {
+	missionId:string;
+	groupId:string;
+	sortId:int32;
+	jumpType:Torappu_ReturnV2JumpType;
+	jumpParam:string;
+	desc:string;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ReturnV2MissionItemData;

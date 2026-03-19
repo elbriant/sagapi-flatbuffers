@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeBandRefData {
+	itemId:string;
+	bandLevel:int32;
+	normalBandId:string;
+}
+
+
+root_type Torappu_RoguelikeBandRefData;

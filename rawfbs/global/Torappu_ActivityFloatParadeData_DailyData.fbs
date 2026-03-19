@@ -1,0 +1,14 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivityFloatParadeData_DailyData {
+	dayIndex:int32;
+	dateName:string;
+	placeName:string;
+	placeEnName:string;
+	placePic:string;
+	eventGroupId:string;
+	extReward:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_ActivityFloatParadeData_DailyData;

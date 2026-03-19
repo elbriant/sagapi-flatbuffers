@@ -1,0 +1,12 @@
+include "Torappu_Act12SideData_ActZoneClass.fbs";
+
+table Torappu_Act12SideData_MissionDescInfo {
+	zoneClass:Torappu_Act12SideData_ActZoneClass;
+	specialMissionDesc:string;
+	needLock:bool;
+	unlockHint:string;
+	unlockStage:string;
+}
+
+
+root_type Torappu_Act12SideData_MissionDescInfo;

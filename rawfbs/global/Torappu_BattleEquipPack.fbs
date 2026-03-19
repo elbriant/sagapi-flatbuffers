@@ -1,0 +1,8 @@
+include "Torappu_BattleEquipPerLevelPack.fbs";
+
+table Torappu_BattleEquipPack {
+	phases:[Torappu_BattleEquipPerLevelPack];
+}
+
+
+root_type Torappu_BattleEquipPack;

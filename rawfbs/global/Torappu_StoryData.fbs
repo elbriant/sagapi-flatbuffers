@@ -1,0 +1,19 @@
+include "Torappu_StoryData_Trigger.fbs";
+include "Torappu_StoryData_Condition.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_StoryData {
+	id:string;
+	needCommit:bool;
+	repeatable:bool;
+	disabled:bool;
+	videoResource:bool;
+	trigger:Torappu_StoryData_Trigger;
+	condition:Torappu_StoryData_Condition;
+	setProgress:int32;
+	setFlags:[string];
+	completedRewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_StoryData;

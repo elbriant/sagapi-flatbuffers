@@ -1,0 +1,18 @@
+include "Torappu_ShopGPTabType.fbs";
+
+table Torappu_ShopGPTabDisplayData {
+	tabId:string;
+	tabName:string;
+	tabType:Torappu_ShopGPTabType;
+	recomDisplayNum:int32;
+	tabPicId:string;
+	tabPicOnColor:string;
+	tabPicOffColor:string;
+	sortId:int32;
+	tabStartTime:int64;
+	tabEndTime:int64;
+	markerPicId:string;
+}
+
+
+root_type Torappu_ShopGPTabDisplayData;

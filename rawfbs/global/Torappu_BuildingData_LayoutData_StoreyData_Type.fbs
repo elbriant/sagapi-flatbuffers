@@ -1,0 +1,5 @@
+
+enum Torappu_BuildingData_LayoutData_StoreyData_Type : int32 {
+	UPGROUND = 0,
+	DOWNGROUND = 1
+}

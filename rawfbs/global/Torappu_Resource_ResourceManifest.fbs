@@ -1,0 +1,11 @@
+include "Torappu_Resource_ResourceManifest_BundleMeta.fbs";
+include "Torappu_Resource_ResourceManifest_AssetToBundleMeta.fbs";
+
+table Torappu_Resource_ResourceManifest {
+	rawCount:int32;
+	bundles:[Torappu_Resource_ResourceManifest_BundleMeta];
+	assetToBundleList:[Torappu_Resource_ResourceManifest_AssetToBundleMeta];
+}
+
+
+root_type Torappu_Resource_ResourceManifest;

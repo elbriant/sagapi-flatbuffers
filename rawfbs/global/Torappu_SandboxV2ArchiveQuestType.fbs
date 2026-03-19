@@ -1,0 +1,6 @@
+
+enum Torappu_SandboxV2ArchiveQuestType : int32 {
+	NONE = 0,
+	MAIN = 1,
+	SIDE = 2
+}

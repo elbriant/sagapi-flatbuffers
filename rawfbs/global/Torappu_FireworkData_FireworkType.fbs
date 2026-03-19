@@ -1,0 +1,7 @@
+
+enum Torappu_FireworkData_FireworkType : int32 {
+	RED = 0,
+	BLUE = 1,
+	YELLOW = 2,
+	GREEN = 3
+}

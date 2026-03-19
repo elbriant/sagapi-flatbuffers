@@ -1,0 +1,6 @@
+
+table Torappu_BuildingData_PowerPhase {
+}
+
+
+root_type Torappu_BuildingData_PowerPhase;

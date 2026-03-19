@@ -1,0 +1,10 @@
+
+enum Torappu_CrisisV2AppraiseType : int32 {
+	RANK_D = 0,
+	RANK_C = 1,
+	RANK_B = 2,
+	RANK_A = 3,
+	RANK_S = 4,
+	RANK_SS = 5,
+	RANK_SSS = 6
+}

@@ -1,0 +1,27 @@
+include "Torappu_GachaRuleType.fbs";
+include "Newtonsoft_Json_Linq_JObject.fbs";
+
+table Torappu_GachaPoolClientData {
+	gachaPoolId:string;
+	gachaIndex:int32;
+	openTime:int64;
+	endTime:int64;
+	gachaPoolName:string;
+	gachaPoolSummary:string;
+	gachaPoolDetail:string;
+	guaranteeName:string;
+	guarantee5Avail:int32;
+	guarantee5Count:int32;
+	LMTGSID:string;
+	CDPrimColor:string;
+	CDSecColor:string;
+	freeBackColor:string;
+	gachaRuleType:Torappu_GachaRuleType;
+	dynMeta:Newtonsoft_Json_Linq_JObject;
+	linkageRuleId:string;
+	linkageParam:Newtonsoft_Json_Linq_JObject;
+	limitParam:Newtonsoft_Json_Linq_JObject;
+}
+
+
+root_type Torappu_GachaPoolClientData;

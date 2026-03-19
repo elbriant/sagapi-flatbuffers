@@ -1,0 +1,10 @@
+
+table Torappu_WeeklyForceOpenTable {
+	id:string;
+	startTime:int64;
+	endTime:int64;
+	forceOpenList:[string];
+}
+
+
+root_type Torappu_WeeklyForceOpenTable;

@@ -1,0 +1,9 @@
+
+table Torappu_CharacterData_PowerData {
+	nationId:string;
+	groupId:string;
+	teamId:string;
+}
+
+
+root_type Torappu_CharacterData_PowerData;

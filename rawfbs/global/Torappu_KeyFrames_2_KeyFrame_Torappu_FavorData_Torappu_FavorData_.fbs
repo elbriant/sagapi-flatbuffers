@@ -1,0 +1,9 @@
+include "Torappu_FavorData.fbs";
+
+table Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_ {
+	level:int32;
+	data:Torappu_FavorData;
+}
+
+
+root_type Torappu_KeyFrames_2_KeyFrame_Torappu_FavorData_Torappu_FavorData_;

@@ -1,0 +1,8 @@
+
+table Torappu_ZoneValidInfo {
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_ZoneValidInfo;

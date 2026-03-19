@@ -1,0 +1,11 @@
+
+table Torappu_Act17sideData_TechTreeData {
+	techTreeId:string;
+	sortId:int32;
+	techTreeName:string;
+	defaultBranchId:string;
+	lockDes:string;
+}
+
+
+root_type Torappu_Act17sideData_TechTreeData;

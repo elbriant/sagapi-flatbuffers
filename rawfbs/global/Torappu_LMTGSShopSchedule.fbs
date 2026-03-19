@@ -1,0 +1,13 @@
+
+table Torappu_LMTGSShopSchedule {
+	gachaPoolId:string;
+	LMTGSId:string;
+	iconColor:string;
+	iconBackColor:string;
+	storeTextColor:string;
+	startTime:int64;
+	endTime:int64;
+}
+
+
+root_type Torappu_LMTGSShopSchedule;

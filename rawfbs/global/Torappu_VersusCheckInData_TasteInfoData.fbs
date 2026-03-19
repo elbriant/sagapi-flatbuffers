@@ -1,0 +1,10 @@
+include "Torappu_VersusCheckInData_TasteType.fbs";
+
+table Torappu_VersusCheckInData_TasteInfoData {
+	plTaste:int32;
+	tasteType:Torappu_VersusCheckInData_TasteType;
+	tasteText:string;
+}
+
+
+root_type Torappu_VersusCheckInData_TasteInfoData;

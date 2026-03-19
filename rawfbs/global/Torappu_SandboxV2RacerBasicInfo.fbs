@@ -1,0 +1,11 @@
+
+table Torappu_SandboxV2RacerBasicInfo {
+	racerId:string;
+	sortId:int32;
+	racerTypeName:string;
+	itemId:string;
+	attributeMaxValue:[int32];
+}
+
+
+root_type Torappu_SandboxV2RacerBasicInfo;

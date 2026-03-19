@@ -1,0 +1,8 @@
+
+enum Torappu_RoguelikeTotemColorType : int32 {
+	NONE = 0,
+	RED = 1,
+	GREEN = 2,
+	BLUE = 3,
+	ALL = 4
+}

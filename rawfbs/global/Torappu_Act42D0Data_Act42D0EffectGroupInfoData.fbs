@@ -1,0 +1,9 @@
+
+table Torappu_Act42D0Data_Act42D0EffectGroupInfoData {
+	effectGroupId:string;
+	sortId:int32;
+	effectGroupName:string;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0EffectGroupInfoData;

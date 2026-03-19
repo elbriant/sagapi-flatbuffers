@@ -1,0 +1,10 @@
+
+table Torappu_Act27SideData_Act27SideShopData {
+	shopId:string;
+	sortId:int32;
+	name:string;
+	iconId:string;
+}
+
+
+root_type Torappu_Act27SideData_Act27SideShopData;

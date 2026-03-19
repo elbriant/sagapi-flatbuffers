@@ -1,0 +1,9 @@
+include "Torappu_ActRecruitOnlyData_RecruitOnlyItemData.fbs";
+
+table Torappu_ActRecruitOnlyData {
+	recruitData:Torappu_ActRecruitOnlyData_RecruitOnlyItemData;
+	previewData:Torappu_ActRecruitOnlyData_RecruitOnlyItemData;
+}
+
+
+root_type Torappu_ActRecruitOnlyData;

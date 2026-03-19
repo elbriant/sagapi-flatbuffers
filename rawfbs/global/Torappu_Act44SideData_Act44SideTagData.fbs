@@ -1,0 +1,10 @@
+
+table Torappu_Act44SideData_Act44SideTagData {
+	id:string;
+	name:string;
+	isSp:bool;
+	description:string;
+}
+
+
+root_type Torappu_Act44SideData_Act44SideTagData;

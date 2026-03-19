@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeGameVariationType : int32 {
+	NONE = 0,
+	MAP = 1,
+	RES = 2,
+	BAT = 3
+}

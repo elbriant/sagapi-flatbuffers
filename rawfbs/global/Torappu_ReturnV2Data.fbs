@@ -1,0 +1,20 @@
+include "Torappu_ReturnV2Const.fbs";
+include "Torappu_ReturnV2OnceRewardData.fbs";
+include "Torappu_ReturnV2CheckInRewardData.fbs";
+include "Torappu_ReturnV2PriceRewardGroupData.fbs";
+include "Torappu_ReturnV2MissionGroupData.fbs";
+include "Torappu_ReturnV2DailySupplyData.fbs";
+include "Torappu_ReturnV2PackageCheckInRewardData.fbs";
+
+table Torappu_ReturnV2Data {
+	constData:Torappu_ReturnV2Const;
+	onceRewardData:[Torappu_ReturnV2OnceRewardData];
+	checkInRewardData:[Torappu_ReturnV2CheckInRewardData];
+	priceRewardData:[Torappu_ReturnV2PriceRewardGroupData];
+	missionGroupData:[Torappu_ReturnV2MissionGroupData];
+	dailySupplyData:[Torappu_ReturnV2DailySupplyData];
+	packageCheckInRewardData:[Torappu_ReturnV2PackageCheckInRewardData];
+}
+
+
+root_type Torappu_ReturnV2Data;

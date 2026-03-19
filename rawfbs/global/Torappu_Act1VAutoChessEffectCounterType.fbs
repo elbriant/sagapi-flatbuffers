@@ -1,0 +1,9 @@
+
+enum Torappu_Act1VAutoChessEffectCounterType : int32 {
+	NONE = 0,
+	TURN_COUNT = 1,
+	TRIGGER_COUNT = 2,
+	CHAR_COUNT = 3,
+	STACK_COUNT = 4,
+	COIN_JAR = 5
+}

@@ -1,0 +1,11 @@
+
+table Torappu_Act13SideData_PrincipalData {
+	principalId:string;
+	principalName:string;
+	principalEnName:string;
+	avgCharId:string;
+	principalDescList:[string];
+}
+
+
+root_type Torappu_Act13SideData_PrincipalData;

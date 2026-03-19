@@ -1,0 +1,10 @@
+include "Torappu_SandboxV2NodeType.fbs";
+
+table Torappu_SandboxV2NodeTypeData {
+	nodeType:Torappu_SandboxV2NodeType;
+	name:string;
+	iconId:string;
+}
+
+
+root_type Torappu_SandboxV2NodeTypeData;

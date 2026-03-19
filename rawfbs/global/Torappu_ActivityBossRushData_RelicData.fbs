@@ -1,0 +1,11 @@
+
+table Torappu_ActivityBossRushData_RelicData {
+	relicId:string;
+	sortId:int32;
+	name:string;
+	icon:string;
+	relicTaskId:string;
+}
+
+
+root_type Torappu_ActivityBossRushData_RelicData;

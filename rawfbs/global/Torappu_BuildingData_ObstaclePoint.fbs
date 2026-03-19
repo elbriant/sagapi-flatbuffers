@@ -1,0 +1,9 @@
+include "Torappu_GridPosition.fbs";
+
+table Torappu_BuildingData_ObstaclePoint {
+	offset:Torappu_GridPosition;
+	edgeWalkableMask:uint8;
+}
+
+
+root_type Torappu_BuildingData_ObstaclePoint;

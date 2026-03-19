@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2LivestockData {
+	livestockItemId:string;
+	shinyLivestockItemId:string;
+	livestockEnemyId:string;
+	targetFenceId:string;
+}
+
+
+root_type Torappu_SandboxV2LivestockData;

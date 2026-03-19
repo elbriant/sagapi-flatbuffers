@@ -1,0 +1,15 @@
+include "Torappu_ActArchiveType.fbs";
+include "Torappu_Act17sideData_ArchiveItemUnlockCondition.fbs";
+include "Torappu_Act17sideData_ArchiveItemStageUnlockParam.fbs";
+
+table Torappu_Act17sideData_ArchiveItemUnlockData {
+	itemId:string;
+	itemType:Torappu_ActArchiveType;
+	unlockCondition:Torappu_Act17sideData_ArchiveItemUnlockCondition;
+	nodeId:string;
+	stageParam:Torappu_Act17sideData_ArchiveItemStageUnlockParam;
+	chapterId:string;
+}
+
+
+root_type Torappu_Act17sideData_ArchiveItemUnlockData;

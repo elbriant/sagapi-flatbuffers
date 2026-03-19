@@ -1,0 +1,7 @@
+
+table Torappu_RoguelikeGameShopDialogGroupData {
+	content:[string];
+}
+
+
+root_type Torappu_RoguelikeGameShopDialogGroupData;

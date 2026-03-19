@@ -1,0 +1,8 @@
+
+table Torappu_CharSkinData_BattleSkin {
+	overwritePrefab:bool;
+	skinOrPrefabId:string;
+}
+
+
+root_type Torappu_CharSkinData_BattleSkin;

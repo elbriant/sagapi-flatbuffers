@@ -1,0 +1,13 @@
+
+table Torappu_Act13SideData_LongTermMissionData {
+	missionName:string;
+	groupId:string;
+	principalId:string;
+	finishedDesc:string;
+	sectionSortId:int32;
+	haveStageBtn:bool;
+	jumpStageId:string;
+}
+
+
+root_type Torappu_Act13SideData_LongTermMissionData;

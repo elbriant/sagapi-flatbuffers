@@ -1,0 +1,9 @@
+include "Torappu_Act24SideData_ToolData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_ToolData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_;

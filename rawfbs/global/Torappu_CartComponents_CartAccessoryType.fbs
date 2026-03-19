@@ -1,0 +1,8 @@
+
+enum Torappu_CartComponents_CartAccessoryType : int32 {
+	NONE = 0,
+	ROOF = 1,
+	HEADSTOCK = 2,
+	TRUNK = 3,
+	CAR_OS = 4
+}

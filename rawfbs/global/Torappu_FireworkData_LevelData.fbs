@@ -1,0 +1,11 @@
+
+table Torappu_FireworkData_LevelData {
+	levelId:string;
+	sortId:int32;
+	trapPosX:int32;
+	trapPosY:int32;
+	isSPLevel:bool;
+}
+
+
+root_type Torappu_FireworkData_LevelData;

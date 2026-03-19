@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2RiftParamData {
+	id:string;
+	desc:string;
+	iconId:string;
+	bkColor:string;
+}
+
+
+root_type Torappu_SandboxV2RiftParamData;

@@ -1,0 +1,9 @@
+
+table Torappu_FavorCharacterInfo {
+	itemId:string;
+	charId:string;
+	favorAddAmt:int32;
+}
+
+
+root_type Torappu_FavorCharacterInfo;

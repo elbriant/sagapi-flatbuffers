@@ -1,0 +1,9 @@
+include "Torappu_ActArchiveType.fbs";
+
+table Torappu_RoguelikeArchiveUnlockCondDesc {
+	archiveType:Torappu_ActArchiveType;
+	description:string;
+}
+
+
+root_type Torappu_RoguelikeArchiveUnlockCondDesc;

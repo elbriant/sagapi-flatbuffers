@@ -1,0 +1,11 @@
+include "Torappu_BattleVoiceOption.fbs";
+
+table Torappu_BattleVoiceData {
+	crossfade:float;
+	minTimeDeltaForEnemyEncounter:float;
+	minSpCostForImportantPassiveSkill:int32;
+	voiceTypeOptions:[Torappu_BattleVoiceOption];
+}
+
+
+root_type Torappu_BattleVoiceData;

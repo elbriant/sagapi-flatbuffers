@@ -1,0 +1,12 @@
+
+table Torappu_ActivityFloatParadeData_GroupData {
+	groupId:string;
+	name:string;
+	startDay:int32;
+	endDay:int32;
+	extRewardDay:int32;
+	extRewardCount:int32;
+}
+
+
+root_type Torappu_ActivityFloatParadeData_GroupData;

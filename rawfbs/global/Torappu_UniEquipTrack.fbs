@@ -1,0 +1,11 @@
+include "Torappu_UniEquipType.fbs";
+
+table Torappu_UniEquipTrack {
+	charId:string;
+	equipId:string;
+	type:Torappu_UniEquipType;
+	archiveShowTimeEnd:int64;
+}
+
+
+root_type Torappu_UniEquipTrack;

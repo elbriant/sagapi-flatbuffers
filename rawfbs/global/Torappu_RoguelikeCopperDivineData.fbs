@@ -1,0 +1,13 @@
+include "Torappu_RoguelikeCopperDivineType.fbs";
+include "Torappu_RoguelikeCopperDivineResultType.fbs";
+
+table Torappu_RoguelikeCopperDivineData {
+	eventId:string;
+	groupId:string;
+	showDesc:string;
+	divineType:Torappu_RoguelikeCopperDivineType;
+	resultType:Torappu_RoguelikeCopperDivineResultType;
+}
+
+
+root_type Torappu_RoguelikeCopperDivineData;

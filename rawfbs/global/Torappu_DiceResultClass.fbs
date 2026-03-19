@@ -1,0 +1,9 @@
+
+enum Torappu_DiceResultClass : int32 {
+	VERYBAD = 0,
+	BAD = 1,
+	NORMAL = 2,
+	GOOD = 3,
+	GREAT = 4,
+	BEST = 4
+}

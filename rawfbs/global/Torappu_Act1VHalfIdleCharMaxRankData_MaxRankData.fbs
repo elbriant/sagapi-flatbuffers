@@ -1,0 +1,10 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData {
+	evolvePhase:Torappu_EvolvePhase;
+	maxLevel:int32;
+	maxSkillRank:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData;

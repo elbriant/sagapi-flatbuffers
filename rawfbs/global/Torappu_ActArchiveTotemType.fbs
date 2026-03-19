@@ -1,0 +1,6 @@
+
+enum Torappu_ActArchiveTotemType : int32 {
+	LOCATION = 0,
+	EFFECT = 1,
+	AFFIX = 2
+}

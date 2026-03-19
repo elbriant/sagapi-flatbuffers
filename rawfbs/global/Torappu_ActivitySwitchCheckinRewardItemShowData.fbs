@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivitySwitchCheckinRewardItemShowData {
+	itemBundle:Torappu_ItemBundle;
+	isMainReward:bool;
+}
+
+
+root_type Torappu_ActivitySwitchCheckinRewardItemShowData;

@@ -1,0 +1,10 @@
+include "Torappu_CustomTicketType.fbs";
+
+table Torappu_RoguelikeGameCustomTicketData {
+	id:string;
+	subType:Torappu_CustomTicketType;
+	discardText:string;
+}
+
+
+root_type Torappu_RoguelikeGameCustomTicketData;

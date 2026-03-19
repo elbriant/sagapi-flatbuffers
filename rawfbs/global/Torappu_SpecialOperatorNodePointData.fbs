@@ -1,0 +1,7 @@
+
+table Torappu_SpecialOperatorNodePointData {
+	nodeId:string;
+}
+
+
+root_type Torappu_SpecialOperatorNodePointData;

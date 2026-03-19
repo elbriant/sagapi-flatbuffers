@@ -1,0 +1,24 @@
+include "Torappu_SandboxV2SeasonType.fbs";
+
+table Torappu_SandboxV2RiftConst {
+	refreshRate:int32;
+	randomDungeonId:string;
+	huntDungeonId:string;
+	subTargetRewardId:string;
+	preyQuestRewardId:string;
+	dungeonSeasonId:Torappu_SandboxV2SeasonType;
+	fixedDungeonTypeName:string;
+	randomDungeonTypeName:string;
+	preyDungeonTypeName:string;
+	noTeamDescription:string;
+	noTeamName:string;
+	noTeamBackgroundId:string;
+	noTeamSmallIconId:string;
+	noTeamBigIconId:string;
+	messengerEnemyId:string;
+	riftRushEnemyGroupLimit:int32;
+	riftRushSpawnCd:int32;
+}
+
+
+root_type Torappu_SandboxV2RiftConst;

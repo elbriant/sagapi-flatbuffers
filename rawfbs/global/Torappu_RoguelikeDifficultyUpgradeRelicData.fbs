@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeDifficultyUpgradeRelicData {
+	relicId:string;
+	equivalentGrade:int32;
+}
+
+
+root_type Torappu_RoguelikeDifficultyUpgradeRelicData;

@@ -1,0 +1,13 @@
+
+table Torappu_Act44SideData_Act44SideChoiceData {
+	id:string;
+	imgId:string;
+	attentionArrow:int32;
+	trustArrow:int32;
+	attentionValue:int32;
+	trustValue:int32;
+	patienceValue:int32;
+}
+
+
+root_type Torappu_Act44SideData_Act44SideChoiceData;

@@ -1,0 +1,13 @@
+include "Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX.fbs";
+
+table Torappu_Audio_Middleware_Data_SoundFXBank {
+	sounds:[Torappu_Audio_Middleware_Data_SoundFXBank_SoundFX];
+	maxSoundAllowed:int32;
+	popOldest:bool;
+	customMixerGroup:string;
+	loop:bool;
+	name:string;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_SoundFXBank;

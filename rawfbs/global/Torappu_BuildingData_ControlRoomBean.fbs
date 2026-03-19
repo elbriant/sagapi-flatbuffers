@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_ControlRoomPhase.fbs";
+
+table Torappu_BuildingData_ControlRoomBean {
+	basicCostBuff:int32;
+	phases:[Torappu_BuildingData_ControlRoomPhase];
+}
+
+
+root_type Torappu_BuildingData_ControlRoomBean;

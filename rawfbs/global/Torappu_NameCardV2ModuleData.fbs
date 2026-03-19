@@ -1,0 +1,9 @@
+include "Torappu_NameCardV2ModuleType.fbs";
+
+table Torappu_NameCardV2ModuleData {
+	id:string;
+	type:Torappu_NameCardV2ModuleType;
+}
+
+
+root_type Torappu_NameCardV2ModuleData;

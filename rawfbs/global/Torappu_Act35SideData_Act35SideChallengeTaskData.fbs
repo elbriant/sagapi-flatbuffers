@@ -1,0 +1,11 @@
+
+table Torappu_Act35SideData_Act35SideChallengeTaskData {
+	taskId:string;
+	taskDesc:string;
+	materialId:string;
+	materialNum:int32;
+	passTaskCoin:int32;
+}
+
+
+root_type Torappu_Act35SideData_Act35SideChallengeTaskData;

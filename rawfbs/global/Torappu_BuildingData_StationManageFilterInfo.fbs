@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_CharStationFilterType.fbs";
+
+table Torappu_BuildingData_StationManageFilterInfo {
+	charStationFilterType:Torappu_BuildingData_CharStationFilterType;
+	name:string;
+}
+
+
+root_type Torappu_BuildingData_StationManageFilterInfo;

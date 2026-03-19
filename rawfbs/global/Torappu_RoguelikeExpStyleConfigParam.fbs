@@ -1,0 +1,4 @@
+
+enum Torappu_RoguelikeExpStyleConfigParam : int32 {
+	BATTLE_END_HP_LOSE_TEXT = 0
+}

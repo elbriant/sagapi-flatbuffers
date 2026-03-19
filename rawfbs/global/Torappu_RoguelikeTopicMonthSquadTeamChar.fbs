@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeTopicMonthSquadTeamChar {
+	teamCharId:string;
+	teamTmplId:string;
+}
+
+
+root_type Torappu_RoguelikeTopicMonthSquadTeamChar;

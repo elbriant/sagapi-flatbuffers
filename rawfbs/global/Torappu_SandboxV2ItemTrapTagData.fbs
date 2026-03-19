@@ -1,0 +1,11 @@
+include "Torappu_SandboxV2ItemTrapTag.fbs";
+
+table Torappu_SandboxV2ItemTrapTagData {
+	tag:Torappu_SandboxV2ItemTrapTag;
+	tagName:string;
+	tagPic:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_SandboxV2ItemTrapTagData;

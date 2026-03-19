@@ -1,0 +1,11 @@
+include "Torappu_DataUnlockType.fbs";
+
+table Torappu_HandbookUnlockParam {
+	unlockType:Torappu_DataUnlockType;
+	unlockParam1:string;
+	unlockParam2:string;
+	unlockParam3:string;
+}
+
+
+root_type Torappu_HandbookUnlockParam;

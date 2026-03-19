@@ -1,0 +1,16 @@
+include "Torappu_SandboxV2QuestLineType.fbs";
+include "Torappu_SandboxV2QuestLineBadgeType.fbs";
+include "Torappu_SandboxV2QuestLineScopeType.fbs";
+
+table Torappu_SandboxV2QuestLineData {
+	questLineId:string;
+	questLineTitle:string;
+	questLineType:Torappu_SandboxV2QuestLineType;
+	questLineBadgeType:Torappu_SandboxV2QuestLineBadgeType;
+	questLineScopeType:Torappu_SandboxV2QuestLineScopeType;
+	questLineDesc:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_SandboxV2QuestLineData;

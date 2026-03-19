@@ -1,0 +1,7 @@
+
+enum Torappu_Act24SideData_MeldingGoodDisplayType : int32 {
+	NONE = 0,
+	RARE_1 = 1,
+	RARE_2 = 2,
+	RARE_3 = 3
+}

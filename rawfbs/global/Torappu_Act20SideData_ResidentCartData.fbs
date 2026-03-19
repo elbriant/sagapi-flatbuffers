@@ -1,0 +1,7 @@
+
+table Torappu_Act20SideData_ResidentCartData {
+	residentPic:string;
+}
+
+
+root_type Torappu_Act20SideData_ResidentCartData;

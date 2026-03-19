@@ -1,0 +1,22 @@
+include "Torappu_MainlineZoneData_ZoneReplayBtnType.fbs";
+include "Torappu_StageDiffGroup.fbs";
+
+table Torappu_MainlineZoneData {
+	zoneId:string;
+	chapterId:string;
+	preposedZoneId:string;
+	zoneIndex:int32;
+	startStageId:string;
+	endStageId:string;
+	gameMusicId:string;
+	recapId:string;
+	recapPreStageId:string;
+	buttonName:string;
+	buttonStyle:Torappu_MainlineZoneData_ZoneReplayBtnType;
+	spoilAlert:bool;
+	zoneOpenTime:int64;
+	diffGroup:[Torappu_StageDiffGroup];
+}
+
+
+root_type Torappu_MainlineZoneData;

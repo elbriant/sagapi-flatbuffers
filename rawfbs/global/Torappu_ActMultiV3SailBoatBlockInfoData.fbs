@@ -1,0 +1,13 @@
+include "Torappu_ActMultiV3BlockDirType.fbs";
+include "Torappu_ActMultiV3BlockType.fbs";
+
+table Torappu_ActMultiV3SailBoatBlockInfoData {
+	blockId:string;
+	blockLevelId:string;
+	startDirType:Torappu_ActMultiV3BlockDirType;
+	endDirType:Torappu_ActMultiV3BlockDirType;
+	blockType:Torappu_ActMultiV3BlockType;
+}
+
+
+root_type Torappu_ActMultiV3SailBoatBlockInfoData;

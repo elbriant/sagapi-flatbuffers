@@ -1,0 +1,10 @@
+include "Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_.fbs";
+
+table Torappu_Act1VHalfIdleStageProductionData {
+	stageId:string;
+	fixedProduction:[string];
+	productionData:[Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_];
+}
+
+
+root_type Torappu_Act1VHalfIdleStageProductionData;

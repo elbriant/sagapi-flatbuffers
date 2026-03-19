@@ -1,0 +1,11 @@
+include "Torappu_RuneData_Selector.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_RuneData {
+	key:string;
+	selector:Torappu_RuneData_Selector;
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_RuneData;

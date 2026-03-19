@@ -1,0 +1,13 @@
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_LevelData_EnemyData_ESkillData {
+	prefabKey:string;
+	priority:int32;
+	cooldown:float;
+	initCooldown:float;
+	spCost:int32;
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_LevelData_EnemyData_ESkillData;

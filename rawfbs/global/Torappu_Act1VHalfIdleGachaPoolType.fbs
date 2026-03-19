@@ -1,0 +1,8 @@
+
+enum Torappu_Act1VHalfIdleGachaPoolType : int32 {
+	NONE = 0,
+	GACHA_NORMAL = 1,
+	GACHA_NEWPLAYER = 2,
+	GACHA_PAC = 3,
+	GACHA_DIRECT = 4
+}

@@ -1,0 +1,15 @@
+include "Dict_2_System_String_Torappu_SandboxV2RewardData_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_.fbs";
+
+table Torappu_SandboxV2RewardConfigGroupData {
+	stageMapPreviewRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardData_];
+	stageDetailPreviewRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardData_];
+	trapRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_];
+	enemyRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardCommonConfig_];
+	unitPreviewRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardData_];
+	stageRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardData_];
+	rushPreviewRewardDict:[Dict_2_System_String_Torappu_SandboxV2RewardData_];
+}
+
+
+root_type Torappu_SandboxV2RewardConfigGroupData;

@@ -1,0 +1,9 @@
+
+table Torappu_SandboxV2ChallengeModeUnlockData {
+	unlockId:string;
+	sortId:int32;
+	conditionDesc:string;
+}
+
+
+root_type Torappu_SandboxV2ChallengeModeUnlockData;

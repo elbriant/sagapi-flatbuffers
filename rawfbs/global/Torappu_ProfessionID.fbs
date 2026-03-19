@@ -1,0 +1,13 @@
+
+enum Torappu_ProfessionID : int32 {
+	WARRIOR = 0,
+	SNIPER = 1,
+	TANK = 2,
+	MEDIC = 3,
+	SUPPORT = 4,
+	CASTER = 5,
+	SPECIAL = 6,
+	PIONEER = 9,
+	TOKEN = 7,
+	TRAP = 8
+}

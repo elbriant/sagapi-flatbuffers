@@ -1,0 +1,5 @@
+
+enum Torappu_RetroType : int32 {
+	SIDESTORY = 0,
+	BRANCHLINE = 1
+}

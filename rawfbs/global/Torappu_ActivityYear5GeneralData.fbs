@@ -1,0 +1,10 @@
+include "Torappu_ActivityYear5GeneralConstData.fbs";
+include "Torappu_ActivityYear5GeneralUnlimitedApRewardData.fbs";
+
+table Torappu_ActivityYear5GeneralData {
+	constData:Torappu_ActivityYear5GeneralConstData;
+	unlimitedApRewards:[Torappu_ActivityYear5GeneralUnlimitedApRewardData];
+}
+
+
+root_type Torappu_ActivityYear5GeneralData;

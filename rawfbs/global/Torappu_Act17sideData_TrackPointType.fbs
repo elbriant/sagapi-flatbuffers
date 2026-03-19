@@ -1,0 +1,6 @@
+
+enum Torappu_Act17sideData_TrackPointType : int32 {
+	NONE = 0,
+	MAIN = 1,
+	SUB = 2
+}

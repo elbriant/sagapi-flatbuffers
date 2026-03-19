@@ -1,0 +1,10 @@
+include "Torappu_SandboxV2EnemyRushType.fbs";
+
+table Torappu_SandboxV2EnemyRushTypeData {
+	type:Torappu_SandboxV2EnemyRushType;
+	description:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_SandboxV2EnemyRushTypeData;

@@ -1,0 +1,14 @@
+include "Torappu_BuildingData_DiySortType.fbs";
+include "Torappu_BuildingData_DiyUISortOrder.fbs";
+include "Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData.fbs";
+
+table Torappu_BuildingData_CustomData_DiyUISortTemplateListData {
+	diySortType:Torappu_BuildingData_DiySortType;
+	expandState:string;
+	defaultTemplateIndex:int32;
+	defaultTemplateOrder:Torappu_BuildingData_DiyUISortOrder;
+	templates:[Torappu_BuildingData_CustomData_DiyUISortTemplateListData_DiyUISortTemplateData];
+}
+
+
+root_type Torappu_BuildingData_CustomData_DiyUISortTemplateListData;

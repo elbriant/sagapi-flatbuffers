@@ -1,0 +1,14 @@
+include "Torappu_SpCharMissionCondType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SpCharMissionData {
+	charId:string;
+	missionId:string;
+	sortId:int32;
+	condType:Torappu_SpCharMissionCondType;
+	param:[string];
+	rewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_SpCharMissionData;

@@ -1,0 +1,13 @@
+
+table Torappu_SiracusaData_OptionInfoData {
+	optionId:string;
+	optionDesc:string;
+	optionScript:string;
+	optionGoToScript:string;
+	isLeaveOption:bool;
+	needCommentLike:bool;
+	requireCardId:string;
+}
+
+
+root_type Torappu_SiracusaData_OptionInfoData;

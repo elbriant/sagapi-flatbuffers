@@ -1,0 +1,15 @@
+include "Torappu_BuildingData_FormulaItemType.fbs";
+include "Torappu_ItemBundle.fbs";
+include "Torappu_BuildingData_ShopFormula_UnlockRoom.fbs";
+
+table Torappu_BuildingData_ShopFormula {
+	formulaId:string;
+	itemId:string;
+	formulaType:Torappu_BuildingData_FormulaItemType;
+	costPoint:int64;
+	gainItem:Torappu_ItemBundle;
+	requireRooms:[Torappu_BuildingData_ShopFormula_UnlockRoom];
+}
+
+
+root_type Torappu_BuildingData_ShopFormula;

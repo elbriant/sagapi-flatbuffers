@@ -1,0 +1,17 @@
+include "Torappu_ActArcadeData_SubModeType.fbs";
+
+table Torappu_ActArcadeData_ArcadeZoneAdditionalData {
+	zoneId:string;
+	sortId:int32;
+	zoneName:string;
+	zoneEntryPicId:string;
+	stageInfoPrefabId:string;
+	startTs:int64;
+	endTs:int64;
+	stages:[string];
+	subModeType:Torappu_ActArcadeData_SubModeType;
+	zoneDesc:string;
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeZoneAdditionalData;

@@ -1,0 +1,17 @@
+include "Torappu_ItemBundle.fbs";
+include "Torappu_HandbookUnlockParam.fbs";
+include "Torappu_HandbookAvgData.fbs";
+
+table Torappu_HandbookAvgGroupData {
+	storySetId:string;
+	storySetName:string;
+	sortId:int32;
+	storyGetTime:int64;
+	rewardItem:[Torappu_ItemBundle];
+	unlockParam:[Torappu_HandbookUnlockParam];
+	avgList:[Torappu_HandbookAvgData];
+	charId:string;
+}
+
+
+root_type Torappu_HandbookAvgGroupData;

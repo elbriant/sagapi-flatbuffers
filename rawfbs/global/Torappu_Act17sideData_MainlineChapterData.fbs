@@ -1,0 +1,12 @@
+include "Torappu_Act17sideData_ChapterIconType.fbs";
+
+table Torappu_Act17sideData_MainlineChapterData {
+	chapterId:string;
+	chapterDes:string;
+	chapterIcon:Torappu_Act17sideData_ChapterIconType;
+	unlockDes:string;
+	id:string;
+}
+
+
+root_type Torappu_Act17sideData_MainlineChapterData;

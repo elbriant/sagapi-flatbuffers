@@ -1,0 +1,14 @@
+include "Torappu_Act4funSuperChatType.fbs";
+
+table Torappu_Act4funSuperChatInfo {
+	superChatId:string;
+	chatType:Torappu_Act4funSuperChatType;
+	userName:string;
+	iconId:string;
+	valueEffectId:string;
+	performId:string;
+	superChatTxt:string;
+}
+
+
+root_type Torappu_Act4funSuperChatInfo;

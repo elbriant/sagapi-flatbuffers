@@ -1,0 +1,8 @@
+
+table Torappu_Undefinable_1_System_Single_ {
+	m_defined:bool;
+	m_value:float;
+}
+
+
+root_type Torappu_Undefinable_1_System_Single_;

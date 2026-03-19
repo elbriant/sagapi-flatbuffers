@@ -1,0 +1,37 @@
+
+enum Torappu_HotUpdateMetaPicData_PicType : int32 {
+	NONE = 0,
+	SKIN = 1
+}
+
+table Torappu_HotUpdateMetaPicData {
+	picId:string;
+	groupId:int32;
+	sortId:int32;
+	startTime:int64;
+	endTime:int64;
+	textList:[string];
+	picType:Torappu_HotUpdateMetaPicData_PicType;
+	logoId:string;
+	color:string;
+}
+
+
+
+table Torappu_HotUpdateMetaMovieData {
+	videoId:string;
+	videoPath:string;
+	endTime:int64;
+	sortId:int32;
+}
+
+
+
+table Torappu_HotUpdateMetaTable {
+	picList:[Torappu_HotUpdateMetaPicData];
+	movieInfo:Torappu_HotUpdateMetaMovieData;
+}
+
+
+
+root_type Torappu_HotUpdateMetaTable;

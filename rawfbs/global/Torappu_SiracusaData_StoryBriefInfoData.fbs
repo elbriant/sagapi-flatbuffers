@@ -1,0 +1,9 @@
+
+table Torappu_SiracusaData_StoryBriefInfoData {
+	storyId:string;
+	stageId:string;
+	storyInfo:string;
+}
+
+
+root_type Torappu_SiracusaData_StoryBriefInfoData;

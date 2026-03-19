@@ -1,0 +1,15 @@
+include "Torappu_RoguelikeSkyZoneNodeType.fbs";
+
+table Torappu_RoguelikeSkyNodeData {
+	evtType:Torappu_RoguelikeSkyZoneNodeType;
+	name:string;
+	iconId:string;
+	effId:string;
+	desc:string;
+	nameBkgClr:string;
+	selectClr:string;
+	isRepeatedly:bool;
+}
+
+
+root_type Torappu_RoguelikeSkyNodeData;

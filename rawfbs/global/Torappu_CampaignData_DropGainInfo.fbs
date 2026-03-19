@@ -1,0 +1,14 @@
+include "Torappu_CampaignData_DropLadder.fbs";
+include "Torappu_CampaignData_GainLadder.fbs";
+include "Torappu_StageData_DisplayRewards.fbs";
+include "Torappu_StageData_DisplayDetailRewards.fbs";
+
+table Torappu_CampaignData_DropGainInfo {
+	dropLadders:[Torappu_CampaignData_DropLadder];
+	gainLadders:[Torappu_CampaignData_GainLadder];
+	displayRewards:[Torappu_StageData_DisplayRewards];
+	displayDetailRewards:[Torappu_StageData_DisplayDetailRewards];
+}
+
+
+root_type Torappu_CampaignData_DropGainInfo;

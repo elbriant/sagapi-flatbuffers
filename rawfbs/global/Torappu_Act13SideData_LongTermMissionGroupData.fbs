@@ -1,0 +1,10 @@
+
+table Torappu_Act13SideData_LongTermMissionGroupData {
+	groupId:string;
+	groupName:string;
+	orgId:string;
+	missionList:[string];
+}
+
+
+root_type Torappu_Act13SideData_LongTermMissionGroupData;

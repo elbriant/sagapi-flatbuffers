@@ -1,0 +1,5 @@
+
+enum Torappu_EnemyDuelModeType : int32 {
+	OPERATION = 0,
+	STAND = 1
+}

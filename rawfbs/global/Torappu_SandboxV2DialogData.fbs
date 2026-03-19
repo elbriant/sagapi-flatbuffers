@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2DialogData {
+	dialogId:string;
+	avgId:string;
+}
+
+
+root_type Torappu_SandboxV2DialogData;

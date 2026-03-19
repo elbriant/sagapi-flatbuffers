@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikePredefinedStyleData {
+	styleId:string;
+	styleConfig:int32;
+}
+
+
+root_type Torappu_RoguelikePredefinedStyleData;

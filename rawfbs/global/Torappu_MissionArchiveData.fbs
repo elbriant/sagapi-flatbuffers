@@ -1,0 +1,13 @@
+include "Torappu_MissionArchiveNodeData.fbs";
+include "Torappu_MissionArchiveVoiceClipData.fbs";
+
+table Torappu_MissionArchiveData {
+	topicId:string;
+	zones:[string];
+	nodes:[Torappu_MissionArchiveNodeData];
+	hiddenClips:[Torappu_MissionArchiveVoiceClipData];
+	unlockDesc:string;
+}
+
+
+root_type Torappu_MissionArchiveData;

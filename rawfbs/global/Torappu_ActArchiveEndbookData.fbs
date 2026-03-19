@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_ActArchiveEndbookGroupData_.fbs";
+
+table Torappu_ActArchiveEndbookData {
+	endbook:[Dict_2_System_String_Torappu_ActArchiveEndbookGroupData_];
+}
+
+
+root_type Torappu_ActArchiveEndbookData;

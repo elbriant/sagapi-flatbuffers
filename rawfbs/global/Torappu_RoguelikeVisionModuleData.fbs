@@ -1,0 +1,12 @@
+include "Dict_2_System_Int32_Torappu_RoguelikeVisionData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_.fbs";
+include "Torappu_RoguelikeVisionModuleConsts.fbs";
+
+table Torappu_RoguelikeVisionModuleData {
+	visionDatas:[Dict_2_System_Int32_Torappu_RoguelikeVisionData_];
+	visionChoices:[Dict_2_System_String_Torappu_RoguelikeVisionModuleData_VisionChoiceConfig_];
+	moduleConsts:Torappu_RoguelikeVisionModuleConsts;
+}
+
+
+root_type Torappu_RoguelikeVisionModuleData;

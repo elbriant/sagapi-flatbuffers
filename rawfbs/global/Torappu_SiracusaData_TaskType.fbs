@@ -1,0 +1,6 @@
+
+enum Torappu_SiracusaData_TaskType : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	AVG = 2
+}

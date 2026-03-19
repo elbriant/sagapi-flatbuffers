@@ -1,0 +1,6 @@
+
+enum Torappu_DiceResultShowType : int32 {
+	RAW_TEXT = 0,
+	MUTATION = 1,
+	VIRTUE = 2
+}

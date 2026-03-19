@@ -1,0 +1,12 @@
+
+table Torappu_ActivityBossRushData_ConstData {
+	maxProvidedCharNum:int32;
+	textMilestoneItemLevelDesc:string;
+	milestonePointId:string;
+	relicUpgradeItemId:string;
+	defaultRelictList:[string];
+	rewardSkinId:string;
+}
+
+
+root_type Torappu_ActivityBossRushData_ConstData;

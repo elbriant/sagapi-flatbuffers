@@ -1,0 +1,9 @@
+include "Torappu_LevelData_BranchData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_ {
+	dict_key:string;
+	dict_value:Torappu_LevelData_BranchData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_LevelData_BranchData_;

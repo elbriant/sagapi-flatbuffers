@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2FoodVariantType : int32 {
+	NONE = 0,
+	ALPHA = 1,
+	BETA = 2,
+	GAMMA = 3
+}

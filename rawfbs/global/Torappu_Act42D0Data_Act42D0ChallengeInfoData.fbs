@@ -1,0 +1,16 @@
+include "Torappu_Act42D0Data_Act42D0ChallengeMissionData.fbs";
+
+table Torappu_Act42D0Data_Act42D0ChallengeInfoData {
+	stageId:string;
+	stageDesc:string;
+	startTs:int64;
+	endTs:int64;
+	levelId:string;
+	code:string;
+	name:string;
+	loadingPicId:string;
+	challengeMissionData:[Torappu_Act42D0Data_Act42D0ChallengeMissionData];
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0ChallengeInfoData;

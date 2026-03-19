@@ -1,0 +1,27 @@
+include "Torappu_ClimbTowerTowerType.fbs";
+include "Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData.fbs";
+
+table Torappu_ClimbTowerSingleTowerData {
+	id:string;
+	sortId:int32;
+	stageNum:int32;
+	name:string;
+	subName:string;
+	desc:string;
+	towerType:Torappu_ClimbTowerTowerType;
+	levels:[string];
+	hardLevels:[string];
+	taskInfo:[Torappu_ClimbTowerSingleTowerData_ClimbTowerTaskRewardData];
+	preTowerId:string;
+	medalId:string;
+	hiddenMedalId:string;
+	hardModeMedalId:string;
+	bossId:string;
+	cardId:string;
+	curseCardIds:[string];
+	dangerDesc:string;
+	hardModeDesc:string;
+}
+
+
+root_type Torappu_ClimbTowerSingleTowerData;

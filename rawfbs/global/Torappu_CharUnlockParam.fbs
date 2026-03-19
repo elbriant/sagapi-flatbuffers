@@ -1,0 +1,7 @@
+
+table Torappu_CharUnlockParam {
+	charId:string;
+}
+
+
+root_type Torappu_CharUnlockParam;

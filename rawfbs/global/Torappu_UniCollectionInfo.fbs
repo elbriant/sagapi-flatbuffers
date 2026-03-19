@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_UniCollectionInfo {
+	uniCollectionItemId:string;
+	uniqueItem:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_UniCollectionInfo;

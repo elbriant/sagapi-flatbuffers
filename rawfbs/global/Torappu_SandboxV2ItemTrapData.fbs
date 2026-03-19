@@ -1,0 +1,21 @@
+include "Torappu_SandboxV2TrapItemType.fbs";
+include "Torappu_SandboxV2ItemTrapTag.fbs";
+
+table Torappu_SandboxV2ItemTrapData {
+	itemId:string;
+	trapId:string;
+	trapPhase:int32;
+	trapLevel:int32;
+	skillIndex:int32;
+	skillLevel:int32;
+	buildingLevel:int32;
+	updatedItemId:string;
+	minLevelItemId:string;
+	baseItemName:string;
+	itemType:Torappu_SandboxV2TrapItemType;
+	itemTag:Torappu_SandboxV2ItemTrapTag;
+	buffId:string;
+}
+
+
+root_type Torappu_SandboxV2ItemTrapData;

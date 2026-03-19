@@ -1,0 +1,17 @@
+include "Torappu_ActArchiveEndbookItemData.fbs";
+
+table Torappu_ActArchiveEndbookGroupData {
+	endId:string;
+	endingId:string;
+	sortId:int32;
+	title:string;
+	cgId:string;
+	backBlurId:string;
+	cardId:string;
+	hasAvg:bool;
+	avgId:string;
+	clientEndbookItemDatas:[Torappu_ActArchiveEndbookItemData];
+}
+
+
+root_type Torappu_ActArchiveEndbookGroupData;

@@ -1,0 +1,23 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act25SideData_AreaMissionData {
+	id:string;
+	areaId:string;
+	preposedMissionId:string;
+	sortId:int32;
+	isZone:bool;
+	stageId:string;
+	costCount:int32;
+	transform:int32;
+	progress:int32;
+	progressPicId:string;
+	template:string;
+	templateType:int32;
+	desc:string;
+	param:[string];
+	rewards:[Torappu_ItemBundle];
+	archiveItems:[string];
+}
+
+
+root_type Torappu_Act25SideData_AreaMissionData;

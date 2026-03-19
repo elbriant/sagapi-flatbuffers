@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_RoomType.fbs";
+
+table Torappu_ItemData_BuildingProductInfo {
+	roomType:Torappu_BuildingData_RoomType;
+	formulaId:string;
+}
+
+
+root_type Torappu_ItemData_BuildingProductInfo;

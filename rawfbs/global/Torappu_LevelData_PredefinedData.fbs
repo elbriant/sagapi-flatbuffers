@@ -1,0 +1,13 @@
+include "Torappu_LevelData_PredefinedData_PredefinedCharacter.fbs";
+include "Torappu_LevelData_PredefinedData_PredefinedCard.fbs";
+include "Torappu_LevelData_PredefinedData_PredefinedTokenCard.fbs";
+
+table Torappu_LevelData_PredefinedData {
+	characterInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter];
+	tokenInsts:[Torappu_LevelData_PredefinedData_PredefinedCharacter];
+	characterCards:[Torappu_LevelData_PredefinedData_PredefinedCard];
+	tokenCards:[Torappu_LevelData_PredefinedData_PredefinedTokenCard];
+}
+
+
+root_type Torappu_LevelData_PredefinedData;

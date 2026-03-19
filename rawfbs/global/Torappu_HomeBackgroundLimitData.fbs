@@ -1,0 +1,9 @@
+include "Torappu_HomeBackgroundLimitInfoData.fbs";
+
+table Torappu_HomeBackgroundLimitData {
+	bgId:string;
+	limitInfos:[Torappu_HomeBackgroundLimitInfoData];
+}
+
+
+root_type Torappu_HomeBackgroundLimitData;

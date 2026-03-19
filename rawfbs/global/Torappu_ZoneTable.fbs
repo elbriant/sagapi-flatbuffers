@@ -1,0 +1,21 @@
+include "Dict_2_System_String_Torappu_ZoneData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_.fbs";
+include "Dict_2_System_String_Torappu_ZoneValidInfo_.fbs";
+include "Dict_2_System_String_Torappu_MainlineZoneData_.fbs";
+include "Dict_2_System_String_Torappu_ZoneRecordGroupData_.fbs";
+include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Torappu_ZoneMetaData.fbs";
+
+table Torappu_ZoneTable {
+	zones:[Dict_2_System_String_Torappu_ZoneData_];
+	weeklyAdditionInfo:[Torappu_ListDict_2_System_String_Torappu_WeeklyZoneData_];
+	zoneValidInfo:[Dict_2_System_String_Torappu_ZoneValidInfo_];
+	mainlineAdditionInfo:[Dict_2_System_String_Torappu_MainlineZoneData_];
+	zoneRecordGroupedData:[Dict_2_System_String_Torappu_ZoneRecordGroupData_];
+	zoneRecordRewardData:[Dict_2_System_String_List_1_System_String__];
+	mainlineZoneIdList:[string];
+	zoneMetaData:Torappu_ZoneMetaData;
+}
+
+
+root_type Torappu_ZoneTable;

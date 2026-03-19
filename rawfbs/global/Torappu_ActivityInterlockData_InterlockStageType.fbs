@@ -1,0 +1,7 @@
+
+enum Torappu_ActivityInterlockData_InterlockStageType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	INTERLOCK = 2,
+	FINAL = 3
+}

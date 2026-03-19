@@ -1,0 +1,11 @@
+include "Torappu_Act44SideData_InsightType.fbs";
+
+table Torappu_Act44SideData_Act44SideInsightData {
+	type:Torappu_Act44SideData_InsightType;
+	lowerDesc:string;
+	recommendDesc:string;
+	maxDesc:string;
+}
+
+
+root_type Torappu_Act44SideData_Act44SideInsightData;

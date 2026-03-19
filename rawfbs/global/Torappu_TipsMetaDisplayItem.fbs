@@ -1,0 +1,16 @@
+include "Torappu_CommonAvailCheck.fbs";
+include "Torappu_TipData.fbs";
+
+table Torappu_TipsMetaDisplayItem {
+	tipsId:string;
+	loadingPic:string;
+	availCheck:Torappu_CommonAvailCheck;
+	relateActId:string;
+	isAllStageActive:bool;
+	stageIdList:[string];
+	zoneIdList:[string];
+	tips:[Torappu_TipData];
+}
+
+
+root_type Torappu_TipsMetaDisplayItem;

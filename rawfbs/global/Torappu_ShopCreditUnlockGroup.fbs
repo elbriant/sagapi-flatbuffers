@@ -1,0 +1,11 @@
+include "Torappu_ShopCreditUnlockItem.fbs";
+
+table Torappu_ShopCreditUnlockGroup {
+	id:string;
+	index:string;
+	startDateTime:int64;
+	charDict:[Torappu_ShopCreditUnlockItem];
+}
+
+
+root_type Torappu_ShopCreditUnlockGroup;

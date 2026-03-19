@@ -1,0 +1,18 @@
+include "Torappu_Act5FunData_BattleData.fbs";
+include "Torappu_Act5funBasicConst.fbs";
+include "Dict_2_System_String_Torappu_Act5FunBasicNpcData_.fbs";
+include "Torappu_Act5FunSettleRatingData.fbs";
+include "Torappu_Act5FunSettleStreakData.fbs";
+include "Torappu_Act5FunSettleSuccessData.fbs";
+
+table Torappu_Act5FunData {
+	battleData:Torappu_Act5FunData_BattleData;
+	constData:Torappu_Act5funBasicConst;
+	npcData:[Dict_2_System_String_Torappu_Act5FunBasicNpcData_];
+	ratingData:[Torappu_Act5FunSettleRatingData];
+	streakData:[Torappu_Act5FunSettleStreakData];
+	successData:[Torappu_Act5FunSettleSuccessData];
+}
+
+
+root_type Torappu_Act5FunData;

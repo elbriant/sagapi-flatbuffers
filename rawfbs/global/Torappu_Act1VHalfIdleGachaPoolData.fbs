@@ -1,0 +1,15 @@
+include "Torappu_Act1VHalfIdleGachaPoolType.fbs";
+include "Torappu_Act1VHalfIdleGachaPoolData_ConsumeData.fbs";
+
+table Torappu_Act1VHalfIdleGachaPoolData {
+	poolId:string;
+	itemId:string;
+	poolType:Torappu_Act1VHalfIdleGachaPoolType;
+	sortId:int32;
+	name:string;
+	charData:[string];
+	consumeData:[Torappu_Act1VHalfIdleGachaPoolData_ConsumeData];
+}
+
+
+root_type Torappu_Act1VHalfIdleGachaPoolData;

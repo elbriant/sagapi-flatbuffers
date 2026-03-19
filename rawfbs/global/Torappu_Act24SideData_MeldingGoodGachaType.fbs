@@ -1,0 +1,6 @@
+
+enum Torappu_Act24SideData_MeldingGoodGachaType : int32 {
+	NONE = 0,
+	LIMITED = 1,
+	UNLIMITED = 2
+}

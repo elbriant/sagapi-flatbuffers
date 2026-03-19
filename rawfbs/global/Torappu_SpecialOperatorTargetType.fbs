@@ -1,0 +1,5 @@
+
+enum Torappu_SpecialOperatorTargetType : int32 {
+	NONE = 0,
+	ROGUE = 1
+}

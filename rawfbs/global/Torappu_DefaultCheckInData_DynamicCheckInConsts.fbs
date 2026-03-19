@@ -1,0 +1,10 @@
+
+table Torappu_DefaultCheckInData_DynamicCheckInConsts {
+	firstQuestionDesc:string;
+	firstQuestionTipsDesc:string;
+	expirationDesc:string;
+	firstQuestionConfirmDesc:string;
+}
+
+
+root_type Torappu_DefaultCheckInData_DynamicCheckInConsts;

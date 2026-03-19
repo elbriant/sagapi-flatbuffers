@@ -1,0 +1,9 @@
+
+table Torappu_NameCardV2TimeLimitInfo {
+	id:string;
+	availStartTime:int64;
+	availEndTime:int64;
+}
+
+
+root_type Torappu_NameCardV2TimeLimitInfo;

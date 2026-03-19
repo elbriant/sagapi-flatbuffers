@@ -1,0 +1,13 @@
+
+table Torappu_SpecialOperatorConstData {
+	weeklyTaskBoardUnlock:string;
+	taskPinOnToast:string;
+	noFrontNodeToast:string;
+	noFrontTaskToast:string;
+	skillGotoToast:string;
+	evolveTabExpNotice:string;
+	pinnedSpecialOperator:string;
+}
+
+
+root_type Torappu_SpecialOperatorConstData;

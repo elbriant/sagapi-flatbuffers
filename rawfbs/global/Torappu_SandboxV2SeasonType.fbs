@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2SeasonType : int32 {
+	NONE = 0,
+	DRY = 1,
+	RAINY = 2,
+	CHALLENGE = 3
+}

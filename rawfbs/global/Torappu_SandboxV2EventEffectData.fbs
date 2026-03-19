@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2EventEffectData {
+	eventEffectId:string;
+	buffId:string;
+	duration:int32;
+	desc:string;
+}
+
+
+root_type Torappu_SandboxV2EventEffectData;

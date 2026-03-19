@@ -1,0 +1,11 @@
+
+table Torappu_Act44SideData_Act44SideNewsData {
+	id:string;
+	title:string;
+	desc1:string;
+	desc2:string;
+	imgId:string;
+}
+
+
+root_type Torappu_Act44SideData_Act44SideNewsData;

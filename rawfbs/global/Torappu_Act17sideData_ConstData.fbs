@@ -1,0 +1,7 @@
+
+table Torappu_Act17sideData_ConstData {
+	techTreeUnlockEventId:string;
+}
+
+
+root_type Torappu_Act17sideData_ConstData;

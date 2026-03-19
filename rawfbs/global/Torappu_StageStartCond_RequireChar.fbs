@@ -1,0 +1,9 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_StageStartCond_RequireChar {
+	charId:string;
+	evolvePhase:Torappu_EvolvePhase;
+}
+
+
+root_type Torappu_StageStartCond_RequireChar;

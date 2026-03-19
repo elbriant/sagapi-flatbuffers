@@ -1,0 +1,9 @@
+
+enum Torappu_PlayerAvatarGroupType : int32 {
+	NONE = 0,
+	ASSISTANT = 1,
+	DEFAULT = 2,
+	SPECIAL = 3,
+	ACTIVITY = 4,
+	DYNAMIC = 5
+}

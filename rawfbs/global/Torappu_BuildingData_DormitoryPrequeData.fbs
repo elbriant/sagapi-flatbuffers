@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_RoomType.fbs";
+
+table Torappu_BuildingData_DormitoryPrequeData {
+	roomType:Torappu_BuildingData_RoomType;
+	name:string;
+}
+
+
+root_type Torappu_BuildingData_DormitoryPrequeData;

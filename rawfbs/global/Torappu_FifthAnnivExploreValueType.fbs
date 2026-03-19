@@ -1,0 +1,6 @@
+
+enum Torappu_FifthAnnivExploreValueType : int32 {
+	TEAMVALUE_1 = 0,
+	TEAMVALUE_2 = 1,
+	TEAMVALUE_3 = 2
+}

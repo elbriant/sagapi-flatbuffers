@@ -1,0 +1,19 @@
+include "Torappu_HandbookUnlockParam.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_HandbookStoryStageData {
+	charId:string;
+	stageId:string;
+	levelId:string;
+	zoneId:string;
+	code:string;
+	name:string;
+	loadingPicId:string;
+	description:string;
+	unlockParam:[Torappu_HandbookUnlockParam];
+	rewardItem:[Torappu_ItemBundle];
+	stageGetTime:int64;
+}
+
+
+root_type Torappu_HandbookStoryStageData;

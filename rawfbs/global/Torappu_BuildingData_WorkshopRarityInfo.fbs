@@ -1,0 +1,11 @@
+include "Torappu_ItemRarity.fbs";
+
+table Torappu_BuildingData_WorkshopRarityInfo {
+	name:string;
+	order:int32;
+	rarityList:[Torappu_ItemRarity];
+	color:string;
+}
+
+
+root_type Torappu_BuildingData_WorkshopRarityInfo;

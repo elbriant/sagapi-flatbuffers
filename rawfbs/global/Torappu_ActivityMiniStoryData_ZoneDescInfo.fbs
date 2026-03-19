@@ -1,0 +1,8 @@
+
+table Torappu_ActivityMiniStoryData_ZoneDescInfo {
+	zoneId:string;
+	unlockText:string;
+}
+
+
+root_type Torappu_ActivityMiniStoryData_ZoneDescInfo;

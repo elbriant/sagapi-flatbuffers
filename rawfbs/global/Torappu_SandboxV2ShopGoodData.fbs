@@ -1,0 +1,12 @@
+include "Torappu_SandboxV2CoinType.fbs";
+
+table Torappu_SandboxV2ShopGoodData {
+	goodId:string;
+	itemId:string;
+	count:int32;
+	coinType:Torappu_SandboxV2CoinType;
+	value:int32;
+}
+
+
+root_type Torappu_SandboxV2ShopGoodData;

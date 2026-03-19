@@ -1,0 +1,8 @@
+
+enum Torappu_Act25SideData_Act25sideTechType : int32 {
+	TECH_1 = 0,
+	TECH_2 = 1,
+	TECH_3 = 2,
+	TECH_4 = 3,
+	TECH_NUM = 4
+}

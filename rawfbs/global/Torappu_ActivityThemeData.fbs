@@ -1,0 +1,18 @@
+include "Torappu_ActivityThemeType.fbs";
+include "Torappu_ActivityThemeData_TimeNode.fbs";
+include "Torappu_ActivityThemeData_PicGroup.fbs";
+
+table Torappu_ActivityThemeData {
+	id:string;
+	type:Torappu_ActivityThemeType;
+	funcId:string;
+	endTs:int64;
+	sortId:int32;
+	itemId:string;
+	timeNodes:[Torappu_ActivityThemeData_TimeNode];
+	picGroups:[Torappu_ActivityThemeData_PicGroup];
+	startTs:int64;
+}
+
+
+root_type Torappu_ActivityThemeData;

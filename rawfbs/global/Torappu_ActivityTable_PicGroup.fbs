@@ -1,0 +1,10 @@
+include "Torappu_CommonAvailCheck.fbs";
+
+table Torappu_ActivityTable_PicGroup {
+	sortIndex:int32;
+	picId:string;
+	availCheck:Torappu_CommonAvailCheck;
+}
+
+
+root_type Torappu_ActivityTable_PicGroup;

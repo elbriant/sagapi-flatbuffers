@@ -1,0 +1,13 @@
+include "Torappu_Act1VHalfIdlePlotType.fbs";
+include "Torappu_HalfIdleTrapBuildableType.fbs";
+
+table Torappu_Act1VHalfIdleTrapMeta {
+	trapType:Torappu_Act1VHalfIdlePlotType;
+	buildType:Torappu_HalfIdleTrapBuildableType;
+	skillIndex:int32;
+	dropWeight:float;
+	defaultPlotId:string;
+}
+
+
+root_type Torappu_Act1VHalfIdleTrapMeta;

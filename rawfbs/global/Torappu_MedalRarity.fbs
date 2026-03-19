@@ -1,0 +1,9 @@
+
+enum Torappu_MedalRarity : int32 {
+	T1 = 0,
+	T1D5 = 1,
+	T2 = 2,
+	T2D5 = 3,
+	T3 = 4,
+	T3D5 = 5
+}

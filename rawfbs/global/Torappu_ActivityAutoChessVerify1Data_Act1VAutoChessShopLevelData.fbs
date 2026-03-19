@@ -1,0 +1,11 @@
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData {
+	shopLevel:int32;
+	initialUpgradePrice:int32;
+	chessCount:int32;
+	itemCount:int32;
+	baseShieldValue:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData;

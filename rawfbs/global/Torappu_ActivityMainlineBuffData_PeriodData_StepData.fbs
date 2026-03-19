@@ -1,0 +1,11 @@
+
+table Torappu_ActivityMainlineBuffData_PeriodData_StepData {
+	isBlock:bool;
+	favorUpDesc:string;
+	unlockDesc:string;
+	bindStageId:string;
+	blockDesc:string;
+}
+
+
+root_type Torappu_ActivityMainlineBuffData_PeriodData_StepData;

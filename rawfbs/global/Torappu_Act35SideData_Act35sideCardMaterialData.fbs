@@ -1,0 +1,8 @@
+
+table Torappu_Act35SideData_Act35sideCardMaterialData {
+	materialId:string;
+	count:int32;
+}
+
+
+root_type Torappu_Act35SideData_Act35sideCardMaterialData;

@@ -1,0 +1,7 @@
+
+enum Torappu_Act24SideData_MissionType : int32 {
+	NONE = 0,
+	HUNTING_TASK = 1,
+	COLLECTION_TASK = 2,
+	EXPLORATION_TASK = 3
+}

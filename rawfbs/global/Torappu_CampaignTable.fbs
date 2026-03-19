@@ -1,0 +1,26 @@
+include "Dict_2_System_String_Torappu_CampaignData_.fbs";
+include "Dict_2_System_String_Torappu_CampaignGroupData_.fbs";
+include "Dict_2_System_String_Torappu_CampaignRegionData_.fbs";
+include "Dict_2_System_String_Torappu_CampaignZoneData_.fbs";
+include "Dict_2_System_String_Torappu_CampaignMissionData_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
+include "Torappu_CampaignConstTable.fbs";
+include "Torappu_CampaignRotateOpenTimeData.fbs";
+include "Torappu_CampaignTrainingOpenTimeData.fbs";
+include "Torappu_CampaignTrainingAllOpenTimeData.fbs";
+
+table Torappu_CampaignTable {
+	campaigns:[Dict_2_System_String_Torappu_CampaignData_];
+	campaignGroups:[Dict_2_System_String_Torappu_CampaignGroupData_];
+	campaignRegions:[Dict_2_System_String_Torappu_CampaignRegionData_];
+	campaignZones:[Dict_2_System_String_Torappu_CampaignZoneData_];
+	campaignMissions:[Dict_2_System_String_Torappu_CampaignMissionData_];
+	stageIndexInZoneMap:[Dict_2_System_String_System_Int32_];
+	campaignConstTable:Torappu_CampaignConstTable;
+	campaignRotateStageOpenTimes:[Torappu_CampaignRotateOpenTimeData];
+	campaignTrainingStageOpenTimes:[Torappu_CampaignTrainingOpenTimeData];
+	campaignTrainingAllOpenTimes:[Torappu_CampaignTrainingAllOpenTimeData];
+}
+
+
+root_type Torappu_CampaignTable;

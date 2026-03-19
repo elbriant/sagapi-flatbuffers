@@ -1,0 +1,8 @@
+
+enum Torappu_TemplateMissionBigRewardType : int32 {
+	NONE = 0,
+	ILLUST_CHAR_REWARD = 1,
+	CUSTOM = 2,
+	PIC_REWARD = 3,
+	SKIN_REWARD = 4
+}

@@ -1,0 +1,13 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_DefaultCheckInData_ExtraCheckinDailyInfo {
+	order:int32;
+	blessing:string;
+	absolutData:int64;
+	adTip:string;
+	relativeData:int32;
+	itemList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_DefaultCheckInData_ExtraCheckinDailyInfo;

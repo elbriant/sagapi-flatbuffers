@@ -1,0 +1,10 @@
+
+table Torappu_ActArchiveResData_ChallengeBookArchiveResItemData {
+	storyId:string;
+	titleName:string;
+	storyName:string;
+	textId:string;
+}
+
+
+root_type Torappu_ActArchiveResData_ChallengeBookArchiveResItemData;

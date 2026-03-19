@@ -1,0 +1,12 @@
+include "Dict_2_Torappu_RoguelikeTotemColorType_System_String_.fbs";
+
+table Torappu_RoguelikeTotemModuleConsts {
+	totemPredictDescription:string;
+	colorCombineDesc:[Dict_2_Torappu_RoguelikeTotemColorType_System_String_];
+	bossCombineDesc:string;
+	battleNoPredictDescription:string;
+	shopNoGoodsDescription:string;
+}
+
+
+root_type Torappu_RoguelikeTotemModuleConsts;

@@ -1,0 +1,14 @@
+
+enum Torappu_GachaRuleType : int32 {
+	NORMAL = 0,
+	LIMITED = 1,
+	LINKAGE = 2,
+	ATTAIN = 3,
+	CLASSIC = 4,
+	SINGLE = 5,
+	FESCLASSIC = 6,
+	CLASSIC_ATTAIN = 7,
+	SPECIAL = 8,
+	DOUBLE = 9,
+	CLASSIC_DOUBLE = 10
+}

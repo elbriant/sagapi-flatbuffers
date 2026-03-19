@@ -1,0 +1,7 @@
+
+table Torappu_RoguelikeCandleModuleConsts {
+	candleHolderBuffId:string;
+}
+
+
+root_type Torappu_RoguelikeCandleModuleConsts;

@@ -1,0 +1,13 @@
+
+table Torappu_Act42SideData_Act42SideTrustorData {
+	trustorId:string;
+	sortId:int32;
+	trustorName:string;
+	trustorIconSmall:string;
+	trustorIconLarge:string;
+	gunId:string;
+	taskList:[string];
+}
+
+
+root_type Torappu_Act42SideData_Act42SideTrustorData;

@@ -1,0 +1,5 @@
+
+enum Torappu_HandbookDisplayCondition_DisplayType : int32 {
+	DISPLAY_IF_CHAREXIST = 0,
+	INVISIBLE_IF_CHAREXIST = 1
+}

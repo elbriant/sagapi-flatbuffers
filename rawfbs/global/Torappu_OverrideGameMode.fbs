@@ -1,0 +1,5 @@
+
+enum Torappu_OverrideGameMode : int32 {
+	NONE = 0,
+	ACT27SIDE = 1
+}

@@ -1,0 +1,6 @@
+
+enum Torappu_Act17sideData_ChapterIconType : int32 {
+	NORMAL = 0,
+	EX = 1,
+	HARD = 2
+}

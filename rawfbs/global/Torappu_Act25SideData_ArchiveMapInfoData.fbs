@@ -1,0 +1,14 @@
+include "Torappu_Act25SideData_Act25SideArchiveItemType.fbs";
+
+table Torappu_Act25SideData_ArchiveMapInfoData {
+	objectId:string;
+	type:Torappu_Act25SideData_Act25SideArchiveItemType;
+	numberId:string;
+	areaId:string;
+	sortId:int32;
+	position:int32;
+	hasDot:bool;
+}
+
+
+root_type Torappu_Act25SideData_ArchiveMapInfoData;

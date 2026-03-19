@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2ConfirmIconType.fbs";
+
+table Torappu_SandboxV2ConfirmIconData {
+	iconType:Torappu_SandboxV2ConfirmIconType;
+	iconPicId:string;
+}
+
+
+root_type Torappu_SandboxV2ConfirmIconData;

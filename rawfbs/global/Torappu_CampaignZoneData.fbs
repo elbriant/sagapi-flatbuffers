@@ -1,0 +1,10 @@
+
+table Torappu_CampaignZoneData {
+	id:string;
+	name:string;
+	regionId:string;
+	templateId:string;
+}
+
+
+root_type Torappu_CampaignZoneData;

@@ -1,0 +1,9 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_RuneTable_RuneStageExtraData {
+	stageId:string;
+	runes:[Torappu_RuneTable_PackedRuneData];
+}
+
+
+root_type Torappu_RuneTable_RuneStageExtraData;

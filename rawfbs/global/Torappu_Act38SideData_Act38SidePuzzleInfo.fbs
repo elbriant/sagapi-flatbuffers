@@ -1,0 +1,9 @@
+
+table Torappu_Act38SideData_Act38SidePuzzleInfo {
+	puzzleId:string;
+	startTime:int64;
+	puzzleGroupId:string;
+}
+
+
+root_type Torappu_Act38SideData_Act38SidePuzzleInfo;

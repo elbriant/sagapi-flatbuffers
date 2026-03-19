@@ -1,0 +1,16 @@
+include "Torappu_SixStarMilestoneRewardType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SixStarMilestoneItemData {
+	id:string;
+	sortId:int32;
+	nodePoint:int32;
+	rewardType:Torappu_SixStarMilestoneRewardType;
+	unlockStageFog:string;
+	unlockStageId:string;
+	unlockStageName:string;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_SixStarMilestoneItemData;

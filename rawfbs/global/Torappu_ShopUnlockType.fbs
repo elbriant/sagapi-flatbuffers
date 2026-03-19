@@ -1,0 +1,7 @@
+
+enum Torappu_ShopUnlockType : int32 {
+	ALWAYS_UNLOCK = 0,
+	SKIN_UNLOCK = 1,
+	FURN_UNLOCK = 2,
+	BOTH_SKIN_FURN = 3
+}

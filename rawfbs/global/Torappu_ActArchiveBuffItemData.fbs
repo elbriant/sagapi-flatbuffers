@@ -1,0 +1,14 @@
+
+table Torappu_ActArchiveBuffItemData {
+	buffId:string;
+	buffGroupIndex:int32;
+	innerSortId:int32;
+	name:string;
+	iconId:string;
+	usage:string;
+	desc:string;
+	color:string;
+}
+
+
+root_type Torappu_ActArchiveBuffItemData;

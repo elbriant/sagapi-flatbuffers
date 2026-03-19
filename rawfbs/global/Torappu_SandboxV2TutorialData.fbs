@@ -1,0 +1,16 @@
+include "Dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2QuestData_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2GuideQuestData_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2QuestLineData_.fbs";
+include "Torappu_SandboxV2TutorialBasicConst.fbs";
+
+table Torappu_SandboxV2TutorialData {
+	charRepoData:[Dict_2_System_Int32_Torappu_SandboxV2TutorialRepoCharData_];
+	questData:[Dict_2_System_String_Torappu_SandboxV2QuestData_];
+	guideQuestData:[Dict_2_System_String_Torappu_SandboxV2GuideQuestData_];
+	questLineData:[Dict_2_System_String_Torappu_SandboxV2QuestLineData_];
+	basicConst:Torappu_SandboxV2TutorialBasicConst;
+}
+
+
+root_type Torappu_SandboxV2TutorialData;

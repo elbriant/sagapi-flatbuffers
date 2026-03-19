@@ -1,0 +1,18 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_ProfessionID.fbs";
+
+table Torappu_SandboxV2ExpeditionData {
+	expeditionId:string;
+	desc:string;
+	effectDesc:string;
+	costAction:int32;
+	costDrink:int32;
+	charCnt:int32;
+	profession:Torappu_ProfessionCategory;
+	professions:[Torappu_ProfessionID];
+	minEliteRank:int32;
+	duration:int32;
+}
+
+
+root_type Torappu_SandboxV2ExpeditionData;

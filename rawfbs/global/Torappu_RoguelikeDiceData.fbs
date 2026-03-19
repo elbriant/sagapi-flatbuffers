@@ -1,0 +1,12 @@
+
+table Torappu_RoguelikeDiceData {
+	diceId:string;
+	description:string;
+	isUpgradeDice:int32;
+	upgradeDiceId:string;
+	diceFaceCount:int32;
+	battleDiceId:string;
+}
+
+
+root_type Torappu_RoguelikeDiceData;

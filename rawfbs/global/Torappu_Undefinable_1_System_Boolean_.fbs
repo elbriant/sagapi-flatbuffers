@@ -1,0 +1,8 @@
+
+table Torappu_Undefinable_1_System_Boolean_ {
+	m_defined:bool;
+	m_value:bool;
+}
+
+
+root_type Torappu_Undefinable_1_System_Boolean_;

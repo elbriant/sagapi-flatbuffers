@@ -1,0 +1,5 @@
+
+enum Torappu_UniEquipType : int32 {
+	INITIAL = 0,
+	ADVANCED = 1
+}

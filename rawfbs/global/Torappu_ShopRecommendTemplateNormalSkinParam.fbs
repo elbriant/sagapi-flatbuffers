@@ -1,0 +1,14 @@
+
+table Torappu_ShopRecommendTemplateNormalSkinParam {
+	showStartTs:int64;
+	showEndTs:int64;
+	skinIds:[string];
+	skinGroupName:string;
+	brandIconId:string;
+	colorBack:string;
+	colorText:string;
+	text:string;
+}
+
+
+root_type Torappu_ShopRecommendTemplateNormalSkinParam;

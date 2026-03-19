@@ -1,0 +1,19 @@
+include "Torappu_MissionDisplayRewards.fbs";
+
+table Torappu_Act13SideData_DailyMissionData {
+	id:string;
+	sortId:int32;
+	description:string;
+	missionName:string;
+	template:string;
+	templateType:string;
+	param:[string];
+	rewards:[Torappu_MissionDisplayRewards];
+	orgPool:[string];
+	rewardPool:[string];
+	jumpStageId:string;
+	agendaCount:int32;
+}
+
+
+root_type Torappu_Act13SideData_DailyMissionData;
