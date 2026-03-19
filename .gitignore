@@ -4,7 +4,8 @@
 rawfbs
 fbs
 digest.txt
-sagapi-dumps
-fbs_branch_test
+sagapi-dumps/
+fbs_branch
 dnfbdump-sagapi/bin
 dnfbdump-sagapi/obj
+dnfbdump-sagapi/output

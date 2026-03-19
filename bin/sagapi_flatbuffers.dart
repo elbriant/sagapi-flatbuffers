@@ -20,8 +20,8 @@ ArgParser buildParser() {
     ..addFlag('verbose', abbr: 'v', negatable: false, help: 'Show additional command output.')
     ..addFlag('version', negatable: false, help: 'Print the tool version.')
     ..addOption('server', allowed: ['all', 'global', 'cn', 'tw'], defaultsTo: 'global')
-    ..addOption('dumps-path', mandatory: true)
-    ..addOption('out-path', mandatory: true);
+    ..addOption('dumps-path', defaultsTo: './sagapi-dumps/DummyDlls')
+    ..addOption('out-path', defaultsTo: './fbs_branch');
 }
 
 void printUsage(ArgParser argParser) {

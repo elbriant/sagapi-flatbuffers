@@ -10,7 +10,7 @@ final Map<String, String> tableMapping = {
   'Torappu_SkillDataBundle': 'skill_table',
   'Torappu_SkinTable': 'skin_table',
   'Torappu_GachaData': 'gacha_table',
-  'Torappu_ItemData': 'item_table',
+  'Torappu_InventoryData': 'item_table',
   'Torappu_EnemyDatabase': 'enemy_database',
   'Torappu_EnemyHandBookDataGroup': 'enemy_handbook_table',
   'Torappu_GameDataConsts': 'gamedata_const',
@@ -36,7 +36,7 @@ final Map<String, String> tableMapping = {
   'Torappu_HotUpdateMetaTable': 'hotupdate_meta_table',
   'Torappu_Battle_Legion_LegionModeBuffData': 'legion_mode_buff_table',
   'Torappu_Battle_LevelScriptDataMap': 'level_script_table',
-  'Torappu_MedalGroupData': 'medal_table',
+  'Torappu_MedalData': 'medal_table',
   'Torappu_MetaUIDisplayTable': 'meta_ui_table',
   'Torappu_MissionTable': 'mission_table',
   'Torappu_OpenServerData': 'open_server_table',
@@ -48,8 +48,6 @@ final Map<String, String> tableMapping = {
   'Torappu_StoryReviewGroupClientData': 'story_review_table',
   'Torappu_StoryData': 'story_table',
   'Torappu_TipTable': 'tip_table',
-  'Torappu_TokenData': 'token_table',
-  'Torappu_UniEquipTable': 'uniequip_table',
   'Torappu_ClimbTowerTable': 'climb_tower_table',
   'Torappu_Battle_Cooperate_CooperateModeBattleData': 'cooperate_battle_table',
   'Torappu_CrisisClientData': 'crisis_table',
@@ -57,10 +55,24 @@ final Map<String, String> tableMapping = {
   'Torappu_RetroStageTable': 'retro_table',
   'Torappu_RoguelikeTopicTable': 'roguelike_topic_table',
   'Torappu_SandboxPermTable': 'sandbox_perm_table',
-  'Torappu_SandboxV2Data': 'sandbox_table',
+  'Torappu_SandboxV2Data': 'sandbox_table', // ?
   'Torappu_LevelData': 'prts___levels',
-  'Torappu_LanguageData': 'init_text',
-  'Torappu_MainText': 'main_text',
+  'Torappu_OpenServerSchedule': 'open_server_table',
+  'Torappu_UniEquipTable': 'uniequip_table',
+};
+
+// Dict wrapper tables.
+final Set<String> _wrappedTables = {
+  'chapter_table',
+  'char_master_table',
+  'character_table',
+  'handbook_team_table',
+  'skill_table',
+  'story_review_table',
+  'story_table',
+  'extra_battlelog_table',
+  'battle_equip_table',
+  'replicate_table',
 };
 
 /// Bundles modular raw FBS files into single monolithic schemas.
@@ -95,7 +107,7 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
               }
             }
           } else if (line.startsWith('root_type')) {
-            continue;
+            continue; // Ignore internal roots
           } else {
             if (line.contains('k__BackingField')) {
               line = line.replaceAll('<', '').replaceAll('>k__BackingField', '');
@@ -106,9 +118,23 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
       }
 
       processFile(rootFile);
-
       bundledLines.add('');
-      bundledLines.add('root_type $rootClass;');
+
+      // SimpleKVTable wrapper
+      if (_wrappedTables.contains(finalName)) {
+        bundledLines.add('table dict__string__$rootClass {');
+        bundledLines.add('  dict_key: string(key);');
+        bundledLines.add('  dict_value: $rootClass;');
+        bundledLines.add('}');
+        bundledLines.add('');
+        bundledLines.add('table Torappu_SimpleKVTable_$rootClass {');
+        bundledLines.add('  dict_array: [dict__string__$rootClass];');
+        bundledLines.add('}');
+        bundledLines.add('');
+        bundledLines.add('root_type Torappu_SimpleKVTable_$rootClass;');
+      } else {
+        bundledLines.add('root_type $rootClass;');
+      }
 
       File finalFile = File(p.join(outputDir.path, '$finalName.fbs'));
       finalFile.writeAsStringSync(bundledLines.join('\n'));

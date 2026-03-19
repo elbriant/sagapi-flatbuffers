@@ -1,29 +1,42 @@
-using System.Text;
+﻿using System.Text;
 using dnlib.DotNet;
 
-namespace DNFBDmp {
-	public class FlatbufferDefinition {
+namespace DNFBDmp
+{
+	public class FlatbufferDefinition
+	{
+		// Name of class sanitized, used as filename
 		public string name;
+		// Signature associated with this Flatbuffer
 		public TypeSig type;
+		// A list of dependencies
 		public HashSet<FlatbufferDefinition> dependencies;
+		// Is it already done ? (either processed or we are currently doing it)
 		public bool isDone;
+		// Should this be referenced as a array ? (for dicts & arrays)
 		public bool isArray;
+		// Is this a root type ? (for classes, not for enums)
 		public bool isRootType;
+
+		// Data within the file definition
 		public string? data;
 
 		public static Dictionary<string, FlatbufferDefinition> convTypes = new Dictionary<string, FlatbufferDefinition>();
 		public static HashSet<string> names = new HashSet<string>();
 
-		public static FlatbufferDefinition convert(TypeSig type, TypeResolver resolver) {
+		public static FlatbufferDefinition convert(TypeSig type, TypeResolver resolver)
+		{
 			type = type.RemovePinnedAndModifiers();
 			string fullName = type.FullName;
 			string name = Utils.cleanupClassName(fullName);
 			FlatbufferDefinition? fbDef;
-			
-			if (convTypes.TryGetValue(fullName, out fbDef)) {
+			if (convTypes.TryGetValue(fullName, out fbDef))
+			{
 				if (fbDef.name != name)
 					throw new Exception("Mismatched name for same typedef ??");
-			} else {
+			}
+			else
+			{
 				fbDef = new FlatbufferDefinition(name, type);
 			}
 
@@ -33,9 +46,11 @@ namespace DNFBDmp {
 			return fbDef;
 		}
 
-		private FlatbufferDefinition(string name, TypeSig type) {
+		private FlatbufferDefinition(string name, TypeSig type)
+		{
 			this.name = name;
 			this.type = type;
+
 			this.dependencies = new HashSet<FlatbufferDefinition>();
 			this.data = null;
 			this.isDone = false;
@@ -49,215 +64,577 @@ namespace DNFBDmp {
 			convTypes.Add(type.FullName, this);
 		}
 
-		public string? getType() {
-			if (!this.isDone) return null;
-			if (this.isArray) return $"[{this.name}]";
+		public string? getType()
+		{
+			if (!this.isDone)
+				return null;
+			if (this.isArray)
+				return $"[{this.name}]";
 			return this.name;
 		}
 
-		public string getFile() { return this.name + ".fbs"; }
+		public string getFile()
+		{
+			return this.name + ".fbs";
+		}
 
-		public bool writeToFile(string? path = null) {
-			if (!this.isDone || this.data == null) return false;
+		public bool writeToFile(string? path = null)
+		{
+			if (!this.isDone || this.data == null)
+				return false;
+
 			string outFile = getFile();
-			if (path != null) outFile = Path.Combine(path, outFile);
+			if (path != null)
+				outFile = Path.Combine(path, outFile);
+
 			File.WriteAllText(outFile, this.data);
+
 			return true;
 		}
 
-		private static string? getPrimitiveType(IType type) {
-			switch (type.FullName) {
+		private static string? getPrimitiveType(IType type)
+		{
+			switch (type.FullName)
+			{
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredString": return "string";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredBool": return "bool";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong": return "int64";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat": return "float";
+				case "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt": return "int32";
 				case "System.Boolean": return "bool";
-				case "System.Char":    return "uint16";
-				case "System.SByte":   return "int8";
-				case "System.Byte":    return "uint8";
-				case "System.Int16":   return "int16";
-				case "System.UInt16":  return "uint16";
-				case "System.Int32":   return "int32";
-				case "System.UInt32":  return "uint32";
-				case "System.Int64":   return "int64";
-				case "System.UInt64":  return "uint64";
-				case "System.Single":  return "float";
-				case "System.Double":  return "double";
-				case "System.String":  return "string";
+				case "System.Char": return "uint16";
+				case "System.SByte": return "int8";
+				case "System.Byte": return "uint8";
+				case "System.Int16": return "int16";
+				case "System.UInt16": return "uint16";
+				case "System.Int32": return "int32";
+				case "System.UInt32": return "uint32";
+				case "System.Int64": return "int64";
+				case "System.UInt64": return "uint64";
+				case "System.Single": return "float";
+				case "System.Double": return "double";
+				case "System.String": return "string";
 			}
 			return null;
 		}
 
-		private static TypeSig? getArraySig(TypeSig sig) {
+		// Gets the TypeSig of the type inside the array if it's one
+		private static TypeSig? getArraySig(TypeSig sig)
+		{
 			string fullName = sig.FullName;
-			if (sig.IsGenericInstanceType && (fullName.StartsWith("System.Collections.Generic.List") ||
-				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet"))) {
-				GenericInstSig genericInstSig = sig.ToGenericInstSig();
-				return genericInstSig.GenericArguments[0];
-			} else if (sig.IsSZArray) {
+			if (sig.IsSZArray)
+			{
 				return sig.Next;
 			}
+
+			// 1. Direct standard lists
+			if (sig.IsGenericInstanceType && (fullName.StartsWith("System.Collections.Generic.List") ||
+				fullName.StartsWith("System.Collections.Generic.Stack") || fullName.StartsWith("System.Collections.Generic.HashSet")))
+			{
+				return sig.ToGenericInstSig().GenericArguments[0];
+			}
+
+			// 2. GUARD: Do not intercept Dictionaries
+			if (fullName.Contains("Dict") || fullName.Contains("Dictionary"))
+			{
+				return null;
+			}
+
+			// 3. Generative collection detection via recursive inheritance
+			return resolveInheritedListType(sig);
+		}
+
+		// Recursively climbs the inheritance tree while preserving generic arguments
+		private static TypeSig? resolveInheritedListType(TypeSig currentSig)
+		{
+			TypeDef? def = currentSig.ToTypeDefOrRef()?.ResolveTypeDef();
+			if (def == null || def.BaseType == null)
+				return null;
+
+			TypeSig baseSig = def.BaseType.ToTypeSig();
+
+			// If passing from one generic class to another, substitute the variables (e.g., T -> AttributesData)
+			if (baseSig.IsGenericInstanceType && currentSig.IsGenericInstanceType)
+			{
+				baseSig = substituteGenericArgs(baseSig.ToGenericInstSig(), currentSig.ToGenericInstSig());
+			}
+
+			if (baseSig.IsGenericInstanceType && baseSig.FullName.StartsWith("System.Collections.Generic.List"))
+			{
+				return baseSig.ToGenericInstSig().GenericArguments[0];
+			}
+
+			return resolveInheritedListType(baseSig);
+		}
+
+		// Dynamically replaces uninstantiated generic parameters with the actual types provided by the child class
+		private static TypeSig substituteGenericArgs(GenericInstSig target, GenericInstSig provider)
+		{
+			var newArgs = new System.Collections.Generic.List<TypeSig>();
+			foreach (TypeSig arg in target.GenericArguments)
+			{
+				if (arg is GenericVar genVar)
+				{
+					int index = (int)genVar.Number;
+					if (index >= 0 && index < provider.GenericArguments.Count)
+						newArgs.Add(provider.GenericArguments[index]);
+					else
+						newArgs.Add(arg);
+				}
+				else if (arg.IsGenericInstanceType)
+				{
+					newArgs.Add(substituteGenericArgs(arg.ToGenericInstSig(), provider));
+				}
+				else
+				{
+					newArgs.Add(arg);
+				}
+			}
+			return new GenericInstSig(target.GenericType, newArgs);
+		}
+
+		// Escala la herencia para encontrar un Dictionary base y resuelve sus tipos genéricos (K, V)
+		private static GenericInstSig? GetDictionaryBaseSig(TypeSig sig)
+		{
+			if (sig == null || sig.IsSZArray) return null;
+
+			string fullName = sig.FullName;
+			if (fullName.StartsWith("System.Collections.Generic.Dictionary") || fullName.StartsWith("Torappu.ListDict"))
+			{
+				return sig.IsGenericInstanceType ? sig.ToGenericInstSig() : null;
+			}
+
+			TypeDef? def = sig.ToTypeDefOrRef()?.ResolveTypeDef();
+			if (def == null || def.BaseType == null) return null;
+
+			TypeSig currentSig = sig;
+			TypeSig baseSig = def.BaseType.ToTypeSig();
+
+			while (baseSig != null)
+			{
+				string baseName = baseSig.FullName;
+				if (baseName.StartsWith("System.Collections.Generic.Dictionary") || baseName.StartsWith("Torappu.ListDict"))
+				{
+					if (baseSig.IsGenericInstanceType)
+					{
+						if (currentSig.IsGenericInstanceType)
+							return substituteGenericArgs(baseSig.ToGenericInstSig(), currentSig.ToGenericInstSig()).ToGenericInstSig();
+						return baseSig.ToGenericInstSig();
+					}
+					return null;
+				}
+
+				TypeDef? baseDef = baseSig.ToTypeDefOrRef()?.ResolveTypeDef();
+				if (baseDef == null || baseDef.BaseType == null) break;
+
+				TypeSig nextBase = baseDef.BaseType.ToTypeSig();
+				if (nextBase.IsGenericInstanceType && baseSig.IsGenericInstanceType)
+				{
+					nextBase = substituteGenericArgs(nextBase.ToGenericInstSig(), baseSig.ToGenericInstSig());
+				}
+				currentSig = baseSig;
+				baseSig = nextBase;
+			}
+
 			return null;
 		}
 
-		private static TypeSig handleGenericSig(TypeSig sig, IList<TypeSig>? genericArgs) {
-			if (sig.IsGenericTypeParameter) {
-				if (genericArgs == null) throw new Exception("Generic parameters null with generic argument");
+		// Change out the generic type parameter with the real TypeSig if needed
+		private static TypeSig handleGenericSig(TypeSig sig, IList<TypeSig>? genericArgs)
+		{
+			if (sig.IsGenericTypeParameter)
+			{
+				if (genericArgs == null)
+					throw new Exception("Generic parameters null with generic argument");
 				GenericVar genericVar = sig.ToGenericVar();
 				sig = genericArgs[(int)genericVar.Number];
-			} else if (sig.IsGenericMethodParameter) {
+			}
+			else if (sig.IsGenericMethodParameter)
+			{
 				throw new Exception("Generic Method param not supported");
 			}
 			return sig;
 		}
 
-		private string? getType(TypeSig sig, TypeResolver resolver, IList<TypeSig>? genericArgs = null) {
-			string? prim = getPrimitiveType(sig);
-			if (prim != null) return prim;
+		// Find & return type of TypeSig, converts to FBDef if needed and adds to dependency
+		private string? getType(TypeSig sig, TypeResolver resolver, IList<TypeSig>? genericArgs = null)
+		{
 
+			if (sig.FullName == "System.Int16[,]")
+			{
+				return "hg__internal__MapData";
+			}
+
+			// baking replacement for Torappu.Blackboard to Torappu.Blackboard/DataPäir
+			if (sig.FullName == "Torappu.Blackboard")
+			{
+				TypeDef? classDataPair = resolver.Find("Torappu.Blackboard+DataPair", true);
+				TypeSig? typeSigDataPair = new ClassSig(classDataPair);
+				FlatbufferDefinition arrayFbDef = FlatbufferDefinition.convert(typeSigDataPair, resolver);
+				if (arrayFbDef == null) return null;
+				this.dependencies.Add(arrayFbDef);
+				return $"[{arrayFbDef.getType()}]";
+			}
+
+			string? prim = getPrimitiveType(sig);
+			if (prim != null)
+				return prim;
+
+			// Returns null if we're not an array, the type otherwise
 			TypeSig? sigArray = getArraySig(sig);
-			if (sigArray != null) {
+			if (sigArray != null)
+			{
 				prim = getPrimitiveType(sigArray);
-				if (prim != null) return $"[{prim}]";
+				if (prim != null)
+					return $"[{prim}]";
 
 				sigArray = handleGenericSig(sigArray, genericArgs);
 				FlatbufferDefinition arrayFbDef = FlatbufferDefinition.convert(sigArray, resolver);
-				if (arrayFbDef == null) return null;
+				if (arrayFbDef == null)
+					return null;
 
 				this.dependencies.Add(arrayFbDef);
 				return $"[{arrayFbDef.getType()}]";
 			}
 
 			sig = handleGenericSig(sig, genericArgs);
+
+			// If we're here that means this is probably a normal class, handle it
 			FlatbufferDefinition fbDef = FlatbufferDefinition.convert(sig, resolver);
-			if (fbDef == null) return null;
+			if (fbDef == null)
+				return null;
 
 			this.dependencies.Add(fbDef);
 			return fbDef.getType();
 		}
 
-		private static bool hasJsonIgnore(FieldDef field) { 
-			foreach (CustomAttribute ca in field.CustomAttributes) {
-				string fullName = ca.TypeFullName;
-				if (fullName.StartsWith("Newtonsoft.Json.JsonIgnoreAttribute")) return true;
+		private static bool shouldSerializeField(FieldDef field)
+		{
+			// 1. Ignorar estáticos y los que no se serializan
+			if (field.IsStatic || field.IsNotSerialized)
+				return false;
+
+			// 2. Ignorar explícitos de Newtonsoft
+			foreach (CustomAttribute ca in field.CustomAttributes)
+			{
+				if (ca.TypeFullName.StartsWith("Newtonsoft.Json.JsonIgnoreAttribute"))
+					return false;
 			}
-			return false;
+
+			// 3. Buscar si tiene atributos explícitos de guardado
+			bool hasSerializeAttr = false;
+			foreach (CustomAttribute ca in field.CustomAttributes)
+			{
+				string fn = ca.TypeFullName;
+				if (fn.Contains("SerializeField") || fn.Contains("JsonProperty"))
+				{
+					hasSerializeAttr = true;
+					break;
+				}
+			}
+
+			if (field.Name.Contains("k__BackingField") && !hasSerializeAttr)
+			{
+				return false;
+			}
+
+			// 4. Solo pasará si es una variable pública real o tiene tag forzado
+			return field.IsPublic || hasSerializeAttr;
 		}
 
-		private bool handleCustomFBS(TypeSig sig, IList<TypeSig>? genericArgs, TypeResolver resolver, FBSBuilder builder) {
-			if (sig.FullName.StartsWith("System.Collections.Generic.Dictionary") || sig.FullName.StartsWith("Torappu.ListDict")) {
-				if (genericArgs == null || genericArgs.Count != 2) throw new Exception("Bad dict generic args");
+		// Handles classes with custom serialisation
+		private bool handleCustomFBS(TypeSig sig, IList<TypeSig>? genericArgs, TypeResolver resolver, FBSBuilder builder)
+		{
+
+			if (sig.FullName.StartsWith("System.Collections.Generic.Dictionary") || sig.FullName.StartsWith("Torappu.ListDict"))
+			{
+				if (genericArgs == null || genericArgs.Count != 2)
+					throw new Exception("Bad dict generic args");
 
 				string? keyType = getType(genericArgs[0], resolver);
 				string? valueType = getType(genericArgs[1], resolver);
 
-				if (keyType == null || valueType == null) throw new Exception("Couldn't get key or value type for dict");
+				if (keyType == null || valueType == null)
+					throw new Exception("Couldn't get key or value type for dict");
+
 				builder.beginTable(this.name);
 				builder.addTableField("dict_key", keyType);
 				builder.addTableField("dict_value", valueType);
 				builder.endTable();
 
 				this.isArray = true;
-			} else if (sig.FullName.StartsWith("Newtonsoft.Json.Linq.JObject")) {
+				return true;
+			}
+
+			GenericInstSig? dictBase = GetDictionaryBaseSig(sig);
+			if (dictBase != null)
+			{
+				IList<TypeSig> dictArgs = dictBase.GenericArguments;
+				if (dictArgs == null || dictArgs.Count != 2)
+					throw new Exception("Bad dict generic args in inherited dict");
+
+				// Para diccionarios heredados, los argumentos ya están resueltos en dictBase
+				string? keyType = getType(dictArgs[0], resolver);
+				string? valueType = getType(dictArgs[1], resolver);
+
+				if (keyType == null || valueType == null)
+					throw new Exception("Couldn't get key or value type for dict");
+
+				builder.beginTable(this.name);
+				builder.addTableField("dict_key", keyType);
+				builder.addTableField("dict_value", valueType);
+				builder.endTable();
+
+				this.isArray = true;
+				return true;
+			}
+			if (sig.FullName.StartsWith("Newtonsoft.Json.Linq.JObject"))
+			{
+				Console.WriteLine("Is custom JObject");
+
 				builder.beginTable(this.name);
 				builder.addTableField("jobj_bson", "string");
 				builder.endTable();
-			} else {
-				return false;
+				return true;
 			}
-			return true;
+
+			return false;
 		}
 
-		public bool build(TypeResolver resolver) {
-			if (this.data != null) return false;
+		public bool build(TypeResolver resolver)
+		{
+			if (this.data != null)
+				return false;
 			this.isDone = true;
 
+			Console.WriteLine($"Building - {this.name} ({this.type.FullName})");
+
+			// Contains includes
 			StringBuilder header = new StringBuilder();
+			// Easier building of the table
 			FBSBuilder fbBuilder = new FBSBuilder();
+
 			TypeSig sig = this.type;
+			// We want to use the type for the getArraySig before modifying handling the generic types
+			// Because otherwise we won't get the generic arrays parameter
 			TypeSig? arraySig = getArraySig(sig);
+			// Generic args if we have some
 			IList<TypeSig>? genericArgs = null;
+			// We're a class by default
 			this.isRootType = true;
 
-			if (arraySig == null && sig.IsGenericInstanceType) {
+			if (arraySig == null && sig.IsGenericInstanceType)
+			{
 				GenericInstSig genericSig = sig.ToGenericInstSig();
+				Console.WriteLine($"Is generic {genericSig.GenericType.FullName}");
 				genericArgs = genericSig.GenericArguments;
 				sig = genericSig.GenericType;
 			}
 
-			if (arraySig != null) {
+			if (arraySig != null)
+			{
+				Console.WriteLine("Is array");
+				// Nested single dim array
+
 				string? type = getType(arraySig, resolver);
-				if (type == null) throw new Exception("Can't find array type");
+				if (type == null)
+					throw new Exception("Can't find array type");
+
 				fbBuilder.beginTable(this.name);
 				fbBuilder.addTableArrayField("arr_values", type);
 				fbBuilder.endTable();
-			} else if (handleCustomFBS(sig, genericArgs, resolver, fbBuilder)) {
-				// handled custom FBS
-			} else if (sig.IsArray) {
+			}
+			else if (handleCustomFBS(sig, genericArgs, resolver, fbBuilder))
+			{
+				// Schemas with custom serializing functions
+				Console.WriteLine("Was custom FBS");
+			}
+			else if (sig.IsArray)
+			{
 				// empty for multi-dim
-			} else if (sig.IsTypeDefOrRef) {
+				// is already handled by 
+				// hg_internal
+
+			}
+			else if (sig.IsTypeDefOrRef)
+			{
+				// Regular class, bulk of the classes
+				// Get the TypeDef
 				ITypeDefOrRef classSig = sig.ToTypeDefOrRef();
 				TypeDef? def = resolver.Find(classSig);
-				if (def == null) throw new Exception($"Couldn't find class ? {classSig.FullName}");
+				if (def == null)
+					throw new Exception($"Couldn't find class ? {classSig.FullName}");
 
-				if (def.IsEnum) {
+				if (def.IsEnum)
+				{
+					// Enum
 					TypeSig enumSig = def.GetEnumUnderlyingType();
-					if (!enumSig.IsPrimitive) throw new Exception("Enum of non primitve type");
+					if (!enumSig.IsPrimitive)
+						throw new Exception("Enum of non primitve type");
 
 					string? primType = getPrimitiveType(enumSig);
-					if (primType == null || !(primType.StartsWith("int") || primType.StartsWith("uint")))
+					if (primType == null || !(primType.StartsWith("int") || primType.StartsWith("uint") || primType.StartsWith("ubyte")))
 						throw new Exception($"Invalid primitive type for enum: {primType}");
 
 					fbBuilder.beginEnum(this.name, primType);
 					int nbFields = def.Fields.Count;
 					bool hasZero = false;
-					for (int i = 1; i < nbFields; i++) {
+					// ignore the first one as it is the actual value
+					for (int i = 1; i < nbFields; i++)
+					{
 						FieldDef field = def.Fields[i];
-						if (!field.HasConstant) throw new Exception("Enum's field without a value");
+						if (!field.HasConstant)
+							throw new Exception("Enum's field without a value");
+
 						fbBuilder.addEnumValue(field.Name, field.Constant.Value);
-						if (Convert.ToInt32(field.Constant.Value) == 0) hasZero = true;
+						if (Convert.ToInt32(field.Constant.Value) == 0)
+							hasZero = true;
 					}
-					if (!hasZero) fbBuilder.addEnumValue("ENUM_DEFAULT_VALUE", 0);
+					// Hack to fix enums not working when no zero is defined...
+					// We can't know what the default value of the flatbuffer is
+					// So just signal we got the default value
+					if (!hasZero)
+						fbBuilder.addEnumValue("ENUM_DEFAULT_VALUE", 0);
 					fbBuilder.endEnum();
 					this.isRootType = false;
-				} else {
+				}
+				else
+				{
+					// Normal class
 					fbBuilder.beginTable(this.name);
 
-					// --- PARCHE NATIVO: Rescatar Enums y tipos de diccionarios heredados ---
-					if (def.BaseType != null && def.BaseType.FullName.Contains("Dictionary")) {
-						var genericInst = def.BaseType.ToTypeSig() as GenericInstSig;
-						if (genericInst != null && genericInst.GenericArguments.Count >= 2) {
-							string? keyType = getType(genericInst.GenericArguments[0], resolver, genericArgs);
-							string? valueType = getType(genericInst.GenericArguments[1], resolver, genericArgs);
-							if (keyType != null && valueType != null) {
-								fbBuilder.addTableField("key", keyType + "(key)");
-								fbBuilder.addTableField("value", valueType);
+					// --- Rescatar Enums y tipos de diccionarios heredados ---
+					var allFields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
+					TypeDef? currentDef = def;
+					IList<TypeSig>? currentGenericArgs = genericArgs;
+
+					// 1. Escalar por la herencia, PERO deteniéndonos en la frontera de Unity o .NET
+					while (currentDef != null)
+					{
+						string fName = currentDef.FullName;
+						// Evitamos extraer los punteros de memoria internos del motor de Unity
+						if (fName == "System.Object" || fName == "System.ValueType" || fName.StartsWith("UnityEngine.") || fName.StartsWith("System."))
+						{
+							break;
+						}
+
+						var fields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
+						foreach (FieldDef f in currentDef.Fields)
+						{
+							if (shouldSerializeField(f))
+							{
+								fields.Add(new Tuple<FieldDef, IList<TypeSig>?>(f, currentGenericArgs));
 							}
 						}
-					}
-					// -----------------------------------------------------------------------
+						// Añadimos al final. Orden Descendente: Clase actual (Hijo) -> Padre -> Abuelo
+						allFields.AddRange(fields);
 
-					foreach (FieldDef field in def.Fields) {
-						if (field.IsStatic || field.IsNotSerialized || hasJsonIgnore(field)) continue;
-						TypeSig fieldSig = handleGenericSig(field.FieldType, genericArgs);
-						string? type = getType(fieldSig, resolver, genericArgs);
-						
-						if (type == null) throw new Exception($"Can't find type for field '{field.Name}'");
-						
-						string cleanFieldName = field.Name;
-						if (cleanFieldName.Contains("k__BackingField")) {
-							cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
+						// 2. Resolver los argumentos genericos de la clase padre
+						if (currentDef.BaseType != null)
+						{
+							TypeSig baseSig = currentDef.BaseType.ToTypeSig();
+							if (baseSig.IsGenericInstanceType)
+							{
+								GenericInstSig genericInst = baseSig.ToGenericInstSig();
+								var resolvedArgs = new List<TypeSig>();
+								foreach (var arg in genericInst.GenericArguments)
+								{
+									try
+									{
+										resolvedArgs.Add(handleGenericSig(arg, currentGenericArgs));
+									}
+									catch
+									{
+										resolvedArgs.Add(arg);
+									}
+								}
+								currentGenericArgs = resolvedArgs;
+							}
+							else
+							{
+								currentGenericArgs = null;
+							}
+							currentDef = currentDef.BaseType.ResolveTypeDef();
 						}
-						
-						fbBuilder.addTableField(cleanFieldName, type);
+						else
+						{
+							break;
+						}
+					}
+
+					HashSet<string> processedFieldNames = new HashSet<string>();
+
+					// 3. Procesar los campos con Diagnostico Exacto
+					foreach (var tuple in allFields)
+					{
+						FieldDef field = tuple.Item1;
+						IList<TypeSig>? fArgs = tuple.Item2;
+
+						try
+						{
+							TypeSig fieldSig = handleGenericSig(field.FieldType, fArgs);
+
+							// FlatBuffers no soporta Punteros ni variables abstractas
+							if (fieldSig.IsPointer || fieldSig.IsByRef || fieldSig.IsGenericTypeParameter || fieldSig.IsGenericMethodParameter)
+							{
+								Console.WriteLine($"[INFO] Ignorando campo no-serializable: {field.Name} en {def.FullName}");
+								continue;
+							}
+
+							string? type = getType(fieldSig, resolver, fArgs);
+							if (type != null)
+							{
+								string cleanFieldName = field.Name;
+								if (cleanFieldName.Contains("k__BackingField"))
+								{
+									cleanFieldName = cleanFieldName.Replace("<", "").Replace(">k__BackingField", "");
+								}
+
+								if (processedFieldNames.Contains(cleanFieldName))
+								{
+									Console.WriteLine($"[INFO] Ignorando campo duplicado (Shadowing): {cleanFieldName} en {def.FullName}");
+									continue;
+								}
+
+								processedFieldNames.Add(cleanFieldName);
+								fbBuilder.addTableField(cleanFieldName, type);
+							}
+						}
+						catch (Exception ex)
+						{
+							// En lugar de crashear, te decimos EXACTAMENTE que campo fallo para que lo evalues
+							Console.WriteLine($"[ERROR] No se pudo procesar el campo '{field.Name}' en '{def.FullName}': {ex.Message}");
+						}
 					}
 					fbBuilder.endTable();
 				}
-			} else {
+			}
+			else
+			{
+				// We don't know, should not happen in the first place
 				throw new Exception("Unhandled type");
 			}
 
+			// Process dependencies
 			foreach (FlatbufferDefinition fb in this.dependencies)
 				header.AppendLine($"include \"{fb.getFile()}\";");
 
-			this.data = header.ToString() + "\n" + fbBuilder.build();
-			if (this.isRootType) this.data += $"\nroot_type {this.name};";
+			Console.WriteLine($"Done - {this.name} ({this.type.FullName})");
+
+			// Put together everything to make the FBS file
+			this.data = header.ToString() + "\n"
+						+ fbBuilder.build();
+
+			if (this.isRootType)
+				this.data += $"\nroot_type {this.name};";
+
+			// append hg_internal
+			if (this.data.Contains("hg__internal__MapData"))
+			{
+				string mapDataDef = "table hg__internal__MapData {\n\trow_size:int;\n\tcolumn_size:int;\n\tmatrix_data:[short];\n}\n\n";
+				this.data = mapDataDef + this.data;
+			}
+			// Cleanup because all my homies hate CRLF Windows dogshit
 			this.data = this.data.Replace("\r\n", "\n");
 
 			return true;
