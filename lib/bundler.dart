@@ -71,6 +71,7 @@ final Set<String> _wrappedTables = {
   'chapter_table',
   'char_master_table',
   'character_table',
+  'token_table',
   'handbook_team_table',
   'skill_table',
   'story_review_table',

@@ -193,7 +193,7 @@ namespace DNFBDmp
 			return new GenericInstSig(target.GenericType, newArgs);
 		}
 
-		// Escala la herencia para encontrar un Dictionary base y resuelve sus tipos genéricos (K, V)
+		// Climb the inheritance tree to find a base Dictionary and resolve its generic types (K, V)
 		private static GenericInstSig? GetDictionaryBaseSig(TypeSig sig)
 		{
 			if (sig == null || sig.IsSZArray) return null;
@@ -310,18 +310,18 @@ namespace DNFBDmp
 
 		private static bool shouldSerializeField(FieldDef field)
 		{
-			// 1. Ignorar estáticos y los que no se serializan
+			// Ignore static and non-serialized fields
 			if (field.IsStatic || field.IsNotSerialized)
 				return false;
 
-			// 2. Ignorar explícitos de Newtonsoft
+			// Ignore explicit Newtonsoft tags
 			foreach (CustomAttribute ca in field.CustomAttributes)
 			{
 				if (ca.TypeFullName.StartsWith("Newtonsoft.Json.JsonIgnoreAttribute"))
 					return false;
 			}
 
-			// 3. Buscar si tiene atributos explícitos de guardado
+			// Check for explicit serialization attributes
 			bool hasSerializeAttr = false;
 			foreach (CustomAttribute ca in field.CustomAttributes)
 			{
@@ -338,7 +338,6 @@ namespace DNFBDmp
 				return false;
 			}
 
-			// 4. Solo pasará si es una variable pública real o tiene tag forzado
 			return field.IsPublic || hasSerializeAttr;
 		}
 
@@ -373,7 +372,7 @@ namespace DNFBDmp
 				if (dictArgs == null || dictArgs.Count != 2)
 					throw new Exception("Bad dict generic args in inherited dict");
 
-				// Para diccionarios heredados, los argumentos ya están resueltos en dictBase
+				// For inherited dictionaries, arguments are already resolved in dictBase
 				string? keyType = getType(dictArgs[0], resolver);
 				string? valueType = getType(dictArgs[1], resolver);
 
@@ -503,16 +502,16 @@ namespace DNFBDmp
 					// Normal class
 					fbBuilder.beginTable(this.name);
 
-					// --- Rescatar Enums y tipos de diccionarios heredados ---
+					// Inherited enums/dicts
 					var allFields = new List<Tuple<FieldDef, IList<TypeSig>?>>();
 					TypeDef? currentDef = def;
 					IList<TypeSig>? currentGenericArgs = genericArgs;
 
-					// 1. Escalar por la herencia, PERO deteniéndonos en la frontera de Unity o .NET
+					// Climb through inheritance, BUT stopping at the Unity or .NET border
 					while (currentDef != null)
 					{
 						string fName = currentDef.FullName;
-						// Evitamos extraer los punteros de memoria internos del motor de Unity
+						// We avoid extracting internal memory pointers from the Unity engine
 						if (fName == "System.Object" || fName == "System.ValueType" || fName.StartsWith("UnityEngine.") || fName.StartsWith("System."))
 						{
 							break;
@@ -526,10 +525,10 @@ namespace DNFBDmp
 								fields.Add(new Tuple<FieldDef, IList<TypeSig>?>(f, currentGenericArgs));
 							}
 						}
-						// Añadimos al final. Orden Descendente: Clase actual (Hijo) -> Padre -> Abuelo
+						// Add at the end. Descending order: Current class (Child) -> Parent -> Grandparent
 						allFields.AddRange(fields);
 
-						// 2. Resolver los argumentos genericos de la clase padre
+						// Resolve the parent class generic arguments
 						if (currentDef.BaseType != null)
 						{
 							TypeSig baseSig = currentDef.BaseType.ToTypeSig();
@@ -564,7 +563,7 @@ namespace DNFBDmp
 
 					HashSet<string> processedFieldNames = new HashSet<string>();
 
-					// 3. Procesar los campos con Diagnostico Exacto
+					// Fields processing
 					foreach (var tuple in allFields)
 					{
 						FieldDef field = tuple.Item1;
@@ -574,10 +573,10 @@ namespace DNFBDmp
 						{
 							TypeSig fieldSig = handleGenericSig(field.FieldType, fArgs);
 
-							// FlatBuffers no soporta Punteros ni variables abstractas
+							// FlatBuffers does not support Pointers or abstract variables
 							if (fieldSig.IsPointer || fieldSig.IsByRef || fieldSig.IsGenericTypeParameter || fieldSig.IsGenericMethodParameter)
 							{
-								Console.WriteLine($"[INFO] Ignorando campo no-serializable: {field.Name} en {def.FullName}");
+								Console.WriteLine($"[INFO] Ignoring non-serializable field: {field.Name} in {def.FullName}");
 								continue;
 							}
 
@@ -592,7 +591,7 @@ namespace DNFBDmp
 
 								if (processedFieldNames.Contains(cleanFieldName))
 								{
-									Console.WriteLine($"[INFO] Ignorando campo duplicado (Shadowing): {cleanFieldName} en {def.FullName}");
+									Console.WriteLine($"[INFO] Ignoring duplicated field (Shadowing): {cleanFieldName} in {def.FullName}");
 									continue;
 								}
 
@@ -602,8 +601,7 @@ namespace DNFBDmp
 						}
 						catch (Exception ex)
 						{
-							// En lugar de crashear, te decimos EXACTAMENTE que campo fallo para que lo evalues
-							Console.WriteLine($"[ERROR] No se pudo procesar el campo '{field.Name}' en '{def.FullName}': {ex.Message}");
+							Console.WriteLine($"[ERROR] Could not process field '{field.Name}' in '{def.FullName}': {ex.Message}");
 						}
 					}
 					fbBuilder.endTable();

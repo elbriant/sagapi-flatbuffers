@@ -5,13 +5,13 @@ import 'package:path/path.dart' as p;
 import 'package:sagapi_flatbuffers/extract_fbs.dart';
 import 'package:sagapi_flatbuffers/bundler.dart';
 
-const String version = '0.0.1';
+const String version = '1.0.0';
 
 // Package mappings based on server type
 const Map<String, String> serverPackages = {
   'global': 'com.YoStarJP.Arknights',
   'cn': 'com.hypergryph.arknights', //placeholder
-  'tw': 'tw.txwy.and.arknights', //placeholder
+  'tw': 'tw.txwy.and.arknights',
 };
 
 ArgParser buildParser() {
