@@ -4,6 +4,10 @@ An automated extraction and bundling pipeline for Arknights FlatBuffers schemas 
 
 This repository contains the orchestration tools required to extract raw FlatBuffers schemas from Arknights' DummyDlls and bundle them into clean, compiled schemas ready for `flatc` JSON generation. It supports cross-server extraction (Global, CN, TW).
 
+## Auto-Generated Schemas
+
+**Important:** The FlatBuffers schemas (.fbs) are automatically generated via a GitHub Actions workflow and are available in the `fbs` branch. These are the final, bundled schemas ready for use with `flatc` or other FlatBuffers tools. If you only need the .fbs files and don't want to run the extraction pipeline yourself, simply check out the `fbs` branch.
+
 ## Architecture
 
 The extraction pipeline consists of two main phases:
