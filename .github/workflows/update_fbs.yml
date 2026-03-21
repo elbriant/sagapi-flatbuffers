@@ -86,6 +86,11 @@ jobs:
         run: |
           SERVER_INPUT="${{ github.event.inputs.server }}"
           echo "Dispatch update on sagapi-gamedata in the server: $SERVER_INPUT..."
+
+          PAYLOAD_SERVER="$SERVER_INPUT"
+          if [ "$SERVER_INPUT" == "global" ]; then
+            PAYLOAD_SERVER="all"
+          fi
           
           curl -L \
             -X POST \
@@ -93,4 +98,4 @@ jobs:
             -H "Authorization: Bearer ${{ secrets.GAMEDATA_PAT }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/elbriant/sagapi-gamedata/dispatches \
-            -d "{\"event_type\": \"fbs_updated\", \"client_payload\": {\"server\": \"$SERVER_INPUT\"}}"
+            -d "{\"event_type\": \"fbs_updated\", \"client_payload\": {\"server\": \"$PAYLOAD_SERVER\"}}"
