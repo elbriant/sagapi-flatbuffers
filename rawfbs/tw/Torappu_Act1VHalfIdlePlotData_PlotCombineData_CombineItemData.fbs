@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData {
+	plotId:string;
+	plotCount:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData;

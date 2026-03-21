@@ -24,6 +24,7 @@ include "Torappu_StorylineConstData.fbs";
 include "Dict_2_System_String_Torappu_SixStarRuneData_.fbs";
 include "Dict_2_System_String_Torappu_SixStarMilestoneGroupData_.fbs";
 include "Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_.fbs";
+include "Dict_2_System_String_Torappu_ConditionalDropInfo_.fbs";
 
 table Torappu_StageTable {
 	stages:[Dict_2_System_String_Torappu_StageData_];
@@ -53,6 +54,7 @@ table Torappu_StageTable {
 	sixStarRuneData:[Dict_2_System_String_Torappu_SixStarRuneData_];
 	sixStarMilestoneInfo:[Dict_2_System_String_Torappu_SixStarMilestoneGroupData_];
 	sixStarCompatibleInfo:[Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_];
+	conditionalDropInfo:[Dict_2_System_String_Torappu_ConditionalDropInfo_];
 }
 
 

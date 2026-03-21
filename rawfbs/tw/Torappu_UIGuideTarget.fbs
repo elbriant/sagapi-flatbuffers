@@ -45,5 +45,6 @@ enum Torappu_UIGuideTarget : int32 {
 	VEC_BREAK_V2 = 44,
 	GUN_TASK = 45,
 	SPECIAL_OPERATOR = 46,
-	INFORMANT = 47
+	INFORMANT = 47,
+	ACT1VHALFIDLE = 48
 }

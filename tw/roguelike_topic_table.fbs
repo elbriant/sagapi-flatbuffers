@@ -224,7 +224,11 @@ enum Torappu_ItemType : int32 {
 	EXCLUSIVE_TKT_GACHA = 83,
 	EXCLUSIVE_TKT_GACHA_10 = 84,
 	SO_CHAR_EXP = 85,
-	GIFTPACKAGE_TKT = 86
+	GIFTPACKAGE_TKT = 86,
+	VOUCHER_SKIN_V2 = 87,
+	RANDOM_VOUCHER_SKIN = 88,
+	ACT1VHALFIDLE_ITEM = 89,
+	PLOT_ITEM = 90
 }
 
 table Torappu_RoguelikeTopicBP {
@@ -1336,7 +1340,8 @@ enum Torappu_RoguelikeGameChoiceType : int32 {
 	WISH_ALL = 12,
 	KILL = 13,
 	USE_STASHED_TICKET = 14,
-	EXPEDITION_ALL = 15
+	EXPEDITION_ALL = 15,
+	EXPEDITION_RETURN_ALL = 16
 }
 
 enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
@@ -1358,17 +1363,19 @@ enum Torappu_RoguelikeChoiceHintType : int32 {
 	NONE = 0,
 	ITEM = 1,
 	CANDLED_CHAR = 2,
-	SACRIFICE = 3,
-	SACRIFICE_TOTEM = 4,
-	EXPEDITION = 5,
-	CANDLE = 6,
-	HP = 7,
-	VISION = 8,
-	STASHED_RECRUIT = 9,
-	CHAOS = 10,
-	FRAGMENT = 11,
-	SP_ZONE_AP = 12,
-	COPPER_LUCK = 13
+	GUIDED_CHAR = 3,
+	SACRIFICE = 4,
+	SACRIFICE_TOTEM = 5,
+	EXPEDITION = 6,
+	CANDLE = 7,
+	GUIDED = 8,
+	HP = 9,
+	VISION = 10,
+	STASHED_RECRUIT = 11,
+	CHAOS = 12,
+	FRAGMENT = 13,
+	SP_ZONE_AP = 14,
+	COPPER_LUCK = 15
 }
 
 table Torappu_RoguelikeChoiceDisplayData {
@@ -1672,6 +1679,8 @@ table Torappu_RoguelikeGameConst {
 	candleReturnDescCandleUpgrade:string;
 	candleReturnDescCandle:string;
 	charSelectCandleConflictToast:string;
+	charSelectGuidedConflictToast:string;
+	charSelectNonGuidedConflictToast:string;
 	gainBuffDiffGrade:int32;
 	dsPredictTips:string;
 	dsBuffActiveTips:string;
@@ -2812,6 +2821,7 @@ table Torappu_RoguelikeCopperData {
 	buffType:Torappu_RoguelikeCopperBuffType;
 	layerCntDesc:string;
 	poemList:[string];
+	alwaysShowCountDown:bool;
 	buffItemIdList:[string];
 }
 
@@ -2931,7 +2941,8 @@ enum Torappu_RoguelikeSkyZoneNodeType : int32 {
 	MARKET = 256,
 	BATTLE_HARD = 512,
 	INCIDENT_BOSS = 1024,
-	CHOICES = 1500,
+	INCIDENT_BOSS_ONLY = 2048,
+	CHOICES = 3548,
 	BATTLES = 514
 }
 
@@ -3456,6 +3467,8 @@ table Torappu_RL05EndingText {
 	summaryCopperCheckFail:string;
 	summaryCopperCheckNormal:string;
 	summaryMeetWrath:string;
+	summaryExpeditionGoEndingFour:string;
+	summaryExpeditionBackEndingFour:string;
 	summaryExpeditionBackCandle:string;
 	summaryExpeditionGoEnding:string;
 	summaryExpeditionBackEnding:string;

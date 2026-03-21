@@ -78,6 +78,20 @@ table Torappu_ActMultiV3ConstData {
 	photoCharacterDefaultAct:string;
 	trainingStageConfirmDesc:string;
 	joinRoomLongTimeThreshold:double;
+	invitationSendCd:int32;
+	boatMapReachableSize:int32;
+	boatMapSizeMax:int32;
+	boatExitMapOffset:int32;
+	boatEnterTranOffset:int32;
+	boatCollisionLossSpeedFactor:float;
+	boatAirFactor:float;
+	boatFrictionFactor:float;
+	boatForceInterval:float;
+	boatExchangeDamageMax:int32;
+	boatExchangeDamageMin:int32;
+	boatExchangeForceMax:int32;
+	boatExchangeForceMin:int32;
+	waterSpeedFactor:float;
 }
 
 

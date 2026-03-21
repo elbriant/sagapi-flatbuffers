@@ -12,6 +12,7 @@ enum Torappu_RoguelikeSkyZoneNodeType : int32 {
 	MARKET = 256,
 	BATTLE_HARD = 512,
 	INCIDENT_BOSS = 1024,
-	CHOICES = 1500,
+	INCIDENT_BOSS_ONLY = 2048,
+	CHOICES = 3548,
 	BATTLES = 514
 }

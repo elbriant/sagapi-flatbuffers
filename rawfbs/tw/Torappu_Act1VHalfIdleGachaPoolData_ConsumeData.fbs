@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdleGachaPoolData_ConsumeData {
+	gachaTimes:int32;
+	consume:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleGachaPoolData_ConsumeData;

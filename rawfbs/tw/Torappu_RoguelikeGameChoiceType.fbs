@@ -15,5 +15,6 @@ enum Torappu_RoguelikeGameChoiceType : int32 {
 	WISH_ALL = 12,
 	KILL = 13,
 	USE_STASHED_TICKET = 14,
-	EXPEDITION_ALL = 15
+	EXPEDITION_ALL = 15,
+	EXPEDITION_RETURN_ALL = 16
 }

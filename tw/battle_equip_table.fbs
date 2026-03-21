@@ -92,6 +92,7 @@ table Torappu_BattleUniEquipData {
 	target:Torappu_UniEquipTarget;
 	isToken:bool;
 	validInGameTag:string;
+	validInMapTag:string;
 	addOrOverrideTalentDataBundle:Torappu_CharacterData_EquipTalentDataBundle;
 	overrideTraitDataBundle:Torappu_CharacterData_EquipTraitDataBundle;
 }

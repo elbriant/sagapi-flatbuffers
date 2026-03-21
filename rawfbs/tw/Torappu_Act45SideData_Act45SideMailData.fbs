@@ -1,0 +1,15 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act45SideData_Act45SideMailData {
+	mailId:string;
+	sortId:int32;
+	charName:string;
+	picId:string;
+	mailTitle:string;
+	mailContent:string;
+	sendTime:int64;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_Act45SideData_Act45SideMailData;

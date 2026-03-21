@@ -9,6 +9,7 @@ table Torappu_RoguelikeCopperData {
 	buffType:Torappu_RoguelikeCopperBuffType;
 	layerCntDesc:string;
 	poemList:[string];
+	alwaysShowCountDown:bool;
 	buffItemIdList:[string];
 }
 

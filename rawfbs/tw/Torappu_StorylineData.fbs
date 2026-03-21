@@ -7,7 +7,9 @@ table Torappu_StorylineData {
 	sortId:int32;
 	storylineName:string;
 	storylineIconId:string;
+	storylineLogoId:string;
 	backgroundId:string;
+	hasVideoToPlay:bool;
 	startTs:int64;
 	locations:[Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_];
 }

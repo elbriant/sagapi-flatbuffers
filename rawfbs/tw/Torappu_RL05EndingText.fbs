@@ -10,6 +10,8 @@ table Torappu_RL05EndingText {
 	summaryCopperCheckFail:string;
 	summaryCopperCheckNormal:string;
 	summaryMeetWrath:string;
+	summaryExpeditionGoEndingFour:string;
+	summaryExpeditionBackEndingFour:string;
 	summaryExpeditionBackCandle:string;
 	summaryExpeditionGoEnding:string;
 	summaryExpeditionBackEnding:string;

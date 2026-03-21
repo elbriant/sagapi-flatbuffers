@@ -146,7 +146,11 @@ enum Torappu_ItemType : int32 {
 	EXCLUSIVE_TKT_GACHA = 83,
 	EXCLUSIVE_TKT_GACHA_10 = 84,
 	SO_CHAR_EXP = 85,
-	GIFTPACKAGE_TKT = 86
+	GIFTPACKAGE_TKT = 86,
+	VOUCHER_SKIN_V2 = 87,
+	RANDOM_VOUCHER_SKIN = 88,
+	ACT1VHALFIDLE_ITEM = 89,
+	PLOT_ITEM = 90
 }
 
 table Torappu_ItemBundle {
@@ -169,7 +173,8 @@ enum Torappu_StageDropType : int32 {
 	COMPLETE = 8,
 	CHARM_DROP = 9,
 	OVERRIDE_DROP = 10,
-	ITEM_RETURN = 11
+	ITEM_RETURN = 11,
+	CONDITION_DROP = 12
 }
 
 table Torappu_WeightItemBundle {
@@ -258,6 +263,8 @@ table Torappu_StageData_SpecialStoryInfo {
 	rewards:[Torappu_ItemBundle];
 	progressInfo:Torappu_StageData_SpecialProgressInfo;
 	imageId:string;
+	keyItemId:string;
+	unlockDesc:string;
 }
 
 
@@ -708,6 +715,7 @@ enum Torappu_StorylineLocationType : int32 {
 
 table Torappu_StorylineMainlineSplitData {
 	iconId:string;
+	subName:string;
 }
 
 
@@ -738,7 +746,9 @@ table Torappu_StorylineData {
 	sortId:int32;
 	storylineName:string;
 	storylineIconId:string;
+	storylineLogoId:string;
 	backgroundId:string;
+	hasVideoToPlay:bool;
 	startTs:int64;
 	locations:[Torappu_ListDict_2_System_String_Torappu_StorylineLocationData_];
 }
@@ -795,6 +805,7 @@ table Torappu_StorylineStorySetData {
 	sortWithinYear:int32;
 	kvImageId:string;
 	titleImageId:string;
+	haveVideoToPlay:bool;
 	backgroundId:string;
 	gameMusicId:string;
 	coreRewardType:Torappu_ItemType;
@@ -834,6 +845,7 @@ table Dict_2_System_String_Torappu_StorylineTagData_ {
 table Torappu_StorylineConstData {
 	recommendHideGuideGroupId:string;
 	tutorialSelectStorylineId:string;
+	mainlineStorylineId:string;
 }
 
 
@@ -906,6 +918,21 @@ table Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_ {
 
 
 
+table Torappu_ConditionalDropInfo {
+	template:string;
+	param:[string];
+	countLimit:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ConditionalDropInfo_ {
+	dict_key:string;
+	dict_value:Torappu_ConditionalDropInfo;
+}
+
+
+
 table Torappu_StageTable {
 	stages:[Dict_2_System_String_Torappu_StageData_];
 	runeStageGroups:[Dict_2_System_String_Torappu_RuneStageGroupData_];
@@ -934,6 +961,7 @@ table Torappu_StageTable {
 	sixStarRuneData:[Dict_2_System_String_Torappu_SixStarRuneData_];
 	sixStarMilestoneInfo:[Dict_2_System_String_Torappu_SixStarMilestoneGroupData_];
 	sixStarCompatibleInfo:[Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_];
+	conditionalDropInfo:[Dict_2_System_String_Torappu_ConditionalDropInfo_];
 }
 
 

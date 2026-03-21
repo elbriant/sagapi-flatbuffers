@@ -1,0 +1,16 @@
+
+table Torappu_Act45SideData_Act45SideConstData {
+	entryStageId:string;
+	toastCharUnlock:string;
+	toastLivePageUnlock:string;
+	toastLivePageLocked:string;
+	textCharLocked:string;
+	textMailTime:string;
+	textBtnMailTime:string;
+	gameTVSizeMusicId:string;
+	gameFullSizeMusicId:string;
+	entryMusicId:string;
+}
+
+
+root_type Torappu_Act45SideData_Act45SideConstData;

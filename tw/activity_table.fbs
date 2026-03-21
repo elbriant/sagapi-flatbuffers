@@ -56,7 +56,11 @@ enum Torappu_ActivityType : int32 {
 	VEC_BREAK_V2 = 53,
 	TYPE_ACT42SIDE = 54,
 	TYPE_ACT44SIDE = 55,
-	ENUM = 56
+	HALFIDLE_VERIFY1 = 56,
+	TYPE_ACT45SIDE = 57,
+	TEAM_QUEST = 58,
+	RECRUIT_ONLY = 59,
+	ENUM = 60
 }
 
 enum Torappu_ActivityDisplayType : int32 {
@@ -280,7 +284,11 @@ enum Torappu_ItemType : int32 {
 	EXCLUSIVE_TKT_GACHA = 83,
 	EXCLUSIVE_TKT_GACHA_10 = 84,
 	SO_CHAR_EXP = 85,
-	GIFTPACKAGE_TKT = 86
+	GIFTPACKAGE_TKT = 86,
+	VOUCHER_SKIN_V2 = 87,
+	RANDOM_VOUCHER_SKIN = 88,
+	ACT1VHALFIDLE_ITEM = 89,
+	PLOT_ITEM = 90
 }
 
 table Torappu_MissionDisplayRewards {
@@ -1232,7 +1240,8 @@ table Torappu_ActivityCollectionData_CollectionInfo {
 
 enum Torappu_ActivityCollectionData_JumpType : int32 {
 	NONE = 0,
-	ROGUE = 1
+	ROGUE = 1,
+	CHAR_REPO = 2
 }
 
 table Torappu_ActivityCollectionData_Consts {
@@ -1240,6 +1249,7 @@ table Torappu_ActivityCollectionData_Consts {
 	jumpBtnType:Torappu_ActivityCollectionData_JumpType;
 	jumpBtnParam1:string;
 	jumpBtnParam2:string;
+	dailyTaskDisabled:bool;
 	dailyTaskStartTime:int64;
 	isSimpleMode:bool;
 }
@@ -2262,11 +2272,44 @@ table Dict_2_System_String_Torappu_ItemBundleA__ {
 
 
 
+table Torappu_ActivitySwitchCheckinRewardItemShowData {
+	itemBundle:Torappu_ItemBundle;
+	isMainReward:bool;
+}
+
+
+
+table Torappu_ActivitySwitchCheckinMainRewardShowData {
+	mainRewardPicId:string;
+	mainRewardName:string;
+	mainRewardCount:int32;
+	hasTip:bool;
+	tipItemBundle:Torappu_ItemBundle;
+}
+
+
+
+table Torappu_ActivitySwitchCheckinRewardShowData {
+	checkinId:string;
+	rewardsTitle:string;
+	rewardShowItemDatas:[Torappu_ActivitySwitchCheckinRewardItemShowData];
+	mainRewardShowData:Torappu_ActivitySwitchCheckinMainRewardShowData;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActivitySwitchCheckinRewardShowData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivitySwitchCheckinRewardShowData;
+}
+
+
+
 table Torappu_ActivitySwitchCheckinData {
 	constData:Torappu_ActivitySwitchCheckinConstData;
 	rewards:[Dict_2_System_String_Torappu_ItemBundleA__];
+	rewardShowDatas:[Dict_2_System_String_Torappu_ActivitySwitchCheckinRewardShowData_];
 	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
-	rewardsTitle:[Dict_2_System_String_System_String_];
 	sortIdDict:[Dict_2_System_String_System_Int32_];
 }
 
@@ -2636,7 +2679,8 @@ enum Torappu_StageDropType : int32 {
 	COMPLETE = 8,
 	CHARM_DROP = 9,
 	OVERRIDE_DROP = 10,
-	ITEM_RETURN = 11
+	ITEM_RETURN = 11,
+	CONDITION_DROP = 12
 }
 
 table Torappu_ActivityBossRushData_DisplayDetailRewards {
@@ -5436,7 +5480,8 @@ enum Torappu_ActMultiV3MapModeType : int32 {
 	NONE = 0,
 	NORMAL = 1,
 	FOOTBALL = 2,
-	DEFENCE = 3
+	DEFENCE = 3,
+	RAFT = 4
 }
 
 table Torappu_ActMultiV3SquadInfoData {
@@ -5484,8 +5529,8 @@ table Torappu_ActMultiV3SquadEffectData {
 	buffDesc:string;
 	debuffDesc:string;
 	token:Torappu_ActMultiV3SquadEffectData_Token;
-	unlockKeyNum:int32;
 	runeData:Torappu_RuneTable_PackedRuneData;
+	isInitial:bool;
 }
 
 
@@ -5883,6 +5928,85 @@ table Torappu_ActMultiV3ConstData {
 	photoCharacterDefaultAct:string;
 	trainingStageConfirmDesc:string;
 	joinRoomLongTimeThreshold:double;
+	invitationSendCd:int32;
+	boatMapReachableSize:int32;
+	boatMapSizeMax:int32;
+	boatExitMapOffset:int32;
+	boatEnterTranOffset:int32;
+	boatCollisionLossSpeedFactor:float;
+	boatAirFactor:float;
+	boatFrictionFactor:float;
+	boatForceInterval:float;
+	boatExchangeDamageMax:int32;
+	boatExchangeDamageMin:int32;
+	boatExchangeForceMax:int32;
+	boatExchangeForceMin:int32;
+	waterSpeedFactor:float;
+}
+
+
+
+table Torappu_ActMultiV3SailBoatLevelPoolData {
+	stageId:string;
+	startBlockPool:string;
+	midBlockPool:string;
+	endBlockPool:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActMultiV3SailBoatLevelPoolData_ {
+	dict_key:string;
+	dict_value:Torappu_ActMultiV3SailBoatLevelPoolData;
+}
+
+
+
+enum Torappu_ActMultiV3BlockDirType : int32 {
+	NONE = 0,
+	UP = 1,
+	RIGHT = 2,
+	DOWN = 3,
+	LEFT = 4
+}
+
+table Torappu_ActMultiV3SailBoatBlockPoolData {
+	blockPool:string;
+	blockId:string;
+	startDirType:Torappu_ActMultiV3BlockDirType;
+	endDirType:Torappu_ActMultiV3BlockDirType;
+	weight:int32;
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_ActMultiV3SailBoatBlockPoolData__ {
+	dict_key:string;
+	dict_value:[Torappu_ActMultiV3SailBoatBlockPoolData];
+}
+
+
+
+enum Torappu_ActMultiV3BlockType : int32 {
+	NONE = 0,
+	START = 1,
+	END = 2,
+	MID = 3
+}
+
+table Torappu_ActMultiV3SailBoatBlockInfoData {
+	blockId:string;
+	blockLevelId:string;
+	startDirType:Torappu_ActMultiV3BlockDirType;
+	endDirType:Torappu_ActMultiV3BlockDirType;
+	blockType:Torappu_ActMultiV3BlockType;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActMultiV3SailBoatBlockInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ActMultiV3SailBoatBlockInfoData;
 }
 
 
@@ -5910,6 +6034,9 @@ table Torappu_ActMultiV3Data {
 	tempCharDataList:[Torappu_ActMultiV3TempCharData];
 	constToastData:Torappu_ActMultiV3ConstToastData;
 	constData:Torappu_ActMultiV3ConstData;
+	sailBoatLevelPoolDict:[Dict_2_System_String_Torappu_ActMultiV3SailBoatLevelPoolData_];
+	sailBoatBlockPoolDict:[Dict_2_System_String_List_1_Torappu_ActMultiV3SailBoatBlockPoolData__];
+	sailBoatBlockInfoList:[Dict_2_System_String_Torappu_ActMultiV3SailBoatBlockInfoData_];
 }
 
 
@@ -5923,6 +6050,7 @@ table Dict_2_System_String_Torappu_ActMultiV3Data_ {
 
 table Torappu_ActMainSSZoneAdditionData {
 	unlockTip:string;
+	unlockTipAfterRetro:string;
 }
 
 
@@ -6603,6 +6731,789 @@ table Dict_2_System_String_Torappu_Act44SideData_ {
 
 
 
+enum Torappu_Act1VHalfIdleGachaPoolType : int32 {
+	NONE = 0,
+	GACHA_NORMAL = 1,
+	GACHA_NEWPLAYER = 2,
+	GACHA_PAC = 3,
+	GACHA_DIRECT = 4
+}
+
+table Torappu_Act1VHalfIdleGachaPoolData_ConsumeData {
+	gachaTimes:int32;
+	consume:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleGachaPoolData {
+	poolId:string;
+	itemId:string;
+	poolType:Torappu_Act1VHalfIdleGachaPoolType;
+	sortId:int32;
+	name:string;
+	charData:[string];
+	consumeData:[Torappu_Act1VHalfIdleGachaPoolData_ConsumeData];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleGachaPoolData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleGachaPoolData;
+}
+
+
+
+table Torappu_Act1VHalfIdleGachaCharData {
+	charId:string;
+	isLinkageChar:bool;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleGachaCharData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleGachaCharData;
+}
+
+
+
+enum Torappu_Act1VHalfIdlePlotType : int32 {
+	NONE = 0,
+	LANDSCAPE = 1,
+	ROAD = 2,
+	ROADSIDE = 3,
+	SPECIAL = 4
+}
+
+table Dict_2_System_String_List_1_System_Int32__ {
+	dict_key:string;
+	dict_value:[int32];
+}
+
+
+
+table Torappu_Act1VHalfIdlePlotTypeData {
+	plotType:Torappu_Act1VHalfIdlePlotType;
+	typeName:string;
+	plotSquadLimit:[Dict_2_System_String_List_1_System_Int32__];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdlePlotTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdlePlotTypeData;
+}
+
+
+
+table Torappu_Act1VHalfIdlePlotData_ItemDropData {
+	itemId:string;
+	itemDropDesc:string;
+}
+
+
+
+enum Torappu_Act1VHalfIdlePlotCombineType : int32 {
+	NONE = 0,
+	SINGLE = 1,
+	PLUS = 2,
+	PLUS_OR = 3
+}
+
+table Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData {
+	plotId:string;
+	plotCount:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdlePlotData_PlotCombineData {
+	combineType:Torappu_Act1VHalfIdlePlotCombineType;
+	plots:[Torappu_Act1VHalfIdlePlotData_PlotCombineData_CombineItemData];
+}
+
+
+
+table Torappu_Act1VHalfIdlePlotData {
+	plotId:string;
+	plotName:string;
+	plotType:Torappu_Act1VHalfIdlePlotType;
+	trapId:string;
+	initUnlock:bool;
+	rarity:int32;
+	sortId:int32;
+	isBasePlot:bool;
+	iconId:string;
+	funcDesc:string;
+	flavorDesc:string;
+	enemyIds:[string];
+	enemyDesc:string;
+	itemIdShown:string;
+	itemDropData:[Torappu_Act1VHalfIdlePlotData_ItemDropData];
+	prevCombineData:Torappu_Act1VHalfIdlePlotData_PlotCombineData;
+	derivedPlots:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdlePlotData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdlePlotData;
+}
+
+
+
+table Torappu_Act1VHalfIdleStageProductionData_ItemProductionData {
+	itemId:string;
+	efficiencyMax:int32;
+	isFixed:bool;
+	maxDropValue:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleStageProductionData_ItemProductionData;
+}
+
+
+
+table Torappu_Act1VHalfIdleStageProductionData {
+	stageId:string;
+	fixedProduction:[string];
+	productionData:[Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ItemProductionData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleStageProductionData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharRankData_CharRankData {
+	level:int32;
+	accumulatedExp:int32;
+	exp:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharRankData {
+	evolvePhase:Torappu_EvolvePhase;
+	expData:[Torappu_Act1VHalfIdleCharRankData_CharRankData];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharRankData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharRankData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharEvolveData_EvolveData {
+	evolvePhase:Torappu_EvolvePhase;
+	itemId:string;
+	itemCount:int32;
+	rebateItemId:string;
+	rebateItemCount:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharEvolveData_EvolveData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData {
+	profession:Torappu_ProfessionCategory;
+	evolveData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_EvolveData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharEvolveData {
+	rarity:Torappu_RarityRank;
+	professionEvolveData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ProfessionCharEvolveData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharEvolveData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData {
+	evolvePhase:Torappu_EvolvePhase;
+	maxLevel:int32;
+	maxSkillRank:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharMaxRankData {
+	rarity:Torappu_RarityRank;
+	maxRankData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_MaxRankData_];
+	maxEvolvePhase:Torappu_EvolvePhase;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharMaxRankData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData {
+	skillLevel:int32;
+	cost:int32;
+	accumulatedCost:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharSkillRankData {
+	rarity:Torappu_RarityRank;
+	skillRankData:[Torappu_Act1VHalfIdleCharSkillRankData_SkillRankData];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleCharSkillRankData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleCharSkillRankData;
+}
+
+
+
+enum Torappu_Act1VHalfIdleTechTreeNodeType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	DIFFICULTY = 2
+}
+
+table Torappu_Act1VHalfIdleTechTreeData_Effect {
+	desc:string;
+	title:string;
+	iconId:string;
+	runeDatas:[Torappu_RuneTable_PackedRuneData];
+}
+
+
+
+table Torappu_Act1VHalfIdleTechTreeData {
+	nodeId:string;
+	nodeType:Torappu_Act1VHalfIdleTechTreeNodeType;
+	prevNodeId:[string];
+	tokenCost:int32;
+	name:string;
+	iconId:string;
+	showPrevLockTips:bool;
+	effect:[Torappu_Act1VHalfIdleTechTreeData_Effect];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleTechTreeData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleTechTreeData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharBuffInfo {
+	id:string;
+	level:int32;
+	charCount:int32;
+	desc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table Torappu_Act1VHalfIdleCharBuffData {
+	prof:Torappu_ProfessionCategory;
+	buffInfos:[Torappu_Act1VHalfIdleCharBuffInfo];
+}
+
+
+
+table Torappu_Act1VHalfIdleMilestoneItemData {
+	milestoneId:string;
+	orderId:int32;
+	tokenNum:int32;
+	reward:Torappu_ItemBundle;
+	availTime:int64;
+}
+
+
+
+table Torappu_Act1VHalfIdleGachaPoolTypeData {
+	poolType:Torappu_Act1VHalfIdleGachaPoolType;
+	typeName:string;
+	desc:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleEnemyPreloadMeta {
+	enemyId:string;
+	level:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleConstData_ProfessionDesc {
+	profession:Torappu_ProfessionCategory;
+	desc:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_System_Int32_ {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
+table Torappu_Act1VHalfIdleConstData {
+	incomeProductionItems:[string];
+	milestoneId:string;
+	discount:[int32];
+	skillLevels:[int32];
+	levelExpItemId:string;
+	skillExpItemId:string;
+	normalStageIds:[string];
+	hardStageIds:[string];
+	techCostItemId:string;
+	assistBaseNum:int32;
+	preloadEnemy:[Torappu_Act1VHalfIdleEnemyPreloadMeta];
+	preloadTrap:[string];
+	defaultMaxDiscountSkillLevel:int32;
+	npcMaxDiscountSkillLevel:int32;
+	forbiddenAssistCharIds:[string];
+	maxEvolvePhase:int32;
+	maxSafeEnemyDuration:int32;
+	overloadLoseLifePoint:int32;
+	trapModifyBossTriggerTime:int32;
+	normalEnemyOverloadCnt:int32;
+	eliteEnemyOverloadCnt:int32;
+	bossEnemyOverloadCnt:int32;
+	maxEquipNumInBag:int32;
+	bossBranchName:string;
+	bossPreviewBranchName:string;
+	enemyCapacityIdWhiteList:[string];
+	unlockStageId:string;
+	professionDesc:[Torappu_Act1VHalfIdleConstData_ProfessionDesc];
+	productMaxEfficiencyDict:[Torappu_ListDict_2_System_String_System_Int32_];
+	efficiencyDurationMax:int32;
+	produceCd:int32;
+	harvestHintThresholdTime:int32;
+	constRuneDatas:[Torappu_RuneTable_PackedRuneData];
+	milestoneTrackId:string;
+	maxDeckCardNum:int32;
+	tutorialStageId:string;
+	predefinedPlotIds:[string];
+	predefinedCharIds:[string];
+	enemyOverloadWarningRatio:float;
+	battleFinishWarningTime:int32;
+	gachaNumMax:int32;
+	battleCustomTileHighlightColor:string;
+	battleCustomTileEmissionColor:string;
+	battleEquipLevelColors:[string];
+	battleFailHintStr:[string];
+	trapDropWeightStep:int32;
+	unlockSpecialPlot:[string];
+	bossEnterBgmKey:string;
+}
+
+
+
+table UnityEngine_Vector2 {
+}
+
+
+
+table Torappu_Act1VHalfIdleDiagramData_PointPosData {
+	pos:UnityEngine_Vector2;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_PointPosData;
+}
+
+
+
+table Torappu_Act1VHalfIdleDiagramData_LinePosData {
+	startPos:UnityEngine_Vector2;
+	endPos:UnityEngine_Vector2;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_LinePosData;
+}
+
+
+
+table Torappu_Act1VHalfIdleDiagramData_LineRelationData {
+	startPointList:[string];
+	endPointList:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_LineRelationData;
+}
+
+
+
+table Torappu_Act1VHalfIdleDiagramData_NodePointData {
+	nodeId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleDiagramData_NodePointData;
+}
+
+
+
+table Torappu_Act1VHalfIdleDiagramData {
+	width:float;
+	height:float;
+	pointPosDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_PointPosData_];
+	linePosDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LinePosData_];
+	lineRelationDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_LineRelationData_];
+	nodePointDataMap:[Dict_2_System_String_Torappu_Act1VHalfIdleDiagramData_NodePointData_];
+}
+
+
+
+table Torappu_Act1VHalfIdleEnemyDropBundle {
+	exp:int32;
+	mileStoneCnt:int32;
+	battleItemDropPool:string;
+	resourceItemDropPool:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleEnemyDropBundle_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleEnemyDropBundle;
+}
+
+
+
+enum Torappu_Act1VHalfIdleBattleItemType : int32 {
+	EQUIP = 0,
+	TRAP = 1
+}
+
+table Torappu_Act1VWeightedBattleItemPool {
+	poolKey:string;
+	type:Torappu_Act1VHalfIdleBattleItemType;
+	weight:float;
+}
+
+
+
+table Torappu_Act1VBattleItemDropSlot {
+	prob:float;
+	itemPools:[Torappu_Act1VWeightedBattleItemPool];
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_Act1VBattleItemDropSlot__ {
+	dict_key:string;
+	dict_value:[Torappu_Act1VBattleItemDropSlot];
+}
+
+
+
+table Torappu_Act1VWeightedResItemBundle {
+	weight:float;
+	resources:[Dict_2_System_String_System_Int32_];
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_Act1VWeightedResItemBundle__ {
+	dict_key:string;
+	dict_value:[Torappu_Act1VWeightedResItemBundle];
+}
+
+
+
+table Torappu_Act1VHalfIdleWeightedBattleEquip {
+	weight:float;
+	equipId:string;
+	level:int32;
+	alias:string;
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_Act1VHalfIdleWeightedBattleEquip__ {
+	dict_key:string;
+	dict_value:[Torappu_Act1VHalfIdleWeightedBattleEquip];
+}
+
+
+
+enum Torappu_Act1VHalfIdleEquipType : int32 {
+	WEAPON = 0,
+	ARMOR = 1,
+	ACCESSORY = 2,
+	NUM = 3
+}
+
+table Torappu_Act1VHalfIdleEquipData {
+	equipId:string;
+	alias:string;
+	iconId:string;
+	name:string;
+	level:int32;
+	equipType:Torappu_Act1VHalfIdleEquipType;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+
+table Dict_2_System_Int32_List_1_Torappu_Act1VHalfIdleEquipData__ {
+	dict_key:int32;
+	dict_value:[Torappu_Act1VHalfIdleEquipData];
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_Int32_List_1_Torappu_Act1VHalfIdleEquipData___ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_List_1_Torappu_Act1VHalfIdleEquipData__];
+}
+
+
+
+enum Torappu_HalfIdleTrapBuildableType : int32 {
+	NONE = 0,
+	HIGHLAND = 1,
+	LOWLAND = 2,
+	IGNORE_TILE_HEIGHT = 3,
+	LHHE = 4,
+	LHPLT = 5,
+	LHRUIN = 6,
+	LHBOT = 7
+}
+
+table Torappu_Act1VHalfIdleTrapMeta {
+	trapType:Torappu_Act1VHalfIdlePlotType;
+	buildType:Torappu_HalfIdleTrapBuildableType;
+	skillIndex:int32;
+	dropWeight:float;
+	defaultPlotId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleTrapMeta_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleTrapMeta;
+}
+
+
+
+table Torappu_Act1VHalfIdleData {
+	gachaPoolData:[Dict_2_System_String_Torappu_Act1VHalfIdleGachaPoolData_];
+	gachaCharData:[Dict_2_System_String_Torappu_Act1VHalfIdleGachaCharData_];
+	plotTypeData:[Dict_2_System_String_Torappu_Act1VHalfIdlePlotTypeData_];
+	plotData:[Dict_2_System_String_Torappu_Act1VHalfIdlePlotData_];
+	stageProductionData:[Dict_2_System_String_Torappu_Act1VHalfIdleStageProductionData_];
+	charRankData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharRankData_];
+	charEvolveData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharEvolveData_];
+	charMaxRankData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharMaxRankData_];
+	charSkillRankData:[Dict_2_System_String_Torappu_Act1VHalfIdleCharSkillRankData_];
+	techTreeData:[Dict_2_System_String_Torappu_Act1VHalfIdleTechTreeData_];
+	charBuffData:[Torappu_Act1VHalfIdleCharBuffData];
+	milestoneList:[Torappu_Act1VHalfIdleMilestoneItemData];
+	poolTypeData:[Torappu_Act1VHalfIdleGachaPoolTypeData];
+	stageIds:[string];
+	zoneId:string;
+	constData:Torappu_Act1VHalfIdleConstData;
+	diagramList:[Torappu_Act1VHalfIdleDiagramData];
+	enemyItemDropPoolDict:[Dict_2_System_String_Torappu_Act1VHalfIdleEnemyDropBundle_];
+	battleItemPoolDict:[Dict_2_System_String_List_1_Torappu_Act1VBattleItemDropSlot__];
+	resourceItemPoolDict:[Dict_2_System_String_List_1_Torappu_Act1VWeightedResItemBundle__];
+	equipItemPoolDict:[Dict_2_System_String_List_1_Torappu_Act1VHalfIdleWeightedBattleEquip__];
+	trapItemPoolDict:[Dict_2_System_String_List_1_System_String__];
+	equipItemData:[Dict_2_System_String_Dict_2_System_Int32_List_1_Torappu_Act1VHalfIdleEquipData___];
+	trapMetaDict:[Dict_2_System_String_Torappu_Act1VHalfIdleTrapMeta_];
+	plotShowCombineHighlightDict:[Dict_2_System_String_List_1_System_String__];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleData;
+}
+
+
+
+table Torappu_Act45SideData_Act45SideCharData {
+	charId:string;
+	sortId:int32;
+	charIllustId:string;
+	charCardId:string;
+	charName:string;
+	unlockStageId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData_Act45SideCharData;
+}
+
+
+
+table Torappu_Act45SideData_Act45SideMailData {
+	mailId:string;
+	sortId:int32;
+	charName:string;
+	picId:string;
+	mailTitle:string;
+	mailContent:string;
+	sendTime:int64;
+	rewards:[Torappu_ItemBundle];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData_Act45SideMailData;
+}
+
+
+
+table Torappu_Act45SideData_Act45SideConstData {
+	entryStageId:string;
+	toastCharUnlock:string;
+	toastLivePageUnlock:string;
+	toastLivePageLocked:string;
+	textCharLocked:string;
+	textMailTime:string;
+	textBtnMailTime:string;
+	gameTVSizeMusicId:string;
+	gameFullSizeMusicId:string;
+	entryMusicId:string;
+}
+
+
+
+table Torappu_Act45SideData_Act45SideZoneAdditionData {
+	zoneId:string;
+	unlockText:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData_Act45SideZoneAdditionData;
+}
+
+
+
+table Torappu_Act45SideData {
+	charData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideCharData_];
+	mailData:[Torappu_ListDict_2_System_String_Torappu_Act45SideData_Act45SideMailData_];
+	constData:Torappu_Act45SideData_Act45SideConstData;
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act45SideData_Act45SideZoneAdditionData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act45SideData_ {
+	dict_key:string;
+	dict_value:Torappu_Act45SideData;
+}
+
+
+
+table Torappu_ActRecruitOnlyData_RecruitOnlyItemData {
+	id:string;
+	phaseNum:int32;
+	tagId:int32;
+	tagTimes:int32;
+	startTime:int64;
+	endTime:int64;
+	startTimeDesc:string;
+	endTimeDesc:string;
+	desc1:string;
+	desc2:string;
+}
+
+
+
+table Torappu_ActRecruitOnlyData {
+	recruitData:Torappu_ActRecruitOnlyData_RecruitOnlyItemData;
+	previewData:Torappu_ActRecruitOnlyData_RecruitOnlyItemData;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActRecruitOnlyData_ {
+	dict_key:string;
+	dict_value:Torappu_ActRecruitOnlyData;
+}
+
+
+
 table Torappu_ActivityTable_ActivityDetailTable {
 	defaultActivityData:[Dict_2_System_String_Torappu_DefaultFirstData_];
 	defaultCheckinData:[Dict_2_System_String_Torappu_DefaultCheckInData_];
@@ -6644,6 +7555,9 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeActEnemyDuelData:[Dict_2_System_String_Torappu_ActivityEnemyDuelData_];
 	typeAct42SideData:[Dict_2_System_String_Torappu_Act42SideData_];
 	typeAct44SideData:[Dict_2_System_String_Torappu_Act44SideData_];
+	typeAct1VHalfIdleData:[Dict_2_System_String_Torappu_Act1VHalfIdleData_];
+	typeAct45SideData:[Dict_2_System_String_Torappu_Act45SideData_];
+	recruitOnlyData:[Dict_2_System_String_Torappu_ActRecruitOnlyData_];
 }
 
 
@@ -7913,6 +8827,45 @@ table Torappu_FireworkData {
 
 
 
+enum Torappu_Act1VHalfIdleItemType : int32 {
+	NONE = 0,
+	LEVEL_EXP = 1,
+	SKILL_EXP = 2,
+	STRATEGY_POINT = 3,
+	ASC = 4,
+	GACHA = 5,
+	MODEL = 6,
+	ACTIVITY_ITEM = 7
+}
+
+table Torappu_Act1VHalfIdleItemData {
+	actId:string;
+	itemId:string;
+	itemType:Torappu_Act1VHalfIdleItemType;
+	itemName:string;
+	sortId:int32;
+	iconId:string;
+	funcDesc:string;
+	flavorDesc:string;
+	obtainApproach:string;
+	showInInventory:bool;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act1VHalfIdleItemData_ {
+	dict_key:string;
+	dict_value:Torappu_Act1VHalfIdleItemData;
+}
+
+
+
+table Torappu_HalfIdleData {
+	itemData:[Dict_2_System_String_Torappu_Act1VHalfIdleItemData_];
+}
+
+
+
 table Torappu_KVSwitchInfo {
 	isDefault:bool;
 	displayTime:int64;
@@ -8385,6 +9338,7 @@ table Torappu_ActivityTable {
 	carData:Torappu_CartData;
 	siracusaData:Torappu_SiracusaData;
 	fireworkData:Torappu_FireworkData;
+	halfIdleData:Torappu_HalfIdleData;
 	kvSwitchData:[Dict_2_System_String_Torappu_ActivityKVSwitchData_];
 	dynEntrySwitchData:[Dict_2_System_String_Torappu_ActivityDynEntrySwitchData_];
 	hiddenStageData:[Torappu_ActivityTable_ActivityHiddenStageData];

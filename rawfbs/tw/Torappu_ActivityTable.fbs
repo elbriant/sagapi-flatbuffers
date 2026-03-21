@@ -15,6 +15,7 @@ include "Torappu_AprilFoolTable.fbs";
 include "Torappu_CartData.fbs";
 include "Torappu_SiracusaData.fbs";
 include "Torappu_FireworkData.fbs";
+include "Torappu_HalfIdleData.fbs";
 include "Dict_2_System_String_Torappu_ActivityKVSwitchData_.fbs";
 include "Dict_2_System_String_Torappu_ActivityDynEntrySwitchData_.fbs";
 include "Torappu_ActivityTable_ActivityHiddenStageData.fbs";
@@ -46,6 +47,7 @@ table Torappu_ActivityTable {
 	carData:Torappu_CartData;
 	siracusaData:Torappu_SiracusaData;
 	fireworkData:Torappu_FireworkData;
+	halfIdleData:Torappu_HalfIdleData;
 	kvSwitchData:[Dict_2_System_String_Torappu_ActivityKVSwitchData_];
 	dynEntrySwitchData:[Dict_2_System_String_Torappu_ActivityDynEntrySwitchData_];
 	hiddenStageData:[Torappu_ActivityTable_ActivityHiddenStageData];

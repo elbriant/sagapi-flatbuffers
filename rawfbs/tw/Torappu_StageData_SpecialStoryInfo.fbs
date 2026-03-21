@@ -6,6 +6,8 @@ table Torappu_StageData_SpecialStoryInfo {
 	rewards:[Torappu_ItemBundle];
 	progressInfo:Torappu_StageData_SpecialProgressInfo;
 	imageId:string;
+	keyItemId:string;
+	unlockDesc:string;
 }
 
 

@@ -64,6 +64,8 @@ table Torappu_RoguelikeGameConst {
 	candleReturnDescCandleUpgrade:string;
 	candleReturnDescCandle:string;
 	charSelectCandleConflictToast:string;
+	charSelectGuidedConflictToast:string;
+	charSelectNonGuidedConflictToast:string;
 	gainBuffDiffGrade:int32;
 	dsPredictTips:string;
 	dsBuffActiveTips:string;

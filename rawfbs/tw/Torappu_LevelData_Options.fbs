@@ -12,6 +12,7 @@ table Torappu_LevelData_Options {
 	isTrainingLevel:bool;
 	isHardTrainingLevel:bool;
 	isPredefinedCardsSelectable:bool;
+	displayRestTime:bool;
 	maxPlayTime:float;
 	functionDisableMask:Torappu_BattleFunctionDisableMask;
 	configBlackBoard:[Torappu_Blackboard_DataPair];

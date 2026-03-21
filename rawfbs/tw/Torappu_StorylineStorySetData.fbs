@@ -11,6 +11,7 @@ table Torappu_StorylineStorySetData {
 	sortWithinYear:int32;
 	kvImageId:string;
 	titleImageId:string;
+	haveVideoToPlay:bool;
 	backgroundId:string;
 	gameMusicId:string;
 	coreRewardType:Torappu_ItemType;

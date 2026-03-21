@@ -38,6 +38,9 @@ include "Dict_2_System_String_Torappu_ActMainSSData_.fbs";
 include "Dict_2_System_String_Torappu_ActivityEnemyDuelData_.fbs";
 include "Dict_2_System_String_Torappu_Act42SideData_.fbs";
 include "Dict_2_System_String_Torappu_Act44SideData_.fbs";
+include "Dict_2_System_String_Torappu_Act1VHalfIdleData_.fbs";
+include "Dict_2_System_String_Torappu_Act45SideData_.fbs";
+include "Dict_2_System_String_Torappu_ActRecruitOnlyData_.fbs";
 
 table Torappu_ActivityTable_ActivityDetailTable {
 	defaultActivityData:[Dict_2_System_String_Torappu_DefaultFirstData_];
@@ -80,6 +83,9 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeActEnemyDuelData:[Dict_2_System_String_Torappu_ActivityEnemyDuelData_];
 	typeAct42SideData:[Dict_2_System_String_Torappu_Act42SideData_];
 	typeAct44SideData:[Dict_2_System_String_Torappu_Act44SideData_];
+	typeAct1VHalfIdleData:[Dict_2_System_String_Torappu_Act1VHalfIdleData_];
+	typeAct45SideData:[Dict_2_System_String_Torappu_Act45SideData_];
+	recruitOnlyData:[Dict_2_System_String_Torappu_ActRecruitOnlyData_];
 }
 
 

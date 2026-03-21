@@ -1,6 +1,7 @@
 
 table Torappu_ActMainSSZoneAdditionData {
 	unlockTip:string;
+	unlockTipAfterRetro:string;
 }
 
 

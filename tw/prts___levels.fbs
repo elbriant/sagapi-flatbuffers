@@ -41,6 +41,7 @@ table Torappu_LevelData_Options {
 	isTrainingLevel:bool;
 	isHardTrainingLevel:bool;
 	isPredefinedCardsSelectable:bool;
+	displayRestTime:bool;
 	maxPlayTime:float;
 	functionDisableMask:Torappu_BattleFunctionDisableMask;
 	configBlackBoard:[Torappu_Blackboard_DataPair];
@@ -214,7 +215,8 @@ enum Torappu_CheckpointType : int32 {
 	ALERT = 7,
 	PATROL_MOVE = 8,
 	WAIT_BOSSRUSH_WAVE = 9,
-	INVALID = 10
+	MAP_OFFSET_MOVE = 10,
+	INVALID = 11
 }
 
 table Torappu_RouteData_CheckpointData {

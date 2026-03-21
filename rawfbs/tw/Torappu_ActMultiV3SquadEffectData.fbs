@@ -10,8 +10,8 @@ table Torappu_ActMultiV3SquadEffectData {
 	buffDesc:string;
 	debuffDesc:string;
 	token:Torappu_ActMultiV3SquadEffectData_Token;
-	unlockKeyNum:int32;
 	runeData:Torappu_RuneTable_PackedRuneData;
+	isInitial:bool;
 }
 
 

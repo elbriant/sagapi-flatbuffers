@@ -1,0 +1,9 @@
+
+table Torappu_Act1VHalfIdleCharRankData_CharRankData {
+	level:int32;
+	accumulatedExp:int32;
+	exp:int32;
+}
+
+
+root_type Torappu_Act1VHalfIdleCharRankData_CharRankData;

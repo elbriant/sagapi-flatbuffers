@@ -1,0 +1,10 @@
+
+table Torappu_ActMultiV3SailBoatLevelPoolData {
+	stageId:string;
+	startBlockPool:string;
+	midBlockPool:string;
+	endBlockPool:string;
+}
+
+
+root_type Torappu_ActMultiV3SailBoatLevelPoolData;

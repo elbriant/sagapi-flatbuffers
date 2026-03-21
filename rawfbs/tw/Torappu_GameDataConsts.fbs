@@ -5,6 +5,7 @@ include "Torappu_ItemBundle.fbs";
 include "Torappu_ListDict_2_System_Int32_System_Int32_.fbs";
 include "Dict_2_System_String_Torappu_TermDescriptionData_.fbs";
 include "Dict_2_System_String_Torappu_SubProfessionAttackType_.fbs";
+include "Torappu_GameDataConsts_FeverGameData.fbs";
 
 table Torappu_GameDataConsts {
 	maxPlayerLevel:int32;
@@ -31,6 +32,9 @@ table Torappu_GameDataConsts {
 	diamondToShdRate:int32;
 	requestSameFriendCD:int32;
 	baseMaxFriendNum:int32;
+	maxStarFriendNum:int32;
+	maxSquadAssistDisplayNum:int32;
+	friendStarEditTrackTs:int64;
 	hardDiamondDrop:int32;
 	instFinDmdShdCost:int32;
 	easyCrystalBonus:int32;
@@ -119,6 +123,7 @@ table Torappu_GameDataConsts {
 	multipleActionOpen:bool;
 	subProfessionDamageTypePairs:[Dict_2_System_String_Torappu_SubProfessionAttackType_];
 	classicProtectChar:[string];
+	feverGameData:Torappu_GameDataConsts_FeverGameData;
 	birthdaySettingDesc:string;
 	birthdaySettingConfirmDesc:string;
 	birthdaySettingLeapConfirmDesc:string;

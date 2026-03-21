@@ -107,7 +107,11 @@ enum Torappu_ItemType : int32 {
 	EXCLUSIVE_TKT_GACHA = 83,
 	EXCLUSIVE_TKT_GACHA_10 = 84,
 	SO_CHAR_EXP = 85,
-	GIFTPACKAGE_TKT = 86
+	GIFTPACKAGE_TKT = 86,
+	VOUCHER_SKIN_V2 = 87,
+	RANDOM_VOUCHER_SKIN = 88,
+	ACT1VHALFIDLE_ITEM = 89,
+	PLOT_ITEM = 90
 }
 
 table Torappu_ItemBundle {
@@ -130,7 +134,8 @@ enum Torappu_StageDropType : int32 {
 	COMPLETE = 8,
 	CHARM_DROP = 9,
 	OVERRIDE_DROP = 10,
-	ITEM_RETURN = 11
+	ITEM_RETURN = 11,
+	CONDITION_DROP = 12
 }
 
 table Torappu_WeightItemBundle {
@@ -270,7 +275,11 @@ enum Torappu_ActivityType : int32 {
 	VEC_BREAK_V2 = 53,
 	TYPE_ACT42SIDE = 54,
 	TYPE_ACT44SIDE = 55,
-	ENUM = 56
+	HALFIDLE_VERIFY1 = 56,
+	TYPE_ACT45SIDE = 57,
+	TEAM_QUEST = 58,
+	RECRUIT_ONLY = 59,
+	ENUM = 60
 }
 
 table Torappu_RetroActData {
@@ -415,6 +424,8 @@ table Torappu_StageData_SpecialStoryInfo {
 	rewards:[Torappu_ItemBundle];
 	progressInfo:Torappu_StageData_SpecialProgressInfo;
 	imageId:string;
+	keyItemId:string;
+	unlockDesc:string;
 }
 
 

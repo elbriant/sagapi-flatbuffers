@@ -19,6 +19,9 @@ include "Torappu_ActMultiV3ReportData.fbs";
 include "Torappu_ActMultiV3TempCharData.fbs";
 include "Torappu_ActMultiV3ConstToastData.fbs";
 include "Torappu_ActMultiV3ConstData.fbs";
+include "Dict_2_System_String_Torappu_ActMultiV3SailBoatLevelPoolData_.fbs";
+include "Dict_2_System_String_List_1_Torappu_ActMultiV3SailBoatBlockPoolData__.fbs";
+include "Dict_2_System_String_Torappu_ActMultiV3SailBoatBlockInfoData_.fbs";
 
 table Torappu_ActMultiV3Data {
 	selectStepDataList:[Torappu_ActMultiV3SelectStepData];
@@ -43,6 +46,9 @@ table Torappu_ActMultiV3Data {
 	tempCharDataList:[Torappu_ActMultiV3TempCharData];
 	constToastData:Torappu_ActMultiV3ConstToastData;
 	constData:Torappu_ActMultiV3ConstData;
+	sailBoatLevelPoolDict:[Dict_2_System_String_Torappu_ActMultiV3SailBoatLevelPoolData_];
+	sailBoatBlockPoolDict:[Dict_2_System_String_List_1_Torappu_ActMultiV3SailBoatBlockPoolData__];
+	sailBoatBlockInfoList:[Dict_2_System_String_Torappu_ActMultiV3SailBoatBlockInfoData_];
 }
 
 

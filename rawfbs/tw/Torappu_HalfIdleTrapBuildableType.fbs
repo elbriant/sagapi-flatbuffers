@@ -1,0 +1,11 @@
+
+enum Torappu_HalfIdleTrapBuildableType : int32 {
+	NONE = 0,
+	HIGHLAND = 1,
+	LOWLAND = 2,
+	IGNORE_TILE_HEIGHT = 3,
+	LHHE = 4,
+	LHPLT = 5,
+	LHRUIN = 6,
+	LHBOT = 7
+}

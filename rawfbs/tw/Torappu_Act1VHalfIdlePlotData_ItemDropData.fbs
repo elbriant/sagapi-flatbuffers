@@ -1,0 +1,8 @@
+
+table Torappu_Act1VHalfIdlePlotData_ItemDropData {
+	itemId:string;
+	itemDropDesc:string;
+}
+
+
+root_type Torappu_Act1VHalfIdlePlotData_ItemDropData;
