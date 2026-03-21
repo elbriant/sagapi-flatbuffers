@@ -1,0 +1,9 @@
+include "Torappu_MotionMode.fbs";
+
+table Torappu_Undefinable_1_Torappu_MotionMode_ {
+	m_defined:bool;
+	m_value:Torappu_MotionMode;
+}
+
+
+root_type Torappu_Undefinable_1_Torappu_MotionMode_;

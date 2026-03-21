@@ -1,0 +1,16 @@
+include "Torappu_PlayerAvatarGroupType.fbs";
+
+table Torappu_PlayerAvatarPerData {
+	avatarId:string;
+	avatarType:Torappu_PlayerAvatarGroupType;
+	avatarIdSort:int32;
+	avatarIdDesc:string;
+	avatarItemName:string;
+	avatarItemDesc:string;
+	avatarItemUsage:string;
+	obtainApproach:string;
+	dynAvatarId:string;
+}
+
+
+root_type Torappu_PlayerAvatarPerData;

@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeEventType.fbs";
+
+table Torappu_RoguelikeFragmentBuffData {
+	itemId:string;
+	maskType:Torappu_RoguelikeEventType;
+	desc:string;
+}
+
+
+root_type Torappu_RoguelikeFragmentBuffData;

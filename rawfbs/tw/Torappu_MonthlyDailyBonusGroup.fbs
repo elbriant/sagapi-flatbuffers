@@ -1,0 +1,13 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_MonthlyDailyBonusGroup {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	items:[Torappu_ItemBundle];
+	imgId:string;
+	backId:string;
+}
+
+
+root_type Torappu_MonthlyDailyBonusGroup;

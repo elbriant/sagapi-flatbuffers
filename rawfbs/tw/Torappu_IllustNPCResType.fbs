@@ -1,0 +1,6 @@
+
+enum Torappu_IllustNPCResType : int32 {
+	NONE = 0,
+	NPC = 1,
+	CHAR = 2
+}

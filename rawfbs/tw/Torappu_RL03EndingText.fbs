@@ -1,0 +1,20 @@
+
+table Torappu_RL03EndingText {
+	summaryGetTotem:string;
+	summaryDemoPointUp:string;
+	summaryDemoPointDown:string;
+	summaryDemoGradeUp:string;
+	summaryDemoGradeDown:string;
+	summaryVisionPointUp:string;
+	summaryVisionPointDown:string;
+	summaryVisionGradeUp:string;
+	summaryVisionGradeDown:string;
+	summaryFightWin:string;
+	summaryFightFail:string;
+	summaryExchangeTotem:string;
+	summaryUseTotem:string;
+	summaryVisionGrade:string;
+}
+
+
+root_type Torappu_RL03EndingText;

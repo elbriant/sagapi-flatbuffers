@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData {
+	damageMin:int32;
+	damageMax:int32;
+	item:Torappu_ItemBundle;
+	dailyMissionPoint:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData;

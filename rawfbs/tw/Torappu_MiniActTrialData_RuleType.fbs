@@ -1,0 +1,6 @@
+
+enum Torappu_MiniActTrialData_RuleType : int32 {
+	NONE = 0,
+	TITLE = 1,
+	CONTENT = 2
+}

@@ -1,0 +1,10 @@
+
+enum Torappu_TipData_Category : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	UI = 2,
+	BUILDING = 4,
+	GACHA = 8,
+	MISC = 16,
+	ALL = 31
+}

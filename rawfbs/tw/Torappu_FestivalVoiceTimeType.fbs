@@ -1,0 +1,6 @@
+
+enum Torappu_FestivalVoiceTimeType : int32 {
+	NONE = 0,
+	FESTIVAL = 1,
+	BIRTHDAY = 2
+}

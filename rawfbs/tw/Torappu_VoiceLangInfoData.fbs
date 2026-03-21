@@ -1,0 +1,11 @@
+include "Torappu_VoiceLangType.fbs";
+
+table Torappu_VoiceLangInfoData {
+	wordkey:string;
+	voiceLangType:Torappu_VoiceLangType;
+	cvName:[string];
+	voicePath:string;
+}
+
+
+root_type Torappu_VoiceLangInfoData;

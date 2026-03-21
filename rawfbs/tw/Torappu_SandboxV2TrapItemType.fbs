@@ -1,0 +1,8 @@
+
+enum Torappu_SandboxV2TrapItemType : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	TACTICAL = 2,
+	FUNCTION = 3,
+	ANIMAL = 4
+}

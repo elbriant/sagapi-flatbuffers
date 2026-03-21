@@ -1,0 +1,14 @@
+include "Torappu_ProfessionCategory.fbs";
+include "Torappu_ClimbTowerTaticalBuffType.fbs";
+
+table Torappu_ClimbTowerTacticalBuffData {
+	id:string;
+	desc:string;
+	profession:Torappu_ProfessionCategory;
+	isDefaultActive:bool;
+	sortId:int32;
+	buffType:Torappu_ClimbTowerTaticalBuffType;
+}
+
+
+root_type Torappu_ClimbTowerTacticalBuffData;

@@ -1,0 +1,9 @@
+
+table Torappu_LongTermCheckInConstData {
+	startTs:int64;
+	detailTitle:string;
+	detailDesc:string;
+}
+
+
+root_type Torappu_LongTermCheckInConstData;

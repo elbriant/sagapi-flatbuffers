@@ -1,0 +1,8 @@
+
+table Torappu_BuildingData_DormPhase {
+	manpowerRecover:int32;
+	decorationLimit:int32;
+}
+
+
+root_type Torappu_BuildingData_DormPhase;

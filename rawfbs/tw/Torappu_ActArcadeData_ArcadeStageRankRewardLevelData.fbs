@@ -1,0 +1,10 @@
+include "Torappu_ActArcadeData_Rank.fbs";
+
+table Torappu_ActArcadeData_ArcadeStageRankRewardLevelData {
+	rank:Torappu_ActArcadeData_Rank;
+	rankScore:int32;
+	coinCnt:int32;
+}
+
+
+root_type Torappu_ActArcadeData_ArcadeStageRankRewardLevelData;

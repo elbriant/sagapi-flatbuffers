@@ -1,0 +1,12 @@
+include "Torappu_Act6FunAchievementType.fbs";
+
+table Torappu_Act6FunAchievementData {
+	achievementId:string;
+	sortId:int32;
+	achievementType:Torappu_Act6FunAchievementType;
+	description:string;
+	coverDesc:string;
+}
+
+
+root_type Torappu_Act6FunAchievementData;

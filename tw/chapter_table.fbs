@@ -1,0 +1,24 @@
+
+table Torappu_ChapterData {
+	chapterId:string;
+	chapterName:string;
+	chapterName2:string;
+	chapterIndex:int32;
+	preposedChapterId:string;
+	startZoneId:string;
+	endZoneId:string;
+	chapterEndStageId:string;
+}
+
+
+
+table dict__string__Torappu_ChapterData {
+  dict_key: string(key);
+  dict_value: Torappu_ChapterData;
+}
+
+table Torappu_SimpleKVTable_Torappu_ChapterData {
+  dict_array: [dict__string__Torappu_ChapterData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_ChapterData;

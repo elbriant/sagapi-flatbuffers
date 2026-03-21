@@ -1,0 +1,11 @@
+include "Torappu_ZoneRecordData.fbs";
+include "Torappu_ZoneRecordUnlockData.fbs";
+
+table Torappu_ZoneRecordGroupData {
+	zoneId:string;
+	records:[Torappu_ZoneRecordData];
+	unlockData:Torappu_ZoneRecordUnlockData;
+}
+
+
+root_type Torappu_ZoneRecordGroupData;

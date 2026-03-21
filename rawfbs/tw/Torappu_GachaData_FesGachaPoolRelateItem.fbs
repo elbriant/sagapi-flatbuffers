@@ -1,0 +1,8 @@
+
+table Torappu_GachaData_FesGachaPoolRelateItem {
+	rarityRank5ItemId:string;
+	rarityRank6ItemId:string;
+}
+
+
+root_type Torappu_GachaData_FesGachaPoolRelateItem;

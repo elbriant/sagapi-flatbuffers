@@ -1,0 +1,14 @@
+include "Torappu_ShopRecommendTemplateNormalGiftParam.fbs";
+include "Torappu_ShopRecommendTemplateNormalSkinParam.fbs";
+include "Torappu_ShopRecommendTemplateNormalFurnParam.fbs";
+include "Torappu_ShopRecommendTemplateReturnSkinParam.fbs";
+
+table Torappu_ShopRecommendTemplateParam {
+	normalGiftParam:Torappu_ShopRecommendTemplateNormalGiftParam;
+	normalSkinParam:Torappu_ShopRecommendTemplateNormalSkinParam;
+	normalFurnParam:Torappu_ShopRecommendTemplateNormalFurnParam;
+	returnSkinParam:Torappu_ShopRecommendTemplateReturnSkinParam;
+}
+
+
+root_type Torappu_ShopRecommendTemplateParam;

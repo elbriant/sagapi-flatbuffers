@@ -1,0 +1,14 @@
+
+table Torappu_ClimbTowerSeasonInfoData {
+	id:string;
+	name:string;
+	seasonNum:int32;
+	startTs:int64;
+	endTs:int64;
+	towers:[string];
+	seasonCards:[string];
+	replicatedTowers:[string];
+}
+
+
+root_type Torappu_ClimbTowerSeasonInfoData;

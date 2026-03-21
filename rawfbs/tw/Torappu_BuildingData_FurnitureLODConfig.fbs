@@ -1,0 +1,9 @@
+include "Dict_2_Torappu_BuildingData_LODLEVEL_List_1_System_String__.fbs";
+
+table Torappu_BuildingData_FurnitureLODConfig {
+	showedObjNames:[Dict_2_Torappu_BuildingData_LODLEVEL_List_1_System_String__];
+	isOverWrite:bool;
+}
+
+
+root_type Torappu_BuildingData_FurnitureLODConfig;

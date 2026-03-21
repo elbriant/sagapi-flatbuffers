@@ -1,0 +1,9 @@
+
+table Torappu_BuildingData_ShopPhase {
+	counterNum:int32;
+	speed:float;
+	moneyCapacity:int32;
+}
+
+
+root_type Torappu_BuildingData_ShopPhase;

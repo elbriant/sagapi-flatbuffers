@@ -1,0 +1,9 @@
+include "Torappu_RoguelikeBuff.fbs";
+
+table Torappu_RoguelikeGameRelicData {
+	id:string;
+	buffs:[Torappu_RoguelikeBuff];
+}
+
+
+root_type Torappu_RoguelikeGameRelicData;

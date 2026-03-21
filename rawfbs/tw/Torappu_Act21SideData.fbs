@@ -1,0 +1,10 @@
+include "Dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_.fbs";
+include "Torappu_Act21SideData_ConstData.fbs";
+
+table Torappu_Act21SideData {
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act21SideData_ZoneAddtionData_];
+	constData:Torappu_Act21SideData_ConstData;
+}
+
+
+root_type Torappu_Act21SideData;

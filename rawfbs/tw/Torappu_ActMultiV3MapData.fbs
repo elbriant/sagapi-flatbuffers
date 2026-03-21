@@ -1,0 +1,12 @@
+
+table Torappu_ActMultiV3MapData {
+	stageId:string;
+	modeId:string;
+	sortId:int32;
+	missionIdList:[string];
+	displayEnemyIdList:[string];
+	previewIconId:string;
+}
+
+
+root_type Torappu_ActMultiV3MapData;

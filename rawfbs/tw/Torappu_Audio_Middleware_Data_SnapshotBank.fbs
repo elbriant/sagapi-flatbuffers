@@ -1,0 +1,11 @@
+
+table Torappu_Audio_Middleware_Data_SnapshotBank {
+	targetSnapshot:string;
+	hookSoundFxBank:string;
+	delay:float;
+	duration:float;
+	name:string;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_SnapshotBank;

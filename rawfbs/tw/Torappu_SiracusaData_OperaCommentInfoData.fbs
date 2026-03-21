@@ -1,0 +1,14 @@
+
+table Torappu_SiracusaData_OperaCommentInfoData {
+	commentId:string;
+	referenceOperaId:string;
+	columnIndex:int32;
+	columnSortId:int32;
+	commentTitle:string;
+	score:string;
+	commentContent:string;
+	commentCharId:string;
+}
+
+
+root_type Torappu_SiracusaData_OperaCommentInfoData;

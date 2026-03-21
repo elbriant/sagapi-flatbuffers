@@ -1,0 +1,11 @@
+
+enum Torappu_ActivityThemeType : int32 {
+	NONE = 0,
+	ACTIVITY = 1,
+	CRISIS = 2,
+	MAINLINE = 3,
+	ROGUELIKE = 4,
+	CRISISV2 = 5,
+	SANDBOX_PERM = 6,
+	ACTIVITY_COMP = 7
+}

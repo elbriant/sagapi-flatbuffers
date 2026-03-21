@@ -1,0 +1,13 @@
+
+table Torappu_UniEquipMissionData {
+	template:string;
+	desc:string;
+	paramList:[string];
+	uniEquipMissionId:string;
+	uniEquipMissionSort:int32;
+	uniEquipId:string;
+	jumpStageId:string;
+}
+
+
+root_type Torappu_UniEquipMissionData;

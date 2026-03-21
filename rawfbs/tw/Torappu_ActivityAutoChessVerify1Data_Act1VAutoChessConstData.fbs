@@ -1,0 +1,51 @@
+include "Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData {
+	chessSoldPrice:int32;
+	shopRefreshPrice:int32;
+	bonusRound:int32;
+	maxDeckCnt:int32;
+	maxChessCnt:int32;
+	deltaShopUpgradePrice:int32;
+	shieldToDmgScale:int32;
+	spellCntLimit:int32;
+	costPlayerHpLimit:int32;
+	rewardEnemyGroupKey:string;
+	rewardEnemyEffectId:string;
+	selfDefenseDamageTip:string;
+	selfCharDamageTip:string;
+	selfDamageTip:string;
+	selfSpecialDamageTip:string;
+	additionalAwardCount1:int32;
+	additionalAwardCount2:int32;
+	normalAwardTxt:string;
+	additionalAwardTxt:string;
+	milestoneId:string;
+	boxChangeTxt:string;
+	startCd:int32;
+	borrowCount:int32;
+	maxBorrowListCnt:int32;
+	dailyMissionParam:int32;
+	dailyMissionRewardId:string;
+	dailyMissionRewardType:string;
+	dailyMissionRewardCount:int32;
+	dailyMissionName:string;
+	dailyMissionDesc:string;
+	dailyMissionRule:string;
+	defaultFaction:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData;
+	utilTrapIds:[string];
+	specialRescuitIds:[string];
+	rewardSkinId:string;
+	rewardSkinText:string;
+	rewardAvatarId:string;
+	rewardAvatarText:string;
+	forceFocusEnemyTurns:[int32];
+	tutorialPhase1Round:int32;
+	tutorialPhase2Round:int32;
+	tutorialPhase3Round:int32;
+	tutorialPhase1ShopLevel:int32;
+	tutorialPhase2ShopLevel:int32;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData;

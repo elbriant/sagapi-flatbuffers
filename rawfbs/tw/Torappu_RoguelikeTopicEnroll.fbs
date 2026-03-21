@@ -1,0 +1,11 @@
+include "Torappu_RoguelikeEnrollType.fbs";
+
+table Torappu_RoguelikeTopicEnroll {
+	enrollId:string;
+	enrollTime:int64;
+	enrollType:Torappu_RoguelikeEnrollType;
+	enrollNoticeEndTime:int64;
+}
+
+
+root_type Torappu_RoguelikeTopicEnroll;

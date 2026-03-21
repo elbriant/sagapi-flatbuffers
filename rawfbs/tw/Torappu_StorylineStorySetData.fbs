@@ -1,0 +1,25 @@
+include "Torappu_StorylineStorySetType.fbs";
+include "Torappu_ItemType.fbs";
+include "Torappu_StorylineMainlineData.fbs";
+include "Torappu_StorylineSSData.fbs";
+include "Torappu_StorylineCollectData.fbs";
+
+table Torappu_StorylineStorySetData {
+	storySetId:string;
+	storySetType:Torappu_StorylineStorySetType;
+	sortByYear:int32;
+	sortWithinYear:int32;
+	kvImageId:string;
+	titleImageId:string;
+	backgroundId:string;
+	gameMusicId:string;
+	coreRewardType:Torappu_ItemType;
+	coreRewardId:string;
+	relevantActivityId:string;
+	mainlineData:Torappu_StorylineMainlineData;
+	ssData:Torappu_StorylineSSData;
+	collectData:Torappu_StorylineCollectData;
+}
+
+
+root_type Torappu_StorylineStorySetData;

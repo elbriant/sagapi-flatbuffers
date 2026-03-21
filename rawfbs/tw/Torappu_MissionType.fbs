@@ -1,0 +1,15 @@
+
+enum Torappu_MissionType : int32 {
+	UNKNOWN = 0,
+	MAIN = 1,
+	DAILY = 2,
+	WEEKLY = 3,
+	GUIDE = 4,
+	SUB = 5,
+	ACTIVITY = 6,
+	OPENSERVER = 7,
+	TOWERSEASON = 8,
+	RETRO = 9,
+	SPECIAL_OPERATOR = 10,
+	SPECIAL_OPERATOR_WEEKLY = 11
+}

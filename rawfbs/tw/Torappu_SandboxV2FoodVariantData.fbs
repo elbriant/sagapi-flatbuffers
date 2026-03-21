@@ -1,0 +1,10 @@
+include "Torappu_SandboxV2FoodVariantType.fbs";
+
+table Torappu_SandboxV2FoodVariantData {
+	type:Torappu_SandboxV2FoodVariantType;
+	name:string;
+	usage:string;
+}
+
+
+root_type Torappu_SandboxV2FoodVariantData;

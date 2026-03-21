@@ -1,0 +1,8 @@
+
+table Torappu_ActArchiveChallengeBookItemData {
+	storyId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ActArchiveChallengeBookItemData;

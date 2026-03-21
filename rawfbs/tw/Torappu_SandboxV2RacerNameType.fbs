@@ -1,0 +1,5 @@
+
+enum Torappu_SandboxV2RacerNameType : int32 {
+	PREFIX = 0,
+	SUFFIX = 1
+}

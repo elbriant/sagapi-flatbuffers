@@ -1,0 +1,7 @@
+
+enum Torappu_SandboxV2WeatherType : int32 {
+	NORMAL = 0,
+	RAINFOREST = 1,
+	VOLCANO = 2,
+	DESERT = 3
+}

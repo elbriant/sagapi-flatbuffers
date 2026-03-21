@@ -1,0 +1,8 @@
+
+table Torappu_ActivityEnemyDuelConstData_PingCond {
+	cond:int32;
+	txt:string;
+}
+
+
+root_type Torappu_ActivityEnemyDuelConstData_PingCond;

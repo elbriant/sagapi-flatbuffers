@@ -1,0 +1,7 @@
+
+enum Torappu_CampaignStageType : int32 {
+	NONE = 0,
+	PERMANENT = 1,
+	ROTATE = 2,
+	TRAINING = 3
+}

@@ -1,0 +1,15 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_ActivityBossRushData_BossRushTeamData {
+	teamId:string;
+	teamName:string;
+	charIdList:[string];
+	teamBuffName:string;
+	teamBuffDes:string;
+	teamBuffId:string;
+	maxCharNum:int32;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_ActivityBossRushData_BossRushTeamData;

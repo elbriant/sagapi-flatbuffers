@@ -1,0 +1,8 @@
+
+table Torappu_Act9D0Data_ActivityNewsServerInfo {
+	newsId:string;
+	preposedStage:string;
+}
+
+
+root_type Torappu_Act9D0Data_ActivityNewsServerInfo;

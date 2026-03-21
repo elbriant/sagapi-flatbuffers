@@ -1,0 +1,7 @@
+
+table Torappu_ActMainSSZoneAdditionData {
+	unlockTip:string;
+}
+
+
+root_type Torappu_ActMainSSZoneAdditionData;

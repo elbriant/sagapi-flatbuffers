@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeCommonDevelopmentNodeType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	KEY = 2,
+	DIFFICULTY = 3
+}

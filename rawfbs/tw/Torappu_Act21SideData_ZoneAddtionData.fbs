@@ -1,0 +1,10 @@
+
+table Torappu_Act21SideData_ZoneAddtionData {
+	zoneId:string;
+	unlockText:string;
+	stageUnlockText:string;
+	entryId:string;
+}
+
+
+root_type Torappu_Act21SideData_ZoneAddtionData;

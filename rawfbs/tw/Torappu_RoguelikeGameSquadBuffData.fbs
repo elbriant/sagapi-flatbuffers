@@ -1,0 +1,14 @@
+include "Torappu_RoguelikeBuff.fbs";
+
+table Torappu_RoguelikeGameSquadBuffData {
+	id:string;
+	iconId:string;
+	outerName:string;
+	innerName:string;
+	functionDesc:string;
+	desc:string;
+	buffs:[Torappu_RoguelikeBuff];
+}
+
+
+root_type Torappu_RoguelikeGameSquadBuffData;

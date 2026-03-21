@@ -1,0 +1,19 @@
+
+enum Torappu_BuildingData_RoomType : int32 {
+	NONE = 0,
+	CONTROL = 1,
+	POWER = 2,
+	MANUFACTURE = 4,
+	SHOP = 8,
+	DORMITORY = 16,
+	MEETING = 32,
+	HIRE = 64,
+	ELEVATOR = 128,
+	CORRIDOR = 256,
+	TRADING = 512,
+	WORKSHOP = 1024,
+	TRAINING = 2048,
+	PRIVATE = 4096,
+	FUNCTIONAL = 3710,
+	ALL = 8191
+}

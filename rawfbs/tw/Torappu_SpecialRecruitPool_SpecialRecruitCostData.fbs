@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_SpecialRecruitPool_SpecialRecruitCostData {
+	timeLength:int32;
+	recruitPrice:int32;
+	itemCosts:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_SpecialRecruitPool_SpecialRecruitCostData;

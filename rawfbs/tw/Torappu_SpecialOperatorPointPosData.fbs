@@ -1,0 +1,8 @@
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_SpecialOperatorPointPosData {
+	pos:UnityEngine_Vector2;
+}
+
+
+root_type Torappu_SpecialOperatorPointPosData;

@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2LogisticsCharData {
+	levelUpperLimit:int32;
+	charUpperLimit:int32;
+}
+
+
+root_type Torappu_SandboxV2LogisticsCharData;

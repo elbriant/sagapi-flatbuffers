@@ -1,0 +1,14 @@
+
+table Torappu_MeetingClueData_MessageLeaveBoardConstData {
+	visitorBonus:int32;
+	visitorBonusLimit:int32;
+	visitorToWeek:int32;
+	visitorPreWeek:int32;
+	bonusToast:string;
+	bonusLimitText:string;
+	recordsTextBonus:string;
+	recordsTextTip:string;
+}
+
+
+root_type Torappu_MeetingClueData_MessageLeaveBoardConstData;

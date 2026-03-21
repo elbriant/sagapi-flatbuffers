@@ -1,0 +1,6 @@
+
+enum Torappu_SkillType : int32 {
+	PASSIVE = 0,
+	MANUAL = 1,
+	AUTO = 2
+}

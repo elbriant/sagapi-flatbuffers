@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ReturnV2DailySupplyData {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ReturnV2DailySupplyData;

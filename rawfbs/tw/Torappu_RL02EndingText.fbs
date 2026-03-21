@@ -1,0 +1,29 @@
+
+table Torappu_RL02EndingText {
+	summaryMutation:string;
+	summaryDice:string;
+	summaryDiceResultGood:string;
+	summaryDiceResultNormal:string;
+	summaryDiceResultBad:string;
+	summaryDiceResultDesc:string;
+	summaryCommuDesc:string;
+	summaryHiddenDesc:string;
+	summaryKnightDesc:string;
+	summaryGoldDesc:string;
+	summaryPracticeDesc:string;
+	summaryCommuEmptyDesc:string;
+	summaryCommuNotEmptyDesc:string;
+	summaryHiddenPassedDesc:string;
+	summaryHiddenNotPassedDesc:string;
+	summaryKnightPassedDesc:string;
+	summaryKnightNotPassedDesc:string;
+	summaryGoldThreshold:int32;
+	summaryGoldHighDesc:string;
+	summaryGoldLowDesc:string;
+	summaryPracticeThreshold:int32;
+	summaryPracticeHighDesc:string;
+	summaryPracticeLowDesc:string;
+}
+
+
+root_type Torappu_RL02EndingText;

@@ -1,0 +1,16 @@
+include "Torappu_StorylineLocationType.fbs";
+include "Torappu_StorylineMainlineSplitData.fbs";
+
+table Torappu_StorylineLocationData {
+	locationId:string;
+	locationType:Torappu_StorylineLocationType;
+	sortId:int32;
+	startTime:int64;
+	presentStageId:string;
+	unlockStageId:string;
+	relevantStorySetId:string;
+	mainlineSplitData:Torappu_StorylineMainlineSplitData;
+}
+
+
+root_type Torappu_StorylineLocationData;

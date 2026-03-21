@@ -1,0 +1,8 @@
+
+table Torappu_Act4funPerformGroupInfo {
+	performGroupId:string;
+	performIds:[string];
+}
+
+
+root_type Torappu_Act4funPerformGroupInfo;

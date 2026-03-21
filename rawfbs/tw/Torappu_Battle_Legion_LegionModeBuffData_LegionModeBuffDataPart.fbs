@@ -1,0 +1,12 @@
+include "Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase.fbs";
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart {
+	isInheritable:bool;
+	isRedrawWhenReplace:bool;
+	description:string;
+	descriptionHead:string;
+	levelPhases:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase];
+}
+
+
+root_type Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart;

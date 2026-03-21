@@ -1,0 +1,10 @@
+include "Torappu_TalentData.fbs";
+
+table Torappu_CharacterData_MasterData {
+	level:int32;
+	masterId:string;
+	talentData:Torappu_TalentData;
+}
+
+
+root_type Torappu_CharacterData_MasterData;

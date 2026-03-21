@@ -1,0 +1,8 @@
+
+enum Torappu_ActArcadeData_Rank : int32 {
+	B = 0,
+	A = 1,
+	S = 2,
+	SS = 3,
+	SSS = 4
+}

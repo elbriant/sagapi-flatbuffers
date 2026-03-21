@@ -1,0 +1,10 @@
+
+table Torappu_GachaData_FreeLimitGachaData {
+	poolId:string;
+	openTime:int64;
+	endTime:int64;
+	freeCount:int32;
+}
+
+
+root_type Torappu_GachaData_FreeLimitGachaData;

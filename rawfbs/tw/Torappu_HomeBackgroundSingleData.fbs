@@ -1,0 +1,19 @@
+include "Torappu_HomeMultiFormChangeRule.fbs";
+include "Torappu_HomeBackgroundMultiFormData.fbs";
+
+table Torappu_HomeBackgroundSingleData {
+	bgId:string;
+	bgSortId:int32;
+	bgStartTime:int64;
+	bgName:string;
+	bgDes:string;
+	bgUsage:string;
+	isMultiForm:bool;
+	changeRule:Torappu_HomeMultiFormChangeRule;
+	multiFormList:[Torappu_HomeBackgroundMultiFormData];
+	obtainApproach:string;
+	unlockDesList:[string];
+}
+
+
+root_type Torappu_HomeBackgroundSingleData;

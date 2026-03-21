@@ -1,0 +1,9 @@
+include "Dict_2_System_String_Torappu_BuildingData_MusicSingleData_.fbs";
+
+table Torappu_BuildingData_MusicData {
+	defaultMusic:string;
+	musicDatas:[Dict_2_System_String_Torappu_BuildingData_MusicSingleData_];
+}
+
+
+root_type Torappu_BuildingData_MusicData;

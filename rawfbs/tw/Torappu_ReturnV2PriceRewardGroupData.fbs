@@ -1,0 +1,11 @@
+include "Torappu_ReturnV2PriceRewardData.fbs";
+
+table Torappu_ReturnV2PriceRewardGroupData {
+	groupId:string;
+	startTime:int64;
+	endTime:int64;
+	contentList:[Torappu_ReturnV2PriceRewardData];
+}
+
+
+root_type Torappu_ReturnV2PriceRewardGroupData;

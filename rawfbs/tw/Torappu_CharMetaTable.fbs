@@ -1,0 +1,15 @@
+include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Dict_2_System_String_Dict_2_System_String_Torappu_SpCharMissionData__.fbs";
+include "Dict_2_System_String_System_Int64_.fbs";
+include "Dict_2_System_String_Torappu_CharMasterBasicData_.fbs";
+
+table Torappu_CharMetaTable {
+	spCharGroups:[Dict_2_System_String_List_1_System_String__];
+	spCharMissions:[Dict_2_System_String_Dict_2_System_String_Torappu_SpCharMissionData__];
+	spCharVoucherSkinTime:[Dict_2_System_String_System_Int64_];
+	charIdMasterListMap:[Dict_2_System_String_List_1_System_String__];
+	charMasterDataMap:[Dict_2_System_String_Torappu_CharMasterBasicData_];
+}
+
+
+root_type Torappu_CharMetaTable;

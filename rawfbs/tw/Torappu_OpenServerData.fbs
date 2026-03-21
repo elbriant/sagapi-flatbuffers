@@ -1,0 +1,16 @@
+include "Torappu_MissionGroup.fbs";
+include "Torappu_MissionData.fbs";
+include "Torappu_TotalCheckinData.fbs";
+include "Torappu_ChainLoginData.fbs";
+
+table Torappu_OpenServerData {
+	openServerMissionGroup:Torappu_MissionGroup;
+	openServerMissionData:[Torappu_MissionData];
+	checkInData:[Torappu_TotalCheckinData];
+	chainLoginData:[Torappu_ChainLoginData];
+	totalCheckinCharData:[string];
+	chainLoginCharData:[string];
+}
+
+
+root_type Torappu_OpenServerData;

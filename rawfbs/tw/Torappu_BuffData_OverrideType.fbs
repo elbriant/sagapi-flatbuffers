@@ -1,0 +1,8 @@
+
+enum Torappu_BuffData_OverrideType : int32 {
+	DEFAULT = 0,
+	STACK = 1,
+	UNIQUE = 2,
+	EXTEND = 3,
+	EXTEND_TIME = 4
+}

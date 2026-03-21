@@ -1,0 +1,8 @@
+include "Dict_2_System_String_System_String_.fbs";
+
+table Torappu_LanguageData {
+	strings:[Dict_2_System_String_System_String_];
+}
+
+
+root_type Torappu_LanguageData;

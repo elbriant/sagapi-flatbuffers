@@ -1,0 +1,38 @@
+include "Dict_2_System_String_Torappu_SiracusaData_AreaData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_PointData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_CharCardData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_TaskRingData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_TaskBasicInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_BattleTaskData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_AVGTaskData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_ItemInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_ItemCardInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_NavigationInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_OptionInfoData_.fbs";
+include "Torappu_SiracusaData_StagePointInfoData.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_StoryBriefInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_OperaInfoData_.fbs";
+include "Dict_2_System_String_Torappu_SiracusaData_OperaCommentInfoData_.fbs";
+include "Torappu_SiracusaData_ConstData.fbs";
+
+table Torappu_SiracusaData {
+	areaDataMap:[Dict_2_System_String_Torappu_SiracusaData_AreaData_];
+	pointDataMap:[Dict_2_System_String_Torappu_SiracusaData_PointData_];
+	charCardMap:[Dict_2_System_String_Torappu_SiracusaData_CharCardData_];
+	taskRingMap:[Dict_2_System_String_Torappu_SiracusaData_TaskRingData_];
+	taskInfoMap:[Dict_2_System_String_Torappu_SiracusaData_TaskBasicInfoData_];
+	battleTaskMap:[Dict_2_System_String_Torappu_SiracusaData_BattleTaskData_];
+	avgTaskMap:[Dict_2_System_String_Torappu_SiracusaData_AVGTaskData_];
+	itemInfoMap:[Dict_2_System_String_Torappu_SiracusaData_ItemInfoData_];
+	itemCardInfoMap:[Dict_2_System_String_Torappu_SiracusaData_ItemCardInfoData_];
+	navigationInfoMap:[Dict_2_System_String_Torappu_SiracusaData_NavigationInfoData_];
+	optionInfoMap:[Dict_2_System_String_Torappu_SiracusaData_OptionInfoData_];
+	stagePointList:[Torappu_SiracusaData_StagePointInfoData];
+	storyBriefInfoDataMap:[Dict_2_System_String_Torappu_SiracusaData_StoryBriefInfoData_];
+	operaInfoMap:[Dict_2_System_String_Torappu_SiracusaData_OperaInfoData_];
+	operaCommentInfoMap:[Dict_2_System_String_Torappu_SiracusaData_OperaCommentInfoData_];
+	constData:Torappu_SiracusaData_ConstData;
+}
+
+
+root_type Torappu_SiracusaData;

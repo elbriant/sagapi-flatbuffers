@@ -1,0 +1,22 @@
+include "Torappu_RecommendItemTagTips.fbs";
+include "Torappu_ShopRecommendGroup.fbs";
+include "Torappu_ShopKeeperWord.fbs";
+include "Torappu_ShopRecommendTemplateType.fbs";
+include "Torappu_ShopRecommendTemplateParam.fbs";
+
+table Torappu_ShopRecommendItem {
+	tagId:string;
+	displayType:string;
+	tagName:string;
+	itemTag:Torappu_RecommendItemTagTips;
+	orderNum:int32;
+	startDatetime:int64;
+	endDatetime:int64;
+	groupList:[Torappu_ShopRecommendGroup];
+	tagWord:Torappu_ShopKeeperWord;
+	templateType:Torappu_ShopRecommendTemplateType;
+	templateParam:Torappu_ShopRecommendTemplateParam;
+}
+
+
+root_type Torappu_ShopRecommendItem;

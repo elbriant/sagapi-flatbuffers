@@ -1,0 +1,12 @@
+include "Torappu_GridPosition.fbs";
+include "Torappu_SharedConsts_Direction.fbs";
+include "Torappu_MotionMask.fbs";
+
+table Torappu_MapData_Edge {
+	pos:Torappu_GridPosition;
+	direction:Torappu_SharedConsts_Direction;
+	blockMask:Torappu_MotionMask;
+}
+
+
+root_type Torappu_MapData_Edge;

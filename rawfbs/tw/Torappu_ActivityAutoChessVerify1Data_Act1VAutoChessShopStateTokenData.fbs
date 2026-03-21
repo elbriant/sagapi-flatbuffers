@@ -1,0 +1,9 @@
+include "Torappu_Act1VAutoChessShopTokenDisplayType.fbs";
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData {
+	tokenId:string;
+	tokenDisplayType:Torappu_Act1VAutoChessShopTokenDisplayType;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData;

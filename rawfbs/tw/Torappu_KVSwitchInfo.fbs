@@ -1,0 +1,9 @@
+
+table Torappu_KVSwitchInfo {
+	isDefault:bool;
+	displayTime:int64;
+	zoneId:string;
+}
+
+
+root_type Torappu_KVSwitchInfo;

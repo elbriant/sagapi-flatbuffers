@@ -1,0 +1,9 @@
+
+table Torappu_ActMultiV3TipsData {
+	id:string;
+	txt:string;
+	weight:int32;
+}
+
+
+root_type Torappu_ActMultiV3TipsData;

@@ -1,0 +1,9 @@
+
+table Torappu_ActArchiveCopperGildData {
+	gildTypeId:string;
+	gildName:string;
+	gildDesc:string;
+}
+
+
+root_type Torappu_ActArchiveCopperGildData;

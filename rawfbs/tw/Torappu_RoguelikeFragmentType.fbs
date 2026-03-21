@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeFragmentType : int32 {
+	NONE = 0,
+	INSPIRATION = 1,
+	WISH = 2,
+	IDEA = 3
+}

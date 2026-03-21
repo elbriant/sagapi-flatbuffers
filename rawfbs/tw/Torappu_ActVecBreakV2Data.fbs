@@ -1,0 +1,33 @@
+include "Dict_2_System_String_Torappu_ActVecBreakV2OffenseStageData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2HardStageData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2DefenseBasicData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2DefenseDetailData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2ZoneData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2DefenseGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2BattleBuffData_.fbs";
+include "Torappu_ActVecBreakV2MilestoneItemData.fbs";
+include "Dict_2_System_String_Torappu_ActVecBreakV2StageRewardData_.fbs";
+include "Torappu_ActVecBreakV2ConstData.fbs";
+include "Torappu_ActVecBreakV2ScheduleBlockData.fbs";
+
+table Torappu_ActVecBreakV2Data {
+	offenseStageDict:[Dict_2_System_String_Torappu_ActVecBreakV2OffenseStageData_];
+	hardStageDict:[Dict_2_System_String_Torappu_ActVecBreakV2HardStageData_];
+	defenseBasicDict:[Dict_2_System_String_Torappu_ActVecBreakV2DefenseBasicData_];
+	defenseDetailDict:[Dict_2_System_String_Torappu_ActVecBreakV2DefenseDetailData_];
+	zoneDict:[Dict_2_System_String_Torappu_ActVecBreakV2ZoneData_];
+	defenseGroupDict:[Dict_2_System_String_Torappu_ActVecBreakV2DefenseGroupData_];
+	battleBuffDict:[Dict_2_System_String_Torappu_ActVecBreakV2BattleBuffData_];
+	milestoneList:[Torappu_ActVecBreakV2MilestoneItemData];
+	stageRewardDict:[Dict_2_System_String_Torappu_ActVecBreakV2StageRewardData_];
+	constData:Torappu_ActVecBreakV2ConstData;
+	squadBuffAvailStageList:[string];
+	scheduleBlockList:[Torappu_ActVecBreakV2ScheduleBlockData];
+	defenseZoneId:string;
+	offenseZoneId:string;
+	hardZoneId:string;
+	firstDefenseGroupId:string;
+}
+
+
+root_type Torappu_ActVecBreakV2Data;

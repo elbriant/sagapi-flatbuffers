@@ -1,0 +1,7 @@
+
+table Torappu_RoguelikeBattleSummeryDescriptionData {
+	randomDescriptionList:[string];
+}
+
+
+root_type Torappu_RoguelikeBattleSummeryDescriptionData;

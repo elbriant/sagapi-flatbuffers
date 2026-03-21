@@ -1,0 +1,9 @@
+
+table Torappu_SandboxV2FixedRiftData {
+	riftId:string;
+	riftName:string;
+	rewardGroupId:string;
+}
+
+
+root_type Torappu_SandboxV2FixedRiftData;

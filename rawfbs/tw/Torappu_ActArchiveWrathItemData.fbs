@@ -1,0 +1,15 @@
+
+table Torappu_ActArchiveWrathItemData {
+	wrathId:string;
+	sortId:int32;
+	picTitleId:string;
+	picSmallInactiveId:string;
+	picSmallActiveId:string;
+	picBigActiveId:string;
+	picBigInactiveId:string;
+	enrollId:string;
+	isSp:bool;
+}
+
+
+root_type Torappu_ActArchiveWrathItemData;

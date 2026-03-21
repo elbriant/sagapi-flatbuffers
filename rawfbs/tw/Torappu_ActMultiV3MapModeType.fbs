@@ -1,0 +1,7 @@
+
+enum Torappu_ActMultiV3MapModeType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	FOOTBALL = 2,
+	DEFENCE = 3
+}

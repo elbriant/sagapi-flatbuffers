@@ -1,0 +1,5 @@
+
+enum Torappu_StageData_PerformanceStageFlag : int32 {
+	NORMAL_STAGE = 0,
+	PERFORMANCE_STAGE = 1
+}

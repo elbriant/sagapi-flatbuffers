@@ -1,0 +1,9 @@
+include "Torappu_CampaignData_CampaignDropInfo.fbs";
+
+table Torappu_CampaignData_DropLadder {
+	killCnt:int32;
+	dropInfo:Torappu_CampaignData_CampaignDropInfo;
+}
+
+
+root_type Torappu_CampaignData_DropLadder;

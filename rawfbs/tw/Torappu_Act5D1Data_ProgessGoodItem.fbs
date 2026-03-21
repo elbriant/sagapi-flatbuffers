@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act5D1Data_ProgessGoodItem {
+	order:int32;
+	price:int32;
+	displayName:string;
+	item:Torappu_ItemBundle;
+}
+
+
+root_type Torappu_Act5D1Data_ProgessGoodItem;

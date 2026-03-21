@@ -1,0 +1,7 @@
+
+enum Torappu_RoguelikeGameRelicCheckType : int32 {
+	NONE = 0,
+	PROFESSION = 1,
+	SUB_PROFESSION = 2,
+	UPGRADE = 3
+}

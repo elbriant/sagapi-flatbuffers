@@ -1,0 +1,9 @@
+
+table Torappu_ActVecBreakV2StageRewardData_LimitedRewardData {
+	startTs:int64;
+	endTs:int64;
+	rewardCnt:int32;
+}
+
+
+root_type Torappu_ActVecBreakV2StageRewardData_LimitedRewardData;

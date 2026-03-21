@@ -1,0 +1,7 @@
+
+enum Torappu_AttributeModifierData_AttributeModifier_FormulaItemType : int32 {
+	ADDITION = 0,
+	MULTIPLIER = 1,
+	FINAL_ADDITION = 2,
+	FINAL_SCALER = 3
+}

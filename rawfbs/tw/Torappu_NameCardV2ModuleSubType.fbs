@@ -1,0 +1,9 @@
+
+enum Torappu_NameCardV2ModuleSubType : int32 {
+	NONE = 0,
+	SIGN = 1,
+	ASSIST = 2,
+	MEDAL = 3,
+	MAINLINE = 4,
+	EQUIPMENT = 5
+}

@@ -1,0 +1,9 @@
+include "Torappu_Act9D0Data_ActivityNewsLineType.fbs";
+
+table Torappu_Act9D0Data_ActivityNewsLine {
+	lineType:Torappu_Act9D0Data_ActivityNewsLineType;
+	content:string;
+}
+
+
+root_type Torappu_Act9D0Data_ActivityNewsLine;

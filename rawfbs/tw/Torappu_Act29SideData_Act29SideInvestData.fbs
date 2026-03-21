@@ -1,0 +1,20 @@
+include "Torappu_Act29SideData_Act29SideInvestType.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act29SideData_Act29SideInvestData {
+	investId:string;
+	investType:Torappu_Act29SideData_Act29SideInvestType;
+	investNpcName:string;
+	storyId:string;
+	investNpcPic:string;
+	investNpcAvatarPic:string;
+	majorNpcPic:string;
+	majorNpcBlackPic:string;
+	reward:Torappu_ItemBundle;
+	investSucResultId:string;
+	investFailResultId:string;
+	investRareResultId:string;
+}
+
+
+root_type Torappu_Act29SideData_Act29SideInvestData;

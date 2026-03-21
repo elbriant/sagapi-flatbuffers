@@ -1,0 +1,17 @@
+
+table Torappu_Act35SideData_Act35SideChallengeData {
+	challengeId:string;
+	challengeName:string;
+	challengeDesc:string;
+	sortId:int32;
+	challengePicId:string;
+	challengeIconId:string;
+	openTime:int64;
+	preposedChallengeId:string;
+	passRound:int32;
+	passRoundScore:int32;
+	roundIdList:[string];
+}
+
+
+root_type Torappu_Act35SideData_Act35SideChallengeData;

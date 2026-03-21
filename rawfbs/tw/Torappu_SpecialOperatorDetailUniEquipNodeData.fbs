@@ -1,0 +1,9 @@
+
+table Torappu_SpecialOperatorDetailUniEquipNodeData {
+	nodeId:string;
+	uniEquipId:string;
+	equipLevel:int32;
+}
+
+
+root_type Torappu_SpecialOperatorDetailUniEquipNodeData;

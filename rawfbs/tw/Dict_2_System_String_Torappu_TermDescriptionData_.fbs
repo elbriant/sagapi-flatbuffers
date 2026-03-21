@@ -1,0 +1,9 @@
+include "Torappu_TermDescriptionData.fbs";
+
+table Dict_2_System_String_Torappu_TermDescriptionData_ {
+	dict_key:string;
+	dict_value:Torappu_TermDescriptionData;
+}
+
+
+root_type Dict_2_System_String_Torappu_TermDescriptionData_;

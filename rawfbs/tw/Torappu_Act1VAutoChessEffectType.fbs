@@ -1,0 +1,10 @@
+
+enum Torappu_Act1VAutoChessEffectType : int32 {
+	NONE = 0,
+	BAND_INITIAL = 1,
+	ENEMY = 2,
+	ENEMY_TEMPORARY = 3,
+	ALLY = 4,
+	EQUIP = 5,
+	CHAR_MAP = 6
+}

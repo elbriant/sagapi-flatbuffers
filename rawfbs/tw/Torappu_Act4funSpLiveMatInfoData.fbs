@@ -1,0 +1,17 @@
+
+table Torappu_Act4funSpLiveMatInfoData {
+	spLiveMatId:string;
+	spLiveEveId:string;
+	stageId:string;
+	name:string;
+	picId:string;
+	tagTxt:string;
+	emojiIcon:string;
+	accordingPerformId:string;
+	selectedPerformId:string;
+	valueEffectId:string;
+	accordingSuperChatId:string;
+}
+
+
+root_type Torappu_Act4funSpLiveMatInfoData;

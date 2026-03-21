@@ -1,0 +1,11 @@
+include "Torappu_RoguelikeFragmentType.fbs";
+
+table Torappu_RoguelikeFragmentData {
+	id:string;
+	type:Torappu_RoguelikeFragmentType;
+	value:int32;
+	weight:int32;
+}
+
+
+root_type Torappu_RoguelikeFragmentData;

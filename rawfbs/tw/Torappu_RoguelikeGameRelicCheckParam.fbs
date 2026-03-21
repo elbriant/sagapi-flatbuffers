@@ -1,0 +1,10 @@
+include "Torappu_ProfessionCategory.fbs";
+
+table Torappu_RoguelikeGameRelicCheckParam {
+	valueProfessionMask:Torappu_ProfessionCategory;
+	valueStrs:[string];
+	valueInt:int32;
+}
+
+
+root_type Torappu_RoguelikeGameRelicCheckParam;

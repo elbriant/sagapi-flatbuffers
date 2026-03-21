@@ -1,0 +1,11 @@
+include "Torappu_RoguelikeCharState.fbs";
+
+table Torappu_RoguelikeTopicConst_PredefinedChar {
+	charId:string;
+	canBeFree:bool;
+	uniEquipId:string;
+	recruitType:Torappu_RoguelikeCharState;
+}
+
+
+root_type Torappu_RoguelikeTopicConst_PredefinedChar;

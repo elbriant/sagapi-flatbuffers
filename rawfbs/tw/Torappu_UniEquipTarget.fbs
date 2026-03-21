@@ -1,0 +1,10 @@
+
+enum Torappu_UniEquipTarget : int32 {
+	NONE = 0,
+	TRAIT = 1,
+	TRAIT_DATA_ONLY = 2,
+	TALENT = 3,
+	TALENT_DATA_ONLY = 4,
+	DISPLAY = 5,
+	OVERWRITE_BATTLE_DATA = 6
+}

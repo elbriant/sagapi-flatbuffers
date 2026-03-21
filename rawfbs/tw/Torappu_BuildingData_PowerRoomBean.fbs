@@ -1,0 +1,9 @@
+include "Torappu_BuildingData_PowerPhase.fbs";
+
+table Torappu_BuildingData_PowerRoomBean {
+	basicSpeedBuff:float;
+	phases:[Torappu_BuildingData_PowerPhase];
+}
+
+
+root_type Torappu_BuildingData_PowerRoomBean;

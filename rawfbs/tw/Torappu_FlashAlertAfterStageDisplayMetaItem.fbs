@@ -1,0 +1,15 @@
+include "Torappu_CommonAvailCheck.fbs";
+
+table Torappu_FlashAlertAfterStageDisplayMetaItem {
+	flashAlertId:string;
+	availCheck:Torappu_CommonAvailCheck;
+	isAllStageActive:bool;
+	stageIdList:[string];
+	relateActId:string;
+	detailText:string;
+	isBasicInfo:bool;
+	times:int32;
+}
+
+
+root_type Torappu_FlashAlertAfterStageDisplayMetaItem;

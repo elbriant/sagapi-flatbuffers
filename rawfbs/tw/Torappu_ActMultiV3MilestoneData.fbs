@@ -1,0 +1,12 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActMultiV3MilestoneData {
+	id:string;
+	level:int32;
+	needPointCnt:int32;
+	rewardItem:Torappu_ItemBundle;
+	availTime:int64;
+}
+
+
+root_type Torappu_ActMultiV3MilestoneData;

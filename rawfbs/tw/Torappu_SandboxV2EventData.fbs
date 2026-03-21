@@ -1,0 +1,12 @@
+include "Torappu_SandboxV2EventType.fbs";
+
+table Torappu_SandboxV2EventData {
+	eventId:string;
+	type:Torappu_SandboxV2EventType;
+	iconId:string;
+	iconName:string;
+	enterSceneId:string;
+}
+
+
+root_type Torappu_SandboxV2EventData;

@@ -1,0 +1,11 @@
+
+table Torappu_DefaultCheckInData_OptionInfo {
+	optionDesc:string;
+	showImageId1:string;
+	showImageId2:string;
+	optionCompleteDesc:string;
+	isStart:bool;
+}
+
+
+root_type Torappu_DefaultCheckInData_OptionInfo;

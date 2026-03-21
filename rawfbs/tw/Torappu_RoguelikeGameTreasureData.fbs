@@ -1,0 +1,11 @@
+
+table Torappu_RoguelikeGameTreasureData {
+	treasureId:string;
+	groupId:string;
+	subIndex:int32;
+	name:string;
+	usage:string;
+}
+
+
+root_type Torappu_RoguelikeGameTreasureData;

@@ -1,0 +1,9 @@
+include "Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_ActivityRoguelikeData_OuterBuffUnlockInfoData_;

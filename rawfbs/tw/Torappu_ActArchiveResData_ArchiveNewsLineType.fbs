@@ -1,0 +1,5 @@
+
+enum Torappu_ActArchiveResData_ArchiveNewsLineType : int32 {
+	TextContent = 0,
+	ImageContent = 1
+}

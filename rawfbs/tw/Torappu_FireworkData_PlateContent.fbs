@@ -1,0 +1,8 @@
+include "Torappu_GridPosition.fbs";
+
+table Torappu_FireworkData_PlateContent {
+	plateContent:[Torappu_GridPosition];
+}
+
+
+root_type Torappu_FireworkData_PlateContent;

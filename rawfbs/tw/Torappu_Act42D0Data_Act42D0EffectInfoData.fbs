@@ -1,0 +1,17 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_Act42D0Data_Act42D0EffectInfoData {
+	effectId:string;
+	effectGroupId:string;
+	row:int32;
+	col:int32;
+	effectName:string;
+	effectIcon:string;
+	cost:int32;
+	effectDesc:string;
+	unlockTime:int64;
+	runeData:Torappu_RuneTable_PackedRuneData;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0EffectInfoData;

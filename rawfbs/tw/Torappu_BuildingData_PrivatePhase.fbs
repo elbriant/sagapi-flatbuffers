@@ -1,0 +1,7 @@
+
+table Torappu_BuildingData_PrivatePhase {
+	decorationLimit:int32;
+}
+
+
+root_type Torappu_BuildingData_PrivatePhase;

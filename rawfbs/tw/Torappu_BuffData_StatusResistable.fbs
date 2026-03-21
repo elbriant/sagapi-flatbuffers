@@ -1,0 +1,6 @@
+
+enum Torappu_BuffData_StatusResistable : uint8 {
+	NO = 0,
+	YES = 1,
+	AUTOMATIC = 2
+}

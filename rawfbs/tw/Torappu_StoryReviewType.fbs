@@ -1,0 +1,7 @@
+
+enum Torappu_StoryReviewType : int32 {
+	NONE = 0,
+	ACTIVITY_STORY = 1,
+	MINI_STORY = 2,
+	MAIN_STORY = 3
+}

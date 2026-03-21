@@ -1,0 +1,20 @@
+include "Dict_2_System_String_Torappu_UniEquipData_.fbs";
+include "Dict_2_System_String_Torappu_UniEquipMissionData_.fbs";
+include "Dict_2_System_String_Torappu_SubProfessionData_.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
+include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Torappu_UniEquipTypeInfo.fbs";
+include "Torappu_UniEquipTimeInfo.fbs";
+
+table Torappu_UniEquipTable {
+	equipDict:[Dict_2_System_String_Torappu_UniEquipData_];
+	missionList:[Dict_2_System_String_Torappu_UniEquipMissionData_];
+	subProfDict:[Dict_2_System_String_Torappu_SubProfessionData_];
+	subProfToProfDict:[Dict_2_System_String_System_Int32_];
+	charEquip:[Dict_2_System_String_List_1_System_String__];
+	equipTypeInfos:[Torappu_UniEquipTypeInfo];
+	equipTrackDict:[Torappu_UniEquipTimeInfo];
+}
+
+
+root_type Torappu_UniEquipTable;

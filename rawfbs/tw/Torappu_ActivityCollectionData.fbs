@@ -1,0 +1,12 @@
+include "Torappu_ActivityCollectionData_CollectionInfo.fbs";
+include "Dict_2_System_String_System_Int64_.fbs";
+include "Torappu_ActivityCollectionData_Consts.fbs";
+
+table Torappu_ActivityCollectionData {
+	collections:[Torappu_ActivityCollectionData_CollectionInfo];
+	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
+	consts:Torappu_ActivityCollectionData_Consts;
+}
+
+
+root_type Torappu_ActivityCollectionData;

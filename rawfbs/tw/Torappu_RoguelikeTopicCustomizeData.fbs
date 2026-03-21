@@ -1,0 +1,16 @@
+include "Torappu_RL01CustomizeData.fbs";
+include "Torappu_RL02CustomizeData.fbs";
+include "Torappu_RL03CustomizeData.fbs";
+include "Torappu_RL04CustomizeData.fbs";
+include "Torappu_RL05CustomizeData.fbs";
+
+table Torappu_RoguelikeTopicCustomizeData {
+	rl01:Torappu_RL01CustomizeData;
+	rl02:Torappu_RL02CustomizeData;
+	rl03:Torappu_RL03CustomizeData;
+	rl04:Torappu_RL04CustomizeData;
+	rl05:Torappu_RL05CustomizeData;
+}
+
+
+root_type Torappu_RoguelikeTopicCustomizeData;

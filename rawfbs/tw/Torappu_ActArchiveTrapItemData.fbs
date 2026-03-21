@@ -1,0 +1,10 @@
+
+table Torappu_ActArchiveTrapItemData {
+	trapId:string;
+	trapSortId:int32;
+	orderId:string;
+	enrollId:string;
+}
+
+
+root_type Torappu_ActArchiveTrapItemData;

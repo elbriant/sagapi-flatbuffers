@@ -1,0 +1,10 @@
+
+table Torappu_DynEntrySwitchInfo {
+	entryId:string;
+	sortId:int32;
+	stageId:string;
+	signalId:string;
+}
+
+
+root_type Torappu_DynEntrySwitchInfo;

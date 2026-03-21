@@ -1,0 +1,9 @@
+include "Torappu_Act13SideData_ActZoneClass.fbs";
+
+table Torappu_Act13SideData_ZoneAdditionData {
+	unlockText:string;
+	zoneClass:Torappu_Act13SideData_ActZoneClass;
+}
+
+
+root_type Torappu_Act13SideData_ZoneAdditionData;

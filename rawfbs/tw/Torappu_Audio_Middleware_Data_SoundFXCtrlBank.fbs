@@ -1,0 +1,10 @@
+
+table Torappu_Audio_Middleware_Data_SoundFXCtrlBank {
+	targetBank:string;
+	ctrlStop:bool;
+	ctrlStopFadetime:float;
+	name:string;
+}
+
+
+root_type Torappu_Audio_Middleware_Data_SoundFXCtrlBank;

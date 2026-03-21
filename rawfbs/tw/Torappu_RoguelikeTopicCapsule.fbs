@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeEventType.fbs";
+
+table Torappu_RoguelikeTopicCapsule {
+	itemId:string;
+	maskType:Torappu_RoguelikeEventType;
+	innerColor:string;
+}
+
+
+root_type Torappu_RoguelikeTopicCapsule;

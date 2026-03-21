@@ -1,0 +1,8 @@
+
+table Torappu_EnemyHandbookLevelInfoData_RangePair {
+	min:float;
+	max:float;
+}
+
+
+root_type Torappu_EnemyHandbookLevelInfoData_RangePair;

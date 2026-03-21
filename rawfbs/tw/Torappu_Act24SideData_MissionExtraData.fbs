@@ -1,0 +1,13 @@
+include "Torappu_Act24SideData_MissionType.fbs";
+
+table Torappu_Act24SideData_MissionExtraData {
+	taskTypeName:string;
+	taskTypeIcon:string;
+	taskType:Torappu_Act24SideData_MissionType;
+	taskTitle:string;
+	taskClient:string;
+	taskClientDesc:string;
+}
+
+
+root_type Torappu_Act24SideData_MissionExtraData;

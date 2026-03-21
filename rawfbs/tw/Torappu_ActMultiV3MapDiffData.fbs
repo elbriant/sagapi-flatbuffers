@@ -1,0 +1,9 @@
+include "Torappu_ActMultiV3MapDiffType.fbs";
+
+table Torappu_ActMultiV3MapDiffData {
+	diffType:Torappu_ActMultiV3MapDiffType;
+	name:string;
+}
+
+
+root_type Torappu_ActMultiV3MapDiffData;

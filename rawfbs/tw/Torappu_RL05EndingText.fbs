@@ -1,0 +1,29 @@
+
+table Torappu_RL05EndingText {
+	summaryGetCopper:string;
+	summaryLostCopper:string;
+	summaryDrawCopper:string;
+	summaryCopperResultGood:string;
+	summaryCopperResultBad:string;
+	summaryCopperResultNormal:string;
+	summaryCopperCheckSuccess:string;
+	summaryCopperCheckFail:string;
+	summaryCopperCheckNormal:string;
+	summaryMeetWrath:string;
+	summaryExpeditionBackCandle:string;
+	summaryExpeditionGoEnding:string;
+	summaryExpeditionBackEnding:string;
+	summaryHoldCandle:string;
+	summaryHoldCandleRecruit:string;
+	summaryHoldCandleUpgrade:string;
+	summaryExchangeSpZoneGet:string;
+	summaryMeetShopSpZone:string;
+	summaryBattleFailSpZone:string;
+	summaryMeetEventLock:string;
+	summaryTreasureSpZone:string;
+	summaryMeetExchangeSpZone:string;
+	summaryMeetTradeSpZone:string;
+}
+
+
+root_type Torappu_RL05EndingText;

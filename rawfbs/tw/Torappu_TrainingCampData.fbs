@@ -1,0 +1,12 @@
+include "Dict_2_System_String_Torappu_TrainingCampStageData_.fbs";
+include "Torappu_NewTrainingCampStageData.fbs";
+include "Torappu_TrainingCampConsts.fbs";
+
+table Torappu_TrainingCampData {
+	stageData:[Dict_2_System_String_Torappu_TrainingCampStageData_];
+	newTrainingCampStages:[Torappu_NewTrainingCampStageData];
+	consts:Torappu_TrainingCampConsts;
+}
+
+
+root_type Torappu_TrainingCampData;

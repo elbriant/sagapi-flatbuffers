@@ -1,0 +1,10 @@
+
+table Torappu_AprilFoolScoreData {
+	stageId:string;
+	sortId:int32;
+	playerName:string;
+	playerScore:int64;
+}
+
+
+root_type Torappu_AprilFoolScoreData;

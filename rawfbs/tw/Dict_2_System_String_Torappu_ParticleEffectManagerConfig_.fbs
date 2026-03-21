@@ -1,0 +1,9 @@
+include "Torappu_ParticleEffectManagerConfig.fbs";
+
+table Dict_2_System_String_Torappu_ParticleEffectManagerConfig_ {
+	dict_key:string;
+	dict_value:Torappu_ParticleEffectManagerConfig;
+}
+
+
+root_type Dict_2_System_String_Torappu_ParticleEffectManagerConfig_;

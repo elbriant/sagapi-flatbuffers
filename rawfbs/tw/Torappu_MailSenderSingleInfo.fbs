@@ -1,0 +1,9 @@
+
+table Torappu_MailSenderSingleInfo {
+	senderId:string;
+	senderName:string;
+	avatarId:string;
+}
+
+
+root_type Torappu_MailSenderSingleInfo;

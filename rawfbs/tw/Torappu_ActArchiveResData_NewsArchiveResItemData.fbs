@@ -1,0 +1,18 @@
+include "Torappu_ActArchiveResData_NewsFormatData.fbs";
+include "Torappu_ActArchiveResData_ActivityNewsLine.fbs";
+
+table Torappu_ActArchiveResData_NewsArchiveResItemData {
+	id:string;
+	desc:string;
+	newsType:string;
+	newsFormat:Torappu_ActArchiveResData_NewsFormatData;
+	newsText:string;
+	newsAuthor:string;
+	paramP0:int32;
+	paramK:int32;
+	paramR:float;
+	newsLines:[Torappu_ActArchiveResData_ActivityNewsLine];
+}
+
+
+root_type Torappu_ActArchiveResData_NewsArchiveResItemData;

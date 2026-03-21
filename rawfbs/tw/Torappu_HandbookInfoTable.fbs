@@ -1,0 +1,18 @@
+include "Dict_2_System_String_Torappu_HandbookInfoData_.fbs";
+include "Dict_2_System_String_Torappu_NPCData_.fbs";
+include "Dict_2_System_String_Torappu_HandbookTeamMission_.fbs";
+include "Dict_2_System_String_Torappu_HandbookDisplayCondition_.fbs";
+include "Dict_2_System_String_Torappu_HandbookStoryStageData_.fbs";
+include "Torappu_HandbookStageTimeData.fbs";
+
+table Torappu_HandbookInfoTable {
+	handbookDict:[Dict_2_System_String_Torappu_HandbookInfoData_];
+	npcDict:[Dict_2_System_String_Torappu_NPCData_];
+	teamMissionList:[Dict_2_System_String_Torappu_HandbookTeamMission_];
+	handbookDisplayConditionList:[Dict_2_System_String_Torappu_HandbookDisplayCondition_];
+	handbookStageData:[Dict_2_System_String_Torappu_HandbookStoryStageData_];
+	handbookStageTime:[Torappu_HandbookStageTimeData];
+}
+
+
+root_type Torappu_HandbookInfoTable;

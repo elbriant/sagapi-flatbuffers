@@ -1,0 +1,7 @@
+
+enum Torappu_EnemyHandBookDamageType : int32 {
+	PHYSIC = 0,
+	MAGIC = 1,
+	HEAL = 2,
+	NO_DAMAGE = 3
+}

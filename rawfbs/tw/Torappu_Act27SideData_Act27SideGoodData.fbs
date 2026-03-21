@@ -1,0 +1,15 @@
+
+table Torappu_Act27SideData_Act27SideGoodData {
+	id:string;
+	name:string;
+	typeDesc:string;
+	iconId:string;
+	launchIconId:string;
+	purchasePrice:[int32];
+	sellingPriceList:[int32];
+	sellShopList:[string];
+	isPermanent:bool;
+}
+
+
+root_type Torappu_Act27SideData_Act27SideGoodData;

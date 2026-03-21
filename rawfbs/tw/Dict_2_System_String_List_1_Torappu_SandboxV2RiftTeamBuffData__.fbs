@@ -1,0 +1,9 @@
+include "Torappu_SandboxV2RiftTeamBuffData.fbs";
+
+table Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__ {
+	dict_key:string;
+	dict_value:[Torappu_SandboxV2RiftTeamBuffData];
+}
+
+
+root_type Dict_2_System_String_List_1_Torappu_SandboxV2RiftTeamBuffData__;

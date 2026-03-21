@@ -1,0 +1,11 @@
+
+enum Torappu_RoguelikeGameItemSubType : int32 {
+	NONE = 0,
+	CURSE = 1,
+	TEMP_TICKET = 2,
+	TOTEM_UPPER = 4,
+	TOTEM_LOWER = 8,
+	SECRET = 16,
+	SINGLE_RAND_FREE = 32,
+	RED_CAPSULE = 64
+}

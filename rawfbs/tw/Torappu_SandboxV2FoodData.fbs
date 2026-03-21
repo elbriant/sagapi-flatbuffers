@@ -1,0 +1,15 @@
+include "Torappu_SandboxV2FoodAttribute.fbs";
+include "Torappu_SandboxV2FoodRecipeData.fbs";
+include "Torappu_SandboxV2FoodVariantData.fbs";
+
+table Torappu_SandboxV2FoodData {
+	id:string;
+	attributes:[Torappu_SandboxV2FoodAttribute];
+	recipes:[Torappu_SandboxV2FoodRecipeData];
+	variants:[Torappu_SandboxV2FoodVariantData];
+	duration:int32;
+	sortId:int32;
+}
+
+
+root_type Torappu_SandboxV2FoodData;

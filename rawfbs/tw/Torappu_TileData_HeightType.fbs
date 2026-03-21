@@ -1,0 +1,6 @@
+
+enum Torappu_TileData_HeightType : int32 {
+	LOWLAND = 0,
+	HIGHLAND = 1,
+	E_NUM = 2
+}

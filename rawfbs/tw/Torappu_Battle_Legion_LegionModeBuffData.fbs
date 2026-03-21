@@ -1,0 +1,8 @@
+include "Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart.fbs";
+
+table Torappu_Battle_Legion_LegionModeBuffData {
+	dataParts:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart];
+}
+
+
+root_type Torappu_Battle_Legion_LegionModeBuffData;

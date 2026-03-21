@@ -1,0 +1,9 @@
+
+table Torappu_SandboxV2GuideQuestData {
+	questId:string;
+	storyId:string;
+	triggerKey:string;
+}
+
+
+root_type Torappu_SandboxV2GuideQuestData;

@@ -1,0 +1,14 @@
+include "Torappu_ActVecBreakV2ParticleType.fbs";
+include "Torappu_ActVecBreakV2BossData.fbs";
+
+table Torappu_ActVecBreakV2OffenseStageData {
+	stageId:string;
+	level:int32;
+	levelLayout:string;
+	storyDesc:string;
+	particleType:Torappu_ActVecBreakV2ParticleType;
+	bossData:Torappu_ActVecBreakV2BossData;
+}
+
+
+root_type Torappu_ActVecBreakV2OffenseStageData;

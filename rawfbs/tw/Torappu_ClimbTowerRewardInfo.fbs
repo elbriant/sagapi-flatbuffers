@@ -1,0 +1,9 @@
+
+table Torappu_ClimbTowerRewardInfo {
+	stageSort:int32;
+	lowerItemCount:int32;
+	higherItemCount:int32;
+}
+
+
+root_type Torappu_ClimbTowerRewardInfo;

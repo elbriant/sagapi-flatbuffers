@@ -1,0 +1,11 @@
+include "Dict_2_System_String_Torappu_BuildingData_ObstacleData_.fbs";
+include "Dict_2_System_String_Torappu_BuildingData_FurnitureLODConfig_.fbs";
+
+table Torappu_BuildingData_BuildingLocalData {
+	furnitureObstacleData:[Dict_2_System_String_Torappu_BuildingData_ObstacleData_];
+	roomObstacleData:[Dict_2_System_String_Torappu_BuildingData_ObstacleData_];
+	furnitureLODConfig:[Dict_2_System_String_Torappu_BuildingData_FurnitureLODConfig_];
+}
+
+
+root_type Torappu_BuildingData_BuildingLocalData;

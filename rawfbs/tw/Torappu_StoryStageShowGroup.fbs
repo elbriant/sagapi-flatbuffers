@@ -1,0 +1,11 @@
+include "Torappu_StageDiffGroup.fbs";
+
+table Torappu_StoryStageShowGroup {
+	displayRecordId:string;
+	stageId:string;
+	accordingStageId:string;
+	diffGroup:Torappu_StageDiffGroup;
+}
+
+
+root_type Torappu_StoryStageShowGroup;

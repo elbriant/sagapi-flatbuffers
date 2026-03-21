@@ -1,0 +1,10 @@
+include "Torappu_Act35SideData_DialogueType.fbs";
+include "Torappu_Act35SideData_Act35SideDialogueData.fbs";
+
+table Torappu_Act35SideData_Act35SideDialogueGroupData {
+	type:Torappu_Act35SideData_DialogueType;
+	dialogDataList:[Torappu_Act35SideData_Act35SideDialogueData];
+}
+
+
+root_type Torappu_Act35SideData_Act35SideDialogueGroupData;

@@ -1,0 +1,11 @@
+
+table Torappu_RL02DevRawTextBuffGroup {
+	nodeIdList:[string];
+	useLevelMark:bool;
+	groupIconId:string;
+	useUpBreak:bool;
+	sortId:int32;
+}
+
+
+root_type Torappu_RL02DevRawTextBuffGroup;

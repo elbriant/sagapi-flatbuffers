@@ -1,0 +1,12 @@
+include "Torappu_ActivityBossRushData_DisplayDetailRewards.fbs";
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActivityBossRushData_BossRushDropInfo {
+	clearWaveCount:int32;
+	displayDetailRewards:[Torappu_ActivityBossRushData_DisplayDetailRewards];
+	firstPassRewards:[Torappu_ItemBundle];
+	passRewards:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ActivityBossRushData_BossRushDropInfo;

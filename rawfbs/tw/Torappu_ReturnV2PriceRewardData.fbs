@@ -1,0 +1,14 @@
+include "Torappu_ReturnV2ItemData.fbs";
+
+table Torappu_ReturnV2PriceRewardData {
+	contentId:string;
+	sortId:int32;
+	pointRequire:int32;
+	desc:string;
+	iconId:string;
+	topIconId:string;
+	rewardList:[Torappu_ReturnV2ItemData];
+}
+
+
+root_type Torappu_ReturnV2PriceRewardData;

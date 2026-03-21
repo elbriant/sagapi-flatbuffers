@@ -1,0 +1,9 @@
+
+table Torappu_LMTGSShopOverlaySchedule {
+	gachaPoolId1:string;
+	gachaPoolId2:string;
+	picId:string;
+}
+
+
+root_type Torappu_LMTGSShopOverlaySchedule;

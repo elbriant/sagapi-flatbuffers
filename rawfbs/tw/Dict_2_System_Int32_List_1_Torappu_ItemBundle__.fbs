@@ -1,0 +1,9 @@
+include "Torappu_ItemBundle.fbs";
+
+table Dict_2_System_Int32_List_1_Torappu_ItemBundle__ {
+	dict_key:int32;
+	dict_value:[Torappu_ItemBundle];
+}
+
+
+root_type Dict_2_System_Int32_List_1_Torappu_ItemBundle__;

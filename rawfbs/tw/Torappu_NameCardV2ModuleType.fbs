@@ -1,0 +1,10 @@
+
+enum Torappu_NameCardV2ModuleType : int32 {
+	NONE = 0,
+	BACKGROUND = 1,
+	ILLUST = 2,
+	COLLECT = 3,
+	AVATAR = 4,
+	REMOVABLE = 5,
+	AVATAR_SIMPLE = 6
+}

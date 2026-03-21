@@ -1,0 +1,19 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act25SideData_AreaInfoData {
+	areaId:string;
+	sortId:int32;
+	areaIcon:string;
+	areaName:string;
+	unlockText:string;
+	preposedStage:string;
+	areaInitialDesc:string;
+	areaEndingDesc:string;
+	areaEndingAud:string;
+	reward:Torappu_ItemBundle;
+	finalId:string;
+	areaNewIcon:bool;
+}
+
+
+root_type Torappu_Act25SideData_AreaInfoData;

@@ -1,0 +1,9 @@
+
+table Torappu_GachaTag {
+	tagId:int32;
+	tagName:string;
+	tagGroup:int32;
+}
+
+
+root_type Torappu_GachaTag;

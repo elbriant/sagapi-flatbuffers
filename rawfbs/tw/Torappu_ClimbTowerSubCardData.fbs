@@ -1,0 +1,14 @@
+include "Torappu_RuneTable_PackedRuneData.fbs";
+
+table Torappu_ClimbTowerSubCardData {
+	id:string;
+	mainCardId:string;
+	sortId:int32;
+	name:string;
+	desc:string;
+	runeData:Torappu_RuneTable_PackedRuneData;
+	trapIds:[string];
+}
+
+
+root_type Torappu_ClimbTowerSubCardData;

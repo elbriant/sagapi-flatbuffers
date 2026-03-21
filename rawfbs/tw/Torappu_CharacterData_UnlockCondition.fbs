@@ -1,0 +1,9 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_CharacterData_UnlockCondition {
+	phase:Torappu_EvolvePhase;
+	level:int32;
+}
+
+
+root_type Torappu_CharacterData_UnlockCondition;

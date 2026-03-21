@@ -1,0 +1,5 @@
+
+enum Torappu_CrossAppShareMissionType : int32 {
+	NORMAL = 0,
+	ACTIVITY = 1
+}

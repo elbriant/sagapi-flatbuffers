@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+include "Dict_2_System_String_System_Int64_.fbs";
+
+table Torappu_ActivityLoginData {
+	description:string;
+	itemList:[Torappu_ItemBundle];
+	apSupplyOutOfDateDict:[Dict_2_System_String_System_Int64_];
+}
+
+
+root_type Torappu_ActivityLoginData;

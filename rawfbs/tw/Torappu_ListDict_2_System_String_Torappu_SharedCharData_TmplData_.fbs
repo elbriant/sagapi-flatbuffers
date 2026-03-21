@@ -1,0 +1,9 @@
+include "Torappu_SharedCharData_TmplData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_ {
+	dict_key:string;
+	dict_value:Torappu_SharedCharData_TmplData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_SharedCharData_TmplData_;

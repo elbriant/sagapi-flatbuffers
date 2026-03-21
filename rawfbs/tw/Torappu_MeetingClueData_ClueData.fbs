@@ -1,0 +1,10 @@
+
+table Torappu_MeetingClueData_ClueData {
+	clueId:string;
+	clueName:string;
+	clueType:string;
+	number:int32;
+}
+
+
+root_type Torappu_MeetingClueData_ClueData;

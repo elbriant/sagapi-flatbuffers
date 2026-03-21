@@ -1,0 +1,9 @@
+
+enum Torappu_ActMultiV3PrepareStepType : int32 {
+	NONE = 0,
+	STAGE_CHOOSE = 1,
+	ENTRANCE = 2,
+	CHAR_PICK = 3,
+	SYS_ALLOC = 4,
+	SQUAD_CHECK = 5
+}

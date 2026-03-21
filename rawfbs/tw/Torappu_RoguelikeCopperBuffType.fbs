@@ -1,0 +1,6 @@
+
+enum Torappu_RoguelikeCopperBuffType : int32 {
+	NONE = 0,
+	REFRESH = 1,
+	MOVE = 2
+}

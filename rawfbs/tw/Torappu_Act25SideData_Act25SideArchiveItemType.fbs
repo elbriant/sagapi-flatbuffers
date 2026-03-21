@@ -1,0 +1,8 @@
+
+enum Torappu_Act25SideData_Act25SideArchiveItemType : int32 {
+	PIC = 0,
+	STORY = 1,
+	BATTLE_PERFORMANCE = 2,
+	KEY = 3,
+	ENUM = 4
+}

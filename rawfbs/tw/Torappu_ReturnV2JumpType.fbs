@@ -1,0 +1,12 @@
+
+enum Torappu_ReturnV2JumpType : int32 {
+	NONE = 0,
+	ZONE_GROUP = 1,
+	ROGUE = 2,
+	CLIMB_TOWER = 3,
+	CAMPAIGN = 4,
+	BUILDING = 5,
+	RECRUIT_BUILD = 6,
+	DAILY_MISSION = 7,
+	SANDBOX = 8
+}

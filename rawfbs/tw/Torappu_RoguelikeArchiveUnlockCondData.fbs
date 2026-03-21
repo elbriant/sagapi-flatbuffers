@@ -1,0 +1,10 @@
+include "Dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeArchiveEnroll_.fbs";
+
+table Torappu_RoguelikeArchiveUnlockCondData {
+	unlockCondDesc:[Dict_2_System_String_Torappu_RoguelikeArchiveUnlockCondDesc_];
+	enroll:[Dict_2_System_String_Torappu_RoguelikeArchiveEnroll_];
+}
+
+
+root_type Torappu_RoguelikeArchiveUnlockCondData;

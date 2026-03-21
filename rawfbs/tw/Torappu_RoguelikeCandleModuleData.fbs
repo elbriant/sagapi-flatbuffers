@@ -1,0 +1,10 @@
+include "Torappu_RoguelikeCandleModuleConsts.fbs";
+
+table Torappu_RoguelikeCandleModuleData {
+	candleTicketIdList:[string];
+	moduleConsts:Torappu_RoguelikeCandleModuleConsts;
+	candleBattleStageIdList:[string];
+}
+
+
+root_type Torappu_RoguelikeCandleModuleData;

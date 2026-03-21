@@ -1,0 +1,8 @@
+
+table Torappu_Act17sideData_BattleNodeData {
+	nodeId:string;
+	stageId:string;
+}
+
+
+root_type Torappu_Act17sideData_BattleNodeData;

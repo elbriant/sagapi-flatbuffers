@@ -1,0 +1,8 @@
+
+enum Torappu_AutoChessSkillTriggerType : int32 {
+	DEFAULT = 0,
+	ALWAYS = 1,
+	SEARCH = 2,
+	MLYSS_WTRMAN = 3,
+	MARCILS2 = 4
+}

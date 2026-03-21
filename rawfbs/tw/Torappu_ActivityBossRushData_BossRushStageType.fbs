@@ -1,0 +1,8 @@
+
+enum Torappu_ActivityBossRushData_BossRushStageType : int32 {
+	NONE = 0,
+	NORMAL = 1,
+	TEAM = 2,
+	EX = 3,
+	SP = 4
+}

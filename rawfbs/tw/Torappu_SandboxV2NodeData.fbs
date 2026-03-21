@@ -1,0 +1,7 @@
+
+table Torappu_SandboxV2NodeData {
+	minDistance:float;
+}
+
+
+root_type Torappu_SandboxV2NodeData;

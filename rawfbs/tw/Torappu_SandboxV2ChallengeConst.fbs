@@ -1,0 +1,11 @@
+
+table Torappu_SandboxV2ChallengeConst {
+	challengeModeDesc:string;
+	dailyTitleDesc:string;
+	debuffCountdownDesc:string;
+	gainAllDebuffDesc:string;
+	dailyUpAttributeDesc:string;
+}
+
+
+root_type Torappu_SandboxV2ChallengeConst;

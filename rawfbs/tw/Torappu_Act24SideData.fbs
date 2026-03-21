@@ -1,0 +1,30 @@
+include "Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act24SideData_MealData_.fbs";
+include "Dict_2_System_String_Torappu_Act24SideData_MeldingItemData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act24SideData_MeldingGachaBoxData_.fbs";
+include "Dict_2_System_String_List_1_Torappu_Act24SideData_MeldingGachaBoxGoodData__.fbs";
+include "Dict_2_System_String_System_String_.fbs";
+include "Dict_2_System_String_Torappu_Act24SideData_ZoneAdditionData_.fbs";
+include "Torappu_QuestStageData.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_.fbs";
+include "Dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
+include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Torappu_Act24SideData_ConstData.fbs";
+
+table Torappu_Act24SideData {
+	toolDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_ToolData_];
+	mealDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MealData_];
+	meldingDict:[Dict_2_System_String_Torappu_Act24SideData_MeldingItemData_];
+	meldingGachaBoxDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MeldingGachaBoxData_];
+	meldingGachaBoxGoodDataMap:[Dict_2_System_String_List_1_Torappu_Act24SideData_MeldingGachaBoxGoodData__];
+	mealWelcomeTxtDataMap:[Dict_2_System_String_System_String_];
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act24SideData_ZoneAdditionData_];
+	questStageList:[Torappu_QuestStageData];
+	missionDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_];
+	meldingDropDict:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
+	stageMapPreviewDict:[Dict_2_System_String_List_1_System_String__];
+	constData:Torappu_Act24SideData_ConstData;
+}
+
+
+root_type Torappu_Act24SideData;

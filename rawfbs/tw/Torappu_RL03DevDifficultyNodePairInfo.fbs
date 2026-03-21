@@ -1,0 +1,8 @@
+
+table Torappu_RL03DevDifficultyNodePairInfo {
+	frontNode:string;
+	nextNode:string;
+}
+
+
+root_type Torappu_RL03DevDifficultyNodePairInfo;

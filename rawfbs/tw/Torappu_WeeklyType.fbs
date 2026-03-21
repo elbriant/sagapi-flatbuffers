@@ -1,0 +1,7 @@
+
+enum Torappu_WeeklyType : int32 {
+	NONE = 0,
+	MATERIAL = 1,
+	SPECIAL = 2,
+	EVOLVE = 3
+}

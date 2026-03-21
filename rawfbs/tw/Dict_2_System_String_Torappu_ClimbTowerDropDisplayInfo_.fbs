@@ -1,0 +1,9 @@
+include "Torappu_ClimbTowerDropDisplayInfo.fbs";
+
+table Dict_2_System_String_Torappu_ClimbTowerDropDisplayInfo_ {
+	dict_key:string;
+	dict_value:Torappu_ClimbTowerDropDisplayInfo;
+}
+
+
+root_type Dict_2_System_String_Torappu_ClimbTowerDropDisplayInfo_;

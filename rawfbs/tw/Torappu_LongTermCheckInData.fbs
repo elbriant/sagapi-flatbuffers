@@ -1,0 +1,10 @@
+include "Torappu_LongTermCheckInGroupData.fbs";
+include "Torappu_LongTermCheckInConstData.fbs";
+
+table Torappu_LongTermCheckInData {
+	groupList:[Torappu_LongTermCheckInGroupData];
+	constData:Torappu_LongTermCheckInConstData;
+}
+
+
+root_type Torappu_LongTermCheckInData;

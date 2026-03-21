@@ -1,0 +1,33 @@
+
+table Torappu_ActVecBreakV2ConstData {
+	defenseDesc:string;
+	defenseOverviewName:string;
+	milestoneName:string;
+	milestoneItemId:string;
+	bossDescTitle:string;
+	defenseUnlockRequireStageId:string;
+	offenseNavLockToastStageId:string;
+	offenseNavLockToastStr:string;
+	offenseHardUnlockToast:string;
+	hardUnlockStageId:string;
+	defenseRetreatSingleText:string;
+	defenseRetreatMultipleText:string;
+	defenseReplaceText:string;
+	defenseEquipBuffLimit:int32;
+	displayMedalId:string;
+	defenseAddBuffToast:string;
+	defenseRemoveBuffToast:string;
+	defenseReplaceBuffToast:string;
+	defenseBuffExceedToast:string;
+	defendSameGroupHint:string;
+	defendOtherHint:string;
+	defenseBuffLockToast:string;
+	offenseBuffSelectUnsaveHint:string;
+	defenceBattleFinishEquipText:string;
+	defenceBattleFinishActivateText:string;
+	defenceBattleFinishSquadText:string;
+	milestoneTrackId:string;
+}
+
+
+root_type Torappu_ActVecBreakV2ConstData;

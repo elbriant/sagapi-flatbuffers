@@ -1,0 +1,9 @@
+include "Torappu_SpecialOperatorTargetType.fbs";
+
+table Torappu_SpecialOperatorModeData {
+	type:Torappu_SpecialOperatorTargetType;
+	typeName:string;
+}
+
+
+root_type Torappu_SpecialOperatorModeData;

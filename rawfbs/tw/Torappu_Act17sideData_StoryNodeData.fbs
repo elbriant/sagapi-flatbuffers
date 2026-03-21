@@ -1,0 +1,13 @@
+
+table Torappu_Act17sideData_StoryNodeData {
+	nodeId:string;
+	storyId:string;
+	storyKey:string;
+	storyName:string;
+	storyPic:string;
+	confirmDes:string;
+	storyDesList:[string];
+}
+
+
+root_type Torappu_Act17sideData_StoryNodeData;

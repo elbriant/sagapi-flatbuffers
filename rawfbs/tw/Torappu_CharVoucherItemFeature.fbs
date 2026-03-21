@@ -1,0 +1,9 @@
+include "Torappu_VoucherDisplayType.fbs";
+
+table Torappu_CharVoucherItemFeature {
+	id:string;
+	displayType:Torappu_VoucherDisplayType;
+}
+
+
+root_type Torappu_CharVoucherItemFeature;

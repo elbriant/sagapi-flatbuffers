@@ -1,0 +1,10 @@
+
+table Torappu_SandboxV2ArchiveQuestCgData {
+	cgId:string;
+	cgTitle:string;
+	cgDesc:string;
+	cgPath:string;
+}
+
+
+root_type Torappu_SandboxV2ArchiveQuestCgData;

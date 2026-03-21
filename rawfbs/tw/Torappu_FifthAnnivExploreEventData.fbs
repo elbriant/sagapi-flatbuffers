@@ -1,0 +1,12 @@
+
+table Torappu_FifthAnnivExploreEventData {
+	id:string;
+	name:string;
+	typeName:string;
+	iconId:string;
+	desc:string;
+	choiceIds:[string];
+}
+
+
+root_type Torappu_FifthAnnivExploreEventData;

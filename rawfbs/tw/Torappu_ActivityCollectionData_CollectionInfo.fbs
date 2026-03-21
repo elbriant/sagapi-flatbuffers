@@ -1,0 +1,20 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_ActivityCollectionData_CollectionInfo {
+	id:int32;
+	itemType:Torappu_ItemType;
+	itemId:string;
+	itemCnt:int32;
+	pointId:string;
+	pointCnt:int32;
+	isBonus:bool;
+	pngName:string;
+	pngSort:int32;
+	isShow:bool;
+	showInList:bool;
+	showIconBG:bool;
+	isBonusShow:bool;
+}
+
+
+root_type Torappu_ActivityCollectionData_CollectionInfo;

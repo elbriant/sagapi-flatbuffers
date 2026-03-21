@@ -1,0 +1,6 @@
+
+enum Torappu_Act13SideData_UnlockCondition : int32 {
+	NONE = 0,
+	PRESTIGE = 1,
+	STAGE = 2
+}

@@ -1,0 +1,31 @@
+include "Torappu_EnemyDuelModeType.fbs";
+
+table Torappu_ActivityEnemyDuelModeData {
+	modeId:string;
+	isMultiPlayer:bool;
+	isRoom:bool;
+	modeType:Torappu_EnemyDuelModeType;
+	stageIds:[string];
+	pageId:int32;
+	innerSortId:int32;
+	modeName:string;
+	modeShortName:string;
+	modeEnName:string;
+	maxPlayer:int32;
+	preposedMode:string;
+	startTs:int64;
+	endTs:int64;
+	entryPicId:string;
+	titlePics:[string];
+	modeTarget:string;
+	modeDesc:string;
+	modeRecordDesc:string;
+	extraTag:bool;
+	modeAvatarPicId:string;
+	modeAvatarName:string;
+	modeAvatarText:string;
+	hasUnlockToast:bool;
+}
+
+
+root_type Torappu_ActivityEnemyDuelModeData;

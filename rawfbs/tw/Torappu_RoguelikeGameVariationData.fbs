@@ -1,0 +1,15 @@
+include "Torappu_RoguelikeGameVariationType.fbs";
+
+table Torappu_RoguelikeGameVariationData {
+	id:string;
+	type:Torappu_RoguelikeGameVariationType;
+	outerName:string;
+	innerName:string;
+	functionDesc:string;
+	desc:string;
+	iconId:string;
+	sound:string;
+}
+
+
+root_type Torappu_RoguelikeGameVariationData;

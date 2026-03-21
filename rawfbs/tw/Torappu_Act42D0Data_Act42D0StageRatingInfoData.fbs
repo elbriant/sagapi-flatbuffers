@@ -1,0 +1,10 @@
+include "Torappu_Act42D0Data_Act42D0RatingInfoData.fbs";
+
+table Torappu_Act42D0Data_Act42D0StageRatingInfoData {
+	stageId:string;
+	areaId:string;
+	milestoneData:[Torappu_Act42D0Data_Act42D0RatingInfoData];
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0StageRatingInfoData;

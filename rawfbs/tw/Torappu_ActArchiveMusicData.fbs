@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_ActArchiveMusicItemData_.fbs";
+
+table Torappu_ActArchiveMusicData {
+	musics:[Dict_2_System_String_Torappu_ActArchiveMusicItemData_];
+}
+
+
+root_type Torappu_ActArchiveMusicData;

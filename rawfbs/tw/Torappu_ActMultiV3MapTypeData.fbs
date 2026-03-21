@@ -1,0 +1,17 @@
+include "Torappu_ActMultiV3MapModeType.fbs";
+include "Torappu_ActMultiV3MapDiffType.fbs";
+
+table Torappu_ActMultiV3MapTypeData {
+	modeId:string;
+	mode:Torappu_ActMultiV3MapModeType;
+	difficulty:Torappu_ActMultiV3MapDiffType;
+	isDefaultSelectInQuickMatch:bool;
+	squadMax:int32;
+	matchUnlockModeId:string;
+	matchUnlockParam:int32;
+	stageIdInModeList:[string];
+	unlockHint:string;
+}
+
+
+root_type Torappu_ActMultiV3MapTypeData;

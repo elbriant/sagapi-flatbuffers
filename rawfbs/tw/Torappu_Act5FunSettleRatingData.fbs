@@ -1,0 +1,9 @@
+
+table Torappu_Act5FunSettleRatingData {
+	minRating:int32;
+	maxRating:int32;
+	ratingDesc:string;
+}
+
+
+root_type Torappu_Act5FunSettleRatingData;

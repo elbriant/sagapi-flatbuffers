@@ -1,0 +1,15 @@
+include "Torappu_RoguelikeGameMonthTaskClass.fbs";
+
+table Torappu_RoguelikeTopicMonthMission {
+	id:string;
+	taskName:string;
+	taskClass:Torappu_RoguelikeGameMonthTaskClass;
+	innerClassWeight:int32;
+	template:string;
+	paramList:[string];
+	desc:string;
+	tokenRewardNum:int32;
+}
+
+
+root_type Torappu_RoguelikeTopicMonthMission;

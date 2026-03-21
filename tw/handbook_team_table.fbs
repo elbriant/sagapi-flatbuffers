@@ -1,0 +1,24 @@
+
+table Torappu_HandbookTeamData {
+	powerId:string;
+	orderNum:int32;
+	powerLevel:int32;
+	powerName:string;
+	powerCode:string;
+	color:string;
+	isLimited:bool;
+	isRaw:bool;
+}
+
+
+
+table dict__string__Torappu_HandbookTeamData {
+  dict_key: string(key);
+  dict_value: Torappu_HandbookTeamData;
+}
+
+table Torappu_SimpleKVTable_Torappu_HandbookTeamData {
+  dict_array: [dict__string__Torappu_HandbookTeamData];
+}
+
+root_type Torappu_SimpleKVTable_Torappu_HandbookTeamData;

@@ -1,0 +1,15 @@
+
+table Torappu_Act42D0Data_Act42D0StageInfoData {
+	stageId:string;
+	areaId:string;
+	stageCode:string;
+	sortId:int32;
+	stageDesc:[string];
+	levelId:string;
+	code:string;
+	name:string;
+	loadingPicId:string;
+}
+
+
+root_type Torappu_Act42D0Data_Act42D0StageInfoData;

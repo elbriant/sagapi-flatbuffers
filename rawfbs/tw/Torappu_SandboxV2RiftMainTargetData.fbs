@@ -1,0 +1,15 @@
+include "Torappu_SandboxV2RiftMainTargetType.fbs";
+
+table Torappu_SandboxV2RiftMainTargetData {
+	id:string;
+	title:string;
+	desc:string;
+	storyDesc:string;
+	targetDayCount:int32;
+	targetType:Torappu_SandboxV2RiftMainTargetType;
+	questIconId:string;
+	questIconName:string;
+}
+
+
+root_type Torappu_SandboxV2RiftMainTargetData;

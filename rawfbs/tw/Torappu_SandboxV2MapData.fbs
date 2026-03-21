@@ -1,0 +1,14 @@
+include "Dict_2_System_String_Torappu_SandboxV2NodeData_.fbs";
+include "Dict_2_System_String_Torappu_SandboxV2MapZoneData_.fbs";
+include "Torappu_SandboxV2MapConfig.fbs";
+
+table Torappu_SandboxV2MapData {
+	nodes:[Dict_2_System_String_Torappu_SandboxV2NodeData_];
+	zones:[Dict_2_System_String_Torappu_SandboxV2MapZoneData_];
+	mapConfig:Torappu_SandboxV2MapConfig;
+	centerNodeId:string;
+	monthModeNodeId:string;
+}
+
+
+root_type Torappu_SandboxV2MapData;

@@ -1,0 +1,39 @@
+include "Torappu_Undefinable_1_System_Int32_.fbs";
+include "Torappu_Undefinable_1_System_Single_.fbs";
+include "Torappu_Undefinable_1_System_Boolean_.fbs";
+
+table Torappu_EnemyDatabase_AttributesData {
+	maxHp:Torappu_Undefinable_1_System_Int32_;
+	atk:Torappu_Undefinable_1_System_Int32_;
+	def:Torappu_Undefinable_1_System_Int32_;
+	magicResistance:Torappu_Undefinable_1_System_Single_;
+	cost:Torappu_Undefinable_1_System_Int32_;
+	blockCnt:Torappu_Undefinable_1_System_Int32_;
+	moveSpeed:Torappu_Undefinable_1_System_Single_;
+	attackSpeed:Torappu_Undefinable_1_System_Single_;
+	baseAttackTime:Torappu_Undefinable_1_System_Single_;
+	respawnTime:Torappu_Undefinable_1_System_Int32_;
+	hpRecoveryPerSec:Torappu_Undefinable_1_System_Single_;
+	spRecoveryPerSec:Torappu_Undefinable_1_System_Single_;
+	maxDeployCount:Torappu_Undefinable_1_System_Int32_;
+	massLevel:Torappu_Undefinable_1_System_Int32_;
+	baseForceLevel:Torappu_Undefinable_1_System_Int32_;
+	tauntLevel:Torappu_Undefinable_1_System_Int32_;
+	epDamageResistance:Torappu_Undefinable_1_System_Single_;
+	epResistance:Torappu_Undefinable_1_System_Single_;
+	damageHitratePhysical:Torappu_Undefinable_1_System_Single_;
+	damageHitrateMagical:Torappu_Undefinable_1_System_Single_;
+	epBreakRecoverSpeed:Torappu_Undefinable_1_System_Single_;
+	stunImmune:Torappu_Undefinable_1_System_Boolean_;
+	silenceImmune:Torappu_Undefinable_1_System_Boolean_;
+	sleepImmune:Torappu_Undefinable_1_System_Boolean_;
+	frozenImmune:Torappu_Undefinable_1_System_Boolean_;
+	levitateImmune:Torappu_Undefinable_1_System_Boolean_;
+	disarmedCombatImmune:Torappu_Undefinable_1_System_Boolean_;
+	fearedImmune:Torappu_Undefinable_1_System_Boolean_;
+	palsyImmune:Torappu_Undefinable_1_System_Boolean_;
+	attractImmune:Torappu_Undefinable_1_System_Boolean_;
+}
+
+
+root_type Torappu_EnemyDatabase_AttributesData;

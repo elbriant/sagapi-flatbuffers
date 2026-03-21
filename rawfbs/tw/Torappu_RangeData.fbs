@@ -1,0 +1,11 @@
+include "Torappu_SharedConsts_Direction.fbs";
+include "Torappu_GridPosition.fbs";
+
+table Torappu_RangeData {
+	id:string;
+	direction:Torappu_SharedConsts_Direction;
+	grids:[Torappu_GridPosition];
+}
+
+
+root_type Torappu_RangeData;

@@ -1,0 +1,129 @@
+
+enum Torappu_CommonUnlockType : int32 {
+	STAGECLEAR = 0,
+	HASCHAR = 1,
+	NONE = 2
+}
+
+table Torappu_StageUnlockParam {
+	stageId:string;
+}
+
+
+
+table Torappu_CharUnlockParam {
+	charId:string;
+}
+
+
+
+table Torappu_CommonAvailCheck {
+	startTs:int64;
+	endTs:int64;
+	type:Torappu_CommonUnlockType;
+	rate:float;
+	stageUnlockParam:Torappu_StageUnlockParam;
+	charUnlockParam:Torappu_CharUnlockParam;
+}
+
+
+
+enum Torappu_TipData_Category : int32 {
+	NONE = 0,
+	BATTLE = 1,
+	UI = 2,
+	BUILDING = 4,
+	GACHA = 8,
+	MISC = 16,
+	ALL = 31
+}
+
+table Torappu_TipData {
+	tip:string;
+	weight:float;
+	category:Torappu_TipData_Category;
+}
+
+
+
+table Torappu_TipsMetaDisplayItem {
+	tipsId:string;
+	loadingPic:string;
+	availCheck:Torappu_CommonAvailCheck;
+	relateActId:string;
+	isAllStageActive:bool;
+	stageIdList:[string];
+	zoneIdList:[string];
+	tips:[Torappu_TipData];
+}
+
+
+
+table Torappu_FlashAlertAfterStageDisplayMetaItem {
+	flashAlertId:string;
+	availCheck:Torappu_CommonAvailCheck;
+	isAllStageActive:bool;
+	stageIdList:[string];
+	relateActId:string;
+	detailText:string;
+	isBasicInfo:bool;
+	times:int32;
+}
+
+
+
+table Torappu_MapPreviewDisplayMetaItem {
+	mapPreviewPicId:string;
+	availCheck:Torappu_CommonAvailCheck;
+	relateActId:string;
+	isAllStageActive:bool;
+	stageIdList:[string];
+}
+
+
+
+table Torappu_BattleFinishDisplayMetaItem {
+	battleFinishDisplayKey:string;
+	isAllStageActive:bool;
+	stageIdList:[string];
+	availCheck:Torappu_CommonAvailCheck;
+	relateActId:string;
+	overrideStageName:string;
+	signal:string;
+	overrideCharWord:string;
+}
+
+
+
+table Torappu_BattleLoadingDisplayMetaItem {
+	isAllStageActive:bool;
+	stageIdList:[string];
+	battleLoadingPicId:string;
+	relateActId:string;
+	availCheck:Torappu_CommonAvailCheck;
+}
+
+
+
+table Torappu_BattleAutoBattleMetaItem {
+	battleAutoBattleDisplayKey:string;
+	isAllStageActive:bool;
+	relateActId:string;
+	stageIdList:[string];
+	availCheck:Torappu_CommonAvailCheck;
+}
+
+
+
+table Torappu_MetaUIDisplayTable {
+	tipsMetaList:[Torappu_TipsMetaDisplayItem];
+	flashAlertAfterStageItemList:[Torappu_FlashAlertAfterStageDisplayMetaItem];
+	mapPreviewDisplayMetaItemList:[Torappu_MapPreviewDisplayMetaItem];
+	battleFinishDisplayMetaItemList:[Torappu_BattleFinishDisplayMetaItem];
+	battleLoadingDisplayMetaItemList:[Torappu_BattleLoadingDisplayMetaItem];
+	battleAutoBattleMetaItemList:[Torappu_BattleAutoBattleMetaItem];
+}
+
+
+
+root_type Torappu_MetaUIDisplayTable;

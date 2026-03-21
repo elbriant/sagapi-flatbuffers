@@ -1,0 +1,16 @@
+include "Torappu_SandboxV2WeatherType.fbs";
+
+table Torappu_SandboxV2WeatherData {
+	weatherId:string;
+	name:string;
+	weatherLevel:int32;
+	weatherType:Torappu_SandboxV2WeatherType;
+	weatherTypeName:string;
+	weatherIconId:string;
+	functionDesc:string;
+	description:string;
+	buffId:string;
+}
+
+
+root_type Torappu_SandboxV2WeatherData;

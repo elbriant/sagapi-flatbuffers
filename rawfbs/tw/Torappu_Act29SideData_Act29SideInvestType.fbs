@@ -1,0 +1,6 @@
+
+enum Torappu_Act29SideData_Act29SideInvestType : int32 {
+	MAJOR = 0,
+	RARE = 1,
+	NORMAL = 2
+}

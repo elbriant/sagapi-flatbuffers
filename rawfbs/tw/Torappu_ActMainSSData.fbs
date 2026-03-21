@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_ActMainSSZoneAdditionData_.fbs";
+
+table Torappu_ActMainSSData {
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_ActMainSSZoneAdditionData_];
+}
+
+
+root_type Torappu_ActMainSSData;

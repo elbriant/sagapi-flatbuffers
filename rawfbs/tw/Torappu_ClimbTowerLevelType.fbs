@@ -1,0 +1,6 @@
+
+enum Torappu_ClimbTowerLevelType : int32 {
+	NORMAL = 0,
+	HIGHLEVEL = 1,
+	BOSS = 2
+}

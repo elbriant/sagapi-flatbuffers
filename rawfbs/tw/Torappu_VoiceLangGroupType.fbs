@@ -1,0 +1,10 @@
+
+enum Torappu_VoiceLangGroupType : int32 {
+	NONE = 0,
+	CN_MANDARIN = 1,
+	JP = 2,
+	EN = 3,
+	KR = 4,
+	CUSTOM = 5,
+	LINKAGE = 6
+}

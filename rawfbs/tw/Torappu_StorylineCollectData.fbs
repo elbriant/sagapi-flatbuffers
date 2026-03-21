@@ -1,0 +1,9 @@
+
+table Torappu_StorylineCollectData {
+	name:string;
+	desc:string;
+	backgroundId:string;
+}
+
+
+root_type Torappu_StorylineCollectData;

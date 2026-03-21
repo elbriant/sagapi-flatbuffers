@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ReturnV2CheckInRewardItemData {
+	sortId:int32;
+	isImportant:bool;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ReturnV2CheckInRewardItemData;

@@ -1,0 +1,9 @@
+
+table Torappu_MissionArchiveVoiceClipData {
+	charId:string;
+	voiceId:string;
+	index:int32;
+}
+
+
+root_type Torappu_MissionArchiveVoiceClipData;

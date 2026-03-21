@@ -1,0 +1,6 @@
+
+enum Torappu_CommonUnlockType : int32 {
+	STAGECLEAR = 0,
+	HASCHAR = 1,
+	NONE = 2
+}

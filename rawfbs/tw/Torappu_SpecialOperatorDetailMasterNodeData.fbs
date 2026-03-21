@@ -1,0 +1,9 @@
+
+table Torappu_SpecialOperatorDetailMasterNodeData {
+	nodeId:string;
+	masterId:string;
+	level:int32;
+}
+
+
+root_type Torappu_SpecialOperatorDetailMasterNodeData;

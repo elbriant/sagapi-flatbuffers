@@ -1,0 +1,6 @@
+
+enum Torappu_SandboxV2DevelopmentLineStyle : int32 {
+	EMPTY = 0,
+	LEVEL_PASS = 1,
+	LEVEL_BLOCK = 2
+}

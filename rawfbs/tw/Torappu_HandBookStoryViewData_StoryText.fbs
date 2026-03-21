@@ -1,0 +1,14 @@
+include "Torappu_DataUnlockType.fbs";
+
+table Torappu_HandBookStoryViewData_StoryText {
+	storyText:string;
+	unLockType:Torappu_DataUnlockType;
+	unLockParam:string;
+	showType:Torappu_DataUnlockType;
+	showParam:string;
+	unLockString:string;
+	patchIdList:[string];
+}
+
+
+root_type Torappu_HandBookStoryViewData_StoryText;

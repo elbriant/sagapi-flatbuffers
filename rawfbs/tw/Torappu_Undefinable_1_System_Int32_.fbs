@@ -1,0 +1,8 @@
+
+table Torappu_Undefinable_1_System_Int32_ {
+	m_defined:bool;
+	m_value:int32;
+}
+
+
+root_type Torappu_Undefinable_1_System_Int32_;

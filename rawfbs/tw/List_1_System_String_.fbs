@@ -1,0 +1,7 @@
+
+table List_1_System_String_ {
+	arr_values:[string];
+}
+
+
+root_type List_1_System_String_;

@@ -1,0 +1,14 @@
+include "Torappu_ActArchivePicType.fbs";
+
+table Torappu_ActArchiveResData_PicArchiveResItemData {
+	id:string;
+	desc:string;
+	assetPath:string;
+	type:Torappu_ActArchivePicType;
+	subType:string;
+	picDescription:string;
+	kvId:string;
+}
+
+
+root_type Torappu_ActArchiveResData_PicArchiveResItemData;

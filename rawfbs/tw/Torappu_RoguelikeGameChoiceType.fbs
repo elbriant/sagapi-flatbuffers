@@ -1,0 +1,19 @@
+
+enum Torappu_RoguelikeGameChoiceType : int32 {
+	NONE = 0,
+	LEAVE = 1,
+	NEXT = 2,
+	NEXT_PROB = 3,
+	TRADE = 4,
+	TRADE_PROB = 5,
+	SACRIFICE = 6,
+	TELEPORT = 7,
+	EXPEDITION = 8,
+	WISH = 9,
+	TRADE_PROB_SHOW = 10,
+	SACRIFICE_TOTEM = 11,
+	WISH_ALL = 12,
+	KILL = 13,
+	USE_STASHED_TICKET = 14,
+	EXPEDITION_ALL = 15
+}

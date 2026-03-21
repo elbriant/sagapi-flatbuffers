@@ -1,0 +1,8 @@
+include "Torappu_RoguelikeEventType.fbs";
+
+table Torappu_RoguelikeRollNodeGroupData {
+	nodeType:Torappu_RoguelikeEventType;
+}
+
+
+root_type Torappu_RoguelikeRollNodeGroupData;

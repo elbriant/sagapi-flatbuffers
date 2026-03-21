@@ -1,0 +1,30 @@
+include "Torappu_ItemRarity.fbs";
+include "Torappu_ItemClassifyType.fbs";
+include "Torappu_ItemType.fbs";
+include "Torappu_ItemData_StageDropInfo.fbs";
+include "Torappu_ItemData_BuildingProductInfo.fbs";
+include "Torappu_ItemData_VoucherRelateInfo.fbs";
+include "Torappu_ItemData_ShopRelateInfo.fbs";
+
+table Torappu_ItemData {
+	itemId:string;
+	name:string;
+	description:string;
+	rarity:Torappu_ItemRarity;
+	iconId:string;
+	overrideBkg:string;
+	stackIconId:string;
+	sortId:int32;
+	usage:string;
+	obtainApproach:string;
+	hideInItemGet:bool;
+	classifyType:Torappu_ItemClassifyType;
+	itemType:Torappu_ItemType;
+	stageDropList:[Torappu_ItemData_StageDropInfo];
+	buildingProductList:[Torappu_ItemData_BuildingProductInfo];
+	voucherRelateList:[Torappu_ItemData_VoucherRelateInfo];
+	shopRelateInfoList:[Torappu_ItemData_ShopRelateInfo];
+}
+
+
+root_type Torappu_ItemData;

@@ -1,0 +1,9 @@
+
+table Torappu_SandboxV2RiftSubTargetData {
+	id:string;
+	name:string;
+	desc:string;
+}
+
+
+root_type Torappu_SandboxV2RiftSubTargetData;

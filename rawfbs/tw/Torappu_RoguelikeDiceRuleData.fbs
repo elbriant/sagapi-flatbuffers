@@ -1,0 +1,18 @@
+include "Torappu_DiceResultClass.fbs";
+include "Torappu_DiceResultShowType.fbs";
+
+table Torappu_RoguelikeDiceRuleData {
+	dicePointMax:int32;
+	diceResultClass:Torappu_DiceResultClass;
+	diceGroupId:string;
+	diceEventId:string;
+	resultDesc:string;
+	showType:Torappu_DiceResultShowType;
+	canReroll:bool;
+	diceEndingScene:string;
+	diceEndingDesc:string;
+	sound:string;
+}
+
+
+root_type Torappu_RoguelikeDiceRuleData;

@@ -1,0 +1,22 @@
+include "Torappu_SiracusaData_CardGainType.fbs";
+
+table Torappu_SiracusaData_CharCardData {
+	charCardId:string;
+	sortIndex:int32;
+	avgChar:string;
+	avgCharOffsetY:float;
+	charCardName:string;
+	charCardItaName:string;
+	charCardTitle:string;
+	charCardDesc:string;
+	fullCompleteDes:string;
+	gainDesc:string;
+	themeColor:string;
+	taskRingList:[string];
+	operaItemId:string;
+	gainType:Torappu_SiracusaData_CardGainType;
+	gainParamList:[string];
+}
+
+
+root_type Torappu_SiracusaData_CharCardData;

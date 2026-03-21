@@ -1,0 +1,9 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_ItemData_VoucherRelateInfo {
+	voucherId:string;
+	voucherItemType:Torappu_ItemType;
+}
+
+
+root_type Torappu_ItemData_VoucherRelateInfo;

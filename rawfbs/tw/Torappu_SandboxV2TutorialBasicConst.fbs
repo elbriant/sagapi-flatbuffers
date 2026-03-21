@@ -1,0 +1,7 @@
+
+table Torappu_SandboxV2TutorialBasicConst {
+	trainingQuestList:[string];
+}
+
+
+root_type Torappu_SandboxV2TutorialBasicConst;

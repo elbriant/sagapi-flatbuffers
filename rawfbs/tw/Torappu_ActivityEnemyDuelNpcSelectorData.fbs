@@ -1,0 +1,8 @@
+
+table Torappu_ActivityEnemyDuelNpcSelectorData {
+	enemyId:string;
+	score:float;
+}
+
+
+root_type Torappu_ActivityEnemyDuelNpcSelectorData;

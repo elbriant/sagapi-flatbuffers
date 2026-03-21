@@ -1,0 +1,9 @@
+include "Torappu_ActivityEnemyDuelExtraScoreData.fbs";
+
+table Torappu_ActivityEnemyDuelExtraScoreGroupData {
+	modeId:string;
+	data:[Torappu_ActivityEnemyDuelExtraScoreData];
+}
+
+
+root_type Torappu_ActivityEnemyDuelExtraScoreGroupData;

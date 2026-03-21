@@ -1,0 +1,32 @@
+
+table Torappu_Blackboard_DataPair {
+	key:string;
+	value:float;
+	valueStr:string;
+}
+
+
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase {
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+
+table Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart {
+	isInheritable:bool;
+	isRedrawWhenReplace:bool;
+	description:string;
+	descriptionHead:string;
+	levelPhases:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart_LegionModeBuffLevelPhase];
+}
+
+
+
+table Torappu_Battle_Legion_LegionModeBuffData {
+	dataParts:[Torappu_Battle_Legion_LegionModeBuffData_LegionModeBuffDataPart];
+}
+
+
+
+root_type Torappu_Battle_Legion_LegionModeBuffData;

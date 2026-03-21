@@ -1,0 +1,8 @@
+
+table Torappu_BuildingData_WorkshopFormula_UnlockStage {
+	stageId:string;
+	rank:int32;
+}
+
+
+root_type Torappu_BuildingData_WorkshopFormula_UnlockStage;

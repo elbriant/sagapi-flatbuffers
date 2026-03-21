@@ -1,0 +1,10 @@
+include "Torappu_HandbookDisplayCondition_DisplayType.fbs";
+
+table Torappu_HandbookDisplayCondition {
+	charId:string;
+	conditionCharId:string;
+	type:Torappu_HandbookDisplayCondition_DisplayType;
+}
+
+
+root_type Torappu_HandbookDisplayCondition;

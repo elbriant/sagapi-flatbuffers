@@ -1,0 +1,11 @@
+
+table Torappu_ActivityMainlineBuffData_MissionGroupData {
+	id:string;
+	bindBanner:string;
+	sortId:int32;
+	zoneId:string;
+	missionIdList:[string];
+}
+
+
+root_type Torappu_ActivityMainlineBuffData_MissionGroupData;

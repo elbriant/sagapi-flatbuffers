@@ -1,0 +1,8 @@
+
+table Torappu_SandboxV2ArchiveMusicUnlockData {
+	musicId:string;
+	unlockCondDesc:string;
+}
+
+
+root_type Torappu_SandboxV2ArchiveMusicUnlockData;

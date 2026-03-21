@@ -1,0 +1,8 @@
+
+enum Torappu_BuildingData_LODLEVEL : int32 {
+	HIGHEST = 0,
+	HIGH = 1,
+	LOW = 2,
+	LOWEST = 3,
+	COUNT = 4
+}

@@ -1,0 +1,8 @@
+
+enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
+	NONE = 0,
+	TASK = 1,
+	TASK_REWARD = 2,
+	DICE = 3,
+	VISION = 4
+}

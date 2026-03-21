@@ -1,0 +1,9 @@
+
+table Torappu_VersusCheckInData_VoteData {
+	plSweetNum:int32;
+	plSaltyNum:int32;
+	plTaste:int32;
+}
+
+
+root_type Torappu_VersusCheckInData_VoteData;

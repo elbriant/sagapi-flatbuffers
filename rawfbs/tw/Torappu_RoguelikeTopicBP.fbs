@@ -1,0 +1,16 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_RoguelikeTopicBP {
+	id:string;
+	level:int32;
+	tokenNum:int32;
+	nextTokenNum:int32;
+	itemID:string;
+	itemType:Torappu_ItemType;
+	itemCount:int32;
+	isGoodPrize:bool;
+	isGrandPrize:bool;
+}
+
+
+root_type Torappu_RoguelikeTopicBP;

@@ -1,0 +1,14 @@
+include "Torappu_MiniActTrialData.fbs";
+include "Torappu_ActArchiveResData.fbs";
+include "Torappu_ActArchiveComponentTable.fbs";
+include "Torappu_TrainingCampData.fbs";
+
+table Torappu_StoryReviewMetaTable {
+	miniActTrialData:Torappu_MiniActTrialData;
+	actArchiveResData:Torappu_ActArchiveResData;
+	actArchiveData:Torappu_ActArchiveComponentTable;
+	trainingCampData:Torappu_TrainingCampData;
+}
+
+
+root_type Torappu_StoryReviewMetaTable;

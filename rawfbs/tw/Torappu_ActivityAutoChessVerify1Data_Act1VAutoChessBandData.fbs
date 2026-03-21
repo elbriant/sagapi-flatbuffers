@@ -1,0 +1,16 @@
+
+table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData {
+	bandId:string;
+	sortId:int32;
+	bandName:string;
+	bandIconId:string;
+	bandDesc:string;
+	totalHp:int32;
+	initialEffectId:string;
+	charId:string;
+	charName:string;
+	unlockDesc:string;
+}
+
+
+root_type Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData;

@@ -1,0 +1,7 @@
+
+table Torappu_StorylineMainlineSplitData {
+	iconId:string;
+}
+
+
+root_type Torappu_StorylineMainlineSplitData;

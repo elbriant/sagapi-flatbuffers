@@ -1,0 +1,8 @@
+
+table Torappu_Act9D0Data_Act9D0ConstData {
+	campaignEnemyCnt:int32;
+	campaignStageId:string;
+}
+
+
+root_type Torappu_Act9D0Data_Act9D0ConstData;

@@ -1,0 +1,9 @@
+
+table Torappu_GuidebookConfigData {
+	configId:string;
+	sortId:int32;
+	pageIdList:[string];
+}
+
+
+root_type Torappu_GuidebookConfigData;

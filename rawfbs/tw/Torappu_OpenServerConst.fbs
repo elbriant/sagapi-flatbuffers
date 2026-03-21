@@ -1,0 +1,14 @@
+
+table Torappu_OpenServerConst {
+	firstDiamondShardMailCount:int32;
+	initApMailEndTs:int64;
+	resFullOpenUnlockStageId:string;
+	resFullOpenDuration:int32;
+	resFullOpenTitle:string;
+	resFullOpenDesc:string;
+	resFullOpenGuideGroupThreshold:string;
+	resFullOpenStartTime:int64;
+}
+
+
+root_type Torappu_OpenServerConst;

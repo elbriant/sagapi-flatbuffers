@@ -1,0 +1,9 @@
+
+table Torappu_HomeBackgroundMultiFormData {
+	multiFormBgId:string;
+	sortId:int32;
+	bgMusicId:string;
+}
+
+
+root_type Torappu_HomeBackgroundMultiFormData;

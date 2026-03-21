@@ -1,0 +1,13 @@
+
+table Torappu_RL02DevelopmentLine {
+	fromNode:string;
+	toNode:string;
+	fromNodeP:int32;
+	fromNodeR:int32;
+	toNodeP:int32;
+	toNodeR:int32;
+	enrollId:string;
+}
+
+
+root_type Torappu_RL02DevelopmentLine;

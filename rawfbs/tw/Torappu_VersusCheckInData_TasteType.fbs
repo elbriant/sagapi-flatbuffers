@@ -1,0 +1,6 @@
+
+enum Torappu_VersusCheckInData_TasteType : int32 {
+	DRAW = 0,
+	SWEET = 1,
+	SALT = 2
+}

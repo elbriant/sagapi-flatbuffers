@@ -1,0 +1,10 @@
+include "Torappu_MedalPerData.fbs";
+include "Dict_2_System_String_Torappu_MedalTypeData_.fbs";
+
+table Torappu_MedalData {
+	medalList:[Torappu_MedalPerData];
+	medalTypeData:[Dict_2_System_String_Torappu_MedalTypeData_];
+}
+
+
+root_type Torappu_MedalData;

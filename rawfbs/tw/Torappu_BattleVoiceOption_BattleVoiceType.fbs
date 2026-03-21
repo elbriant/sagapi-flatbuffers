@@ -1,0 +1,12 @@
+
+enum Torappu_BattleVoiceOption_BattleVoiceType : int32 {
+	BATTLE_START = 0,
+	ENCOUNTER_ENEMY = 1,
+	PLACE_CHAR = 2,
+	FOCUS_CHAR = 3,
+	SKILL_ACTIVE = 4,
+	SKILL_PASSIVE_IMP = 5,
+	SKILL_PASSIVE_NOR = 6,
+	NORMAL_ATTACK = 7,
+	E_NUM = 8
+}

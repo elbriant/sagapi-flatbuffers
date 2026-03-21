@@ -1,0 +1,19 @@
+include "Torappu_TileData_HeightType.fbs";
+include "Torappu_BuildableType.fbs";
+include "Torappu_MotionMask.fbs";
+include "Torappu_PlayerSideMask.fbs";
+include "Torappu_Blackboard_DataPair.fbs";
+include "Torappu_MapEffectData.fbs";
+
+table Torappu_TileData {
+	tileKey:string;
+	heightType:Torappu_TileData_HeightType;
+	buildableType:Torappu_BuildableType;
+	passableMask:Torappu_MotionMask;
+	playerSideMask:Torappu_PlayerSideMask;
+	blackboard:[Torappu_Blackboard_DataPair];
+	effects:[Torappu_MapEffectData];
+}
+
+
+root_type Torappu_TileData;

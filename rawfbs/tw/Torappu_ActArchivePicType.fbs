@@ -1,0 +1,7 @@
+
+enum Torappu_ActArchivePicType : int32 {
+	IMAGE = 0,
+	BACKGROUND = 1,
+	ENDING_IMAGE = 2,
+	ROGUE_IMAGE = 3
+}

@@ -1,0 +1,59 @@
+include "Dict_2_System_String_Torappu_StageData_.fbs";
+include "Dict_2_System_String_Torappu_RuneStageGroupData_.fbs";
+include "Dict_2_System_String_Torappu_MapThemeData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_TileAppendInfo_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_WeeklyForceOpenTable_.fbs";
+include "Dict_2_System_String_Torappu_TimelyDropTimeInfo_.fbs";
+include "Dict_2_System_String_Torappu_OverrideDropInfo_.fbs";
+include "Dict_2_System_String_Torappu_OverrideUnlockInfo_.fbs";
+include "Dict_2_System_String_Torappu_TimelyDropInfo_.fbs";
+include "Dict_2_System_String_Torappu_StageValidInfo_.fbs";
+include "Dict_2_System_String_Torappu_StageFogInfo_.fbs";
+include "Dict_2_System_String_Torappu_StageStartCond_.fbs";
+include "Dict_2_System_String_Torappu_StageDiffGroupTable_.fbs";
+include "Dict_2_System_String_Dict_2_Torappu_StageDiffGroup_Torappu_StoryStageShowGroup__.fbs";
+include "Dict_2_System_String_Torappu_SpecialBattleFinishStageData_.fbs";
+include "Dict_2_System_String_Torappu_RecordRewardServerData_.fbs";
+include "Dict_2_System_String_Torappu_ApProtectZoneInfo_.fbs";
+include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Dict_2_System_String_Torappu_ActCustomStageData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_StorylineData_.fbs";
+include "Dict_2_System_String_Torappu_StorylineStorySetData_.fbs";
+include "Dict_2_System_String_Torappu_StorylineTagData_.fbs";
+include "Torappu_StorylineConstData.fbs";
+include "Dict_2_System_String_Torappu_SixStarRuneData_.fbs";
+include "Dict_2_System_String_Torappu_SixStarMilestoneGroupData_.fbs";
+include "Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_.fbs";
+
+table Torappu_StageTable {
+	stages:[Dict_2_System_String_Torappu_StageData_];
+	runeStageGroups:[Dict_2_System_String_Torappu_RuneStageGroupData_];
+	mapThemes:[Dict_2_System_String_Torappu_MapThemeData_];
+	tileInfo:[Torappu_ListDict_2_System_String_Torappu_TileAppendInfo_];
+	forceOpenTable:[Torappu_ListDict_2_System_String_Torappu_WeeklyForceOpenTable_];
+	timelyStageDropInfo:[Dict_2_System_String_Torappu_TimelyDropTimeInfo_];
+	overrideDropInfo:[Dict_2_System_String_Torappu_OverrideDropInfo_];
+	overrideUnlockInfo:[Dict_2_System_String_Torappu_OverrideUnlockInfo_];
+	timelyTable:[Dict_2_System_String_Torappu_TimelyDropInfo_];
+	stageValidInfo:[Dict_2_System_String_Torappu_StageValidInfo_];
+	stageFogInfo:[Dict_2_System_String_Torappu_StageFogInfo_];
+	stageStartConds:[Dict_2_System_String_Torappu_StageStartCond_];
+	diffGroupTable:[Dict_2_System_String_Torappu_StageDiffGroupTable_];
+	storyStageShowGroup:[Dict_2_System_String_Dict_2_Torappu_StageDiffGroup_Torappu_StoryStageShowGroup__];
+	specialBattleFinishStageData:[Dict_2_System_String_Torappu_SpecialBattleFinishStageData_];
+	recordRewardData:[Dict_2_System_String_Torappu_RecordRewardServerData_];
+	apProtectZoneInfo:[Dict_2_System_String_Torappu_ApProtectZoneInfo_];
+	antiSpoilerDict:[Dict_2_System_String_List_1_System_String__];
+	actCustomStageDatas:[Dict_2_System_String_Torappu_ActCustomStageData_];
+	spNormalStageIdFor4StarList:[string];
+	storylines:[Torappu_ListDict_2_System_String_Torappu_StorylineData_];
+	storylineStorySets:[Dict_2_System_String_Torappu_StorylineStorySetData_];
+	storylineTags:[Dict_2_System_String_Torappu_StorylineTagData_];
+	storylineConst:Torappu_StorylineConstData;
+	sixStarRuneData:[Dict_2_System_String_Torappu_SixStarRuneData_];
+	sixStarMilestoneInfo:[Dict_2_System_String_Torappu_SixStarMilestoneGroupData_];
+	sixStarCompatibleInfo:[Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_];
+}
+
+
+root_type Torappu_StageTable;

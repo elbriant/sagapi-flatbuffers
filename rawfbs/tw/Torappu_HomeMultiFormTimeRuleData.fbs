@@ -1,0 +1,8 @@
+
+table Torappu_HomeMultiFormTimeRuleData {
+	id:string;
+	startHour:int32;
+}
+
+
+root_type Torappu_HomeMultiFormTimeRuleData;

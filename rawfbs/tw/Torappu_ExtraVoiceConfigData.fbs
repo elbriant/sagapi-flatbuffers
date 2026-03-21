@@ -1,0 +1,9 @@
+include "Torappu_VoiceLangType.fbs";
+
+table Torappu_ExtraVoiceConfigData {
+	voiceId:string;
+	validVoiceLang:[Torappu_VoiceLangType];
+}
+
+
+root_type Torappu_ExtraVoiceConfigData;

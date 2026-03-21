@@ -1,0 +1,7 @@
+
+enum Torappu_StorylineLocationType : int32 {
+	STORY_SET = 0,
+	BEFORE = 1,
+	AFTER = 2,
+	MAINLINE_SPLIT = 3
+}

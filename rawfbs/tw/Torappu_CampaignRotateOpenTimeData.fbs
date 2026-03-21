@@ -1,0 +1,13 @@
+
+table Torappu_CampaignRotateOpenTimeData {
+	groupId:string;
+	stageId:string;
+	mapId:string;
+	unknownRegions:[string];
+	duration:int32;
+	startTs:int64;
+	endTs:int64;
+}
+
+
+root_type Torappu_CampaignRotateOpenTimeData;

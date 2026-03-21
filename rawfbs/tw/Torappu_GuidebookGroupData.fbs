@@ -1,0 +1,12 @@
+include "Torappu_UIGuideTarget.fbs";
+include "Torappu_GuidebookConfigData.fbs";
+
+table Torappu_GuidebookGroupData {
+	groupId:string;
+	guideTarget:Torappu_UIGuideTarget;
+	subSignal:string;
+	configList:[Torappu_GuidebookConfigData];
+}
+
+
+root_type Torappu_GuidebookGroupData;

@@ -1,0 +1,13 @@
+include "Torappu_SandboxV2EventChoiceType.fbs";
+
+table Torappu_SandboxV2EventChoiceData {
+	choiceId:string;
+	type:Torappu_SandboxV2EventChoiceType;
+	costAction:int32;
+	title:string;
+	desc:string;
+	expeditionId:string;
+}
+
+
+root_type Torappu_SandboxV2EventChoiceData;
