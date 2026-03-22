@@ -1,8 +1,8 @@
 include "Torappu_EnemyLevelType.fbs";
 
 table Torappu_Undefinable_1_Torappu_EnemyLevelType_ {
-	m_defined:bool;
-	m_value:Torappu_EnemyLevelType;
+	defined:bool;
+	value:Torappu_EnemyLevelType;
 }
 
 

@@ -342,29 +342,29 @@ table Torappu_LevelData_EnemyData {
 
 
 table Torappu_Undefinable_1_System_String_ {
-	m_defined:bool;
-	m_value:string;
+	defined:bool;
+	value:string;
 }
 
 
 
 table Torappu_Undefinable_1_System_Int32_ {
-	m_defined:bool;
-	m_value:int32;
+	defined:bool;
+	value:int32;
 }
 
 
 
 table Torappu_Undefinable_1_System_Single_ {
-	m_defined:bool;
-	m_value:float;
+	defined:bool;
+	value:float;
 }
 
 
 
 table Torappu_Undefinable_1_System_Boolean_ {
-	m_defined:bool;
-	m_value:bool;
+	defined:bool;
+	value:bool;
 }
 
 
@@ -405,29 +405,29 @@ table Torappu_EnemyDatabase_AttributesData {
 
 
 table Torappu_Undefinable_1_Torappu_SourceApplyWay_ {
-	m_defined:bool;
-	m_value:Torappu_SourceApplyWay;
+	defined:bool;
+	value:Torappu_SourceApplyWay;
 }
 
 
 
 table Torappu_Undefinable_1_Torappu_MotionMode_ {
-	m_defined:bool;
-	m_value:Torappu_MotionMode;
+	defined:bool;
+	value:Torappu_MotionMode;
 }
 
 
 
 table Torappu_Undefinable_1_System_StringA__ {
-	m_defined:bool;
-	m_value:[string];
+	defined:bool;
+	value:[string];
 }
 
 
 
 table Torappu_Undefinable_1_Torappu_EnemyLevelType_ {
-	m_defined:bool;
-	m_value:Torappu_EnemyLevelType;
+	defined:bool;
+	value:Torappu_EnemyLevelType;
 }
 
 
