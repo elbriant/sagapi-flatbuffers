@@ -596,6 +596,10 @@ namespace DNFBDmp
 								}
 
 								processedFieldNames.Add(cleanFieldName);
+								if (cleanFieldName.StartsWith("m_"))
+								{
+									cleanFieldName = cleanFieldName.Substring(2);
+								}
 								fbBuilder.addTableField(cleanFieldName, type);
 							}
 						}
