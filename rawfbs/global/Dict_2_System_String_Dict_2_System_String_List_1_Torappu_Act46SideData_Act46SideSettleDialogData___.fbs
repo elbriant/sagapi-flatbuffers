@@ -1,0 +1,9 @@
+include "Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData__.fbs";
+
+table Dict_2_System_String_Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData___ {
+	dict_key:string;
+	dict_value:[Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData__];
+}
+
+
+root_type Dict_2_System_String_Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData___;

@@ -1,0 +1,29 @@
+include "Dict_2_System_String_System_String_.fbs";
+include "Torappu_BuffData.fbs";
+include "Dict_2_System_String_Torappu_AutoChessBattleMiscConfig_SceneEffectSetting_.fbs";
+include "Torappu_AutoChessBattleMiscConfig_TrainingNPCInfo.fbs";
+include "Dict_2_System_Int32_Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo_.fbs";
+include "Dict_2_System_Int32_List_1_Torappu_AutoChessBattleMiscConfig_TrainingShopInfo__.fbs";
+include "Torappu_Battle_AutoChess_AutoChessEffectManager_AutoChessEffectManagerConfig.fbs";
+include "Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig.fbs";
+
+table Torappu_AutoChessBattleMiscConfig {
+	initialHp:int32;
+	idleEffectMap:[Dict_2_System_String_System_String_];
+	defaultAnimMap:[Dict_2_System_String_System_String_];
+	forceUseFirstModeIds:[string];
+	enemyPreviewBuff:Torappu_BuffData;
+	frozenEffectId:string;
+	goldenEffectId:string;
+	mlyssWtrmanTransformBuff:string;
+	sceneEffectMap:[Dict_2_System_String_Torappu_AutoChessBattleMiscConfig_SceneEffectSetting_];
+	trainingNPCInfos:[Torappu_AutoChessBattleMiscConfig_TrainingNPCInfo];
+	trainingRoundInfos:[Dict_2_System_Int32_Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo_];
+	trainingShopInfos:[Dict_2_System_Int32_List_1_Torappu_AutoChessBattleMiscConfig_TrainingShopInfo__];
+	helpBattleNpcPlayers:[int32];
+	effectManagerCfg:Torappu_Battle_AutoChess_AutoChessEffectManager_AutoChessEffectManagerConfig;
+	tutorialManagerCfg:Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig;
+}
+
+
+root_type Torappu_AutoChessBattleMiscConfig;

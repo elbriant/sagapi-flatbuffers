@@ -279,7 +279,9 @@ enum Torappu_ActivityType : int32 {
 	TYPE_ACT45SIDE = 57,
 	TEAM_QUEST = 58,
 	RECRUIT_ONLY = 59,
-	ENUM = 60
+	TYPE_ACT46SIDE = 60,
+	AUTOCHESS_SEASON = 61,
+	ENUM = 62
 }
 
 table Torappu_RetroActData {
@@ -293,6 +295,7 @@ table Torappu_RetroActData {
 	haveTrail:bool;
 	customActId:string;
 	customActType:Torappu_ActivityType;
+	trapDomainId:string;
 }
 
 
@@ -491,6 +494,7 @@ table Torappu_StageData {
 	sixStarDisplayRewardList:[Torappu_ItemBundle];
 	advancedRuneIdList1:[string];
 	advancedRuneIdList2:[string];
+	useSpecialSizeMapPreview:bool;
 }
 
 

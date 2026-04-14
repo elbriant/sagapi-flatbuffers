@@ -60,7 +60,9 @@ enum Torappu_ActivityType : int32 {
 	TYPE_ACT45SIDE = 57,
 	TEAM_QUEST = 58,
 	RECRUIT_ONLY = 59,
-	ENUM = 60
+	TYPE_ACT46SIDE = 60,
+	AUTOCHESS_SEASON = 61,
+	ENUM = 62
 }
 
 enum Torappu_ActivityDisplayType : int32 {
@@ -4707,568 +4709,6 @@ table Dict_2_System_String_Torappu_Act38SideData_ {
 
 
 
-enum Torappu_Act1VAutoChessModeType : int32 {
-	TRAINING = 0,
-	FUNNY = 1,
-	NORMAL = 2
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeData {
-	modeId:string;
-	sortId:int32;
-	name:string;
-	desc:string;
-	preposedMode:string;
-	unlockText:string;
-	effectDescList:[string];
-	loadingPicId:string;
-	code:string;
-	modeType:Torappu_Act1VAutoChessModeType;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData {
-	damageMin:int32;
-	damageMax:int32;
-	item:Torappu_ItemBundle;
-	dailyMissionPoint:int32;
-}
-
-
-
-table Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData__ {
-	dict_key:string;
-	dict_value:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData];
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData {
-	milestoneId:string;
-	orderId:int32;
-	tokenNum:int32;
-	item:Torappu_ItemBundle;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData {
-	bandId:string;
-	sortId:int32;
-	bandName:string;
-	bandIconId:string;
-	bandDesc:string;
-	totalHp:int32;
-	initialEffectId:string;
-	charId:string;
-	charName:string;
-	unlockDesc:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData {
-	modeId:string;
-	hp:int32;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData {
-	forceId:string;
-	sortId:int32;
-	forceName:string;
-	forceIconId:string;
-	forceDesc:string;
-	leaderEnemyId:string;
-	leaderName:string;
-	modeHpDatas:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeBossHpData];
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData {
-	shopLevel:int32;
-	initialUpgradePrice:int32;
-	chessCount:int32;
-	itemCount:int32;
-	baseShieldValue:int32;
-}
-
-
-
-table Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData__ {
-	dict_key:string;
-	dict_value:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData];
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData {
-	shopLevel:int32;
-	levelTagBgColor:string;
-	isLevelCharChessEmpty:bool;
-	isLevelTrapChessEmpty:bool;
-	charChessDiySlotIdList:[string];
-}
-
-
-
-table Dict_2_System_Int32_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData_ {
-	dict_key:int32;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData;
-}
-
-
-
-enum Torappu_AutoChessSkillTriggerType : int32 {
-	DEFAULT = 0,
-	ALWAYS = 1,
-	SEARCH = 2,
-	MLYSS_WTRMAN = 3,
-	MARCILS2 = 4
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessSkillTriggerData {
-	profession:Torappu_ProfessionCategory;
-	subProfessionId:string;
-	charId:string;
-	skillIndex:int32;
-	skillTriggerType:Torappu_AutoChessSkillTriggerType;
-}
-
-
-
-enum Torappu_Act1VAutoChessCommentReportCountType : int32 {
-	ONCE = 0,
-	ALWAYS = 1
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBattleCommentData {
-	template:string;
-	description:string;
-	reportType:Torappu_Act1VAutoChessCommentReportCountType;
-	blackboard:[Torappu_Blackboard_DataPair];
-}
-
-
-
-enum Torappu_Act1VAutoChessShopTokenDisplayType : int32 {
-	DEFAULT = 0,
-	HIDDEN = 1
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData {
-	tokenId:string;
-	tokenDisplayType:Torappu_Act1VAutoChessShopTokenDisplayType;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData;
-}
-
-
-
-enum Torappu_Act1VAutoChessEffectType : int32 {
-	NONE = 0,
-	BAND_INITIAL = 1,
-	ENEMY = 2,
-	ENEMY_TEMPORARY = 3,
-	ALLY = 4,
-	EQUIP = 5,
-	CHAR_MAP = 6
-}
-
-enum Torappu_Act1VAutoChessEffectCounterType : int32 {
-	NONE = 0,
-	TURN_COUNT = 1,
-	TRIGGER_COUNT = 2,
-	CHAR_COUNT = 3,
-	STACK_COUNT = 4,
-	COIN_JAR = 5
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData {
-	effectId:string;
-	effectType:Torappu_Act1VAutoChessEffectType;
-	effectCounterType:Torappu_Act1VAutoChessEffectCounterType;
-	continuedRound:int32;
-	effectName:string;
-	effectDesc:string;
-	effectDecoIconId:string;
-	isMainEnemyEffect:bool;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData;
-}
-
-
-
-enum Torappu_EvolvePhase : int32 {
-	PHASE_0 = 0,
-	PHASE_1 = 1,
-	PHASE_2 = 2,
-	PHASE_3 = 3,
-	E_NUM = 4
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCultivateRelationData {
-	cultivateNum:int32;
-	effectId:string;
-	evolvePhase:Torappu_EvolvePhase;
-	charLevel:int32;
-	atkPer:int32;
-	defPer:int32;
-	hpPer:int32;
-}
-
-
-
-enum Torappu_RarityRank : int32 {
-	TIER_1 = 0,
-	TIER_2 = 1,
-	TIER_3 = 2,
-	TIER_4 = 3,
-	TIER_5 = 4,
-	TIER_6 = 5,
-	E_NUM = 6
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData {
-	charRarity:Torappu_RarityRank;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData;
-}
-
-
-
-enum Torappu_Act1VAutoChessCountType : int32 {
-	NONE = 0,
-	BATTLE_LAYER = 1,
-	COUNTING = 2,
-	PROFESSIONS = 3,
-	GROUPS = 4,
-	LEVEL = 5,
-	PURCHASE = 6
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData {
-	key:string;
-	blackboard:[Torappu_Blackboard_DataPair];
-	countType:Torappu_Act1VAutoChessCountType;
-}
-
-
-
-table Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData__ {
-	dict_key:string;
-	dict_value:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData];
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData {
-	factionId:string;
-	factionName:string;
-	sortId:int32;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData {
-	chessSoldPrice:int32;
-	shopRefreshPrice:int32;
-	bonusRound:int32;
-	maxDeckCnt:int32;
-	maxChessCnt:int32;
-	deltaShopUpgradePrice:int32;
-	shieldToDmgScale:int32;
-	spellCntLimit:int32;
-	costPlayerHpLimit:int32;
-	rewardEnemyGroupKey:string;
-	rewardEnemyEffectId:string;
-	selfDefenseDamageTip:string;
-	selfCharDamageTip:string;
-	selfDamageTip:string;
-	selfSpecialDamageTip:string;
-	additionalAwardCount1:int32;
-	additionalAwardCount2:int32;
-	normalAwardTxt:string;
-	additionalAwardTxt:string;
-	milestoneId:string;
-	boxChangeTxt:string;
-	startCd:int32;
-	borrowCount:int32;
-	maxBorrowListCnt:int32;
-	dailyMissionParam:int32;
-	dailyMissionRewardId:string;
-	dailyMissionRewardType:string;
-	dailyMissionRewardCount:int32;
-	dailyMissionName:string;
-	dailyMissionDesc:string;
-	dailyMissionRule:string;
-	defaultFaction:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData;
-	utilTrapIds:[string];
-	specialRescuitIds:[string];
-	rewardSkinId:string;
-	rewardSkinText:string;
-	rewardAvatarId:string;
-	rewardAvatarText:string;
-	forceFocusEnemyTurns:[int32];
-	tutorialPhase1Round:int32;
-	tutorialPhase2Round:int32;
-	tutorialPhase3Round:int32;
-	tutorialPhase1ShopLevel:int32;
-	tutorialPhase2ShopLevel:int32;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData {
-	chessId:string;
-	goldenChessId:string;
-	isDiyChessSlot:bool;
-	chessLevel:int32;
-	shopLevelSortId:int32;
-	canBeRented:bool;
-	charId:string;
-	tmplId:string;
-	defaultSkillIndex:int32;
-	defaultUniEquipId:string;
-	backupCharId:string;
-	backupCharRepName:string;
-	backupCharSkillIndex:int32;
-	backupCharUniEquipId:string;
-	backupCharPotRank:int32;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData {
-	evolvePhase:Torappu_EvolvePhase;
-	charLevel:int32;
-	skillLevel:int32;
-	favorPoint:int32;
-	equipLevel:int32;
-	maxItemEquipCnt:int32;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData {
-	chessId:string;
-	isGolden:bool;
-	purchasePrice:int32;
-	status:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessStatusData;
-	upgradeChessId:string;
-	upgradeNum:int32;
-	damage:int32;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData;
-}
-
-
-
-enum Torappu_Act1VAutoChessTrapChessType : int32 {
-	NONE = 0,
-	EQUIP = 1,
-	MAGIC = 2
-}
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData {
-	itemId:string;
-	goldenItemId:string;
-	hideInChessShop:bool;
-	itemLevel:int32;
-	iconLevel:int32;
-	shopLevelSortId:int32;
-	itemType:Torappu_Act1VAutoChessTrapChessType;
-	trapId:string;
-}
-
-
-
-table Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData {
-	evolvePhase:Torappu_EvolvePhase;
-	trapLevel:int32;
-	skillIndex:int32;
-	skillLevel:int32;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData {
-	chessId:string;
-	isGolden:bool;
-	purchasePrice:int32;
-	status:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessStatusData;
-	upgradeChessId:string;
-	upgradeNum:int32;
-	trapDuration:int32;
-	effectId:string;
-	giveGroupId:string;
-	itemType:Torappu_Act1VAutoChessTrapChessType;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData {
-	stageId:string;
-	mode:[string];
-	weight:int32;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData {
-	forceId:string;
-	levelId:string;
-	roundDetailId:string;
-	round:int32;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData {
-	round:int32;
-	roundData:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelDetailedData_];
-}
-
-
-
-table Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData__ {
-	dict_key:string;
-	dict_value:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData];
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectCounterTypeData {
-	type:Torappu_Act1VAutoChessEffectCounterType;
-	format:string;
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectCounterTypeData_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectCounterTypeData;
-}
-
-
-
-table Torappu_ActivityAutoChessVerify1Data {
-	modeDataList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessModeData];
-	baseRewardDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBaseRewardData__];
-	mileStoneList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessMilestoneData];
-	bandDataListDict:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBandData_];
-	forceDataListDict:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceData_];
-	shopLevelDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelData__];
-	shopLevelDisplayDataDict:[Dict_2_System_Int32_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopLevelDisplayData_];
-	skillTriggerDataList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessSkillTriggerData];
-	battleCommentDataList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBattleCommentData];
-	shopStateTokenData:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessShopStateTokenData_];
-	effectInfoDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectInfoData_];
-	cultivateEffectList:[Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCultivateRelationData];
-	diyChessSlotDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessDiyChessSlotData_];
-	effectBuffInfoDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessBuffInfoData__];
-	constData:Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessConstData;
-	charShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharShopChessData_];
-	charChessDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessCharChessData_];
-	chessNormalIdLookupDict:[Dict_2_System_String_System_String_];
-	trapShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapShopChessData_];
-	trapChessDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessTrapChessData_];
-	stageDatasDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessStageData_];
-	forceLevelDetailedDataDict:[Dict_2_System_String_List_1_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessForceLevelRoundData__];
-	effectTypeDescriptionDict:[Dict_2_System_String_System_String_];
-	charFactionDict:[Dict_2_System_String_System_String_];
-	factionDatas:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessFactionData_];
-	effectCounterTypeDataDict:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_Act1VAutoChessEffectCounterTypeData_];
-}
-
-
-
-table Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_ {
-	dict_key:string;
-	dict_value:Torappu_ActivityAutoChessVerify1Data;
-}
-
-
-
 enum Torappu_ActArcadeData_Rank : int32 {
 	B = 0,
 	A = 1,
@@ -5766,7 +5206,7 @@ table Torappu_ActMultiV3TipsData {
 
 
 
-table Torappu_ActMultiV3ReportData {
+table Torappu_CommonReportPlayerData {
 	id:string;
 	sortId:int32;
 	txt:string;
@@ -5774,6 +5214,14 @@ table Torappu_ActMultiV3ReportData {
 }
 
 
+
+enum Torappu_EvolvePhase : int32 {
+	PHASE_0 = 0,
+	PHASE_1 = 1,
+	PHASE_2 = 2,
+	PHASE_3 = 3,
+	E_NUM = 4
+}
 
 table Torappu_ActMultiV3TempCharData {
 	charId:string;
@@ -5806,7 +5254,6 @@ table Torappu_ActMultiV3ConstToastData {
 	roomCollaboratorReviseMode:string;
 	continuousClicks:string;
 	matchNoProject:string;
-	reportNoProject:string;
 	otherModeTrainingLock:string;
 	teamLock:string;
 	mentorLockTips:string;
@@ -5895,7 +5342,6 @@ table Torappu_ActMultiV3ConstData {
 	footballGreatVoiceNum:int32;
 	defenceGreatVoiceWave:int32;
 	reportMaxNum:int32;
-	reportText:string;
 	reward1Id:string;
 	reward1Text:string;
 	reward2Id:string;
@@ -6030,7 +5476,7 @@ table Torappu_ActMultiV3Data {
 	diffStarRewardDict:[Dict_2_System_String_Torappu_ActMultiV3DiffStarRewardData_];
 	milestoneList:[Torappu_ActMultiV3MilestoneData];
 	tipsDataList:[Torappu_ActMultiV3TipsData];
-	reportDataList:[Torappu_ActMultiV3ReportData];
+	reportDataList:[Torappu_CommonReportPlayerData];
 	tempCharDataList:[Torappu_ActMultiV3TempCharData];
 	constToastData:Torappu_ActMultiV3ConstToastData;
 	constData:Torappu_ActMultiV3ConstData;
@@ -6919,6 +6365,16 @@ table Dict_2_System_String_Torappu_Act1VHalfIdleCharRankData_ {
 
 
 
+enum Torappu_RarityRank : int32 {
+	TIER_1 = 0,
+	TIER_2 = 1,
+	TIER_3 = 2,
+	TIER_4 = 3,
+	TIER_5 = 4,
+	TIER_6 = 5,
+	E_NUM = 6
+}
+
 table Torappu_Act1VHalfIdleCharEvolveData_EvolveData {
 	evolvePhase:Torappu_EvolvePhase;
 	itemId:string;
@@ -7514,6 +6970,740 @@ table Dict_2_System_String_Torappu_ActRecruitOnlyData_ {
 
 
 
+table Torappu_Act46SideData_Act46SideZoneAdditionData {
+	zoneId:string;
+	unlockText:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act46SideData_Act46SideZoneAdditionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act46SideData_Act46SideZoneAdditionData;
+}
+
+
+
+table Torappu_Act46SideData_Act46SideMonopolyStageData {
+	stageId:string;
+	sortId:int32;
+	startTs:int64;
+	stageName:string;
+	stageDesc:string;
+	taskRequiredAmount:int32;
+	rewardList:[Torappu_ItemBundle];
+	buffIdList:[string];
+	bgSpriteId:string;
+	maxTurn:int32;
+	nodeIconStyleIndexList:[int32];
+	validResourceIdList:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyStageData_ {
+	dict_key:string;
+	dict_value:Torappu_Act46SideData_Act46SideMonopolyStageData;
+}
+
+
+
+table Torappu_Act46SideData_Act46SideMonopolyBuffData {
+	buffId:string;
+	buffIconId:string;
+	buffName:string;
+	buffDesc:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyBuffData_ {
+	dict_key:string;
+	dict_value:Torappu_Act46SideData_Act46SideMonopolyBuffData;
+}
+
+
+
+table Torappu_Act46SideData_Act46SideSettleDialogData {
+	characterAvatarId:string;
+	dialogText:string;
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData__ {
+	dict_key:string;
+	dict_value:[Torappu_Act46SideData_Act46SideSettleDialogData];
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData___ {
+	dict_key:string;
+	dict_value:[Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData__];
+}
+
+
+
+table Torappu_Act46SideData_Act46SideConstData {
+	trainingStageId:string;
+	excellentRate:[int32];
+	entryRequirement:string;
+	businessUnlockText:string;
+	mapNodeStartIcon:string;
+	comboTaskProgressCount:int32;
+}
+
+
+
+table Torappu_Act46SideData_Act46SideMonopolyResourceItemData {
+	resourceId:string;
+	sortId:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyResourceItemData_ {
+	dict_key:string;
+	dict_value:Torappu_Act46SideData_Act46SideMonopolyResourceItemData;
+}
+
+
+
+table Torappu_Act46SideData {
+	zoneAdditionDataMap:[Dict_2_System_String_Torappu_Act46SideData_Act46SideZoneAdditionData_];
+	monopolyStageDataMap:[Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyStageData_];
+	buffDataMap:[Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyBuffData_];
+	settleDialogDataMap:[Dict_2_System_String_Dict_2_System_String_List_1_Torappu_Act46SideData_Act46SideSettleDialogData___];
+	constData:Torappu_Act46SideData_Act46SideConstData;
+	resourceItemDataMap:[Dict_2_System_String_Torappu_Act46SideData_Act46SideMonopolyResourceItemData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act46SideData_ {
+	dict_key:string;
+	dict_value:Torappu_Act46SideData;
+}
+
+
+
+enum Torappu_ActAutoChessModeType : int32 {
+	NONE = -1,
+	LOCAL = 0,
+	SINGLE = 1,
+	MULTI = 2
+}
+
+enum Torappu_ActAutoChessModeDifficultyType : int32 {
+	NONE = -1,
+	TRAINING = 0,
+	FUNNY = 1,
+	NORMAL = 2,
+	HARD = 3
+}
+
+table Torappu_ActAutoChessData_ActAutoChessModeData {
+	modeId:string;
+	name:string;
+	code:string;
+	sortId:int32;
+	backgroundId:string;
+	desc:string;
+	effectDescList:[string];
+	preposedMode:string;
+	unlockText:string;
+	loadingPicId:string;
+	modeType:Torappu_ActAutoChessModeType;
+	modeDifficulty:Torappu_ActAutoChessModeDifficultyType;
+	modeIconId:string;
+	modeColor:string;
+	specialPhaseTime:int32;
+	activeBondIdList:[string];
+	inactiveBondIdList:[string];
+	inactiveEnemyKey:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessModeData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessModeData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessBaseRewardData {
+	round:int32;
+	item:Torappu_ItemBundle;
+	dailyMissionPoint:int32;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessBandData {
+	bandId:string;
+	sortId:int32;
+	modeTypeList:[string];
+	bandDesc:string;
+	totalHp:int32;
+	effectId:string;
+	victorCount:int32;
+	bandRewardModulus:float;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessBandData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessBandData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessCharChessStatusData {
+	evolvePhase:Torappu_EvolvePhase;
+	charLevel:int32;
+	skillLevel:int32;
+	favorPoint:int32;
+	equipLevel:int32;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessCharChessData {
+	chessId:string;
+	identifier:int32;
+	isGolden:bool;
+	status:Torappu_ActAutoChessData_ActAutoChessCharChessStatusData;
+	upgradeChessId:string;
+	upgradeNum:int32;
+	bondIds:[string];
+	garrisonIds:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessCharChessData;
+}
+
+
+
+table Dict_2_System_String_Torappu_RarityRank_ {
+	dict_key:string;
+	dict_value:Torappu_RarityRank;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessShopLevelData {
+	shopLevel:int32;
+	initialUpgradePrice:int32;
+	charChessCount:int32;
+	itemCount:int32;
+	levelTagBgColor:string;
+}
+
+
+
+table Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData_ {
+	dict_key:int32;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessShopLevelData;
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData_];
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData {
+	shopLevel:int32;
+	levelTagBgColor:string;
+	isLevelCharChessEmpty:bool;
+	isLevelTrapChessEmpty:bool;
+	charChessDiySlotIdList:[string];
+}
+
+
+
+table Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData_ {
+	dict_key:int32;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData;
+}
+
+
+
+enum Torappu_AutoChessChessType : int32 {
+	NORMAL = 0,
+	DIY = 1,
+	PRESET = 2
+}
+
+table Torappu_ActAutoChessData_ActAutoChessCharShopChessData {
+	chessId:string;
+	goldenChessId:string;
+	chessLevel:int32;
+	shopLevelSortId:int32;
+	chessType:Torappu_AutoChessChessType;
+	charId:string;
+	tmplId:string;
+	defaultSkillIndex:int32;
+	defaultUniEquipId:string;
+	backupCharId:string;
+	backupTmplId:string;
+	backupCharSkillIndex:int32;
+	backupCharUniEquipId:string;
+	backupCharPotRank:int32;
+	isHidden:bool;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharShopChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessCharShopChessData;
+}
+
+
+
+table Torappu_ActAutoChessData_AutoChessTrapChessStatusData {
+	evolvePhase:Torappu_EvolvePhase;
+	trapLevel:int32;
+	skillIndex:int32;
+	skillLevel:int32;
+}
+
+
+
+enum Torappu_AutoChessItemType : int32 {
+	CHAR = 0,
+	EQUIP = 1,
+	MAGIC = 2,
+	TOKEN = 3
+}
+
+table Torappu_ActAutoChessData_ActAutoChessTrapChessData {
+	chessId:string;
+	identifier:int32;
+	charId:string;
+	isGolden:bool;
+	purchasePrice:int32;
+	status:Torappu_ActAutoChessData_AutoChessTrapChessStatusData;
+	upgradeChessId:string;
+	upgradeNum:int32;
+	trapDuration:int32;
+	effectId:string;
+	giveBondId:string;
+	givePowerId:string;
+	canGiveBond:bool;
+	itemType:Torappu_AutoChessItemType;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessTrapChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessTrapChessData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessTrapShopChessData {
+	itemId:string;
+	goldenItemId:string;
+	hideInShop:bool;
+	itemLevel:int32;
+	iconLevel:int32;
+	shopLevelSortId:int32;
+	itemType:Torappu_AutoChessItemType;
+	trapId:string;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessTrapShopChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessTrapShopChessData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessStageData {
+	stageId:string;
+	mode:[string];
+	weight:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessStageData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessStageData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessBattleData {
+	bossId:string;
+	levelId:string;
+	isSpPrepare:bool;
+}
+
+
+
+table Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData__ {
+	dict_key:int32;
+	dict_value:[Torappu_ActAutoChessData_ActAutoChessBattleData];
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData___ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData__];
+}
+
+
+
+enum Torappu_ActAutoChessBondActiveType : int32 {
+	BATTLE = 0,
+	ALL = 1,
+	MANI = 2
+}
+
+table Torappu_ActAutoChessData_ActAutoChessBondInfo {
+	bondId:string;
+	name:string;
+	desc:string;
+	iconId:string;
+	activeCount:int32;
+	effectId:string;
+	activeType:Torappu_ActAutoChessBondActiveType;
+	identifier:int32;
+	weight:int32;
+	isActiveInDeck:bool;
+	descParamBaseList:[string];
+	descParamPerStackList:[string];
+	noStack:bool;
+	chessIdList:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessBondInfo_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessBondInfo;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessGarrisonData {
+	garrisonDesc:string;
+	eventType:string;
+	eventTypeDesc:string;
+	eventTypeIcon:string;
+	eventTypeSmallIcon:string;
+	effectType:string;
+	charLevel:int32;
+	battleRuneKey:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+	description:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessGarrisonData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessGarrisonData;
+}
+
+
+
+enum Torappu_AutoChessEffectType : int32 {
+	NONE = 0,
+	BAND_INITIAL = 1,
+	ENEMY = 2,
+	ENEMY_TEMPORARY = 3,
+	ALLY = 4,
+	EQUIP = 5,
+	MAGIC = 6,
+	CHAR_MAP = 7,
+	BOND = 8,
+	ENEMY_GAIN = 9,
+	BUFF_GAIN = 10,
+	GARRISON = 11
+}
+
+enum Torappu_AutoChessEffectCounterType : int32 {
+	NONE = 0,
+	TURN_COUNT = 1,
+	TRIGGER_COUNT = 2,
+	CHAR_COUNT = 3,
+	STACK_COUNT = 4,
+	COIN_JAR = 5
+}
+
+table Torappu_ActAutoChessData_ActAutoChessEffectInfoData {
+	effectId:string;
+	effectType:Torappu_AutoChessEffectType;
+	effectCounterType:Torappu_AutoChessEffectCounterType;
+	continuedRound:int32;
+	effectName:string;
+	effectDesc:string;
+	effectDecoIconId:string;
+	enemyPrice:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessEffectInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessEffectInfoData;
+}
+
+
+
+enum Torappu_AutoChessCountType : int32 {
+	NONE = 0,
+	BATTLE_LAYER = 1,
+	COUNTING = 2,
+	PROFESSIONS = 3,
+	GROUPS = 4,
+	LEVEL = 5,
+	PURCHASE = 6
+}
+
+table Torappu_ActAutoChessData_ActAutoChessBuffInfoData {
+	key:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+	countType:Torappu_AutoChessCountType;
+}
+
+
+
+table Dict_2_System_String_List_1_Torappu_ActAutoChessData_ActAutoChessBuffInfoData__ {
+	dict_key:string;
+	dict_value:[Torappu_ActAutoChessData_ActAutoChessBuffInfoData];
+}
+
+
+
+enum Torappu_AutoChessEffectChoiceType : int32 {
+	EQUIP_FREE = 0,
+	EQUIP_PAID = 1,
+	BOUNTY_HUNT = 2,
+	BUFF_SELECT = 3,
+	PERSONAL_CHOOSE = 4
+}
+
+table Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData {
+	choiceEventId:string;
+	choiceType:Torappu_AutoChessEffectChoiceType;
+	effectType:Torappu_AutoChessEffectType;
+	name:string;
+	desc:string;
+	typeTxtColor:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutochessBossEntry {
+	bossId:string;
+	sortId:int32;
+	weight:int32;
+	bloodPoint:int32;
+	bloodPointNormal:int32;
+	bloodPointHard:int32;
+	isHidingBoss:bool;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessBossEntry_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutochessBossEntry;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry {
+	type:string;
+	specialEnemyKey:string;
+	randomWeight:int32;
+	isInFirstHalf:bool;
+	attachedNormalEnemyKeys:[string];
+	attachedEliteEnemyKeys:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry {
+	count:int32;
+	weight:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessTrainingNpcData {
+	npcId:string;
+	charId:string;
+	nameCardSkinId:string;
+	medalCount:int32;
+	bandId:string;
+}
+
+
+
+table Torappu_ActivityCommonMilestoneData {
+	milestoneId:string;
+	milestoneLvl:int32;
+	tokenNum:int32;
+	rewardItem:Torappu_ItemBundle;
+	availableTime:int64;
+}
+
+
+
+table Dict_2_System_String_System_Single_ {
+	dict_key:string;
+	dict_value:float;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessPlayerTitleData {
+	id:string;
+	picId:string;
+	txt:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessPlayerTitleData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessPlayerTitleData;
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData {
+	chessLevel:int32;
+	isGolden:bool;
+	evolvePhase:Torappu_EvolvePhase;
+	charLevel:int32;
+	skillLevel:int32;
+	favorPoint:int32;
+	equipLevel:int32;
+	purchasePrice:int32;
+	chessSoldPrice:int32;
+	eliteIconId:string;
+}
+
+
+
+table Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData__ {
+	dict_key:int32;
+	dict_value:[Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData];
+}
+
+
+
+table Torappu_ActAutoChessData_ActAutoChessConstData {
+	shopRefreshPrice:int32;
+	maxDeckChessCnt:int32;
+	maxBattleChessCnt:int32;
+	fallbackBondId:string;
+	storeCntMax:int32;
+	costPlayerHpLimit:int32;
+	milestoneId:string;
+	borrowCount:int32;
+	dailyMissionParam:int32;
+	dailyMissionName:string;
+	dailyMissionRule:string;
+	trstageBandId:string;
+	trstageBossId:string;
+	trStageId:string;
+	trainingModeId:string;
+	trSpecialEnemyTypes:[string];
+	trBondIds:[string];
+	trBannedBondIds:[string];
+	milestoneTrackId:string;
+	bandNextUpdateTs:int64;
+	escapedBattleTemplateMapSinglePlayer:string;
+	escapedBattleTemplateMapMultiPlayer:string;
+	webBusType:string;
+}
+
+
+
+table Torappu_ActAutoChessData {
+	modeDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessModeData_];
+	baseRewardDataList:[Torappu_ActAutoChessData_ActAutoChessBaseRewardData];
+	bandDataListDict:[Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessBandData_];
+	charChessDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharChessData_];
+	chessNormalIdLookupDict:[Dict_2_System_String_System_String_];
+	diyChessDict:[Dict_2_System_String_Torappu_RarityRank_];
+	shopLevelDataDict:[Dict_2_System_String_Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData__];
+	shopLevelDisplayDataDict:[Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData_];
+	charShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharShopChessData_];
+	trapChessDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessTrapChessData_];
+	trapShopChessDatas:[Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessTrapShopChessData_];
+	stageDatasDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessStageData_];
+	battleDataDict:[Dict_2_System_String_Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData___];
+	bondInfoDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessBondInfo_];
+	garrisonDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessGarrisonData_];
+	effectInfoDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessEffectInfoData_];
+	effectBuffInfoDataDict:[Dict_2_System_String_List_1_Torappu_ActAutoChessData_ActAutoChessBuffInfoData__];
+	effectChoiceInfoDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData_];
+	bossInfoDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessBossEntry_];
+	specialEnemyInfoDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry_];
+	enemyInfoDict:[Dict_2_System_String_List_1_System_String__];
+	specialEnemyRandomTypeDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry_];
+	trainingNpcList:[Torappu_ActAutoChessData_ActAutoChessTrainingNpcData];
+	milestoneList:[Torappu_ActivityCommonMilestoneData];
+	modeFactorInfo:[Dict_2_System_String_System_Single_];
+	difficultyFactorInfo:[Dict_2_System_String_System_Single_];
+	playerTitleDataDict:[Dict_2_System_String_Torappu_ActAutoChessData_ActAutoChessPlayerTitleData_];
+	shopCharChessInfoData:[Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData__];
+	constData:Torappu_ActAutoChessData_ActAutoChessConstData;
+}
+
+
+
+table Dict_2_System_String_Torappu_ActAutoChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData;
+}
+
+
+
 table Torappu_ActivityTable_ActivityDetailTable {
 	defaultActivityData:[Dict_2_System_String_Torappu_DefaultFirstData_];
 	defaultCheckinData:[Dict_2_System_String_Torappu_DefaultCheckInData_];
@@ -7548,7 +7738,6 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeActVecBreakV2Data:[Dict_2_System_String_Torappu_ActVecBreakV2Data_];
 	typeAct36SideData:[Dict_2_System_String_Torappu_Act36SideData_];
 	typeAct38SideData:[Dict_2_System_String_Torappu_Act38SideData_];
-	defaultAutoChessV1Data:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_];
 	typeActArcadeData:[Dict_2_System_String_Torappu_ActArcadeData_];
 	typeActMultiV3Data:[Dict_2_System_String_Torappu_ActMultiV3Data_];
 	typeActMainSSData:[Dict_2_System_String_Torappu_ActMainSSData_];
@@ -7558,6 +7747,8 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeAct1VHalfIdleData:[Dict_2_System_String_Torappu_Act1VHalfIdleData_];
 	typeAct45SideData:[Dict_2_System_String_Torappu_Act45SideData_];
 	recruitOnlyData:[Dict_2_System_String_Torappu_ActRecruitOnlyData_];
+	typeAct46SideData:[Dict_2_System_String_Torappu_Act46SideData_];
+	defaultAutoChessData:[Dict_2_System_String_Torappu_ActAutoChessData_];
 }
 
 
@@ -9167,6 +9358,356 @@ table Torappu_FifthAnnivExploreData {
 
 
 
+table Torappu_AutoChessData_AutoChessVersionInfoData {
+	versionId:string;
+	activityId:string;
+	updateTime:int64;
+	appearTimeOnMainScreen:int64;
+	disappearTimeOnMainScreen:int64;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessVersionInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessVersionInfoData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessBandData {
+	bandId:string;
+	bandName:string;
+	bandIconId:string;
+	unlockDesc:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessBandData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessBandData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessCultivateRelationData {
+	cultivateNum:int32;
+	effectId:string;
+	evolvePhase:Torappu_EvolvePhase;
+	charLevel:int32;
+	atkPer:int32;
+	defPer:int32;
+	hpPer:int32;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessEffectTypeData {
+	description:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessEffectTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessEffectTypeData;
+}
+
+
+
+enum Torappu_AutoChessBondType : int32 {
+	NONE = 0,
+	REGULAR = 1,
+	SEASON = 2
+}
+
+table Torappu_AutoChessData_AutoChessBondInfoData {
+	bondId:string;
+	bondType:Torappu_AutoChessBondType;
+	powerIdList:[string];
+	name:string;
+	icon:string;
+	isPower:bool;
+	bondOrder:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessBondInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessBondInfoData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessBossInfoData {
+	bossId:string;
+	enemyId:string;
+	handbookEnemyId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessBossInfoData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessBossInfoData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessEnemyTypeData {
+	type:string;
+	sortId:int32;
+	name:string;
+	description:string;
+	icon:string;
+	typeIdentifier:int32;
+	involveRandom:bool;
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_AutoChessData_AutoChessEnemyTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessEnemyTypeData;
+}
+
+
+
+enum Torappu_AutoChessPrepareStepType : int32 {
+	NONE = 0,
+	INFO_CHECK = 1,
+	BAND_CHECK = 2,
+	BATTLE_CHECK = 3
+}
+
+table Torappu_AutoChessData_AutoChessEnterStepData {
+	stepType:Torappu_AutoChessPrepareStepType;
+	sortId:int32;
+	time:int32;
+	hintTime:int32;
+	title:string;
+	desc:string;
+}
+
+
+
+enum Torappu_AutoChessShopTokenDisplayType : int32 {
+	DEFAULT = 0,
+	HIDDEN = 1
+}
+
+table Torappu_AutoChessData_AutoChessShopStateTokenData {
+	tokenId:string;
+	tokenDisplayType:Torappu_AutoChessShopTokenDisplayType;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessShopStateTokenData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessShopStateTokenData;
+}
+
+
+
+enum Torappu_AutoChessSkillTriggerType : int32 {
+	DEFAULT = 0,
+	ALWAYS = 1,
+	SEARCH = 2,
+	MLYSS_WTRMAN = 3,
+	MARCILS2 = 4,
+	TRY_SEARCH_ENEMY_SKILL = 5,
+	TRY_SEARCH_ALLY_SKILL = 6,
+	CUSTOM_RANGE_SEARCH_ENEMY = 7,
+	CUSTOM_RANGE_SEARCH_ALLY = 8,
+	GDGLOW_SKILL_2 = 9,
+	ACT_DEFAULT = 10,
+	AUTO_STOP = 11
+}
+
+table Torappu_AutoChessData_AutoChessSkillTriggerData {
+	profession:Torappu_ProfessionCategory;
+	subProfessionId:string;
+	charId:string;
+	skillIndex:int32;
+	skillTriggerType:Torappu_AutoChessSkillTriggerType;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessPrepareStateData {
+	effectId:string;
+	buff:string;
+	blackBoard:[Torappu_Blackboard_DataPair];
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessPrepareStateData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessPrepareStateData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessRandomEnemyAttributeData {
+	enemyKey:string;
+	level:int32;
+	extraEnemyIdentifier:int32;
+	extraEnemyKeyList:[string];
+	isFlyEnemy:bool;
+	enemyBattleEffectivenessFactor:float;
+}
+
+
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessRandomEnemyAttributeData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessRandomEnemyAttributeData;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessGameTipData {
+	tip:string;
+	weight:int32;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessMedalData {
+	medalCount:int32;
+	medalIconId:string;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessTurnInfoData {
+	round:int32;
+	normalPhaseTime:int32;
+	isBossTurn:bool;
+	bossTurnHpReduceTime:int32;
+}
+
+
+
+table Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData_ {
+	dict_key:int32;
+	dict_value:Torappu_AutoChessData_AutoChessTurnInfoData;
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData_];
+}
+
+
+
+table Torappu_AutoChessData_AutoChessRoundScoreData {
+	round:int32;
+	score:int32;
+}
+
+
+
+enum Torappu_AutoChessBroadcastType : int32 {
+	NONE = 0,
+	GOLDEN_CHAR = 1,
+	SHOP_LEVEL = 2,
+	BOSS_HIT = 3,
+	CHAR_DAMAGE = 4,
+	CHAR_GIFT = 5,
+	BOND_EFFECT = 6
+}
+
+table Torappu_AutoChessData_AutoChessBroadcastData {
+	id:string;
+	desc:string;
+	priority:int32;
+	type:Torappu_AutoChessBroadcastType;
+	paramList:[string];
+}
+
+
+
+table Torappu_PingCond {
+	cond:int32;
+	txt:string;
+}
+
+
+
+table Torappu_AutoChessData_AutoChessConstData {
+	pingConds:[Torappu_PingCond];
+	matchingTipRotateInterval:float;
+	minReplacedEnemyCount:int32;
+	maxReplacedEnemyCount:int32;
+	templateEnemyNormal:string;
+	templateEnemyElite:string;
+	templateEnemySpecial:string;
+	templateEnemyNormalFly:string;
+	templateEnemyEliteFly:string;
+	templateEnemySpecialFly:string;
+	templateEnemyToken:string;
+	templateEnemyTokenFly:string;
+	maxLevelCnt:int32;
+	specialEnemyNum:int32;
+	enemyTypeIdentifierToFillRandom:int32;
+	enemyMaxHpFactor:float;
+	enemyAtkFactor:float;
+	enemyDefFactor:float;
+	enemyMagicResistanceFactor:float;
+	specialPhaseStayTime:int32;
+	hintTimeSpecialPhase:int32;
+	hintTimeNormalPhase:int32;
+	hintTimeFightPhase:int32;
+	hintTimeDotPhase:int32;
+	invitationSendCd:int32;
+	discountColor:string;
+	premiumColor:string;
+	normalColor:string;
+	reportMaxNum:int32;
+	chatCD:float;
+	chatTime:float;
+	broadcastBeginDelay:float;
+	noMoneyTipsBand:[string];
+	bossTrailerStartRound:int32;
+	singleClosureStayTime:float;
+	matchTimeMax:float;
+}
+
+
+
+table Torappu_AutoChessData {
+	versionInfoDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessVersionInfoData_];
+	bandDataDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessBandData_];
+	cultivateEffectList:[Torappu_AutoChessData_AutoChessCultivateRelationData];
+	effectTypeDataDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessEffectTypeData_];
+	bondInfoDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessBondInfoData_];
+	bossInfoDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessBossInfoData_];
+	enemyTypeDatas:[Torappu_ListDict_2_System_String_Torappu_AutoChessData_AutoChessEnemyTypeData_];
+	enterStepList:[Torappu_AutoChessData_AutoChessEnterStepData];
+	shopStateTokenDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessShopStateTokenData_];
+	skillTriggerDataList:[Torappu_AutoChessData_AutoChessSkillTriggerData];
+	skillRangeDict:[Dict_2_System_String_System_String_];
+	prepareStateDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessPrepareStateData_];
+	randomEnemyAttributeDict:[Dict_2_System_String_Torappu_AutoChessData_AutoChessRandomEnemyAttributeData_];
+	enabledEmoticonThemeIdList:[string];
+	gameTipsList:[Torappu_AutoChessData_AutoChessGameTipData];
+	medalDataList:[Torappu_AutoChessData_AutoChessMedalData];
+	turnInfoDataDict:[Dict_2_System_String_Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData__];
+	roundScoreDataList:[Torappu_AutoChessData_AutoChessRoundScoreData];
+	reportPlayerDataList:[Torappu_CommonReportPlayerData];
+	broadcastList:[Torappu_AutoChessData_AutoChessBroadcastData];
+	constData:Torappu_AutoChessData_AutoChessConstData;
+}
+
+
+
 table Dict_2_System_String_Dict_2_System_String_System_String__ {
 	dict_key:string;
 	dict_value:[Dict_2_System_String_System_String_];
@@ -9183,6 +9724,7 @@ table Torappu_ActivityTable_TemplateTrapData {
 	trapTaskId:string;
 	trapUnlockDesc:string;
 	trapBuffId:string;
+	availableCount:int32;
 }
 
 
@@ -9198,6 +9740,11 @@ table Torappu_ActivityTable_ActivityTrapConstData {
 	stageUnlockTrapDesc:string;
 	trapMaximum:int32;
 	stageCanNotUseTrap:[string];
+	mustSelectTrap:bool;
+	systemUnlockToast:string;
+	squadSaveSuccessToast:string;
+	lockedToast:string;
+	showBtnBack:bool;
 }
 
 
@@ -9344,6 +9891,7 @@ table Torappu_ActivityTable {
 	hiddenStageData:[Torappu_ActivityTable_ActivityHiddenStageData];
 	missionArchives:[Dict_2_System_String_Torappu_MissionArchiveData_];
 	fifthAnnivExploreData:Torappu_FifthAnnivExploreData;
+	autoChessData:Torappu_AutoChessData;
 	stringRes:[Dict_2_System_String_Dict_2_System_String_System_String__];
 	activityTraps:[Dict_2_System_String_Torappu_ActivityTable_ActivityTrapsData_];
 	activityTrapMissions:[Dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_];

@@ -1,0 +1,7 @@
+
+table Torappu_AutoChessData_AutoChessEffectTypeData {
+	description:string;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessEffectTypeData;

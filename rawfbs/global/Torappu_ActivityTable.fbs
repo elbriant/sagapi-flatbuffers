@@ -21,6 +21,7 @@ include "Dict_2_System_String_Torappu_ActivityDynEntrySwitchData_.fbs";
 include "Torappu_ActivityTable_ActivityHiddenStageData.fbs";
 include "Dict_2_System_String_Torappu_MissionArchiveData_.fbs";
 include "Torappu_FifthAnnivExploreData.fbs";
+include "Torappu_AutoChessData.fbs";
 include "Dict_2_System_String_Dict_2_System_String_System_String__.fbs";
 include "Dict_2_System_String_Torappu_ActivityTable_ActivityTrapsData_.fbs";
 include "Dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_.fbs";
@@ -53,6 +54,7 @@ table Torappu_ActivityTable {
 	hiddenStageData:[Torappu_ActivityTable_ActivityHiddenStageData];
 	missionArchives:[Dict_2_System_String_Torappu_MissionArchiveData_];
 	fifthAnnivExploreData:Torappu_FifthAnnivExploreData;
+	autoChessData:Torappu_AutoChessData;
 	stringRes:[Dict_2_System_String_Dict_2_System_String_System_String__];
 	activityTraps:[Dict_2_System_String_Torappu_ActivityTable_ActivityTrapsData_];
 	activityTrapMissions:[Dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_];

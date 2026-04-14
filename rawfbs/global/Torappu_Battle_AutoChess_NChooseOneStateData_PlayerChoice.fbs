@@ -1,0 +1,8 @@
+
+table Torappu_Battle_AutoChess_NChooseOneStateData_PlayerChoice {
+	uidIndex:int32;
+	choice:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_NChooseOneStateData_PlayerChoice;

@@ -1,0 +1,9 @@
+include "Torappu_ActAutoChessData_ActAutoChessBattleData.fbs";
+
+table Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData__ {
+	dict_key:int32;
+	dict_value:[Torappu_ActAutoChessData_ActAutoChessBattleData];
+}
+
+
+root_type Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_ActAutoChessBattleData__;

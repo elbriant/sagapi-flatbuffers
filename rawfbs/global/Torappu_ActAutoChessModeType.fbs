@@ -1,0 +1,7 @@
+
+enum Torappu_ActAutoChessModeType : int32 {
+	NONE = -1,
+	LOCAL = 0,
+	SINGLE = 1,
+	MULTI = 2
+}

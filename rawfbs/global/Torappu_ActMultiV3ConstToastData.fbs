@@ -17,7 +17,6 @@ table Torappu_ActMultiV3ConstToastData {
 	roomCollaboratorReviseMode:string;
 	continuousClicks:string;
 	matchNoProject:string;
-	reportNoProject:string;
 	otherModeTrainingLock:string;
 	teamLock:string;
 	mentorLockTips:string;

@@ -1,0 +1,29 @@
+
+table Torappu_ActAutoChessData_ActAutoChessConstData {
+	shopRefreshPrice:int32;
+	maxDeckChessCnt:int32;
+	maxBattleChessCnt:int32;
+	fallbackBondId:string;
+	storeCntMax:int32;
+	costPlayerHpLimit:int32;
+	milestoneId:string;
+	borrowCount:int32;
+	dailyMissionParam:int32;
+	dailyMissionName:string;
+	dailyMissionRule:string;
+	trstageBandId:string;
+	trstageBossId:string;
+	trStageId:string;
+	trainingModeId:string;
+	trSpecialEnemyTypes:[string];
+	trBondIds:[string];
+	trBannedBondIds:[string];
+	milestoneTrackId:string;
+	bandNextUpdateTs:int64;
+	escapedBattleTemplateMapSinglePlayer:string;
+	escapedBattleTemplateMapMultiPlayer:string;
+	webBusType:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessConstData;

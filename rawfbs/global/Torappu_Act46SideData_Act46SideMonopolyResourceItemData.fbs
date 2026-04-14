@@ -1,0 +1,8 @@
+
+table Torappu_Act46SideData_Act46SideMonopolyResourceItemData {
+	resourceId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_Act46SideData_Act46SideMonopolyResourceItemData;

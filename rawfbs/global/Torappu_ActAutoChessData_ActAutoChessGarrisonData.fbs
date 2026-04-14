@@ -1,0 +1,17 @@
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessGarrisonData {
+	garrisonDesc:string;
+	eventType:string;
+	eventTypeDesc:string;
+	eventTypeIcon:string;
+	eventTypeSmallIcon:string;
+	effectType:string;
+	charLevel:int32;
+	battleRuneKey:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+	description:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessGarrisonData;

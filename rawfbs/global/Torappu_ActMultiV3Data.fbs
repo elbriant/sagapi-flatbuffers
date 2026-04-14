@@ -15,7 +15,7 @@ include "Dict_2_System_String_Torappu_ActMultiV3MatchPosData_.fbs";
 include "Dict_2_System_String_Torappu_ActMultiV3DiffStarRewardData_.fbs";
 include "Torappu_ActMultiV3MilestoneData.fbs";
 include "Torappu_ActMultiV3TipsData.fbs";
-include "Torappu_ActMultiV3ReportData.fbs";
+include "Torappu_CommonReportPlayerData.fbs";
 include "Torappu_ActMultiV3TempCharData.fbs";
 include "Torappu_ActMultiV3ConstToastData.fbs";
 include "Torappu_ActMultiV3ConstData.fbs";
@@ -42,7 +42,7 @@ table Torappu_ActMultiV3Data {
 	diffStarRewardDict:[Dict_2_System_String_Torappu_ActMultiV3DiffStarRewardData_];
 	milestoneList:[Torappu_ActMultiV3MilestoneData];
 	tipsDataList:[Torappu_ActMultiV3TipsData];
-	reportDataList:[Torappu_ActMultiV3ReportData];
+	reportDataList:[Torappu_CommonReportPlayerData];
 	tempCharDataList:[Torappu_ActMultiV3TempCharData];
 	constToastData:Torappu_ActMultiV3ConstToastData;
 	constData:Torappu_ActMultiV3ConstData;

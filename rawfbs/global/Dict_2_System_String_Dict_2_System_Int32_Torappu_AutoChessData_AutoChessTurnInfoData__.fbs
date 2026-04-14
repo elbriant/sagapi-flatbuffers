@@ -1,0 +1,9 @@
+include "Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData_.fbs";
+
+table Dict_2_System_String_Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData_];
+}
+
+
+root_type Dict_2_System_String_Dict_2_System_Int32_Torappu_AutoChessData_AutoChessTurnInfoData__;

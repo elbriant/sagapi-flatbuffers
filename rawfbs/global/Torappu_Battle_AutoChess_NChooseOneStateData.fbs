@@ -1,0 +1,13 @@
+include "Torappu_Battle_AutoChess_ChooseStateSlot.fbs";
+include "Torappu_Battle_AutoChess_NChooseOneStateData_PlayerChoice.fbs";
+
+table Torappu_Battle_AutoChess_NChooseOneStateData {
+	choiceId:string;
+	options:[Torappu_Battle_AutoChess_ChooseStateSlot];
+	playerQueue:[Torappu_Battle_AutoChess_NChooseOneStateData_PlayerChoice];
+	stateEndTime:int64;
+	currQueueIndex:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_NChooseOneStateData;

@@ -1,0 +1,16 @@
+include "Torappu_Battle_AutoChess_SpPrepareStateData.fbs";
+include "Torappu_Battle_AutoChess_BossRoundInfo.fbs";
+include "Torappu_Battle_AutoChess_BossBattleData.fbs";
+include "Dict_2_System_Int32_Torappu_Battle_AutoChess_RunTimeScenePlayerData_.fbs";
+
+table Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo {
+	coin:int32;
+	isBoss:bool;
+	spPrepareStateData:Torappu_Battle_AutoChess_SpPrepareStateData;
+	bossRoundInfo:Torappu_Battle_AutoChess_BossRoundInfo;
+	bossBattleData:Torappu_Battle_AutoChess_BossBattleData;
+	npcPlayerData:[Dict_2_System_Int32_Torappu_Battle_AutoChess_RunTimeScenePlayerData_];
+}
+
+
+root_type Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo;

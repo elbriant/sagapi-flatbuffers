@@ -1,0 +1,11 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_ActAutoChessData_AutoChessTrapChessStatusData {
+	evolvePhase:Torappu_EvolvePhase;
+	trapLevel:int32;
+	skillIndex:int32;
+	skillLevel:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_AutoChessTrapChessStatusData;

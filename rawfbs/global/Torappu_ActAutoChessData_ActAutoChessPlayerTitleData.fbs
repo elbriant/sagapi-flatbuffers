@@ -1,0 +1,9 @@
+
+table Torappu_ActAutoChessData_ActAutoChessPlayerTitleData {
+	id:string;
+	picId:string;
+	txt:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessPlayerTitleData;

@@ -1,0 +1,9 @@
+include "Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo.fbs";
+
+table Dict_2_System_Int32_Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo_ {
+	dict_key:int32;
+	dict_value:Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo;
+}
+
+
+root_type Dict_2_System_Int32_Torappu_AutoChessBattleMiscConfig_TrainingRoundInfo_;

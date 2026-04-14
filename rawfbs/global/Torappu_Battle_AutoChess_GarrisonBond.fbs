@@ -1,0 +1,10 @@
+
+table Torappu_Battle_AutoChess_GarrisonBond {
+	bondId:string;
+	stackCnt:int32;
+	charCnt:int32;
+	isActive:bool;
+}
+
+
+root_type Torappu_Battle_AutoChess_GarrisonBond;

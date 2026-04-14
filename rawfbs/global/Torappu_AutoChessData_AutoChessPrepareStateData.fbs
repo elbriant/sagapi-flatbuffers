@@ -1,0 +1,10 @@
+include "Torappu_Blackboard_DataPair.fbs";
+
+table Torappu_AutoChessData_AutoChessPrepareStateData {
+	effectId:string;
+	buff:string;
+	blackBoard:[Torappu_Blackboard_DataPair];
+}
+
+
+root_type Torappu_AutoChessData_AutoChessPrepareStateData;

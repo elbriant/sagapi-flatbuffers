@@ -1,0 +1,9 @@
+
+table Torappu_AutoChessData_AutoChessBossInfoData {
+	bossId:string;
+	enemyId:string;
+	handbookEnemyId:string;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessBossInfoData;

@@ -1,0 +1,11 @@
+
+table Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData {
+	shopLevel:int32;
+	levelTagBgColor:string;
+	isLevelCharChessEmpty:bool;
+	isLevelTrapChessEmpty:bool;
+	charChessDiySlotIdList:[string];
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessShopLevelDisplayData;

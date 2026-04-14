@@ -1,0 +1,19 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_Act46SideData_Act46SideMonopolyStageData {
+	stageId:string;
+	sortId:int32;
+	startTs:int64;
+	stageName:string;
+	stageDesc:string;
+	taskRequiredAmount:int32;
+	rewardList:[Torappu_ItemBundle];
+	buffIdList:[string];
+	bgSpriteId:string;
+	maxTurn:int32;
+	nodeIconStyleIndexList:[int32];
+	validResourceIdList:[string];
+}
+
+
+root_type Torappu_Act46SideData_Act46SideMonopolyStageData;

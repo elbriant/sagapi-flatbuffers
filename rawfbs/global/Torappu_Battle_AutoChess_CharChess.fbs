@@ -1,0 +1,9 @@
+
+table Torappu_Battle_AutoChess_CharChess {
+	instId:int32;
+	equipSlots:[int32];
+	chessId:string;
+}
+
+
+root_type Torappu_Battle_AutoChess_CharChess;

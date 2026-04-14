@@ -1,0 +1,5 @@
+
+enum Torappu_AutoChessShopTokenDisplayType : int32 {
+	DEFAULT = 0,
+	HIDDEN = 1
+}

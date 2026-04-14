@@ -1,0 +1,8 @@
+
+table Torappu_Act46SideData_Act46SideSettleDialogData {
+	characterAvatarId:string;
+	dialogText:string;
+}
+
+
+root_type Torappu_Act46SideData_Act46SideSettleDialogData;

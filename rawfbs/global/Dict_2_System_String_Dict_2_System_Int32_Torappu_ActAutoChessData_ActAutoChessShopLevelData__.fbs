@@ -1,0 +1,9 @@
+include "Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData_.fbs";
+
+table Dict_2_System_String_Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData_];
+}
+
+
+root_type Dict_2_System_String_Dict_2_System_Int32_Torappu_ActAutoChessData_ActAutoChessShopLevelData__;

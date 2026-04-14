@@ -1,0 +1,10 @@
+
+table Torappu_Act46SideData_Act46SideMonopolyBuffData {
+	buffId:string;
+	buffIconId:string;
+	buffName:string;
+	buffDesc:string;
+}
+
+
+root_type Torappu_Act46SideData_Act46SideMonopolyBuffData;

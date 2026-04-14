@@ -1,0 +1,12 @@
+
+table Torappu_Act46SideData_Act46SideConstData {
+	trainingStageId:string;
+	excellentRate:[int32];
+	entryRequirement:string;
+	businessUnlockText:string;
+	mapNodeStartIcon:string;
+	comboTaskProgressCount:int32;
+}
+
+
+root_type Torappu_Act46SideData_Act46SideConstData;

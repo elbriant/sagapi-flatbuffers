@@ -8,6 +8,7 @@ table Torappu_BattleMiscData {
 	effectBlacklist:[Dict_2_System_String_List_1_System_String__];
 	miscConfig:Torappu_BattleMiscConfigs;
 	particleEffectManagerConfigs:[Dict_2_System_String_Torappu_ParticleEffectManagerConfig_];
+	tileTypeDict:[Dict_2_System_String_List_1_System_String__];
 }
 
 

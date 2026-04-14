@@ -1,0 +1,8 @@
+
+enum Torappu_AutoChessEffectChoiceType : int32 {
+	EQUIP_FREE = 0,
+	EQUIP_PAID = 1,
+	BOUNTY_HUNT = 2,
+	BUFF_SELECT = 3,
+	PERSONAL_CHOOSE = 4
+}

@@ -1,0 +1,8 @@
+
+table Torappu_AutoChessData_AutoChessGameTipData {
+	tip:string;
+	weight:int32;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessGameTipData;

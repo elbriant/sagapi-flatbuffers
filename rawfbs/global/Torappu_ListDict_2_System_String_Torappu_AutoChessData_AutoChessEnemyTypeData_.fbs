@@ -1,0 +1,9 @@
+include "Torappu_AutoChessData_AutoChessEnemyTypeData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_AutoChessData_AutoChessEnemyTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessEnemyTypeData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_AutoChessData_AutoChessEnemyTypeData_;

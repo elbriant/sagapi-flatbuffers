@@ -1,0 +1,14 @@
+include "Torappu_AutoChessBondType.fbs";
+
+table Torappu_AutoChessData_AutoChessBondInfoData {
+	bondId:string;
+	bondType:Torappu_AutoChessBondType;
+	powerIdList:[string];
+	name:string;
+	icon:string;
+	isPower:bool;
+	bondOrder:int32;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessBondInfoData;

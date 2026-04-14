@@ -1,0 +1,11 @@
+include "Torappu_Blackboard_DataPair.fbs";
+include "Torappu_AutoChessCountType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessBuffInfoData {
+	key:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+	countType:Torappu_AutoChessCountType;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessBuffInfoData;

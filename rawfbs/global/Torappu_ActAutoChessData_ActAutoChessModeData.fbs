@@ -1,0 +1,26 @@
+include "Torappu_ActAutoChessModeType.fbs";
+include "Torappu_ActAutoChessModeDifficultyType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessModeData {
+	modeId:string;
+	name:string;
+	code:string;
+	sortId:int32;
+	backgroundId:string;
+	desc:string;
+	effectDescList:[string];
+	preposedMode:string;
+	unlockText:string;
+	loadingPicId:string;
+	modeType:Torappu_ActAutoChessModeType;
+	modeDifficulty:Torappu_ActAutoChessModeDifficultyType;
+	modeIconId:string;
+	modeColor:string;
+	specialPhaseTime:int32;
+	activeBondIdList:[string];
+	inactiveBondIdList:[string];
+	inactiveEnemyKey:[string];
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessModeData;

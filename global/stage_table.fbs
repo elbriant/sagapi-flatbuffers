@@ -330,6 +330,7 @@ table Torappu_StageData {
 	sixStarDisplayRewardList:[Torappu_ItemBundle];
 	advancedRuneIdList1:[string];
 	advancedRuneIdList2:[string];
+	useSpecialSizeMapPreview:bool;
 }
 
 

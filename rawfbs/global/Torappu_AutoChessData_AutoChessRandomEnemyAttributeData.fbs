@@ -1,0 +1,12 @@
+
+table Torappu_AutoChessData_AutoChessRandomEnemyAttributeData {
+	enemyKey:string;
+	level:int32;
+	extraEnemyIdentifier:int32;
+	extraEnemyKeyList:[string];
+	isFlyEnemy:bool;
+	enemyBattleEffectivenessFactor:float;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessRandomEnemyAttributeData;

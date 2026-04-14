@@ -1,0 +1,8 @@
+
+table Torappu_AutoChessBattleMiscConfig_TrainingShopInfo {
+	chessId:string;
+	count:int32;
+}
+
+
+root_type Torappu_AutoChessBattleMiscConfig_TrainingShopInfo;

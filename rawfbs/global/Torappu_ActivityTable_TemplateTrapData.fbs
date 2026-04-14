@@ -8,6 +8,7 @@ table Torappu_ActivityTable_TemplateTrapData {
 	trapTaskId:string;
 	trapUnlockDesc:string;
 	trapBuffId:string;
+	availableCount:int32;
 }
 
 

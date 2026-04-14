@@ -1,0 +1,9 @@
+include "Dict_2_System_String_System_Int32_.fbs";
+
+table Torappu_Battle_AutoChess_PreparationRoundAnalytics {
+	chessGained:[Dict_2_System_String_System_Int32_];
+	coinCost:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_PreparationRoundAnalytics;

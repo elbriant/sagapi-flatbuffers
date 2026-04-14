@@ -1,0 +1,9 @@
+include "Torappu_BossPlayerGroup.fbs";
+
+table Torappu_ListDict_2_Torappu_BossPlayerGroup_List_1_System_Int32__ {
+	dict_key:Torappu_BossPlayerGroup;
+	dict_value:[int32];
+}
+
+
+root_type Torappu_ListDict_2_Torappu_BossPlayerGroup_List_1_System_Int32__;

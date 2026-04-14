@@ -1,0 +1,21 @@
+include "Torappu_ActAutoChessBondActiveType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessBondInfo {
+	bondId:string;
+	name:string;
+	desc:string;
+	iconId:string;
+	activeCount:int32;
+	effectId:string;
+	activeType:Torappu_ActAutoChessBondActiveType;
+	identifier:int32;
+	weight:int32;
+	isActiveInDeck:bool;
+	descParamBaseList:[string];
+	descParamPerStackList:[string];
+	noStack:bool;
+	chessIdList:[string];
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessBondInfo;

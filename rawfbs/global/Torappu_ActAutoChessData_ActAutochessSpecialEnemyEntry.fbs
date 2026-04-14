@@ -1,0 +1,12 @@
+
+table Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry {
+	type:string;
+	specialEnemyKey:string;
+	randomWeight:int32;
+	isInFirstHalf:bool;
+	attachedNormalEnemyKeys:[string];
+	attachedEliteEnemyKeys:[string];
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutochessSpecialEnemyEntry;

@@ -1,0 +1,11 @@
+
+table Torappu_ActAutoChessData_ActAutoChessShopLevelData {
+	shopLevel:int32;
+	initialUpgradePrice:int32;
+	charChessCount:int32;
+	itemCount:int32;
+	levelTagBgColor:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessShopLevelData;

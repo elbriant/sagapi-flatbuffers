@@ -1,0 +1,8 @@
+
+table Torappu_AutoChessData_AutoChessMedalData {
+	medalCount:int32;
+	medalIconId:string;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessMedalData;
