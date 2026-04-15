@@ -79,6 +79,7 @@ final Set<String> _wrappedTables = {
   'extra_battlelog_table',
   'battle_equip_table',
   'replicate_table',
+  'buff_table',
 };
 
 /// Bundles modular raw FBS files into single monolithic schemas.
