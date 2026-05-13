@@ -1,0 +1,22 @@
+include "Torappu_AutoChessPlayerGameStateType.fbs";
+include "Torappu_AutoChessPlayerConnectStateType.fbs";
+include "Torappu_Battle_AutoChess_PlayerBattleData.fbs";
+include "Torappu_Battle_AutoChess_BattleEffectEnemyInfo.fbs";
+include "Torappu_Battle_AutoChess_PreparationRoundAnalytics.fbs";
+
+table Torappu_Battle_AutoChess_RunTimeScenePlayerData {
+	index:int32;
+	hp:int32;
+	gameFinish:bool;
+	shopLv:int32;
+	shopCoin:int32;
+	maxDeploymentCnt:int32;
+	gameState:Torappu_AutoChessPlayerGameStateType;
+	connectStateType:Torappu_AutoChessPlayerConnectStateType;
+	playerBattleData:Torappu_Battle_AutoChess_PlayerBattleData;
+	effectEnemies:[Torappu_Battle_AutoChess_BattleEffectEnemyInfo];
+	roundAnalytics:Torappu_Battle_AutoChess_PreparationRoundAnalytics;
+}
+
+
+root_type Torappu_Battle_AutoChess_RunTimeScenePlayerData;

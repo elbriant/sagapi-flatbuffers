@@ -1,0 +1,10 @@
+
+table Torappu_AutoChessData_AutoChessTurnInfoData {
+	round:int32;
+	normalPhaseTime:int32;
+	isBossTurn:bool;
+	bossTurnHpReduceTime:int32;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessTurnInfoData;

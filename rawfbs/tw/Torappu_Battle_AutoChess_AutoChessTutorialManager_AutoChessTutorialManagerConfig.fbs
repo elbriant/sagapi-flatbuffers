@@ -1,0 +1,8 @@
+
+table Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig {
+	bossRoundFocusMapBoundPos:[int32];
+	bossRoundFocusBossPos:[int32];
+}
+
+
+root_type Torappu_Battle_AutoChess_AutoChessTutorialManager_AutoChessTutorialManagerConfig;

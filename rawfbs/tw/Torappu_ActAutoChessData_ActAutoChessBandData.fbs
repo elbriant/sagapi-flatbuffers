@@ -1,0 +1,14 @@
+
+table Torappu_ActAutoChessData_ActAutoChessBandData {
+	bandId:string;
+	sortId:int32;
+	modeTypeList:[string];
+	bandDesc:string;
+	totalHp:int32;
+	effectId:string;
+	victorCount:int32;
+	bandRewardModulus:float;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessBandData;

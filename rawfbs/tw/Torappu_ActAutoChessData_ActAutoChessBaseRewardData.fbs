@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessBaseRewardData {
+	round:int32;
+	item:Torappu_ItemBundle;
+	dailyMissionPoint:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessBaseRewardData;

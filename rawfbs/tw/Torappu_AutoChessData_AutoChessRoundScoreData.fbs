@@ -1,0 +1,8 @@
+
+table Torappu_AutoChessData_AutoChessRoundScoreData {
+	round:int32;
+	score:int32;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessRoundScoreData;

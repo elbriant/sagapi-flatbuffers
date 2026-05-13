@@ -1,0 +1,13 @@
+include "Torappu_ListDict_2_Torappu_BossPlayerGroup_List_1_System_Int32__.fbs";
+
+table Torappu_Battle_AutoChess_BossRoundInfo {
+	inBossRound:bool;
+	isHiddenBoss:bool;
+	bossId:string;
+	hiddenBossId:string;
+	playerTotalHp:int32;
+	groupInfos:[Torappu_ListDict_2_Torappu_BossPlayerGroup_List_1_System_Int32__];
+}
+
+
+root_type Torappu_Battle_AutoChess_BossRoundInfo;

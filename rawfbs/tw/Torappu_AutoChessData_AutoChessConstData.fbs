@@ -1,0 +1,43 @@
+include "Torappu_PingCond.fbs";
+
+table Torappu_AutoChessData_AutoChessConstData {
+	pingConds:[Torappu_PingCond];
+	matchingTipRotateInterval:float;
+	minReplacedEnemyCount:int32;
+	maxReplacedEnemyCount:int32;
+	templateEnemyNormal:string;
+	templateEnemyElite:string;
+	templateEnemySpecial:string;
+	templateEnemyNormalFly:string;
+	templateEnemyEliteFly:string;
+	templateEnemySpecialFly:string;
+	templateEnemyToken:string;
+	templateEnemyTokenFly:string;
+	maxLevelCnt:int32;
+	specialEnemyNum:int32;
+	enemyTypeIdentifierToFillRandom:int32;
+	enemyMaxHpFactor:float;
+	enemyAtkFactor:float;
+	enemyDefFactor:float;
+	enemyMagicResistanceFactor:float;
+	specialPhaseStayTime:int32;
+	hintTimeSpecialPhase:int32;
+	hintTimeNormalPhase:int32;
+	hintTimeFightPhase:int32;
+	hintTimeDotPhase:int32;
+	invitationSendCd:int32;
+	discountColor:string;
+	premiumColor:string;
+	normalColor:string;
+	reportMaxNum:int32;
+	chatCD:float;
+	chatTime:float;
+	broadcastBeginDelay:float;
+	noMoneyTipsBand:[string];
+	bossTrailerStartRound:int32;
+	singleClosureStayTime:float;
+	matchTimeMax:float;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessConstData;

@@ -1,0 +1,9 @@
+include "Torappu_AutoChessData_AutoChessEffectTypeData.fbs";
+
+table Dict_2_System_String_Torappu_AutoChessData_AutoChessEffectTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_AutoChessData_AutoChessEffectTypeData;
+}
+
+
+root_type Dict_2_System_String_Torappu_AutoChessData_AutoChessEffectTypeData_;

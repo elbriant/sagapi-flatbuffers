@@ -1,0 +1,9 @@
+
+table Torappu_Battle_AutoChess_BattleEffectEnemyInfo {
+	effectInstId:int32;
+	enemyId:string;
+	count:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_BattleEffectEnemyInfo;

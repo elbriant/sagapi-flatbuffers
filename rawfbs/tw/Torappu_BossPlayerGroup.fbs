@@ -1,0 +1,6 @@
+
+enum Torappu_BossPlayerGroup : int32 {
+	BOSS_PLAYER_GROUP_1 = 1,
+	BOSS_PLAYER_GROUP_2 = 2,
+	ENUM_DEFAULT_VALUE = 0
+}

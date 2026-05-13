@@ -1,0 +1,12 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessCharChessStatusData {
+	evolvePhase:Torappu_EvolvePhase;
+	charLevel:int32;
+	skillLevel:int32;
+	favorPoint:int32;
+	equipLevel:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessCharChessStatusData;

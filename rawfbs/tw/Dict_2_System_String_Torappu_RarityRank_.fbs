@@ -1,0 +1,9 @@
+include "Torappu_RarityRank.fbs";
+
+table Dict_2_System_String_Torappu_RarityRank_ {
+	dict_key:string;
+	dict_value:Torappu_RarityRank;
+}
+
+
+root_type Dict_2_System_String_Torappu_RarityRank_;

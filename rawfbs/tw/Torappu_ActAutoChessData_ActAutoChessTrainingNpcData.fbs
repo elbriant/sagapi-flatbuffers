@@ -1,0 +1,11 @@
+
+table Torappu_ActAutoChessData_ActAutoChessTrainingNpcData {
+	npcId:string;
+	charId:string;
+	nameCardSkinId:string;
+	medalCount:int32;
+	bandId:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessTrainingNpcData;

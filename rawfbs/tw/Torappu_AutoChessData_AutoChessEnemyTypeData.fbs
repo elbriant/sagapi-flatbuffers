@@ -1,0 +1,13 @@
+
+table Torappu_AutoChessData_AutoChessEnemyTypeData {
+	type:string;
+	sortId:int32;
+	name:string;
+	description:string;
+	icon:string;
+	typeIdentifier:int32;
+	involveRandom:bool;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessEnemyTypeData;

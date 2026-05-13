@@ -1,0 +1,7 @@
+
+enum Torappu_AutoChessPlayerConnectStateType : int32 {
+	ONLINE = 1,
+	MISS_CONN = 2,
+	QUIT = 3,
+	ENUM_DEFAULT_VALUE = 0
+}

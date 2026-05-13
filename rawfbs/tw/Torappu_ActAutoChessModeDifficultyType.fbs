@@ -1,0 +1,8 @@
+
+enum Torappu_ActAutoChessModeDifficultyType : int32 {
+	NONE = -1,
+	TRAINING = 0,
+	FUNNY = 1,
+	NORMAL = 2,
+	HARD = 3
+}

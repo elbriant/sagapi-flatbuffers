@@ -45,7 +45,6 @@ table Torappu_ActMultiV3ConstData {
 	footballGreatVoiceNum:int32;
 	defenceGreatVoiceWave:int32;
 	reportMaxNum:int32;
-	reportText:string;
 	reward1Id:string;
 	reward1Text:string;
 	reward2Id:string;

@@ -1,0 +1,15 @@
+include "Torappu_ActAutoChessData_ActAutoChessCharChessStatusData.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessCharChessData {
+	chessId:string;
+	identifier:int32;
+	isGolden:bool;
+	status:Torappu_ActAutoChessData_ActAutoChessCharChessStatusData;
+	upgradeChessId:string;
+	upgradeNum:int32;
+	bondIds:[string];
+	garrisonIds:[string];
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessCharChessData;

@@ -1,0 +1,9 @@
+include "Torappu_AutoChessBattleMiscConfig_TrainingShopInfo.fbs";
+
+table Dict_2_System_Int32_List_1_Torappu_AutoChessBattleMiscConfig_TrainingShopInfo__ {
+	dict_key:int32;
+	dict_value:[Torappu_AutoChessBattleMiscConfig_TrainingShopInfo];
+}
+
+
+root_type Dict_2_System_Int32_List_1_Torappu_AutoChessBattleMiscConfig_TrainingShopInfo__;

@@ -1,0 +1,15 @@
+include "Torappu_Battle_AutoChess_CharChess.fbs";
+include "Torappu_Battle_AutoChess_EquipChess.fbs";
+include "Torappu_Battle_AutoChess_ChessPositionInfo.fbs";
+include "Torappu_Battle_AutoChess_GarrisonBond.fbs";
+
+table Torappu_Battle_AutoChess_PlayerBattleData {
+	charChesses:[Torappu_Battle_AutoChess_CharChess];
+	equipChesses:[Torappu_Battle_AutoChess_EquipChess];
+	magicChesses:[Torappu_Battle_AutoChess_EquipChess];
+	chessPositionInfos:[Torappu_Battle_AutoChess_ChessPositionInfo];
+	playerBondStatus:[Torappu_Battle_AutoChess_GarrisonBond];
+}
+
+
+root_type Torappu_Battle_AutoChess_PlayerBattleData;

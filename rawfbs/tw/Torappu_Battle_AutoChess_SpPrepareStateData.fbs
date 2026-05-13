@@ -1,0 +1,8 @@
+include "Torappu_Battle_AutoChess_NChooseOneStateData.fbs";
+
+table Torappu_Battle_AutoChess_SpPrepareStateData {
+	data:Torappu_Battle_AutoChess_NChooseOneStateData;
+}
+
+
+root_type Torappu_Battle_AutoChess_SpPrepareStateData;

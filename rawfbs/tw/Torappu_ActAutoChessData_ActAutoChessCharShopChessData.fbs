@@ -1,0 +1,22 @@
+include "Torappu_AutoChessChessType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessCharShopChessData {
+	chessId:string;
+	goldenChessId:string;
+	chessLevel:int32;
+	shopLevelSortId:int32;
+	chessType:Torappu_AutoChessChessType;
+	charId:string;
+	tmplId:string;
+	defaultSkillIndex:int32;
+	defaultUniEquipId:string;
+	backupCharId:string;
+	backupTmplId:string;
+	backupCharSkillIndex:int32;
+	backupCharUniEquipId:string;
+	backupCharPotRank:int32;
+	isHidden:bool;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessCharShopChessData;

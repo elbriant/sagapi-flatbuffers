@@ -1,0 +1,16 @@
+include "Torappu_AutoChessEffectType.fbs";
+include "Torappu_AutoChessEffectCounterType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessEffectInfoData {
+	effectId:string;
+	effectType:Torappu_AutoChessEffectType;
+	effectCounterType:Torappu_AutoChessEffectCounterType;
+	continuedRound:int32;
+	effectName:string;
+	effectDesc:string;
+	effectDecoIconId:string;
+	enemyPrice:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessEffectInfoData;

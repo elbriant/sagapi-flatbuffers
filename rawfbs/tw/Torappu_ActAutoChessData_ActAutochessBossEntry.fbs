@@ -1,0 +1,13 @@
+
+table Torappu_ActAutoChessData_ActAutochessBossEntry {
+	bossId:string;
+	sortId:int32;
+	weight:int32;
+	bloodPoint:int32;
+	bloodPointNormal:int32;
+	bloodPointHard:int32;
+	isHidingBoss:bool;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutochessBossEntry;

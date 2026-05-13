@@ -1,0 +1,7 @@
+
+enum Torappu_AutoChessItemType : int32 {
+	CHAR = 0,
+	EQUIP = 1,
+	MAGIC = 2,
+	TOKEN = 3
+}

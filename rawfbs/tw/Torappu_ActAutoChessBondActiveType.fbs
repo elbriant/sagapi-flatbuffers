@@ -1,0 +1,6 @@
+
+enum Torappu_ActAutoChessBondActiveType : int32 {
+	BATTLE = 0,
+	ALL = 1,
+	MANI = 2
+}

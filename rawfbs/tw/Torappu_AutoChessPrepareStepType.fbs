@@ -1,0 +1,7 @@
+
+enum Torappu_AutoChessPrepareStepType : int32 {
+	NONE = 0,
+	INFO_CHECK = 1,
+	BAND_CHECK = 2,
+	BATTLE_CHECK = 3
+}

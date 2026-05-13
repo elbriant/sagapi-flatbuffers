@@ -1,0 +1,11 @@
+
+table Torappu_AutoChessData_AutoChessVersionInfoData {
+	versionId:string;
+	activityId:string;
+	updateTime:int64;
+	appearTimeOnMainScreen:int64;
+	disappearTimeOnMainScreen:int64;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessVersionInfoData;

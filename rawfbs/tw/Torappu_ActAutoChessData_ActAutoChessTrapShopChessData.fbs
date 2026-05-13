@@ -1,0 +1,15 @@
+include "Torappu_AutoChessItemType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessTrapShopChessData {
+	itemId:string;
+	goldenItemId:string;
+	hideInShop:bool;
+	itemLevel:int32;
+	iconLevel:int32;
+	shopLevelSortId:int32;
+	itemType:Torappu_AutoChessItemType;
+	trapId:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessTrapShopChessData;

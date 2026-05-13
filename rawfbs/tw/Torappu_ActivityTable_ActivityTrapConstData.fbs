@@ -3,6 +3,11 @@ table Torappu_ActivityTable_ActivityTrapConstData {
 	stageUnlockTrapDesc:string;
 	trapMaximum:int32;
 	stageCanNotUseTrap:[string];
+	mustSelectTrap:bool;
+	systemUnlockToast:string;
+	squadSaveSuccessToast:string;
+	lockedToast:string;
+	showBtnBack:bool;
 }
 
 

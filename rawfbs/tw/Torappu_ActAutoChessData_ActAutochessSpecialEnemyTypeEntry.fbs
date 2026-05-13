@@ -1,0 +1,8 @@
+
+table Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry {
+	count:int32;
+	weight:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutochessSpecialEnemyTypeEntry;

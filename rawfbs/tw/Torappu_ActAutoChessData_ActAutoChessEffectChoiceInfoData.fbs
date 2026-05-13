@@ -1,0 +1,14 @@
+include "Torappu_AutoChessEffectChoiceType.fbs";
+include "Torappu_AutoChessEffectType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData {
+	choiceEventId:string;
+	choiceType:Torappu_AutoChessEffectChoiceType;
+	effectType:Torappu_AutoChessEffectType;
+	name:string;
+	desc:string;
+	typeTxtColor:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessEffectChoiceInfoData;

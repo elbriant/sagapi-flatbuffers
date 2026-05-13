@@ -1,0 +1,9 @@
+
+table Torappu_Battle_AutoChess_ChooseStateSlot {
+	id:string;
+	slotId:int32;
+	price:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_ChooseStateSlot;

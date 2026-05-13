@@ -1,0 +1,9 @@
+
+table Torappu_ActAutoChessData_ActAutoChessBattleData {
+	bossId:string;
+	levelId:string;
+	isSpPrepare:bool;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessBattleData;

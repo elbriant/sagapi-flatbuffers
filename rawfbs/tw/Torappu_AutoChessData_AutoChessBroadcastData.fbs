@@ -1,0 +1,12 @@
+include "Torappu_AutoChessBroadcastType.fbs";
+
+table Torappu_AutoChessData_AutoChessBroadcastData {
+	id:string;
+	desc:string;
+	priority:int32;
+	type:Torappu_AutoChessBroadcastType;
+	paramList:[string];
+}
+
+
+root_type Torappu_AutoChessData_AutoChessBroadcastData;

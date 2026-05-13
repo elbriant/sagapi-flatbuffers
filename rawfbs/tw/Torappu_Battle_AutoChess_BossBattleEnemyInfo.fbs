@@ -1,0 +1,11 @@
+include "Torappu_BossPlayerGroup.fbs";
+
+table Torappu_Battle_AutoChess_BossBattleEnemyInfo {
+	playerGroup:Torappu_BossPlayerGroup;
+	enemyId:string;
+	actionIndex:int32;
+	instId:int32;
+}
+
+
+root_type Torappu_Battle_AutoChess_BossBattleEnemyInfo;

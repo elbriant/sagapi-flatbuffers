@@ -12,6 +12,7 @@ table Torappu_RetroActData {
 	haveTrail:bool;
 	customActId:string;
 	customActType:Torappu_ActivityType;
+	trapDomainId:string;
 }
 
 

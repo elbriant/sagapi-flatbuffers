@@ -1,0 +1,14 @@
+
+table Torappu_Battle_AutoChess_AutoChessEffectManager_AutoChessEffectManagerConfig {
+	buildableTileHintEffect:string;
+	maskEffectWhenGainChess:string;
+	deckRegionEffect:string;
+	tempChessRegionClearWarningEffect:string;
+	garrisonHintEffect:string;
+	chessUpgradeHintEffect:string;
+	bossRoundMaskEffectAnchorPosForLeftPlayer:[int32];
+	bossRoundMaskEffectAnchorPosForRightPlayer:[int32];
+}
+
+
+root_type Torappu_Battle_AutoChess_AutoChessEffectManager_AutoChessEffectManagerConfig;

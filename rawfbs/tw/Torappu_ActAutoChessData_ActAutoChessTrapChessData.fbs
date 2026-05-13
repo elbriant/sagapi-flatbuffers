@@ -1,0 +1,22 @@
+include "Torappu_ActAutoChessData_AutoChessTrapChessStatusData.fbs";
+include "Torappu_AutoChessItemType.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessTrapChessData {
+	chessId:string;
+	identifier:int32;
+	charId:string;
+	isGolden:bool;
+	purchasePrice:int32;
+	status:Torappu_ActAutoChessData_AutoChessTrapChessStatusData;
+	upgradeChessId:string;
+	upgradeNum:int32;
+	trapDuration:int32;
+	effectId:string;
+	giveBondId:string;
+	givePowerId:string;
+	canGiveBond:bool;
+	itemType:Torappu_AutoChessItemType;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessTrapChessData;

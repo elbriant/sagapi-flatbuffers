@@ -1,0 +1,9 @@
+include "Torappu_ActAutoChessData_ActAutoChessCharShopChessData.fbs";
+
+table Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharShopChessData_ {
+	dict_key:string;
+	dict_value:Torappu_ActAutoChessData_ActAutoChessCharShopChessData;
+}
+
+
+root_type Torappu_ListDict_2_System_String_Torappu_ActAutoChessData_ActAutoChessCharShopChessData_;

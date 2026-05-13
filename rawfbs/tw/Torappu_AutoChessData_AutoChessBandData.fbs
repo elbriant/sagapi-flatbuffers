@@ -1,0 +1,10 @@
+
+table Torappu_AutoChessData_AutoChessBandData {
+	bandId:string;
+	bandName:string;
+	bandIconId:string;
+	unlockDesc:string;
+}
+
+
+root_type Torappu_AutoChessData_AutoChessBandData;

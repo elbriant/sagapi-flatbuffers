@@ -31,7 +31,6 @@ include "Dict_2_System_String_Torappu_Act35SideData_.fbs";
 include "Dict_2_System_String_Torappu_ActVecBreakV2Data_.fbs";
 include "Dict_2_System_String_Torappu_Act36SideData_.fbs";
 include "Dict_2_System_String_Torappu_Act38SideData_.fbs";
-include "Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_.fbs";
 include "Dict_2_System_String_Torappu_ActArcadeData_.fbs";
 include "Dict_2_System_String_Torappu_ActMultiV3Data_.fbs";
 include "Dict_2_System_String_Torappu_ActMainSSData_.fbs";
@@ -41,6 +40,8 @@ include "Dict_2_System_String_Torappu_Act44SideData_.fbs";
 include "Dict_2_System_String_Torappu_Act1VHalfIdleData_.fbs";
 include "Dict_2_System_String_Torappu_Act45SideData_.fbs";
 include "Dict_2_System_String_Torappu_ActRecruitOnlyData_.fbs";
+include "Dict_2_System_String_Torappu_Act46SideData_.fbs";
+include "Dict_2_System_String_Torappu_ActAutoChessData_.fbs";
 
 table Torappu_ActivityTable_ActivityDetailTable {
 	defaultActivityData:[Dict_2_System_String_Torappu_DefaultFirstData_];
@@ -76,7 +77,6 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeActVecBreakV2Data:[Dict_2_System_String_Torappu_ActVecBreakV2Data_];
 	typeAct36SideData:[Dict_2_System_String_Torappu_Act36SideData_];
 	typeAct38SideData:[Dict_2_System_String_Torappu_Act38SideData_];
-	defaultAutoChessV1Data:[Dict_2_System_String_Torappu_ActivityAutoChessVerify1Data_];
 	typeActArcadeData:[Dict_2_System_String_Torappu_ActArcadeData_];
 	typeActMultiV3Data:[Dict_2_System_String_Torappu_ActMultiV3Data_];
 	typeActMainSSData:[Dict_2_System_String_Torappu_ActMainSSData_];
@@ -86,6 +86,8 @@ table Torappu_ActivityTable_ActivityDetailTable {
 	typeAct1VHalfIdleData:[Dict_2_System_String_Torappu_Act1VHalfIdleData_];
 	typeAct45SideData:[Dict_2_System_String_Torappu_Act45SideData_];
 	recruitOnlyData:[Dict_2_System_String_Torappu_ActRecruitOnlyData_];
+	typeAct46SideData:[Dict_2_System_String_Torappu_Act46SideData_];
+	defaultAutoChessData:[Dict_2_System_String_Torappu_ActAutoChessData_];
 }
 
 

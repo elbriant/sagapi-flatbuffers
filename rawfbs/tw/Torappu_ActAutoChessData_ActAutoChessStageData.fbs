@@ -1,0 +1,9 @@
+
+table Torappu_ActAutoChessData_ActAutoChessStageData {
+	stageId:string;
+	mode:[string];
+	weight:int32;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessStageData;

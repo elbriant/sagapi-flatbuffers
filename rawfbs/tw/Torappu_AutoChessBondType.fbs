@@ -1,0 +1,6 @@
+
+enum Torappu_AutoChessBondType : int32 {
+	NONE = 0,
+	REGULAR = 1,
+	SEASON = 2
+}

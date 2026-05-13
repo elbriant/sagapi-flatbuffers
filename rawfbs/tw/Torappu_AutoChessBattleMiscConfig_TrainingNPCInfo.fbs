@@ -1,0 +1,8 @@
+
+table Torappu_AutoChessBattleMiscConfig_TrainingNPCInfo {
+	uidIndex:int32;
+	playerLevel:int32;
+}
+
+
+root_type Torappu_AutoChessBattleMiscConfig_TrainingNPCInfo;

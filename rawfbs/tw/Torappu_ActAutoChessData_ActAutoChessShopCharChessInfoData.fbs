@@ -1,0 +1,17 @@
+include "Torappu_EvolvePhase.fbs";
+
+table Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData {
+	chessLevel:int32;
+	isGolden:bool;
+	evolvePhase:Torappu_EvolvePhase;
+	charLevel:int32;
+	skillLevel:int32;
+	favorPoint:int32;
+	equipLevel:int32;
+	purchasePrice:int32;
+	chessSoldPrice:int32;
+	eliteIconId:string;
+}
+
+
+root_type Torappu_ActAutoChessData_ActAutoChessShopCharChessInfoData;

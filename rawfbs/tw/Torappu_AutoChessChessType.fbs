@@ -1,0 +1,6 @@
+
+enum Torappu_AutoChessChessType : int32 {
+	NORMAL = 0,
+	DIY = 1,
+	PRESET = 2
+}
