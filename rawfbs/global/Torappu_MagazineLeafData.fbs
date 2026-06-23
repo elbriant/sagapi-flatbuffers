@@ -1,0 +1,18 @@
+include "Dict_2_System_String_Torappu_MagazineLeafItemData_.fbs";
+include "Dict_2_System_String_Torappu_MagazineLeafDecorTypeData_.fbs";
+include "Dict_2_System_String_Torappu_MagazineLeafTypeData_.fbs";
+include "Dict_2_System_String_Torappu_ArtMagazineLeafData_.fbs";
+include "Torappu_MagazineLeafConst.fbs";
+include "Dict_2_System_String_Dict_2_System_String_System_Int32__.fbs";
+
+table Torappu_MagazineLeafData {
+	leafMap:[Dict_2_System_String_Torappu_MagazineLeafItemData_];
+	leafDecorTypeMap:[Dict_2_System_String_Torappu_MagazineLeafDecorTypeData_];
+	leafTypeMap:[Dict_2_System_String_Torappu_MagazineLeafTypeData_];
+	leafTemplateMap:[Dict_2_System_String_Torappu_ArtMagazineLeafData_];
+	constData:Torappu_MagazineLeafConst;
+	blackListInDiy:[Dict_2_System_String_Dict_2_System_String_System_Int32__];
+}
+
+
+root_type Torappu_MagazineLeafData;

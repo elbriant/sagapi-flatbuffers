@@ -1,0 +1,12 @@
+include "Dict_2_System_String_Torappu_ArtGalleryCollectSetData_.fbs";
+include "Dict_2_System_String_Torappu_ArtGalleryCollectTypeData_.fbs";
+include "Torappu_ArtGalleryCollectConstData.fbs";
+
+table Torappu_ArtGalleryCollectData {
+	collectionSets:[Dict_2_System_String_Torappu_ArtGalleryCollectSetData_];
+	collectionTypes:[Dict_2_System_String_Torappu_ArtGalleryCollectTypeData_];
+	constData:Torappu_ArtGalleryCollectConstData;
+}
+
+
+root_type Torappu_ArtGalleryCollectData;

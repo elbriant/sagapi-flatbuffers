@@ -3,6 +3,8 @@ include "Dict_2_System_String_Torappu_AutoChessBattleMiscConfig_.fbs";
 table Torappu_BattleMiscConfigs {
 	palsyLimitedStackCnt:int32;
 	palsyOverflowEffect:string;
+	defaultDozeAnimPlaybackSpeed:float;
+	defaultDozeAnim:string;
 	autoChessMiscConfigs:[Dict_2_System_String_Torappu_AutoChessBattleMiscConfig_];
 }
 

@@ -1,0 +1,6 @@
+
+enum Torappu_CollectType : int32 {
+	ALL = 0,
+	ROGUE = 1,
+	SANDBOX = 2
+}

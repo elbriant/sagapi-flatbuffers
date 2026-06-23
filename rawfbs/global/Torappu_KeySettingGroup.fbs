@@ -1,0 +1,5 @@
+
+enum Torappu_KeySettingGroup : int32 {
+	BATTLE = 0,
+	NORMAL = 1
+}

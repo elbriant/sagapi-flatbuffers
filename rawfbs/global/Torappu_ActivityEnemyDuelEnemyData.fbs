@@ -2,6 +2,7 @@
 table Torappu_ActivityEnemyDuelEnemyData {
 	enemyId:string;
 	originalEnemyId:string;
+	tagType:string;
 }
 
 

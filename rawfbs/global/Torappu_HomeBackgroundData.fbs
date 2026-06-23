@@ -1,4 +1,5 @@
 include "Torappu_HomeBackgroundSingleData.fbs";
+include "Torappu_ArtGalleryGroupData.fbs";
 include "Torappu_HomeThemeDisplayData.fbs";
 include "Dict_2_System_String_Torappu_HomeBackgroundLimitData_.fbs";
 include "Dict_2_System_String_Torappu_HomeThemeLimitData_.fbs";
@@ -9,7 +10,9 @@ table Torappu_HomeBackgroundData {
 	defaultBackgroundId:string;
 	defaultThemeId:string;
 	homeBgDataList:[Torappu_HomeBackgroundSingleData];
+	backgroundGroupDatas:[Torappu_ArtGalleryGroupData];
 	themeList:[Torappu_HomeThemeDisplayData];
+	themeGroupDatas:[Torappu_ArtGalleryGroupData];
 	backgroundLimitData:[Dict_2_System_String_Torappu_HomeBackgroundLimitData_];
 	themeLimitData:[Dict_2_System_String_Torappu_HomeThemeLimitData_];
 	multiFormInfoData:[Torappu_HomeMultiFormInfoData];

@@ -1,0 +1,10 @@
+include "Torappu_ArtMagazineLeafElementData.fbs";
+
+table Torappu_ArtMagazineLeafData {
+	leafId:string;
+	decorList:[Torappu_ArtMagazineLeafElementData];
+	charSkin:Torappu_ArtMagazineLeafElementData;
+}
+
+
+root_type Torappu_ArtMagazineLeafData;

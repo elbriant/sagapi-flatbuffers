@@ -1,0 +1,12 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_ArtMagazineLeafElementData {
+	id:string;
+	type:Torappu_ItemType;
+	sub:int32;
+	pos:[float];
+	scale:float;
+}
+
+
+root_type Torappu_ArtMagazineLeafElementData;

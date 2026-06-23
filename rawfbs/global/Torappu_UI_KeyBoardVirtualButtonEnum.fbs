@@ -1,0 +1,15 @@
+
+enum Torappu_UI_KeyBoardVirtualButtonEnum : int32 {
+	ESC = 0,
+	SCROLL = 1,
+	CHANGE_SPEED = 2,
+	PAUSE_BATTLE = 3,
+	RELEASE_SKILL = 4,
+	RETREAT_CHAR = 5,
+	HOME_KEY = 6,
+	MOVE_FORWARD = 7,
+	MOVE_BACKWARD = 8,
+	MOVE_TO_LEFT = 9,
+	MOVE_TO_RIGHT = 10,
+	ENUM = 11
+}

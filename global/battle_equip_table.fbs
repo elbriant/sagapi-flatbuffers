@@ -36,6 +36,7 @@ table Torappu_EquipTalentData {
 	displayRangeId:bool;
 	upgradeDescription:string;
 	talentIndex:int32;
+	validModeIndices:[int32];
 	unlockCondition:Torappu_CharacterData_UnlockCondition;
 	requiredPotentialRank:int32;
 	prefabKey:string;

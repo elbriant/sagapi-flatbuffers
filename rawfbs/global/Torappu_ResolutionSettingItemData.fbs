@@ -1,0 +1,11 @@
+
+table Torappu_ResolutionSettingItemData {
+	sortId:int32;
+	resolutionWidth:int32;
+	resolutionHeight:int32;
+	resolutionText:string;
+	isFullScreen:bool;
+}
+
+
+root_type Torappu_ResolutionSettingItemData;

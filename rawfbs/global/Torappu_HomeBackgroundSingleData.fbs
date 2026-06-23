@@ -3,8 +3,10 @@ include "Torappu_HomeBackgroundMultiFormData.fbs";
 
 table Torappu_HomeBackgroundSingleData {
 	bgId:string;
+	bgType:string;
 	bgSortId:int32;
 	bgStartTime:int64;
+	isSecret:bool;
 	bgName:string;
 	bgDes:string;
 	bgUsage:string;
@@ -13,6 +15,7 @@ table Torappu_HomeBackgroundSingleData {
 	multiFormList:[Torappu_HomeBackgroundMultiFormData];
 	obtainApproach:string;
 	unlockDesList:[string];
+	multiPicId:string;
 }
 
 

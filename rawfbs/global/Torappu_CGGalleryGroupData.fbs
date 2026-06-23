@@ -1,0 +1,10 @@
+
+table Torappu_CGGalleryGroupData {
+	storySetId:string;
+	storylineId:string;
+	locationId:string;
+	displays:[string];
+}
+
+
+root_type Torappu_CGGalleryGroupData;

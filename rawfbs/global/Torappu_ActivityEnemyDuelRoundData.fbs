@@ -2,6 +2,7 @@
 table Torappu_ActivityEnemyDuelRoundData {
 	roundId:string;
 	modeId:string;
+	guessTime:int32;
 	round:int32;
 	enemyPredefined:bool;
 	roundScore:int32;

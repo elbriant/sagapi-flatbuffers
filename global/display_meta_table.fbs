@@ -8,9 +8,21 @@ enum Torappu_PlayerAvatarGroupType : int32 {
 	DYNAMIC = 5
 }
 
+table Torappu_PlayerAvatarLimitData {
+	avatarId:string;
+	descShowTs:int64;
+	descHideTs:int64;
+}
+
+
+
 table Torappu_PlayerAvatarPerData {
 	avatarId:string;
 	avatarType:Torappu_PlayerAvatarGroupType;
+	avatarDesc:string;
+	isSecret:bool;
+	avatarStartTs:int64;
+	avatarLimit:bool;
 	avatarIdSort:int32;
 	avatarIdDesc:string;
 	avatarItemName:string;
@@ -18,6 +30,7 @@ table Torappu_PlayerAvatarPerData {
 	avatarItemUsage:string;
 	obtainApproach:string;
 	dynAvatarId:string;
+	limitDatas:[Torappu_PlayerAvatarLimitData];
 }
 
 
@@ -38,10 +51,17 @@ table Dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_ {
 
 
 
+table Torappu_AvatarConstData {
+	approachHideText:string;
+}
+
+
+
 table Torappu_PlayerAvatarData {
 	defaultAvatarId:string;
 	avatarList:[Torappu_PlayerAvatarPerData];
 	avatarTypeData:[Dict_2_Torappu_PlayerAvatarGroupType_Torappu_PlayerAvatarGroupData_];
+	constData:Torappu_AvatarConstData;
 }
 
 
@@ -61,8 +81,10 @@ table Torappu_HomeBackgroundMultiFormData {
 
 table Torappu_HomeBackgroundSingleData {
 	bgId:string;
+	bgType:string;
 	bgSortId:int32;
 	bgStartTime:int64;
+	isSecret:bool;
 	bgName:string;
 	bgDes:string;
 	bgUsage:string;
@@ -71,6 +93,24 @@ table Torappu_HomeBackgroundSingleData {
 	multiFormList:[Torappu_HomeBackgroundMultiFormData];
 	obtainApproach:string;
 	unlockDesList:[string];
+	multiPicId:string;
+}
+
+
+
+table Torappu_ArtGalleryItemData {
+	id:string;
+	groupType:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_ArtGalleryGroupData {
+	type:string;
+	title:string;
+	sortId:int32;
+	items:[Torappu_ArtGalleryItemData];
 }
 
 
@@ -97,6 +137,7 @@ table Torappu_HomeThemeDisplayData {
 	type:string;
 	sortId:int32;
 	startTime:int64;
+	isSecret:bool;
 	tmName:string;
 	tmDes:string;
 	tmUsage:string;
@@ -108,6 +149,7 @@ table Torappu_HomeThemeDisplayData {
 	isLimitObtain:bool;
 	hideWhenLimit:bool;
 	rarity:Torappu_ItemRarity;
+	multiPicId:string;
 }
 
 
@@ -184,7 +226,9 @@ table Torappu_HomeBackgroundData {
 	defaultBackgroundId:string;
 	defaultThemeId:string;
 	homeBgDataList:[Torappu_HomeBackgroundSingleData];
+	backgroundGroupDatas:[Torappu_ArtGalleryGroupData];
 	themeList:[Torappu_HomeThemeDisplayData];
+	themeGroupDatas:[Torappu_ArtGalleryGroupData];
 	backgroundLimitData:[Dict_2_System_String_Torappu_HomeBackgroundLimitData_];
 	themeLimitData:[Dict_2_System_String_Torappu_HomeThemeLimitData_];
 	multiFormInfoData:[Torappu_HomeMultiFormInfoData];
@@ -247,8 +291,8 @@ table Dict_2_System_String_Torappu_NameCardV2RemovableModuleData_ {
 
 enum Torappu_NameCardV2SkinType : int32 {
 	NONE = 0,
-	MAINLINE = 1,
-	ACTIVITY = 2
+	BASE = 1,
+	SPECIAL = 2
 }
 
 table Torappu_NameCardV2TimeLimitInfo {
@@ -263,6 +307,7 @@ table Torappu_NameCardV2SkinData {
 	id:string;
 	name:string;
 	type:Torappu_NameCardV2SkinType;
+	isSecret:bool;
 	sortId:int32;
 	isSpTheme:bool;
 	defaultShowDetail:bool;
@@ -295,6 +340,7 @@ table Torappu_NameCardV2Consts {
 	defaultNameCardSkinId:string;
 	canUidHide:bool;
 	removableModuleMaxCount:int32;
+	approachHideText:string;
 }
 
 
@@ -303,6 +349,7 @@ table Torappu_NameCardV2Data {
 	fixedModuleData:[Dict_2_System_String_Torappu_NameCardV2ModuleData_];
 	removableModuleData:[Dict_2_System_String_Torappu_NameCardV2RemovableModuleData_];
 	skinData:[Dict_2_System_String_Torappu_NameCardV2SkinData_];
+	skinGroupDatas:[Torappu_ArtGalleryGroupData];
 	consts:Torappu_NameCardV2Consts;
 }
 
@@ -405,7 +452,9 @@ enum Torappu_ItemType : int32 {
 	VOUCHER_SKIN_V2 = 87,
 	RANDOM_VOUCHER_SKIN = 88,
 	ACT1VHALFIDLE_ITEM = 89,
-	PLOT_ITEM = 90
+	PLOT_ITEM = 90,
+	MAGAZINE_LEAF = 91,
+	STICKER = 92
 }
 
 table Torappu_ItemBundle {
@@ -582,7 +631,9 @@ enum Torappu_UIGuideTarget : int32 {
 	INFORMANT = 47,
 	ACT1VHALFIDLE = 48,
 	MONOPOLY = 49,
-	AUTO_CHESS = 50
+	AUTO_CHESS = 50,
+	ART_GALLERY = 51,
+	ART_MAGAZINE = 52
 }
 
 table Torappu_GuidebookConfigData {
@@ -609,6 +660,345 @@ table Dict_2_System_String_Torappu_GuidebookGroupData_ {
 
 
 
+table Torappu_KeyItem {
+	keyId:string;
+	keyName:string;
+	useIcon:bool;
+	keyCodes:[int32];
+	canBeSetted:bool;
+}
+
+
+
+table Dict_2_System_String_Torappu_KeyItem_ {
+	dict_key:string;
+	dict_value:Torappu_KeyItem;
+}
+
+
+
+enum Torappu_UI_KeyBoardVirtualButtonEnum : int32 {
+	ESC = 0,
+	SCROLL = 1,
+	CHANGE_SPEED = 2,
+	PAUSE_BATTLE = 3,
+	RELEASE_SKILL = 4,
+	RETREAT_CHAR = 5,
+	HOME_KEY = 6,
+	MOVE_FORWARD = 7,
+	MOVE_BACKWARD = 8,
+	MOVE_TO_LEFT = 9,
+	MOVE_TO_RIGHT = 10,
+	ENUM = 11
+}
+
+enum Torappu_KeySettingGroup : int32 {
+	BATTLE = 0,
+	NORMAL = 1
+}
+
+enum Torappu_KeyEffectGroup : int32 {
+	BATTLE = 0,
+	OUT_BATTLE = 1,
+	ALL = 2
+}
+
+table Torappu_KeySettingItemData {
+	funcId:Torappu_UI_KeyBoardVirtualButtonEnum;
+	funcName:string;
+	funcType:Torappu_KeySettingGroup;
+	keyEffectGroup:Torappu_KeyEffectGroup;
+	canBeSet:bool;
+	defaultKeyId:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_ {
+	dict_key:Torappu_UI_KeyBoardVirtualButtonEnum;
+	dict_value:Torappu_KeySettingItemData;
+}
+
+
+
+table Torappu_PCKeyConstData {
+	cannotSetKeyNotice:string;
+	resetKeyNotice:string;
+}
+
+
+
+table Torappu_PCKeyData {
+	keyList:[Dict_2_System_String_Torappu_KeyItem_];
+	keySettingData:[Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_];
+	constData:Torappu_PCKeyConstData;
+	keyHideSettingData:[Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_];
+}
+
+
+
+table Torappu_ResolutionSettingItemData {
+	sortId:int32;
+	resolutionWidth:int32;
+	resolutionHeight:int32;
+	resolutionText:string;
+	isFullScreen:bool;
+}
+
+
+
+enum Torappu_CollectType : int32 {
+	ALL = 0,
+	ROGUE = 1,
+	SANDBOX = 2
+}
+
+table Torappu_ArtGalleryCollectItemData {
+	itemId:string;
+	itemType:Torappu_ItemType;
+	collectionSetId:string;
+	sortId:int32;
+}
+
+
+
+table Torappu_ArtGalleryCollectSetMissionData {
+	missionId:string;
+	requireItemCount:int32;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+
+table Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData_ {
+	dict_key:string;
+	dict_value:Torappu_ArtGalleryCollectSetMissionData;
+}
+
+
+
+table Torappu_ArtGalleryCollectSetData {
+	setId:string;
+	setName:string;
+	setType:Torappu_CollectType;
+	sortId:int32;
+	startTime:int64;
+	completeTime:int64;
+	items:[Torappu_ArtGalleryCollectItemData];
+	displayMaxCount:int32;
+	missionList:[Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData_];
+}
+
+
+
+table Dict_2_System_String_Torappu_ArtGalleryCollectSetData_ {
+	dict_key:string;
+	dict_value:Torappu_ArtGalleryCollectSetData;
+}
+
+
+
+table Torappu_ArtGalleryCollectTypeData {
+	setType:Torappu_CollectType;
+	typeName:string;
+	typeEngNameFilterPic:string;
+	typeEngNamePic:string;
+	typeFilterSelectIcon:string;
+	typeFilterUnselectIcon:string;
+	setIdList:[string];
+	sortId:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ArtGalleryCollectTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_ArtGalleryCollectTypeData;
+}
+
+
+
+table Torappu_ArtGalleryCollectConstData {
+	collectTypeFilterAll:string;
+	collectTypeFilterAllUnselect:string;
+}
+
+
+
+table Torappu_ArtGalleryCollectData {
+	collectionSets:[Dict_2_System_String_Torappu_ArtGalleryCollectSetData_];
+	collectionTypes:[Dict_2_System_String_Torappu_ArtGalleryCollectTypeData_];
+	constData:Torappu_ArtGalleryCollectConstData;
+}
+
+
+
+enum Torappu_MagazineLeafType : int32 {
+	DEFAULT = 0,
+	ROGUE = 1,
+	SANDBOX = 2,
+	AMIYA = 3
+}
+
+table UnityEngine_Vector2 {
+}
+
+
+
+table Dict_2_System_String_System_Int32_ {
+	dict_key:string;
+	dict_value:int32;
+}
+
+
+
+table Torappu_MagazineLeafItemData {
+	leafId:string;
+	leafType:Torappu_MagazineLeafType;
+	sortId:int32;
+	startTime:int64;
+	name:string;
+	desc:string;
+	usage:string;
+	approach:string;
+	rarity:Torappu_ItemRarity;
+	templateId:string;
+	templateStartTime:int64;
+	templateColor:string;
+	skinDefaultPos:UnityEngine_Vector2;
+	skinDefaultScale:float;
+	leafDecorMaxNumMap:[Dict_2_System_String_System_Int32_];
+}
+
+
+
+table Dict_2_System_String_Torappu_MagazineLeafItemData_ {
+	dict_key:string;
+	dict_value:Torappu_MagazineLeafItemData;
+}
+
+
+
+table Torappu_MagazineLeafDecorTypeData {
+	minScale:float;
+	maxScale:float;
+	defaultScale:float;
+	engName:string;
+	smallIconId:string;
+	bigIconId:string;
+	templateUseCardPosBias:UnityEngine_Vector2;
+	templateUseCardScale:float;
+}
+
+
+
+table Dict_2_System_String_Torappu_MagazineLeafDecorTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_MagazineLeafDecorTypeData;
+}
+
+
+
+table Torappu_MagazineLeafTypeData {
+	engName:string;
+	typeIconId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_MagazineLeafTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_MagazineLeafTypeData;
+}
+
+
+
+table Torappu_ArtMagazineLeafElementData {
+	id:string;
+	type:Torappu_ItemType;
+	sub:int32;
+	pos:[float];
+	scale:float;
+}
+
+
+
+table Torappu_ArtMagazineLeafData {
+	leafId:string;
+	decorList:[Torappu_ArtMagazineLeafElementData];
+	charSkin:Torappu_ArtMagazineLeafElementData;
+}
+
+
+
+table Dict_2_System_String_Torappu_ArtMagazineLeafData_ {
+	dict_key:string;
+	dict_value:Torappu_ArtMagazineLeafData;
+}
+
+
+
+table Torappu_MagazineLeafConst {
+	sysUnlockRewards:[Torappu_ItemBundle];
+	leafDisplayMaxNum:int32;
+	skinDefaultGainTime:int64;
+	defaultLeafId:string;
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_String_System_Int32__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_String_System_Int32_];
+}
+
+
+
+table Torappu_MagazineLeafData {
+	leafMap:[Dict_2_System_String_Torappu_MagazineLeafItemData_];
+	leafDecorTypeMap:[Dict_2_System_String_Torappu_MagazineLeafDecorTypeData_];
+	leafTypeMap:[Dict_2_System_String_Torappu_MagazineLeafTypeData_];
+	leafTemplateMap:[Dict_2_System_String_Torappu_ArtMagazineLeafData_];
+	constData:Torappu_MagazineLeafConst;
+	blackListInDiy:[Dict_2_System_String_Dict_2_System_String_System_Int32__];
+}
+
+
+
+enum Torappu_StickerType : int32 {
+	DEFAULT = 0,
+	ROGUE = 1,
+	SANDBOX = 2,
+	AMIYA = 3
+}
+
+table Torappu_StickerItemData {
+	id:string;
+	name:string;
+	stickerType:Torappu_StickerType;
+	sortId:int32;
+	desc:string;
+	usage:string;
+	approach:string;
+	rarity:Torappu_ItemRarity;
+}
+
+
+
+table Dict_2_System_String_Torappu_StickerItemData_ {
+	dict_key:string;
+	dict_value:Torappu_StickerItemData;
+}
+
+
+
+table Torappu_StickerData {
+	stickerMap:[Dict_2_System_String_Torappu_StickerItemData_];
+}
+
+
+
 table Torappu_DisplayMetaData {
 	playerAvatarData:Torappu_PlayerAvatarData;
 	homeBackgroundData:Torappu_HomeBackgroundData;
@@ -618,6 +1008,11 @@ table Torappu_DisplayMetaData {
 	emoticonData:Torappu_EmoticonData;
 	storyVariantData:[Dict_2_System_String_Torappu_StoryVariantData_];
 	guidebookGroupDatas:[Dict_2_System_String_Torappu_GuidebookGroupData_];
+	pcKeyData:Torappu_PCKeyData;
+	resolutionSettingList:[Torappu_ResolutionSettingItemData];
+	artGalleryCollectData:Torappu_ArtGalleryCollectData;
+	magazineLeafData:Torappu_MagazineLeafData;
+	stickerData:Torappu_StickerData;
 }
 
 

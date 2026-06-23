@@ -1,0 +1,8 @@
+
+table Torappu_PCKeyConstData {
+	cannotSetKeyNotice:string;
+	resetKeyNotice:string;
+}
+
+
+root_type Torappu_PCKeyConstData;

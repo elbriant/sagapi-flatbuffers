@@ -1,0 +1,8 @@
+
+table Torappu_ArtGalleryCollectConstData {
+	collectTypeFilterAll:string;
+	collectTypeFilterAllUnselect:string;
+}
+
+
+root_type Torappu_ArtGalleryCollectConstData;

@@ -27,6 +27,8 @@ table Torappu_ActVecBreakV2ConstData {
 	defenceBattleFinishActivateText:string;
 	defenceBattleFinishSquadText:string;
 	milestoneTrackId:string;
+	themeColor:string;
+	subTitleName:string;
 }
 
 

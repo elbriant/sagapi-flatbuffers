@@ -1,0 +1,15 @@
+include "Torappu_CollectType.fbs";
+
+table Torappu_ArtGalleryCollectTypeData {
+	setType:Torappu_CollectType;
+	typeName:string;
+	typeEngNameFilterPic:string;
+	typeEngNamePic:string;
+	typeFilterSelectIcon:string;
+	typeFilterUnselectIcon:string;
+	setIdList:[string];
+	sortId:int32;
+}
+
+
+root_type Torappu_ArtGalleryCollectTypeData;

@@ -1,0 +1,6 @@
+
+enum Torappu_CGGalleryCGSource : int32 {
+	IMAGE = 0,
+	BACKGROUND = 1,
+	ITEM = 2
+}

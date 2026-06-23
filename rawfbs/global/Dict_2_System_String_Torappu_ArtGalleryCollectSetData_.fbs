@@ -1,0 +1,9 @@
+include "Torappu_ArtGalleryCollectSetData.fbs";
+
+table Dict_2_System_String_Torappu_ArtGalleryCollectSetData_ {
+	dict_key:string;
+	dict_value:Torappu_ArtGalleryCollectSetData;
+}
+
+
+root_type Dict_2_System_String_Torappu_ArtGalleryCollectSetData_;

@@ -6,6 +6,8 @@ table Torappu_ActivityEnemyDuelPoolData {
 	poolBoss:float;
 	poolMusic:float;
 	poolNoSurpriseEnemy:float;
+	poolGiantBoss:float;
+	poolAntiGiantBoss:float;
 }
 
 
