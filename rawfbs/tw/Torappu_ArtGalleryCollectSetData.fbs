@@ -1,0 +1,18 @@
+include "Torappu_CollectType.fbs";
+include "Torappu_ArtGalleryCollectItemData.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData_.fbs";
+
+table Torappu_ArtGalleryCollectSetData {
+	setId:string;
+	setName:string;
+	setType:Torappu_CollectType;
+	sortId:int32;
+	startTime:int64;
+	completeTime:int64;
+	items:[Torappu_ArtGalleryCollectItemData];
+	displayMaxCount:int32;
+	missionList:[Torappu_ListDict_2_System_String_Torappu_ArtGalleryCollectSetMissionData_];
+}
+
+
+root_type Torappu_ArtGalleryCollectSetData;

@@ -1,0 +1,10 @@
+include "Torappu_UI_KeyBoardVirtualButtonEnum.fbs";
+include "Torappu_KeySettingItemData.fbs";
+
+table Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_ {
+	dict_key:Torappu_UI_KeyBoardVirtualButtonEnum;
+	dict_value:Torappu_KeySettingItemData;
+}
+
+
+root_type Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_;

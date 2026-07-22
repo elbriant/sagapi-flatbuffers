@@ -6,6 +6,7 @@ table Torappu_NameCardV2SkinData {
 	id:string;
 	name:string;
 	type:Torappu_NameCardV2SkinType;
+	isSecret:bool;
 	sortId:int32;
 	isSpTheme:bool;
 	defaultShowDetail:bool;

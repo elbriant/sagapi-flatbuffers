@@ -1,0 +1,9 @@
+
+table Torappu_RoguelikeCopperGildTypeData {
+	gildTypeId:string;
+	gildName:string;
+	gildDesc:string;
+}
+
+
+root_type Torappu_RoguelikeCopperGildTypeData;

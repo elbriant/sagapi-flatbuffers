@@ -1,0 +1,25 @@
+include "Torappu_MagazineLeafType.fbs";
+include "Torappu_ItemRarity.fbs";
+include "UnityEngine_Vector2.fbs";
+include "Dict_2_System_String_System_Int32_.fbs";
+
+table Torappu_MagazineLeafItemData {
+	leafId:string;
+	leafType:Torappu_MagazineLeafType;
+	sortId:int32;
+	startTime:int64;
+	name:string;
+	desc:string;
+	usage:string;
+	approach:string;
+	rarity:Torappu_ItemRarity;
+	templateId:string;
+	templateStartTime:int64;
+	templateColor:string;
+	skinDefaultPos:UnityEngine_Vector2;
+	skinDefaultScale:float;
+	leafDecorMaxNumMap:[Dict_2_System_String_System_Int32_];
+}
+
+
+root_type Torappu_MagazineLeafItemData;

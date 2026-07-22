@@ -150,7 +150,9 @@ enum Torappu_ItemType : int32 {
 	VOUCHER_SKIN_V2 = 87,
 	RANDOM_VOUCHER_SKIN = 88,
 	ACT1VHALFIDLE_ITEM = 89,
-	PLOT_ITEM = 90
+	PLOT_ITEM = 90,
+	MAGAZINE_LEAF = 91,
+	STICKER = 92
 }
 
 table Torappu_ItemBundle {
@@ -773,12 +775,14 @@ table Torappu_StorylineMainlineData {
 	zoneId:string;
 	retroId:string;
 	decoImageId:string;
+	desc:string;
+	backgroundId:string;
+	tags:[string];
 }
 
 
 
 table Torappu_StorylineSSData {
-	name:string;
 	desc:string;
 	backgroundId:string;
 	tags:[string];
@@ -792,7 +796,6 @@ table Torappu_StorylineSSData {
 
 
 table Torappu_StorylineCollectData {
-	name:string;
 	desc:string;
 	backgroundId:string;
 }
@@ -847,6 +850,81 @@ table Torappu_StorylineConstData {
 	recommendHideGuideGroupId:string;
 	tutorialSelectStorylineId:string;
 	mainlineStorylineId:string;
+}
+
+
+
+enum Torappu_CGGalleryCGSource : int32 {
+	IMAGE = 0,
+	BACKGROUND = 1,
+	ITEM = 2
+}
+
+table Torappu_CGGalleryDisplayData {
+	displayId:string;
+	cgList:[string];
+	cgSource:Torappu_CGGalleryCGSource;
+	displayName:string;
+	displayDesc:string;
+	storySetId:string;
+	sortId:int32;
+	relatedStoryId:string;
+	relatedStageId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_CGGalleryDisplayData_ {
+	dict_key:string;
+	dict_value:Torappu_CGGalleryDisplayData;
+}
+
+
+
+table Torappu_CGGalleryGroupData {
+	storySetId:string;
+	storylineId:string;
+	locationId:string;
+	displays:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_CGGalleryGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_CGGalleryGroupData;
+}
+
+
+
+enum Torappu_CGGalleryCGCompositeType : int32 {
+	NONE = 0,
+	HORIZONTAL = 1,
+	VERTICAL = 2,
+	GRID = 3
+}
+
+table Torappu_CGGalleryCGCompositeData {
+	cgId:string;
+	width:int32;
+	height:int32;
+}
+
+
+
+table Torappu_CGGalleryCGData {
+	cgId:string;
+	sortId:int32;
+	compositeType:Torappu_CGGalleryCGCompositeType;
+	compositeList:[Torappu_CGGalleryCGCompositeData];
+	storySetId:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_CGGalleryCGData_ {
+	dict_key:string;
+	dict_value:Torappu_CGGalleryCGData;
 }
 
 
@@ -959,6 +1037,9 @@ table Torappu_StageTable {
 	storylineStorySets:[Dict_2_System_String_Torappu_StorylineStorySetData_];
 	storylineTags:[Dict_2_System_String_Torappu_StorylineTagData_];
 	storylineConst:Torappu_StorylineConstData;
+	cgGalleryDisplays:[Dict_2_System_String_Torappu_CGGalleryDisplayData_];
+	cgGalleryGroups:[Dict_2_System_String_Torappu_CGGalleryGroupData_];
+	cgGalleryCgs:[Dict_2_System_String_Torappu_CGGalleryCGData_];
 	sixStarRuneData:[Dict_2_System_String_Torappu_SixStarRuneData_];
 	sixStarMilestoneInfo:[Dict_2_System_String_Torappu_SixStarMilestoneGroupData_];
 	sixStarCompatibleInfo:[Dict_2_System_String_Torappu_SixStarLinkedStageCompatibleInfo_];

@@ -1,0 +1,7 @@
+
+table Torappu_AvatarConstData {
+	approachHideText:string;
+}
+
+
+root_type Torappu_AvatarConstData;

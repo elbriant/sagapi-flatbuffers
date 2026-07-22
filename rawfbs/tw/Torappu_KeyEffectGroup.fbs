@@ -1,0 +1,6 @@
+
+enum Torappu_KeyEffectGroup : int32 {
+	BATTLE = 0,
+	OUT_BATTLE = 1,
+	ALL = 2
+}

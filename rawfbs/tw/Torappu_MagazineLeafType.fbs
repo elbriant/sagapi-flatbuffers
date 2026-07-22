@@ -1,0 +1,7 @@
+
+enum Torappu_MagazineLeafType : int32 {
+	DEFAULT = 0,
+	ROGUE = 1,
+	SANDBOX = 2,
+	AMIYA = 3
+}

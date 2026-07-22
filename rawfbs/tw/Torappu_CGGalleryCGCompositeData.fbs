@@ -1,0 +1,9 @@
+
+table Torappu_CGGalleryCGCompositeData {
+	cgId:string;
+	width:int32;
+	height:int32;
+}
+
+
+root_type Torappu_CGGalleryCGCompositeData;

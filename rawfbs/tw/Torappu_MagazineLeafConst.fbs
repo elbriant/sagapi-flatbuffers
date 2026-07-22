@@ -1,0 +1,11 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_MagazineLeafConst {
+	sysUnlockRewards:[Torappu_ItemBundle];
+	leafDisplayMaxNum:int32;
+	skinDefaultGainTime:int64;
+	defaultLeafId:string;
+}
+
+
+root_type Torappu_MagazineLeafConst;

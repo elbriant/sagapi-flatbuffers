@@ -1,0 +1,16 @@
+include "Torappu_CGGalleryCGSource.fbs";
+
+table Torappu_CGGalleryDisplayData {
+	displayId:string;
+	cgList:[string];
+	cgSource:Torappu_CGGalleryCGSource;
+	displayName:string;
+	displayDesc:string;
+	storySetId:string;
+	sortId:int32;
+	relatedStoryId:string;
+	relatedStageId:string;
+}
+
+
+root_type Torappu_CGGalleryDisplayData;

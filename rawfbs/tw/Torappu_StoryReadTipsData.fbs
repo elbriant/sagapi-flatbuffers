@@ -1,0 +1,12 @@
+
+table Torappu_StoryReadTipsData {
+	key:string;
+	picId:string;
+	mainText:string;
+	confirmText:string;
+	isAll:bool;
+	stageIdList:[string];
+}
+
+
+root_type Torappu_StoryReadTipsData;

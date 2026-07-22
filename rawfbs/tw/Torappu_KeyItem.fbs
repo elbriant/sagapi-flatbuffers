@@ -1,0 +1,11 @@
+
+table Torappu_KeyItem {
+	keyId:string;
+	keyName:string;
+	useIcon:bool;
+	keyCodes:[int32];
+	canBeSetted:bool;
+}
+
+
+root_type Torappu_KeyItem;

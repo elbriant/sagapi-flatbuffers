@@ -1,0 +1,7 @@
+
+enum Torappu_CGGalleryCGCompositeType : int32 {
+	NONE = 0,
+	HORIZONTAL = 1,
+	VERTICAL = 2,
+	GRID = 3
+}

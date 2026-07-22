@@ -28,6 +28,7 @@ include "Dict_2_System_String_Torappu_ActivityTable_ActivityTrapMissionsData_.fb
 include "Dict_2_System_String_Torappu_RuneTable_PackedRuneData_.fbs";
 include "Dict_2_System_String_Torappu_TemplateMissionStyleData_.fbs";
 include "Dict_2_System_String_Torappu_CrossDayTrackTypeData_.fbs";
+include "Dict_2_System_String_Torappu_StoryReadTipsData_.fbs";
 
 table Torappu_ActivityTable {
 	basicInfo:[Dict_2_System_String_Torappu_ActivityTable_BasicData_];
@@ -62,6 +63,7 @@ table Torappu_ActivityTable {
 	activityTemplateMissionStyles:[Dict_2_System_String_Torappu_TemplateMissionStyleData_];
 	activityCrossDayTrackTypeDataDict:[Dict_2_System_String_Torappu_CrossDayTrackTypeData_];
 	activityCrossDayTrackTypeMap:[Dict_2_System_String_List_1_System_String__];
+	activityStoryReadTipsDatas:[Dict_2_System_String_Torappu_StoryReadTipsData_];
 }
 
 

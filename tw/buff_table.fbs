@@ -42,7 +42,9 @@ enum Torappu_AbnormalFlag : int32 {
 	PALSY = 39,
 	PALSYING = 40,
 	ATTRACTED = 41,
-	E_NUM = 42
+	FEARED_PRIVATE = 42,
+	DOZE = 43,
+	E_NUM = 44
 }
 
 enum Torappu_AbnormalCombo : int32 {
@@ -139,7 +141,8 @@ enum Torappu_BuffData_OnEventPriority : int32 {
 	DEFAULT = 0,
 	LOW_PRIORITY = -1000,
 	LOWER_PRIORITY = -2000,
-	LOWEST_PRIORITY = -3000
+	LOWEST_PRIORITY = -3000,
+	TITI_DOZE_PRIORITY = -4000
 }
 
 enum Torappu_LifeType : uint8 {

@@ -1,0 +1,15 @@
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_MagazineLeafDecorTypeData {
+	minScale:float;
+	maxScale:float;
+	defaultScale:float;
+	engName:string;
+	smallIconId:string;
+	bigIconId:string;
+	templateUseCardPosBias:UnityEngine_Vector2;
+	templateUseCardScale:float;
+}
+
+
+root_type Torappu_MagazineLeafDecorTypeData;

@@ -1,0 +1,8 @@
+
+table Torappu_MagazineLeafTypeData {
+	engName:string;
+	typeIconId:string;
+}
+
+
+root_type Torappu_MagazineLeafTypeData;

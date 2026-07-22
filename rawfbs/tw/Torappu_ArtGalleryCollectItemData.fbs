@@ -1,0 +1,11 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_ArtGalleryCollectItemData {
+	itemId:string;
+	itemType:Torappu_ItemType;
+	collectionSetId:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ArtGalleryCollectItemData;

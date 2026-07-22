@@ -10,6 +10,7 @@ table Torappu_RuneData_Selector {
 	playerSideMask:Torappu_PlayerSideMask;
 	sideType:Torappu_Battle_SideType;
 	charIdFilter:[string];
+	charIdExcludeFilter:[string];
 	enemyIdFilter:[string];
 	enemyIdExcludeFilter:[string];
 	enemyLevelTypeFilter:[string];

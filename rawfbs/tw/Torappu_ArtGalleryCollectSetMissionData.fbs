@@ -1,0 +1,10 @@
+include "Torappu_ItemBundle.fbs";
+
+table Torappu_ArtGalleryCollectSetMissionData {
+	missionId:string;
+	requireItemCount:int32;
+	rewardList:[Torappu_ItemBundle];
+}
+
+
+root_type Torappu_ArtGalleryCollectSetMissionData;

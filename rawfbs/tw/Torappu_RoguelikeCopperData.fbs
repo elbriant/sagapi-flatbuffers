@@ -11,6 +11,7 @@ table Torappu_RoguelikeCopperData {
 	poemList:[string];
 	alwaysShowCountDown:bool;
 	buffItemIdList:[string];
+	isAllLuckyLevel:bool;
 }
 
 

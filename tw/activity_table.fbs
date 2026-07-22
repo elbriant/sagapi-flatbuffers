@@ -290,7 +290,9 @@ enum Torappu_ItemType : int32 {
 	VOUCHER_SKIN_V2 = 87,
 	RANDOM_VOUCHER_SKIN = 88,
 	ACT1VHALFIDLE_ITEM = 89,
-	PLOT_ITEM = 90
+	PLOT_ITEM = 90,
+	MAGAZINE_LEAF = 91,
+	STICKER = 92
 }
 
 table Torappu_MissionDisplayRewards {
@@ -1149,6 +1151,7 @@ table Torappu_RuneData_Selector {
 	playerSideMask:Torappu_PlayerSideMask;
 	sideType:Torappu_Battle_SideType;
 	charIdFilter:[string];
+	charIdExcludeFilter:[string];
 	enemyIdFilter:[string];
 	enemyIdExcludeFilter:[string];
 	enemyLevelTypeFilter:[string];
@@ -4510,6 +4513,8 @@ table Torappu_ActVecBreakV2ConstData {
 	defenceBattleFinishActivateText:string;
 	defenceBattleFinishSquadText:string;
 	milestoneTrackId:string;
+	themeColor:string;
+	subTitleName:string;
 }
 
 
@@ -4537,7 +4542,7 @@ table Torappu_ActVecBreakV2Data {
 	defenseZoneId:string;
 	offenseZoneId:string;
 	hardZoneId:string;
-	firstDefenseGroupId:string;
+	firstDefenseStageId:string;
 }
 
 
@@ -4638,6 +4643,7 @@ table Dict_2_System_String_Torappu_Act38SideData_Act38SideZoneAdditionData_ {
 
 table Torappu_Act38SideData_Act38SidePuzzleInfo {
 	puzzleId:string;
+	sortId:int32;
 	startTime:int64;
 	puzzleGroupId:string;
 }
@@ -5575,6 +5581,7 @@ table Dict_2_System_String_Torappu_ActivityEnemyDuelModeData_ {
 table Torappu_ActivityEnemyDuelRoundData {
 	roundId:string;
 	modeId:string;
+	guessTime:int32;
 	round:int32;
 	enemyPredefined:bool;
 	roundScore:int32;
@@ -5606,6 +5613,8 @@ table Torappu_ActivityEnemyDuelPoolData {
 	poolBoss:float;
 	poolMusic:float;
 	poolNoSurpriseEnemy:float;
+	poolGiantBoss:float;
+	poolAntiGiantBoss:float;
 }
 
 
@@ -5672,6 +5681,7 @@ table Dict_2_System_String_Torappu_ActivityEnemyDuelNpcSelectorGroupData_ {
 table Torappu_ActivityEnemyDuelEnemyData {
 	enemyId:string;
 	originalEnemyId:string;
+	tagType:string;
 }
 
 
@@ -9866,6 +9876,24 @@ table Dict_2_System_String_Torappu_CrossDayTrackTypeData_ {
 
 
 
+table Torappu_StoryReadTipsData {
+	key:string;
+	picId:string;
+	mainText:string;
+	confirmText:string;
+	isAll:bool;
+	stageIdList:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_StoryReadTipsData_ {
+	dict_key:string;
+	dict_value:Torappu_StoryReadTipsData;
+}
+
+
+
 table Torappu_ActivityTable {
 	basicInfo:[Dict_2_System_String_Torappu_ActivityTable_BasicData_];
 	homeActConfig:[Dict_2_System_String_Torappu_ActivityTable_HomeActivityConfig_];
@@ -9899,6 +9927,7 @@ table Torappu_ActivityTable {
 	activityTemplateMissionStyles:[Dict_2_System_String_Torappu_TemplateMissionStyleData_];
 	activityCrossDayTrackTypeDataDict:[Dict_2_System_String_Torappu_CrossDayTrackTypeData_];
 	activityCrossDayTrackTypeMap:[Dict_2_System_String_List_1_System_String__];
+	activityStoryReadTipsDatas:[Dict_2_System_String_Torappu_StoryReadTipsData_];
 }
 
 

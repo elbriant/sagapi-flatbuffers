@@ -1,0 +1,13 @@
+include "Torappu_CGGalleryCGCompositeType.fbs";
+include "Torappu_CGGalleryCGCompositeData.fbs";
+
+table Torappu_CGGalleryCGData {
+	cgId:string;
+	sortId:int32;
+	compositeType:Torappu_CGGalleryCGCompositeType;
+	compositeList:[Torappu_CGGalleryCGCompositeData];
+	storySetId:string;
+}
+
+
+root_type Torappu_CGGalleryCGData;

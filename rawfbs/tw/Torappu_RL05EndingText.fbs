@@ -18,6 +18,7 @@ table Torappu_RL05EndingText {
 	summaryHoldCandle:string;
 	summaryHoldCandleRecruit:string;
 	summaryHoldCandleUpgrade:string;
+	summaryExpeditionEndingFourToFive:string;
 	summaryExchangeSpZoneGet:string;
 	summaryMeetShopSpZone:string;
 	summaryBattleFailSpZone:string;

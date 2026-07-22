@@ -6,6 +6,11 @@ include "Torappu_MailSenderData.fbs";
 include "Torappu_EmoticonData.fbs";
 include "Dict_2_System_String_Torappu_StoryVariantData_.fbs";
 include "Dict_2_System_String_Torappu_GuidebookGroupData_.fbs";
+include "Torappu_PCKeyData.fbs";
+include "Torappu_ResolutionSettingItemData.fbs";
+include "Torappu_ArtGalleryCollectData.fbs";
+include "Torappu_MagazineLeafData.fbs";
+include "Torappu_StickerData.fbs";
 
 table Torappu_DisplayMetaData {
 	playerAvatarData:Torappu_PlayerAvatarData;
@@ -16,6 +21,11 @@ table Torappu_DisplayMetaData {
 	emoticonData:Torappu_EmoticonData;
 	storyVariantData:[Dict_2_System_String_Torappu_StoryVariantData_];
 	guidebookGroupDatas:[Dict_2_System_String_Torappu_GuidebookGroupData_];
+	pcKeyData:Torappu_PCKeyData;
+	resolutionSettingList:[Torappu_ResolutionSettingItemData];
+	artGalleryCollectData:Torappu_ArtGalleryCollectData;
+	magazineLeafData:Torappu_MagazineLeafData;
+	stickerData:Torappu_StickerData;
 }
 
 

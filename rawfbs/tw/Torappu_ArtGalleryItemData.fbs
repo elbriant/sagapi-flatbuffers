@@ -1,0 +1,9 @@
+
+table Torappu_ArtGalleryItemData {
+	id:string;
+	groupType:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ArtGalleryItemData;

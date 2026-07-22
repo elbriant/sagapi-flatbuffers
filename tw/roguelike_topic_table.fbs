@@ -228,7 +228,9 @@ enum Torappu_ItemType : int32 {
 	VOUCHER_SKIN_V2 = 87,
 	RANDOM_VOUCHER_SKIN = 88,
 	ACT1VHALFIDLE_ITEM = 89,
-	PLOT_ITEM = 90
+	PLOT_ITEM = 90,
+	MAGAZINE_LEAF = 91,
+	STICKER = 92
 }
 
 table Torappu_RoguelikeTopicBP {
@@ -1341,7 +1343,14 @@ enum Torappu_RoguelikeGameChoiceType : int32 {
 	KILL = 13,
 	USE_STASHED_TICKET = 14,
 	EXPEDITION_ALL = 15,
-	EXPEDITION_RETURN_ALL = 16
+	EXPEDITION_RETURN_ALL = 16,
+	PACIFY_WRATH = 17,
+	GILD_COPPER = 18,
+	ITEM_REROLL = 19,
+	ITEM_TOP_UP = 20,
+	GILD_COPPER_ALL = 21,
+	JUMP_PROB = 22,
+	JUMP = 23
 }
 
 enum Torappu_RoguelikeChoiceLeftDecoType : int32 {
@@ -1455,7 +1464,7 @@ enum Torappu_RoguelikeEventType : int32 {
 	STASHED_RECRUIT = 524288,
 	SPECIAL_ZONE = 1048576,
 	BATTLES = 7,
-	CHOICES = 913136,
+	CHOICES = 1961712,
 	EVENTS = 1965816,
 	ALL = 1965823
 }
@@ -2823,6 +2832,7 @@ table Torappu_RoguelikeCopperData {
 	poemList:[string];
 	alwaysShowCountDown:bool;
 	buffItemIdList:[string];
+	isAllLuckyLevel:bool;
 }
 
 
@@ -2864,9 +2874,27 @@ table Dict_2_System_String_Torappu_RoguelikeCopperDivineData_ {
 
 
 
+table Torappu_RoguelikeCopperGildTypeData {
+	gildTypeId:string;
+	gildName:string;
+	gildDesc:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_RoguelikeCopperGildTypeData_ {
+	dict_key:string;
+	dict_value:Torappu_RoguelikeCopperGildTypeData;
+}
+
+
+
 table Torappu_RoguelikeCopperModuleConsts {
 	copperDrawMaxNum:int32;
 	copperDrawMinNum:int32;
+	copperAllLuckyLevelGildId:string;
+	copperDrawFreezeCostItemId:string;
+	copperDrawFreezeCostCount:[int32];
 }
 
 
@@ -2874,6 +2902,7 @@ table Torappu_RoguelikeCopperModuleConsts {
 table Torappu_RoguelikeCopperModuleData {
 	copperData:[Dict_2_System_String_Torappu_RoguelikeCopperData_];
 	copperDivineData:[Dict_2_System_String_Torappu_RoguelikeCopperDivineData_];
+	copperGildTypeData:[Dict_2_System_String_Torappu_RoguelikeCopperGildTypeData_];
 	changeCopperMap:[Dict_2_System_String_System_String_];
 	moduleConsts:Torappu_RoguelikeCopperModuleConsts;
 }
@@ -2888,6 +2917,7 @@ table Torappu_RoguelikeWrathData {
 	levelName:string;
 	functionDesc:string;
 	desc:string;
+	isPacified:bool;
 }
 
 
@@ -2903,6 +2933,7 @@ table Torappu_RoguelikeWrathModuleConsts {
 	getWrathTransition:string;
 	getWrathToast:string;
 	hiddenWrathType:string;
+	pacifiedWrathLevel:int32;
 }
 
 
@@ -3475,6 +3506,7 @@ table Torappu_RL05EndingText {
 	summaryHoldCandle:string;
 	summaryHoldCandleRecruit:string;
 	summaryHoldCandleUpgrade:string;
+	summaryExpeditionEndingFourToFive:string;
 	summaryExchangeSpZoneGet:string;
 	summaryMeetShopSpZone:string;
 	summaryBattleFailSpZone:string;

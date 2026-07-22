@@ -1,0 +1,9 @@
+
+table Torappu_PlayerAvatarLimitData {
+	avatarId:string;
+	descShowTs:int64;
+	descHideTs:int64;
+}
+
+
+root_type Torappu_PlayerAvatarLimitData;

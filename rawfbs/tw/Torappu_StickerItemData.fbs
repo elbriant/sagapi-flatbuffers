@@ -1,0 +1,16 @@
+include "Torappu_StickerType.fbs";
+include "Torappu_ItemRarity.fbs";
+
+table Torappu_StickerItemData {
+	id:string;
+	name:string;
+	stickerType:Torappu_StickerType;
+	sortId:int32;
+	desc:string;
+	usage:string;
+	approach:string;
+	rarity:Torappu_ItemRarity;
+}
+
+
+root_type Torappu_StickerItemData;
