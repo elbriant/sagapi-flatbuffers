@@ -1,0 +1,13 @@
+include "Dict_2_System_Int32_List_1_Torappu_ReturnItemData__.fbs";
+
+table Torappu_ReturnCheckinGpRewardData {
+	groupId:string;
+	getTime:int32;
+	bindGPGoodId:string;
+	totalCheckInDay:int32;
+	iconId:string;
+	rewardDict:[Dict_2_System_Int32_List_1_Torappu_ReturnItemData__];
+}
+
+
+root_type Torappu_ReturnCheckinGpRewardData;

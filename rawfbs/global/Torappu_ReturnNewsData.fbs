@@ -1,0 +1,17 @@
+include "Torappu_ReturnNewsType.fbs";
+
+table Torappu_ReturnNewsData {
+	groupId:string;
+	sortId:int32;
+	tabTitle:string;
+	tabIcon:string;
+	title:string;
+	desc:string;
+	imgId:string;
+	iconId:string;
+	jumpType:Torappu_ReturnNewsType;
+	jumpPlace:string;
+}
+
+
+root_type Torappu_ReturnNewsData;

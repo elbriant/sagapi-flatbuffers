@@ -1,0 +1,9 @@
+include "Torappu_ReturnPriceItemData.fbs";
+
+table Torappu_ReturnPriceGroupData {
+	groupId:string;
+	content:[Torappu_ReturnPriceItemData];
+}
+
+
+root_type Torappu_ReturnPriceGroupData;

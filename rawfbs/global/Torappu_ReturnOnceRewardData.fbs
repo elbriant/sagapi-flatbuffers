@@ -1,0 +1,9 @@
+include "Torappu_ReturnItemData.fbs";
+
+table Torappu_ReturnOnceRewardData {
+	groupId:string;
+	rewardList:[Torappu_ReturnItemData];
+}
+
+
+root_type Torappu_ReturnOnceRewardData;

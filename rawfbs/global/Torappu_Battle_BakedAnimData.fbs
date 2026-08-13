@@ -1,0 +1,12 @@
+include "Dict_2_System_String_Dict_2_System_Int32_Torappu_Battle_BakedMountPointData__.fbs";
+include "Dict_2_System_String_Torappu_Battle_BakedEventTimeline_.fbs";
+
+table Torappu_Battle_BakedAnimData {
+	md5:string;
+	skipZeroFrameUpdate:bool;
+	bakedMPDatas:[Dict_2_System_String_Dict_2_System_Int32_Torappu_Battle_BakedMountPointData__];
+	bakedEvents:[Dict_2_System_String_Torappu_Battle_BakedEventTimeline_];
+}
+
+
+root_type Torappu_Battle_BakedAnimData;

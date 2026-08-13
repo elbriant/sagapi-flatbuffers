@@ -1,0 +1,9 @@
+include "Torappu_AVGDialogPresetData.fbs";
+
+table Torappu_AVGDialogSettingData {
+	defaultPresetId:int32;
+	presetList:[Torappu_AVGDialogPresetData];
+}
+
+
+root_type Torappu_AVGDialogSettingData;

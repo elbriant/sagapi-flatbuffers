@@ -589,6 +589,13 @@ table Torappu_CharacterInst_Metadata {
 
 
 
+table Torappu_CharacterInst_TalentInst {
+	prefabKey:string;
+	blackboard:[Torappu_Blackboard_DataPair];
+}
+
+
+
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	position:Torappu_GridPosition;
 	direction:Torappu_SharedConsts_Direction;
@@ -603,6 +610,7 @@ table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
+	overrideTalents:[Torappu_CharacterInst_TalentInst];
 }
 
 
@@ -619,6 +627,7 @@ table Torappu_LevelData_PredefinedData_PredefinedCard {
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
+	overrideTalents:[Torappu_CharacterInst_TalentInst];
 }
 
 
@@ -636,6 +645,7 @@ table Torappu_LevelData_PredefinedData_PredefinedTokenCard {
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
+	overrideTalents:[Torappu_CharacterInst_TalentInst];
 }
 
 

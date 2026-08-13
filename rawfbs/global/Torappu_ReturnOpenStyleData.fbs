@@ -1,0 +1,13 @@
+
+table Torappu_ReturnOpenStyleData {
+	sortId:int32;
+	imgBkgId:string;
+	imgEntryId:string;
+	imgIconId:string;
+	pauseDesc:string;
+	title:string;
+	name:string;
+}
+
+
+root_type Torappu_ReturnOpenStyleData;

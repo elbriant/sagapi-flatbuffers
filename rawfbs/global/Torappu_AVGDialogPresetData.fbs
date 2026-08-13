@@ -1,0 +1,11 @@
+
+table Torappu_AVGDialogPresetData {
+	id:int32;
+	name:string;
+	nameFontSize:int32;
+	messageFontSize:int32;
+	messageMinHeight:float;
+}
+
+
+root_type Torappu_AVGDialogPresetData;

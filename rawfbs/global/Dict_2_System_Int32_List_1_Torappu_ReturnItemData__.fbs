@@ -1,0 +1,9 @@
+include "Torappu_ReturnItemData.fbs";
+
+table Dict_2_System_Int32_List_1_Torappu_ReturnItemData__ {
+	dict_key:int32;
+	dict_value:[Torappu_ReturnItemData];
+}
+
+
+root_type Dict_2_System_Int32_List_1_Torappu_ReturnItemData__;

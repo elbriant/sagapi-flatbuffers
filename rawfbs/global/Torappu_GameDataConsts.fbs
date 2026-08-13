@@ -6,6 +6,7 @@ include "Torappu_ListDict_2_System_Int32_System_Int32_.fbs";
 include "Dict_2_System_String_Torappu_TermDescriptionData_.fbs";
 include "Dict_2_System_String_Torappu_SubProfessionAttackType_.fbs";
 include "Torappu_GameDataConsts_FeverGameData.fbs";
+include "Torappu_GameDataConsts_AVGReaderModeDefaultSetting.fbs";
 
 table Torappu_GameDataConsts {
 	maxPlayerLevel:int32;
@@ -132,6 +133,7 @@ table Torappu_GameDataConsts {
 	birthdaySettingShowStageId:string;
 	isBirthdayFuncEnabled:bool;
 	isSoCharEnabled:bool;
+	avgReaderModeDefaultSetting:Torappu_GameDataConsts_AVGReaderModeDefaultSetting;
 }
 
 

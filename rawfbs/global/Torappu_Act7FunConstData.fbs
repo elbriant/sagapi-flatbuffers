@@ -1,0 +1,8 @@
+
+table Torappu_Act7FunConstData {
+	defaultStage:string;
+	homepageSwitchStageId:string;
+}
+
+
+root_type Torappu_Act7FunConstData;

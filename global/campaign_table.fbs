@@ -346,6 +346,31 @@ table Torappu_CampaignTrainingAllOpenTimeData {
 
 
 
+table UnityEngine_Vector2 {
+}
+
+
+
+table Torappu_CampaignStageMapData {
+	position:UnityEngine_Vector2;
+}
+
+
+
+table Dict_2_System_String_Torappu_CampaignStageMapData_ {
+	dict_key:string;
+	dict_value:Torappu_CampaignStageMapData;
+}
+
+
+
+table Dict_2_System_String_Dict_2_System_String_Torappu_CampaignStageMapData__ {
+	dict_key:string;
+	dict_value:[Dict_2_System_String_Torappu_CampaignStageMapData_];
+}
+
+
+
 table Torappu_CampaignTable {
 	campaigns:[Dict_2_System_String_Torappu_CampaignData_];
 	campaignGroups:[Dict_2_System_String_Torappu_CampaignGroupData_];
@@ -357,6 +382,7 @@ table Torappu_CampaignTable {
 	campaignRotateStageOpenTimes:[Torappu_CampaignRotateOpenTimeData];
 	campaignTrainingStageOpenTimes:[Torappu_CampaignTrainingOpenTimeData];
 	campaignTrainingAllOpenTimes:[Torappu_CampaignTrainingAllOpenTimeData];
+	campaignZoneMapData:[Dict_2_System_String_Dict_2_System_String_Torappu_CampaignStageMapData__];
 }
 
 

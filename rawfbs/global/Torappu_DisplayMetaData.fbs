@@ -11,6 +11,7 @@ include "Torappu_ResolutionSettingItemData.fbs";
 include "Torappu_ArtGalleryCollectData.fbs";
 include "Torappu_MagazineLeafData.fbs";
 include "Torappu_StickerData.fbs";
+include "Torappu_AVGDialogSettingData.fbs";
 
 table Torappu_DisplayMetaData {
 	playerAvatarData:Torappu_PlayerAvatarData;
@@ -26,6 +27,7 @@ table Torappu_DisplayMetaData {
 	artGalleryCollectData:Torappu_ArtGalleryCollectData;
 	magazineLeafData:Torappu_MagazineLeafData;
 	stickerData:Torappu_StickerData;
+	avgDialogSettingData:Torappu_AVGDialogSettingData;
 }
 
 

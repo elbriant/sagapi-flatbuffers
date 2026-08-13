@@ -1,0 +1,8 @@
+include "Dict_2_System_String_Torappu_Battle_BakedAnimData_.fbs";
+
+table Torappu_Battle_BakedSpineData {
+	bakedAnimDatas:[Dict_2_System_String_Torappu_Battle_BakedAnimData_];
+}
+
+
+root_type Torappu_Battle_BakedSpineData;

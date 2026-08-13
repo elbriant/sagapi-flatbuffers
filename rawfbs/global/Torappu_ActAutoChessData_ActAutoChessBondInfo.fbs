@@ -1,3 +1,4 @@
+include "Torappu_ActAutoChessBondActiveConditionType.fbs";
 include "Torappu_ActAutoChessBondActiveType.fbs";
 
 table Torappu_ActAutoChessData_ActAutoChessBondInfo {
@@ -6,11 +7,15 @@ table Torappu_ActAutoChessData_ActAutoChessBondInfo {
 	desc:string;
 	iconId:string;
 	activeCount:int32;
+	activeCondition:Torappu_ActAutoChessBondActiveConditionType;
+	activeConditionTemplate:string;
+	activeParamList:[string];
 	effectId:string;
 	activeType:Torappu_ActAutoChessBondActiveType;
 	identifier:int32;
 	weight:int32;
 	isActiveInDeck:bool;
+	maxInactiveBondCount:int32;
 	descParamBaseList:[string];
 	descParamPerStackList:[string];
 	noStack:bool;

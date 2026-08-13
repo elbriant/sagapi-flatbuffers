@@ -1,0 +1,6 @@
+
+enum Torappu_ReturnMissionGroupType : int32 {
+	DAILY = 0,
+	NORMAL = 1,
+	DIFF = 2
+}

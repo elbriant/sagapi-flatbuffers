@@ -1,0 +1,9 @@
+
+table Torappu_Act7FunEasterEggData {
+	eastereggId:string;
+	charId:string;
+	newsDesc:string;
+}
+
+
+root_type Torappu_Act7FunEasterEggData;

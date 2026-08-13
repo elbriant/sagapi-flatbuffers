@@ -49,6 +49,7 @@ include "Dict_2_System_String_Torappu_RoguelikePredefinedStyleData_.fbs";
 include "Torappu_RoguelikePredefinedConstStyleData.fbs";
 include "Dict_2_System_String_Torappu_RoguelikeGameExploreToolData_.fbs";
 include "Dict_2_System_String_Torappu_RoguelikeRollNodeData_.fbs";
+include "Dict_2_System_String_Torappu_RoguelikeRelicTipsData_.fbs";
 include "Torappu_RoguelikeActivityData.fbs";
 
 table Torappu_RoguelikeTopicDetail {
@@ -103,6 +104,7 @@ table Torappu_RoguelikeTopicDetail {
 	styleConfig:Torappu_RoguelikePredefinedConstStyleData;
 	exploreTools:[Dict_2_System_String_Torappu_RoguelikeGameExploreToolData_];
 	rollNodeData:[Dict_2_System_String_Torappu_RoguelikeRollNodeData_];
+	relicTipsData:[Dict_2_System_String_Torappu_RoguelikeRelicTipsData_];
 	activity:Torappu_RoguelikeActivityData;
 }
 

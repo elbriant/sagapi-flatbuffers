@@ -5,6 +5,13 @@ table Torappu_Act24SideData_ConstData {
 	mealDayTimesLimit:int32;
 	toolMaximum:int32;
 	stageCanNotUseToTool:[string];
+	hunterGuideRewardItemId:string;
+	hunterGuideRewardItemType:string;
+	hunterGuideRewardItemCount:int32;
+	hunterGuideDetailTabPosition:int32;
+	taskRewardItemNoIconDisplayId:string;
+	specialLevelUnlockTaskId:string;
+	missionProgressFormat:string;
 	gachaDefaultProb:float;
 	gachaExtraProb:float;
 }

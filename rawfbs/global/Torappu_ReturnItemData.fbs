@@ -1,0 +1,11 @@
+include "Torappu_ItemType.fbs";
+
+table Torappu_ReturnItemData {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+	sortId:int32;
+}
+
+
+root_type Torappu_ReturnItemData;

@@ -4,6 +4,7 @@ include "Torappu_CharacterData_UniqueEquipPair.fbs";
 include "Torappu_CharacterData_MasterInfo.fbs";
 include "Torappu_CharacterInst_Metadata.fbs";
 include "Torappu_Blackboard_DataPair.fbs";
+include "Torappu_CharacterInst_TalentInst.fbs";
 
 table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	position:Torappu_GridPosition;
@@ -19,6 +20,7 @@ table Torappu_LevelData_PredefinedData_PredefinedCharacter {
 	skinId:string;
 	tmplId:string;
 	overrideSkillBlackboard:[Torappu_Blackboard_DataPair];
+	overrideTalents:[Torappu_CharacterInst_TalentInst];
 }
 
 

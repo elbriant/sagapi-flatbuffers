@@ -1,18 +1,25 @@
-include "Torappu_ReturnConst.fbs";
-include "Torappu_ItemBundle.fbs";
-include "Torappu_ReturnIntroData.fbs";
-include "Dict_2_System_String_List_1_Torappu_ReturnDailyTaskData__.fbs";
-include "Torappu_ReturnLongTermTaskData.fbs";
-include "Torappu_ReturnCheckinData.fbs";
+include "Dict_2_System_String_Torappu_ReturnGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnOnceRewardData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnCheckinGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnPriceGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnMissionGroupData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnCheckinGpRewardData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnNewsData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnGiftPackagePicData_.fbs";
+include "Dict_2_System_String_Torappu_ReturnOpenStyleData_.fbs";
+include "Torappu_ReturnConstData.fbs";
 
 table Torappu_ReturnData {
-	constData:Torappu_ReturnConst;
-	onceRewards:[Torappu_ItemBundle];
-	intro:[Torappu_ReturnIntroData];
-	returnDailyTaskDic:[Dict_2_System_String_List_1_Torappu_ReturnDailyTaskData__];
-	returnLongTermTaskList:[Torappu_ReturnLongTermTaskData];
-	creditsList:[Torappu_ItemBundle];
-	checkinRewardList:[Torappu_ReturnCheckinData];
+	groupDataMap:[Dict_2_System_String_Torappu_ReturnGroupData_];
+	onceDataMap:[Dict_2_System_String_Torappu_ReturnOnceRewardData_];
+	checkinDataMap:[Dict_2_System_String_Torappu_ReturnCheckinGroupData_];
+	priceDataMap:[Dict_2_System_String_Torappu_ReturnPriceGroupData_];
+	missionDataMap:[Dict_2_System_String_Torappu_ReturnMissionGroupData_];
+	checkinGpData:[Dict_2_System_String_Torappu_ReturnCheckinGpRewardData_];
+	newsDataMap:[Dict_2_System_String_Torappu_ReturnNewsData_];
+	giftPackagePicDataMap:[Dict_2_System_String_Torappu_ReturnGiftPackagePicData_];
+	openStyleData:[Dict_2_System_String_Torappu_ReturnOpenStyleData_];
+	constData:Torappu_ReturnConstData;
 }
 
 

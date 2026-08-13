@@ -1,0 +1,5 @@
+
+enum Torappu_ReturnAllOpenType : int32 {
+	RESOURCE = 0,
+	CAMP = 1
+}

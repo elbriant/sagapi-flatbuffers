@@ -1,0 +1,9 @@
+include "Torappu_Battle_BakedMountPointData.fbs";
+
+table Dict_2_System_Int32_Torappu_Battle_BakedMountPointData_ {
+	dict_key:int32;
+	dict_value:Torappu_Battle_BakedMountPointData;
+}
+
+
+root_type Dict_2_System_Int32_Torappu_Battle_BakedMountPointData_;

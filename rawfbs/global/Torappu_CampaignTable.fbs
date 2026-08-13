@@ -8,6 +8,7 @@ include "Torappu_CampaignConstTable.fbs";
 include "Torappu_CampaignRotateOpenTimeData.fbs";
 include "Torappu_CampaignTrainingOpenTimeData.fbs";
 include "Torappu_CampaignTrainingAllOpenTimeData.fbs";
+include "Dict_2_System_String_Dict_2_System_String_Torappu_CampaignStageMapData__.fbs";
 
 table Torappu_CampaignTable {
 	campaigns:[Dict_2_System_String_Torappu_CampaignData_];
@@ -20,6 +21,7 @@ table Torappu_CampaignTable {
 	campaignRotateStageOpenTimes:[Torappu_CampaignRotateOpenTimeData];
 	campaignTrainingStageOpenTimes:[Torappu_CampaignTrainingOpenTimeData];
 	campaignTrainingAllOpenTimes:[Torappu_CampaignTrainingAllOpenTimeData];
+	campaignZoneMapData:[Dict_2_System_String_Dict_2_System_String_Torappu_CampaignStageMapData__];
 }
 
 

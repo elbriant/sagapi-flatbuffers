@@ -20,6 +20,7 @@ table Torappu_AutoChessData_AutoChessConstData {
 	enemyAtkFactor:float;
 	enemyDefFactor:float;
 	enemyMagicResistanceFactor:float;
+	singleReconnectTime:int32;
 	specialPhaseStayTime:int32;
 	hintTimeSpecialPhase:int32;
 	hintTimeNormalPhase:int32;
@@ -37,6 +38,7 @@ table Torappu_AutoChessData_AutoChessConstData {
 	bossTrailerStartRound:int32;
 	singleClosureStayTime:float;
 	matchTimeMax:float;
+	enemyDataLevelId:string;
 }
 
 

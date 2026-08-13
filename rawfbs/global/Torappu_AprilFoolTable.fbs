@@ -4,6 +4,7 @@ include "Torappu_AprilFoolConst.fbs";
 include "Torappu_Act4funData.fbs";
 include "Torappu_Act5FunData.fbs";
 include "Torappu_Act6FunData.fbs";
+include "Torappu_Act7FunData.fbs";
 
 table Torappu_AprilFoolTable {
 	stages:[Dict_2_System_String_Torappu_AprilFoolStageData_];
@@ -12,6 +13,7 @@ table Torappu_AprilFoolTable {
 	act4FunData:Torappu_Act4funData;
 	act5FunData:Torappu_Act5FunData;
 	act6FunData:Torappu_Act6FunData;
+	act7FunData:Torappu_Act7FunData;
 }
 
 

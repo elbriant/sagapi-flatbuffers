@@ -1,0 +1,9 @@
+
+table Torappu_Act7FunSpineHolderData {
+	holderId:int32;
+	charId:string;
+	direction:bool;
+}
+
+
+root_type Torappu_Act7FunSpineHolderData;

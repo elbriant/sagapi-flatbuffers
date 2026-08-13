@@ -1,0 +1,5 @@
+
+enum Torappu_KeyCodeType : int32 {
+	KEYBOARD = 0,
+	MOUSE = 1
+}

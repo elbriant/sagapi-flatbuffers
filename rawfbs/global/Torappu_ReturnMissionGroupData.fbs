@@ -1,0 +1,12 @@
+include "Torappu_ReturnMissionGroupType.fbs";
+include "Torappu_ReturnMissionItemData.fbs";
+
+table Torappu_ReturnMissionGroupData {
+	groupId:string;
+	sortId:int32;
+	type:Torappu_ReturnMissionGroupType;
+	missionList:[Torappu_ReturnMissionItemData];
+}
+
+
+root_type Torappu_ReturnMissionGroupData;

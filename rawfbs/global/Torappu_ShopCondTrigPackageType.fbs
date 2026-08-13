@@ -3,5 +3,7 @@ enum Torappu_ShopCondTrigPackageType : int32 {
 	NONE = 0,
 	RETURN_PROGRESS = 1,
 	RETURN_ONCE = 2,
-	NEW_PROGRESS = 3
+	NEW_PROGRESS = 3,
+	CHOOSE_REGISTER_TIME = 4,
+	CHOOSE_NEWBIE = 5
 }

@@ -1,0 +1,10 @@
+include "Torappu_ReturnAllOpenType.fbs";
+
+table Torappu_ReturnOpenData {
+	allOpenType:Torappu_ReturnAllOpenType;
+	allOpenTime:int32;
+	desc:string;
+}
+
+
+root_type Torappu_ReturnOpenData;

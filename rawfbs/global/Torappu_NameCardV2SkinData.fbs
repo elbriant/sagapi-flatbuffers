@@ -1,6 +1,6 @@
 include "Torappu_NameCardV2SkinType.fbs";
 include "Torappu_ItemRarity.fbs";
-include "Torappu_NameCardV2TimeLimitInfo.fbs";
+include "Dict_2_System_String_Torappu_NameCardV2TimeLimitInfo_.fbs";
 
 table Torappu_NameCardV2SkinData {
 	id:string;
@@ -23,7 +23,7 @@ table Torappu_NameCardV2SkinData {
 	skinTmplCnt:int32;
 	canChangeTmpl:bool;
 	isTimeLimit:bool;
-	timeLimitInfoList:[Torappu_NameCardV2TimeLimitInfo];
+	timeLimitInfoList:[Dict_2_System_String_Torappu_NameCardV2TimeLimitInfo_];
 }
 
 

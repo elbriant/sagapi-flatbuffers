@@ -10,7 +10,8 @@ enum Torappu_GachaRuleType : int32 {
 	CLASSIC_ATTAIN = 7,
 	SPECIAL = 8,
 	DOUBLE = 9,
-	CLASSIC_DOUBLE = 10
+	CLASSIC_DOUBLE = 10,
+	BACKFLOW = 11
 }
 
 table Newtonsoft_Json_Linq_JObject {

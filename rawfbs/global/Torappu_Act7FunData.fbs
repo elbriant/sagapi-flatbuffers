@@ -1,0 +1,17 @@
+include "Dict_2_System_String_Torappu_Act7FunStageAdditionData_.fbs";
+include "Dict_2_System_String_Torappu_Act7FunEasterEggData_.fbs";
+include "Dict_2_System_String_Torappu_Act7FunSpineGroupData_.fbs";
+include "Dict_2_System_String_Torappu_Act7FunCharAnimData_.fbs";
+include "Torappu_Act7FunConstData.fbs";
+
+table Torappu_Act7FunData {
+	stageAdditionMap:[Dict_2_System_String_Torappu_Act7FunStageAdditionData_];
+	easterEggData:[Dict_2_System_String_Torappu_Act7FunEasterEggData_];
+	spineGroupData:[Dict_2_System_String_Torappu_Act7FunSpineGroupData_];
+	charAnimData:[Dict_2_System_String_Torappu_Act7FunCharAnimData_];
+	stageRewardList:[string];
+	constData:Torappu_Act7FunConstData;
+}
+
+
+root_type Torappu_Act7FunData;

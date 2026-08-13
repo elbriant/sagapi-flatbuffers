@@ -1,0 +1,20 @@
+include "Torappu_ReturnOpenData.fbs";
+
+table Torappu_ReturnGroupData {
+	groupId:string;
+	taskDays:int32;
+	onceGroupId:string;
+	missionGroupId:[string];
+	checkinGroupId:string;
+	priceGroupId:string;
+	newsGroupId:[string];
+	giftPackageIdList:[string];
+	checkinGpId:string;
+	gachaPoolId:string;
+	allOpenDays:int32;
+	campAllOpenDays:int32;
+	allOpenData:[Torappu_ReturnOpenData];
+}
+
+
+root_type Torappu_ReturnGroupData;

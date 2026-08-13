@@ -9,6 +9,7 @@ include "Torappu_QuestStageData.fbs";
 include "Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_.fbs";
 include "Dict_2_System_String_Torappu_StageData_StageDropInfo_.fbs";
 include "Dict_2_System_String_List_1_System_String__.fbs";
+include "Dict_2_System_String_Torappu_Act24SideData_HuntDatabaseData_.fbs";
 include "Torappu_Act24SideData_ConstData.fbs";
 
 table Torappu_Act24SideData {
@@ -23,6 +24,8 @@ table Torappu_Act24SideData {
 	missionDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_];
 	meldingDropDict:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
 	stageMapPreviewDict:[Dict_2_System_String_List_1_System_String__];
+	huntDatabaseDict:[Dict_2_System_String_Torappu_Act24SideData_HuntDatabaseData_];
+	stageIdToUnlockItemIdDict:[Dict_2_System_String_System_String_];
 	constData:Torappu_Act24SideData_ConstData;
 }
 

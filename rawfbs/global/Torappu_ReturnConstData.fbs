@@ -1,0 +1,9 @@
+
+table Torappu_ReturnConstData {
+	pointItemId:string;
+	returnPriceDesc:string;
+	oldReturnGroupId:string;
+}
+
+
+root_type Torappu_ReturnConstData;

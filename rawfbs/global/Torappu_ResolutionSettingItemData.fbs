@@ -5,6 +5,7 @@ table Torappu_ResolutionSettingItemData {
 	resolutionHeight:int32;
 	resolutionText:string;
 	isFullScreen:bool;
+	isBorderless:bool;
 }
 
 

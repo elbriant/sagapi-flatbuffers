@@ -1,0 +1,7 @@
+
+enum Torappu_ReturnNewsType : int32 {
+	NONE = 0,
+	MAIN_SS = 1,
+	ROGUE = 2,
+	SANDBOX = 3
+}

@@ -1,12 +1,7 @@
-include "Torappu_UI_KeyBoardVirtualButtonEnum.fbs";
-include "Torappu_KeySettingGroup.fbs";
-include "Torappu_KeyEffectGroup.fbs";
 
 table Torappu_KeySettingItemData {
-	funcId:Torappu_UI_KeyBoardVirtualButtonEnum;
+	funcId:string;
 	funcName:string;
-	funcType:Torappu_KeySettingGroup;
-	keyEffectGroup:Torappu_KeyEffectGroup;
 	canBeSet:bool;
 	defaultKeyId:string;
 	sortId:int32;

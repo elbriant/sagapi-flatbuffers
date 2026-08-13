@@ -1,0 +1,9 @@
+include "Torappu_Act7FunSpineHolderData.fbs";
+
+table Torappu_Act7FunSpineGroupData {
+	spineGroupId:string;
+	holderData:[Torappu_Act7FunSpineHolderData];
+}
+
+
+root_type Torappu_Act7FunSpineGroupData;

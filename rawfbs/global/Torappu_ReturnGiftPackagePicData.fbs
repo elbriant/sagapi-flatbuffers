@@ -1,0 +1,9 @@
+
+table Torappu_ReturnGiftPackagePicData {
+	giftPackageId:string;
+	giftPackagePic:string;
+	sortId:int32;
+}
+
+
+root_type Torappu_ReturnGiftPackagePicData;

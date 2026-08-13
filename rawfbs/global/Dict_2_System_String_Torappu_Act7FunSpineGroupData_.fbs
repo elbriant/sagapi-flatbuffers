@@ -1,0 +1,9 @@
+include "Torappu_Act7FunSpineGroupData.fbs";
+
+table Dict_2_System_String_Torappu_Act7FunSpineGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_Act7FunSpineGroupData;
+}
+
+
+root_type Dict_2_System_String_Torappu_Act7FunSpineGroupData_;

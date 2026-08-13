@@ -1,0 +1,14 @@
+
+table Torappu_AutoChessBattleMiscConfig_EffectConfig {
+	goldenEffectId:string;
+	buildableTileHintEffect:string;
+	maskEffectWhenGainChess:string;
+	deckRegionEffect:string;
+	tempChessRegionClearWarningEffect:string;
+	garrisonHintEffect:string;
+	chessUpgradeHintEffect:string;
+	equipComboHintEffect:string;
+}
+
+
+root_type Torappu_AutoChessBattleMiscConfig_EffectConfig;

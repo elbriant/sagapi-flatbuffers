@@ -33,6 +33,7 @@ table Torappu_ActivityEnemyDuelConstData {
 	minBetCd:float;
 	defaultEmoticonItemId:string;
 	defaultEmoticonPicId:string;
+	defaultEnemyTag:string;
 	modeOperationRoundNumber:int32;
 	modeOperationInitialScore:int32;
 	modeOperationMaxScore:int32;

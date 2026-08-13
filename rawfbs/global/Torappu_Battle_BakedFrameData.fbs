@@ -1,0 +1,9 @@
+
+table Torappu_Battle_BakedFrameData {
+	position:[float];
+	rotation:[float];
+	scale:[float];
+}
+
+
+root_type Torappu_Battle_BakedFrameData;

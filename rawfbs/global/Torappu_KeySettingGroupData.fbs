@@ -1,0 +1,20 @@
+include "Torappu_KeySettingGroup.fbs";
+include "Torappu_KeyEffectGroup.fbs";
+include "Torappu_ActivityType.fbs";
+include "Torappu_KeySettingItemData.fbs";
+
+table Torappu_KeySettingGroupData {
+	groupId:string;
+	name:string;
+	funcType:Torappu_KeySettingGroup;
+	keyEffectGroup:Torappu_KeyEffectGroup;
+	isHidden:bool;
+	relatedActType:Torappu_ActivityType;
+	gameModeTag:string;
+	sortId:int32;
+	startTs:int64;
+	itemList:[Torappu_KeySettingItemData];
+}
+
+
+root_type Torappu_KeySettingGroupData;

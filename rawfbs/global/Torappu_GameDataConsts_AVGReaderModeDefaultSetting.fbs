@@ -1,0 +1,9 @@
+
+table Torappu_GameDataConsts_AVGReaderModeDefaultSetting {
+	defaultReaderFontsize:int32;
+	defaultReaderLinespace:int32;
+	defaultReaderBackgroundAlpha:int32;
+}
+
+
+root_type Torappu_GameDataConsts_AVGReaderModeDefaultSetting;

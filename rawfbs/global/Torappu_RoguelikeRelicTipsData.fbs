@@ -1,0 +1,8 @@
+
+table Torappu_RoguelikeRelicTipsData {
+	itemId:string;
+	toastText:string;
+}
+
+
+root_type Torappu_RoguelikeRelicTipsData;

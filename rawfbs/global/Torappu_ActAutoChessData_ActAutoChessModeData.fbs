@@ -20,6 +20,7 @@ table Torappu_ActAutoChessData_ActAutoChessModeData {
 	activeBondIdList:[string];
 	inactiveBondIdList:[string];
 	inactiveEnemyKey:[string];
+	startTime:int64;
 }
 
 

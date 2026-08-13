@@ -1,0 +1,9 @@
+include "Torappu_ReturnMissionGroupData.fbs";
+
+table Dict_2_System_String_Torappu_ReturnMissionGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnMissionGroupData;
+}
+
+
+root_type Dict_2_System_String_Torappu_ReturnMissionGroupData_;

@@ -166,6 +166,14 @@ table Torappu_GameDataConsts_FeverGameData {
 
 
 
+table Torappu_GameDataConsts_AVGReaderModeDefaultSetting {
+	defaultReaderFontsize:int32;
+	defaultReaderLinespace:int32;
+	defaultReaderBackgroundAlpha:int32;
+}
+
+
+
 table Torappu_GameDataConsts {
 	maxPlayerLevel:int32;
 	playerExpMap:[int32];
@@ -291,6 +299,7 @@ table Torappu_GameDataConsts {
 	birthdaySettingShowStageId:string;
 	isBirthdayFuncEnabled:bool;
 	isSoCharEnabled:bool;
+	avgReaderModeDefaultSetting:Torappu_GameDataConsts_AVGReaderModeDefaultSetting;
 }
 
 

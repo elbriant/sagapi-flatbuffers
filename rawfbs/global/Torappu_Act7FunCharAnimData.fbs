@@ -1,0 +1,9 @@
+
+table Torappu_Act7FunCharAnimData {
+	charId:string;
+	failAnimId:string;
+	normalAnimIds:[string];
+}
+
+
+root_type Torappu_Act7FunCharAnimData;

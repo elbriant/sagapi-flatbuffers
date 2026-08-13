@@ -8,6 +8,7 @@ table Torappu_ActAutoChessData_ActAutoChessBandData {
 	effectId:string;
 	victorCount:int32;
 	bandRewardModulus:float;
+	updateTime:int64;
 }
 
 

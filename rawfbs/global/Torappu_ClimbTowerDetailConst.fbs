@@ -19,6 +19,7 @@ table Torappu_ClimbTowerDetailConst {
 	sweepOpenDifficultLayer:int32;
 	sweepCostCount:int32;
 	squadMemStartTime:int64;
+	recordNoResetStartTime:int64;
 }
 
 

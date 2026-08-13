@@ -8,6 +8,7 @@ table Torappu_AutoChessData_AutoChessBondInfoData {
 	icon:string;
 	isPower:bool;
 	bondOrder:int32;
+	isHiddenCharList:bool;
 }
 
 

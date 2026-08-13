@@ -1,0 +1,10 @@
+include "Torappu_Battle_BakedFrameData.fbs";
+
+table Torappu_Battle_BakedMountPointData {
+	isConstant:bool;
+	bakedStepInterval:int32;
+	frames:[Torappu_Battle_BakedFrameData];
+}
+
+
+root_type Torappu_Battle_BakedMountPointData;

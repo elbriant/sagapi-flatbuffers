@@ -230,18 +230,63 @@ table Torappu_OpenServerConst {
 
 
 
-table Torappu_ReturnConst {
-	startTime:int64;
-	systemTab_time:int32;
-	afkDays:int32;
-	unlockLv:int32;
-	unlockLevel:string;
-	juniorClear:bool;
-	ifvisitor:bool;
-	permMission_time:int32;
-	needPoints:int32;
-	defaultIntro:string;
-	pointId:string;
+enum Torappu_ReturnAllOpenType : int32 {
+	RESOURCE = 0,
+	CAMP = 1
+}
+
+table Torappu_ReturnOpenData {
+	allOpenType:Torappu_ReturnAllOpenType;
+	allOpenTime:int32;
+	desc:string;
+}
+
+
+
+table Torappu_ReturnGroupData {
+	groupId:string;
+	taskDays:int32;
+	onceGroupId:string;
+	missionGroupId:[string];
+	checkinGroupId:string;
+	priceGroupId:string;
+	newsGroupId:[string];
+	giftPackageIdList:[string];
+	checkinGpId:string;
+	gachaPoolId:string;
+	allOpenDays:int32;
+	campAllOpenDays:int32;
+	allOpenData:[Torappu_ReturnOpenData];
+}
+
+
+
+table Dict_2_System_String_Torappu_ReturnGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnGroupData;
+}
+
+
+
+table Torappu_ReturnItemData {
+	id:string;
+	count:int32;
+	type:Torappu_ItemType;
+	sortId:int32;
+}
+
+
+
+table Torappu_ReturnOnceRewardData {
+	groupId:string;
+	rewardList:[Torappu_ReturnItemData];
+}
+
+
+
+table Dict_2_System_String_Torappu_ReturnOnceRewardData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnOnceRewardData;
 }
 
 
@@ -254,136 +299,60 @@ table Torappu_ItemBundle {
 
 
 
-table Torappu_ReturnIntroData {
-	sort:int32;
-	pubTime:int64;
-	image:string;
-}
-
-
-
-table Torappu_ReturnDailyTaskData {
-	groupId:string;
-	id:string;
-	groupSortId:int32;
-	taskSortId:int32;
-	template:string;
-	param:[string];
-	desc:string;
-	rewards:[Torappu_MissionDisplayRewards];
-	playPoint:int32;
-}
-
-
-
-table Dict_2_System_String_List_1_Torappu_ReturnDailyTaskData__ {
-	dict_key:string;
-	dict_value:[Torappu_ReturnDailyTaskData];
-}
-
-
-
-table Torappu_ReturnLongTermTaskData {
-	id:string;
-	sortId:int32;
-	template:string;
-	param:[string];
-	desc:string;
-	rewards:[Torappu_MissionDisplayRewards];
-	playPoint:int32;
-}
-
-
-
-table Torappu_ReturnCheckinData {
-	isImportant:bool;
-	checkinRewardItems:[Torappu_ItemBundle];
-}
-
-
-
-table Torappu_ReturnData {
-	constData:Torappu_ReturnConst;
-	onceRewards:[Torappu_ItemBundle];
-	intro:[Torappu_ReturnIntroData];
-	returnDailyTaskDic:[Dict_2_System_String_List_1_Torappu_ReturnDailyTaskData__];
-	returnLongTermTaskList:[Torappu_ReturnLongTermTaskData];
-	creditsList:[Torappu_ItemBundle];
-	checkinRewardList:[Torappu_ReturnCheckinData];
-}
-
-
-
-table Torappu_ReturnV2Const {
-	startTime:int64;
-	unlockLv:int32;
-	unlockStage:string;
-	permMissionTime:int32;
-	pointId:string;
-	returnPriceDesc:string;
-	dailySupplyDesc:string;
-	oldGPId:string;
-}
-
-
-
-table Torappu_ReturnV2ItemData {
-	id:string;
-	type:Torappu_ItemType;
-	count:int32;
-	sortId:int32;
-}
-
-
-
-table Torappu_ReturnV2OnceRewardData {
-	groupId:string;
-	startTime:int64;
-	endTime:int64;
-	rewardList:[Torappu_ReturnV2ItemData];
-}
-
-
-
-table Torappu_ReturnV2CheckInRewardItemData {
-	sortId:int32;
-	isImportant:bool;
+table Torappu_ReturnCheckinItemData {
+	order:int32;
+	isKeyItem:bool;
 	rewardList:[Torappu_ItemBundle];
 }
 
 
 
-table Torappu_ReturnV2CheckInRewardData {
+table Torappu_ReturnCheckinGroupData {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
-	rewardList:[Torappu_ReturnV2CheckInRewardItemData];
+	checkinItemList:[Torappu_ReturnCheckinItemData];
 }
 
 
 
-table Torappu_ReturnV2PriceRewardData {
+table Dict_2_System_String_Torappu_ReturnCheckinGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnCheckinGroupData;
+}
+
+
+
+table Torappu_ReturnPriceItemData {
 	contentId:string;
 	sortId:int32;
 	pointRequire:int32;
 	desc:string;
-	iconId:string;
-	topIconId:string;
-	rewardList:[Torappu_ReturnV2ItemData];
+	displayReward:Torappu_ReturnItemData;
+	rewardList:[Torappu_ReturnItemData];
 }
 
 
 
-table Torappu_ReturnV2PriceRewardGroupData {
+table Torappu_ReturnPriceGroupData {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
-	contentList:[Torappu_ReturnV2PriceRewardData];
+	content:[Torappu_ReturnPriceItemData];
 }
 
 
 
-enum Torappu_ReturnV2JumpType : int32 {
+table Dict_2_System_String_Torappu_ReturnPriceGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnPriceGroupData;
+}
+
+
+
+enum Torappu_ReturnMissionGroupType : int32 {
+	DAILY = 0,
+	NORMAL = 1,
+	DIFF = 2
+}
+
+enum Torappu_ReturnJumpType : int32 {
 	NONE = 0,
 	ZONE_GROUP = 1,
 	ROGUE = 2,
@@ -392,74 +361,146 @@ enum Torappu_ReturnV2JumpType : int32 {
 	BUILDING = 5,
 	RECRUIT_BUILD = 6,
 	DAILY_MISSION = 7,
-	SANDBOX = 8
+	SANDBOX = 8,
+	MAIN_SS = 9
 }
 
-table Torappu_ReturnV2MissionItemData {
+table Torappu_ReturnMissionItemData {
 	missionId:string;
-	groupId:string;
 	sortId:int32;
-	jumpType:Torappu_ReturnV2JumpType;
-	jumpParam:string;
+	uncompleteBgIcon:string;
+	completeBgIcon:string;
 	desc:string;
+	jumpType:Torappu_ReturnJumpType;
+	jumpPlace:string;
 	rewardList:[Torappu_ItemBundle];
 }
 
 
 
-table Torappu_ReturnV2MissionGroupData {
+table Torappu_ReturnMissionGroupData {
 	groupId:string;
 	sortId:int32;
-	tabTitle:string;
-	title:string;
-	desc:string;
-	diffMissionCount:int32;
-	startTime:int64;
-	endTime:int64;
-	imageId:string;
-	iconId:string;
-	missionList:[Torappu_ReturnV2MissionItemData];
+	type:Torappu_ReturnMissionGroupType;
+	missionList:[Torappu_ReturnMissionItemData];
 }
 
 
 
-table Torappu_ReturnV2DailySupplyData {
-	groupId:string;
-	startTime:int64;
-	endTime:int64;
-	rewardList:[Torappu_ItemBundle];
+table Dict_2_System_String_Torappu_ReturnMissionGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnMissionGroupData;
 }
 
 
 
-table Dict_2_System_Int32_List_1_Torappu_ReturnV2ItemData__ {
+table Dict_2_System_Int32_List_1_Torappu_ReturnItemData__ {
 	dict_key:int32;
-	dict_value:[Torappu_ReturnV2ItemData];
+	dict_value:[Torappu_ReturnItemData];
 }
 
 
 
-table Torappu_ReturnV2PackageCheckInRewardData {
+table Torappu_ReturnCheckinGpRewardData {
 	groupId:string;
-	startTime:int64;
-	endTime:int64;
 	getTime:int32;
 	bindGPGoodId:string;
 	totalCheckInDay:int32;
 	iconId:string;
-	rewardDict:[Dict_2_System_Int32_List_1_Torappu_ReturnV2ItemData__];
+	rewardDict:[Dict_2_System_Int32_List_1_Torappu_ReturnItemData__];
 }
 
 
 
-table Torappu_ReturnV2Data {
-	constData:Torappu_ReturnV2Const;
-	onceRewardData:[Torappu_ReturnV2OnceRewardData];
-	checkInRewardData:[Torappu_ReturnV2CheckInRewardData];
-	priceRewardData:[Torappu_ReturnV2PriceRewardGroupData];
-	missionGroupData:[Torappu_ReturnV2MissionGroupData];
-	dailySupplyData:[Torappu_ReturnV2DailySupplyData];
-	packageCheckInRewardData:[Torappu_ReturnV2PackageCheckInRewardData];
+table Dict_2_System_String_Torappu_ReturnCheckinGpRewardData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnCheckinGpRewardData;
+}
+
+
+
+enum Torappu_ReturnNewsType : int32 {
+	NONE = 0,
+	MAIN_SS = 1,
+	ROGUE = 2,
+	SANDBOX = 3
+}
+
+table Torappu_ReturnNewsData {
+	groupId:string;
+	sortId:int32;
+	tabTitle:string;
+	tabIcon:string;
+	title:string;
+	desc:string;
+	imgId:string;
+	iconId:string;
+	jumpType:Torappu_ReturnNewsType;
+	jumpPlace:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ReturnNewsData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnNewsData;
+}
+
+
+
+table Torappu_ReturnGiftPackagePicData {
+	giftPackageId:string;
+	giftPackagePic:string;
+	sortId:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_ReturnGiftPackagePicData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnGiftPackagePicData;
+}
+
+
+
+table Torappu_ReturnOpenStyleData {
+	sortId:int32;
+	imgBkgId:string;
+	imgEntryId:string;
+	imgIconId:string;
+	pauseDesc:string;
+	title:string;
+	name:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_ReturnOpenStyleData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnOpenStyleData;
+}
+
+
+
+table Torappu_ReturnConstData {
+	pointItemId:string;
+	returnPriceDesc:string;
+	oldReturnGroupId:string;
+}
+
+
+
+table Torappu_ReturnData {
+	groupDataMap:[Dict_2_System_String_Torappu_ReturnGroupData_];
+	onceDataMap:[Dict_2_System_String_Torappu_ReturnOnceRewardData_];
+	checkinDataMap:[Dict_2_System_String_Torappu_ReturnCheckinGroupData_];
+	priceDataMap:[Dict_2_System_String_Torappu_ReturnPriceGroupData_];
+	missionDataMap:[Dict_2_System_String_Torappu_ReturnMissionGroupData_];
+	checkinGpData:[Dict_2_System_String_Torappu_ReturnCheckinGpRewardData_];
+	newsDataMap:[Dict_2_System_String_Torappu_ReturnNewsData_];
+	giftPackagePicDataMap:[Dict_2_System_String_Torappu_ReturnGiftPackagePicData_];
+	openStyleData:[Dict_2_System_String_Torappu_ReturnOpenStyleData_];
+	constData:Torappu_ReturnConstData;
 }
 
 
@@ -484,9 +525,12 @@ table Torappu_NewbieCheckInPackageData {
 	endTime:int64;
 	bindGPGoodId:string;
 	checkInDuration:int32;
+	compensateEndDay:int32;
 	totalCheckInDay:int32;
 	iconId:string;
 	checkInRewardDict:[Dict_2_System_Int32_List_1_Torappu_NewbieCheckInPackageRewardData__];
+	trigStartTime:int64;
+	trigEndTime:int64;
 }
 
 
@@ -526,7 +570,6 @@ table Torappu_OpenServerSchedule {
 	dataMap:[Dict_2_System_String_Torappu_OpenServerData_];
 	constant:Torappu_OpenServerConst;
 	playerReturn:Torappu_ReturnData;
-	playerReturnV2:Torappu_ReturnV2Data;
 	newbieCheckInPackageList:[Torappu_NewbieCheckInPackageData];
 	longTermCheckInData:Torappu_LongTermCheckInData;
 }

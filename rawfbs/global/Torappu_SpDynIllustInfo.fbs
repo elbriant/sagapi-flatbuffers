@@ -4,6 +4,8 @@ table Torappu_SpDynIllustInfo {
 	spDynIllustId:string;
 	spDynIllustSkinTag:string;
 	spIllustId:string;
+	spPortraitId:string;
+	spAvatarId:string;
 }
 
 

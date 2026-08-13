@@ -1,0 +1,8 @@
+include "UnityEngine_Vector2.fbs";
+
+table Torappu_CampaignStageMapData {
+	position:UnityEngine_Vector2;
+}
+
+
+root_type Torappu_CampaignStageMapData;

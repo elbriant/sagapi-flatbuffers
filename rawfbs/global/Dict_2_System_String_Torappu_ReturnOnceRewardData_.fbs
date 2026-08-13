@@ -1,0 +1,9 @@
+include "Torappu_ReturnOnceRewardData.fbs";
+
+table Dict_2_System_String_Torappu_ReturnOnceRewardData_ {
+	dict_key:string;
+	dict_value:Torappu_ReturnOnceRewardData;
+}
+
+
+root_type Dict_2_System_String_Torappu_ReturnOnceRewardData_;

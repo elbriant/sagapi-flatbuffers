@@ -1,12 +1,11 @@
 include "Dict_2_System_String_Torappu_KeyItem_.fbs";
-include "Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_.fbs";
+include "Torappu_ListDict_2_System_String_Torappu_KeySettingGroupData_.fbs";
 include "Torappu_PCKeyConstData.fbs";
 
 table Torappu_PCKeyData {
 	keyList:[Dict_2_System_String_Torappu_KeyItem_];
-	keySettingData:[Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_];
+	keySettingData:[Torappu_ListDict_2_System_String_Torappu_KeySettingGroupData_];
 	constData:Torappu_PCKeyConstData;
-	keyHideSettingData:[Torappu_ListDict_2_Torappu_UI_KeyBoardVirtualButtonEnum_Torappu_KeySettingItemData_];
 }
 
 

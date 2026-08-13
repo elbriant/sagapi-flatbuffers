@@ -6,6 +6,7 @@ table Torappu_BattleMiscConfigs {
 	defaultDozeAnimPlaybackSpeed:float;
 	defaultDozeAnim:string;
 	autoChessMiscConfigs:[Dict_2_System_String_Torappu_AutoChessBattleMiscConfig_];
+	prdBaseProbs:[float];
 }
 
 

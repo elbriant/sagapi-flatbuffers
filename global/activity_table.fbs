@@ -3061,6 +3061,7 @@ enum Torappu_Act24SideData_MeldingItemRarityType : int32 {
 
 table Torappu_Act24SideData_MeldingItemData {
 	meldingId:string;
+	bgId:string;
 	sortId:int32;
 	meldingPrice:int32;
 	rarity:Torappu_Act24SideData_MeldingItemRarityType;
@@ -3162,7 +3163,9 @@ enum Torappu_Act24SideData_MissionType : int32 {
 	NONE = 0,
 	HUNTING_TASK = 1,
 	COLLECTION_TASK = 2,
-	EXPLORATION_TASK = 3
+	EXPLORATION_TASK = 3,
+	MONSTER_TASK = 4,
+	INVATION_TASK = 5
 }
 
 table Torappu_Act24SideData_MissionExtraData {
@@ -3241,12 +3244,46 @@ table Dict_2_System_String_List_1_System_String__ {
 
 
 
+table Torappu_Act24SideData_HuntDatabaseData {
+	id:string;
+	name:string;
+	sortId:int32;
+	level:int32;
+	isBoss:bool;
+	bossPicId:string;
+	iconSmallId:string;
+	iconLargeId:string;
+	basicDesc:string;
+	rideIcon:string;
+	rideDesc:string;
+	secretTaskId:string;
+	secretTaskItemId:string;
+	secretTaskDesc:string;
+	secretContent:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act24SideData_HuntDatabaseData_ {
+	dict_key:string;
+	dict_value:Torappu_Act24SideData_HuntDatabaseData;
+}
+
+
+
 table Torappu_Act24SideData_ConstData {
 	stageUnlockToolDesc:string;
 	mealLackMoney:string;
 	mealDayTimesLimit:int32;
 	toolMaximum:int32;
 	stageCanNotUseToTool:[string];
+	hunterGuideRewardItemId:string;
+	hunterGuideRewardItemType:string;
+	hunterGuideRewardItemCount:int32;
+	hunterGuideDetailTabPosition:int32;
+	taskRewardItemNoIconDisplayId:string;
+	specialLevelUnlockTaskId:string;
+	missionProgressFormat:string;
 	gachaDefaultProb:float;
 	gachaExtraProb:float;
 }
@@ -3265,6 +3302,8 @@ table Torappu_Act24SideData {
 	missionDataList:[Torappu_ListDict_2_System_String_Torappu_Act24SideData_MissionExtraData_];
 	meldingDropDict:[Dict_2_System_String_Torappu_StageData_StageDropInfo_];
 	stageMapPreviewDict:[Dict_2_System_String_List_1_System_String__];
+	huntDatabaseDict:[Dict_2_System_String_Torappu_Act24SideData_HuntDatabaseData_];
+	stageIdToUnlockItemIdDict:[Dict_2_System_String_System_String_];
 	constData:Torappu_Act24SideData_ConstData;
 }
 
@@ -5787,6 +5826,7 @@ table Torappu_ActivityEnemyDuelConstData {
 	minBetCd:float;
 	defaultEmoticonItemId:string;
 	defaultEmoticonPicId:string;
+	defaultEnemyTag:string;
 	modeOperationRoundNumber:int32;
 	modeOperationInitialScore:int32;
 	modeOperationMaxScore:int32;
@@ -7110,7 +7150,8 @@ enum Torappu_ActAutoChessModeDifficultyType : int32 {
 	TRAINING = 0,
 	FUNNY = 1,
 	NORMAL = 2,
-	HARD = 3
+	HARD = 3,
+	ABYSS = 4
 }
 
 table Torappu_ActAutoChessData_ActAutoChessModeData {
@@ -7132,6 +7173,7 @@ table Torappu_ActAutoChessData_ActAutoChessModeData {
 	activeBondIdList:[string];
 	inactiveBondIdList:[string];
 	inactiveEnemyKey:[string];
+	startTime:int64;
 }
 
 
@@ -7160,6 +7202,7 @@ table Torappu_ActAutoChessData_ActAutoChessBandData {
 	effectId:string;
 	victorCount:int32;
 	bandRewardModulus:float;
+	updateTime:int64;
 }
 
 
@@ -7381,6 +7424,13 @@ table Dict_2_System_String_Dict_2_System_Int32_List_1_Torappu_ActAutoChessData_A
 
 
 
+enum Torappu_ActAutoChessBondActiveConditionType : int32 {
+	BOARD = 0,
+	BOARD_AND_DECK = 1,
+	DECK = 2,
+	BOARD_ALL_CHESS = 3
+}
+
 enum Torappu_ActAutoChessBondActiveType : int32 {
 	BATTLE = 0,
 	ALL = 1,
@@ -7393,11 +7443,15 @@ table Torappu_ActAutoChessData_ActAutoChessBondInfo {
 	desc:string;
 	iconId:string;
 	activeCount:int32;
+	activeCondition:Torappu_ActAutoChessBondActiveConditionType;
+	activeConditionTemplate:string;
+	activeParamList:[string];
 	effectId:string;
 	activeType:Torappu_ActAutoChessBondActiveType;
 	identifier:int32;
 	weight:int32;
 	isActiveInDeck:bool;
+	maxInactiveBondCount:int32;
 	descParamBaseList:[string];
 	descParamPerStackList:[string];
 	noStack:bool;
@@ -7537,6 +7591,7 @@ table Torappu_ActAutoChessData_ActAutochessBossEntry {
 	bloodPoint:int32;
 	bloodPointNormal:int32;
 	bloodPointHard:int32;
+	bloodPointAbyss:int32;
 	isHidingBoss:bool;
 }
 
@@ -7665,7 +7720,6 @@ table Torappu_ActAutoChessData_ActAutoChessConstData {
 	trBondIds:[string];
 	trBannedBondIds:[string];
 	milestoneTrackId:string;
-	bandNextUpdateTs:int64;
 	escapedBattleTemplateMapSinglePlayer:string;
 	escapedBattleTemplateMapMultiPlayer:string;
 	webBusType:string;
@@ -8505,6 +8559,94 @@ table Torappu_Act6FunData {
 
 
 
+table Torappu_Act7FunStageAdditionData {
+	homepageSpineGroupId:string;
+	battleSpineGroupId:string;
+	settleWinSpineGroupId:string;
+	settleLoseSpineGroupId:string;
+	trapMaxNum:int32;
+	trapTargetNum:int32;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act7FunStageAdditionData_ {
+	dict_key:string;
+	dict_value:Torappu_Act7FunStageAdditionData;
+}
+
+
+
+table Torappu_Act7FunEasterEggData {
+	eastereggId:string;
+	charId:string;
+	newsDesc:string;
+}
+
+
+
+table Dict_2_System_String_Torappu_Act7FunEasterEggData_ {
+	dict_key:string;
+	dict_value:Torappu_Act7FunEasterEggData;
+}
+
+
+
+table Torappu_Act7FunSpineHolderData {
+	holderId:int32;
+	charId:string;
+	direction:bool;
+}
+
+
+
+table Torappu_Act7FunSpineGroupData {
+	spineGroupId:string;
+	holderData:[Torappu_Act7FunSpineHolderData];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act7FunSpineGroupData_ {
+	dict_key:string;
+	dict_value:Torappu_Act7FunSpineGroupData;
+}
+
+
+
+table Torappu_Act7FunCharAnimData {
+	charId:string;
+	failAnimId:string;
+	normalAnimIds:[string];
+}
+
+
+
+table Dict_2_System_String_Torappu_Act7FunCharAnimData_ {
+	dict_key:string;
+	dict_value:Torappu_Act7FunCharAnimData;
+}
+
+
+
+table Torappu_Act7FunConstData {
+	defaultStage:string;
+	homepageSwitchStageId:string;
+}
+
+
+
+table Torappu_Act7FunData {
+	stageAdditionMap:[Dict_2_System_String_Torappu_Act7FunStageAdditionData_];
+	easterEggData:[Dict_2_System_String_Torappu_Act7FunEasterEggData_];
+	spineGroupData:[Dict_2_System_String_Torappu_Act7FunSpineGroupData_];
+	charAnimData:[Dict_2_System_String_Torappu_Act7FunCharAnimData_];
+	stageRewardList:[string];
+	constData:Torappu_Act7FunConstData;
+}
+
+
+
 table Torappu_AprilFoolTable {
 	stages:[Dict_2_System_String_Torappu_AprilFoolStageData_];
 	scoreDict:[Dict_2_System_String_List_1_Torappu_AprilFoolScoreData__];
@@ -8512,6 +8654,7 @@ table Torappu_AprilFoolTable {
 	act4FunData:Torappu_Act4funData;
 	act5FunData:Torappu_Act5FunData;
 	act6FunData:Torappu_Act6FunData;
+	act7FunData:Torappu_Act7FunData;
 }
 
 
@@ -9371,9 +9514,8 @@ table Torappu_FifthAnnivExploreData {
 table Torappu_AutoChessData_AutoChessVersionInfoData {
 	versionId:string;
 	activityId:string;
-	updateTime:int64;
-	appearTimeOnMainScreen:int64;
-	disappearTimeOnMainScreen:int64;
+	seasonName:string;
+	startTime:int64;
 }
 
 
@@ -9440,6 +9582,7 @@ table Torappu_AutoChessData_AutoChessBondInfoData {
 	icon:string;
 	isPower:bool;
 	bondOrder:int32;
+	isHiddenCharList:bool;
 }
 
 
@@ -9534,7 +9677,8 @@ enum Torappu_AutoChessSkillTriggerType : int32 {
 	CUSTOM_RANGE_SEARCH_ALLY = 8,
 	GDGLOW_SKILL_2 = 9,
 	ACT_DEFAULT = 10,
-	AUTO_STOP = 11
+	AUTO_STOP = 11,
+	TAKE_DAMAGE = 12
 }
 
 table Torappu_AutoChessData_AutoChessSkillTriggerData {
@@ -9671,6 +9815,7 @@ table Torappu_AutoChessData_AutoChessConstData {
 	enemyAtkFactor:float;
 	enemyDefFactor:float;
 	enemyMagicResistanceFactor:float;
+	singleReconnectTime:int32;
 	specialPhaseStayTime:int32;
 	hintTimeSpecialPhase:int32;
 	hintTimeNormalPhase:int32;
@@ -9688,6 +9833,7 @@ table Torappu_AutoChessData_AutoChessConstData {
 	bossTrailerStartRound:int32;
 	singleClosureStayTime:float;
 	matchTimeMax:float;
+	enemyDataLevelId:string;
 }
 
 

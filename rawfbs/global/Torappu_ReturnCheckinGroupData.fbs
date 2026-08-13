@@ -1,0 +1,9 @@
+include "Torappu_ReturnCheckinItemData.fbs";
+
+table Torappu_ReturnCheckinGroupData {
+	groupId:string;
+	checkinItemList:[Torappu_ReturnCheckinItemData];
+}
+
+
+root_type Torappu_ReturnCheckinGroupData;

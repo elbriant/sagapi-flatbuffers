@@ -6,9 +6,12 @@ table Torappu_NewbieCheckInPackageData {
 	endTime:int64;
 	bindGPGoodId:string;
 	checkInDuration:int32;
+	compensateEndDay:int32;
 	totalCheckInDay:int32;
 	iconId:string;
 	checkInRewardDict:[Dict_2_System_Int32_List_1_Torappu_NewbieCheckInPackageRewardData__];
+	trigStartTime:int64;
+	trigEndTime:int64;
 }
 
 

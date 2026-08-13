@@ -10,6 +10,8 @@ table Torappu_RoguelikeTopicBP {
 	itemCount:int32;
 	isGoodPrize:bool;
 	isGrandPrize:bool;
+	isReturnDisplay:bool;
+	returnSortId:int32;
 }
 
 

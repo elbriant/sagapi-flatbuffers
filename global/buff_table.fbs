@@ -197,6 +197,7 @@ table Torappu_BuffData {
 	priorityBBKeys:[string];
 	stripBlackboardParamsWithBuffKey:bool;
 	blackboard:[Torappu_Blackboard_DataPair];
+	enableInitDirectionFromSource:bool;
 }
 
 

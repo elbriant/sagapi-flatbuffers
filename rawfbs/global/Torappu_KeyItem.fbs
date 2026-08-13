@@ -1,8 +1,10 @@
+include "Torappu_KeyCodeType.fbs";
 
 table Torappu_KeyItem {
 	keyId:string;
 	keyName:string;
 	useIcon:bool;
+	keyCodeType:Torappu_KeyCodeType;
 	keyCodes:[int32];
 	canBeSetted:bool;
 }

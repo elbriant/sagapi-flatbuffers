@@ -1,0 +1,9 @@
+include "Torappu_Battle_BakedEventTimeline.fbs";
+
+table Dict_2_System_String_Torappu_Battle_BakedEventTimeline_ {
+	dict_key:string;
+	dict_value:Torappu_Battle_BakedEventTimeline;
+}
+
+
+root_type Dict_2_System_String_Torappu_Battle_BakedEventTimeline_;

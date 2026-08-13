@@ -1,0 +1,21 @@
+
+table Torappu_Act24SideData_HuntDatabaseData {
+	id:string;
+	name:string;
+	sortId:int32;
+	level:int32;
+	isBoss:bool;
+	bossPicId:string;
+	iconSmallId:string;
+	iconLargeId:string;
+	basicDesc:string;
+	rideIcon:string;
+	rideDesc:string;
+	secretTaskId:string;
+	secretTaskItemId:string;
+	secretTaskDesc:string;
+	secretContent:string;
+}
+
+
+root_type Torappu_Act24SideData_HuntDatabaseData;

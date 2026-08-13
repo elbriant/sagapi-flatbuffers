@@ -17,6 +17,7 @@ table Torappu_ZoneData {
 	sixStarMilestoneGroupId:string;
 	bindMainlineZoneId:string;
 	bindMainlineRetroZoneId:string;
+	diamondRewardCount:int32;
 }
 
 

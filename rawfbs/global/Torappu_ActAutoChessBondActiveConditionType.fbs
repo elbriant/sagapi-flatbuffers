@@ -1,0 +1,7 @@
+
+enum Torappu_ActAutoChessBondActiveConditionType : int32 {
+	BOARD = 0,
+	BOARD_AND_DECK = 1,
+	DECK = 2,
+	BOARD_ALL_CHESS = 3
+}

@@ -1,0 +1,12 @@
+
+table Torappu_Act7FunStageAdditionData {
+	homepageSpineGroupId:string;
+	battleSpineGroupId:string;
+	settleWinSpineGroupId:string;
+	settleLoseSpineGroupId:string;
+	trapMaxNum:int32;
+	trapTargetNum:int32;
+}
+
+
+root_type Torappu_Act7FunStageAdditionData;

@@ -52,7 +52,9 @@ table Torappu_CharSkinData {
 	dynIllustId:string;
 	spDynIllustId:string;
 	avatarId:string;
+	spAvatarId:string;
 	portraitId:string;
+	spPortraitId:string;
 	dynPortraitId:string;
 	dynEntranceId:string;
 	buildingId:string;
@@ -148,6 +150,8 @@ table Torappu_SpDynIllustInfo {
 	spDynIllustId:string;
 	spDynIllustSkinTag:string;
 	spIllustId:string;
+	spPortraitId:string;
+	spAvatarId:string;
 }
 
 

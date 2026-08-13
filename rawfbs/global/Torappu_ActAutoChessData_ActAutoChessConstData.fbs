@@ -19,7 +19,6 @@ table Torappu_ActAutoChessData_ActAutoChessConstData {
 	trBondIds:[string];
 	trBannedBondIds:[string];
 	milestoneTrackId:string;
-	bandNextUpdateTs:int64;
 	escapedBattleTemplateMapSinglePlayer:string;
 	escapedBattleTemplateMapMultiPlayer:string;
 	webBusType:string;

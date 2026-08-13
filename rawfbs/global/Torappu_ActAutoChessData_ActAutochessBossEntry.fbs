@@ -6,6 +6,7 @@ table Torappu_ActAutoChessData_ActAutochessBossEntry {
 	bloodPoint:int32;
 	bloodPointNormal:int32;
 	bloodPointHard:int32;
+	bloodPointAbyss:int32;
 	isHidingBoss:bool;
 }
 
