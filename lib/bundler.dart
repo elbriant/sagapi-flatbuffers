@@ -22,7 +22,7 @@ final Map<String, String> tableMapping = {
   'campaign_table': 'Torappu_CampaignTable',
   'charm_table': 'Torappu_CharmData',
   'charword_table': 'Torappu_CharWordTable',
-  'char_master_table': 'Torappu_CharMasterBasicData',
+  'char_master_table': 'Torappu_CharacterData_MasterDataBundle',
   'char_meta_table': 'Torappu_CharMetaTable',
   'char_patch_table': 'Torappu_CharPatchData',
   'checkin_table': 'Torappu_CheckInTable',
