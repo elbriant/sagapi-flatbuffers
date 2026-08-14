@@ -58,7 +58,7 @@ final Map<String, String> tableMapping = {
   'open_server_table': 'Torappu_OpenServerSchedule',
   'uniequip_table': 'Torappu_UniEquipTable',
   'main_text': 'Torappu_LanguageData',
-  'bakemuzzledata': 'Torappu_Battle_BakedSpineData',
+  'bake_muzzle_data': 'Torappu_Battle_BakedSpineData',
   // 'sandbox_table': 'Torappu_Sandbox' , // apparently not used ?
 
   // "aliased schemas"
@@ -184,9 +184,10 @@ void _warnUnbundledRoots(Directory inputDir) {
     }
   }
 
-  final candidates = roots.difference(mappedRoots).difference(referenced).toList()
-    ..sort();
+  final candidates = roots.difference(mappedRoots).difference(referenced).toList()..sort();
 
   if (candidates.isEmpty) return;
-  print('[WARN] Possible new schema not bundled (add a tableMapping key for it in bundler.dart): ${candidates.join(', ')}');
+  print(
+    '[WARN] Possible new schema not bundled (add a tableMapping key for it in bundler.dart): ${candidates.join(', ')}',
+  );
 }
