@@ -58,6 +58,7 @@ final Map<String, String> tableMapping = {
   'open_server_table': 'Torappu_OpenServerSchedule',
   'uniequip_table': 'Torappu_UniEquipTable',
   'main_text': 'Torappu_LanguageData',
+  'bakemuzzledata': 'Torappu_Battle_BakedSpineData',
   // 'sandbox_table': 'Torappu_Sandbox' , // apparently not used ?
 
   // "aliased schemas"
@@ -151,4 +152,41 @@ void bundleFbs(String inputDirPath, String outputDirPath) {
   });
 
   print('Bundling completed for: $outputDirPath');
+
+  _warnUnbundledRoots(inputDir);
+}
+
+/// Detects game schema classes extracted by the C# tool that are not bundled.
+///
+/// `roots.txt` (written by DNFBDmp-sagapi) lists every *entry point* root class
+/// — the resource types the game serializes to disk. But most of them are
+/// embedded sub-structures of bigger resources (e.g. `Torappu_ZoneData` lives
+/// inside `zone_table`), so listing every unmapped root is too noisy. A class
+/// that NO other extracted class `include`s it must be a standalone resource,
+/// so only those are candidates for a new `tableMapping` key.
+void _warnUnbundledRoots(Directory inputDir) {
+  final rootsFile = File(p.join(inputDir.path, 'roots.txt'));
+  if (!rootsFile.existsSync()) return;
+
+  final roots = rootsFile
+      .readAsLinesSync()
+      .map((line) => line.trim())
+      .where((line) => line.isNotEmpty)
+      .toSet();
+  final mappedRoots = tableMapping.values.toSet();
+
+  final referenced = <String>{};
+  for (final file in inputDir.listSync().whereType<File>()) {
+    if (!file.path.endsWith('.fbs')) continue;
+    for (final line in file.readAsLinesSync()) {
+      final match = RegExp(r'include\s+"([^"]+)\.fbs";').firstMatch(line);
+      if (match != null) referenced.add(match.group(1)!);
+    }
+  }
+
+  final candidates = roots.difference(mappedRoots).difference(referenced).toList()
+    ..sort();
+
+  if (candidates.isEmpty) return;
+  print('[WARN] Possible new schema not bundled (add a tableMapping key for it in bundler.dart): ${candidates.join(', ')}');
 }

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using dnlib.DotNet;
 
 namespace DNFBDmp
@@ -38,7 +40,9 @@ namespace DNFBDmp
 				return;
 			}
 
-			// Look for "entry points", aka non generic classes/structs 
+			// Look for "entry points", aka non generic classes/structs
+			// These are the resource types the game actually serializes to disk
+			HashSet<string> entryRoots = new HashSet<string>();
 			foreach (MethodDef met in fbLookupType.Methods)
 			{
 				string name = met.Name;
@@ -84,11 +88,17 @@ namespace DNFBDmp
 				// If we reach here, that means this is real entry
 				// Encapsulate it into a TypeSig, imitating a field
 				// and send it to the flatbuffer converter
+				entryRoots.Add(qualName);
 				FlatbufferDefinition.convert(new ClassSig(curType).RemovePinnedAndModifiers(), resolver);
 			}
 
 			// Create the folder, incase it doesn't exist
 			Directory.CreateDirectory(outputFolder);
+
+			// Write the list of entry root classes so the bundler can detect
+			// newly added game schemas that have no tableMapping entry yet.
+			File.WriteAllLines(Path.Combine(outputFolder, "roots.txt"), entryRoots.OrderBy(x => x, StringComparer.Ordinal), new System.Text.UTF8Encoding(false));
+
 			// Now we write all the files
 			Console.WriteLine("Writing to files");
 			foreach (FlatbufferDefinition fbDef in FlatbufferDefinition.convTypes.Values)
